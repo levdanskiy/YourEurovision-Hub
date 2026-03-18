@@ -164,7 +164,7 @@
                 const diff = target - now;
                 const el = document.getElementById(`timer-${id}`);
                 if (diff <= 0) { el.innerText = "LIVE!"; continue; }
-                const d = Math.floor(diff / 86400000), h = Math.floor((diff / 3600000) % 24), m = Math.floor((diff / 60000) % 60);
+                const d = Math.floor(diff / 86400000), h = Math.floor((diff / 3600000) % 24), m = Math.floor((diff / 60000) % 60), s = Math.floor((diff / 1000) % 60);
                 el.innerText = `${d}d ${h}h ${m}m`;
             }
             document.getElementById('clock').innerText = "// RIGA_TIME: " + now.toLocaleTimeString('ru-RU');
