@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourEurovision | Vienna 2026 Insider Hub</title>
+    <title>YourEurovision | Vienna 2026 [Build 00:36]</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" type="image/webp">
     <style>
@@ -48,13 +48,12 @@
         .post-heart-sm { width: 40px; height: auto; flex-shrink: 0; }
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.4rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
         .news-grid-top .post-h { font-size: 1.8rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
         .post-b { font-size: 1rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
         .post-b b { color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; font-size: 0.8rem; }
         .post-b hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0; }
-        .inline-heart { width: 22px; height: auto; vertical-align: middle; margin: 0 6px; filter: drop-shadow(0 0 5px rgba(255,255,255,0.2)); }
+        .inline-heart { width: 22px; height: auto; vertical-align: middle; margin: 0 6px; }
 
-        /* PLAYER & HISTORY */
+        /* PLAYER */
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 2rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 30px var(--accent-pink); text-transform: uppercase; border-bottom: 3px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 30px; display: block; width: 100%; text-align: center; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; text-shadow: 0 0 30px var(--accent-pink); } 100% { opacity: 1; } }
         .on-air-live { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-shadow: 0 0 20px var(--accent-pink); margin-bottom: 20px; display: block; text-align: center; }
@@ -76,7 +75,6 @@
         .news-item { margin-bottom: 30px; border-left: 2px solid rgba(255,0,127,0.3); padding-left: 15px; }
         .news-date { font-size: 0.65rem; color: var(--accent-pink); font-weight: 900; display: block; margin-bottom: 5px; }
         .news-title-link { display: flex; align-items: center; text-decoration: none; color: #fff; margin-bottom: 5px; }
-        .news-title { font-size: 1rem; font-weight: 900; }
         .news-heart { width: 24px; height: auto; margin-right: 10px; }
     </style>
 </head>
@@ -100,7 +98,7 @@
                     <div id="player-cover" class="player-cover"></div>
                     <span class="player-artist" id="radio-artist">YourVision</span>
                     <span class="player-song" id="radio-song">Radio</span>
-                    <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
+                    <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
                     <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
                     <audio id="audio-stream"></audio>
                 </div>
@@ -144,35 +142,11 @@
                 {d: "21.03 | 18:00", id: "70", t: "ALMANAC: КАРДАМОН", u: "https://t.me/almanac_marginalia/3"}
             ],
             fullPosts: [
-                {
-                    m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?", u: "https://t.me/YourEurovision/5482",
-                    img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg",
-                    b: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n[FR] Франция\n[DK] Дания\n[CY] Кипр\n[AT] Австрия\n[PL] Польша\n\nГолосуйте!"
-                },
-                {
-                    m: "22.03 | 21:30", id: "70", u: "https://t.me/YourEurovision/5477",
-                    img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg",
-                    t: "YOURVISION: ПРОТОКОЛ THE RESET",
-                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран. Была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025)."
-                },
-                {
-                    m: "22.03 | 20:00", id: "gb", u: "https://t.me/YourEurovision/5471",
-                    img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg",
-                    t: "DNA: ВЕЛИКОБРИТАНИЯ - SAM BATTLE",
-                    b: "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC.<hr><b>STYLE & SOUND (ДНК)</b>\nЭто Analog Punk. Сэм использует только физические синтезаторы, создавая грязный, живой звук."
-                },
-                {
-                    m: "22.03 | 18:00", id: "lv", u: "https://t.me/almanac_marginalia/5",
-                    img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg",
-                    t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ",
-                    b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr><b>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)</b>\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки."
-                },
-                {
-                    m: "22.03 | 11:15", id: "am", u: "https://t.me/YourEurovision/5481",
-                    img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg",
-                    t: "ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ",
-                    b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b>\n\n• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED\n• 🥉 [BE] БЕЛЬГИЯ: 40% (Essyla) - SECOND CHANCE"
-                }
+                { m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?", u: "https://t.me/YourEurovision/5482", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", b: "📊 **КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?**\n(Выберите ДВА варианта)\n\n🔵 Франция\n🔴 Дания\n🟡 Кипр\n🟢 Австрия\n🟣 Польша\n\nГолосуйте!" },
+                { m: "22.03 | 21:30", id: "70", u: "https://t.me/YourEurovision/5477", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", t: "YOURVISION: ПРОТОКОЛ THE RESET", b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран. Была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года." },
+                { m: "22.03 | 20:00", id: "gb", u: "https://t.me/YourEurovision/5471", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", t: "DNA: ВЕЛИКОБРИТАНИЯ - SAM BATTLE", b: "Сэм Баттл - человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC.<hr><b>STYLE & SOUND (ДНК)</b>\nЭто Analog Punk. Сэм использует только физические синтезаторы." },
+                { m: "22.03 | 18:00", id: "lv", u: "https://t.me/almanac_marginalia/5", img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg", t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ", b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr>• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки." },
+                { m: "22.03 | 11:15", id: "am", u: "https://t.me/YourEurovision/5481", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", t: "ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ", b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr>• 🥇 Армения (Simón) - 60%<br>• 🥈 Австралия (Delta Goodrem) - 46%" }
             ]
         };
 
@@ -180,6 +154,26 @@
             if (id === "70") return "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
             return `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; 
         }
+
+        var isPlaying = false;
+        var audio = document.getElementById('audio-stream');
+        var playBtn = document.getElementById('toggle-play');
+        var liveBadge = document.querySelector('.on-air-live');
+
+        playBtn.onclick = () => {
+            if (!isPlaying) {
+                audio.src = "https://live.myradio24.com/levdanskiy?nocache="+Date.now();
+                audio.play();
+                isPlaying = true;
+                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+                liveBadge.style.animation = "pulse 1.5s infinite";
+            } else {
+                audio.pause();
+                isPlaying = false;
+                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg>';
+                liveBadge.style.animation = "none";
+            }
+        };
 
         function render() {
             document.getElementById('scoreboard-body').innerHTML = DATA.qualifiers.map(q => `<div class="scoreboard-row"><img src="${getHeartUrl(q.id)}" class="heart-icon"><b>${q.c.toUpperCase()}</b><span class="badge badge-qualified">Qualified</span></div>`).join('');
@@ -191,28 +185,10 @@
                 let body = p.b.replace(/\[([A-Z]{2})\]/g, (m, id) => `<img src="${getHeartUrl(id)}" class="inline-heart">`);
                 return `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${body}</div></div></div>`;
             };
-            
             document.getElementById('grid-2-top').innerHTML = DATA.fullPosts.slice(0,2).map(cardHtml).join('');
             document.getElementById('grid-3-bottom').innerHTML = DATA.fullPosts.slice(2,5).map(cardHtml).join('');
         }
 
-        var audio = document.getElementById('audio-stream');
-        var cover = document.getElementById('player-cover');
-        var playBtn = document.getElementById('toggle-play');
-
-        const liveBadge = document.querySelector('.on-air-live');
-        playBtn.onclick = () => { 
-            if (audio.paused) { 
-                audio.src = "https://live.myradio24.com/levdanskiy?nocache="+Date.now(); 
-                audio.play(); 
-                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-                liveBadge.style.animation = "pulse 1.5s infinite";
-            } else { 
-                audio.pause(); 
-                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg>';
-                liveBadge.style.animation = "none";
-            } 
-        };
         document.getElementById('volume-slider').oninput = (e) => audio.volume = e.target.value;
 
         async function syncRadio() {
@@ -224,7 +200,7 @@
                 document.getElementById('radio-song').innerText = s.split(' - ')[1];
                 const rawImg = data.imgbig || (data.songs && data.songs.length ? data.songs[0].img : "");
                 const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}`;
-                cover.style.backgroundImage = `url('${img}')`;
+                document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 document.getElementById('history-list').innerHTML = data.songs.slice(0,10).map(h => `<div class="history-item"><div class="hist-cover" style="background-image:url('https://myradio24.com/${h.img}')"></div><div class="hist-info"><span class="hist-time">${h.time}</span><span class="hist-song">${h.song}</span></div></div>`).join('');
             } catch(e) {}
         }
