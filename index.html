@@ -21,7 +21,7 @@
         .hero-view { min-height: 100vh; display: flex; flex-direction: column; padding: 40px; box-sizing: border-box; }
         nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; }
         .logo-box { display: flex; flex-direction: column; text-decoration: none; line-height: 0.9; }
-        .logo, .logo-sub { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; text-transform: uppercase; margin: 0; letter-spacing: -0.02em; }
+        .logo, .logo-sub { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-transform: uppercase; margin: 0; letter-spacing: -0.02em; }
         .logo { color: #fff; }
         .logo span { color: var(--accent-pink); }
         .logo-sub { color: var(--accent-cyan); margin-top: 5px; text-shadow: 0 0 20px var(--accent-cyan), 0 0 40px var(--accent-cyan); }
@@ -47,17 +47,19 @@
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
-        /* CHART TABLE */
+        /* CHART TABLE WITH COVERS */
         .chart-table { width: 100%; border-collapse: collapse; }
-        .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .chart-cell { padding: 12px 5px; vertical-align: middle; }
+        .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+        .chart-row:hover { background: rgba(255,255,255,0.03); }
+        .chart-cell { padding: 12px 10px; vertical-align: middle; }
         .rank { font-weight: 900; color: var(--accent-cyan); width: 30px; text-align: center; font-size: 1.1rem; }
-        .cover { width: 45px; height: 45px; border-radius: 4px; object-fit: cover; }
-        .info { display: flex; flex-direction: column; }
-        .art { font-weight: 900; text-transform: uppercase; font-size: 0.8rem; color: #fff; }
-        .sng { font-size: 0.75rem; color: #888; }
-        .pts { font-weight: 900; color: var(--accent-pink); width: 60px; text-align: right; font-size: 0.9rem; }
-        .trnd { width: 45px; text-align: center; font-weight: 900; font-size: 0.6rem; }
+        .cover-cell { width: 50px; }
+        .track-cover { width: 45px; height: 45px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .info-cell { display: flex; flex-direction: column; gap: 2px; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.8rem; color: #fff; }
+        .song { font-size: 0.75rem; color: #888; }
+        .pts { font-weight: 900; color: var(--accent-pink); width: 70px; text-align: right; font-size: 0.9rem; }
+        .trnd { width: 50px; text-align: center; font-weight: 900; font-size: 0.6rem; }
         .trnd-HIT { color: var(--accent-cyan); }
         .trnd-UP { color: var(--accent-acid); }
         .trnd-DOWN { color: #ff4444; }
@@ -73,7 +75,7 @@
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.3rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
         .news-grid-top .post-h { font-size: 1.6rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
-        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; filter: drop-shadow(0 0 2px rgba(255,255,255,0.2)); }
+        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; }
 
         .on-air-live { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-shadow: 0 0 20px var(--accent-pink); margin-bottom: 20px; display: block; text-align: center; }
         .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
@@ -110,10 +112,7 @@
 <body>
     <div class="hero-view">
         <nav>
-            <a href="https://t.me/YourVision" class="logo-box">
-                <div class="logo">Your<span>Vision</span></div>
-                <div class="logo-sub">levdanskiy</div>
-            </a>
+            <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
             <div id="clock">RIGA: 00:00:00</div>
         </nav>
 
@@ -146,14 +145,15 @@
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
 
-                <div class="card">
-                    <div class="section-title">EUROGROOVE: MULTIVERSE RUNNERS UP / TOP 10</div>
-                    <table class="chart-table" id="chart-body"></table>
-                </div>
-
                 <div class="feed-title">INSIDER NEWS FEED</div>
                 <div id="grid-2-top" class="news-grid-top"></div>
                 <div id="grid-3-bottom" class="news-grid-bottom"></div>
+
+                <!-- CHART POSITIONED UNDER NEWS WITH TRACK COVERS -->
+                <div class="card" style="margin-top:40px;">
+                    <div class="section-title">EUROGROOVE: MULTIVERSE RUNNERS UP / TOP 10</div>
+                    <table class="chart-table" id="chart-body"></table>
+                </div>
             </main>
 
             <aside class="column"><div class="card"><div id="news-wire-title">News_Wire [10]</div><div id="news-body"></div></div></aside>
@@ -183,16 +183,16 @@
             wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
             eliminated: [{c: "Luxembourg", id: "lu"}, {c: "Romania", id: "ro"}, {c: "Lithuania", id: "lt"}, {c: "Croatia", id: "hr"}, {c: "Latvia", id: "lv"}, {c: "Czechia", id: "cz"}, {c: "Ukraine", id: "ua"}, {c: "Estonia", id: "ee"}, {c: "Portugal", id: "pt"}, {c: "Azerbaijan", id: "az"}, {c: "Israel", id: "il"}, {c: "Serbia", id: "rs"}],
             chart: [
-                { r: 1, a: "Greczula", s: "Half of Me", p: 91, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_se.svg" },
-                { r: 2, a: "Sissal", s: "Infinity", p: 70, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_dk.svg" },
-                { r: 3, a: "HVNDS", s: "Dor", p: 70, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_ro.svg" },
-                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: 65, t: "UP", i: "https://www.eurovision.com/static/images/flags/flag_hr.svg" },
-                { r: 5, a: "Laud", s: "Lightkeeper", p: 61, t: "UP", i: "https://www.eurovision.com/static/images/flags/flag_ee.svg" },
-                { r: 6, a: "Kautkaili", s: "Te un tagad", p: 55, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_lv.svg" },
-                { r: 7, a: "Noёp", s: "Days Like This", p: 53, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_ee.svg" },
-                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: 47, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_fi.svg" },
-                { r: 9, a: "Zejna", s: "Jugoslavija", p: 45, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_rs.svg" },
-                { r: 10, a: "Matt Bixck", s: "The Flute", p: 40, t: "UP", i: "https://www.eurovision.com/static/images/flags/flag_cy.svg" }
+                { r: 1, a: "Greczula", s: "Half of Me", p: 91, t: "HIT", i: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg" },
+                { r: 2, a: "Sissal", s: "Infinity", p: 70, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 3, a: "HVNDS", s: "Dor", p: 70, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: 65, t: "UP", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 5, a: "Laud", s: "Lightkeeper", p: 61, t: "UP", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 6, a: "Kautkaili", s: "Te un tagad", p: 55, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 7, a: "Noёp", s: "Days Like This", p: 53, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: 47, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 9, a: "Zejna", s: "Jugoslavija", p: 45, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
+                { r: 10, a: "Matt Bixck", s: "The Flute", p: 40, t: "UP", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" }
             ],
             news: [
                 {d: "23.03 | 01:05", id: "70", t: "EUROGROOVE RESULTS UPDATED", u: "https://levdanskiy.github.io/YourVision-Hub/"},
@@ -204,7 +204,7 @@
             ],
             fullPosts: [
                 { m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?", u: "https://t.me/YourVision/5482", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", b: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n[FR] Франция\n[DK] Дания\n[CY] Кипр\n[AT] Австрия\n[PL] Польша\n\nГолосуйте!" },
-                { m: "22.03 | 21:30", id: "70", u: "https://t.me/YourVision/5477", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", t: "YOURVISION: ПРОТОКОЛ THE RESET", b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран. Была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025)." },
+                { m: "22.03 | 21:30", id: "70", u: "https://t.me/YourVision/5477", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", t: "YOURVISION: ПРОТОКОЛ THE RESET", b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран. Была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит." },
                 { m: "22.03 | 20:00", id: "gb", u: "https://t.me/YourVision/5471", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", t: "DNA: ВЕЛИКОБРИТАНИЯ - SAM BATTLE", b: "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC за последние десятилетия.<hr>STYLE & SOUND (ДНК)\nЭто Analog Punk. Сэм использует только физические синтезаторы, создавая грязный, живой звук." },
                 { m: "22.03 | 18:00", id: "lv", u: "https://t.me/almanac_marginalia/5", img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg", t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ", b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки." },
                 { m: "22.03 | 11:15", id: "am", u: "https://t.me/YourVision/5481", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", t: "ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ", b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n\n• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED\n• 🥉 [BE] БЕЛЬГИЯ: 40% (Essyla) - SECOND CHANCE" }
@@ -243,8 +243,8 @@
             document.getElementById('chart-body').innerHTML = DATA.chart.map(s => `
                 <tr class="chart-row">
                     <td class="chart-cell rank">${s.r}</td>
-                    <td class="chart-cell"><img src="${s.i}" class="cover"></td>
-                    <td class="chart-cell info"><span class="art">${s.a}</span><span class="sng">${s.s}</span></td>
+                    <td class="chart-cell cover-cell"><img src="${s.i}" class="track-cover"></td>
+                    <td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td>
                     <td class="chart-cell pts">${s.p} pts</td>
                     <td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td>
                 </tr>
