@@ -26,53 +26,38 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* GRID 2+3 ARCHITECTURE */
-        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 2.5rem; font-weight: 900; color: #fff; text-shadow: 0 0 30px var(--accent-pink); margin: 60px 0 30px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.2em; border-bottom: 2px solid var(--accent-pink); display: block; padding-bottom: 10px; }
-        
+        /* GRID 2+3 */
+        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-top { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
         .news-grid-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
 
-        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; }
-        .post-card:hover { border-color: var(--accent-cyan); transform: translateY(-5px); }
-        
-        /* Fixed Quality Images */
-        .post-img { width: 100%; aspect-ratio: 1; object-fit: contain; background: #000; display: block; max-height: 350px; }
-        .news-grid-bottom .post-img { max-height: 200px; }
+        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
+        .post-card:hover { border-color: var(--accent-cyan); transform: translateY(-5px); box-shadow: 0 0 50px rgba(0,245,255,0.1); }
+        .post-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .post-content { padding: 35px; flex-grow: 1; }
+        .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
+        .post-title-row { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .post-heart-sm { width: 40px; height: auto; flex-shrink: 0; }
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.4rem; font-weight: 900; line-height: 1.1; color: #fff; }
+        .news-grid-top .post-h { font-size: 1.8rem; }
+        .post-b { font-size: 1rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
+        .post-b b { color: var(--accent-acid); font-weight: 900; }
+        .post-b hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0; }
 
-        .post-content { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
-        .post-meta { font-size: 0.6rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 10px; display: block; }
-        .post-title-row { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
-        .post-heart-sm { width: 30px; height: auto; }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; line-height: 1.1; color: #fff; }
-        .news-grid-top .post-h { font-size: 1.6rem; }
-        
-        .post-b { font-size: 0.85rem; color: #bbb; line-height: 1.6; }
-        .news-grid-bottom .post-b { font-size: 0.75rem; }
-        .post-b b { color: var(--accent-pink); }
-        
-        /* PLAYER */
+        /* PLAYER & HISTORY */
         .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; background-image: url('https://myradio24.com/users/levdanskiy/cover.jpg'); margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
-        .player-artist { font-weight: 900; font-size: 1.2rem; display: block; color: #fff; text-align: center; }
-        .player-song { font-size: 0.9rem; color: var(--accent-cyan); font-weight: 700; margin-top: 6px; text-align: center; display: block; }
-        .play-btn { background: #fff; border: none; width: 55px; height: 55px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-        .volume-slider { width: 100%; height: 4px; appearance: none; background: rgba(255,255,255,0.1); border-radius: 2px; margin-bottom: 15px; cursor: pointer; }
-        .volume-slider::-webkit-slider-thumb { appearance: none; width: 12px; height: 12px; background: #fff; border-radius: 50%; }
-        
-        .history-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .hist-cover { width: 45px; height: 45px; border-radius: 6px; background-size: cover; background-position: center; flex-shrink: 0; background-color: #111; border: 1px solid rgba(255,255,255,0.1); }
+        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 20px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 20px; }
+        .history-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .hist-cover { width: 50px; height: 50px; border-radius: 8px; background-size: cover; background-position: center; flex-shrink: 0; background-color: #111; border: 1px solid rgba(255,255,255,0.1); }
         .hist-info { display: flex; flex-direction: column; gap: 2px; }
-        .hist-time { font-size: 0.6rem; color: var(--accent-pink); font-weight: 900; }
-        .hist-song { font-size: 0.75rem; color: #eee; font-weight: 700; line-height: 1.2; }
+        .hist-time { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; }
+        .hist-song { font-size: 0.8rem; color: #fff; font-weight: 700; line-height: 1.2; }
 
         .heart-icon { width: 45px; height: auto; margin-right: 15px; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
         .scoreboard-row { display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .badge { font-size: 0.6rem; font-weight: 900; padding: 4px 8px; border-radius: 3px; text-transform: uppercase; margin-left: auto; }
-        
-        #news-wire-title { font-size: 1.5rem; font-weight: 900; color: #fff; text-shadow: 0 0 15px var(--accent-pink); margin-bottom: 30px; }
-        .news-item { margin-bottom: 30px; border-left: 2px solid rgba(255,0,127,0.3); padding-left: 15px; }
-        .news-date { font-size: 0.65rem; color: var(--accent-pink); font-weight: 900; display: block; margin-bottom: 5px; }
-        .news-title-link { display: flex; align-items: center; text-decoration: none; color: #fff; margin-bottom: 5px; }
-        .news-heart { width: 24px; height: auto; margin-right: 10px; }
+        .badge-qualified { background: var(--accent-acid); color: #000; }
+        .badge-second { background: var(--accent-cyan); color: #000; }
     </style>
 </head>
 <body>
@@ -87,13 +72,13 @@
                 <div class="card">
                     <div class="section-title">On Air <span class="live-badge" style="background:var(--accent-pink); color:#fff; font-size:0.5rem; padding:2px 6px; border-radius:3px; margin-left:10px;">LIVE</span></div>
                     <div id="player-cover" class="player-cover"></div>
-                    <span class="player-artist" id="radio-artist">...</span>
-                    <span class="player-song" id="radio-song">Connecting...</span>
-                    <div class="main-controls"><button id="toggle-play" class="play-btn"><svg viewBox="0 0 24 24" width="24"><path d="M8 5v14l11-7z"/></svg></button></div>
-                    <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.8">
+                    <span class="player-artist" id="radio-artist" style="font-weight:900; display:block; text-align:center; color:#fff;">YourVision</span>
+                    <span class="player-song" id="radio-song" style="font-size:0.9rem; color:var(--accent-cyan); display:block; text-align:center; margin-top:5px;">Radio</span>
+                    <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:50px; height:50px; border-radius:50%; cursor:pointer;"><svg viewBox="0 0 24 24" width="24"><path d="M8 5v14l11-7z"/></svg></button></div>
+                    <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
                     <audio id="audio-stream"></audio>
                 </div>
-                <div class="card"><div class="section-title">Recently Played</div><div id="history-list" class="history-list"></div></div>
+                <div class="card"><div class="section-title-pink">Recently Played</div><div id="history-list"></div></div>
             </aside>
 
             <main class="column">
@@ -110,7 +95,7 @@
                 <div id="grid-3-bottom" class="news-grid-bottom"></div>
             </main>
 
-            <aside class="column"><div class="card"><div id="news-wire-title">News_Wire [10]</div><div id="news-body"></div></div></aside>
+            <aside class="column"><div class="card"><div id="news-wire-title" style="font-size:1.5rem; font-weight:900; color:#fff; text-shadow:0 0 15px var(--accent-pink); margin-bottom:30px;">News_Wire [10]</div><div id="news-body"></div></div></aside>
         </div>
     </div>
 
@@ -133,11 +118,41 @@
                 {d: "21.03 | 18:00", id: "70", t: "🥐 ALMANAC: КАРДАМОН", u: "https://t.me/almanac_marginalia/3"}
             ],
             fullPosts: [
-                { m: "22.03 | 22:30", id: "70", t: "POLL: КТО ДОСТОИН ВЫЙТИ ИЗ ГРУППЫ G?", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", b: "Решающее голосование за последних участников плей-офф." },
-                { m: "22.03 | 21:30", id: "70", t: "YOURVISION: ПРОТОКОЛ THE RESET", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", b: "Была ли смена курса в 2026-м году оправданной?" },
-                { m: "22.03 | 20:00", id: "gb", t: "DNA: UNITED KINGDOM - LOOK MUM NO COMPUTER", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", b: "Сэм Баттл — человек-оркестр и панк от электроники." },
-                { m: "22.03 | 18:00", id: "lv", t: "🥐 ALMANAC #03 - ТВОРОЖНЫЕ ЛЕПЕШКИ", img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg", b: "Идеальный финал для недели, которая требовала слишком многого." },
-                { m: "22.03 | 11:15", id: "am", t: "RESULTS: ИТОГИ ГРУППЫ F", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", b: "Simón и Delta Goodrem выходят в плей-офф." }
+                {
+                    m: "22.03 | 22:30 | YOURVISION CUP: POLL",
+                    t: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?",
+                    id: "70",
+                    img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg",
+                    b: "Группа G выходит на арену! Решающее голосование за последних участников плей-офф.<hr><b>УЧАСТНИКИ:</b><br>• Франция: Monroe — Regarde !<br>• Дания: Søren Torpegaard Lund — Før vi går hjem<br>• Кипр: Antigoni — Jalla<br>• Австрия: Cosmó — Tanzschein<br>• Польша: Alicja — Pray"
+                },
+                {
+                    m: "22.03 | 21:30 | YOURVISION: NEW FORMAT",
+                    t: "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - АНАЛИЗ ВЫБОРА",
+                    id: "70",
+                    img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg",
+                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b><br><br>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами."
+                },
+                {
+                    m: "22.03 | 20:00 | DNA: UNITED KINGDOM",
+                    t: "🧬 ВЕЛИКОБРИТАНИЯ - LOOK MUM NO COMPUTER",
+                    id: "gb",
+                    img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg",
+                    b: "Сэм Баттл - человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b><br><br>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня - это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х."
+                },
+                {
+                    m: "22.03 | 18:00 | ALMANAC: THE TEXT",
+                    t: "🥐 ТЕКСТ №03 - ВОСКРЕСНАЯ ЭФФЕКТИВНОСТЬ",
+                    id: "lv",
+                    img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg",
+                    b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr>• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки.<br>• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара. Сахар мы добавим в конце, в виде капли меда.<hr>Идеальный финал недели."
+                },
+                {
+                    m: "22.03 | 11:15 | YOURVISION CUP",
+                    t: "📊 ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ",
+                    id: "am",
+                    img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg",
+                    b: "Группа F завершила свое выступление. Фавориты подтвердили свой статус, а борьба за вторую путевку в плей-офф шла до последнего голоса.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b><br><br>• 🥇 <b>АРМЕНИЯ:</b> 60% (Simón) - <b>QUALIFIED</b><br>• 🥈 <b>АВСТРАЛИЯ:</b> 46% (Delta Goodrem) - <b>QUALIFIED</b><br>• 🥉 <b>БЕЛЬГИЯ:</b> 40% (Essyla) - <b>SECOND CHANCE</b>"
+                }
             ]
         };
 
@@ -149,12 +164,13 @@
             document.getElementById('eliminated-body').innerHTML = DATA.eliminated.map(e => `<div class="scoreboard-row" style="opacity:0.5;"><img src="${getHeartUrl(e.id)}" class="heart-icon" style="filter:grayscale(100%);"><b>${e.c.toUpperCase()}</b><span class="badge" style="background:#444;">Eliminated</span></div>`).join('');
             document.getElementById('news-body').innerHTML = DATA.news.map(n => `<div class="news-item"><span class="news-date">${n.d}</span><a href="${n.u}" target="_blank" class="news-title-link">${n.id ? `<img src="${getHeartUrl(n.id)}" class="news-heart">` : ''}<span class="news-title">${n.t}</span></a></div>`).join('');
             
-            // GRID 2+3 RENDERING
             const top2 = DATA.fullPosts.slice(0,2);
             const bottom3 = DATA.fullPosts.slice(2,5);
             
-            document.getElementById('grid-2-top').innerHTML = top2.map(p => `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><div class="post-h">${p.t}</div></div><div class="post-b">${p.b}</div></div></div>`).join('');
-            document.getElementById('grid-3-bottom').innerHTML = bottom3.map(p => `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><div class="post-h">${p.t}</div></div><div class="post-b">${p.b}</div></div></div>`).join('');
+            const cardHtml = p => `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><div class="post-h">${p.t}</div></div><div class="post-b">${p.b}</div></div></div>`;
+            
+            document.getElementById('grid-2-top').innerHTML = top2.map(cardHtml).join('');
+            document.getElementById('grid-3-bottom').innerHTML = bottom3.map(cardHtml).join('');
         }
 
         var audio = document.getElementById('audio-stream');
