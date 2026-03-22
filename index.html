@@ -22,7 +22,6 @@
         nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; }
         .logo-box { display: flex; flex-direction: column; text-decoration: none; line-height: 0.9; }
         .logo, .logo-sub { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-transform: uppercase; margin: 0; letter-spacing: -0.02em; }
-        .logo { color: #fff; }
         .logo span { color: var(--accent-pink); }
         .logo-sub { color: var(--accent-cyan); margin-top: 5px; text-shadow: 0 0 20px var(--accent-cyan); }
         #clock { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--accent-cyan); font-weight: 900; }
@@ -72,6 +71,11 @@
         .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .post-content { padding: 30px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
+        
+        /* HEARTS IN NEWS SYNCED TO FONT SIZE */
+        .post-heart-sm { width: 1.3rem; height: auto; flex-shrink: 0; }
+        .news-grid-top .post-heart-sm { width: 1.6rem; }
+        
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.3rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
         .news-grid-top .post-h { font-size: 1.6rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
@@ -149,9 +153,8 @@
                 <div id="grid-2-top" class="news-grid-top"></div>
                 <div id="grid-3-bottom" class="news-grid-bottom"></div>
 
-                <!-- CHART POSITIONED STRICTLY UNDER NEWS GRID -->
                 <div class="card" style="margin-top:40px;">
-                    <div class="section-title">EUROGROOVE: MULTIVERSE RUNNERS UP / TOP 10</div>
+                    <div class="section-title">EUROGROOVE: MULTIVERSE RUNNERS UP / FULL TOP 24</div>
                     <table class="chart-table" id="chart-body"></table>
                 </div>
             </main>
@@ -192,10 +195,24 @@
                 { r: 7, a: "Noёp", s: "Days Like This", p: 53, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
                 { r: 8, a: "Antti Paalanen", s: "Takatukka", p: 47, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
                 { r: 9, a: "Zejna", s: "Jugoslavija", p: 45, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
-                { r: 10, a: "Matt Bixck", s: "The Flute", p: 40, t: "UP", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" }
+                { r: 10, a: "Matt Bixck", s: "The Flute", p: 40, t: "UP", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: 39, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 12, a: "Alexander Rybak", s: "Rise", p: 37, t: "UP", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: 36, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 14, a: "SHWR", s: "Contact", p: 28, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: 27, t: "UP", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 16, a: "Wavvyboi", s: "Black Glitter", p: 26, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: 24, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 18, a: "Dara", s: "Curse", p: 18, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: 16, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 20, a: "Dinis Mota", s: "Jurei", p: 16, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: 13, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: 10, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: 10, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" },
+                { r: 24, a: "Kelly Joyce", s: "Oh la la", p: 5, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg" }
             ],
             news: [
-                {d: "23.03 | 01:10", id: "70", t: "HUB V24.4: CHART RELOCATED", u: "https://levdanskiy.github.io/YourVision-Hub/"},
+                {d: "23.03 | 01:15", id: "70", t: "HUB V24.5: FULL TOP 24 ADDED", u: "https://levdanskiy.github.io/YourVision-Hub/"},
                 {d: "22.03 | 22:30", id: "pl", t: "POLL: GROUP G RESULTS", u: "https://t.me/YourVision/5482"},
                 {d: "22.03 | 21:30", id: "70", t: "THE RESET ANNOUNCE", u: "https://t.me/YourVision/5477"},
                 {d: "22.03 | 20:00", id: "gb", t: "DNA: UK - SAM BATTLE", u: "https://t.me/YourVision/5471"},
@@ -244,10 +261,7 @@
                 <tr class="chart-row">
                     <td class="chart-cell rank">${s.r}</td>
                     <td class="chart-cell cover-cell"><img src="${s.i}" class="track-cover"></td>
-                    <td class="chart-cell info-cell">
-                        <span class="artist">${s.a}</span>
-                        <span class="song">${s.s}</span>
-                    </td>
+                    <td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td>
                     <td class="chart-cell pts">${s.p} pts</td>
                     <td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td>
                 </tr>
