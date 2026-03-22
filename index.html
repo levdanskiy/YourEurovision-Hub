@@ -24,7 +24,7 @@
         .logo, .logo-sub { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; text-transform: uppercase; margin: 0; letter-spacing: -0.02em; }
         .logo { color: #fff; }
         .logo span { color: var(--accent-pink); }
-        .logo-sub { color: var(--accent-cyan); margin-top: 5px; text-shadow: 0 0 15px var(--accent-cyan); }
+        .logo-sub { color: var(--accent-cyan); margin-top: 5px; text-shadow: 0 0 20px var(--accent-cyan), 0 0 40px var(--accent-cyan); }
         #clock { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--accent-cyan); font-weight: 900; }
 
         .timers-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 80px; }
@@ -38,7 +38,6 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* GRID STANDINGS */
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 40px; }
         .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
@@ -48,24 +47,21 @@
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
-        /* CHART RESULTS STYLES */
-        .chart-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
-        .chart-row:hover { background: rgba(255,255,255,0.02); }
-        .chart-cell { padding: 12px 10px; font-size: 0.85rem; vertical-align: middle; }
-        .chart-rank { font-weight: 900; color: var(--accent-cyan); width: 30px; text-align: center; font-size: 1rem; }
-        .chart-cover-cell { width: 45px; }
-        .chart-cover { width: 40px; height: 40px; border-radius: 4px; object-fit: cover; }
-        .chart-info-cell { display: flex; flex-direction: column; gap: 2px; }
-        .chart-artist { font-weight: 900; text-transform: uppercase; color: #fff; font-size: 0.75rem; }
-        .chart-song { color: #aaa; font-size: 0.7rem; }
-        .chart-points { font-weight: 900; color: var(--accent-pink); width: 60px; text-align: right; }
-        .chart-trend { width: 40px; text-align: center; font-weight: 900; font-size: 0.6rem; }
-        .trend-up { color: var(--accent-acid); }
-        .trend-hit { color: var(--accent-cyan); }
-        .trend-down { color: #ff4444; }
+        /* CHART TABLE */
+        .chart-table { width: 100%; border-collapse: collapse; }
+        .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .chart-cell { padding: 12px 5px; vertical-align: middle; }
+        .rank { font-weight: 900; color: var(--accent-cyan); width: 30px; text-align: center; font-size: 1.1rem; }
+        .cover { width: 45px; height: 45px; border-radius: 4px; object-fit: cover; }
+        .info { display: flex; flex-direction: column; }
+        .art { font-weight: 900; text-transform: uppercase; font-size: 0.8rem; color: #fff; }
+        .sng { font-size: 0.75rem; color: #888; }
+        .pts { font-weight: 900; color: var(--accent-pink); width: 60px; text-align: right; font-size: 0.9rem; }
+        .trnd { width: 45px; text-align: center; font-weight: 900; font-size: 0.6rem; }
+        .trnd-HIT { color: var(--accent-cyan); }
+        .trnd-UP { color: var(--accent-acid); }
+        .trnd-DOWN { color: #ff4444; }
 
-        /* FEED */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-top { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
         .news-grid-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
@@ -77,11 +73,8 @@
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.3rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
         .news-grid-top .post-h { font-size: 1.6rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
-        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; }
+        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; filter: drop-shadow(0 0 2px rgba(255,255,255,0.2)); }
 
-        /* PLAYER */
-        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 2.2rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 30px var(--accent-pink); text-transform: uppercase; border-bottom: 3px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 30px; display: block; width: 100%; text-align: center; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; text-shadow: 0 0 30px var(--accent-pink); } 100% { opacity: 1; } }
         .on-air-live { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-shadow: 0 0 20px var(--accent-pink); margin-bottom: 20px; display: block; text-align: center; }
         .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
         .player-artist, .player-song { font-weight: 900; font-size: 1.5rem; display: block; text-align: center; text-transform: uppercase; }
@@ -94,7 +87,6 @@
 
         .history-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .hist-cover { width: 50px; height: 50px; border-radius: 8px; background-size: cover; background-position: center; flex-shrink: 0; background-color: #111; border: 1px solid rgba(255,255,255,0.1); }
-        .hist-info { display: flex; flex-direction: column; gap: 4px; }
         .hist-time { font-size: 0.7rem; color: var(--accent-cyan); font-weight: 900; }
         .hist-song { font-size: 0.8rem; color: #fff; font-weight: 700; line-height: 1.2; }
 
@@ -148,17 +140,14 @@
 
             <main class="column">
                 <div class="card">
-                    <div class="section-title">YOURVISION CUP / QUALIFIED</div>
+                    <div class="section-title">YOURVISION CUP / 2026</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
-                    <div class="section-title">SECOND CHANCE</div>
                     <div id="grid-wildcards" class="tournament-grid"></div>
-                    <div class="section-title">ELIMINATED / THE RESET</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
 
-                <!-- NEW CHART RESULTS BLOCK -->
                 <div class="card">
-                    <div class="section-title">RUTOP: MODERN LOVE / TOP RESULTS</div>
+                    <div class="section-title">EUROGROOVE: MULTIVERSE RUNNERS UP / TOP 10</div>
                     <table class="chart-table" id="chart-body"></table>
                 </div>
 
@@ -175,10 +164,7 @@
         <div class="footer-content">
             <a href="https://t.me/YourVision" class="footer-brand">
                 <img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" class="footer-logo-heart">
-                <div class="logo-box">
-                    <div class="logo">Your<span>Vision</span></div>
-                    <div class="logo-sub">levdanskiy</div>
-                </div>
+                <div class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></div>
             </a>
             <div class="footer-links">
                 <a href="https://t.me/YourVision" target="_blank" class="footer-link">Telegram News</a>
@@ -197,28 +183,24 @@
             wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
             eliminated: [{c: "Luxembourg", id: "lu"}, {c: "Romania", id: "ro"}, {c: "Lithuania", id: "lt"}, {c: "Croatia", id: "hr"}, {c: "Latvia", id: "lv"}, {c: "Czechia", id: "cz"}, {c: "Ukraine", id: "ua"}, {c: "Estonia", id: "ee"}, {c: "Portugal", id: "pt"}, {c: "Azerbaijan", id: "az"}, {c: "Israel", id: "il"}, {c: "Serbia", id: "rs"}],
             chart: [
-                { r: 1, a: "XOLIDAYBOY", s: "Моя хулиганка", p: 76, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 2, a: "Сергей Лазарев", s: "Я не боюсь", p: 70, t: "UP", i: "https://www.eurovision.com/static/images/flags/flag_ru.svg" },
-                { r: 3, a: "polnalyubvi", s: "Твои глаза", p: 65, t: "UP", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 4, a: "Три дня дождя", s: "Отпускай", p: 62, t: "DOWN", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 5, a: "Ваня Дмитриенко", s: "Силуэт", p: 58, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 6, a: "Паршута", s: "Кришна", p: 58, t: "UP", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 7, a: "мартин", s: "я пытаюсь быть лучше", p: 52, t: "NEW", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 8, a: "Артур Пирожков", s: "Само собой", p: 46, t: "DOWN", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 9, a: "Женя Трофимов", s: "Добегу", p: 45, t: "UP", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" },
-                { r: 10, a: "HammAli & Navai", s: "Птичка", p: 44, t: "HIT", i: "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" }
+                { r: 1, a: "Greczula", s: "Half of Me", p: 91, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_se.svg" },
+                { r: 2, a: "Sissal", s: "Infinity", p: 70, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_dk.svg" },
+                { r: 3, a: "HVNDS", s: "Dor", p: 70, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_ro.svg" },
+                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: 65, t: "UP", i: "https://www.eurovision.com/static/images/flags/flag_hr.svg" },
+                { r: 5, a: "Laud", s: "Lightkeeper", p: 61, t: "UP", i: "https://www.eurovision.com/static/images/flags/flag_ee.svg" },
+                { r: 6, a: "Kautkaili", s: "Te un tagad", p: 55, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_lv.svg" },
+                { r: 7, a: "Noёp", s: "Days Like This", p: 53, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_ee.svg" },
+                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: 47, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_fi.svg" },
+                { r: 9, a: "Zejna", s: "Jugoslavija", p: 45, t: "HIT", i: "https://www.eurovision.com/static/images/flags/flag_rs.svg" },
+                { r: 10, a: "Matt Bixck", s: "The Flute", p: 40, t: "UP", i: "https://www.eurovision.com/static/images/flags/flag_cy.svg" }
             ],
             news: [
-                {d: "23.03 | 01:00", id: "70", t: "CHART RESULTS ADDED", u: "https://levdanskiy.github.io/YourVision-Hub/"},
+                {d: "23.03 | 01:05", id: "70", t: "EUROGROOVE RESULTS UPDATED", u: "https://levdanskiy.github.io/YourVision-Hub/"},
                 {d: "22.03 | 22:30", id: "pl", t: "POLL: GROUP G RESULTS", u: "https://t.me/YourVision/5482"},
                 {d: "22.03 | 21:30", id: "70", t: "THE RESET ANNOUNCE", u: "https://t.me/YourVision/5477"},
                 {d: "22.03 | 20:00", id: "gb", t: "DNA: UK - SAM BATTLE", u: "https://t.me/YourVision/5471"},
                 {d: "22.03 | 18:00", id: "lv", t: "ALMANAC: ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5"},
-                {d: "22.03 | 11:15", id: "am", t: "ИТОГИ ГРУППЫ F", u: "https://t.me/YourVision/5481"},
-                {d: "22.03 | 11:00", id: "no", t: "OSLO PRE-PARTY", u: "https://t.me/YourVision/5478"},
-                {d: "22.03 | 01:11", id: "70", t: "WATCH PARTY POLL", u: "https://t.me/YourVision/5480"},
-                {d: "22.03 | 01:10", id: "70", t: "ONLINE WATCH PARTY", u: "https://t.me/YourVision/5479"},
-                {d: "22.03 | 00:17", id: "70", t: "🏛 ALMANAC: НИТЬ ЛАЙМЫ", u: "https://t.me/almanac_marginalia/4"}
+                {d: "22.03 | 11:15", id: "am", t: "ИТОГИ ГРУППЫ F", u: "https://t.me/YourVision/5481"}
             ],
             fullPosts: [
                 { m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?", u: "https://t.me/YourVision/5482", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", b: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n[FR] Франция\n[DK] Дания\n[CY] Кипр\n[AT] Австрия\n[PL] Польша\n\nГолосуйте!" },
@@ -260,14 +242,11 @@
             
             document.getElementById('chart-body').innerHTML = DATA.chart.map(s => `
                 <tr class="chart-row">
-                    <td class="chart-cell chart-rank">${s.r}</td>
-                    <td class="chart-cell chart-cover-cell"><img src="${s.i}" class="chart-cover"></td>
-                    <td class="chart-cell chart-info-cell">
-                        <span class="chart-artist">${s.a}</span>
-                        <span class="chart-song">${s.s}</span>
-                    </td>
-                    <td class="chart-cell chart-points">${s.p} pts</td>
-                    <td class="chart-cell chart-trend"><span class="trend-${s.t.toLowerCase()}">${s.t}</span></td>
+                    <td class="chart-cell rank">${s.r}</td>
+                    <td class="chart-cell"><img src="${s.i}" class="cover"></td>
+                    <td class="chart-cell info"><span class="art">${s.a}</span><span class="sng">${s.s}</span></td>
+                    <td class="chart-cell pts">${s.p} pts</td>
+                    <td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td>
                 </tr>
             `).join('');
 
