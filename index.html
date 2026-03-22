@@ -27,42 +27,44 @@
         #clock { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--accent-cyan); font-weight: 900; }
 
         .timers-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 80px; }
-        .timer-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; backdrop-filter: blur(10px); }
+        .timer-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; display: flex; backdrop-filter: blur(10px); flex-direction: column; }
         .timer-poster { width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; border-bottom: 1px solid var(--glass-border); }
         .timer-info { padding: 15px 20px; background: rgba(0,0,0,0.4); }
-        .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: #fff; display: block; }
+        .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: #fff; }
         .timer-label { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
 
         .layout { display: grid; grid-template-columns: 380px 1fr 450px; gap: 40px; align-items: start; }
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
+        /* RESTORED HEART BUBBLE STYLE */
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
         
         .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-        .participant-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
-        .part-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; }
-        .part-info { padding: 8px; display: flex; flex-direction: column; gap: 2px; }
-        .part-artist { font-weight: 900; text-transform: uppercase; font-size: 0.55rem; color: #fff; }
-        .part-song { font-size: 0.5rem; color: #888; }
+        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+        .heart-bubble { width: 35px; height: auto; }
+        .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
         .status-q { border-bottom: 2px solid var(--accent-acid); }
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
-        .status-el { opacity: 0.4; border-bottom: 2px solid #444; }
+        .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
+        /* TABLES: CHART & HISTORY */
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); }
         .chart-cell { padding: 12px 5px; vertical-align: middle; }
-        .rank { font-weight: 900; color: var(--accent-cyan); width: 40px; text-align: center; font-size: 1.2rem; }
-        .track-cover { width: 50px; height: 50px; border-radius: 6px; object-fit: cover; }
+        .rank { font-weight: 900; color: var(--accent-cyan); width: 45px; text-align: center; font-size: 1.1rem; }
+        .track-cover { width: 45px; height: 45px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .info-cell { display: flex; flex-direction: column; gap: 2px; }
-        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.95rem; color: #fff; }
-        .song { font-size: 0.95rem; color: #888; font-weight: 700; }
-        .pts { font-weight: 900; color: var(--accent-pink); width: 70px; text-align: right; font-size: 1rem; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.95rem; color: #fff; line-height: 1.1; }
+        .song { font-size: 0.95rem; color: #888; font-weight: 700; line-height: 1.1; }
+        .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1rem; }
 
+        /* NEWS FEED [20] BY 2 */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
+        .post-card:hover { border-color: var(--accent-cyan); transform: translateY(-5px); }
         .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .post-content { padding: 30px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
@@ -128,7 +130,7 @@
                     <div id="grid-qualifiers" class="tournament-grid"></div>
                     <div class="grid-sub-header">SECOND CHANCE</div>
                     <div id="grid-wildcards" class="tournament-grid"></div>
-                    <div class="grid-sub-header">ELIMINATED</div>
+                    <div class="grid-sub-header">ELIMINATED / THE RESET</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
 
@@ -164,42 +166,9 @@
     <script>
         var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
-            qualifiers: [
-                {id: "ge", a: "Bzikebi", s: "On Replay", img: "https://www.eurovision.com/static/images/flags/flag_ge.svg"},
-                {id: "al", a: "Alis", s: "Nân", img: "https://cdn4.telesco.pe/file/abee540fd3b243fc.jpg"},
-                {id: "se", a: "Felicia", s: "My System", img: "https://www.eurovision.com/static/images/flags/flag_se.svg"},
-                {id: "gb", a: "Sam Battle", s: "Eins, Zwei, Drei", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg"},
-                {id: "gr", a: "Akylas", s: "Beyond", img: "https://www.eurovision.com/static/images/flags/flag_gr.svg"},
-                {id: "it", a: "Sal Da Vinci", s: "Rossetto", img: "https://www.eurovision.com/static/images/flags/flag_it.svg"},
-                {id: "md", a: "Satoshi", s: "O Noapte", img: "https://www.eurovision.com/static/images/flags/flag_md.svg"},
-                {id: "mt", a: "Aidan", s: "Ritmu", img: "https://www.eurovision.com/static/images/flags/flag_mt.svg"},
-                {id: "fi", a: "Linda & Pete", s: "Sata Salamaa", img: "https://www.eurovision.com/static/images/flags/flag_fi.svg"},
-                {id: "me", a: "Tamara Ž", s: "Zabranjeno", img: "https://www.eurovision.com/static/images/flags/flag_me.svg"},
-                {id: "am", a: "Simón", s: "Paloma rumba", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg"},
-                {id: "au", a: "Delta G", s: "Hearts on Fire", img: "https://www.eurovision.com/static/images/flags/flag_au.svg"}
-            ],
-            wildcards: [
-                {id: "no", a: "Jonas Lovv", s: "Ya Ya Ya", img: "https://www.eurovision.com/static/images/flags/flag_no.svg"},
-                {id: "bg", a: "Dara", s: "Bangaranga", img: "https://www.eurovision.com/static/images/flags/flag_bg.svg"},
-                {id: "de", a: "Sarah Engels", s: "Te Amo", img: "https://www.eurovision.com/static/images/flags/flag_de.svg"},
-                {id: "sm", a: "Senhit", s: "Adrenalina", img: "https://www.eurovision.com/static/images/flags/flag_sm.svg"},
-                {id: "ch", a: "Veronica F", s: "Better", img: "https://www.eurovision.com/static/images/flags/flag_ch.svg"},
-                {id: "be", a: "Essyla", s: "Nocturne", img: "https://www.eurovision.com/static/images/flags/flag_be.svg"}
-            ],
-            eliminated: [
-                {id: "lu", a: "Eva Marija", s: "Stay", img: "https://www.eurovision.com/static/images/flags/flag_lu.svg"},
-                {id: "ro", a: "Alexandra C", s: "Inima", img: "https://www.eurovision.com/static/images/flags/flag_ro.svg"},
-                {id: "lt", a: "Lion Ceccah", s: "Neon", img: "https://www.eurovision.com/static/images/flags/flag_lt.svg"},
-                {id: "hr", a: "LELEK", s: "Vatra", img: "https://www.eurovision.com/static/images/flags/flag_hr.svg"},
-                {id: "lv", a: "Atvara", s: "Ziedi", img: "https://www.eurovision.com/static/images/flags/flag_lv.svg"},
-                {id: "cz", a: "Daniel Žižka", s: "Crossroads", img: "https://www.eurovision.com/static/images/flags/flag_cz.svg"},
-                {id: "ua", a: "Lelėka", s: "Kolysanka", img: "https://www.eurovision.com/static/images/flags/flag_ua.svg"},
-                {id: "ee", a: "Vanilla N", s: "Encore", img: "https://www.eurovision.com/static/images/flags/flag_ee.svg"},
-                {id: "pt", a: "Bandidos", s: "Cante", img: "https://www.eurovision.com/static/images/flags/flag_pt.svg"},
-                {id: "az", a: "JIVA", s: "Oyan", img: "https://www.eurovision.com/static/images/flags/flag_az.svg"},
-                {id: "il", a: "Noam Bettan", s: "Stay", img: "https://www.eurovision.com/static/images/flags/flag_il.svg"},
-                {id: "rs", a: "Lavina", s: "Oluja", img: "https://www.eurovision.com/static/images/flags/flag_rs.svg"}
-            ],
+            qualifiers: [{c: "GE", id: "ge"}, {c: "AL", id: "al"}, {c: "SE", id: "se"}, {c: "UK", id: "gb"}, {c: "GR", id: "gr"}, {c: "IT", id: "it"}, {c: "MD", id: "md"}, {c: "MT", id: "mt"}, {c: "FI", id: "fi"}, {c: "ME", id: "me"}, {c: "AM", id: "am"}, {c: "AU", id: "au"}],
+            wildcards: [{c: "NO", id: "no"}, {c: "BG", id: "bg"}, {c: "DE", id: "de"}, {c: "SM", id: "sm"}, {c: "CH", id: "ch"}, {c: "BE", id: "be"}],
+            eliminated: [{c: "LU", id: "lu"}, {c: "RO", id: "ro"}, {c: "LT", id: "lt"}, {c: "HR", id: "hr"}, {c: "LV", id: "lv"}, {c: "CZ", id: "cz"}, {c: "UA", id: "ua"}, {c: "EE", id: "ee"}, {c: "PT", id: "pt"}, {c: "AZ", id: "az"}, {c: "IL", id: "il"}, {c: "RS", id: "rs"}],
             chart: [
                 { r: 1, a: "Greczula", s: "Half of Me", p: 91, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
                 { r: 2, a: "Sissal", s: "Infinity", p: 70, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
@@ -243,10 +212,10 @@
                 { m: "16.03 | 21:00", id: "cz", u: "https://t.me/YourVision/5390", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", t: "ЧЕХИЯ: DANIEL ŽIŽKA", b: "Даниэль Жижка едет в Вену с гимном Crossroads." },
                 { m: "15.03 | 18:30", id: "no", u: "https://t.me/YourVision/5380", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", t: "НОРВЕГИЯ: JONAS LOVV", b: "Новый звук из Осло. Пост-панк встречает Евровидение." },
                 { m: "14.03 | 12:00", id: "mt", u: "https://t.me/YourVision/5370", img: "https://cdn4.telesco.pe/file/abee540fd3b243fc.jpg", t: "МАЛЬТА: AIDAN IS BACK", b: "Айдан возвращается на сцену с мощным концептом Ritmu." },
-                { m: "13.03 | 21:00", id: "fi", u: "https://t.me/YourVision/5360", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", t: "ФИНЛЯНДИЯ УДЕРЖИВАЕТ ЛИДЕРСТВО", b: "Аналитика букмекеров: Linda & Pete в Топ-3." },
-                { m: "12.03 | 18:00", id: "am", u: "https://t.me/YourVision/5350", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", t: "АРМЕНИЯ: SIMÓN В ДЕЛЕ", b: "Ереван делает ставку на Paloma rumba." },
+                { m: "13.03 | 21:00", id: "fi", u: "https://t.me/YourVision/5360", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", t: "ФИНЛЯНДИЯ: LINDA & PETE", b: "Аналитика букмекеров: лидерство в северном блоке." },
+                { m: "12.03 | 18:00", id: "am", u: "https://t.me/YourVision/5350", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", t: "АРМЕНИЯ: SIMÓN", b: "Ереван делает ставку на Paloma rumba и латино-вайб." },
                 { m: "11.03 | 01:05", id: "be", u: "https://t.me/YourVision/5340", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", t: "БЕЛЬГИЯ: ESSYLA ПРЕДСТАВИЛА КЛИП", b: "Элегантный нуар от Essyla в треке Nocturne." },
-                { m: "10.03 | 20:51", id: "it", u: "https://t.me/YourVision/5330", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", t: "ИТАЛИЯ: SAL DA VINCI — ПРЕМЬЕРА", b: "Неаполитанский драйв на сцене Сан-Ремо." }
+                { m: "10.03 | 20:51", id: "it", u: "https://t.me/YourVision/5330", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", t: "ИТАЛИЯ: SAL DA VINCI", b: "Неаполитанский драйв и мощный вокал на сцене Сан-Ремо." }
             ]
         };
 
@@ -270,10 +239,10 @@
         };
 
         function render() {
-            const partCard = (p, st) => `<div class="participant-card ${st}"><img src="${p.img || getHeartUrl(p.id)}" class="part-img"><div class="part-info"><span class="part-artist">${p.a}</span><span class="part-song">${p.s}</span></div></div>`;
-            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(p => partCard(p, 'status-q')).join('');
-            document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(p => partCard(p, 'status-wc')).join('');
-            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(p => partCard(p, 'status-el')).join('');
+            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.c}</span></div>`;
+            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
+            document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(c => bubble(c, 'status-wc')).join('');
+            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
             const cardHtml = p => `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${p.b}</div></div></div>`;
             document.getElementById('news-grid').innerHTML = DATA.news.map(cardHtml).join('');
