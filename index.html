@@ -37,18 +37,18 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* ULTIMATE NEWS FEED */
+        /* REAL MEDIA NEWS FEED V3 */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 50px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .full-post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 0; margin-bottom: 80px; line-height: 1.8; overflow: hidden; transition: 0.4s; }
         .full-post-card:hover { border-color: var(--accent-cyan); box-shadow: 0 0 60px rgba(0,245,255,0.15); transform: translateY(-5px); }
-        .post-media { width: 100%; max-height: 650px; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .post-media { width: 100%; height: auto; max-height: 800px; object-fit: contain; background: #000; display: block; }
         .post-content-padding { padding: 50px; }
         .full-post-meta { font-size: 0.8rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 30px; display: block; letter-spacing: 0.2em; }
         .post-title-wrapper { display: flex; align-items: center; gap: 25px; margin-bottom: 40px; }
         .post-heart { width: 80px; height: auto; filter: drop-shadow(0 0 15px var(--accent-pink)); }
-        .post-main-title { font-family: 'Inter Tight', sans-serif; font-size: 2.8rem; font-weight: 900; line-height: 1.05; background: linear-gradient(to right, #fff, var(--accent-pink), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
-        .full-post-body { font-size: 1.2rem; color: #eee; white-space: pre-wrap; }
-        .full-post-body b { color: var(--accent-acid); font-weight: 900; text-transform: uppercase; font-size: 1rem; letter-spacing: 0.05em; display: block; margin-top: 40px; margin-bottom: 20px; border-left: 5px solid var(--accent-acid); padding-left: 25px; }
+        .post-main-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; line-height: 1.05; background: linear-gradient(to right, #fff, var(--accent-pink), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
+        .full-post-body { font-size: 1.25rem; color: #eee; white-space: pre-wrap; }
+        .full-post-body b { color: var(--accent-acid); font-weight: 900; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 0.05em; display: block; margin-top: 40px; margin-bottom: 20px; border-left: 5px solid var(--accent-acid); padding-left: 25px; }
         .full-post-body hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 50px 0; }
         .full-post-footer { margin-top: 60px; padding-top: 35px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; display: flex; justify-content: space-between; align-items: center; }
 
@@ -67,7 +67,6 @@
         .hist-time { font-size: 0.6rem; color: var(--accent-pink); font-weight: 900; }
         .hist-song { font-size: 0.75rem; color: #eee; font-weight: 700; line-height: 1.2; }
 
-        /* MISC */
         .heart-icon { width: 45px; height: auto; margin-right: 15px; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
         .scoreboard-row { display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .badge { font-size: 0.6rem; font-weight: 900; padding: 4px 8px; border-radius: 3px; text-transform: uppercase; margin-left: auto; }
@@ -135,7 +134,7 @@
             wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
             eliminated: [{c: "Luxembourg", id: "lu"}, {c: "Romania", id: "ro"}, {c: "Lithuania", id: "lt"}, {c: "Croatia", id: "hr"}, {c: "Latvia", id: "lv"}, {c: "Czechia", id: "cz"}, {c: "Ukraine", id: "ua"}, {c: "Estonia", id: "ee"}, {c: "Portugal", id: "pt"}, {c: "Azerbaijan", id: "az"}, {c: "Israel", id: "il"}, {c: "Serbia", id: "rs"}],
             news: [
-                {d: "22.03 | 22:30", id: "pl", t: "📊 POLL: GROUP G RESULTS", u: "https://t.me/YourEurovision/5482"},
+                {d: "22.03 | 22:30", id: "70", t: "📊 POLL: GROUP G RESULTS", u: "https://t.me/YourEurovision/5482"},
                 {d: "22.03 | 21:30", id: "70", t: "🧪 THE RESET ANNOUNCE", u: "https://t.me/YourEurovision/5477"},
                 {d: "22.03 | 20:00", id: "gb", t: "🧬 DNA: UK — SAM BATTLE", u: "https://t.me/YourEurovision/5471"},
                 {d: "22.03 | 18:00", id: "lv", t: "🥐 ALMANAC: ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5"},
@@ -151,7 +150,7 @@
                     m: "22.03 | 22:30 | YOURVISION CUP",
                     t: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?",
                     id: "70",
-                    img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg",
+                    img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg",
                     b: "Группа G выходит на арену! Решающее голосование за последних участников плей-офф.<hr><b>УЧАСТНИКИ:</b><br>• Франция: Monroe — Regarde !<br>• Дания: Søren Torpegaard Lund — Før vi går hjem<br>• Кипр: Antigoni — Jalla<br>• Австрия: Cosmó — Tanzschein<br>• Польша: Alicja — Pray",
                     u: "https://t.me/YourEurovision/5482"
                 },
@@ -160,7 +159,7 @@
                     t: "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» — АНАЛИЗ ВЫБОРА",
                     id: "70",
                     img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg",
-                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику — THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами.<hr>Первый аудит стартует завтра вечером.",
+                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику — THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами.<hr>Первый аудит стартует завтра вечером. С какой страны начнем разбор?",
                     u: "https://t.me/YourEurovision/5477"
                 },
                 {
@@ -168,7 +167,7 @@
                     t: "🧬 DNA: ВЕЛИКОБРИТАНИЯ — LOOK MUM NO COMPUTER",
                     id: "gb",
                     img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg",
-                    b: "Сэм Баттл — человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня — это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.",
+                    b: "Сэм Баттл — человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня — это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.<hr><b>VERDICT:</b> Британия «пошла во все тяжкие». Сэм Баттл — это либо полный провал, либо культовый момент, который будут пересматривать годами.",
                     u: "https://t.me/YourEurovision/5471"
                 },
                 {
