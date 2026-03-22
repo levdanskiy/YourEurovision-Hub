@@ -16,10 +16,14 @@
             background-image: linear-gradient(to bottom, rgba(10, 2, 26, 0.8), rgba(10, 2, 26, 0.95)), url('https://storage.googleapis.com/eurovision-com.appspot.com/renditions/public/cms/newwebsite_70png/NewWebsite_70-fill_size%3D1600x900-fill_size%3D1600x900.png');
             background-attachment: fixed; background-size: cover; background-position: center;
         }
+        body::before { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('https://grainy-gradients.vercel.app/noise.svg'); opacity: 0.05; pointer-events: none; z-index: 9999; }
+
         .hero-view { min-height: 100vh; display: flex; flex-direction: column; padding: 40px; box-sizing: border-box; }
         nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px; }
-        .logo { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: #fff; text-transform: uppercase; margin: 0; text-decoration: none; }
+        .logo-box { display: flex; flex-direction: column; text-decoration: none; }
+        .logo { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-transform: uppercase; margin: 0; }
         .logo span { color: var(--accent-pink); }
+        .logo-sub { font-size: 0.7rem; font-weight: 400; text-transform: lowercase; color: var(--accent-pink); letter-spacing: 0.4em; margin-top: -5px; margin-left: 2px; }
         #clock { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--accent-cyan); font-weight: 900; }
 
         .layout { display: grid; grid-template-columns: 350px 1fr 400px; gap: 40px; align-items: start; }
@@ -29,28 +33,25 @@
         /* GRID STANDINGS */
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 40px; }
-        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; transition: 0.3s; }
-        .country-bubble:hover { border-color: var(--accent-cyan); background: rgba(255,255,255,0.08); }
+        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
         .heart-bubble { width: 35px; height: auto; }
         .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
         .status-q { border-bottom: 2px solid var(--accent-acid); }
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
-        /* NEWS FEED V4 */
+        /* FEED */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-top { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
         .news-grid-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
+        .post-card:hover { border-color: var(--accent-cyan); transform: translateY(-5px); }
         .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .post-content { padding: 30px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        .post-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; }
-        .post-heart-sm { width: 35px; height: auto; flex-shrink: 0; }
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.3rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
         .news-grid-top .post-h { font-size: 1.6rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
-        .post-b hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0; }
         .inline-heart { width: 20px; height: auto; vertical-align: middle; margin: 0 4px; }
 
         /* PLAYER */
@@ -74,7 +75,7 @@
         /* FOOTER */
         footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
         .footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .footer-brand { display: flex; align-items: center; gap: 20px; }
+        .footer-brand { display: flex; align-items: center; gap: 20px; text-decoration: none; }
         .footer-logo-heart { height: 50px; }
         .footer-links { display: flex; gap: 30px; }
         .footer-link { color: #fff; text-decoration: none; font-weight: 900; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; transition: 0.3s; }
@@ -92,7 +93,10 @@
 <body>
     <div class="hero-view">
         <nav>
-            <a href="https://t.me/YourVision" class="logo">Your<span>Eurovision</span> / 2026</a>
+            <a href="https://t.me/YourVision" class="logo-box">
+                <div class="logo">Your<span>Vision</span></div>
+                <div class="logo-sub">levdanskiy</div>
+            </a>
             <div id="clock">RIGA: 00:00:00</div>
         </nav>
 
@@ -132,10 +136,13 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-brand">
+            <a href="https://t.me/YourVision" class="footer-brand">
                 <img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" class="footer-logo-heart">
-                <div class="logo">Your<span>Eurovision</span></div>
-            </div>
+                <div class="logo-box">
+                    <div class="logo">Your<span>Vision</span></div>
+                    <div class="logo-sub">levdanskiy</div>
+                </div>
+            </a>
             <div class="footer-links">
                 <a href="https://t.me/YourVision" target="_blank" class="footer-link">Telegram News</a>
                 <a href="https://t.me/almanac_marginalia" target="_blank" class="footer-link">Almanac</a>
@@ -169,7 +176,7 @@
                 { m: "22.03 | 21:30", id: "70", u: "https://t.me/YourVision/5477", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", t: "YOURVISION: ПРОТОКОЛ THE RESET", b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран. Была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025)." },
                 { m: "22.03 | 20:00", id: "gb", u: "https://t.me/YourVision/5471", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", t: "DNA: ВЕЛИКОБРИТАНИЯ - SAM BATTLE", b: "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b>\nЭто Analog Punk. Сэм использует только физические синтезаторы, создавая грязный, живой звук." },
                 { m: "22.03 | 18:00", id: "lv", u: "https://t.me/almanac_marginalia/5", img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg", t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ", b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr><b>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)</b>\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки." },
-                { m: "22.03 | 11:15", id: "am", u: "https://t.me/YourVision/5481", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", t: "ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ", b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr>• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED\n• 🥉 [BE] БЕЛЬГИЯ: 40% (Essyla) - SECOND CHANCE" }
+                { m: "22.03 | 11:15", id: "am", u: "https://t.me/YourVision/5481", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", t: "ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ", b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b>\n\n• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED\n• 🥉 [BE] БЕЛЬГИЯ: 40% (Essyla) - SECOND CHANCE" }
             ]
         };
 
@@ -204,9 +211,7 @@
             document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
             document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(c => bubble(c, 'status-wc')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
-            
             document.getElementById('news-body').innerHTML = DATA.news.map(n => `<div class="news-item"><span class="news-date">${n.d}</span><a href="${n.u}" target="_blank" class="news-title-link"><img src="${getHeartUrl(n.id)}" class="news-heart"><span class="news-title">${n.t}</span></a></div>`).join('');
-            
             const cardHtml = p => {
                 let body = p.b.replace(/\[([A-Z]{2})\]/g, (m, id) => `<img src="${getHeartUrl(id)}" class="inline-heart">`);
                 return `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${body}</div></div></div>`;
