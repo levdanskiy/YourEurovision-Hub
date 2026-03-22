@@ -35,7 +35,7 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* GRID 2+3 WITH FULL TEXTS */
+        /* GRID 2+3 CLEAN VERSION */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-top { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
         .news-grid-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
@@ -48,17 +48,19 @@
         .post-title-row { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
         .post-heart-sm { width: 40px; height: auto; flex-shrink: 0; }
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.4rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
-        .news-grid-top .post-h { font-size: 1.8rem; }
+        .news-grid-top .post-h { font-size: 1.8rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
         .post-b { font-size: 1rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
-        .post-b b { color: var(--accent-acid); font-weight: 900; }
+        .post-b b { color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; font-size: 0.8rem; }
         .post-b hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 25px 0; }
+        .inline-heart { width: 18px; height: auto; vertical-align: middle; margin: 0 4px; }
 
-        /* PLAYER PROMINENT */
-        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 2.5rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 30px var(--accent-pink); text-transform: uppercase; border-bottom: 3px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 30px; display: block; width: 100%; text-align: center; }
+        /* PLAYER & HISTORY */
+        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 2rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 30px var(--accent-pink); text-transform: uppercase; border-bottom: 3px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 30px; display: block; width: 100%; text-align: center; }
         .on-air-live { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: #fff; text-shadow: 0 0 20px var(--accent-pink); margin-bottom: 20px; display: block; text-align: center; }
         .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
-        .player-artist { font-weight: 900; font-size: 1.5rem; display: block; color: var(--accent-pink); text-align: center; text-transform: uppercase; text-shadow: 0 0 10px rgba(255,0,127,0.3); }
-        .player-song { font-weight: 900; font-size: 1.5rem; display: block; color: var(--accent-cyan); text-align: center; text-transform: uppercase; text-shadow: 0 0 10px rgba(0,245,255,0.3); margin-top: 8px; }
+        .player-artist { font-weight: 900; font-size: 1.5rem; display: block; color: var(--accent-pink); text-align: center; text-transform: uppercase; }
+        .player-song { font-weight: 900; font-size: 1.5rem; display: block; color: var(--accent-cyan); text-align: center; text-transform: uppercase; margin-top: 8px; }
         
         .history-item { display: flex; align-items: center; gap: 12px; padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .hist-cover { width: 55px; height: 55px; border-radius: 8px; background-size: cover; background-position: center; flex-shrink: 0; background-color: #111; border: 1px solid rgba(255,255,255,0.1); }
@@ -95,8 +97,8 @@
                 <div class="card">
                     <span class="on-air-live">On Air LIVE</span>
                     <div id="player-cover" class="player-cover"></div>
-                    <span class="player-artist" id="radio-artist" style="font-size:1.5rem; font-weight:900; text-transform:uppercase;">YourVision</span>
-                    <span class="player-song" id="radio-song" style="font-size:1.5rem; font-weight:900; text-transform:uppercase;">Radio</span>
+                    <span class="player-artist" id="radio-artist">YourVision</span>
+                    <span class="player-song" id="radio-song">Radio</span>
                     <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
                     <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
                     <audio id="audio-stream"></audio>
@@ -123,11 +125,7 @@
     </div>
 
     <script>
-        var DATES = { 
-            sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), 
-            sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), 
-            gf: new Date("2026-05-16T22:00:00+03:00").getTime() 
-        };
+        var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
             qualifiers: [{c: "Georgia", id: "ge"}, {c: "Albania", id: "al"}, {c: "Sweden", id: "se"}, {c: "UK", id: "gb"}, {c: "Greece", id: "gr"}, {c: "Italy", id: "it"}, {c: "Moldova", id: "md"}, {c: "Malta", id: "mt"}, {c: "Finland", id: "fi"}, {c: "Montenegro", id: "me"}, {c: "Armenia", id: "am"}, {c: "Australia", id: "au"}],
             wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
@@ -148,36 +146,39 @@
                 {
                     m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?", u: "https://t.me/YourEurovision/5482",
                     img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg",
-                    b: "📊 **КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?**\n(Выберите ДВА варианта)\n\n🔵 🇫🇷 Франция\n🔴 🇩🇰 Дания\n🟡 🇨🇾 Кипр\n🟢 🇦🇹 Австрия\n🟣 🇵🇱 Польша\n\nГолосуйте!"
+                    b: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n🔵 Франция\n🔴 Дания\n🟡 Кипр\n🟢 Австрия\n🟣 Польша\n\nГолосуйте!"
                 },
                 {
                     m: "22.03 | 21:30", id: "70", u: "https://t.me/YourEurovision/5477",
                     img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg",
-                    t: "YOURVISION: ПРОТОКОЛ «THE RESET»",
-                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr>**МЕХАНИКА ПРОТОКОЛА**\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025).\n\nЭто не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами и была ли прошлогодняя стратегия более жизнеспособной для большой сцены.<hr>**ВАШ ВЕРДИКТ**\n\nВаше голосование - это индикатор точности национального отбора. Мы не можем изменить реальный список участников в Вене, но мы можем зафиксировать наше коллективное мнение: был ли выбор этого года прогрессом или досадной ошибкой, которую хочется «сбросить»."
+                    t: "YOURVISION: ПРОТОКОЛ THE RESET",
+                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025).\n\nЭто не просто опрос кто лучше. Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами и была ли прошлогодняя стратегия более жизнеспособной для большой сцены.<hr><b>ВАШ ВЕРДИКТ</b>\n\nВаше голосование - это индикатор точности национального отбора. Мы не можем изменить реальный список участников в Вене, но мы можем зафиксировать наше коллективное мнение."
                 },
                 {
                     m: "22.03 | 20:00", id: "gb", u: "https://t.me/YourEurovision/5471",
                     img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg",
                     t: "DNA: ВЕЛИКОБРИТАНИЯ - SAM BATTLE",
-                    b: "Сэм Баттл - человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr>**THE JOURNEY (ПУТЬ)**\nСэм начинал как фронтмен инди-группы ZIBRA на Гластонбери, но мировую славу ему принес YouTube и его «Музей устаревших технологий» в Рамсгите. В 2026 году он решил перенести свои аналоговые эксперименты на сцену Евровидения. Его песня «Eins, Zwei, Drei» родилась во время джема на самодельном синтезаторе «Kosmo».<hr>**STYLE & SOUND (ДНК)**\nЭто «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере."
+                    b: "Сэм Баттл - человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>THE JOURNEY (ПУТЬ)</b>\nСэм начинал как фронтмен инди-группы ZIBRA на Гластонбери, но мировую славу ему принес YouTube и его Музей устаревших технологий в Рамсгите.<hr><b>STYLE & SOUND (ДНК)</b>\nЭто Analog Punk. Сэм использует только физические синтезаторы, создавая грязный, живой звук."
                 },
                 {
                     m: "22.03 | 18:00", id: "lv", u: "https://t.me/almanac_marginalia/5",
                     img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg",
                     t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ",
-                    b: "Воскресенье не создано для сложных конструкций. Это день «малых форм» - и в мыслях, и на кухне. Сегодня в архиве рецепт творожных лепешек (Biezpiena plācenīši), приготовленных на сковороде.<hr>**ТЕХНОЛОГИЯ (CRAFTSMANSHIP)**\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки.\n• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара. Сахар мы добавим в конце, в виде капли меда.\n• Метод: Сформировать небольшие диски и обжарить на капле топленого масла на среднем огне."
+                    b: "Воскресенье не создано для сложных конструкций. Это день малых форм - и в мыслях, и на кухне. Сегодня в архиве рецепт творожных лепешек (Biezpiena plācenīši), приготовленных на сковороде.<hr><b>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)</b>\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки.\n• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара."
                 },
                 {
                     m: "22.03 | 11:15", id: "am", u: "https://t.me/YourEurovision/5481",
                     img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg",
                     t: "ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ",
-                    b: "Группа F завершила свое выступление. Фавориты подтвердили свой статус, а борьба за вторую путевку в плей-офф шла до последнего голоса.<hr>**РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:**\n\n• 🥇 **АРМЕНИЯ:** 60% (Simón) - **QUALIFIED**\n• 🥈 **АВСТРАЛИЯ:** 46% (Delta Goodrem) - **QUALIFIED**\n• 🥉 **БЕЛЬГИЯ:** 40% (Essyla) - **SECOND CHANCE**\n• 4. ИЗРАИЛЬ: 26% (Noam Bettan)\n• 5. СЕРБИЯ: 26% (Lavina)"
+                    b: "Группа F завершила свое выступление. Фавориты подтвердили свой статус, а борьба за вторую путевку в плей-офф шла до последнего голоса.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b>\n\n• 🥇 АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED\n• 🥉 БЕЛЬГИЯ: 40% (Essyla) - SECOND CHANCE"
                 }
             ]
         };
 
-        function getHeartUrl(id) { return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id}.svg`; }
+        function getHeartUrl(id) { 
+            if (id === "70") return "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
+            return `https://www.eurovision.com/static/images/flags/flag_${id}.svg`; 
+        }
 
         function render() {
             document.getElementById('scoreboard-body').innerHTML = DATA.qualifiers.map(q => `<div class="scoreboard-row"><img src="${getHeartUrl(q.id)}" class="heart-icon"><b>${q.c.toUpperCase()}</b><span class="badge badge-qualified">Qualified</span></div>`).join('');
@@ -185,7 +186,11 @@
             document.getElementById('eliminated-body').innerHTML = DATA.eliminated.map(e => `<div class="scoreboard-row" style="opacity:0.5;"><img src="${getHeartUrl(e.id)}" class="heart-icon" style="filter:grayscale(100%);"><b>${e.c.toUpperCase()}</b><span class="badge" style="background:#444;">Eliminated</span></div>`).join('');
             document.getElementById('news-body').innerHTML = DATA.news.map(n => `<div class="news-item"><span class="news-date">${n.d}</span><a href="${n.u}" target="_blank" class="news-title-link"><img src="${getHeartUrl(n.id)}" class="news-heart"><span class="news-title">${n.t}</span></a></div>`).join('');
             
-            const cardHtml = p => `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${p.b}</div></div></div>`;
+            const cardHtml = p => {
+                let body = p.b.replace(/🔵|🔴|🟡|🟢|🟣/g, `<img src="${getHeartUrl('70')}" class="inline-heart">`);
+                return `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${body}</div></div></div>`;
+            };
+            
             document.getElementById('grid-2-top').innerHTML = DATA.fullPosts.slice(0,2).map(cardHtml).join('');
             document.getElementById('grid-3-bottom').innerHTML = DATA.fullPosts.slice(2,5).map(cardHtml).join('');
         }
