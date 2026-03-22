@@ -37,7 +37,6 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* TOURNAMENT SUB-TITLES */
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
         
@@ -45,24 +44,22 @@
         .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
         .heart-bubble { width: 35px; height: auto; }
         .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
-        
         .status-q { border-bottom: 2px solid var(--accent-acid); }
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
-        .status-q .country-name { color: var(--accent-acid); }
-        .status-wc .country-name { color: var(--accent-cyan); }
 
-        /* CHART */
-        .chart-container-parallel { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        /* LARGE CHART TABLES */
+        .chart-container-parallel { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
-        .chart-cell { padding: 10px 5px; vertical-align: middle; }
-        .rank { font-weight: 900; color: var(--accent-cyan); width: 25px; text-align: center; font-size: 1rem; }
-        .track-cover { width: 40px; height: 40px; border-radius: 4px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.75rem; color: #fff; }
-        .song { font-size: 0.7rem; color: #888; }
-        .pts { font-weight: 900; color: var(--accent-pink); width: 50px; text-align: right; font-size: 0.85rem; }
-        .trnd { width: 40px; text-align: center; font-weight: 900; font-size: 0.6rem; }
+        .chart-cell { padding: 12px 5px; vertical-align: middle; }
+        .rank { font-weight: 900; color: var(--accent-cyan); width: 35px; text-align: center; font-size: 1.3rem; }
+        .track-cover { width: 50px; height: 50px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
+        .info-cell { display: flex; flex-direction: column; gap: 2px; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.95rem; color: #fff; }
+        .song { font-size: 0.95rem; color: #aaa; font-weight: 700; }
+        .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1.1rem; }
+        .trnd { width: 45px; text-align: center; font-weight: 900; font-size: 0.65rem; }
         .trnd-HIT { color: var(--accent-cyan); }
         .trnd-UP { color: var(--accent-acid); }
         .trnd-DOWN { color: #ff4444; }
@@ -71,16 +68,18 @@
         .news-grid-top { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
         .news-grid-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
-        .post-card:hover { border-color: var(--accent-cyan); transform: translateY(-5px); }
         .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .post-content { padding: 30px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        .post-heart-sm { width: 1.3rem; height: auto; flex-shrink: 0; }
+        
+        /* HEARTS IN NEWS SYNCED TO FONT SIZE */
+        .post-heart-sm { width: 1.3rem; height: auto; flex-shrink: 0; vertical-align: baseline; }
         .news-grid-top .post-heart-sm { width: 1.6rem; }
+        
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.3rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
         .news-grid-top .post-h { font-size: 1.6rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
-        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; filter: drop-shadow(0 0 2px rgba(255,255,255,0.2)); }
+        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; }
 
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; letter-spacing: -0.05em; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; text-shadow: 0 0 30px var(--accent-pink); } 100% { opacity: 1; } }
@@ -147,13 +146,10 @@
             <main class="column">
                 <div class="card">
                     <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
-                    
                     <div class="grid-sub-header">1/8 FINALS / QUALIFIED</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
-                    
                     <div class="grid-sub-header">SECOND CHANCE</div>
                     <div id="grid-wildcards" class="tournament-grid"></div>
-                    
                     <div class="grid-sub-header">ELIMINATED / THE RESET</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
