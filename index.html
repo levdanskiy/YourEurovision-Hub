@@ -38,15 +38,17 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* FULL POST CARDS V3 (MAXIMAL) */
+        /* FULL POST CARDS WITH HEARTS */
         .full-post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 40px; margin-bottom: 50px; line-height: 1.8; }
-        .full-post-meta { font-size: 0.6rem; color: var(--accent-pink); font-weight: 900; text-transform: uppercase; margin-bottom: 25px; display: block; letter-spacing: 0.1em; }
-        .full-post-body { font-size: 1.05rem; color: #ccc; }
+        .full-post-meta { font-size: 0.65rem; color: var(--accent-pink); font-weight: 900; text-transform: uppercase; margin-bottom: 25px; display: block; letter-spacing: 0.1em; }
+        .post-title-wrapper { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+        .post-heart { width: 45px; height: auto; flex-shrink: 0; }
+        .full-post-body { font-size: 1.05rem; color: #ccc; white-space: pre-wrap; }
         .full-post-body b { color: #fff; font-weight: 900; }
         .full-post-body hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0; }
-        .full-post-footer { margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; }
+        .full-post-footer { margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; }
 
-        /* PLAYER */
+        /* PLAYER & HISTORY */
         .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; background-image: url('https://myradio24.com/users/levdanskiy/cover.jpg'); margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
         .player-artist { font-weight: 900; font-size: 1.2rem; display: block; color: #fff; text-align: center; }
         .player-song { font-size: 0.9rem; color: var(--accent-cyan); font-weight: 700; margin-top: 6px; text-align: center; display: block; }
@@ -61,6 +63,7 @@
         .hist-time { font-size: 0.6rem; color: var(--accent-pink); font-weight: 900; }
         .hist-song { font-size: 0.75rem; color: #eee; font-weight: 700; line-height: 1.2; }
 
+        /* MISC */
         .heart-icon { width: 45px; height: auto; margin-right: 15px; flex-shrink: 0; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
         .scoreboard-row { display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
         .badge { font-size: 0.6rem; font-weight: 900; padding: 4px 8px; border-radius: 3px; text-transform: uppercase; margin-left: auto; }
@@ -69,7 +72,6 @@
         .news-item { margin-bottom: 30px; border-left: 2px solid rgba(255,0,127,0.3); padding-left: 15px; }
         .news-date { font-size: 0.65rem; color: var(--accent-pink); font-weight: 900; display: block; margin-bottom: 5px; }
         .news-title-link { display: flex; align-items: center; text-decoration: none; color: #fff; margin-bottom: 5px; }
-        .news-title { font-size: 1rem; font-weight: 900; }
         .news-heart { width: 24px; height: auto; margin-right: 10px; }
     </style>
 </head>
@@ -117,16 +119,20 @@
     </div>
 
     <script>
-        var DATES = { sf1: 1778619600000, sf2: 1778792400000, gf: 1778965200000 };
+        var DATES = { 
+            sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), 
+            sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), 
+            gf: new Date("2026-05-16T22:00:00+03:00").getTime() 
+        };
         var DATA = {
             qualifiers: [{c: "Georgia", id: "ge"}, {c: "Albania", id: "al"}, {c: "Sweden", id: "se"}, {c: "UK", id: "gb"}, {c: "Greece", id: "gr"}, {c: "Italy", id: "it"}, {c: "Moldova", id: "md"}, {c: "Malta", id: "mt"}, {c: "Finland", id: "fi"}, {c: "Montenegro", id: "me"}, {c: "Armenia", id: "am"}, {c: "Australia", id: "au"}],
             wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
             eliminated: [{c: "Luxembourg", id: "lu"}, {c: "Romania", id: "ro"}, {c: "Lithuania", id: "lt"}, {c: "Croatia", id: "hr"}, {c: "Latvia", id: "lv"}, {c: "Czechia", id: "cz"}, {c: "Ukraine", id: "ua"}, {c: "Estonia", id: "ee"}, {c: "Portugal", id: "pt"}, {c: "Azerbaijan", id: "az"}, {c: "Israel", id: "il"}, {c: "Serbia", id: "rs"}],
             news: [
-                {d: "22.03 | 11:15", id: "am", t: "📊 ИТОГИ ГРУППЫ F", u: "https://t.me/YourEurovision/5481"},
                 {d: "22.03 | 21:30", t: "🧪 THE RESET ANNOUNCE", u: "https://t.me/YourEurovision/5477"},
-                {d: "22.03 | 18:00", t: "🥐 ALMANAC: ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5"},
                 {d: "22.03 | 20:00", id: "gb", t: "🧬 DNA: UK — SAM BATTLE", u: "https://t.me/YourEurovision/5471"},
+                {d: "22.03 | 18:00", id: "lv", t: "🥐 ALMANAC: ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5"},
+                {d: "22.03 | 11:15", id: "am", t: "📊 ИТОГИ ГРУППЫ F", u: "https://t.me/YourEurovision/5481"},
                 {d: "22.03 | 11:00", id: "no", t: "🇳🇴 OSLO PRE-PARTY", u: "https://t.me/YourEurovision/5478"},
                 {d: "22.03 | 01:11", t: "📊 WATCH PARTY POLL", u: "https://t.me/YourEurovision/5480"},
                 {d: "22.03 | 01:10", t: "📺 ONLINE WATCH PARTY", u: "https://t.me/YourEurovision/5479"},
@@ -136,60 +142,63 @@
             ],
             fullPosts: [
                 {
-                    m: "22.03 | 11:15 | YOURVISION CUP: RESULTS",
-                    t: "📊 YOURVISION CUP: ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ",
-                    b: "Группа F завершила свое выступление. Фавориты подтвердили свой статус, а борьба за вторую путевку в плей-офф шла до последнего голоса.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b><br><br>• 🥇 <b>АРМЕНИЯ:</b> 60% (Simón) - <b>QUALIFIED</b><br>• 🥈 <b>АВСТРАЛИЯ:</b> 46% (Delta Goodrem) - <b>QUALIFIED</b><br>• 🥉 <b>БЕЛЬГИЯ:</b> 40% (Essyla) - <b>SECOND CHANCE</b><br>• 4. ИЗРАИЛЬ: 26% (Noam Bettan)<br>• 5. СЕРБИЯ: 26% (Lavina)<hr>Simón из Армении уверенно забирает золото группы с хитом «Paloma rumba», набрав 60% голосов экспертов. Delta Goodrem (Австралия) возвращается в большую игру, обеспечив себе место в 1/8 финала с результатом 46%.<br><br>Драма раунда развернулась вокруг Бельгии: Essyla набирает 40% и отправляется в корзину «Второго шанса», сохраняя надежду на финал. Noam Bettan и Lavina, набрав по 26%, покидают турнир.",
-                    u: "https://t.me/YourEurovision/5481"
-                },
-                {
-                    m: "22.03 | 21:30 | YOURVISION: NEW FORMAT",
-                    t: "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - АНАЛИЗ ВЫБОРА",
-                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b><br><br>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами и была ли прошлогодняя стратегия более жизнеспособной для большой сцены.<hr>Первый аудит стартует завтра вечером. С какой страны начнем разбор?",
+                    m: "22.03 | 21:30 | PROTOCOL THE RESET",
+                    t: "YOURVISION: ПРОТОКОЛ «THE RESET» - АНАЛИЗ ВЫБОРА",
+                    id: "70",
+                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b><br><br>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами.<hr>Первый аудит стартует завтра вечером.",
                     u: "https://t.me/YourEurovision/5477"
                 },
                 {
-                    m: "22.03 | 18:00 | ALMANAC: MARGINALIA",
-                    t: "🥐 [MARGINALIA](https://t.me/almanac_marginalia): ТЕКСТ №03 - ВОСКРЕСНАЯ ЭФФЕКТИВНОСТЬ",
-                    b: "Воскресенье не создано для сложных конструкций. Это день «малых форм» - и в мыслях, и на кухне. Сегодня в архиве рецепт, который в Латвии знают все, но я хочу показать его через призму абсолютного минимализма. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr><b>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)</b><br><br>• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки (для особой легкости).<br>• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара. Сахар мы добавим в конце, в виде капли меда.<br>• Метод: Сформировать небольшие диски и обжарить на капле топленого масла на среднем огне.<hr>Подавать теплыми, на простой керамике. Это тот случай, когда вкус говорит громче, чем декор. Идеальный финал для недели, которая требовала от нас слишком многого.",
-                    u: "https://t.me/almanac_marginalia/5"
-                },
-                {
                     m: "22.03 | 20:00 | DNA: ARTIST DOSSIER",
-                    t: "🧬 DNA: ВЕЛИКОБРИТАНИЯ - LOOK MUM NO COMPUTER",
-                    b: "Сэм Баттл - человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b><br><br>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня - это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.<hr><b>VERDICT:</b> Британия «пошла во все тяжкие». Сэм Баттл - это либо полный провал, либо культовый момент, который будут пересматривать годами.",
+                    t: "DNA: ВЕЛИКОБРИТАНИЯ - LOOK MUM NO COMPUTER",
+                    id: "gb",
+                    b: "Сэм Баттл - человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b><br><br>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня - это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.<hr><b>VERDICT:</b> Британия «пошла во все тяжкие». Сэм Баттл - это либо полный провал, либо культовый момент.",
                     u: "https://t.me/YourEurovision/5471"
                 },
                 {
+                    m: "22.03 | 18:00 | ALMANAC: MARGINALIA",
+                    t: "🥐 ТЕКСТ №03 - ВОСКРЕСНАЯ ЭФФЕКТИВНОСТЬ",
+                    id: "lv",
+                    b: "Воскресенье не создано для сложных конструкций. Это день «малых форм» - и в мыслях, и на кухне. Сегодня в архиве рецепт творожных лепешек (Biezpiena plācenīši), приготовленных на сковороде.<hr>• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки.<br>• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара. Сахар мы добавим в конце, в виде капли меда.<hr>Подавать теплыми, на простой керамике. Идеальный финал для недели, которая требовала от нас слишком многого.",
+                    u: "https://t.me/almanac_marginalia/5"
+                },
+                {
+                    m: "22.03 | 11:15 | YOURVISION CUP: RESULTS",
+                    t: "📊 ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ",
+                    id: "am",
+                    b: "Группа F завершила свое выступление. Фавориты подтвердили свой статус, а борьба за вторую путевку в плей-офф шла до последнего голоса.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b><br><br>• 🥇 <b>АРМЕНИЯ:</b> 60% (Simón) - <b>QUALIFIED</b><br>• 🥈 <b>АВСТРАЛИЯ:</b> 46% (Delta Goodrem) - <b>QUALIFIED</b><br>• 🥉 <b>БЕЛЬГИЯ:</b> 40% (Essyla) - <b>SECOND CHANCE</b><br>• 4. ИЗРАИЛЬ: 26% (Noam Bettan)<br>• 5. СЕРБИЯ: 26% (Lavina)<hr>Simón из Армении уверенно забирает золото группы с хитом «Paloma rumba». Delta Goodrem (Австралия) возвращается в большую игру, обеспечив себе место в 1/8 финала.",
+                    u: "https://t.me/YourEurovision/5481"
+                },
+                {
                     m: "22.03 | 11:00 | LIVE: PRE-PARTY",
-                    t: "🇳🇴 ОСЛО 2026: ПЕРВАЯ ПРЕ-ПАТИ СЕЗОНА - КТО ВЫЖИЛ ПОСЛЕ LIVE?",
-                    b: "В Осло завершилась Nordic Eurovision Party - первая масштабная проверка вокальных и сценических данных участников Вены-2026. На сцену вышли 17 артистов, предоставив фанатам и букмекерам пищу для первых серьезных размышлений.<hr>Осло подтвердило: студийные версии - это лишь половина дела. Некоторые страны значительно усилили свои позиции за счет вокальной стабильности, другие же заставили экспертов сомневаться.<br><br>Чий живой звук впечатлил вас больше всего? Ждем ваши оценки в комментариях!",
+                    t: "🇳🇴 ОСЛО 2026: Nordic Eurovision Party",
+                    id: "no",
+                    b: "В Осло завершилась первая масштабная проверка вокальных и сценических данных участников Вены-2026. На сцену вышли 17 артистов.<hr>Осло подтвердило: студийные версии — это лишь половина дела. Некоторые страны значительно усилили свои позиции за счет вокальной стабильности, другие же заставили экспертов сомневаться.<br><br>Чий живой звук впечатлил вас больше всего?",
                     u: "https://t.me/YourEurovision/5478"
                 }
             ]
         };
 
-        function getHeartUrl(id) { return `https://www.eurovision.com/static/images/flags/flag_${id}.svg`; }
+        function getHeartUrl(id) { 
+            if (id === "70") return "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
+            return `https://www.eurovision.com/static/images/flags/flag_${id}.svg`; 
+        }
 
         function render() {
             document.getElementById('scoreboard-body').innerHTML = DATA.qualifiers.map(q => `<div class="scoreboard-row"><img src="${getHeartUrl(q.id)}" class="heart-icon"><b>${q.c.toUpperCase()}</b><span class="badge badge-qualified">Qualified</span></div>`).join('');
             document.getElementById('wildcard-body').innerHTML = DATA.wildcards.map(w => `<div class="scoreboard-row"><img src="${getHeartUrl(w.id)}" class="heart-icon"><b>${w.c.toUpperCase()}</b><span class="badge badge-second">2nd Chance</span></div>`).join('');
             document.getElementById('eliminated-body').innerHTML = DATA.eliminated.map(e => `<div class="scoreboard-row" style="opacity:0.5;"><img src="${getHeartUrl(e.id)}" class="heart-icon" style="filter:grayscale(100%);"><b>${e.c.toUpperCase()}</b><span class="badge" style="background:#444;">Eliminated</span></div>`).join('');
-            document.getElementById('news-body').innerHTML = DATA.news.map(n => `
-                <div class="news-item">
-                    <span class="news-date">${n.d}</span>
-                    <a href="${n.u}" target="_blank" class="news-title-link">
-                        ${n.id ? `<img src="${getHeartUrl(n.id)}" class="news-heart">` : ''}
-                        <span class="news-title">${n.t}</span>
-                    </a>
-                </div>
-            `).join('');
+            document.getElementById('news-body').innerHTML = DATA.news.map(n => `<div class="news-item"><span class="news-date">${n.d}</span><a href="${n.u}" target="_blank" class="news-title-link">${n.id ? `<img src="${getHeartUrl(n.id)}" class="news-heart">` : ''}<span class="news-title">${n.t}</span></a></div>`).join('');
             
             document.getElementById('latest-posts-container').innerHTML = DATA.fullPosts.map(p => `
                 <div class="full-post-card">
                     <span class="full-post-meta">${p.m}</span>
-                    <div class="section-title" style="border:none; padding:0; font-size:1.2rem; margin-bottom:20px;">${p.t}</div>
+                    <div class="post-title-wrapper">
+                        <img src="${getHeartUrl(p.id)}" class="post-heart">
+                        <div class="section-title" style="border:none; padding:0; font-size:1.3rem; margin-bottom:0;">${p.t}</div>
+                    </div>
                     <div class="full-post-body">${p.b}</div>
-                    <div class="full-post-footer">⏱ ЧТЕНИЕ: 1.2 МИН | <a href="${p.u}" target="_blank" style="color:inherit">ОРИГИНАЛ В TELEGRAM</a></div>
+                    <div class="full-post-footer">⏱ ЧТЕНИЕ: 1.5 МИН | <a href="${p.u}" target="_blank" style="color:inherit">ОРИГИНАЛ В TELEGRAM</a></div>
                 </div>
             `).join('');
         }
