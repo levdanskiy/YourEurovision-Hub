@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourEurovision | Vienna 2026 Insider Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:wght@900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <link rel="icon" href="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" type="image/webp">
     <style>
         :root {
@@ -38,15 +37,20 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* FULL POST CARDS WITH HEARTS */
-        .full-post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 40px; margin-bottom: 50px; line-height: 1.8; }
-        .full-post-meta { font-size: 0.65rem; color: var(--accent-pink); font-weight: 900; text-transform: uppercase; margin-bottom: 25px; display: block; letter-spacing: 0.1em; }
-        .post-title-wrapper { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-        .post-heart { width: 45px; height: auto; flex-shrink: 0; }
-        .full-post-body { font-size: 1.05rem; color: #ccc; white-space: pre-wrap; }
-        .full-post-body b { color: #fff; font-weight: 900; }
-        .full-post-body hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0; }
-        .full-post-footer { margin-top: 40px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; }
+        /* ULTIMATE NEWS FEED */
+        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 50px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
+        .full-post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 0; margin-bottom: 80px; line-height: 1.8; overflow: hidden; transition: 0.4s; }
+        .full-post-card:hover { border-color: var(--accent-cyan); box-shadow: 0 0 60px rgba(0,245,255,0.15); transform: translateY(-5px); }
+        .post-media { width: 100%; max-height: 650px; object-fit: cover; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .post-content-padding { padding: 50px; }
+        .full-post-meta { font-size: 0.8rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 30px; display: block; letter-spacing: 0.2em; }
+        .post-title-wrapper { display: flex; align-items: center; gap: 25px; margin-bottom: 40px; }
+        .post-heart { width: 80px; height: auto; filter: drop-shadow(0 0 15px var(--accent-pink)); }
+        .post-main-title { font-family: 'Inter Tight', sans-serif; font-size: 2.8rem; font-weight: 900; line-height: 1.05; background: linear-gradient(to right, #fff, var(--accent-pink), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
+        .full-post-body { font-size: 1.2rem; color: #eee; white-space: pre-wrap; }
+        .full-post-body b { color: var(--accent-acid); font-weight: 900; text-transform: uppercase; font-size: 1rem; letter-spacing: 0.05em; display: block; margin-top: 40px; margin-bottom: 20px; border-left: 5px solid var(--accent-acid); padding-left: 25px; }
+        .full-post-body hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 50px 0; }
+        .full-post-footer { margin-top: 60px; padding-top: 35px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; display: flex; justify-content: space-between; align-items: center; }
 
         /* PLAYER & HISTORY */
         .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; background-image: url('https://myradio24.com/users/levdanskiy/cover.jpg'); margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
@@ -83,9 +87,9 @@
         </nav>
 
         <div class="timers-hero">
-            <a href="https://www.youtube.com/watch?v=wYEIv2qhYAI" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf1">...</span><span class="timer-label" style="color:var(--accent-cyan);">Semi-Final 1 / 12.05</span></div></a>
-            <a href="https://www.youtube.com/watch?v=VeLS4psFNqQ" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf2">...</span><span class="timer-label" style="color:var(--accent-acid);">Semi-Final 2 / 14.05</span></div></a>
-            <a href="https://www.youtube.com/watch?v=Yy510SZZDw4" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-gf">...</span><span class="timer-label" style="color:var(--accent-pink);">Grand Final / 16.05</span></div></a>
+            <div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf1">...</span><span class="timer-label" style="color:var(--accent-cyan);">Semi-Final 1 / 12.05</span></div></div>
+            <div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf2">...</span><span class="timer-label" style="color:var(--accent-acid);">Semi-Final 2 / 14.05</span></div></div>
+            <div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-gf">...</span><span class="timer-label" style="color:var(--accent-pink);">Grand Final / 16.05</span></div></div>
         </div>
 
         <div class="layout">
@@ -111,6 +115,8 @@
                     <div id="wildcard-body"></div>
                     <div id="eliminated-section"><div class="section-title" style="margin-top:40px; border-color:var(--text-dim);">Eliminated / RESET</div><div id="eliminated-body"></div></div>
                 </div>
+
+                <div class="feed-title">INSIDER NEWS FEED</div>
                 <div id="latest-posts-container"></div>
             </main>
 
@@ -129,52 +135,57 @@
             wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
             eliminated: [{c: "Luxembourg", id: "lu"}, {c: "Romania", id: "ro"}, {c: "Lithuania", id: "lt"}, {c: "Croatia", id: "hr"}, {c: "Latvia", id: "lv"}, {c: "Czechia", id: "cz"}, {c: "Ukraine", id: "ua"}, {c: "Estonia", id: "ee"}, {c: "Portugal", id: "pt"}, {c: "Azerbaijan", id: "az"}, {c: "Israel", id: "il"}, {c: "Serbia", id: "rs"}],
             news: [
-                {d: "22.03 | 21:30", t: "🧪 THE RESET ANNOUNCE", u: "https://t.me/YourEurovision/5477"},
+                {d: "22.03 | 22:30", id: "pl", t: "📊 POLL: GROUP G RESULTS", u: "https://t.me/YourEurovision/5482"},
+                {d: "22.03 | 21:30", id: "70", t: "🧪 THE RESET ANNOUNCE", u: "https://t.me/YourEurovision/5477"},
                 {d: "22.03 | 20:00", id: "gb", t: "🧬 DNA: UK — SAM BATTLE", u: "https://t.me/YourEurovision/5471"},
                 {d: "22.03 | 18:00", id: "lv", t: "🥐 ALMANAC: ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5"},
                 {d: "22.03 | 11:15", id: "am", t: "📊 ИТОГИ ГРУППЫ F", u: "https://t.me/YourEurovision/5481"},
                 {d: "22.03 | 11:00", id: "no", t: "🇳🇴 OSLO PRE-PARTY", u: "https://t.me/YourEurovision/5478"},
-                {d: "22.03 | 01:11", t: "📊 WATCH PARTY POLL", u: "https://t.me/YourEurovision/5480"},
-                {d: "22.03 | 01:10", t: "📺 ONLINE WATCH PARTY", u: "https://t.me/YourEurovision/5479"},
-                {d: "22.03 | 00:17", t: "🏛 ALMANAC: НИТЬ ЛАЙМЫ", u: "https://t.me/almanac_marginalia/4"},
-                {d: "21.03 | 18:00", t: "🥐 ALMANAC: КАРДАМОН", u: "https://t.me/almanac_marginalia/3"},
-                {d: "21.03 | 20:00", id: "hr", t: "🧬 DNA: CROATIA - LELEK", u: "https://t.me/YourEurovision/5471"}
+                {d: "22.03 | 01:11", id: "70", t: "📊 WATCH PARTY POLL", u: "https://t.me/YourEurovision/5480"},
+                {d: "22.03 | 01:10", id: "70", t: "📺 ONLINE WATCH PARTY", u: "https://t.me/YourEurovision/5479"},
+                {d: "22.03 | 00:17", id: "70", t: "🏛 ALMANAC: НИТЬ ЛАЙМЫ", u: "https://t.me/almanac_marginalia/4"},
+                {d: "21.03 | 18:00", id: "70", t: "🥐 ALMANAC: КАРДАМОН", u: "https://t.me/almanac_marginalia/3"}
             ],
             fullPosts: [
                 {
-                    m: "22.03 | 21:30 | PROTOCOL THE RESET",
-                    t: "YOURVISION: ПРОТОКОЛ «THE RESET» - АНАЛИЗ ВЫБОРА",
+                    m: "22.03 | 22:30 | YOURVISION CUP",
+                    t: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?",
                     id: "70",
-                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику - THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b><br><br>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами.<hr>Первый аудит стартует завтра вечером.",
+                    img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg",
+                    b: "Группа G выходит на арену! Решающее голосование за последних участников плей-офф.<hr><b>УЧАСТНИКИ:</b><br>• Франция: Monroe — Regarde !<br>• Дания: Søren Torpegaard Lund — Før vi går hjem<br>• Кипр: Antigoni — Jalla<br>• Австрия: Cosmó — Tanzschein<br>• Польша: Alicja — Pray",
+                    u: "https://t.me/YourEurovision/5482"
+                },
+                {
+                    m: "22.03 | 21:30 | PROTOCOL THE RESET",
+                    t: "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» — АНАЛИЗ ВЫБОРА",
+                    id: "70",
+                    img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg",
+                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику — THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами.<hr>Первый аудит стартует завтра вечером.",
                     u: "https://t.me/YourEurovision/5477"
                 },
                 {
                     m: "22.03 | 20:00 | DNA: ARTIST DOSSIER",
-                    t: "DNA: ВЕЛИКОБРИТАНИЯ - LOOK MUM NO COMPUTER",
+                    t: "🧬 DNA: ВЕЛИКОБРИТАНИЯ — LOOK MUM NO COMPUTER",
                     id: "gb",
-                    b: "Сэм Баттл - человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b><br><br>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня - это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.<hr><b>VERDICT:</b> Британия «пошла во все тяжкие». Сэм Баттл - это либо полный провал, либо культовый момент.",
+                    img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg",
+                    b: "Сэм Баттл — человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня — это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.",
                     u: "https://t.me/YourEurovision/5471"
                 },
                 {
                     m: "22.03 | 18:00 | ALMANAC: MARGINALIA",
-                    t: "🥐 ТЕКСТ №03 - ВОСКРЕСНАЯ ЭФФЕКТИВНОСТЬ",
+                    t: "🥐 ТЕКСТ №03 — ВОСКРЕСНАЯ ЭФФЕКТИВНОСТЬ",
                     id: "lv",
-                    b: "Воскресенье не создано для сложных конструкций. Это день «малых форм» - и в мыслях, и на кухне. Сегодня в архиве рецепт творожных лепешек (Biezpiena plācenīši), приготовленных на сковороде.<hr>• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки.<br>• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара. Сахар мы добавим в конце, в виде капли меда.<hr>Подавать теплыми, на простой керамике. Идеальный финал для недели, которая требовала от нас слишком многого.",
+                    img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg",
+                    b: "Воскресенье не создано для сложных конструкций. Это день «малых форм» — и в мыслях, и на кухне. Сегодня в архиве рецепт творожных лепешек (Biezpiena plācenīši), приготовленных на сковороде.<hr><b>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)</b>• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки.<br>• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара. Сахар мы добавим в конце, в виде капли меда.<hr>Подавать теплыми, на простой керамике. Идеальный финал для недели.",
                     u: "https://t.me/almanac_marginalia/5"
                 },
                 {
                     m: "22.03 | 11:15 | YOURVISION CUP: RESULTS",
-                    t: "📊 ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ",
+                    t: "📊 ИТОГИ ГРУППЫ F — ЕРЕВАНСКИЙ ТРИУМФ",
                     id: "am",
-                    b: "Группа F завершила свое выступление. Фавориты подтвердили свой статус, а борьба за вторую путевку в плей-офф шла до последнего голоса.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b><br><br>• 🥇 <b>АРМЕНИЯ:</b> 60% (Simón) - <b>QUALIFIED</b><br>• 🥈 <b>АВСТРАЛИЯ:</b> 46% (Delta Goodrem) - <b>QUALIFIED</b><br>• 🥉 <b>БЕЛЬГИЯ:</b> 40% (Essyla) - <b>SECOND CHANCE</b><br>• 4. ИЗРАИЛЬ: 26% (Noam Bettan)<br>• 5. СЕРБИЯ: 26% (Lavina)<hr>Simón из Армении уверенно забирает золото группы с хитом «Paloma rumba». Delta Goodrem (Австралия) возвращается в большую игру, обеспечив себе место в 1/8 финала.",
+                    img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg",
+                    b: "Группа F завершила свое выступление. Фавориты подтвердили свой статус, а борьба за вторую путевку в плей-офф шла до последнего голоса.<hr><b>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:</b>• 🥇 <b>АРМЕНИЯ:</b> 60% (Simón) - <b>QUALIFIED</b><br>• 🥈 <b>АВСТРАЛИЯ:</b> 46% (Delta Goodrem) - <b>QUALIFIED</b><br>• 🥉 <b>БЕЛЬГИЯ:</b> 40% (Essyla) - <b>SECOND CHANCE</b><hr>Simón из Армении уверенно забирает золото группы с хитом «Paloma rumba». Delta Goodrem (Австралия) возвращается в большую игру, обеспечив себе место в 1/8 финала.",
                     u: "https://t.me/YourEurovision/5481"
-                },
-                {
-                    m: "22.03 | 11:00 | LIVE: PRE-PARTY",
-                    t: "🇳🇴 ОСЛО 2026: Nordic Eurovision Party",
-                    id: "no",
-                    b: "В Осло завершилась первая масштабная проверка вокальных и сценических данных участников Вены-2026. На сцену вышли 17 артистов.<hr>Осло подтвердило: студийные версии — это лишь половина дела. Некоторые страны значительно усилили свои позиции за счет вокальной стабильности, другие же заставили экспертов сомневаться.<br><br>Чий живой звук впечатлил вас больше всего?",
-                    u: "https://t.me/YourEurovision/5478"
                 }
             ]
         };
@@ -192,13 +203,19 @@
             
             document.getElementById('latest-posts-container').innerHTML = DATA.fullPosts.map(p => `
                 <div class="full-post-card">
-                    <span class="full-post-meta">${p.m}</span>
-                    <div class="post-title-wrapper">
-                        <img src="${getHeartUrl(p.id)}" class="post-heart">
-                        <div class="section-title" style="border:none; padding:0; font-size:1.3rem; margin-bottom:0;">${p.t}</div>
+                    ${p.img ? `<img src="${p.img}" class="post-media">` : ''}
+                    <div class="post-content-padding">
+                        <span class="full-post-meta">${p.m}</span>
+                        <div class="post-title-wrapper">
+                            <img src="${getHeartUrl(p.id)}" class="post-heart">
+                            <div class="post-main-title">${p.t}</div>
+                        </div>
+                        <div class="full-post-body">${p.b}</div>
+                        <div class="full-post-footer">
+                            <span>⏱ READ TIME: 1.5 MIN</span>
+                            <a href="${p.u}" target="_blank" style="color:var(--accent-pink); text-decoration:none; font-weight:900;">ОРИГИНАЛ В TELEGRAM</a>
+                        </div>
                     </div>
-                    <div class="full-post-body">${p.b}</div>
-                    <div class="full-post-footer">⏱ ЧТЕНИЕ: 1.5 МИН | <a href="${p.u}" target="_blank" style="color:inherit">ОРИГИНАЛ В TELEGRAM</a></div>
                 </div>
             `).join('');
         }
