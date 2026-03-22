@@ -37,7 +37,7 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* REAL MEDIA NEWS FEED V3 */
+        /* REAL MEDIA FEED V4 */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 50px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .full-post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; padding: 0; margin-bottom: 80px; line-height: 1.8; overflow: hidden; transition: 0.4s; }
         .full-post-card:hover { border-color: var(--accent-cyan); box-shadow: 0 0 60px rgba(0,245,255,0.15); transform: translateY(-5px); }
@@ -46,7 +46,7 @@
         .full-post-meta { font-size: 0.8rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 30px; display: block; letter-spacing: 0.2em; }
         .post-title-wrapper { display: flex; align-items: center; gap: 25px; margin-bottom: 40px; }
         .post-heart { width: 80px; height: auto; filter: drop-shadow(0 0 15px var(--accent-pink)); }
-        .post-main-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; line-height: 1.05; background: linear-gradient(to right, #fff, var(--accent-pink), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
+        .post-main-title { font-family: 'Inter Tight', sans-serif; font-size: 2.8rem; font-weight: 900; line-height: 1.05; background: linear-gradient(to right, #fff, var(--accent-pink), var(--accent-cyan)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
         .full-post-body { font-size: 1.25rem; color: #eee; white-space: pre-wrap; }
         .full-post-body b { color: var(--accent-acid); font-weight: 900; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 0.05em; display: block; margin-top: 40px; margin-bottom: 20px; border-left: 5px solid var(--accent-acid); padding-left: 25px; }
         .full-post-body hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 50px 0; }
@@ -124,11 +124,7 @@
     </div>
 
     <script>
-        var DATES = { 
-            sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), 
-            sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), 
-            gf: new Date("2026-05-16T22:00:00+03:00").getTime() 
-        };
+        var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
             qualifiers: [{c: "Georgia", id: "ge"}, {c: "Albania", id: "al"}, {c: "Sweden", id: "se"}, {c: "UK", id: "gb"}, {c: "Greece", id: "gr"}, {c: "Italy", id: "it"}, {c: "Moldova", id: "md"}, {c: "Malta", id: "mt"}, {c: "Finland", id: "fi"}, {c: "Montenegro", id: "me"}, {c: "Armenia", id: "am"}, {c: "Australia", id: "au"}],
             wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
@@ -159,7 +155,7 @@
                     t: "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» — АНАЛИЗ ВЫБОРА",
                     id: "70",
                     img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg",
-                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику — THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами.<hr>Первый аудит стартует завтра вечером. С какой страны начнем разбор?",
+                    b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран, которые считались фундаментальными столпами сезона. Этот крах фаворитов заставляет нас задать важный вопрос: была ли смена курса в 2026-м году оправданной?<br><br>Мы запускаем новую рубрику — THE RESET.<hr><b>МЕХАНИКА ПРОТОКОЛА</b>Каждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит: сталкивать её текущую заявку с артистом прошлого года (Базель-2025). Это не просто опрос «кто лучше». Это попытка понять, не потеряла ли страна свою идентичность в погоне за новыми трендами.",
                     u: "https://t.me/YourEurovision/5477"
                 },
                 {
@@ -167,12 +163,12 @@
                     t: "🧬 DNA: ВЕЛИКОБРИТАНИЯ — LOOK MUM NO COMPUTER",
                     id: "gb",
                     img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg",
-                    b: "Сэм Баттл — человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня — это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.<hr><b>VERDICT:</b> Британия «пошла во все тяжкие». Сэм Баттл — это либо полный провал, либо культовый момент, который будут пересматривать годами.",
+                    b: "Сэм Баттл — человек-оркестр, изобретатель безумных машин и панк от мира электроники. Самый неординарный выбор BBC за последние десятилетия.<hr><b>STYLE & SOUND (ДНК)</b>Это «Analog Punk». Сэм использует только физические синтезаторы, создавая «грязный», живой звук, который невозможно повторить на компьютере. Его песня — это манифест побега от скучной офисной работы 9-to-5 в мир безумных грез. Визуально это хаос, вдохновленный «Robot Wars» и высокой модой 90-х.",
                     u: "https://t.me/YourEurovision/5471"
                 },
                 {
                     m: "22.03 | 18:00 | ALMANAC: MARGINALIA",
-                    t: "🥐 ТЕКСТ №03 — ВОСКРЕСНАЯ ЭФФЕКТИВНОСТЬ",
+                    t: "🥐 [MARGINALIA](https://t.me/almanac_marginalia): ТЕКСТ №03 — ВОСКРЕСНАЯ ЭФФЕКТИВНОСТЬ",
                     id: "lv",
                     img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg",
                     b: "Воскресенье не создано для сложных конструкций. Это день «малых форм» — и в мыслях, и на кухне. Сегодня в архиве рецепт творожных лепешек (Biezpiena plācenīši), приготовленных на сковороде.<hr><b>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)</b>• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки.<br>• Нюанс: Добавьте цедру лимона или щепотку соли вместо сахара. Сахар мы добавим в конце, в виде капли меда.<hr>Подавать теплыми, на простой керамике. Идеальный финал для недели.",
