@@ -37,30 +37,36 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
+        /* PARTICIPANT CARDS STYLES */
+        .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
         
-        .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
-        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
-        .heart-bubble { width: 30px; height: auto; }
-        .country-name { font-size: 0.5rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
-        .status-q { border-bottom: 2px solid var(--accent-acid); }
-        .status-wc { border-bottom: 2px solid var(--accent-cyan); }
-        .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
+        .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 20px; }
+        .participant-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; position: relative; }
+        .participant-card:hover { border-color: var(--accent-cyan); transform: translateY(-3px); background: rgba(255,255,255,0.05); }
+        .part-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #111; }
+        .part-heart { position: absolute; top: 8px; right: 8px; width: 22px; height: auto; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
+        .part-info { padding: 10px; display: flex; flex-direction: column; gap: 2px; }
+        .part-artist { font-weight: 900; text-transform: uppercase; font-size: 0.6rem; color: #fff; line-height: 1.1; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .part-song { font-size: 0.55rem; color: #888; line-height: 1.1; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        
+        .status-q { border-bottom: 3px solid var(--accent-acid); }
+        .status-wc { border-bottom: 3px solid var(--accent-cyan); }
+        .status-el { opacity: 0.5; grayscale: 100%; border-bottom: 3px solid #444; }
 
-        /* UNIFIED CHART & HISTORY TABLE STYLE */
+        /* UNIFIED CHART/HISTORY TABLES */
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
         .chart-cell { padding: 12px 5px; vertical-align: middle; }
         .rank { font-weight: 900; color: var(--accent-cyan); width: 45px; text-align: center; font-size: 1.1rem; }
         .track-cover { width: 45px; height: 45px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
         .info-cell { display: flex; flex-direction: column; gap: 2px; }
-        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.85rem; color: #fff; line-height: 1.1; }
-        .song { font-size: 0.85rem; color: #888; font-weight: 700; line-height: 1.1; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.85rem; color: #fff; }
+        .song { font-size: 0.85rem; color: #888; font-weight: 700; }
         .pts { font-weight: 900; color: var(--accent-pink); width: 70px; text-align: right; font-size: 1rem; }
         .trnd { width: 45px; text-align: center; font-weight: 900; font-size: 0.6rem; }
 
-        /* NEWS GRID BY 2 */
+        /* NEWS GRID */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
@@ -125,11 +131,11 @@
             <main class="column">
                 <div class="card">
                     <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
-                    <div class="grid-sub-header">QUALIFIED</div>
+                    <div class="grid-sub-header">1/8 FINALS / QUALIFIED</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
                     <div class="grid-sub-header">SECOND CHANCE</div>
                     <div id="grid-wildcards" class="tournament-grid"></div>
-                    <div class="grid-sub-header">ELIMINATED</div>
+                    <div class="grid-sub-header">ELIMINATED / THE RESET</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
 
@@ -165,9 +171,42 @@
     <script>
         var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
-            qualifiers: [{c: "GE", id: "ge"}, {c: "AL", id: "al"}, {c: "SE", id: "se"}, {c: "UK", id: "gb"}, {c: "GR", id: "gr"}, {c: "IT", id: "it"}, {c: "MD", id: "md"}, {c: "MT", id: "mt"}, {c: "FI", id: "fi"}, {c: "ME", id: "me"}, {c: "AM", id: "am"}, {c: "AU", id: "au"}],
-            wildcards: [{c: "NO", id: "no"}, {c: "BG", id: "bg"}, {c: "DE", id: "de"}, {c: "SM", id: "sm"}, {c: "CH", id: "ch"}, {c: "BE", id: "be"}],
-            eliminated: [{c: "LU", id: "lu"}, {c: "RO", id: "ro"}, {c: "LT", id: "lt"}, {c: "HR", id: "hr"}, {c: "LV", id: "lv"}, {c: "CZ", id: "cz"}, {c: "UA", id: "ua"}, {c: "EE", id: "ee"}, {c: "PT", id: "pt"}, {c: "AZ", id: "az"}, {c: "IL", id: "il"}, {c: "RS", id: "rs"}],
+            qualifiers: [
+                {c: "GE", id: "ge", a: "Bzikebi", s: "On Replay", img: "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/03/8e/bc/038ebcb3-0e8e-4e8e-8e8e-0e8ebcb30e8e/cover.jpg/200x200bb.jpg"},
+                {c: "AL", id: "al", a: "Alis", s: "Nân", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"},
+                {c: "SE", id: "se", a: "Felicia", s: "My System", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"},
+                {c: "UK", id: "gb", a: "LMNC", s: "Eins, Zwei, Drei", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg"},
+                {c: "GR", id: "gr", a: "Akylas", s: "Beyond", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"},
+                {c: "IT", id: "it", a: "Sal Da Vinci", s: "Rossetto e Caffè", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg"},
+                {c: "MD", id: "md", a: "Satoshi", s: "O Noapte", img: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/200x200bb.jpg"},
+                {c: "MT", id: "mt", a: "Aidan", s: "Ritmu", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg"},
+                {c: "FI", id: "fi", a: "Linda & Pete", s: "Sata Salamaa", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg"},
+                {c: "ME", id: "me", a: "Tamara Živković", s: "Zabranjeno", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg"},
+                {c: "AM", id: "am", a: "Simón", s: "Paloma rumba", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg"},
+                {c: "AU", id: "au", a: "Delta Goodrem", s: "Hearts on Fire", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg"}
+            ],
+            wildcards: [
+                {c: "NO", id: "no", a: "Jonas Lovv", s: "Ya Ya Ya", img: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg"},
+                {c: "BG", id: "bg", a: "Dara", s: "Bangaranga", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"},
+                {c: "DE", id: "de", a: "Sarah Engels", s: "Te Amo", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg"},
+                {c: "SM", id: "sm", a: "Senhit", s: "Adrenalina", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg"},
+                {c: "CH", id: "ch", a: "Veronica Fusaro", s: "Better", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg"},
+                {c: "BE", id: "be", a: "Essyla", s: "Nocturne", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg"}
+            ],
+            eliminated: [
+                {c: "LU", id: "lu", a: "Eva Marija", s: "Stay", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg"},
+                {c: "RO", id: "ro", a: "Alexandra C", s: "Inima", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg"},
+                {c: "LT", id: "lt", a: "Lion Ceccah", s: "Neon", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg"},
+                {c: "HR", id: "hr", a: "LELEK", s: "Vatra", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg"},
+                {c: "LV", id: "lv", a: "Atvara", s: "Ziedi", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg"},
+                {c: "CZ", id: "cz", a: "Daniel Žižka", s: "Crossroads", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"},
+                {c: "UA", id: "ua", a: "Lelėka", s: "Kolysanka", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"},
+                {c: "EE", id: "ee", a: "Vanilla Ninja", s: "Encore", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"},
+                {c: "PT", id: "pt", a: "Bandidos", s: "Cante", img: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg"},
+                {c: "AZ", id: "az", a: "JIVA", s: "Oyan", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"},
+                {c: "IL", id: "il", a: "Noam Bettan", s: "Stay", img: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg"},
+                {c: "RS", id: "rs", a: "Lavina", s: "Oluja", img: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/200x200bb.jpg"}
+            ],
             chart: [
                 { r: 1, a: "Greczula", s: "Half of Me", p: 91, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
                 { r: 2, a: "Sissal", s: "Infinity", p: 70, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
@@ -223,10 +262,18 @@
         };
 
         function render() {
-            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.c}</span></div>`;
-            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
-            document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(c => bubble(c, 'status-wc')).join('');
-            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
+            const partCard = (p, st) => `
+                <div class="participant-card ${st}">
+                    <img src="${p.img}" class="part-img">
+                    <img src="${getHeartUrl(p.id)}" class="part-heart">
+                    <div class="part-info">
+                        <span class="part-artist">${p.a}</span>
+                        <span class="part-song">${p.s}</span>
+                    </div>
+                </div>`;
+            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(p => partCard(p, 'status-q')).join('');
+            document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(p => partCard(p, 'status-wc')).join('');
+            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(p => partCard(p, 'status-el')).join('');
             
             const cardHtml = p => {
                 let body = p.b.replace(/\[([A-Z]{2})\]/g, (m, id) => `<img src="${getHeartUrl(id)}" class="inline-heart">`);
@@ -240,7 +287,6 @@
                     <td class="chart-cell"><img src="${s.i}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
                     <td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td>
                     <td class="chart-cell pts">${s.p} pts</td>
-                    <td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td>
                 </tr>
             `).join('');
         }
