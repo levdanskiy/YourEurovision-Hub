@@ -27,62 +27,54 @@
         #clock { font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--accent-cyan); font-weight: 900; }
 
         .timers-hero { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 80px; }
-        .timer-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; backdrop-filter: blur(10px); text-decoration: none; }
+        .timer-card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; backdrop-filter: blur(10px); }
         .timer-poster { width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; border-bottom: 1px solid var(--glass-border); }
         .timer-info { padding: 15px 20px; background: rgba(0,0,0,0.4); }
         .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: #fff; display: block; }
         .timer-label { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
 
-        .layout { display: grid; grid-template-columns: 350px 1fr 400px; gap: 40px; align-items: start; }
+        /* UPDATED LAYOUT: 350px (Left) | 1fr (Center News) | 450px (Right Stats) */
+        .layout { display: grid; grid-template-columns: 350px 1fr 450px; gap: 40px; align-items: start; }
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
         
-        .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-        .heart-bubble { width: 35px; height: auto; }
-        .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
+        .tournament-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+        .country-bubble { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+        .heart-bubble { width: 30px; height: auto; }
+        .country-name { font-size: 0.5rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
         .status-q { border-bottom: 2px solid var(--accent-acid); }
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
-        /* LARGE PARALLEL CHART */
-        .chart-container-parallel { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        /* RIGHT COLUMN CHART STYLES */
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
         .chart-row:hover { background: rgba(255,255,255,0.03); }
-        .chart-cell { padding: 15px 10px; vertical-align: middle; }
-        .rank { font-weight: 900; color: var(--accent-cyan); width: 40px; text-align: center; font-size: 1.4rem; }
-        .cover-cell { width: 60px; }
-        .track-cover { width: 60px; height: 60px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
-        
-        /* VERTICAL ALIGNMENT FOR ARTIST & SONG */
-        .info-cell { display: flex; flex-direction: column; gap: 4px; justify-content: center; }
-        .artist { font-weight: 900; text-transform: uppercase; font-size: 1.1rem; color: #fff; line-height: 1; }
-        .song { font-size: 1.1rem; color: #aaa; font-weight: 700; line-height: 1; }
-        
-        .pts { font-weight: 900; color: var(--accent-pink); width: 85px; text-align: right; font-size: 1.2rem; }
-        .trnd { width: 55px; text-align: center; font-weight: 900; font-size: 0.7rem; }
+        .chart-cell { padding: 12px 5px; vertical-align: middle; }
+        .rank { font-weight: 900; color: var(--accent-cyan); width: 30px; text-align: center; font-size: 1.2rem; }
+        .track-cover { width: 50px; height: 50px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.6); }
+        .info-cell { display: flex; flex-direction: column; gap: 2px; justify-content: center; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.9rem; color: #fff; line-height: 1.1; }
+        .song { font-size: 0.9rem; color: #aaa; font-weight: 700; line-height: 1.1; }
+        .pts { font-weight: 900; color: var(--accent-pink); width: 70px; text-align: right; font-size: 1rem; }
+        .trnd { width: 45px; text-align: center; font-weight: 900; font-size: 0.6rem; }
         .trnd-HIT { color: var(--accent-cyan); }
         .trnd-UP { color: var(--accent-acid); }
-        .trnd-DOWN { color: #ff4444; }
 
-        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 80px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
-        .news-grid-top { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
-        .news-grid-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+        /* CENTER COLUMN NEWS FEED */
+        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 2.5rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 0 0 30px 0; text-align: left; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 2px solid var(--accent-pink); padding-bottom: 15px; }
+        .news-grid-main { display: flex; flex-direction: column; gap: 40px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
-        .post-card:hover { border-color: var(--accent-cyan); transform: translateY(-5px); }
         .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .post-content { padding: 30px; flex-grow: 1; }
+        .post-content { padding: 35px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        .post-heart-sm { width: 1.3rem; height: auto; flex-shrink: 0; vertical-align: baseline; }
-        .news-grid-top .post-heart-sm { width: 1.6rem; }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.3rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
-        .news-grid-top .post-h { font-size: 1.6rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
-        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; }
+        .post-heart-sm { width: 1.6rem; height: auto; flex-shrink: 0; }
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.6rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .post-b { font-size: 1.1rem; color: #eee; line-height: 1.7; white-space: pre-wrap; margin-top: 20px; }
+        .inline-heart { width: 16px; height: auto; vertical-align: middle; margin: 0 4px; }
 
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; letter-spacing: -0.05em; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; text-shadow: 0 0 30px var(--accent-pink); } 100% { opacity: 1; } }
@@ -109,13 +101,6 @@
         .footer-link { color: #fff; text-decoration: none; font-weight: 900; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; transition: 0.3s; }
         .footer-link:hover { color: var(--accent-pink); text-shadow: 0 0 10px var(--accent-pink); }
         .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
-
-        #news-wire-title { font-size: 1.5rem; font-weight: 900; color: #fff; text-shadow: 0 0 15px var(--accent-pink); margin-bottom: 30px; text-transform: uppercase; }
-        .news-item { margin-bottom: 30px; border-left: 2px solid rgba(255,0,127,0.3); padding-left: 15px; }
-        .news-date { font-size: 0.65rem; color: var(--accent-pink); font-weight: 900; display: block; margin-bottom: 5px; }
-        .news-title-link { display: flex; align-items: center; text-decoration: none; color: #fff; margin-bottom: 5px; gap: 8px; }
-        .news-title { font-size: 0.9rem; font-weight: 900; }
-        .news-heart { width: 18px; height: auto; flex-shrink: 0; }
     </style>
 </head>
 <body>
@@ -147,30 +132,26 @@
             </aside>
 
             <main class="column">
+                <div class="feed-title">INSIDER NEWS FEED [FULL]</div>
+                <div id="news-grid" class="news-grid-main"></div>
+            </main>
+
+            <aside class="column">
                 <div class="card">
-                    <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
-                    <div class="grid-sub-header">1/8 FINALS / QUALIFIED</div>
+                    <div class="section-title">YOURVISION CUP / 2026</div>
+                    <div class="grid-sub-header">QUALIFIED</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
                     <div class="grid-sub-header">SECOND CHANCE</div>
                     <div id="grid-wildcards" class="tournament-grid"></div>
-                    <div class="grid-sub-header">ELIMINATED / THE RESET</div>
+                    <div class="grid-sub-header">ELIMINATED</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
 
-                <div class="feed-title">INSIDER NEWS FEED</div>
-                <div id="grid-2-top" class="news-grid-top"></div>
-                <div id="grid-3-bottom" class="news-grid-bottom"></div>
-
-                <div class="card" style="margin-top:40px;">
-                    <div class="section-title">EUROGROOVE: MULTIVERSE RUNNERS UP / FULL TOP 24</div>
-                    <div class="chart-container-parallel">
-                        <table class="chart-table" id="chart-left"></table>
-                        <table class="chart-table" id="chart-right"></table>
-                    </div>
+                <div class="card">
+                    <div class="section-title">EUROGROOVE / FULL TOP 24</div>
+                    <table class="chart-table" id="chart-body"></table>
                 </div>
-            </main>
-
-            <aside class="column"><div class="card"><div id="news-wire-title">News_Wire [10]</div><div id="news-body"></div></div></aside>
+            </aside>
         </div>
     </div>
 
@@ -193,9 +174,9 @@
     <script>
         var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
-            qualifiers: [{c: "Georgia", id: "ge"}, {c: "Albania", id: "al"}, {c: "Sweden", id: "se"}, {c: "UK", id: "gb"}, {c: "Greece", id: "gr"}, {c: "Italy", id: "it"}, {c: "Moldova", id: "md"}, {c: "Malta", id: "mt"}, {c: "Finland", id: "fi"}, {c: "Montenegro", id: "me"}, {c: "Armenia", id: "am"}, {c: "Australia", id: "au"}],
-            wildcards: [{c: "Norway", id: "no"}, {c: "Bulgaria", id: "bg"}, {c: "Germany", id: "de"}, {c: "San Marino", id: "sm"}, {c: "Switzerland", id: "ch"}, {c: "Belgium", id: "be"}],
-            eliminated: [{c: "Luxembourg", id: "lu"}, {c: "Romania", id: "ro"}, {c: "Lithuania", id: "lt"}, {c: "Croatia", id: "hr"}, {c: "Latvia", id: "lv"}, {c: "Czechia", id: "cz"}, {c: "Ukraine", id: "ua"}, {c: "Estonia", id: "ee"}, {c: "Portugal", id: "pt"}, {c: "Azerbaijan", id: "az"}, {c: "Israel", id: "il"}, {c: "Serbia", id: "rs"}],
+            qualifiers: [{c: "GE", id: "ge"}, {c: "AL", id: "al"}, {c: "SE", id: "se"}, {c: "UK", id: "gb"}, {c: "GR", id: "gr"}, {c: "IT", id: "it"}, {c: "MD", id: "md"}, {c: "MT", id: "mt"}, {c: "FI", id: "fi"}, {c: "ME", id: "me"}, {c: "AM", id: "am"}, {c: "AU", id: "au"}],
+            wildcards: [{c: "NO", id: "no"}, {c: "BG", id: "bg"}, {c: "DE", id: "de"}, {c: "SM", id: "sm"}, {c: "CH", id: "ch"}, {c: "BE", id: "be"}],
+            eliminated: [{c: "LU", id: "lu"}, {c: "RO", id: "ro"}, {c: "LT", id: "lt"}, {c: "HR", id: "hr"}, {c: "LV", id: "lv"}, {c: "CZ", id: "cz"}, {c: "UA", id: "ua"}, {c: "EE", id: "ee"}, {c: "PT", id: "pt"}, {c: "AZ", id: "az"}, {c: "IL", id: "il"}, {c: "RS", id: "rs"}],
             chart: [
                 { r: 1, a: "Greczula", s: "Half of Me", p: 91, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
                 { r: 2, a: "Sissal", s: "Infinity", p: 70, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
@@ -223,16 +204,9 @@
                 { r: 24, a: "Kelly Joyce", s: "Oh la la", p: 5, t: "HIT", i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg" }
             ],
             news: [
-                {d: "22.03 | 22:30", id: "pl", t: "КТО ДОСТОИН ПЛЕЙ-ОФФ?", u: "https://t.me/YourVision/5482"},
-                {d: "22.03 | 21:30", id: "70", t: "ПРОТОКОЛ THE RESET", u: "https://t.me/YourVision/5477"},
-                {d: "22.03 | 20:00", id: "gb", t: "DNA: UK - SAM BATTLE", u: "https://t.me/YourVision/5471"},
-                {d: "22.03 | 18:00", id: "lv", t: "ALMANAC: ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5"},
-                {d: "22.03 | 11:15", id: "am", t: "ИТОГИ ГРУППЫ F", u: "https://t.me/YourVision/5481"}
-            ],
-            fullPosts: [
                 { m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?", u: "https://t.me/YourVision/5482", img: "https://cdn4.telesco.pe/file/oF8JBsEBfad_FkgjCVeB-B6jZ5eyM5q5W4A63MkpkorysWTVOQoV4w2mFfzxISYzxCe3AjbIbbdc70UXZUCa0G30N6h0pCDpVLX7t80HFcgEUdKTTzKgs4Ym-PtaNBQlQUWyIZsSXPmt35zR2UBzbZqTvlnuXreM0XnZqJGYvlCiWWR_w2NBU5SzJy3Jmrl5vaf3NG9wUf4N0DJV5tgemr1juhdrduyR0ra46aWccOoxvx1gDof-rNILiQIiqiFV1Ai7AfN1fRXPwUqbIEr_AQ5nnrFqJH2_xMyYxn2mH7FTucG9E07_PTDV41DsLY4HWBk1DttwjhnOuTLvaahZIQ.jpg", b: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n[FR] Франция\n[DK] Дания\n[CY] Кипр\n[AT] Австрия\n[PL] Польша\n\nГолосуйте!" },
                 { m: "22.03 | 21:30", id: "70", u: "https://t.me/YourVision/5477", img: "https://cdn4.telesco.pe/file/VRMALdbirJEM4IcBReU6Q0VsyElgR1ey_T7tzzTx94AJq_YoslOqWEt2AXIlNCgw6nOZiOk2Db9-s8yjbX5ClDVQ18lf0QKXwuRYqtXFScfM2SVeVtd_jpbCat9OL9L3nW3xFlKQp_rdNHmXUVH2A2Ut5UQ8gHnSdkRZseROGeqNStY3WYS53Xp-LAaPzoRNa5oIdwjrL2kwbFrFa1dUCO1zid7XUoUjKUHYRmOcOIBb6QnDDcN_5yr05KHF2kxzuYtJWlR3Cl1XFpC9IiiaufYKS4U1fOc5MgYSvqLfRMYiJWJisn8lRzRD0PO-oPlkOy_7mKncGmfKUQyYB6YYIg.jpg", t: "YOURVISION: ПРОТОКОЛ THE RESET", b: "Турнирная таблица YourVision Cup неумолима: за последние дни мы потеряли несколько стран. Была ли смена курса в 2026-м году оправданной?\n\nМы запускаем новую рубрику - THE RESET.<hr>МЕХАНИКА ПРОТОКОЛА\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить сравнительный аудит." },
-                { m: "22.03 | 20:00", id: "gb", u: "https://t.me/YourVision/5471", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", t: "DNA: ВЕЛИКОБРИТАНИЯ - SAM BATTLE", b: "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC за последние десятилетия.<hr>STYLE & SOUND (ДНК)\nЭто Analog Punk. Сэм использует только физические синтезаторы, создавая грязный, живой звук." },
+                { m: "22.03 | 20:00", id: "gb", u: "https://t.me/YourVision/5471", img: "https://cdn4.telesco.pe/file/bz_6MG5X4xxRygQ6j8RHTApRhGGbRo-ro8AtJ7DPln_PHf7M7lJc92U_1hWRV_Qn4gzv41rWNHR6h5CZSHqYD4VBwOPHFohNmVT5BTYKwCP1UI2fbja2g-SUFdd581URRC68Xfe0r8x2iC-EGPxYXt712CyOFzs7koL9ppuKqHJ5Nvip0DeW46yV6n9Kx748squvS5qlSPluKO2jXKN6DwkCjD_OHqhkOatVSoMQHV3-kEB5aevXU2ec8ssMMrXUHgr7sp8b5lcA7dwAz5NctFARxFZVZ2L6isN7Tp6Ots1x0HM7WXK_G_fKkP1xDfq-dBjahrqB-Drg1mgM9Ob3tg.jpg", t: "DNA: ВЕЛИКОБРИТАНИЯ - SAM BATTLE", b: "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC за последние десятилетия.<hr>STYLE & SOUND (ДНК)\nЭто Analog Punk. Сэм использует только физические синтезаторы." },
                 { m: "22.03 | 18:00", id: "lv", u: "https://t.me/almanac_marginalia/5", img: "https://cdn4.telesco.pe/file/QTIiuWYEqmJkZu_WoEG0b_KZ8iHDSXbGJKllX9YFcXnvnS_Oco8lLl8ODYsTmdaEF-Ql2Rxfup4ORq-95Dtt8ieJaEVyvX-fsotC_pXqqSGN8cVWSlz4PHMivDqgCloVDYTeiFZT6pJG2e751Lolw_o_JLtEZO6M3263uwBwiNmY2U5U1ojctELGfwYfNNuCITCHy4cjSE8HLlkPqnmpCF34DseevvFfckNQlURuOzsIKIK2HDQu7luU9Aai6Xh03L6Wd-VnoVw8CUbKc67OcHT2mE_BdF3QcYpLgdmgyL1CfpaIx6SfPKe3EhcbDpQKYsDWLLfieXwEw0B2chN0kA.jpg", t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ", b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки." },
                 { m: "22.03 | 11:15", id: "am", u: "https://t.me/YourVision/5481", img: "https://cdn4.telesco.pe/file/koCuwC-cexQH35FpUanDFxFSlDVCNdMhc4ZkYX2ZhRR8uUYQwMXk4TL5oX5sxiSLAE301FmhZ-NpoWf3YJF6_8WRBfaTlett-I4PTXu5wYnQ7uxjzH_cCY1a7uad228AC3LYAKOaVQnPLSQsO7P6__b7l-MbONxUHnYfCwzkPBnm3LwMShBWLS7dfLM2FFdmOCC-YCafOrK4y7VaPtqWZm3Ma7bt-fTECEfbpvZtqjx5raOVYEIAZQgPrxlv9Wk5aSoW7et3KbxRvDXEEA2zwtkfmOQU-hhBep4ilZRzEHUSTfdbOcHivrHMLpcEfGK-cGfxjiANhplZ8Mzhiii8eA.jpg", t: "ИТОГИ ГРУППЫ F - ЕРЕВАНСКИЙ ТРИУМФ", b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n\n• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED\n• 🥉 [BE] БЕЛЬГИЯ: 40% (Essyla) - SECOND CHANCE" }
             ]
@@ -263,17 +237,21 @@
             document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(c => bubble(c, 'status-wc')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
-            const row = s => `<tr class="chart-row"><td class="chart-cell rank">${s.r}</td><td class="chart-cell cover-cell"><img src="${s.i}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td><td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td><td class="chart-cell pts">${s.p} pts</td><td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td></tr>`;
-            document.getElementById('chart-left').innerHTML = DATA.chart.slice(0,12).map(row).join('');
-            document.getElementById('chart-right').innerHTML = DATA.chart.slice(12,24).map(row).join('');
-
-            document.getElementById('news-body').innerHTML = DATA.news.map(n => `<div class="news-item"><span class="news-date">${n.d}</span><a href="${n.u}" target="_blank" class="news-title-link"><img src="${getHeartUrl(n.id)}" class="news-heart"><span class="news-title">${n.t}</span></a></div>`).join('');
             const cardHtml = p => {
                 let body = p.b.replace(/\[([A-Z]{2})\]/g, (m, id) => `<img src="${getHeartUrl(id)}" class="inline-heart">`);
                 return `<div class="post-card"><img src="${p.img}" class="post-img"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${body}</div></div></div>`;
             };
-            document.getElementById('grid-2-top').innerHTML = DATA.fullPosts.slice(0,2).map(cardHtml).join('');
-            document.getElementById('grid-3-bottom').innerHTML = DATA.fullPosts.slice(2,5).map(cardHtml).join('');
+            document.getElementById('news-grid').innerHTML = DATA.news.map(cardHtml).join('');
+
+            document.getElementById('chart-body').innerHTML = DATA.chart.map(s => `
+                <tr class="chart-row">
+                    <td class="chart-cell rank">${s.r}</td>
+                    <td class="chart-cell"><img src="${s.i}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                    <td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td>
+                    <td class="chart-cell pts">${s.p} pts</td>
+                    <td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td>
+                </tr>
+            `).join('');
         }
 
         document.getElementById('volume-slider').oninput = (e) => audio.volume = e.target.value;
