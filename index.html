@@ -48,18 +48,23 @@
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
-        /* LARGE CHART TABLES */
+        /* LARGE PARALLEL CHART */
         .chart-container-parallel { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
-        .chart-cell { padding: 12px 5px; vertical-align: middle; }
-        .rank { font-weight: 900; color: var(--accent-cyan); width: 35px; text-align: center; font-size: 1.3rem; }
-        .track-cover { width: 50px; height: 50px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
-        .info-cell { display: flex; flex-direction: column; gap: 2px; }
-        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.95rem; color: #fff; }
-        .song { font-size: 0.95rem; color: #aaa; font-weight: 700; }
-        .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1.1rem; }
-        .trnd { width: 45px; text-align: center; font-weight: 900; font-size: 0.65rem; }
+        .chart-row:hover { background: rgba(255,255,255,0.03); }
+        .chart-cell { padding: 15px 10px; vertical-align: middle; }
+        .rank { font-weight: 900; color: var(--accent-cyan); width: 40px; text-align: center; font-size: 1.4rem; }
+        .cover-cell { width: 60px; }
+        .track-cover { width: 60px; height: 60px; border-radius: 8px; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
+        
+        /* VERTICAL ALIGNMENT FOR ARTIST & SONG */
+        .info-cell { display: flex; flex-direction: column; gap: 4px; justify-content: center; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 1.1rem; color: #fff; line-height: 1; }
+        .song { font-size: 1.1rem; color: #aaa; font-weight: 700; line-height: 1; }
+        
+        .pts { font-weight: 900; color: var(--accent-pink); width: 85px; text-align: right; font-size: 1.2rem; }
+        .trnd { width: 55px; text-align: center; font-weight: 900; font-size: 0.7rem; }
         .trnd-HIT { color: var(--accent-cyan); }
         .trnd-UP { color: var(--accent-acid); }
         .trnd-DOWN { color: #ff4444; }
@@ -68,14 +73,12 @@
         .news-grid-top { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px; }
         .news-grid-bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
+        .post-card:hover { border-color: var(--accent-cyan); transform: translateY(-5px); }
         .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .post-content { padding: 30px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        
-        /* HEARTS IN NEWS SYNCED TO FONT SIZE */
         .post-heart-sm { width: 1.3rem; height: auto; flex-shrink: 0; vertical-align: baseline; }
         .news-grid-top .post-heart-sm { width: 1.6rem; }
-        
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.3rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
         .news-grid-top .post-h { font-size: 1.6rem; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
@@ -260,7 +263,7 @@
             document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(c => bubble(c, 'status-wc')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
-            const row = s => `<tr class="chart-row"><td class="chart-cell rank">${s.r}</td><td class="chart-cell"><img src="${s.i}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td><td class="chart-cell info"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td><td class="chart-cell pts">${s.p} pts</td><td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td></tr>`;
+            const row = s => `<tr class="chart-row"><td class="chart-cell rank">${s.r}</td><td class="chart-cell cover-cell"><img src="${s.i}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td><td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td><td class="chart-cell pts">${s.p} pts</td><td class="chart-cell trnd"><span class="trnd-${s.t}">${s.t}</span></td></tr>`;
             document.getElementById('chart-left').innerHTML = DATA.chart.slice(0,12).map(row).join('');
             document.getElementById('chart-right').innerHTML = DATA.chart.slice(12,24).map(row).join('');
 
