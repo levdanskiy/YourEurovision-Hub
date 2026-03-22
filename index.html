@@ -37,7 +37,6 @@
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
-        /* RESTORED HEART BUBBLE STYLE */
         .section-title { font-family: 'Inter Tight', sans-serif; font-size: 1.2rem; font-weight: 900; color: #fff; text-transform: uppercase; letter-spacing: 0.1em; border-left: 4px solid var(--accent-pink); padding-left: 15px; margin-bottom: 25px; }
         .grid-sub-header { font-size: 0.7rem; font-weight: 900; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.2em; margin: 30px 0 15px 0; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
         
@@ -49,7 +48,6 @@
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
-        /* TABLES: CHART & HISTORY */
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); }
         .chart-cell { padding: 12px 5px; vertical-align: middle; }
@@ -60,7 +58,6 @@
         .song { font-size: 0.95rem; color: #888; font-weight: 700; line-height: 1.1; }
         .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1rem; }
 
-        /* NEWS FEED [20] BY 2 */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
@@ -84,6 +81,10 @@
         .progress-bg { width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; margin-bottom: 10px; }
         .progress-bar { width: 0%; height: 100%; background: var(--accent-pink); transition: width 1s linear; box-shadow: 0 0 10px var(--accent-pink); }
         .timer-text { font-size: 0.7rem; color: var(--text-dim); font-weight: 900; text-transform: uppercase; text-align: center; display: block; }
+
+        /* ORDER BUTTON */
+        .order-btn { display: block; width: 100%; padding: 15px; margin-top: 25px; background: var(--accent-cyan); color: #000; text-decoration: none; text-align: center; font-family: 'Inter Tight', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 0.9rem; border-radius: 8px; transition: 0.3s; box-shadow: 0 0 20px rgba(0, 245, 255, 0.3); }
+        .order-btn:hover { background: #fff; transform: scale(1.02); box-shadow: 0 0 30px rgba(0, 245, 255, 0.6); }
 
         footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
         .footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
@@ -118,6 +119,7 @@
                     <div class="timer-container"><div class="progress-bg"><div id="progress-bar" class="progress-bar"></div></div><span id="timer-text" class="timer-text">--:--</span></div>
                     <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
                     <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
+                    <a href="https://myradio24.com/ru/table/levdanskiy" target="_blank" class="order-btn">Заказать трек / Order</a>
                     <audio id="audio-stream"></audio>
                 </div>
                 <div class="card"><div class="section-title-pink">Recently Played [20]</div><table class="chart-table" id="history-list"></table></div>
@@ -130,7 +132,7 @@
                     <div id="grid-qualifiers" class="tournament-grid"></div>
                     <div class="grid-sub-header">SECOND CHANCE</div>
                     <div id="grid-wildcards" class="tournament-grid"></div>
-                    <div class="grid-sub-header">ELIMINATED / THE RESET</div>
+                    <div class="grid-sub-header">ELIMINATED</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
 
@@ -239,7 +241,7 @@
         };
 
         function render() {
-            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.c}</span></div>`;
+            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
             document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
             document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(c => bubble(c, 'status-wc')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
