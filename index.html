@@ -201,23 +201,24 @@
                 const rawImg = data.imgbig || (data.songs && data.songs.length ? data.songs[0].img : "");
                 const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}`;
                 document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
-                document.getElementById('history-list').innerHTML = data.songs.slice(0,10).map(h => `<div class="history-item"><div class="hist-cover" style="background-image:url('https://myradio24.com/${h.img}')"></div><div class="hist-info"><span class="hist-time">${h.time}</span><span class="hist-song">${h.song}</span></div></div>`).join('');
-            } catch(e) {}
-        }
+                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,10).map(h => `<div class="history-item"><div class="hist-cover" style="background-image:url('https://myradio24.com/${h.img}')"></div><div class="hist-info"><span class="hist-time">${h.time}</span><span class="hist-song">${h.song}</span></div></div>`).join('');
+                } catch(e) {}
+                }
 
-        function update() {
-            document.getElementById('clock').innerText = "RIGA: " + new Date().toLocaleTimeString('ru-RU');
-            const now = new Date().getTime();
-            for (let id in DATES) {
+                function update() {
+                document.getElementById('clock').innerText = "RIGA: " + new Date().toLocaleTimeString('ru-RU');
+                const now = new Date().getTime();
+                for (let id in DATES) {
                 const diff = DATES[id] - now;
                 const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
                 const el = document.getElementById('timer-' + id);
                 if(el) el.innerText = `${d}d ${h}h ${m}m ${s}s`;
-            }
-        }
+                }
+                }
 
-        setInterval(update, 1000); setInterval(syncRadio, 10000);
-        update(); render(); syncRadio();
+                setInterval(update, 1000); setInterval(syncRadio, 10000);
+                update(); render(); syncRadio();
+
     </script>
 </body>
 </html>
