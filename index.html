@@ -33,7 +33,6 @@
         .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: #fff; display: block; }
         .timer-label { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
 
-        /* UPDATED LAYOUT: 350px (Left) | 1fr (Center News) | 450px (Right Stats) */
         .layout { display: grid; grid-template-columns: 350px 1fr 450px; gap: 40px; align-items: start; }
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
@@ -49,32 +48,29 @@
         .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
-        /* RIGHT COLUMN CHART STYLES */
+        /* UNIFIED CHART & HISTORY TABLE STYLE */
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
-        .chart-row:hover { background: rgba(255,255,255,0.03); }
         .chart-cell { padding: 12px 5px; vertical-align: middle; }
-        .rank { font-weight: 900; color: var(--accent-cyan); width: 30px; text-align: center; font-size: 1.2rem; }
-        .track-cover { width: 50px; height: 50px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.6); }
-        .info-cell { display: flex; flex-direction: column; gap: 2px; justify-content: center; }
-        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.9rem; color: #fff; line-height: 1.1; }
-        .song { font-size: 0.9rem; color: #aaa; font-weight: 700; line-height: 1.1; }
+        .rank { font-weight: 900; color: var(--accent-cyan); width: 45px; text-align: center; font-size: 1.1rem; }
+        .track-cover { width: 45px; height: 45px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .info-cell { display: flex; flex-direction: column; gap: 2px; }
+        .artist { font-weight: 900; text-transform: uppercase; font-size: 0.85rem; color: #fff; line-height: 1.1; }
+        .song { font-size: 0.85rem; color: #888; font-weight: 700; line-height: 1.1; }
         .pts { font-weight: 900; color: var(--accent-pink); width: 70px; text-align: right; font-size: 1rem; }
         .trnd { width: 45px; text-align: center; font-weight: 900; font-size: 0.6rem; }
-        .trnd-HIT { color: var(--accent-cyan); }
-        .trnd-UP { color: var(--accent-acid); }
 
-        /* CENTER COLUMN NEWS FEED */
-        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 2.5rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 0 0 30px 0; text-align: left; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: 2px solid var(--accent-pink); padding-bottom: 15px; }
-        .news-grid-main { display: flex; flex-direction: column; gap: 40px; }
+        /* NEWS GRID BY 2 */
+        .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
+        .news-grid-main { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
         .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .post-content { padding: 35px; flex-grow: 1; }
+        .post-content { padding: 30px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
         .post-heart-sm { width: 1.6rem; height: auto; flex-shrink: 0; }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.6rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .post-b { font-size: 1.1rem; color: #eee; line-height: 1.7; white-space: pre-wrap; margin-top: 20px; }
-        .inline-heart { width: 16px; height: auto; vertical-align: middle; margin: 0 4px; }
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.4rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; }
+        .post-b { font-size: 0.95rem; color: #eee; line-height: 1.7; white-space: pre-wrap; }
+        .inline-heart { width: 14px; height: auto; vertical-align: middle; margin: 0 4px; }
 
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; letter-spacing: -0.05em; }
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; text-shadow: 0 0 30px var(--accent-pink); } 100% { opacity: 1; } }
@@ -87,11 +83,6 @@
         .progress-bg { width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 3px; overflow: hidden; margin-bottom: 10px; }
         .progress-bar { width: 0%; height: 100%; background: var(--accent-pink); transition: width 1s linear; box-shadow: 0 0 10px var(--accent-pink); }
         .timer-text { font-size: 0.7rem; color: var(--text-dim); font-weight: 900; text-transform: uppercase; text-align: center; display: block; }
-
-        .history-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .hist-cover { width: 50px; height: 50px; border-radius: 8px; background-size: cover; background-position: center; flex-shrink: 0; background-color: #111; border: 1px solid rgba(255,255,255,0.1); }
-        .hist-time { font-size: 0.7rem; color: var(--accent-cyan); font-weight: 900; }
-        .hist-song { font-size: 0.8rem; color: #fff; font-weight: 700; line-height: 1.2; }
 
         footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
         .footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
@@ -128,17 +119,12 @@
                     <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
                     <audio id="audio-stream"></audio>
                 </div>
-                <div class="card"><div class="section-title-pink">Recently Played</div><div id="history-list"></div></div>
+                <div class="card"><div class="section-title-pink">Recently Played</div><table class="chart-table" id="history-list"></table></div>
             </aside>
 
             <main class="column">
-                <div class="feed-title">INSIDER NEWS FEED [FULL]</div>
-                <div id="news-grid" class="news-grid-main"></div>
-            </main>
-
-            <aside class="column">
                 <div class="card">
-                    <div class="section-title">YOURVISION CUP / 2026</div>
+                    <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
                     <div class="grid-sub-header">QUALIFIED</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
                     <div class="grid-sub-header">SECOND CHANCE</div>
@@ -147,6 +133,11 @@
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
 
+                <div class="feed-title">INSIDER NEWS FEED</div>
+                <div id="news-grid" class="news-grid-main"></div>
+            </main>
+
+            <aside class="column">
                 <div class="card">
                     <div class="section-title">EUROGROOVE / FULL TOP 24</div>
                     <table class="chart-table" id="chart-body"></table>
@@ -284,7 +275,16 @@
                     const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,10).map(h => `<div class="history-item"><div class="hist-cover" style="background-image:url('https://myradio24.com/${h.img}')"></div><div class="hist-info"><span class="hist-time">${h.time}</span><span class="hist-song">${h.song}</span></div></div>`).join('');
+                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,10).map(h => `
+                    <tr class="chart-row">
+                        <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
+                        <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:35px; height:35px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                        <td class="chart-cell info-cell">
+                            <span class="artist" style="font-size:0.7rem;">${h.song.split(' - ')[0]}</span>
+                            <span class="song" style="font-size:0.7rem;">${h.song.split(' - ')[1] || ""}</span>
+                        </td>
+                    </tr>
+                `).join('');
             } catch(e) {}
         }
 
