@@ -312,7 +312,7 @@
                     document.getElementById('radio-artist').innerText = current.song.split(' - ')[0];
                     document.getElementById('radio-song').innerText = current.song.split(' - ')[1];
                     const rawImg = data.imgbig || current.img;
-                    const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}`;
+                    const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}?v=${current.songid}`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
                 document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,20).map(h => `
@@ -347,7 +347,7 @@
             }
         }
 
-        setInterval(update, 1000); setInterval(syncRadio, 5000);
+        setInterval(update, 1000); setInterval(syncRadio, 2000);
         render(); syncRadio();
 
         if ('serviceWorker' in navigator) {
