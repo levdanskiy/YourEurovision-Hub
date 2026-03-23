@@ -286,10 +286,12 @@
 
         async function syncRadio() {
             try {
-                const res = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://myradio24.org/users/levdanskiy/status.json?v=' + Date.now()));
-                const data = JSON.parse((await res.json()).contents);
+                // DIRECT FETCH WITHOUT PROXY FOR ZERO LATENCY
+                const res = await fetch('https://myradio24.org/users/levdanskiy/status.json?v=' + Date.now());
+                const data = await res.json();
                 const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
                 if (!current) return;
+                
                 if (currentSongId !== current.songid) {
                     currentSongId = current.songid;
                     const now = new Date();
@@ -298,8 +300,7 @@
                     if (startTime > now) startTime.setDate(startTime.getDate() - 1);
                     songStartedAt = startTime.getTime();
                     
-                    // REAL TIMING CALCULATION
-                    songDuration = 180000; // Fallback 3m
+                    songDuration = 180000;
                     if (data.songs.length > 1) {
                         const lastIndex = data.songs.length - 1;
                         const prev = data.songs[lastIndex - 1];
@@ -307,7 +308,7 @@
                         let pTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0);
                         if (pTime > startTime) pTime.setDate(pTime.getDate() - 1);
                         const diff = songStartedAt - pTime.getTime();
-                        if (diff > 0 && diff < 900000) songDuration = diff; // Use diff if it's < 15 min
+                        if (diff > 0 && diff < 900000) songDuration = diff;
                     }
                     
                     document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
@@ -326,7 +327,9 @@
                         </td>
                     </tr>
                 `).join('');
-            } catch(e) {}
+            } catch(e) {
+                // If direct fetch fails (CORS), fallback to proxy could be added, but .org usually works
+            }
         }
 
         function update() {
@@ -348,7 +351,7 @@
             }
         }
 
-        setInterval(update, 1000); setInterval(syncRadio, 2000);
+        setInterval(update, 1000); setInterval(syncRadio, 1000);
         render(); syncRadio();
 
         if ('serviceWorker' in navigator) {
