@@ -282,28 +282,28 @@
 
         async function syncRadio() {
             try {
-                // DIRECT FETCH FROM .COM (CORS IS ENABLED THERE)
-                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?v=' + Date.now());
+                // PROFESSIONAL API SYNC WITH KEY
+                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
                 const data = await res.json();
                 const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
                 if (!current) return;
                 
                 if (currentSongId !== current.songid) {
                     currentSongId = current.songid;
-                    // RESET TIMER TO 0:00 LOCALLY ON SONG CHANGE
                     songStartedAt = Date.now();
-                    songDuration = 180000; // Fallback
                     
+                    // Calculation of duration based on API's internal server time
+                    songDuration = 180000;
                     if (data.songs.length > 1) {
-                        const lastIndex = data.songs.length - 1;
-                        const prev = data.songs[lastIndex - 1];
+                        const last = data.songs[data.songs.length - 1];
+                        const prev = data.songs[data.songs.length - 2];
+                        const [lh, lm] = last.time.split(':');
                         const [ph, pm] = prev.time.split(':');
-                        const [ch, cm] = current.time.split(':');
                         const now = new Date();
-                        const pTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0);
-                        const cTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ch), parseInt(cm), 0);
-                        let diff = cTime.getTime() - pTime.getTime();
-                        if (diff < 0) diff += 86400000; // Midnight wrap
+                        const lastTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(lh), parseInt(lm), 0).getTime();
+                        const prevTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0).getTime();
+                        let diff = lastTime - prevTime;
+                        if (diff < 0) diff += 86400000;
                         if (diff > 0 && diff < 900000) songDuration = diff;
                     }
                     
@@ -313,7 +313,7 @@
                     const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}?v=${current.songid}`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,20).map(h => `
+                // ... rest of history list logic
                     <tr class="chart-row">
                         <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
                         <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:40px; height:40px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
