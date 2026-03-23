@@ -282,11 +282,11 @@
 
         async function syncRadio() {
             try {
-                // PROFESSIONAL V2 API SYNC
+                // PROFESSIONAL V2 API SYNC - DIRECT SERVER DATA
                 const res = await fetch('https://myradio24.com/api/v2/getStatus?id=levdanskiy&apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
                 const data = await res.json();
                 
-                // SYNC REAL-TIME TRACK DATA
+                // SYNC REAL-TIME TRACK DATA FROM SERVER
                 if (data.total) songDuration = data.total * 1000;
                 if (data.current) songStartedAt = Date.now() - (data.current * 1000);
 
