@@ -339,13 +339,17 @@
                 const el = document.getElementById('timer-' + id);
                 if(el) el.innerText = `${d}d ${h}h ${m}m ${s}s`;
             }
-            if (songStartedAt > 0 && songDuration > 0) {
-                const passed = now - songStartedAt;
-                const pct = Math.min(100, (passed / songDuration) * 100);
+            
+            // ELAPSED TIME CALCULATION (REAL-TIME)
+            if (songStartedAt > 0) {
+                const elapsed = now - songStartedAt;
+                const m = Math.floor(elapsed / 60000), s = Math.floor((elapsed % 60000) / 1000);
+                timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / --:--`;
+                
+                // Visual progress bar (resets on song change, moves up to 4 mins)
+                const visualDuration = 240000; 
+                const pct = Math.min(100, (elapsed / visualDuration) * 100);
                 progressBar.style.width = pct + "%";
-                const rem = Math.max(0, songDuration - passed);
-                const rm = Math.floor(rem / 60000), rs = Math.floor((rem % 60000) / 1000);
-                timerText.innerText = `${rm}:${rs < 10 ? '0' : ''}${rs}`;
             }
         }
 
