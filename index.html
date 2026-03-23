@@ -286,9 +286,8 @@
 
         async function syncRadio() {
             try {
-                const res = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://myradio24.org/users/levdanskiy/status.json?v=' + Date.now()));
-                const json = await res.json();
-                const data = JSON.parse(json.contents);
+                const res = await fetch('https://corsproxy.io/?' + encodeURIComponent('https://myradio24.com/users/levdanskiy/status.json?v=' + Date.now()));
+                const data = await res.json();
                 const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
                 if (!current) return;
                 
@@ -314,13 +313,13 @@
                     document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
                     document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
                     const rawImg = data.imgbig || current.img;
-                    const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.org/${rawImg}?v=${current.songid}`;
+                    const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}?v=${current.songid}`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
                 document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,20).map(h => `
                     <tr class="chart-row">
                         <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
-                        <td class="chart-cell"><img src="https://myradio24.org/${h.img}" class="track-cover" style="width:40px; height:40px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                        <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:40px; height:40px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
                         <td class="chart-cell info-cell">
                             <span class="artist" style="font-size:0.95rem;">${h.song.split(' - ')[0]}</span>
                             <span class="song" style="font-size:0.95rem;">${h.song.split(' - ')[1] || ""}</span>
