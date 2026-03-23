@@ -268,10 +268,7 @@
             const cardHtml = p => {
                 let body = p.b.replace(/\[([A-Z]{2})\]/g, (m, id) => `<img src="${getHeartUrl(id)}" class="inline-heart">`);
                 body = body.replace(/<b>(.*?)<\/b>/g, (m, t) => `<span class="post-sh">${t}</span>`);
-                const ytMatch = p.b.match(/v=([a-zA-Z0-9_-]{11})/) || p.b.match(/youtu\.be\/([a-zA-Z0-9_-]{11})/);
-                const video = ytMatch ? `<iframe class="post-video" src="https://www.youtube.com/embed/${ytMatch[1]}" allowfullscreen></iframe>` : '';
-                const media = video ? video : `<img src="${p.img}" class="post-img">`;
-                return `<div class="post-card">${media}<div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${body}</div></div></div>`;
+                return `<div class="post-card"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${body}</div></div></div>`;
             };
             document.getElementById('news-grid').innerHTML = DATA.news.map(cardHtml).join('');
 
