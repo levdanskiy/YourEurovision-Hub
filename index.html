@@ -286,9 +286,9 @@
 
         async function syncRadio() {
             try {
-                // DIRECT FETCH WITHOUT PROXY FOR ZERO LATENCY
-                const res = await fetch('https://myradio24.org/users/levdanskiy/status.json?v=' + Date.now());
-                const data = await res.json();
+                const res = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://myradio24.org/users/levdanskiy/status.json?v=' + Date.now()));
+                const json = await res.json();
+                const data = JSON.parse(json.contents);
                 const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
                 if (!current) return;
                 
@@ -327,9 +327,7 @@
                         </td>
                     </tr>
                 `).join('');
-            } catch(e) {
-                // If direct fetch fails (CORS), fallback to proxy could be added, but .org usually works
-            }
+            } catch(e) {}
         }
 
         function update() {
