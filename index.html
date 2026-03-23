@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YourVision | Vienna 2026 Insider Hub</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a021a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" type="image/webp">
     <style>
@@ -328,6 +332,10 @@
 
         setInterval(update, 1000); setInterval(syncRadio, 5000);
         render(); syncRadio();
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
     </script>
 </body>
 </html>
