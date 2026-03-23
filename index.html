@@ -66,8 +66,6 @@
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
-        .post-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; background: #000; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        .post-video { width: 100%; aspect-ratio: 16 / 9; border: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
         .post-content { padding: 35px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
         
@@ -284,6 +282,7 @@
 
         async function syncRadio() {
             try {
+                // DIRECT FETCH FROM .COM (CORS IS ENABLED THERE)
                 const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?v=' + Date.now());
                 const data = await res.json();
                 const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
@@ -291,23 +290,20 @@
                 
                 if (currentSongId !== current.songid) {
                     currentSongId = current.songid;
+                    // RESET TIMER TO 0:00 LOCALLY ON SONG CHANGE
                     songStartedAt = Date.now();
+                    songDuration = 180000; // Fallback
                     
-                    // CALCULATE REAL DURATION FROM HISTORY
-                    songDuration = 180000; // Default 3m
-                    if (data.songs && data.songs.length > 1) {
-                        const last = data.songs[data.songs.length - 1]; // This is the current song in history
-                        const prev = data.songs[data.songs.length - 2]; // This is the previous song
-                        
-                        const [lh, lm] = last.time.split(':');
+                    if (data.songs.length > 1) {
+                        const lastIndex = data.songs.length - 1;
+                        const prev = data.songs[lastIndex - 1];
                         const [ph, pm] = prev.time.split(':');
-                        
+                        const [ch, cm] = current.time.split(':');
                         const now = new Date();
-                        const lastTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(lh), parseInt(lm), 0).getTime();
-                        const prevTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0).getTime();
-                        
-                        let diff = lastTime - prevTime;
-                        if (diff < 0) diff += 86400000; // Handle midnight wrap
+                        const pTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0);
+                        const cTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ch), parseInt(cm), 0);
+                        let diff = cTime.getTime() - pTime.getTime();
+                        if (diff < 0) diff += 86400000; // Midnight wrap
                         if (diff > 0 && diff < 900000) songDuration = diff;
                     }
                     
@@ -342,9 +338,9 @@
             if (songStartedAt > 0) {
                 const elapsed = now - songStartedAt;
                 const m = Math.floor(elapsed / 60000), s = Math.floor((elapsed % 60000) / 1000);
-                timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / --:--`;
-                const visualDuration = 240000; 
-                const pct = Math.min(100, (elapsed / visualDuration) * 100);
+                const tm = Math.floor(songDuration / 60000), ts = Math.floor((songDuration % 60000) / 1000);
+                timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / ${tm}:${ts < 10 ? '0' : ''}${ts}`;
+                const pct = Math.min(100, (elapsed / songDuration) * 100);
                 progressBar.style.width = pct + "%";
             }
         }
