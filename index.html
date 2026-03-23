@@ -282,51 +282,35 @@
 
         async function syncRadio() {
             try {
-                // PROFESSIONAL SYNC WITH API KEY - FETCH EVERYTHING FROM ONE SOURCE
-                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
+                // PROFESSIONAL V2 API SYNC
+                const res = await fetch('https://myradio24.com/api/v2/getStatus?id=levdanskiy&apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
                 const data = await res.json();
-                const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
-                if (!current) return;
                 
-                if (currentSongId !== current.songid) {
-                    currentSongId = current.songid;
-                    songStartedAt = Date.now();
-                    
-                    // REAL DURATION CALCULATION FROM HISTORY ARRAY
-                    songDuration = 180000;
-                    if (data.songs.length > 1) {
-                        const last = data.songs[data.songs.length - 1];
-                        const prev = data.songs[data.songs.length - 2];
-                        const [lh, lm] = last.time.split(':');
-                        const [ph, pm] = prev.time.split(':');
-                        const now = new Date();
-                        const lastTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(lh), parseInt(lm), 0).getTime();
-                        const prevTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0).getTime();
-                        let diff = lastTime - prevTime;
-                        if (diff < 0) diff += 86400000;
-                        if (diff > 0 && diff < 900000) songDuration = diff;
-                    }
-                    
-                    document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
-                    document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
-                    
-                    // USE HIGH RES COVER FROM API KEY DATA
-                    const rawImg = data.imgbig || current.img;
-                    const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}?v=${current.songid}`;
+                // SYNC REAL-TIME TRACK DATA
+                if (data.total) songDuration = data.total * 1000;
+                if (data.current) songStartedAt = Date.now() - (data.current * 1000);
+
+                if (currentSongId !== data.songid) {
+                    currentSongId = data.songid;
+                    document.getElementById('radio-artist').innerText = data.artist || data.song.split(' - ')[0];
+                    document.getElementById('radio-song').innerText = data.songtitle || data.song.split(' - ')[1];
+                    const rawImg = data.imgbig || data.img;
+                    const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}?v=${data.songid}`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
                 
-                // SYNC HISTORY LIST
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,20).map(h => `
-                    <tr class="chart-row">
-                        <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
-                        <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:40px; height:40px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
-                        <td class="chart-cell info-cell">
-                            <span class="artist" style="font-size:0.95rem;">${h.song.split(' - ')[0]}</span>
-                            <span class="song" style="font-size:0.95rem;">${h.song.split(' - ')[1] || ""}</span>
-                        </td>
-                    </tr>
-                `).join('');
+                if (data.songs) {
+                    document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,20).map(h => `
+                        <tr class="chart-row">
+                            <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
+                            <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:40px; height:40px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                            <td class="chart-cell info-cell">
+                                <span class="artist" style="font-size:0.95rem;">${h.song.split(' - ')[0]}</span>
+                                <span class="song" style="font-size:0.95rem;">${h.song.split(' - ')[1] || ""}</span>
+                            </td>
+                        </tr>
+                    `).join('');
+                }
             } catch(e) { console.error("Sync Error:", e); }
         }
 
