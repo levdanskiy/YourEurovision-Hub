@@ -248,7 +248,7 @@
 
         playBtn.onclick = () => {
             if (!isPlaying) {
-                audio.src = "https://live.myradio24.com/levdanskiy?nocache="+Date.now();
+                audio.src = "https://myradio24.org/levdanskiy?nocache="+Date.now();
                 audio.play(); isPlaying = true;
                 playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
                 liveBadge.style.animation = "pulse 1.5s infinite";
