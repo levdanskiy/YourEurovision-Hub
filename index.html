@@ -286,7 +286,8 @@
 
         async function syncRadio() {
             try {
-                const res = await fetch('https://corsproxy.io/?' + encodeURIComponent('https://myradio24.com/users/levdanskiy/status.json?v=' + Date.now()));
+                // DIRECT FETCH FROM .COM (CORS IS ENABLED THERE)
+                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?v=' + Date.now());
                 const data = await res.json();
                 const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
                 if (!current) return;
