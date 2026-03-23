@@ -292,22 +292,26 @@
                 if (!current) return;
                 if (currentSongId !== current.songid) {
                     currentSongId = current.songid;
-                    const [h, m] = current.time.split(':');
                     const now = new Date();
+                    const [h, m] = current.time.split(':');
                     const startTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(h), parseInt(m), 0);
                     if (startTime > now) startTime.setDate(startTime.getDate() - 1);
                     songStartedAt = startTime.getTime();
-                    songDuration = 180000;
+                    
+                    // REAL TIMING CALCULATION
+                    songDuration = 180000; // Fallback 3m
                     if (data.songs.length > 1) {
-                        const prev = data.songs[data.songs.length-2];
+                        const lastIndex = data.songs.length - 1;
+                        const prev = data.songs[lastIndex - 1];
                         const [ph, pm] = prev.time.split(':');
-                        const pTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0);
+                        let pTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(ph), parseInt(pm), 0);
                         if (pTime > startTime) pTime.setDate(pTime.getDate() - 1);
                         const diff = songStartedAt - pTime.getTime();
-                        if (diff > 0 && diff < 600000) songDuration = diff;
+                        if (diff > 0 && diff < 900000) songDuration = diff; // Use diff if it's < 15 min
                     }
-                    document.getElementById('radio-artist').innerText = current.song.split(' - ')[0];
-                    document.getElementById('radio-song').innerText = current.song.split(' - ')[1];
+                    
+                    document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
+                    document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
                     const rawImg = data.imgbig || current.img;
                     const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.org/${rawImg}?v=${current.songid}`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
