@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourVision | Vienna 2026 Insider Hub v31.3</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0a021a">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>YourVision | Vienna 2026 Editor Hub Elite</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Inter+Tight:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" type="image/webp">
     <style>
@@ -35,9 +31,9 @@
         .timer-card:hover { transform: translateY(-5px); border-color: var(--accent-cyan); box-shadow: 0 10px 30px rgba(0, 245, 255, 0.2); }
         .timer-poster { width: 100%; aspect-ratio: 16/9; background-size: cover; background-position: center; border-bottom: 1px solid var(--glass-border); transition: 0.5s; }
         .timer-card:hover .timer-poster { filter: brightness(1.2); }
-        .timer-info { padding: 15px 20px; background: rgba(0,0,0,0.4); }
-        .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 1.5rem; font-weight: 900; color: #fff; }
-        .timer-label { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
+        .timer-info { padding: 25px 20px; background: rgba(0,0,0,0.7); border-top: 1px solid var(--glass-border); }
+        .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 2.8rem; font-weight: 900; color: #fff; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 30px rgba(255,255,255,0.2); }
+        .timer-label { font-family: 'Inter Tight', sans-serif; font-size: 1.1rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent-cyan); opacity: 1; display: block; text-shadow: 0 0 15px var(--accent-cyan); }
 
         .layout { display: grid; grid-template-columns: 380px 1fr 450px; gap: 40px; align-items: start; }
         .column { display: flex; flex-direction: column; gap: 30px; }
@@ -63,7 +59,7 @@
         .song { font-size: 0.95rem; color: #888; font-weight: 700; line-height: 1.1; }
         .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1rem; }
 
-        /* NEWS FEED V30.0 TEXT-ONLY FULL */
+        /* NEWS FEED */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
@@ -108,9 +104,9 @@
         </nav>
 
         <div class="timers-hero">
-            <a href="https://www.youtube.com/watch?v=gv2fdE98vpA" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf1">...</span><span class="timer-label" style="color:var(--accent-cyan);">Semi-Final 1 / 12.05</span></div></a>
-            <a href="https://www.youtube.com/watch?v=X1N0Gl6O0LA" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf2">...</span><span class="timer-label" style="color:var(--accent-acid);">Semi-Final 2 / 14.05</span></div></a>
-            <a href="https://www.youtube.com/watch?v=Km7SBKY__Js" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-gf">...</span><span class="timer-label" style="color:var(--accent-pink);">Grand Final / 16.05</span></div></a>
+            <a href="https://www.youtube.com/watch?v=gv2fdE98vpA" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf1">...</span><span class="timer-label">Semi-Final 1 / 12.05</span></div></a>
+            <a href="https://www.youtube.com/watch?v=X1N0Gl6O0LA" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf2">...</span><span class="timer-label">Semi-Final 2 / 14.05</span></div></a>
+            <a href="https://www.youtube.com/watch?v=Km7SBKY__Js" target="_blank" class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-gf">...</span><span class="timer-label">Grand Final / 16.05</span></div></a>
         </div>
 
         <div class="layout">
@@ -153,25 +149,25 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-brand">
+            <a href="https://t.me/YourEurovision" class="footer-brand">
                 <img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" class="footer-logo-heart">
                 <div class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></div>
-                </a>
-                <div class="footer-links">
+            </a>
+            <div class="footer-links">
                 <a href="https://t.me/YourEurovision" target="_blank" class="footer-link">Telegram News</a>
                 <a href="https://t.me/almanac_marginalia" target="_blank" class="footer-link">Almanac</a>
                 <a href="https://www.youtube.com/@levdanskiy" target="_blank" class="footer-link">YouTube</a>
                 <a href="https://myradio24.com/ru/table/levdanskiy" target="_blank" class="footer-link">Radio Order</a>
-                </div>
-                </div>
-                <div class="footer-copy">© 2026 YOURVISION INSIDER | Vienna Edition | Zemgale, Latvia</div>
-                </footer>
+            </div>
+        </div>
+        <div class="footer-copy">© 2026 YOURVISION INSIDER | Vienna Edition | Zemgale, Latvia</div>
+    </footer>
 
     <script>
         var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
             qualifiers: [{id: "ge"}, {id: "al"}, {id: "se"}, {id: "gb"}, {id: "gr"}, {id: "it"}, {id: "md"}, {id: "mt"}, {id: "fi"}, {id: "me"}, {id: "am"}, {id: "au"}, {id: "dk"}, {id: "at"}, {id: "cy"}, {id: "bg"}],
-            eliminated: [{id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}, {id: "fr"}, {id: "pl"}, {id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}],
+            eliminated: [{id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
             chart: [
                 { r: 1, a: "Greczula", s: "Half of Me", p: 91, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
                 { r: 2, a: "Sissal", s: "Infinity", p: 70, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
@@ -199,26 +195,26 @@
                 { r: 24, a: "Kelly Joyce", s: "Oh la la", p: 5, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg" }
             ],
             news: [
-                { m: "Today | 13:15", id: "70", u: "https://t.me/YourEurovision/", t: "📊 YOURVISION CUP: ИТОГИ «ВТОРОГО ШАНСА»", b: "Кипр (53%) и Болгария (38%) проходят в 1/8 финала. Турнирная сетка плей-офф сформирована полностью. Впереди - матчи на вылет." },
-                { m: "Today | 12:00", id: "70", u: "https://t.me/YourEurovision/", t: "📊 YOURVISION CUP: ВТОРОЙ ШАНС - КТО ПРОЙДЕТ В ПЛЕЙ-ОФФ?", b: "Семь стран - две путевки. Решающая битва за последние места в 1/8 финала. Участники:\n\n1. 🇳🇴 Jonas Lovv - «Ya Ya Ya»\n2. 🇧🇬 Dara - «Bangaranga»\n3. 🇩🇪 Sarah Engels - «Fire»\n4. 🇸🇲 Senhit - «Superstar»\n5. 🇨🇭 Veronica Fusaro - «Alice»\n6. 🇧🇪 Essyla - «Dancing on the Ice»\n7. 🇨🇾 Antigoni - «Jalla»" },
-                { m: "Today | 11:30", id: "dk", u: "https://t.me/YourEurovision/5485", t: "📊 YOURVISION CUP: ИТОГИ ГРУППЫ G - ДАТСКОЕ ДОМИНИРОВАНИЕ", b: "Дания громит конкурентов с 83%. Австрия выходит со второго места. Кипр отправляется во «Второй шанс», а Франция сенсационно покидает турнир." },
-                { m: "Today | 09:00", id: "lv", u: "https://t.me/almanac_marginalia/", t: "🏛 ALMANAC: THE FRAGMENT - АРХИТЕКТУРА ПАУЗЫ", b: "Тишина стала самой дорогой роскошью. Пауза - это не отсутствие действия, а его высшая точка. Момент перед тем, как нажать «Play»." },
-                { m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ПЛЕЙ-ОФФ G?", u: "https://t.me/YourEurovision/5482", b: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n[FR] Франция\n[DK] Дания\n[CY] Кипр\n[AT] Австрия\n[PL] Польша\n\nГолосуйте!" },
-                { m: "22.03 | 21:34", id: "70", t: "🧪 YOURVISION: ПРОТОКОЛ «THE RESET»", u: "https://t.me/YourEurovision/5477", b: "Турнирная таблица YourVision Cup неумолима. Мы запускаем новую рубрику - THE RESET.<hr>МЕХАНИКА ПРОТОКОЛА\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить аудит." },
-                { m: "22.03 | 20:03", id: "gb", t: "DNA: UK - SAM BATTLE", u: "https://t.me/YourEurovision/5471", b: "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC.<hr>STYLE & SOUND (ДНК)\nЭто Analog Punk. Сэм использует только физические синтезаторы." },
-                { m: "22.03 | 18:01", id: "lv", t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5", b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки." },
-                { m: "22.03 | 11:19", id: "am", t: "ИТОГИ ГРУППЫ F - ТРИУМФ", u: "https://t.me/YourEurovision/5481", b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n\n• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED" },
-                { m: "22.03 | 09:01", id: "lv", t: "🏛 MARGINALIA: НИТЬ ЛАЙМЫ", u: "https://t.me/almanac_marginalia/4", b: "В балтийской мифологии судьба - это не приговор, а процесс. Лайма, богиня жребия, не просто «назначает» будущее, она плетет его вместе с человеком." },
-                { m: "21.03 | 20:04", id: "hr", t: "🧬 DNA: ХОРВАТИЯ - LELEK", u: "https://t.me/YourEurovision/5465", b: "Хорватский ответ Go_A. Славянская идентичность через призму электро-фолка. Результат - единогласная победа на Dora 2026." },
-                { m: "21.03 | 18:50", id: "me", t: "❤️ EUROVISION: A LITTLE BIT MORE", u: "https://t.me/YourEurovision/5460", b: "Первой героиней рубрики стала Tamara Živković, которая представила кавер на «Euphoria». Смотрите: https://www.youtube.com/watch?v=2o46kihDYms" },
-                { m: "21.03 | 18:03", id: "lv", t: "🥐 MARGINALIA: ГЕОМЕТРИЯ КАРДАМОНА", u: "https://t.me/almanac_marginalia/3", b: "Если у Севера есть запах, то это запах кардамона. Классические шведские узлы Kardemummabullar в Риге." },
-                { m: "21.03 | 15:09", id: "70", t: "📺 YOURVISION: DIGITAL WATCH PARTY", u: "https://t.me/YourEurovision/5455", b: "Мы запускаем формат совместных онлайн-трансляций. С какого года начнем наши просмотры?" },
-                { m: "21.03 | 11:02", id: "fi", t: "📊 ИТОГИ ГРУППЫ E - ШТОРМ", u: "https://t.me/YourEurovision/5460", b: "Финляндия (Linda & Pete) - 100% голосов. Черногория - 60%. Исторический результат турнира." },
-                { m: "21.03 | 10:00", id: "70", t: "⚔️ YOURVISION CUP: ГРУППА F", u: "https://t.me/YourEurovision/5450", b: "Суббота на YourVision Cup. «Группа смерти»: Израиль, Бельгия, Сербия, Австралия и Армения." },
-                { m: "21.03 | 09:03", id: "lv", t: "🏛 MARGINALIA: ФРАГМЕНТ №03", u: "https://t.me/almanac_marginalia/2", b: "«Поэзия - это плуг, взрывающий время...» - Осип Мандельштам. Всемирный день поэзии." },
-                { m: "20.03 | 20:02", id: "lt", t: "🧬 DNA: ЛИТВА - LION CECCAH", u: "https://t.me/YourEurovision/5445", b: "Томас Аленчикас - архитектор литовской дрэг-сцены. Победа с треком «Sólo quiero más»." },
-                { m: "20.03 | 14:25", id: "no", t: "🇳🇴 NORDIC EUROVISION PARTY", u: "https://t.me/YourEurovision/5440", b: "Организаторы раскрыли финальные карты. 17 из 35 участников выйдут на сцену в Осло." },
-                { m: "20.03 | 11:33", id: "lv", t: "🥐 MARGINALIA: ЗАПИСЬ №01", u: "https://t.me/almanac_marginalia/1", b: "Равноденствие. Мир замер в идеальном балансе. Лимонный кекс с маком как ответ весне." }
+                { "m": "Today | 13:15", "id": "70", "u": "https://t.me/YourEurovision/", "t": "📊 YOURVISION CUP: ИТОГИ «ВТОРОГО ШАНСА»", "b": "Кипр (53%) и Болгария (38%) проходят в 1/8 финала. Турнирная сетка плей-офф сформирована полностью. Впереди - матчи на вылет." },
+                { "m": "Today | 12:00", "id": "70", "u": "https://t.me/YourEurovision/", "t": "📊 YOURVISION CUP: ВТОРОЙ ШАНС - КТО ПРОЙДЕТ В ПЛЕЙ-ОФФ?", "b": "Семь стран - две путевки. Решающая битва за последние места в 1/8 финала. Участники:\n\n1. 🇳🇴 Jonas Lovv - «Ya Ya Ya»\n2. 🇧🇬 Dara - «Bangaranga»\n3. 🇩🇪 Sarah Engels - «Fire»\n4. 🇸🇲 Senhit - «Superstar»\n5. 🇨🇭 Veronica Fusaro - «Alice»\n6. 🇧🇪 Essyla - «Dancing on the Ice»\n7. 🇨🇾 Antigoni - «Jalla»" },
+                { "m": "Today | 11:30", "id": "dk", "u": "https://t.me/YourEurovision/5485", "t": "📊 YOURVISION CUP: ИТОГИ ГРУППЫ G - ДАТСКОЕ ДОМИНИРОВАНИЕ", "b": "Дания громит конкурентов с 83%. Австрия выходит со второго места. Кипр отправляется во «Второй шанс», а Франция сенсационно покидает турнир." },
+                { "m": "Today | 09:00", "id": "lv", "u": "https://t.me/almanac_marginalia/", "t": "🏛 ALMANAC: THE FRAGMENT - АРХИТЕКТУРА ПАУЗЫ", "b": "Тишина стала самой дорогой роскошью. Пауза - это не отсутствие действия, а его высшая точка. Момент перед тем, как нажать «Play»." },
+                { "m": "22.03 | 22:30", "id": "70", "u": "https://t.me/YourEurovision/5482", "t": "КТО ДОСТОИН ПЛЕЙ-ОФФ G?", "b": "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n[FR] Франция\n[DK] Дания\n[CY] Кипр\n[AT] Австрия\n[PL] Польша\n\nГолосуйте!" },
+                { "m": "22.03 | 21:34", "id": "70", "u": "https://t.me/YourEurovision/5477", "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET»", "b": "Турнирная таблица YourVision Cup неумолима. Мы запускаем новую рубрику - THE RESET.<hr>МЕХАНИКА ПРОТОКОЛА\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить аудит." },
+                { "m": "22.03 | 20:03", "id": "gb", "u": "https://t.me/YourEurovision/5471", "t": "DNA: UK - SAM BATTLE", "b": "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC.<hr>STYLE & SOUND (ДНК)\nЭто Analog Punk. Сэм использует только физические синтезаторы." },
+                { "m": "22.03 | 18:01", "id": "lv", "u": "https://t.me/almanac_marginalia/5", "t": "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ", "b": "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки." },
+                { "m": "22.03 | 11:19", "id": "am", "u": "https://t.me/YourEurovision/5481", "t": "ИТОГИ ГРУППЫ F - ТРИУМФ", "b": "Группа F завершила свое выступление. Победа Армении и Австралии.<hr>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n\n• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED" },
+                { "m": "22.03 | 09:01", "id": "lv", "u": "https://t.me/almanac_marginalia/4", "t": "🏛 MARGINALIA: НИТЬ ЛАЙМЫ", "b": "В балтийской мифологии судьба - это не приговор, а процесс. Лайма, богиня жребия, не просто «назначает» будущее, она плетет его вместе с человеком." },
+                { "m": "21.03 | 20:04", "id": "hr", "u": "https://t.me/YourEurovision/5465", "t": "🧬 DNA: ХОРВАТИЯ - LELEK", "b": "Хорватский ответ Go_A. Славянская идентичность через призму электро-фолка. Результат - единогласная победа на Dora 2026." },
+                { "m": "21.03 | 18:50", "id": "me", "u": "https://t.me/YourEurovision/5460", "t": "❤️ EUROVISION: A LITTLE BIT MORE", "b": "Первой героиней рубрики стала Tamara Živković, которая представила кавер на «Euphoria». Смотрите: https://www.youtube.com/watch?v=2o46kihDYms" },
+                { "m": "21.03 | 18:03", "id": "lv", "u": "https://t.me/almanac_marginalia/3", "t": "🥐 MARGINALIA: ГЕОМЕТРИЯ КАРДАМОНА", "b": "Если у Севера есть запах, то это запах кардамона. Классические шведские узлы Kardemummabullar в Риге." },
+                { "m": "21.03 | 15:09", "id": "70", "u": "https://t.me/YourEurovision/5455", "t": "📺 YOURVISION: DIGITAL WATCH PARTY", "b": "Мы запускаем формат совместных онлайн-трансляций. С какого года начнем наши просмотры?" },
+                { "m": "21.03 | 11:02", "id": "fi", "u": "https://t.me/YourEurovision/5460", "t": "📊 ИТОГИ ГРУППЫ E - ШТОРМ", "b": "Финляндия (Linda & Pete) - 100% голосов. Черногория - 60%. Исторический результат турнира." },
+                { "m": "21.03 | 10:00", "id": "70", "u": "https://t.me/YourEurovision/5450", "t": "⚔️ YOURVISION CUP: ГРУППА F", "b": "Суббота на YourVision Cup. «Группа смерти»: Израиль, Бельгия, Сербия, Австралия и Армения." },
+                { "m": "21.03 | 09:03", "id": "lv", "u": "https://t.me/almanac_marginalia/2", "t": "🏛 MARGINALIA: ФРАГМЕНТ №03", "b": "«Поэзия - это плуг, взрывающий время...» - Осип Мандельштам. Всемирный день поэзии." },
+                { "m": "20.03 | 20:02", "id": "lt", "u": "https://t.me/YourEurovision/5445", "t": "🧬 DNA: ЛИТВА - LION CECCAH", "b": "Томас Аленчикас - архитектор литовской дрэг-сцены. Победа с треком «Sólo quiero más»." },
+                { "m": "20.03 | 14:25", "id": "no", "u": "https://t.me/YourEurovision/5440", "t": "🇳🇴 NORDIC EUROVISION PARTY", "b": "Организаторы раскрыли финальные карты. 17 из 35 участников выйдут на сцену в Осло." },
+                { "m": "20.03 | 11:33", "id": "lv", "u": "https://t.me/almanac_marginalia/1", "t": "🥐 MARGINALIA: ЗАПИСЬ №01", "b": "Равноденствие. Мир замер в идеальном балансе. Лимонный кекс с маком как ответ весне." }
             ]
         };
 
