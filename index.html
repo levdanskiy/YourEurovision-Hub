@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourVision | Vienna 2026 Insider Hub v31.1</title>
+    <title>YourVision | Vienna 2026 Insider Hub</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0a021a">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -49,6 +49,7 @@
         .heart-bubble { width: 35px; height: auto; }
         .country-name { font-size: 0.55rem; font-weight: 900; text-transform: uppercase; color: #aaa; text-align: center; }
         .status-q { border-bottom: 2px solid var(--accent-acid); }
+        .status-wc { border-bottom: 2px solid var(--accent-cyan); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
         .chart-table { width: 100%; border-collapse: collapse; }
@@ -61,71 +62,50 @@
         .song { font-size: 0.95rem; color: #888; font-weight: 700; line-height: 1.1; }
         .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1rem; }
 
-        /* NEWS FEED V30.0 TEXT-ONLY */
+        /* NEWS FEED */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
         .news-grid-main { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
         .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
         .post-content { padding: 35px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        
-        .post-title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 25px; }
-        .post-heart-sm { height: 1.45rem; width: auto; flex-shrink: 0; }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.45rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; background: linear-gradient(to right, #fff, var(--accent-pink)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
-        .post-sh { color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; font-size: 0.9rem; display: block; margin-top: 30px; margin-bottom: 10px; border-left: 3px solid var(--accent-cyan); padding-left: 15px; letter-spacing: 0.05em; }
-        
-        .post-b { font-size: 1.05rem; color: #eee; line-height: 1.8; white-space: pre-wrap; }
-        .post-b hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0; }
-        .inline-heart { width: 16px; height: auto; vertical-align: middle; margin: 0 4px; }
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.45rem; font-weight: 900; color: #fff; text-decoration: none; text-transform: uppercase; display: block; margin-bottom: 20px; }
+        .post-b { font-size: 1.05rem; color: #ddd; line-height: 1.8; white-space: pre-wrap; }
 
-        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; letter-spacing: -0.05em; }
-        .on-air-live { position: absolute; top: 20px; right: 20px; background: #444; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; z-index: 10; }
-        .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); background-image: url('https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'); }
+        .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; }
+        .on-air-live { position: absolute; top: 20px; right: 20px; background: var(--accent-pink); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; z-index: 10; }
+        .player-cover { width: 100%; aspect-ratio: 1; border-radius: 12px; background-size: cover; background-position: center; margin-bottom: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); }
         .player-artist, .player-song { font-weight: 900; font-size: 1.5rem; display: block; text-align: center; text-transform: uppercase; }
         .player-artist { color: var(--accent-pink); }
         .player-song { color: var(--accent-cyan); margin-top: 8px; }
-        .timer-container { margin-top: 20px; display: flex; align-items: center; gap: 15px; opacity: 0.3; }
+        .timer-container { margin-top: 20px; display: flex; align-items: center; gap: 15px; }
         .progress-bg { flex-grow: 1; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; }
         .progress-bar { height: 100%; background: var(--accent-pink); width: 0%; }
         .timer-text { font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 900; color: var(--accent-cyan); min-width: 40px; text-align: right; }
-        .order-btn { display: block; width: 100%; padding: 15px; margin-top: 25px; background: var(--accent-cyan); color: #000; text-decoration: none; text-align: center; font-family: 'Inter Tight', sans-serif; font-weight: 900; text-transform: uppercase; font-size: 0.9rem; border-radius: 8px; transition: 0.3s; }
-        .order-btn:hover { background: #fff; transform: scale(1.02); }
 
         @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
         footer { background: rgba(0,0,0,0.5); border-top: 1px solid var(--glass-border); padding: 60px 40px; margin-top: 100px; backdrop-filter: blur(20px); }
-        .footer-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .footer-brand { display: flex; align-items: center; gap: 20px; text-decoration: none; }
-        .footer-logo-heart { height: 60px; }
-        .footer-links { display: flex; gap: 30px; }
-        .footer-link { color: #fff; text-decoration: none; font-weight: 900; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; }
         .footer-copy { font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; font-weight: 900; margin-top: 40px; text-align: center; letter-spacing: 0.2em; }
     </style>
 </head>
 <body>
     <div class="hero-view">
         <nav>
-            <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">Editor Hub</div></a>
+            <a href="https://t.me/YourVision" class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></a>
             <div id="clock">RIGA: 00:00:00</div>
         </nav>
-
-        <div class="timers-hero">
-            <div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF1.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf1">...</span><span class="timer-label" style="color:var(--accent-cyan);">Semi-Final 1 / 12.05</span></div></div>
-            <div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_SF2.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-sf2">...</span><span class="timer-label" style="color:var(--accent-acid);">Semi-Final 2 / 14.05</span></div></div>
-            <div class="timer-card"><div class="timer-poster" style="background-image:url('assets/ESC_2026_GF.jpg')"></div><div class="timer-info"><span class="timer-val" id="timer-gf">...</span><span class="timer-label" style="color:var(--accent-pink);">Grand Final / 16.05</span></div></div>
-        </div>
 
         <div class="layout">
             <aside class="column">
                 <div class="card">
-                    <span id="live-badge" class="on-air-live">Station OFFLINE</span>
+                    <span class="on-air-live" style="animation: pulse 1.5s infinite">On Air LIVE</span>
                     <div id="player-cover" class="player-cover"></div>
-                    <span class="player-artist" id="radio-artist">SERVICE OFFLINE</span>
-                    <span class="player-song" id="radio-song">Maintenance in progress</span>
-                    <div class="timer-container"><div class="progress-bg"><div id="progress-bar" class="progress-bar"></div></div><span id="timer-text" class="timer-text">--:--</span></div>
-                    <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0; opacity:0.5; pointer-events:none;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
+                    <span class="player-artist" id="radio-artist">Loading...</span>
+                    <span class="player-song" id="radio-song">Wait...</span>
+                    <div class="timer-container"><div class="progress-bg"><div id="progress-bar" class="progress-bar"></div></div><span id="timer-text" class="timer-text">0:00 / 0:00</span></div>
+                    <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
                     <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
-                    <p style="font-size:0.6rem; text-align:center; color:var(--text-dim); margin-top:10px;">Сервер MyRadio24 временно недоступен.</p>
-                    <audio id="audio-stream" crossorigin="anonymous"></audio>
+                    <audio id="audio-stream" preload="none" crossorigin="anonymous"></audio>
                 </div>
                 <div class="card"><div class="section-title-pink">Recently Played [20]</div><table class="chart-table" id="history-list"></table></div>
             </aside>
@@ -133,22 +113,16 @@
             <main class="column">
                 <div class="card">
                     <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
-                    <div class="grid-sub-header">QUALIFIED [ROUND OF 16]</div>
+                    <div class="grid-sub-header">QUALIFIED</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
+                    <div class="grid-sub-header">SECOND CHANCE</div>
+                    <div id="grid-wildcards" class="tournament-grid"></div>
                     <div class="grid-sub-header">ELIMINATED</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
                 </div>
-
                 <div class="feed-title">INSIDER NEWS FEED [20]</div>
                 <div id="news-grid" class="news-grid-main"></div>
             </main>
-
-            <aside class="column">
-                <div class="card">
-                    <div class="section-title">EUROGROOVE / FULL TOP 24</div>
-                    <table class="chart-table" id="chart-body"></table>
-                </div>
-            </aside>
         </div>
     </div>
 
@@ -156,85 +130,37 @@
         <div class="footer-content">
             <a href="https://t.me/YourVision" class="footer-brand">
                 <img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" class="footer-logo-heart">
-                <div class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">Editor Hub</div></div>
+                <div class="logo-box"><div class="logo">Your<span>Vision</span></div><div class="logo-sub">levdanskiy</div></div>
             </a>
-            <div class="footer-links">
-                <a href="https://t.me/YourVision" target="_blank" class="footer-link">Telegram News</a>
-                <a href="https://t.me/almanac_marginalia" target="_blank" class="footer-link">Almanac</a>
-                <a href="https://www.youtube.com/@levdanskiy" target="_blank" class="footer-link">YouTube</a>
-                <a href="https://myradio24.com/ru/table/levdanskiy" target="_blank" class="footer-link">Radio Order</a>
-            </div>
         </div>
         <div class="footer-copy">© 2026 YOURVISION INSIDER | Vienna Edition | Zemgale, Latvia</div>
     </footer>
 
     <script>
-        var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
-            qualifiers: [{id: "ge"}, {id: "al"}, {id: "se"}, {id: "gb"}, {id: "gr"}, {id: "it"}, {id: "md"}, {id: "mt"}, {id: "fi"}, {id: "me"}, {id: "am"}, {id: "au"}, {id: "dk"}, {id: "at"}, {id: "cy"}, {id: "bg"}],
-            eliminated: [{id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}, {id: "fr"}, {id: "pl"}, {id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}],
-            chart: [
-                { r: 1, a: "Greczula", s: "Half of Me", p: 91, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
-                { r: 2, a: "Sissal", s: "Infinity", p: 70, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
-                { r: 3, a: "HVNDS", s: "Dor", p: 70, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg" },
-                { r: 4, a: "Cold Snap", s: "Mucho Macho", p: 65, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg" },
-                { r: 5, a: "Laud", s: "Lightkeeper", p: 61, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg" },
-                { r: 6, a: "Kautkaili", s: "Te un tagad", p: 55, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg" },
-                { r: 7, a: "Noёp", s: "Days Like This", p: 53, i: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/200x200bb.jpg" },
-                { r: 8, a: "Antti Paalanen", s: "Takatukka", p: 47, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg" },
-                { r: 9, a: "Zejna", s: "Jugoslavija", p: 45, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg" },
-                { r: 10, a: "Matt Bixck", s: "The Flute", p: 40, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
-                { r: 11, a: "Sayf", s: "Tu mi piaci tanto", p: 39, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg" },
-                { r: 12, a: "Alexander Rybak", s: "Rise", p: 37, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg" },
-                { r: 13, a: "Good Job Nicky", s: "Dark Side", p: 36, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg" },
-                { r: 14, a: "SHWR", s: "Contact", p: 28, i: "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg" },
-                { r: 15, a: "Steve Castile", s: "Sweet Tooth", p: 27, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg" },
-                { r: 16, a: "Wavvyboi", s: "Black Glitter", p: 26, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg" },
-                { r: 17, a: "Lara Baltic", s: "Rythm Boy", p: 24, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg" },
-                { r: 18, a: "Dara", s: "Curse", p: 18, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg" },
-                { r: 19, a: "Lena Schaur", s: "Painted Reality", p: 16, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg" },
-                { r: 20, a: "Dinis Mota", s: "Jurei", p: 16, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg" },
-                { r: 21, a: "Inis Neziri", s: "Ta kam fal", p: 13, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg" },
-                { r: 22, a: "Ola Antoniak", s: "Don't You Try", p: 10, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg" },
-                { r: 23, a: "Pavel Orlov", s: "Can't Say Goodbye", p: 10, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg" },
-                { r: 24, a: "Kelly Joyce", s: "Oh la la", p: 5, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg" }
-            ],
+            qualifiers: [{id: "ge"}, {id: "al"}, {id: "se"}, {id: "gb"}, {id: "gr"}, {id: "it"}, {id: "md"}, {id: "mt"}, {id: "fi"}, {id: "me"}, {id: "am"}, {id: "au"}, {id: "dk"}, {id: "at"}],
+            wildcards: [{id: "no"}, {id: "bg"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}, {id: "cy"}],
+            eliminated: [{id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}],
             news: [
-                { m: "Today | 20:50", id: "70", u: "https://t.me/YourVision/", t: "📊 YOURVISION CUP: ИТОГИ «ВТОРОГО ШАНСА»", b: "Кипр (53%) и Болгария (38%) проходят в 1/8 финала. Турнирная сетка плей-офф сформирована полностью." },
-                { m: "Today | 20:45", id: "lv", u: "https://t.me/almanac_marginalia/", t: "🏛 ALMANAC: THE CALENDAR - ВЕЧЕРНИЙ СВЕТ", b: "Понедельник подходит к концу. Вечерний свет - это фильтр, который убирает лишний шум." },
+                { m: "Today | 20:45", id: "lv", u: "https://t.me/almanac_marginalia/", t: "🏛 ALMANAC: THE CALENDAR - ВЕЧЕРНИЙ СВЕТ", b: "Понедельник подходит к концу. Вечерний свет - это фильтр, который убирает лишний шум и оставляет только суть. Время - это не дистанция, а объем." },
                 { m: "Today | 12:00", id: "70", u: "https://t.me/YourVision/", t: "📊 YOURVISION CUP: ВТОРОЙ ШАНС", b: "Семь стран - две путевки. Решающая битва за последние места в 1/8 финала. Участники:\n\n1. 🇳🇴 Jonas Lovv - «Ya Ya Ya»\n2. 🇧🇬 Dara - «Bangaranga»\n3. 🇩🇪 Sarah Engels - «Fire»\n4. 🇸🇲 Senhit - «Superstar»\n5. 🇨🇭 Veronica Fusaro - «Alice»\n6. 🇧🇪 Essyla - «Dancing on the Ice»\n7. 🇨🇾 Antigoni - «Jalla»" },
-                { m: "Today | 11:30", id: "dk", u: "https://t.me/YourVision/5485", t: "📊 YOURVISION CUP: ИТОГИ ГРУППЫ G - ДАТСКОЕ ДОМИНИРОВАНИЕ", b: "Дания громит конкурентов с 83%. Австрия выходит со второго места. Кипр отправляется во «Второй шанс», а Франция сенсационно покидает турнир." },
-                { m: "22.03 | 22:30", id: "70", t: "КТО ДОСТОИН ПЛЕЙ-ОФФ G?", u: "https://t.me/YourVision/5482", b: "📊 КТО ДОСТОИН ВЫЙТИ В ПЛЕЙ-ОФФ ИЗ ГРУППЫ G?\n(Выберите ДВА варианта)\n\n[FR] Франция\n[DK] Дания\n[CY] Кипр\n[AT] Австрия\n[PL] Польша\n\nГолосуйте!" },
-                { m: "22.03 | 21:34", id: "70", t: "🧪 YOURVISION: ПРОТОКОЛ «THE RESET»", u: "https://t.me/YourVision/5477", b: "Турнирная таблица YourVision Cup неумолима. Мы запускаем новую рубрику - THE RESET.<hr>МЕХАНИКА ПРОТОКОЛА\n\nКаждый вечер в 21:30 мы будем брать одну из выбывших стран и проводить аудит." },
-                { m: "22.03 | 20:03", id: "gb", t: "DNA: UK - SAM BATTLE", u: "https://t.me/YourVision/5471", b: "Сэм Баттл - человек-оркестр, панк от электроники. Самый неординарный выбор BBC.<hr>STYLE & SOUND (ДНК)\nЭто Analog Punk. Сэм использует только физические синтезаторы." },
-                { m: "22.03 | 18:01", id: "lv", t: "ALMANAC: ТВОРОЖНЫЕ ЛЕПЕШКИ", u: "https://t.me/almanac_marginalia/5", b: "Воскресенье не создано для сложных конструкций. Творожные лепешки (Biezpiena plācenīši), приготовленные на сковороде.<hr>ТЕХНОЛОГИЯ (CRAFTSMANSHIP)\n• База: 250г сухого творога, 1 яйцо, 2 ложки рисовой муки." },
-                { m: "22.03 | 11:19", id: "am", t: "ИТОГИ ГРУППЫ F - ТРИУМФ", u: "https://t.me/YourVision/5481", b: "Группа F завершила свое выступление. Победа Армении и Австралии.<hr>РЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n\n• 🥇 [AM] АРМЕНИЯ: 60% (Simón) - QUALIFIED\n• 🥈 [AU] АВСТРАЛИЯ: 46% (Delta Goodrem) - QUALIFIED" },
-                { m: "22.03 | 09:01", id: "lv", t: "🏛 MARGINALIA: НИТЬ ЛАЙМЫ", u: "https://t.me/almanac_marginalia/4", b: "В балтийской мифологии судьба - это не приговор, а процесс. Лайма, богиня жребия, не просто «назначает» будущее, она плетет его вместе с человеком." },
-                { m: "21.03 | 20:04", id: "hr", t: "🧬 DNA: ХОРВАТИЯ - LELEK", u: "https://t.me/YourVision/5465", b: "Хорватский ответ Go_A. Славянская идентичность через призму электро-фолка. Результат - единогласная победа на Dora 2026." },
-                { m: "21.03 | 18:50", id: "me", t: "❤️ EUROVISION: A LITTLE BIT MORE", u: "https://t.me/YourVision/5460", b: "Первой героиней рубрики стала Tamara Živković, которая представила кавер на «Euphoria». Смотрите: https://www.youtube.com/watch?v=2o46kihDYms" },
-                { m: "21.03 | 18:03", id: "lv", t: "🥐 MARGINALIA: ГЕОМЕТРИЯ КАРДАМОНА", u: "https://t.me/almanac_marginalia/3", b: "Если у Севера есть запах, то это запах кардамона. Классические шведские узлы Kardemummabullar в Риге." },
-                { m: "21.03 | 15:09", id: "70", t: "📺 YOURVISION: DIGITAL WATCH PARTY", u: "https://t.me/YourVision/5455", b: "Мы запускаем формат совместных онлайн-трансляций. С какого года начнем наши просмотры?" },
-                { m: "21.03 | 11:02", id: "fi", t: "📊 ИТОГИ ГРУППЫ E - ШТОРМ", u: "https://t.me/YourVision/5460", b: "Финляндия (Linda & Pete) - 100% голосов. Черногория - 60%. Исторический результат турнира." },
-                { m: "21.03 | 10:00", id: "70", t: "⚔️ YOURVISION CUP: ГРУППА F", u: "https://t.me/YourVision/5450", b: "Суббота на YourVision Cup. «Группа смерти»: Израиль, Бельгия, Сербия, Австралия и Армения." },
-                { m: "21.03 | 09:03", id: "lv", t: "🏛 MARGINALIA: ФРАГМЕНТ №03", u: "https://t.me/almanac_marginalia/2", b: "«Поэзия - это плуг, взрывающий время...» - Осип Мандельштам. Всемирный день поэзии." },
-                { m: "20.03 | 20:02", id: "lt", t: "🧬 DNA: ЛИТВА - LION CECCAH", u: "https://t.me/YourVision/5445", b: "Томас Аленчикас - архитектор литовской дрэг-сцены. Победа с треком «Sólo quiero más»." },
-                { m: "20.03 | 14:25", id: "no", t: "🇳🇴 NORDIC EUROVISION PARTY", u: "https://t.me/YourVision/5440", b: "Организаторы раскрыли финальные карты. 17 из 35 участников выйдут на сцену в Осло." },
-                { m: "20.03 | 11:33", id: "lv", t: "🥐 MARGINALIA: ЗАПИСЬ №01", u: "https://t.me/almanac_marginalia/1", b: "Равноденствие. Мир замер в идеальном балансе. Лимонный кекс с маком как ответ весне." }
+                { m: "Today | 11:30", id: "dk", u: "https://t.me/YourVision/5485", t: "📊 YOURVISION CUP: ИТОГИ ГРУППЫ G", b: "Дания громит конкурентов с 83%. Австрия выходит со второго места. Кипр отправляется во «Второй шанс», а Франция сенсационно покидает турнир." }
             ]
         };
 
         function getHeartUrl(id) { return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; }
 
         var isPlaying = false;
-        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), liveBadge = document.getElementById('live-badge'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
-        var songDuration = 0, songStartedAt = 0, currentSongId = "";
+        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
+        var songDuration = 180000, songStartedAt = 0, currentSongId = "";
 
         playBtn.onclick = () => {
             if (!isPlaying) {
-                audio.src = "https://live.myradio24.com/levdanskiy?nocache="+Date.now();
-                audio.play().catch(e => console.error(e));
-                isPlaying = true;
-                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
+                audio.play().then(() => {
+                    isPlaying = true;
+                    playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+                }).catch(e => console.error("Play error:", e));
             } else {
                 audio.pause();
                 audio.src = "";
@@ -243,112 +169,68 @@
             }
         };
 
-        function render() {
-            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
-            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
-            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
-            
-            const cardHtml = p => {
-                let body = p.b.replace(/\[([A-Z]{2})\]/g, (m, id) => `<img src="${getHeartUrl(id)}" class="inline-heart">`);
-                body = body.replace(/<b>(.*?)<\/b>/g, (m, t) => `<span class="post-sh">${t}</span>`);
-                return `<div class="post-card"><div class="post-content"><span class="post-meta">${p.m}</span><div class="post-title-row"><img src="${getHeartUrl(p.id)}" class="post-heart-sm"><a href="${p.u}" target="_blank" class="post-h">${p.t}</a></div><div class="post-b">${body}</div></div></div>`;
-            };
-            document.getElementById('news-grid').innerHTML = DATA.news.map(cardHtml).join('');
-
-            document.getElementById('chart-body').innerHTML = DATA.chart.map(s => `
-                <tr class="chart-row">
-                    <td class="chart-cell rank">${s.r}</td>
-                    <td class="chart-cell"><img src="${s.i}" class="track-cover" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
-                    <td class="chart-cell info-cell"><span class="artist">${s.a}</span><span class="song">${s.s}</span></td>
-                    <td class="chart-cell pts">${s.p} pts</td>
-                </tr>
-            `).join('');
-        }
-
-        document.getElementById('volume-slider').oninput = (e) => audio.volume = e.target.value;
-
         async function syncRadio() {
             try {
-                const res = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now()));
-                const json = await res.json();
-                const data = JSON.parse(json.contents);
-                const current = data.songs && data.songs.length ? data.songs[data.songs.length-1] : null;
-                
-                liveBadge.innerText = "On Air LIVE";
-                liveBadge.style.background = "var(--accent-pink)";
-                liveBadge.style.animation = "pulse 1.5s infinite";
-                document.querySelector('.main-controls').style.opacity = "1";
-                document.querySelector('.main-controls').style.pointerEvents = "all";
-                document.querySelector('.card p').style.display = "none";
+                // DIRECT FETCH FROM .COM (CORS IS OPEN FOR PRO ACCOUNTS)
+                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
+                const data = await res.json();
+                const current = data.songs[data.songs.length - 1];
 
-                if (!current) return;
-                
                 if (currentSongId !== current.songid) {
                     currentSongId = current.songid;
-                    const serverTime = data.table_changed * 1000;
-                    songStartedAt = serverTime;
+                    
+                    // CALIBRATION: table_changed is the server reference
+                    songStartedAt = Date.now(); 
+                    
                     songDuration = 180000;
                     if (data.songs.length > 1) {
-                        const prev = data.songs[data.songs.length-2];
-                        const [ch, cm] = current.time.split(':');
-                        const [ph, pm] = prev.time.split(':');
-                        const cDate = new Date(); cDate.setHours(ch, cm, 0);
-                        const pDate = new Date(); pDate.setHours(ph, pm, 0);
-                        let diff = cDate - pDate;
+                        const prev = data.songs[data.songs.length - 2];
+                        const [lh, lm] = current.time.split(':'), [ph, pm] = prev.time.split(':');
+                        const lD = new Date(); lD.setHours(lh, lm, 0);
+                        const pD = new Date(); pD.setHours(ph, pm, 0);
+                        let diff = lD - pD;
                         if (diff < 0) diff += 86400000;
-                        if (diff > 0 && diff < 600000) songDuration = diff;
+                        if (diff > 0 && diff < 900000) songDuration = diff;
                     }
+
                     document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
                     document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
-                    const rawImg = data.imgbig || current.img;
-                    const img = (!rawImg || rawImg.includes('nocover')) ? `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp` : `https://myradio24.com/${rawImg}`;
+                    const img = (data.imgbig && !data.imgbig.includes('nocover')) ? `https://myradio24.com/${data.imgbig}` : `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp`;
                     document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
                 }
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,20).map(h => `
+
+                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `
                     <tr class="chart-row">
                         <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
                         <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:40px; height:40px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
-                        <td class="chart-cell info-cell">
-                            <span class="artist" style="font-size:0.95rem;">${h.song.split(' - ')[0]}</span>
-                            <span class="song" style="font-size:0.95rem;">${h.song.split(' - ')[1] || ""}</span>
-                        </td>
+                        <td class="chart-cell info-cell"><span class="artist" style="font-size:0.9rem; color:#fff;">${h.song}</span></td>
                     </tr>
                 `).join('');
-            } catch(e) {
-                liveBadge.innerText = "Station OFFLINE";
-                liveBadge.style.background = "#444";
-                liveBadge.style.animation = "none";
-            }
+            } catch(e) { console.error("Sync error", e); }
         }
 
         function update() {
             document.getElementById('clock').innerText = "RIGA: " + new Date().toLocaleTimeString('ru-RU');
-            const now = Date.now();
-            for (let id in DATES) {
-                const diff = DATES[id] - now;
-                const el = document.getElementById('timer-' + id);
-                if (el) {
-                    if (diff <= 0) { el.innerText = "LIVE!"; continue; }
-                    const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
-                    el.innerText = `${d}d ${h}h ${m}m ${s}s`;
-                }
-            }
-            if (songStartedAt > 0 && songDuration > 0) {
-                const passed = now - songStartedAt;
-                const pct = Math.min(100, (passed / songDuration) * 100);
-                progressBar.style.width = pct + "%";
-                const rem = Math.max(0, songDuration - passed);
-                const rm = Math.floor(rem / 60000), rs = Math.floor((rem % 60000) / 1000);
-                timerText.innerText = `-${rm}:${rs < 10 ? '0' : ''}${rs}`;
+            if (songStartedAt > 0) {
+                const elapsed = Date.now() - songStartedAt;
+                const m = Math.floor(elapsed / 60000), s = Math.floor((elapsed % 60000) / 1000);
+                const tm = Math.floor(songDuration / 60000), ts = Math.floor((songDuration % 60000) / 1000);
+                timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / ${tm}:${ts < 10 ? '0' : ''}${ts}`;
+                progressBar.style.width = Math.min(100, (elapsed / songDuration) * 100) + "%";
             }
         }
 
-        setInterval(update, 1000); setInterval(syncRadio, 10000);
+        function render() {
+            const bubble = (c, st) => `<div class="country-bubble ${st}"><img src="${getHeartUrl(c.id)}" class="heart-bubble"><span class="country-name">${c.id.toUpperCase()}</span></div>`;
+            document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
+            document.getElementById('grid-wildcards').innerHTML = DATA.wildcards.map(c => bubble(c, 'status-wc')).join('');
+            document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
+            document.getElementById('news-grid').innerHTML = DATA.news.map(p => `<div class="post-card"><div class="post-content"><span class="post-meta">${p.m}</span><a href="${p.u}" target="_blank" class="post-h">${p.t}</a><div class="post-b">${p.b}</div></div></div>`).join('');
+        }
+
+        document.getElementById('volume-slider').oninput = (e) => audio.volume = e.target.value;
+        setInterval(update, 1000); setInterval(syncRadio, 15000);
         render(); syncRadio();
-
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
-        }
     </script>
 </body>
 </html>
