@@ -68,8 +68,9 @@
         .post-content { padding: 35px; flex-grow: 1; }
         .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
         .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; text-transform: uppercase; display: block; margin-bottom: 25px; }
-        .post-img-container { width: 100%; margin-bottom: 25px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .post-img-container { width: 100%; margin-bottom: 25px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); position: relative; background: #000; }
         .post-img { width: 100%; height: auto; display: block; object-fit: cover; }
+        .post-video-iframe { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 12px; display: block; }
         .post-b { font-size: 1.05rem; color: #ddd; line-height: 1.8; white-space: pre-wrap; }
 
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; letter-spacing: -0.05em; }
@@ -262,7 +263,13 @@
             
             const newsSource = (window.YV_NEWS && window.YV_NEWS.length > 0) ? window.YV_NEWS : DATA.news;
             const cardHtml = p => {
-                const media = p.img ? `<div class="post-img-container"><img src="${p.img}" class="post-img"></div>` : '';
+                let media = '';
+                if (p.isVideo) {
+                    const embedUrl = p.u.endsWith('/') ? p.u + '?embed=1&video=1' : p.u + '?embed=1&video=1';
+                    media = `<div class="post-img-container"><iframe src="${embedUrl}" class="post-video-iframe" scrolling="no" frameborder="0" allowfullscreen></iframe></div>`;
+                } else if (p.img) {
+                    media = `<div class="post-img-container"><img src="${p.img}" class="post-img"></div>`;
+                }
                 return `<div class="post-card"><div class="post-content"><span class="post-meta">${p.m}</span><a href="${p.u}" target="_blank" class="post-h">${p.t}</a>${media}<div class="post-b">${p.b}</div></div></div>`;
             };
             document.getElementById('news-grid').innerHTML = newsSource.map(cardHtml).join('');
