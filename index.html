@@ -409,13 +409,16 @@
 
         async function syncRadio() {
             try {
-                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
-                const data = await res.json();
+                // Using AllOrigins proxy to bypass CORS
+                const targetUrl = encodeURIComponent('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
+                const res = await fetch(`https://api.allorigins.win/get?url=${targetUrl}`);
+                const proxyData = await res.json();
+                const data = JSON.parse(proxyData.contents);
+                
                 const songs = data.songs || [];
                 const current = songs[songs.length - 1];
                 
                 if (current) {
-                    // Robust parsing of Artist - Title
                     let fullSong = data.song || current.song || "YourVision - United by Music";
                     let artist = "YourVision Radio", title = "United by Music";
                     
@@ -430,19 +433,26 @@
 
                     if (currentSongId !== (current.songid || fullSong)) {
                         currentSongId = current.songid || fullSong;
-                        songStartedAt = Date.now();
+                        // Use the server's time if possible, or current local time
+                        songStartedAt = Date.now(); 
                         
                         if (songs.length >= 2) {
                             const prev = songs[songs.length - 2];
-                            const parseT = (t) => { const [h, m] = t.split(':'); return parseInt(h)*60 + parseInt(m); };
-                            const diffMin = parseT(current.time) - parseT(prev.time);
-                            songDuration = (diffMin > 0 ? diffMin : 3) * 60 * 1000; 
+                            const parseT = (t) => { 
+                                const [h, m] = t.split(':'); 
+                                const d = new Date();
+                                d.setHours(parseInt(h), parseInt(m), 0);
+                                return d.getTime();
+                            };
+                            const startMs = parseT(current.time);
+                            const prevStartMs = parseT(prev.time);
+                            songDuration = Math.abs(startMs - prevStartMs);
+                            if (songDuration > 600000 || songDuration < 30000) songDuration = 180000;
                         } else {
                             songDuration = 180000;
                         }
                     }
 
-                    // Cover Art Logic with fallback
                     let coverPath = data.imgbig || data.img || current.img || "";
                     let finalCover = "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
                     
@@ -453,6 +463,23 @@
                 }
                 
                 document.getElementById('history-list').innerHTML = songs.slice().reverse().slice(0,15).map(h => `
+                    <tr class="chart-row">
+                        <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
+                        <td class="chart-cell"><img src="${h.img.includes('http') ? h.img : 'https://myradio24.com/'+h.img}" class="track-cover" style="width:35px; height:35px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                        <td class="chart-cell info-cell"><span class="artist" style="font-size:0.85rem; color:#fff;">${h.song}</span></td>
+                    </tr>
+                `).join('');
+                
+                const badge = document.getElementById('live-badge');
+                badge.innerText = "On Air LIVE";
+                badge.style.background = "var(--accent-pink)";
+                badge.style.animation = "pulse 1.5s infinite";
+            } catch(e) { 
+                console.error("Sync error:", e);
+                document.getElementById('live-badge').innerText = "Station OFFLINE";
+                document.getElementById('live-badge').style.animation = "none";
+            }
+        }
                     <tr class="chart-row">
                         <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
                         <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:35px; height:35px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
