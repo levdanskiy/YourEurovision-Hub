@@ -127,8 +127,8 @@
                 <div class="card">
                     <span id="live-badge" class="on-air-live">On Air LIVE</span>
                     <div id="player-cover" class="player-cover"></div>
-                    <span class="player-artist" id="radio-artist">levdanskiy live</span>
-                    <span class="player-song">United by Music</span>
+                    <span class="player-artist" id="radio-artist">YourVision Radio</span>
+                    <span class="player-song" id="radio-song">United by Music</span>
                     <div class="timer-container"><div class="progress-bg"><div id="progress-bar" class="progress-bar"></div></div><span id="timer-text" class="timer-text">0:00 / 0:00</span></div>
                     <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
 
@@ -409,11 +409,10 @@
 
         async function syncRadio() {
             try {
-                // Using AllOrigins proxy to bypass CORS
-                const targetUrl = encodeURIComponent('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
-                const res = await fetch(`https://api.allorigins.win/get?url=${targetUrl}`);
-                const proxyData = await res.json();
-                const data = JSON.parse(proxyData.contents);
+                // Using Codetabs proxy for cleaner data retrieval
+                const apiBase = 'https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now();
+                const res = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(apiBase)}`);
+                const data = await res.json();
                 
                 const songs = data.songs || [];
                 const current = songs[songs.length - 1];
@@ -428,13 +427,14 @@
                         title = parts.slice(1).join(" - ").trim();
                     }
                     
-                    document.getElementById('radio-artist').innerText = artist;
-                    document.getElementById('radio-song').innerText = title;
+                    const artEl = document.getElementById('radio-artist');
+                    const songEl = document.getElementById('radio-song');
+                    if (artEl) artEl.innerText = artist;
+                    if (songEl) songEl.innerText = title;
 
                     if (currentSongId !== (current.songid || fullSong)) {
                         currentSongId = current.songid || fullSong;
-                        // Use the server's time if possible, or current local time
-                        songStartedAt = Date.now(); 
+                        songStartedAt = Date.now();
                         
                         if (songs.length >= 2) {
                             const prev = songs[songs.length - 2];
@@ -459,25 +459,37 @@
                     if (coverPath && !coverPath.includes("nocover")) {
                         finalCover = coverPath.startsWith("http") ? coverPath : `https://myradio24.com/${coverPath}`;
                     }
-                    document.getElementById('player-cover').style.backgroundImage = `url('${finalCover}')`;
+                    const coverEl = document.getElementById('player-cover');
+                    if (coverEl) coverEl.style.backgroundImage = `url('${finalCover}')`;
                 }
                 
-                document.getElementById('history-list').innerHTML = songs.slice().reverse().slice(0,15).map(h => `
-                    <tr class="chart-row">
-                        <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
-                        <td class="chart-cell"><img src="${h.img.includes('http') ? h.img : 'https://myradio24.com/'+h.img}" class="track-cover" style="width:35px; height:35px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
-                        <td class="chart-cell info-cell"><span class="artist" style="font-size:0.85rem; color:#fff;">${h.song}</span></td>
-                    </tr>
-                `).join('');
+                const histEl = document.getElementById('history-list');
+                if (histEl) {
+                    histEl.innerHTML = songs.slice().reverse().slice(0,15).map(h => {
+                        const hImg = h.img ? (h.img.startsWith('http') ? h.img : `https://myradio24.com/${h.img}`) : "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
+                        return `
+                            <tr class="chart-row">
+                                <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
+                                <td class="chart-cell"><img src="${hImg}" class="track-cover" style="width:35px; height:35px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
+                                <td class="chart-cell info-cell"><span class="artist" style="font-size:0.85rem; color:#fff;">${h.song}</span></td>
+                            </tr>
+                        `;
+                    }).join('');
+                }
                 
                 const badge = document.getElementById('live-badge');
-                badge.innerText = "On Air LIVE";
-                badge.style.background = "var(--accent-pink)";
-                badge.style.animation = "pulse 1.5s infinite";
+                if (badge) {
+                    badge.innerText = "On Air LIVE";
+                    badge.style.background = "var(--accent-pink)";
+                    badge.style.animation = "pulse 1.5s infinite";
+                }
             } catch(e) { 
                 console.error("Sync error:", e);
-                document.getElementById('live-badge').innerText = "Station OFFLINE";
-                document.getElementById('live-badge').style.animation = "none";
+                const badge = document.getElementById('live-badge');
+                if (badge) {
+                    badge.innerText = "Station OFFLINE";
+                    badge.style.animation = "none";
+                }
             }
         }
 
