@@ -51,6 +51,14 @@
         .status-q { border-bottom: 2px solid var(--accent-acid); }
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
+        .bracket-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
+        .match-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; flex-direction: column; gap: 10px; transition: 0.3s; }
+        .match-card:hover { border-color: var(--accent-pink); background: rgba(255,255,255,0.05); }
+        .match-header { font-size: 0.6rem; font-weight: 900; text-transform: uppercase; color: var(--accent-cyan); letter-spacing: 0.1em; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
+        .match-teams { display: flex; align-items: center; justify-content: space-between; }
+        .team { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 0.9rem; }
+        .vs { font-size: 0.6rem; font-weight: 900; color: var(--accent-pink); }
+
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
         .chart-cell { padding: 12px 5px; vertical-align: middle; }
@@ -141,7 +149,11 @@
             <main class="column">
                 <div class="card">
                     <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
-                    <div class="grid-sub-header">QUALIFIED [ROUND OF 16]</div>
+                    <div id="bracket-view">
+                        <div class="grid-sub-header">PLAY-OFF BRACKET [ROUND OF 16]</div>
+                        <div id="bracket-list" class="bracket-grid"></div>
+                    </div>
+                    <div class="grid-sub-header">QUALIFIED COUNTRIES</div>
                     <div id="grid-qualifiers" class="tournament-grid"></div>
                     <div class="grid-sub-header">ELIMINATED</div>
                     <div id="grid-eliminated" class="tournament-grid"></div>
@@ -178,8 +190,14 @@
     <script>
         var DATES = { sf1: new Date("2026-05-12T22:00:00+03:00").getTime(), sf2: new Date("2026-05-14T22:00:00+03:00").getTime(), gf: new Date("2026-05-16T22:00:00+03:00").getTime() };
         var DATA = {
-            qualifiers: [{id: "ge"}, {id: "al"}, {id: "se"}, {id: "gb"}, {id: "gr"}, {id: "it"}, {id: "md"}, {id: "mt"}, {id: "fi"}, {id: "me"}, {id: "am"}, {id: "au"}, {id: "dk"}, {id: "at"}, {id: "cy"}, {id: "bg"}],
+            qualifiers: [{id: "fi"}, {id: "dk"}, {id: "gr"}, {id: "au"}, {id: "se"}, {id: "it"}, {id: "cy"}, {id: "mt"}, {id: "bg"}, {id: "gb"}, {id: "md"}, {id: "am"}, {id: "ge"}, {id: "al"}, {id: "at"}, {id: "me"}],
             eliminated: [{id: "lu"}, {id: "ro"}, {id: "lt"}, {id: "hr"}, {id: "lv"}, {id: "cz"}, {id: "ua"}, {id: "ee"}, {id: "pt"}, {id: "az"}, {id: "il"}, {id: "rs"}, {id: "fr"}, {id: "pl"}, {id: "no"}, {id: "de"}, {id: "sm"}, {id: "ch"}, {id: "be"}],
+            matches: [
+                { id: 1, p1: "fi", p2: "me" }, { id: 2, p1: "dk", p2: "at" },
+                { id: 3, p1: "gr", p2: "al" }, { id: 4, p1: "au", p2: "ge" },
+                { id: 5, p1: "se", p2: "am" }, { id: 6, p1: "it", p2: "md" },
+                { id: 7, p1: "cy", p2: "gb" }, { id: 8, p1: "mt", p2: "bg" }
+            ],
             chart: [
                 { r: 1, a: "Greczula", s: "Half of Me", p: 91, i: "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg" },
                 { r: 2, a: "Sissal", s: "Infinity", p: 70, i: "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg" },
@@ -521,6 +539,19 @@
             document.getElementById('grid-qualifiers').innerHTML = DATA.qualifiers.map(c => bubble(c, 'status-q')).join('');
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
+            if (DATA.matches && DATA.matches.length > 0) {
+                document.getElementById('bracket-list').innerHTML = DATA.matches.map(m => `
+                    <div class="match-card">
+                        <div class="match-header">Battle #${m.id}</div>
+                        <div class="match-teams">
+                            <div class="team"><img src="${getHeartUrl(m.p1)}" style="width:25px;"><span>${m.p1.toUpperCase()}</span></div>
+                            <div class="vs">VS</div>
+                            <div class="team"><span>${m.p2.toUpperCase()}</span><img src="${getHeartUrl(m.p2)}" style="width:25px;"></div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
             // STRICT SORTING (Safety Check)
             const newsSource = (DATA.news || []).slice().sort((a, b) => {
                 const parseDate = s => {
