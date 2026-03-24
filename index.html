@@ -37,7 +37,7 @@
         .timer-val { font-family: 'Inter Tight', sans-serif; font-size: 2.8rem; font-weight: 900; color: #fff; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 30px rgba(255,255,255,0.2); }
         .timer-label { font-family: 'Inter Tight', sans-serif; font-size: 1.1rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent-cyan); opacity: 1; display: block; text-shadow: 0 0 15px var(--accent-cyan); }
 
-        .layout { display: grid; grid-template-columns: 380px 1fr 450px; gap: 40px; align-items: start; }
+        .layout { display: grid; grid-template-columns: 1fr 450px; gap: 40px; align-items: start; }
         .column { display: flex; flex-direction: column; gap: 30px; }
         .card { background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 12px; padding: 25px; backdrop-filter: blur(15px); position: relative; }
 
@@ -109,18 +109,6 @@
         </div>
 
         <div class="layout">
-            <aside class="column">
-                <div class="card">
-                    <span id="live-badge" class="on-air-live" style="animation: pulse 1.5s infinite">Radio Active</span>
-                    <div id="player-cover" class="player-cover"></div>
-                    <span class="player-artist">YourVision Radio</span>
-                    <span class="player-song">United by Music</span>
-                    <div class="main-controls" style="display:flex; justify-content:center; margin:30px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
-                    <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
-                    <audio id="audio-stream" preload="none" crossorigin="anonymous"></audio>
-                </div>
-            </aside>
-
             <main class="column">
                 <div class="card">
                     <div class="section-title">YOURVISION CUP / 2026 STANDINGS</div>
@@ -375,22 +363,6 @@
 
         function getHeartUrl(id) { return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; }
 
-        var isPlaying = false;
-        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play');
-
-        playBtn.onclick = () => {
-            if (!isPlaying) {
-                audio.src = "https://myradio24.org/levdanskiy?v=" + Date.now();
-                audio.play().then(() => {
-                    isPlaying = true;
-                    playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
-                }).catch(e => console.error("Play error:", e));
-            } else {
-                audio.pause(); audio.src = ""; isPlaying = false;
-                playBtn.innerHTML = '<svg viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg>';
-            }
-        };
-
         function update() {
             const now = new Date();
             document.getElementById('clock').innerText = "RIGA: " + now.toLocaleTimeString('ru-RU');
@@ -435,7 +407,6 @@
             `).join('');
         }
 
-        document.getElementById('volume-slider').oninput = (e) => audio.volume = e.target.value;
         setInterval(update, 1000);
         render();
     </script>
