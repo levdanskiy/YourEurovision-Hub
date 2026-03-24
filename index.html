@@ -61,17 +61,19 @@
         .song { font-size: 0.95rem; color: #888; font-weight: 700; line-height: 1.1; }
         .pts { font-weight: 900; color: var(--accent-pink); width: 75px; text-align: right; font-size: 1rem; }
 
-        /* NEWS FEED */
+        /* NEWS FEED MAGAZINE LAYOUT */
         .feed-title { font-family: 'Inter Tight', sans-serif; font-size: 3rem; font-weight: 900; color: #fff; text-shadow: 0 0 40px var(--accent-pink); margin: 60px 0 40px 0; text-align: center; text-transform: uppercase; letter-spacing: 0.25em; border-bottom: 3px solid var(--accent-pink); display: block; padding-bottom: 20px; }
-        .news-grid-main { display: grid; grid-template-columns: 1fr; gap: 30px; }
-        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s; }
-        .post-content { padding: 35px; flex-grow: 1; }
-        .post-meta { font-size: 0.65rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 0.1em; }
-        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; text-transform: uppercase; display: block; margin-bottom: 25px; }
-        .post-img-container { width: 100%; margin-bottom: 25px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); position: relative; background: #000; }
-        .post-img { width: 100%; height: auto; display: block; object-fit: cover; }
-        .post-video-iframe { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 12px; display: block; }
-        .post-b { font-size: 1.05rem; color: #ddd; line-height: 1.8; white-space: pre-wrap; }
+        .news-grid-main { display: grid; grid-template-columns: 1fr; gap: 40px; }
+        .post-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden; transition: 0.4s; padding: 40px; }
+        .post-meta { font-size: 0.7rem; color: var(--accent-cyan); font-weight: 900; text-transform: uppercase; margin-bottom: 10px; display: block; letter-spacing: 0.15em; }
+        .post-h { font-family: 'Inter Tight', sans-serif; font-size: 2.2rem; font-weight: 900; line-height: 1.1; color: #fff; text-decoration: none; text-transform: uppercase; display: block; margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 20px; }
+        .post-img-container { float: left; width: 45%; max-width: 500px; margin: 0 30px 20px 0; border-radius: 15px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .post-img { width: 100%; height: auto; display: block; transition: 0.5s; }
+        .post-video-iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
+        .post-b { font-size: 1.15rem; color: #ccc; line-height: 1.8; white-space: pre-wrap; text-align: justify; }
+        .post-b a { color: var(--accent-cyan); text-decoration: none; font-weight: 700; border-bottom: 1px dashed var(--accent-cyan); }
+        .post-b a:hover { color: var(--accent-pink); border-color: var(--accent-pink); }
+        .post-card::after { content: ""; display: table; clear: both; }
 
         .section-title-pink { font-family: 'Inter Tight', sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--accent-pink); text-shadow: 0 0 25px var(--accent-pink); text-transform: uppercase; border-bottom: 2px solid var(--accent-pink); padding-bottom: 10px; margin-bottom: 25px; display: block; width: 100%; text-align: center; letter-spacing: -0.05em; }
         .on-air-live { position: absolute; top: 20px; right: 20px; background: var(--accent-pink); color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 0.6rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; z-index: 10; }
@@ -200,7 +202,7 @@
         "m": "23.03 | 19:30",
         "id": "70",
         "u": "https://t.me/YourEurovision/5528",
-        "t": "YourVision Update",
+        "t": "Update",
         "b": "",
         "img": "//telegram.org/img/emoji/40/F09F938A.png",
         "isVideo": false
@@ -245,7 +247,7 @@
         "m": "23.03 | 10:00",
         "id": "70",
         "u": "https://t.me/YourEurovision/5523",
-        "t": "YourVision Update",
+        "t": "Update",
         "b": "",
         "img": "//telegram.org/img/emoji/40/F09F938A.png",
         "isVideo": false
@@ -308,7 +310,7 @@
         "m": "22.03 | 08:01",
         "id": "70",
         "u": "https://t.me/YourEurovision/5514",
-        "t": "YourVision Update",
+        "t": "Update",
         "b": "",
         "img": "//telegram.org/img/emoji/40/F09F938A.png",
         "isVideo": false
@@ -383,18 +385,38 @@
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
             const newsSource = DATA.news || [];
-            console.log("Rendering " + newsSource.length + " news items");
             
             const cardHtml = p => {
                 try {
                     let media = '';
-                    if (p.isVideo) {
+                    let body = p.b;
+                    
+                    // URL detection and link conversion
+                    const urlRegex = /(https?:\/\/[^\s]+)/g;
+                    body = body.replace(urlRegex, (url) => {
+                        // Check if it's a YouTube link to display it
+                        const ytMatch = url.match(/(?:v=|\/)([a-zA-Z0-9_-]{11})/);
+                        if (ytMatch && !p.isVideo) {
+                            media = `<div class="post-img-container"><iframe src="https://www.youtube.com/embed/${ytMatch[1]}" class="post-video-iframe" frameborder="0" allowfullscreen></iframe></div>`;
+                            return `<a href="${url}" target="_blank">${url}</a>`;
+                        }
+                        return `<a href="${url}" target="_blank">${url}</a>`;
+                    });
+
+                    if (p.isVideo && !media) {
                         const embedUrl = p.u + '?embed=1';
                         media = `<div class="post-img-container"><iframe src="${embedUrl}" class="post-video-iframe" scrolling="no" frameborder="0" allowfullscreen></iframe></div>`;
-                    } else if (p.img) {
+                    } else if (p.img && !media) {
                         media = `<div class="post-img-container"><img src="${p.img}" class="post-img" onerror="this.parentElement.style.display='none'"></div>`;
                     }
-                    return `<div class="post-card"><div class="post-content"><span class="post-meta">${p.m}</span><a href="${p.u}" target="_blank" class="post-h">${p.t}</a>${media}<div class="post-b">${p.b}</div></div></div>`;
+
+                    return `
+                        <div class="post-card">
+                            <span class="post-meta">${p.m}</span>
+                            <a href="${p.u}" target="_blank" class="post-h">${p.t}</a>
+                            ${media}
+                            <div class="post-b">${body}</div>
+                        </div>`;
                 } catch(e) {
                     console.error("Error rendering post", e, p);
                     return '';
