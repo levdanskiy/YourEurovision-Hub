@@ -414,24 +414,42 @@
                 const songs = data.songs || [];
                 const current = songs[songs.length - 1];
                 
-                if (current && currentSongId !== current.songid) {
-                    currentSongId = current.songid;
-                    songStartedAt = Date.now();
+                if (current) {
+                    // Robust parsing of Artist - Title
+                    let fullSong = data.song || current.song || "YourVision - United by Music";
+                    let artist = "YourVision Radio", title = "United by Music";
                     
-                    // Logic to find duration: difference between current and previous song start times
-                    if (songs.length >= 2) {
-                        const prev = songs[songs.length - 2];
-                        const parseT = (t) => { const [h, m] = t.split(':'); return parseInt(h)*60 + parseInt(m); };
-                        const diffMin = parseT(current.time) - parseT(prev.time);
-                        songDuration = (diffMin > 0 ? diffMin : 3) * 60 * 1000; 
-                    } else {
-                        songDuration = 180000;
+                    if (fullSong.includes(" - ")) {
+                        const parts = fullSong.split(" - ");
+                        artist = parts[0].trim();
+                        title = parts.slice(1).join(" - ").trim();
+                    }
+                    
+                    document.getElementById('radio-artist').innerText = artist;
+                    document.getElementById('radio-song').innerText = title;
+
+                    if (currentSongId !== (current.songid || fullSong)) {
+                        currentSongId = current.songid || fullSong;
+                        songStartedAt = Date.now();
+                        
+                        if (songs.length >= 2) {
+                            const prev = songs[songs.length - 2];
+                            const parseT = (t) => { const [h, m] = t.split(':'); return parseInt(h)*60 + parseInt(m); };
+                            const diffMin = parseT(current.time) - parseT(prev.time);
+                            songDuration = (diffMin > 0 ? diffMin : 3) * 60 * 1000; 
+                        } else {
+                            songDuration = 180000;
+                        }
                     }
 
-                    document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
-                    document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
-                    const img = (data.imgbig && !data.imgbig.includes('nocover')) ? `https://myradio24.com/${data.imgbig}` : `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp`;
-                    document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
+                    // Cover Art Logic with fallback
+                    let coverPath = data.imgbig || data.img || current.img || "";
+                    let finalCover = "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp";
+                    
+                    if (coverPath && !coverPath.includes("nocover")) {
+                        finalCover = coverPath.startsWith("http") ? coverPath : `https://myradio24.com/${coverPath}`;
+                    }
+                    document.getElementById('player-cover').style.backgroundImage = `url('${finalCover}')`;
                 }
                 
                 document.getElementById('history-list').innerHTML = songs.slice().reverse().slice(0,15).map(h => `
