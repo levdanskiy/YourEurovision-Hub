@@ -480,21 +480,6 @@
                 document.getElementById('live-badge').style.animation = "none";
             }
         }
-                    <tr class="chart-row">
-                        <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
-                        <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:35px; height:35px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
-                        <td class="chart-cell info-cell"><span class="artist" style="font-size:0.85rem; color:#fff;">${h.song}</span></td>
-                    </tr>
-                `).join('');
-                
-                const badge = document.getElementById('live-badge');
-                badge.innerText = "On Air LIVE";
-                badge.style.background = "var(--accent-pink)";
-                badge.style.animation = "pulse 1.5s infinite";
-            } catch(e) { 
-                console.error("Sync error", e);
-            }
-        }
 
         function update() {
             const now = new Date();
