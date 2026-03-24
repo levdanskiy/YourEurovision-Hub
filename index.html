@@ -111,16 +111,14 @@
         <div class="layout">
             <aside class="column">
                 <div class="card">
-                    <span id="live-badge" class="on-air-live" style="animation: pulse 1.5s infinite">On Air LIVE</span>
+                    <span id="live-badge" class="on-air-live" style="animation: pulse 1.5s infinite">Radio Active</span>
                     <div id="player-cover" class="player-cover"></div>
-                    <span class="player-artist" id="radio-artist">levdanskiy live</span>
-                    <span class="player-song" id="radio-song">United by Music</span>
-                    <div class="timer-container"><div class="progress-bg"><div id="progress-bar" class="progress-bar"></div></div><span id="timer-text" class="timer-text">0:00 / 0:00</span></div>
-                    <div class="main-controls" style="display:flex; justify-content:center; margin:20px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
+                    <span class="player-artist">YourVision Radio</span>
+                    <span class="player-song">United by Music</span>
+                    <div class="main-controls" style="display:flex; justify-content:center; margin:30px 0;"><button id="toggle-play" style="background:#fff; border:none; width:60px; height:60px; border-radius:50%; cursor:pointer;"><svg id="play-icon" viewBox="0 0 24 24" width="30"><path d="M8 5v14l11-7z"/></svg></button></div>
                     <input type="range" id="volume-slider" style="width:100%; height:4px; appearance:none; background:rgba(255,255,255,0.1); border-radius:2px;" min="0" max="1" step="0.01" value="0.8">
                     <audio id="audio-stream" preload="none" crossorigin="anonymous"></audio>
                 </div>
-                <div class="card"><div class="section-title-pink">Recently Played [20]</div><table class="chart-table" id="history-list"></table></div>
             </aside>
 
             <main class="column">
@@ -378,8 +376,7 @@
         function getHeartUrl(id) { return id === "70" ? "https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" : `https://www.eurovision.com/static/images/flags/flag_${id.toLowerCase()}.svg`; }
 
         var isPlaying = false;
-        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play'), progressBar = document.getElementById('progress-bar'), timerText = document.getElementById('timer-text');
-        var songDuration = 180000, songStartedAt = 0, currentSongId = "";
+        var audio = document.getElementById('audio-stream'), playBtn = document.getElementById('toggle-play');
 
         playBtn.onclick = () => {
             if (!isPlaying) {
@@ -394,28 +391,6 @@
             }
         };
 
-        async function syncRadio() {
-            try {
-                const res = await fetch('https://myradio24.com/users/levdanskiy/status.json?apikey=e81720544fe8cf709a784a5cf1e4a89c&v=' + Date.now());
-                const data = await res.json();
-                const current = data.songs[data.songs.length - 1];
-                if (currentSongId !== current.songid) {
-                    currentSongId = current.songid; songStartedAt = Date.now(); songDuration = 180000;
-                    document.getElementById('radio-artist').innerText = data.artist || current.song.split(' - ')[0];
-                    document.getElementById('radio-song').innerText = data.songtitle || current.song.split(' - ')[1];
-                    const img = (data.imgbig && !data.imgbig.includes('nocover')) ? `https://myradio24.com/${data.imgbig}` : `https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp`;
-                    document.getElementById('player-cover').style.backgroundImage = `url('${img}')`;
-                }
-                document.getElementById('history-list').innerHTML = data.songs.slice().reverse().slice(0,15).map(h => `
-                    <tr class="chart-row">
-                        <td class="chart-cell rank" style="font-size:0.7rem; color:var(--accent-pink);">${h.time}</td>
-                        <td class="chart-cell"><img src="https://myradio24.com/${h.img}" class="track-cover" style="width:40px; height:40px;" onerror="this.src='https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp'"></td>
-                        <td class="chart-cell info-cell"><span class="artist" style="font-size:0.9rem; color:#fff;">${h.song}</span></td>
-                    </tr>
-                `).join('');
-            } catch(e) { console.error("Sync error", e); }
-        }
-
         function update() {
             const now = new Date();
             document.getElementById('clock').innerText = "RIGA: " + now.toLocaleTimeString('ru-RU');
@@ -427,13 +402,6 @@
                     const d = Math.floor(diff/86400000), h = Math.floor((diff%86400000)/3600000), m = Math.floor((diff%3600000)/60000), s = Math.floor((diff%60000)/1000);
                     el.innerText = `${d}d ${h}h ${m}m ${s}s`;
                 }
-            }
-            if (songStartedAt > 0) {
-                const elapsed = Date.now() - songStartedAt;
-                const m = Math.floor(elapsed / 60000), s = Math.floor((elapsed % 60000) / 1000);
-                const tm = Math.floor(songDuration / 60000), ts = Math.floor((songDuration % 60000) / 1000);
-                timerText.innerText = `${m}:${s < 10 ? '0' : ''}${s} / ${tm}:${ts < 10 ? '0' : ''}${ts}`;
-                progressBar.style.width = Math.min(100, (elapsed / songDuration) * 100) + "%";
             }
         }
 
@@ -468,8 +436,8 @@
         }
 
         document.getElementById('volume-slider').oninput = (e) => audio.volume = e.target.value;
-        setInterval(update, 1000); setInterval(syncRadio, 15000);
-        render(); syncRadio();
+        setInterval(update, 1000);
+        render();
     </script>
 </body>
 </html>
