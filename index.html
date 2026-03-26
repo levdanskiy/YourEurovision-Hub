@@ -652,20 +652,23 @@
                 try {
                     let media = '';
                     let body = p.b;
+                    let cleanTitle = p.t.replace(/\*/g, '');
                     
-                    // 1. Heading and Subheading detection
+                    // 1. Heading and Subheading detection with asterisk cleanup
                     body = body.split('\n').map(line => {
                         const trimmed = line.trim();
                         if (!trimmed) return line;
                         
-                        const letters = trimmed.replace(/[^a-zA-Zа-яА-Я]/g, '');
+                        const cleanLine = trimmed.replace(/\*/g, '');
+                        const letters = cleanLine.replace(/[^a-zA-Zа-яА-Я]/g, '');
                         const caps = letters.replace(/[^A-ZА-Я]/g, '');
+                        
                         if (letters.length > 5 && caps.length / letters.length > 0.7) {
-                            return `<span class="post-body-h">${trimmed}</span>`;
+                            return `<span class="post-body-h">${cleanLine}</span>`;
                         }
                         
                         if (/^[📊🧪🧬❤️📺⚔️🏛🥐🥇🥈🥉🏆🚨]/.test(trimmed)) {
-                             return `<span class="post-body-sh">${trimmed}</span>`;
+                             return `<span class="post-body-sh">${cleanLine}</span>`;
                         }
                         return line;
                     }).join('\n');
@@ -695,7 +698,7 @@
                     return `
                         <div class="post-card">
                             <span class="post-meta">${p.m}</span>
-                            <a href="${p.u}" target="_blank" class="post-h">${p.t}</a>
+                            <a href="${p.u}" target="_blank" class="post-h">${cleanTitle}</a>
                             ${media}
                             <div class="post-b">${body}</div>
                         </div>`;
