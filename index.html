@@ -52,12 +52,16 @@
         .status-el { border-bottom: 2px solid #444; opacity: 0.6; }
 
         .bracket-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .match-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; flex-direction: column; gap: 10px; transition: 0.3s; }
+        .match-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 15px; display: flex; flex-direction: column; gap: 10px; transition: 0.3s; position: relative; overflow: hidden; }
+        .match-card.completed { border-color: rgba(255, 0, 127, 0.3); background: rgba(255, 0, 127, 0.02); }
         .match-card:hover { border-color: var(--accent-pink); background: rgba(255,255,255,0.05); }
-        .match-header { font-size: 0.6rem; font-weight: 900; text-transform: uppercase; color: var(--accent-cyan); letter-spacing: 0.1em; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; }
-        .match-teams { display: flex; align-items: center; justify-content: space-between; }
-        .team { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 0.9rem; }
-        .vs { font-size: 0.6rem; font-weight: 900; color: var(--accent-pink); }
+        .match-header { font-size: 0.6rem; font-weight: 900; text-transform: uppercase; color: var(--accent-cyan); letter-spacing: 0.1em; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 5px; display: flex; justify-content: space-between; }
+        .match-teams { display: flex; align-items: center; justify-content: space-between; position: relative; }
+        .team { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 0.9rem; transition: 0.3s; }
+        .team.winner { color: var(--accent-pink); text-shadow: 0 0 15px var(--accent-pink); }
+        .team.winner img { box-shadow: 0 0 15px var(--accent-pink); border-radius: 50%; }
+        .vs { font-size: 0.6rem; font-weight: 900; color: #444; }
+        .match-score { font-family: 'Inter Tight', sans-serif; font-size: 0.7rem; font-weight: 900; color: var(--accent-pink); position: absolute; left: 50%; transform: translateX(-50%); top: 20px; }
 
         .chart-table { width: 100%; border-collapse: collapse; }
         .chart-row { border-bottom: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
@@ -615,16 +619,21 @@
             document.getElementById('grid-eliminated').innerHTML = DATA.eliminated.map(c => bubble(c, 'status-el')).join('');
             
             if (DATA.matches && DATA.matches.length > 0) {
-                document.getElementById('bracket-list').innerHTML = DATA.matches.map(m => `
-                    <div class="match-card">
-                        <div class="match-header">Battle #${m.id}</div>
-                        <div class="match-teams">
-                            <div class="team"><img src="${getHeartUrl(m.p1)}" style="width:25px;"><span>${m.p1.toUpperCase()}</span></div>
-                            <div class="vs">VS</div>
-                            <div class="team"><span>${m.p2.toUpperCase()}</span><img src="${getHeartUrl(m.p2)}" style="width:25px;"></div>
+                document.getElementById('bracket-list').innerHTML = DATA.matches.map(m => {
+                    const isDone = m.winner ? 'completed' : '';
+                    const scoreHtml = m.winner ? `<div class="match-score">71 - 29</div>` : ''; // Dynamic score later
+                    return `
+                        <div class="match-card ${isDone}">
+                            <div class="match-header"><span>Battle #${m.id}</span><span>${m.winner ? 'FINAL' : 'LIVE'}</span></div>
+                            <div class="match-teams">
+                                <div class="team ${m.winner === m.p1 ? 'winner' : ''}"><img src="${getHeartUrl(m.p1)}" style="width:25px;"><span>${m.p1.toUpperCase()}</span></div>
+                                <div class="vs">VS</div>
+                                <div class="team ${m.winner === m.p2 ? 'winner' : ''}"><span>${m.p2.toUpperCase()}</span><img src="${getHeartUrl(m.p2)}" style="width:25px;"></div>
+                            </div>
+                            ${scoreHtml}
                         </div>
-                    </div>
-                `).join('');
+                    `;
+                }).join('');
             }
 
             // STRICT SORTING (Safety Check)
