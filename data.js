@@ -7,7 +7,7 @@ var DATA = {
             "t1": "fi",
             "a1": "Linda Lampenius and Pete Parkkonen",
             "s1": "Liekinheitin",
-            "sc1": "71%",
+            "sc1": "71% ★",
             "t2": "me",
             "a2": "Tamara Živković",
             "s2": "Nova zora",
@@ -22,7 +22,7 @@ var DATA = {
             "t1": "dk",
             "a1": "Søren Torpegaard Lund",
             "s1": "Før vi går hjem",
-            "sc1": "77%",
+            "sc1": "77% ★",
             "t2": "at",
             "a2": "COSMØ",
             "s2": "Tanzschein",
@@ -37,13 +37,13 @@ var DATA = {
             "t1": "gr",
             "a1": "Akylas",
             "s1": "Ferto",
-            "sc1": "LIVE",
+            "sc1": "56% ★",
             "t2": "al",
             "a2": "Alis",
-            "s2": "Nën",
-            "sc2": "",
-            "w": 0,
-            "status": "LIVE"
+            "s2": "Nân",
+            "sc2": "44%",
+            "w": 1,
+            "status": "FINISHED"
         },
         {
             "id": 4,
@@ -186,14 +186,14 @@ var DATA = {
             "id": "ge",
             "a": "Bzikebi",
             "s": "On Replay"
-        },
-        {
-            "id": "al",
-            "a": "Alis",
-            "s": "Nën"
         }
     ],
     "eliminated": [
+        {
+            "id": "al",
+            "a": "Alis",
+            "s": "Nân"
+        },
         {
             "id": "me",
             "a": "Tamara Živković",
@@ -236,7 +236,7 @@ var DATA = {
         },
         {
             "id": "ua",
-            "a": "Leléka",
+            "a": "Lelūka",
             "s": "Ridnym"
         },
         {
@@ -300,177 +300,25 @@ var DATA = {
             "s": "Dancing on the Ice"
         }
     ],
-    "chart": [
-        {
-            "r": 1,
-            "a": "Greczula",
-            "s": "Half of Me",
-            "p": "91 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 2,
-            "a": "Sissal",
-            "s": "Infinity",
-            "p": "70 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 3,
-            "a": "HVNDS",
-            "s": "Dor",
-            "p": "70 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 4,
-            "a": "Cold Snap",
-            "s": "Mucho Macho",
-            "p": "65 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 5,
-            "a": "Laud",
-            "s": "Lightkeeper",
-            "p": "61 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 6,
-            "a": "Kautkaili",
-            "s": "Te un tagad",
-            "p": "55 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 7,
-            "a": "Noëp",
-            "s": "Days Like This",
-            "p": "53 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/07/0c/64070c0c-6407-0c0c-6407-0c0c64070c0c/cover.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 8,
-            "a": "Antti Paalanen",
-            "s": "Takatukka",
-            "p": "47 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 9,
-            "a": "Zejna",
-            "s": "Jugoslavija",
-            "p": "45 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg"
-        },
-        {
-            "r": 10,
-            "a": "Matt Bixck",
-            "s": "The Flute",
-            "p": "40 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 11,
-            "a": "Sayf",
-            "s": "Tu mi piaci tanto",
-            "p": "39 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 12,
-            "a": "Alexander Rybak",
-            "s": "Rise",
-            "p": "37 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 13,
-            "a": "Good Job Nicky",
-            "s": "Dark Side",
-            "p": "36 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 14,
-            "a": "SHWR",
-            "s": "Contact",
-            "p": "28 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 15,
-            "a": "Steve Castile",
-            "s": "Sweet Tooth",
-            "p": "27 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 16,
-            "a": "Wavvyboi",
-            "s": "Black Glitter",
-            "p": "26 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 17,
-            "a": "Lara Baltic",
-            "s": "Rythm Boy",
-            "p": "24 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg"
-        },
-        {
-            "r": 18,
-            "a": "Dara",
-            "s": "Curse",
-            "p": "18 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 19,
-            "a": "Lena Schaur",
-            "s": "Painted Reality",
-            "p": "16 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 20,
-            "a": "Dinis Mota",
-            "s": "Jurei",
-            "p": "16 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 21,
-            "a": "Inis Neziri",
-            "s": "Ta kam fal",
-            "p": "13 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 22,
-            "a": "Ola Antoniak",
-            "s": "Don't You Try",
-            "p": "10 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 23,
-            "a": "Pavel Orlov",
-            "s": "Can't Say Goodbye",
-            "p": "10 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 24,
-            "a": "Kelly Joyce",
-            "s": "Oh la la",
-            "p": "5 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg"
-        }
-    ],
     "news": [
+        {
+            "m": "28.03 | 08:05",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5562",
+            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #4",
+            "b": "Битва титанов: легендарное величие против авангардного будущего. Глобальная суперзвезда против главных инноваторов сезона.\n🇦🇺 AUSTRALIA: Delta Goodrem - «Eclipse»\nЛегенда, которой нечего доказывать. Дельта Гудрем привозит в Вену «кристальный поп-рок» космического масштаба. Её «Eclipse» - это гимн возрождения, исполненный с безупречным мастерством. Австралия выставила свой главный козырь в борьбе за хрустальный микрофон.\nvs\n🇬🇪 GEORGIA: Bzikebi - «On Replay»\nСамый дерзкий камбэк в истории. Победители JESC 2008 выросли и превратились в концептуальных артистов. «On Replay» - это неоновый этно-рейв, где гипер-поп биты встречаются с грузинским многоголосием. Это музыка будущего, которая не боится рисковать.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.4 мин | ⚔️ YourVision: Play-Off",
+            "img": "//telegram.org/img/emoji/40/E29A94.png",
+            "ts": 1774685102.0
+        },
+        {
+            "m": "28.03 | 08:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5561",
+            "t": "Update",
+            "b": "",
+            "img": "//telegram.org/img/emoji/40/F09F938A.png",
+            "ts": 1774684921.0
+        },
         {
             "m": "28.03 | 07:04",
             "id": "lv",
@@ -668,24 +516,6 @@ var DATA = {
             "b": "Первый баттл плей-офф завершился предсказуемым, но от этого не менее впечатляющим доминированием. Финляндия подтверждает статус главного фаворита сезона, не оставляя шансов балканской меланхолии.\n🏁 ИТОГИ ГОЛОСОВАНИЯ:\n🥇 FINLAND: Lampenius & Parkkonen - 71% (QUALIFIED)\n🥈 MONTENEGRO: Tamara Živković - 29% (OUT)\nINSIDER ANALYSIS\nФинляндия в лице Lampenius & Parkkonen утвердила статус титана. 71% голосов в первом раунде на вылет - это демонстрация абсолютного превосходства «Liekinheitin». Их стиль - это гармония силы и точности, идеально отлаженный механизм, который на данный момент кажется неуязвимым.\nЧерногория, несмотря на статус «темной лошадки», не смогла преодолеть этот рубеж. 29% - показатель того, что Тамара Живкович была на грани сенсации, но в решающий момент ей не хватило масштабности заявки. Тем не менее, уход с турнира с таким результатом - это достойный финал для страны, в которую мало кто верил на старте.\nЧТО ЭТО ЗНАЧИТ ДЛЯ 1/4 ФИНАЛА?\nФинляндия официально становится первым участником четвертьфинала. Скандинавский монолит ждет своего соперника из пары Battle #8 (Malta vs Bulgaria). Если динамика сохранится, мы увидим столкновение двух полярных музыкальных миров.\n⏱️ Время чтения: 1.2 мин | 📊 YourVision: Результаты",
             "img": "https://cdn4.telesco.pe/file/Ui-jwicik5qK0ttxodZRb3g8rgxazCJaBxF1cGbo-zTfPO3NiquMFBZYz6O_JWeUaeRAGHVQQ-QrLuVuj_z9sekq6gwzjsrZMJ85ucxPXZUsFEFh1c7wuV21WRawKC-Tf4Nt4trqn5jO8p_tSidTJRGHDAzI2SdvofMUYJEVUuUxOdVrvMy7RiTRguZCO6Lu_f967EgHk94ooCJLC_bwK2s4WeFygftnpWbtaXGVRlaMy2x61qfaLgOTTb7oVxaslXXQ2WJW1t2GA8JfGanK6l4IklXKJDWAA4jA3_8dR4mtgnoJ6S5ddeGCJrFIwq-v_h0tU48lt4k3PYV9eEtBhA.jpg",
             "ts": 1774513567.0
-        },
-        {
-            "m": "26.03 | 08:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5542",
-            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #2",
-            "b": "Театральный лоск против джазовой искры. Сегодня на арене - битва двух артистов, которые превращают каждое выступление в драматургический шедевр.\n🇩🇰 DENMARK: Søren Torpegaard Lund - «Før vi går hjem»\nСамый молодой выпускник театральной академии в истории Дании и обладатель премии Reumert. Сёрен привозит «театральный поп» высшей пробы - атмосферный трек, где каждый вокальный нюанс рассказывает историю. В группе он покорил всех своим «Scandi Minimalism» и безупречной техникой.\nvs\n🇦🇹 AUSTRIA: Cosmó - «Tanzschein»\nХозяин конкурса и главный молодой талант Австрии. Беньямин (Cosmó) - это «интеллектуальный поп» с джазовым ДНК. Его трек - это стильный грув, виртуозные клавиши и венский шик. Сможет ли он удержать оборону домашней арены против датского профессионализма?\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.2 мин | ⚔️ YourVision: Play-Off",
-            "img": "//telegram.org/img/emoji/40/E29A94.png",
-            "ts": 1774512172.0
-        },
-        {
-            "m": "26.03 | 08:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5541",
-            "t": "Update",
-            "b": "",
-            "img": "//telegram.org/img/emoji/40/F09F938A.png",
-            "ts": 1774512121.0
         },
         {
             "m": "26.03 | 07:02",
