@@ -40,7 +40,7 @@ var DATA = {
             "sc1": "56% ★",
             "t2": "al",
             "a2": "Alis",
-            "s2": "Nân",
+            "s2": "Nën",
             "sc2": "44%",
             "w": 1,
             "status": "FINISHED"
@@ -52,13 +52,13 @@ var DATA = {
             "t1": "au",
             "a1": "Delta Goodrem",
             "s1": "Eclipse",
-            "sc1": "WAIT",
+            "sc1": "LIVE",
             "t2": "ge",
             "a2": "Bzikebi",
             "s2": "On Replay",
             "sc2": "",
             "w": 0,
-            "status": "WAITING"
+            "status": "LIVE"
         },
         {
             "id": 5,
@@ -186,14 +186,14 @@ var DATA = {
             "id": "ge",
             "a": "Bzikebi",
             "s": "On Replay"
-        }
-    ],
-    "eliminated": [
+        },
         {
             "id": "al",
             "a": "Alis",
-            "s": "Nân"
-        },
+            "s": "Nën"
+        }
+    ],
+    "eliminated": [
         {
             "id": "me",
             "a": "Tamara Živković",
@@ -348,7 +348,7 @@ var DATA = {
             "a": "Noëp",
             "s": "Days Like This",
             "p": "53 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/07/0c/64070c0c-6407-0c0c-6407-0c0c64070c0c/cover.jpg/200x200bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/07/0c/64070c0c-6407-0c0c-6407-0c0c64070c0c/cover.jpg/400x400bb.jpg"
         },
         {
             "r": 8,
