@@ -320,7 +320,7 @@ var DATA = {
             "a": "HVNDS",
             "s": "Dor",
             "p": "70 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/600x600bb.jpg"
         },
         {
             "r": 4,
@@ -334,7 +334,7 @@ var DATA = {
             "a": "Laud",
             "s": "Lightkeeper",
             "p": "61 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/600x600bb.jpg"
         },
         {
             "r": 6,
@@ -348,7 +348,7 @@ var DATA = {
             "a": "Noëp",
             "s": "Days Like This",
             "p": "53 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/07/0c/64070c0c-6407-0c0c-6407-0c0c64070c0c/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/600x600bb.jpg"
         },
         {
             "r": 8,
@@ -467,7 +467,7 @@ var DATA = {
             "a": "Kelly Joyce",
             "s": "Oh la la",
             "p": "5 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/600x600bb.jpg"
         }
     ],
     "news": [
