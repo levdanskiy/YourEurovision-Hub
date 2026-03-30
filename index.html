@@ -129,14 +129,80 @@
         .artist-rich { font-family: "Inter Tight", sans-serif; font-weight: 900; text-transform: uppercase; color: #fff; font-size: 1rem; display: block; line-height: 1.1; }
         .song-rich { font-family: "Inter", sans-serif; color: var(--cyan); font-size: 0.8rem; opacity: 0.8; text-transform: uppercase; font-weight: 900; }
         
-        .post-card { padding: 65px; margin-bottom: 60px; border-radius: 50px; border: 1px solid var(--border); background: rgba(255,255,255,0.015); backdrop-filter: blur(30px); overflow: hidden; transition: 0.6s; position: relative; }
-        .post-h { font-family: "Inter Tight", sans-serif; font-size: 3.2rem; font-weight: 900; line-height: 0.9; text-transform: uppercase; margin-bottom: 35px; background: linear-gradient(to bottom, #fff 40%, var(--pink) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; }
-        .post-media { width: 340px; float: left; margin: 0 45px 25px 0; border-radius: 25px; box-shadow: 0 40px 80px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.1); }
-        .post-b { font-size: 1.25rem; line-height: 1.9; color: #bbb; }
+        .post-card { 
+            padding: 80px; margin-bottom: 80px; border-radius: 60px; 
+            border: 1px solid var(--border); 
+            background: rgba(255,255,255,0.015); 
+            backdrop-filter: blur(30px); 
+            -webkit-backdrop-filter: blur(30px);
+            overflow: hidden; transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); 
+            position: relative; 
+        }
+        .post-card:hover { 
+            background: rgba(255,255,255,0.03); 
+            border-color: rgba(255,255,255,0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+        }
+        
+        /* Featured Post Upgrade */
+        .post-card.featured { 
+            background: linear-gradient(145deg, rgba(255,0,127,0.05), rgba(255,255,255,0.02));
+            border-color: rgba(255,0,127,0.3);
+            box-shadow: 0 0 50px rgba(255,0,127,0.1);
+        }
+        .post-card.featured .post-h { font-size: 4.5rem; margin-bottom: 45px; }
+        .post-card.featured .post-media { width: 100%; float: none; height: 500px; object-fit: cover; margin: 0 0 40px 0; }
+        .post-card.featured .post-b { font-size: 1.5rem; color: #fff; }
+        
+        .post-tag { 
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 5px 12px; border-radius: 6px; font-size: 0.65rem; font-weight: 900;
+            text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .tag-results { background: rgba(255, 215, 0, 0.1); color: #ffd700; border-color: rgba(255, 215, 0, 0.3); }
+        .tag-cup { background: rgba(0, 245, 255, 0.1); color: var(--cyan); border-color: rgba(0, 245, 255, 0.3); }
+        .tag-chart { background: rgba(255, 0, 127, 0.1); color: var(--pink); border-color: rgba(255, 0, 127, 0.3); }
+        .tag-insider { background: rgba(204, 255, 0, 0.1); color: var(--acid); border-color: rgba(204, 255, 0, 0.3); }
+        
+        .post-h { 
+            font-family: "Inter Tight", sans-serif; 
+            font-size: 3.8rem; 
+            font-weight: 900; 
+            line-height: 0.85; 
+            text-transform: uppercase; 
+            margin-bottom: 40px; 
+            background: linear-gradient(to bottom, #fff 20%, var(--pink) 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            font-style: italic;
+            letter-spacing: -0.03em;
+        }
+        .post-media { 
+            width: 380px; float: left; margin: 0 50px 30px 0; border-radius: 30px; 
+            box-shadow: 0 40px 80px rgba(0,0,0,0.8); border: 1px solid rgba(255,255,255,0.1); 
+            transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .post-card:hover .post-media { transform: scale(1.05); box-shadow: 0 50px 100px rgba(0,0,0,0.9); }
+        .post-b { font-size: 1.35rem; line-height: 2; color: #ccc; letter-spacing: 0.01em; }
+        .post-b br { content: ""; display: block; margin-bottom: 15px; }
         .post-b strong { color: var(--pink); font-weight: 900; text-shadow: 0 0 10px rgba(255,0,127,0.3); }
         .post-meta { font-size: 0.8rem; color: var(--pink); font-weight: 900; text-transform: uppercase; margin-bottom: 20px; display: flex; align-items: center; gap: 15px; letter-spacing: 0.2em; font-style: italic; }
         .post-meta::after { content: ""; height: 2px; flex-grow: 1; background: linear-gradient(to right, var(--pink), transparent); opacity: 0.3; }
         .post-sub-h { font-family: "Inter Tight", sans-serif; font-weight: 900; display: block; color: var(--cyan); font-size: 1.8rem; margin: 45px 0 20px 0; text-transform: uppercase; border-left: 10px solid var(--cyan); padding-left: 20px; font-style: italic; }
+        
+        .post-actions { display: flex; align-items: center; gap: 15px; margin-top: 35px; border-top: 1px solid var(--border); padding-top: 25px; clear: both; }
+        .action-btn { 
+            display: flex; align-items: center; gap: 8px; 
+            padding: 8px 18px; border-radius: 10px; background: rgba(255,255,255,0.03); 
+            border: 1px solid var(--border); color: #888; font-size: 0.75rem; 
+            font-weight: 900; text-transform: uppercase; cursor: pointer; transition: 0.3s;
+            text-decoration: none; font-family: "Inter Tight"; font-style: italic;
+        }
+        .action-btn:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.3); }
+        .action-btn.share:hover { background: rgba(0,245,255,0.1); color: var(--cyan); border-color: var(--cyan); }
+        .read-tag { margin-left: auto; color: #555; font-size: 0.7rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.1em; }
         
         .poll-box { margin-top: 45px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; clear: both; }
         .poll-option { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 15px; padding: 20px 30px; font-family: "Inter Tight", sans-serif; font-weight: 900; text-transform: uppercase; font-size: 0.95rem; color: #fff; display: flex; align-items: center; justify-content: space-between; transition: 0.4s; cursor: pointer; position: relative; overflow: hidden; font-style: italic; }
@@ -374,6 +440,16 @@
             document.getElementById("chart-list").innerHTML = DATA.chart.map(i => `<div class="bubble"><span style="color:var(--pink); font-weight:900; width:35px; font-family:'Inter Tight'; font-size:1.2rem; font-style:italic;">${i.r}</span><img src="${i.img}" style="width:45px; height:45px; border-radius:8px;"><div><div class="artist-rich" style="font-size:0.95rem; color:var(--pink); font-style:italic;">${decodeS(i.a)}</div><div class="song-rich" style="font-size:0.85rem;">${decodeS(i.s)}</div></div><span style="margin-left:auto; font-weight:900; color:var(--pink); font-family:'Inter Tight'; font-size:1.1rem; font-style:italic;">${i.p}</span></div>`).join("");
             document.getElementById("news-grid").innerHTML = DATA.news.map((p, pIdx) => {
                 const votedIdx = localStorage.getItem('yv_vote_'+pIdx);
+                const isFeatured = pIdx === 0;
+                
+                const getTag = (t) => {
+                    const low = t.toLowerCase();
+                    if (low.includes('итоги') || low.includes('results')) return `<span class="post-tag tag-results"><i class="fi fi-rr-trophy"></i> Results</span>`;
+                    if (low.includes('cup') || low.includes('battle') || low.includes('финала')) return `<span class="post-tag tag-cup"><i class="fi fi-rr-sword"></i> Cup Battle</span>`;
+                    if (low.includes('chart') || low.includes('rutop')) return `<span class="post-tag tag-chart"><i class="fi fi-rr-stats"></i> Chart Update</span>`;
+                    return `<span class="post-tag tag-insider"><i class="fi fi-rr-info"></i> Insider News</span>`;
+                };
+
                 let pollHtml = "";
                 if (p.poll && p.poll.options) {
                     pollHtml = `<div class="poll-box">${p.poll.options.map((opt, oIdx) => {
@@ -383,8 +459,14 @@
                         return `<div class="poll-option ${isSelected?'voted':''} ${isVoted?'voted':''}" onclick="handleVote(${pIdx}, ${oIdx})" style="--p-width: ${isVoted ? mockPct : 0}%"><span>${replaceFlags(opt)}</span><span class="poll-percent">${mockPct}%</span></div>`;
                     }).join("")}</div>`;
                 }
-                return `<div class="post-card"><span class="post-meta">${p.m} | YOURVISION INSIDER</span><div class="post-h">${replaceFlags(p.t.replace(/\*/g, ""))}</div><div style="overflow:hidden;">${p.isVideo ? `<video src="${p.vid}" autoplay loop muted playsinline controls class="post-media"></video>` : (p.img ? `<img src="${p.img}" class="post-media">` : "")}<div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div></div>${pollHtml}</div>`;
+                return `<div class="post-card ${isFeatured?'featured':''}" id="post-${pIdx}"><span class="post-meta">${p.m} | ${isFeatured?'EDITORIAL FEATURE':'YOURVISION INSIDER'}</span>${getTag(p.t)}<div class="post-h">${replaceFlags(p.t.replace(/\*/g, ""))}</div><div style="overflow:hidden;">${p.isVideo ? `<video src="${p.vid}" autoplay loop muted playsinline controls class="post-media"></video>` : (p.img ? `<img src="${p.img}" class="post-media">` : "")}<div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div></div>${pollHtml}<div class="post-actions"><button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> Copy Link</button><a href="https://t.me/share/url?url=https://levdanskiy.github.io/YourEurovision-Hub/%23post-${pIdx}&text=${encodeURIComponent('Check this out on YourVision Hub!')}" target="_blank" class="action-btn share"><i class="fi fi-rr-paper-plane"></i> Share</a><div class="read-tag"><i class="fi fi-rr-clock"></i> 1.2 min read</div></div></div>`;
             }).join("");
+        }
+
+        function copyPost(idx) {
+            const url = window.location.origin + window.location.pathname + '#post-' + idx;
+            navigator.clipboard.writeText(url);
+            alert('Link copied to clipboard!');
         }
 
         let trackStart = 0, trackDur = 0;
