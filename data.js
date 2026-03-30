@@ -123,153 +123,153 @@ var DATA = {
     ],
     "qualifiers": [
         {
-                "id": "fi",
-                "a": "L. Lampenius & P. Parkkonen",
-                "s": "Liekinheitin"
+            "id": "fi",
+            "a": "L. Lampenius & P. Parkkonen",
+            "s": "Liekinheitin"
         },
         {
-                "id": "dk",
-                "a": "S. Torpegaard Lund",
-                "s": "Før vi går hjem"
+            "id": "dk",
+            "a": "S. Torpegaard Lund",
+            "s": "Før vi går hjem"
         },
         {
-                "id": "gr",
-                "a": "Akylas",
-                "s": "Ferto"
+            "id": "gr",
+            "a": "Akylas",
+            "s": "Ferto"
         },
         {
-                "id": "ge",
-                "a": "Bzikebi",
-                "s": "On Replay"
+            "id": "ge",
+            "a": "Bzikebi",
+            "s": "On Replay"
         },
         {
-                "id": "se",
-                "a": "Felicia",
-                "s": "My System"
+            "id": "se",
+            "a": "Felicia",
+            "s": "My System"
         }
-],
+    ],
     "eliminated": [
         {
-                "id": "me",
-                "a": "Tamara Živković",
-                "s": "Nova zora"
+            "id": "me",
+            "a": "Tamara Živković",
+            "s": "Nova zora"
         },
         {
-                "id": "at",
-                "a": "COSMØ",
-                "s": "Tanzschein"
+            "id": "at",
+            "a": "COSMØ",
+            "s": "Tanzschein"
         },
         {
-                "id": "al",
-                "a": "Alis",
-                "s": "Nën"
+            "id": "al",
+            "a": "Alis",
+            "s": "Nën"
         },
         {
-                "id": "au",
-                "a": "Delta Goodrem",
-                "s": "Eclipse"
+            "id": "au",
+            "a": "Delta Goodrem",
+            "s": "Eclipse"
         },
         {
-                "id": "am",
-                "a": "Simón",
-                "s": "Paloma rumba"
+            "id": "am",
+            "a": "Simón",
+            "s": "Paloma rumba"
         },
         {
-                "id": "lu",
-                "a": "Eva Marija",
-                "s": "Mother Nature"
+            "id": "lu",
+            "a": "Eva Marija",
+            "s": "Mother Nature"
         },
         {
-                "id": "ro",
-                "a": "A. Căpitănescu",
-                "s": "Choke Me"
+            "id": "ro",
+            "a": "A. Căpitănescu",
+            "s": "Choke Me"
         },
         {
-                "id": "lt",
-                "a": "Lion Ceccah",
-                "s": "Sólo quiero más"
+            "id": "lt",
+            "a": "Lion Ceccah",
+            "s": "Sólo quiero más"
         },
         {
-                "id": "hr",
-                "a": "Lelek",
-                "s": "Andromeda"
+            "id": "hr",
+            "a": "Lelek",
+            "s": "Andromeda"
         },
         {
-                "id": "lv",
-                "a": "Atvara",
-                "s": "Ēnā"
+            "id": "lv",
+            "a": "Atvara",
+            "s": "Ēnā"
         },
         {
-                "id": "cz",
-                "a": "Daniel Zizka",
-                "s": "Crossroads"
+            "id": "cz",
+            "a": "Daniel Zizka",
+            "s": "Crossroads"
         },
         {
-                "id": "ua",
-                "a": "Leléka",
-                "s": "Ridnym"
+            "id": "ua",
+            "a": "Leléka",
+            "s": "Ridnym"
         },
         {
-                "id": "ee",
-                "a": "Vanilla Ninja",
-                "s": "Too Epic to Be True"
+            "id": "ee",
+            "a": "Vanilla Ninja",
+            "s": "Too Epic to Be True"
         },
         {
-                "id": "pt",
-                "a": "Bandidos do Cante",
-                "s": "Rosa"
+            "id": "pt",
+            "a": "Bandidos do Cante",
+            "s": "Rosa"
         },
         {
-                "id": "az",
-                "a": "Jiva",
-                "s": "Just Go"
+            "id": "az",
+            "a": "Jiva",
+            "s": "Just Go"
         },
         {
-                "id": "il",
-                "a": "Noam Bettan",
-                "s": "Michelle"
+            "id": "il",
+            "a": "Noam Bettan",
+            "s": "Michelle"
         },
         {
-                "id": "rs",
-                "a": "Lavina",
-                "s": "Kraj mene"
+            "id": "rs",
+            "a": "Lavina",
+            "s": "Kraj mene"
         },
         {
-                "id": "fr",
-                "a": "Monroe",
-                "s": "Regarde !"
+            "id": "fr",
+            "a": "Monroe",
+            "s": "Regarde !"
         },
         {
-                "id": "pl",
-                "a": "Alicja",
-                "s": "Pray"
+            "id": "pl",
+            "a": "Alicja",
+            "s": "Pray"
         },
         {
-                "id": "no",
-                "a": "Jonas Lovv",
-                "s": "Ya Ya Ya"
+            "id": "no",
+            "a": "Jonas Lovv",
+            "s": "Ya Ya Ya"
         },
         {
-                "id": "de",
-                "a": "Sarah Engels",
-                "s": "Fire"
+            "id": "de",
+            "a": "Sarah Engels",
+            "s": "Fire"
         },
         {
-                "id": "sm",
-                "a": "Senhit",
-                "s": "Superstar"
+            "id": "sm",
+            "a": "Senhit",
+            "s": "Superstar"
         },
         {
-                "id": "ch",
-                "a": "Veronica Fusaro",
-                "s": "Alice"
+            "id": "ch",
+            "a": "Veronica Fusaro",
+            "s": "Alice"
         },
         {
-                "id": "be",
-                "a": "Essyla",
-                "s": "Dancing on the Ice"
+            "id": "be",
+            "a": "Essyla",
+            "s": "Dancing on the Ice"
         }
-],
+    ],
     "chart": [
         {
             "r": 1,
