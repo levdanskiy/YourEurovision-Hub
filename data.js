@@ -123,183 +123,153 @@ var DATA = {
     ],
     "qualifiers": [
         {
-            "id": "fi",
-            "a": "L. Lampenius & P. Parkkonen",
-            "s": "Liekinheitin"
+                "id": "fi",
+                "a": "L. Lampenius & P. Parkkonen",
+                "s": "Liekinheitin"
         },
         {
-            "id": "dk",
-            "a": "S. Torpegaard Lund",
-            "s": "Før vi går hjem"
+                "id": "dk",
+                "a": "S. Torpegaard Lund",
+                "s": "Før vi går hjem"
         },
         {
-            "id": "gr",
-            "a": "Akylas",
-            "s": "Ferto"
+                "id": "gr",
+                "a": "Akylas",
+                "s": "Ferto"
         },
         {
-            "id": "au",
-            "a": "Delta Goodrem",
-            "s": "Eclipse"
+                "id": "ge",
+                "a": "Bzikebi",
+                "s": "On Replay"
         },
         {
-            "id": "se",
-            "a": "Felicia",
-            "s": "My System"
-        },
-        {
-            "id": "it",
-            "a": "Sal Da Vinci",
-            "s": "Per sempre sì"
-        },
-        {
-            "id": "al",
-            "a": "Alis",
-            "s": "Nën"
-        },
-        {
-            "id": "mt",
-            "a": "Aidan",
-            "s": "Bella"
-        },
-        {
-            "id": "bg",
-            "a": "Dara",
-            "s": "Bangaranga"
-        },
-        {
-            "id": "gb",
-            "a": "Look Mum No Computer",
-            "s": "Eins, Zwei, Drei"
-        },
-        {
-            "id": "md",
-            "a": "Satoshi",
-            "s": "Viva, Moldova!"
-        },
-        {
-            "id": "am",
-            "a": "Simón",
-            "s": "Paloma rumba"
-        },
-        {
-            "id": "ge",
-            "a": "Bzikebi",
-            "s": "On Replay"
+                "id": "se",
+                "a": "Felicia",
+                "s": "My System"
         }
-    ],
+],
     "eliminated": [
         {
-            "id": "al",
-            "a": "Alis",
-            "s": "Nân"
+                "id": "me",
+                "a": "Tamara Živković",
+                "s": "Nova zora"
         },
         {
-            "id": "me",
-            "a": "Tamara Živković",
-            "s": "Nova zora"
+                "id": "at",
+                "a": "COSMØ",
+                "s": "Tanzschein"
         },
         {
-            "id": "at",
-            "a": "COSMØ",
-            "s": "Tanzschein"
+                "id": "al",
+                "a": "Alis",
+                "s": "Nën"
         },
         {
-            "id": "lu",
-            "a": "Eva Marija",
-            "s": "Mother Nature"
+                "id": "au",
+                "a": "Delta Goodrem",
+                "s": "Eclipse"
         },
         {
-            "id": "ro",
-            "a": "A. Căpitănescu",
-            "s": "Choke Me"
+                "id": "am",
+                "a": "Simón",
+                "s": "Paloma rumba"
         },
         {
-            "id": "lt",
-            "a": "Lion Ceccah",
-            "s": "Sólo quiero más"
+                "id": "lu",
+                "a": "Eva Marija",
+                "s": "Mother Nature"
         },
         {
-            "id": "hr",
-            "a": "Lelek",
-            "s": "Andromeda"
+                "id": "ro",
+                "a": "A. Căpitănescu",
+                "s": "Choke Me"
         },
         {
-            "id": "lv",
-            "a": "Atvara",
-            "s": "Ēnā"
+                "id": "lt",
+                "a": "Lion Ceccah",
+                "s": "Sólo quiero más"
         },
         {
-            "id": "cz",
-            "a": "Daniel Zizka",
-            "s": "Crossroads"
+                "id": "hr",
+                "a": "Lelek",
+                "s": "Andromeda"
         },
         {
-            "id": "ua",
-            "a": "Leléka",
-            "s": "Ridnym"
+                "id": "lv",
+                "a": "Atvara",
+                "s": "Ēnā"
         },
         {
-            "id": "ee",
-            "a": "Vanilla Ninja",
-            "s": "Too Epic to Be True"
+                "id": "cz",
+                "a": "Daniel Zizka",
+                "s": "Crossroads"
         },
         {
-            "id": "pt",
-            "a": "Bandidos do Cante",
-            "s": "Rosa"
+                "id": "ua",
+                "a": "Leléka",
+                "s": "Ridnym"
         },
         {
-            "id": "az",
-            "a": "Jiva",
-            "s": "Just Go"
+                "id": "ee",
+                "a": "Vanilla Ninja",
+                "s": "Too Epic to Be True"
         },
         {
-            "id": "il",
-            "a": "Noam Bettan",
-            "s": "Michelle"
+                "id": "pt",
+                "a": "Bandidos do Cante",
+                "s": "Rosa"
         },
         {
-            "id": "rs",
-            "a": "Lavina",
-            "s": "Kraj mene"
+                "id": "az",
+                "a": "Jiva",
+                "s": "Just Go"
         },
         {
-            "id": "fr",
-            "a": "Monroe",
-            "s": "Regarde !"
+                "id": "il",
+                "a": "Noam Bettan",
+                "s": "Michelle"
         },
         {
-            "id": "pl",
-            "a": "Alicja",
-            "s": "Pray"
+                "id": "rs",
+                "a": "Lavina",
+                "s": "Kraj mene"
         },
         {
-            "id": "no",
-            "a": "Jonas Lovv",
-            "s": "Ya Ya Ya"
+                "id": "fr",
+                "a": "Monroe",
+                "s": "Regarde !"
         },
         {
-            "id": "de",
-            "a": "Sarah Engels",
-            "s": "Fire"
+                "id": "pl",
+                "a": "Alicja",
+                "s": "Pray"
         },
         {
-            "id": "sm",
-            "a": "Senhit",
-            "s": "Superstar"
+                "id": "no",
+                "a": "Jonas Lovv",
+                "s": "Ya Ya Ya"
         },
         {
-            "id": "ch",
-            "a": "Veronica Fusaro",
-            "s": "Alice"
+                "id": "de",
+                "a": "Sarah Engels",
+                "s": "Fire"
         },
         {
-            "id": "be",
-            "a": "Essyla",
-            "s": "Dancing on the Ice"
+                "id": "sm",
+                "a": "Senhit",
+                "s": "Superstar"
+        },
+        {
+                "id": "ch",
+                "a": "Veronica Fusaro",
+                "s": "Alice"
+        },
+        {
+                "id": "be",
+                "a": "Essyla",
+                "s": "Dancing on the Ice"
         }
-    ],
+],
     "chart": [
         {
             "r": 1,
@@ -555,7 +525,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5580",
             "t": "📊 #YV_CUP: ИТОГИ 1/8 ФИНАЛА - BATTLE #5",
             "b": "Пятый поединок стадии плей-офф обошелся без драматических паритетов. В столкновении северного хладнокровия и кавказского темперамента эксперты YourVision Cup сделали однозначный выбор в пользу стабильности и качества продакшна.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇸🇪 SWEDEN (Felicia): 58%\n🇦🇲 ARMENIA (Simón): 42%\nШвеция в лице Фелисии с её технологичным треком «My System» подтверждает статус одного из главных фаворитов турнира. Армения, представленная Симоном с его «Paloma rumba», сражалась достойно, но разрыв в 16% стал непреодолимым барьером.\nИТОГИ БИТВЫ:\n🥇 SWEDEN (Felicia): 58% - ПРОХОД В 1/4 ФИНАЛА 🇸🇪\n🥈 ARMENIA (Simón): 42% - ВЫЛЕТ 🇦🇲\nАрмянская кампания завершается на стадии 1/8 финала. Симон покидает турнир, оставив после себя шлейф одного из самых ярких поп-выступлений сезона, но Фелисия сегодня была просто вне конкуренции по уровню воздействия.\nВ четвертьфинале Швецию ждет победитель пары Italy vs Moldova, битва за которых начнется уже сегодня!\nКак вы считаете, справедливо ли Швеция обошла Армению по очкам? Был ли шанс у Симона при другой жеребьевке?\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/eCPA3dR6W48TQ3MbuOFm-hPuNV4AfoGptToHMc0kikJ2RANW0OUn6DOjkb_RlJ0h7yQRx8c7EH0psWO7DlS6AqPPY08QZ5UVoy97oR7sgmuDePAST3NcA_lPeg_iFuvJfa0o4cY9c0CO_aThN7EaIJYeI5WARf0kv-_srHl6UgmSa38tGwQvEnYOr2Iwi7jGJbTvzTkKKm01lAg1CU0fsz19N1TXd8-52nqsDzeBxLAnpnBeBqcfrds1LUfvpbD_KoOREYkjlp6-j-QOumOrQpiMyJ-JBlgrUoAyGjO2AxsIchaJ-1Z4jE2JO1W5c9UmOFNqVMzfLwCanho6-2NWzg.jpg",
+            "img": "https://cdn4.telesco.pe/file/H3Dk-gEb__pIYYXJXSSzwgmFH6j12aILDhSibZcRII4_lOZByCdB-egNhniLcm9pGX-bJNFxOvlpURHfKsp8KUTS4H7_J17XimR1ZQ0JT5jBST06M063VUCTE0bgrLHvVaNkZroXnIu-MuNGUmcs7Qt32742A67mfF8wC7nZDgGxrGTOAEL7P_QOm4F0aK7VjXVO0n1IPxalZsLqe7IFNX0MHuQG-M_ualWopDCcqtx3YBBvbSW_yWNU6fWZDz3fP1M4VjHNhliGV7GKhR9L7wMUR9EOKYKuDgmkymOd83xf8TpBJ4_tRCSmp2WNR6bwVLrHotiqZRBV1Ot1PVqd0w.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774882384.0,
