@@ -122,16 +122,48 @@ var DATA = {
         }
     ],
     "qualifiers": [
-        { "id": "fi", "a": "L. Lampenius & P. Parkkonen", "s": "Liekinheitin" },
-        { "id": "dk", "a": "S. Torpegaard Lund", "s": "Før vi går hjem" },
-        { "id": "gr", "a": "Akylas", "s": "Ferto" },
-        { "id": "ge", "a": "Bzikebi", "s": "On Replay" },
-        { "id": "se", "a": "Felicia", "s": "My System" },
-        { "id": "md", "a": "Satoshi", "s": "Viva, Moldova!" }
+        {
+            "id": "fi",
+            "a": "L. Lampenius & P. Parkkonen",
+            "s": "Liekinheitin"
+        },
+        {
+            "id": "dk",
+            "a": "S. Torpegaard Lund",
+            "s": "Før vi går hjem"
+        },
+        {
+            "id": "gr",
+            "a": "Akylas",
+            "s": "Ferto"
+        },
+        {
+            "id": "ge",
+            "a": "Bzikebi",
+            "s": "On Replay"
+        },
+        {
+            "id": "se",
+            "a": "Felicia",
+            "s": "My System"
+        },
+        {
+            "id": "md",
+            "a": "Satoshi",
+            "s": "Viva, Moldova!"
+        }
     ],
     "eliminated": [
-        { "id": "it", "a": "Sal Da Vinci", "s": "Per sempre sì" },
-        { "id": "me", "a": "Tamara Živković", "s": "Nova zora" },
+        {
+            "id": "it",
+            "a": "Sal Da Vinci",
+            "s": "Per sempre sì"
+        },
+        {
+            "id": "me",
+            "a": "Tamara Živković",
+            "s": "Nova zora"
+        },
         {
             "id": "at",
             "a": "COSMØ",
@@ -423,6 +455,48 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "31.03 | 07:32",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5590",
+            "t": "📊 #YV_CUP: ИТОГИ 1/8 ФИНАЛА - BATTLE #6",
+            "b": "Шестой поединок плей-офф завершился одной из самых громких сенсаций турнира. Итальянская классика не устояла под натиском кишиневского индастриала. Эксперты YourVision Cup сделали ставку на энергию и честность нового звука.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇲🇩 MOLDOVA (Satoshi): 67%\n🇮🇹 ITALY (Sal Da Vinci): 33%\nСатоши с его «Viva, Moldova!» забирает шестую путевку в четвертьфинал, показав колоссальный отрыв в 34%. Саль Да Винчи, несмотря на безупречный вокал, покидает турнир. YourVision Cup 2026 подтверждает: аудитория жаждет перемен и драйва.\nИТОГИ БИТВЫ:\n🥇 MOLDOVA (Satoshi): 67% - ПРОХОД В 1/4 ФИНАЛА 🇲🇩\n🥈 ITALY (Sal Da Vinci): 33% - ВЫЛЕТ 🇮🇹\nИталия завершает свою кампанию. В четвертьфинале Молдова встретится с победителем пары Sweden vs Armenia (Швеция уже ждет!).\nА прямо сейчас стартует седьмая битва: Cyprus vs United Kingdom! Голосуйте!\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup Results",
+            "img": "https://cdn4.telesco.pe/file/E575jKfaxE1W8D4w4kJgvgxRAEa3GPVoQM_H37GziRiZgpXxifYwjzlt0H2oklf683gLtpS0TudQ0fRI-HpX1LLqH7eqYtlu3uSvaVJRH_hVYb-J59-4ZvRdB5GqhYHPCEhpPjpQFktijbXNEsH-_gqnffSM_KWuVP5IAqCopNqq14Lg8dffGusQ2fGmGfCSklR7VP8mGgAqHczXi11S1Ty6vZ_5R1mbFWNWdk_tEaLwNmdLC716j5RUoGDn5rqbYTcbHuT4QhYQgO31wobDi49Jdvl6G4OnSwgq8RM3WrLc9USvWY9hUNntDQk-iJ_asjFMklb8AtalxYmT9vO8lw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774942358.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5589",
+            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #7",
+            "b": "Средиземноморская сирена против аналогового панка. Солнечная энергия этно-попа против безумных машин и грязного синтезаторного звука.\n🇨🇾 CYPRUS: Antigoni - «Jalla»\nЧистая энергия лета. Антигони - это «Mediterranean Siren» с уникальным хриплым тембром. Её «Jalla» объединяет греческие и арабские инструменты с мощным танцевальным битом. Кипр привез в Вену праздник, способный зажечь любую арену.\nvs\n🇬🇧 UNITED KINGDOM: Look Mum No Computer - «Eins, Zwei, Drei»\nПанк от мира электроники. Сэм Баттл - изобретатель безумных машин, который использует только физические синтезаторы. Его «Analog Punk» - это хаос, вдохновленный модой 90-х и побегом от офисной скуки. Британия в этом году пошла на самый смелый эксперимент.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.2 мин | ⚔️ YourVision: Play-Off",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774940555.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5588",
+            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774940521.0,
+            "poll": {
+                "question": "📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
+                "options": [
+                    "🇨🇾 CYPRUS (Antigoni)",
+                    "🇬🇧 UNITED KINGDOM (Look Mum No Computer)"
+                ]
+            }
+        },
+        {
             "m": "31.03 | 06:00",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5908",
@@ -697,48 +771,6 @@ var DATA = {
             "isVideo": false,
             "ts": 1774764034.0,
             "poll": null
-        },
-        {
-            "m": "29.03 | 00:56",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5569",
-            "t": "❤️ EUROVISION ASIA: БАНГКОК 2026 - ОФИЦИАЛЬНО",
-            "b": "Самый масштабный музыкальный проект планеты расширяет границы. 14 ноября 2026 года Бангкок примет первый в истории Eurovision Song Contest Asia.\nИнсайдерские детали запуска:\n• Локация: Бангкок, Таиланд.\n• Дата финала: 14 ноября 2026.\n• Слоган: «United by Music. Across Asia».\n• Участники: Камбоджа, Бангладеш, Лаос, Бутан, Вьетнам, Малайзия, Филиппины, Непал и Таиланд уже в списке.\nЭто не просто шоу - это движение. Каждая страна проведет свой национальный отбор, а официальной цифровой платформой станет Zoop. Обратный отсчет запущен: до старта новой эры осталось 229 дней.\nAsia, are you ready?\n⏱️ Время чтения: 0.6 мин | 🌏 YourVision: Asia",
-            "img": "https://cdn4.telesco.pe/file/ORLOQ4CXUFEI35ZhSo7Anll1RG3FbR7wvyeGQSV_jSUgZzcwoO1VaxeLGkg8VQPC7fwEhtX_K43dluPR71YV4U6OM2ZG3GS_zxMFC32k3TTlDcIXsYsUt8Zcrv6O3buB1vj2mnju2TdVFaCjTJdBCSBQowAIWF7HrXpo0U17x7Qezzd3PDU7K2G5lWw93trikrlCQlYrKI1PZhu5NbbKZ0etawWlDNeihvrUDEeNoRa2eVb2TYdezvpC2Cdol1aZLQdAFhke_S5AIBsS9MxR3lA7o6aJGuWvVik0AhOuNCfWVBC0FyBum73eWkQ1oB-sAyvVlq92mdRrIytIqx0hvQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774745781.0,
-            "poll": null
-        },
-        {
-            "m": "28.03 | 19:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5568",
-            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - ПОЛЬША",
-            "b": "Польская кампания 2026 года завершилась в Группе G. Тихая баллада Alicja не смогла противостоять «датскому шторму». Аудит №6: была ли мистика прошлого года более эффективной, чем вокал нынешнего?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇵🇱 2026: Alicja - «Pray»\nМощная вокальная баллада с классической структурой. Попытка взять искренностью и чистотой исполнения, которая оказалась слишком хрупкой для жесткой конкуренции.\n🇵🇱 2025: Justyna Steczkowska - «Gaja»\nМистический арт-поп с глубокой концепцией. Год назад Польша представила один из самых спорных, но запоминающихся треков сезона.\nВОПРОС К ЭКСПЕРТАМ\nСделала ли Польша шаг назад, выбрав классику вместо эксперимента? Был ли трек «Pray» слишком форматным для YourVision Cup или «Gaja» была слишком сложной?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇵🇱 YourVision: Reset",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774726347.0,
-            "poll": null
-        },
-        {
-            "m": "28.03 | 19:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5567",
-            "t": "📊 ОПРОС: 📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774726321.0,
-            "poll": {
-                "question": "📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
-                "options": [
-                    "🇵🇱 2026: Alicja - «Pray»",
-                    "🇵🇱 2025: Justyna Steczkowska - «Gaja»"
-                ]
-            }
         },
         {
             "m": "28.03 | 16:04",
