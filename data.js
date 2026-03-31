@@ -40,7 +40,7 @@ var DATA = {
             "sc1": "56% ★",
             "t2": "al",
             "a2": "Alis",
-            "s2": "Nën",
+            "s2": "Nân",
             "sc2": "44%",
             "w": 1,
             "status": "FINISHED"
@@ -52,13 +52,13 @@ var DATA = {
             "t1": "au",
             "a1": "Delta Goodrem",
             "s1": "Eclipse",
-            "sc1": "50%",
+            "sc1": "LIVE",
             "t2": "ge",
             "a2": "Bzikebi",
             "s2": "On Replay",
-            "sc2": "50% ★",
-            "w": 2,
-            "status": "FINISHED"
+            "sc2": "",
+            "w": 0,
+            "status": "LIVE"
         },
         {
             "id": 5,
@@ -67,13 +67,13 @@ var DATA = {
             "t1": "se",
             "a1": "Felicia",
             "s1": "My System",
-            "sc1": "58% ★",
+            "sc1": "WAIT",
             "t2": "am",
             "a2": "Simón",
             "s2": "Paloma rumba",
-            "sc2": "42%",
-            "w": 1,
-            "status": "FINISHED"
+            "sc2": "",
+            "w": 0,
+            "status": "WAITING"
         },
         {
             "id": 6,
@@ -110,8 +110,8 @@ var DATA = {
             "n": "Match #8",
             "qf": "TO QF4",
             "t1": "mt",
-            "a1": "Aidan",
-            "s1": "Bella",
+            "a1": "HVNDS",
+            "s1": "Dor",
             "sc1": "WAIT",
             "t2": "bg",
             "a2": "Dara",
@@ -123,325 +123,333 @@ var DATA = {
     ],
     "qualifiers": [
         {
-            "id": "fi",
-            "a": "L. Lampenius & P. Parkkonen",
-            "s": "Liekinheitin"
+                "id": "fi",
+                "a": "L. Lampenius & P. Parkkonen",
+                "s": "Liekinheitin"
         },
         {
-            "id": "dk",
-            "a": "S. Torpegaard Lund",
-            "s": "Før vi går hjem"
+                "id": "dk",
+                "a": "S. Torpegaard Lund",
+                "s": "Før vi går hjem"
         },
         {
-            "id": "gr",
-            "a": "Akylas",
-            "s": "Ferto"
+                "id": "gr",
+                "a": "Akylas",
+                "s": "Ferto"
         },
         {
-            "id": "ge",
-            "a": "Bzikebi",
-            "s": "On Replay"
+                "id": "ge",
+                "a": "Bzikebi",
+                "s": "On Replay"
         },
         {
-            "id": "se",
-            "a": "Felicia",
-            "s": "My System"
+                "id": "se",
+                "a": "Felicia",
+                "s": "My System"
         },
         {
-            "id": "md",
-            "a": "Satoshi",
-            "s": "Viva, Moldova!"
-        }
-    ],
-    "eliminated": [
-        {
-            "id": "it",
-            "a": "Sal Da Vinci",
-            "s": "Per sempre sì"
-        },
-        {
-            "id": "me",
-            "a": "Tamara Živković",
-            "s": "Nova zora"
-        },
-        {
-            "id": "at",
-            "a": "COSMØ",
-            "s": "Tanzschein"
-        },
-        {
-            "id": "al",
-            "a": "Alis",
-            "s": "Nën"
-        },
-        {
-            "id": "au",
-            "a": "Delta Goodrem",
-            "s": "Eclipse"
-        },
-        {
-            "id": "am",
-            "a": "Simón",
-            "s": "Paloma rumba"
-        },
-        {
-            "id": "lu",
-            "a": "Eva Marija",
-            "s": "Mother Nature"
-        },
-        {
-            "id": "ro",
-            "a": "A. Căpitănescu",
-            "s": "Choke Me"
-        },
-        {
-            "id": "lt",
-            "a": "Lion Ceccah",
-            "s": "Sólo quiero más"
-        },
-        {
-            "id": "hr",
-            "a": "Lelek",
-            "s": "Andromeda"
-        },
-        {
-            "id": "lv",
-            "a": "Atvara",
-            "s": "Ēnā"
-        },
-        {
-            "id": "cz",
-            "a": "Daniel Zizka",
-            "s": "Crossroads"
-        },
-        {
-            "id": "ua",
-            "a": "Leléka",
-            "s": "Ridnym"
-        },
-        {
-            "id": "ee",
-            "a": "Vanilla Ninja",
-            "s": "Too Epic to Be True"
-        },
-        {
-            "id": "pt",
-            "a": "Bandidos do Cante",
-            "s": "Rosa"
-        },
-        {
-            "id": "az",
-            "a": "Jiva",
-            "s": "Just Go"
-        },
-        {
-            "id": "il",
-            "a": "Noam Bettan",
-            "s": "Michelle"
-        },
-        {
-            "id": "rs",
-            "a": "Lavina",
-            "s": "Kraj mene"
-        },
-        {
-            "id": "fr",
-            "a": "Monroe",
-            "s": "Regarde !"
-        },
-        {
-            "id": "pl",
-            "a": "Alicja",
-            "s": "Pray"
-        },
-        {
-            "id": "no",
-            "a": "Jonas Lovv",
-            "s": "Ya Ya Ya"
-        },
-        {
-            "id": "de",
-            "a": "Sarah Engels",
-            "s": "Fire"
-        },
-        {
-            "id": "sm",
-            "a": "Senhit",
-            "s": "Superstar"
-        },
-        {
-            "id": "ch",
-            "a": "Veronica Fusaro",
-            "s": "Alice"
-        },
-        {
-            "id": "be",
-            "a": "Essyla",
-            "s": "Dancing on the Ice"
-        }
-    ],
-    "chart": [
-        {
-                "r": 1,
-                "c": 1,
-                "a": "Taylor Swift",
-                "s": "The Fate Of Ophelia",
-                "p": "99 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
-        },
-        {
-                "r": 2,
-                "c": -1,
-                "a": "sombr",
-                "s": "12 to 12",
-                "p": "89 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
-        },
-        {
-                "r": 3,
-                "c": 0,
-                "a": "RAYE",
-                "s": "WHERE IS MY HUSBAND!",
-                "p": "89 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
-        },
-        {
-                "r": 4,
-                "c": 0,
-                "a": "PinkPantheress & Zara Larsson",
-                "s": "Stateside",
-                "p": "68 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 5,
-                "c": 0,
-                "a": "Harry Styles",
-                "s": "Aperture",
-                "p": "67 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 6,
-                "c": 0,
-                "a": "Alex Warren",
-                "s": "Fever Dream",
-                "p": "53 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 7,
-                "c": 0,
-                "a": "Danny L Harle & Dua Lipa",
-                "s": "Two Hearts",
-                "p": "47 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 8,
-                "c": 0,
-                "a": "Damiano David, Tyla & Nile Rodgers",
-                "s": "Talk To Me",
-                "p": "45 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 9,
-                "c": 1,
-                "a": "SUNMI",
-                "s": "CYNICAL",
-                "p": "43 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 10,
-                "c": -1,
-                "a": "Bruno Mars",
-                "s": "I Just Might",
-                "p": "41 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 11,
-                "c": -1,
-                "a": "David Guetta, Teddy Swims & Tones and I",
-                "s": "Gone Gone Gone",
-                "p": "41 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 12,
-                "c": -1,
-                "a": "Juste, Jaxstyle & Jon",
-                "s": "Turn The Lights Off",
-                "p": "41 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 13,
-                "c": 0,
-                "a": "Calvin Harris & Kasabian",
-                "s": "Release The Pressure",
-                "p": "36 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 14,
-                "c": 0,
-                "a": "Kygo feat. Khalid & Gryffin",
-                "s": "Save My Love",
-                "p": "29 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 15,
-                "c": 0,
-                "a": "Anyma & EJAE",
-                "s": "Out Of My Body",
-                "p": "25 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 16,
-                "c": 0,
-                "a": "brux XTN",
-                "s": "Paid to Exist",
-                "p": "24 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 17,
-                "c": 0,
-                "a": "Dave & Tems",
-                "s": "Raindance",
-                "p": "23 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 18,
-                "c": 0,
-                "a": "Kungs feat. Theophilus London",
-                "s": "Galaxy",
-                "p": "19 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 19,
-                "c": 0,
-                "a": "Ofenbach",
-                "s": "Miles Away",
-                "p": "15 pts",
-                "img": "assets/heart_white_2026.svg"
-        },
-        {
-                "r": 20,
-                "c": 0,
-                "a": "Albert Brite",
-                "s": "Wild",
-                "p": "8 pts",
-                "img": "assets/heart_white_2026.svg"
+                "id": "md",
+                "a": "Satoshi",
+                "s": "Viva, Moldova!"
         }
 ],
+    "eliminated": [
+        {
+                "id": "it",
+                "a": "Sal Da Vinci",
+                "s": "Per sempre sì"
+        },
+        {
+                "id": "me",
+                "a": "Tamara Živković",
+                "s": "Nova zora"
+        },
+        {
+                "id": "at",
+                "a": "COSMØ",
+                "s": "Tanzschein"
+        },
+        {
+                "id": "al",
+                "a": "Alis",
+                "s": "Nën"
+        },
+        {
+                "id": "au",
+                "a": "Delta Goodrem",
+                "s": "Eclipse"
+        },
+        {
+                "id": "am",
+                "a": "Simón",
+                "s": "Paloma rumba"
+        },
+        {
+                "id": "lu",
+                "a": "Eva Marija",
+                "s": "Mother Nature"
+        },
+        {
+                "id": "ro",
+                "a": "A. Căpitănescu",
+                "s": "Choke Me"
+        },
+        {
+                "id": "lt",
+                "a": "Lion Ceccah",
+                "s": "Sólo quiero más"
+        },
+        {
+                "id": "hr",
+                "a": "Lelek",
+                "s": "Andromeda"
+        },
+        {
+                "id": "lv",
+                "a": "Atvara",
+                "s": "Ēnā"
+        },
+        {
+                "id": "cz",
+                "a": "Daniel Zizka",
+                "s": "Crossroads"
+        },
+        {
+                "id": "ua",
+                "a": "Leléka",
+                "s": "Ridnym"
+        },
+        {
+                "id": "ee",
+                "a": "Vanilla Ninja",
+                "s": "Too Epic to Be True"
+        },
+        {
+                "id": "pt",
+                "a": "Bandidos do Cante",
+                "s": "Rosa"
+        },
+        {
+                "id": "az",
+                "a": "Jiva",
+                "s": "Just Go"
+        },
+        {
+                "id": "il",
+                "a": "Noam Bettan",
+                "s": "Michelle"
+        },
+        {
+                "id": "rs",
+                "a": "Lavina",
+                "s": "Kraj mene"
+        },
+        {
+                "id": "fr",
+                "a": "Monroe",
+                "s": "Regarde !"
+        },
+        {
+                "id": "pl",
+                "a": "Alicja",
+                "s": "Pray"
+        },
+        {
+                "id": "no",
+                "a": "Jonas Lovv",
+                "s": "Ya Ya Ya"
+        },
+        {
+                "id": "de",
+                "a": "Sarah Engels",
+                "s": "Fire"
+        },
+        {
+                "id": "sm",
+                "a": "Senhit",
+                "s": "Superstar"
+        },
+        {
+                "id": "ch",
+                "a": "Veronica Fusaro",
+                "s": "Alice"
+        },
+        {
+                "id": "be",
+                "a": "Essyla",
+                "s": "Dancing on the Ice"
+        }
+],
+    "chart": [
+        {
+            "r": 1,
+            "a": "Greczula",
+            "s": "Half of Me",
+            "p": "91 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 2,
+            "a": "Sissal",
+            "s": "Infinity",
+            "p": "70 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 3,
+            "a": "HVNDS",
+            "s": "Dor",
+            "p": "70 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 4,
+            "a": "Cold Snap",
+            "s": "Mucho Macho",
+            "p": "65 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 5,
+            "a": "Laud",
+            "s": "Lightkeeper",
+            "p": "61 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 6,
+            "a": "Kautkaili",
+            "s": "Te un tagad",
+            "p": "55 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 7,
+            "a": "Noëp",
+            "s": "Days Like This",
+            "p": "53 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/600x600bb.jpg"
+        },
+        {
+            "r": 8,
+            "a": "Antti Paalanen",
+            "s": "Takatukka",
+            "p": "47 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 9,
+            "a": "Zejna",
+            "s": "Jugoslavija",
+            "p": "45 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg"
+        },
+        {
+            "r": 10,
+            "a": "Matt Bixck",
+            "s": "The Flute",
+            "p": "40 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 11,
+            "a": "Sayf",
+            "s": "Tu mi piaci tanto",
+            "p": "39 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 12,
+            "a": "Alexander Rybak",
+            "s": "Rise",
+            "p": "37 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 13,
+            "a": "Good Job Nicky",
+            "s": "Dark Side",
+            "p": "36 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 14,
+            "a": "SHWR",
+            "s": "Contact",
+            "p": "28 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 15,
+            "a": "Steve Castile",
+            "s": "Sweet Tooth",
+            "p": "27 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 16,
+            "a": "Wavvyboi",
+            "s": "Black Glitter",
+            "p": "26 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 17,
+            "a": "Lara Baltic",
+            "s": "Rythm Boy",
+            "p": "24 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg"
+        },
+        {
+            "r": 18,
+            "a": "Dara",
+            "s": "Curse",
+            "p": "18 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 19,
+            "a": "Lena Schaur",
+            "s": "Painted Reality",
+            "p": "16 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 20,
+            "a": "Dinis Mota",
+            "s": "Jurei",
+            "p": "16 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 21,
+            "a": "Inis Neziri",
+            "s": "Ta kam fal",
+            "p": "13 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 22,
+            "a": "Ola Antoniak",
+            "s": "Don't You Try",
+            "p": "10 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 23,
+            "a": "Pavel Orlov",
+            "s": "Can't Say Goodbye",
+            "p": "10 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg"
+        },
+        {
+            "r": 24,
+            "a": "Kelly Joyce",
+            "s": "Oh la la",
+            "p": "5 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg"
+        }
+    ],
     "news": [
         {
             "m": "31.03 | 18:32",
