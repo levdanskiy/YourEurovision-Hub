@@ -793,7 +793,7 @@ var DATA = {
         {
             "a": "UNCLEFLEXXX",
             "s": "SMS",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/ff/19/e5ff194d-5f9b-f4a3-835e-6484b50579cf/cover.jpg/400x400bb.jpg"
+            "img": "https://i.scdn.co/image/ab67616d0000b2735a1ab9191ed8bcdbf1bac491"
         },
         {
             "a": "ВАНЯ ДМИТРИЕНКО",
