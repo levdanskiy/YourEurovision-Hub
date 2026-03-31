@@ -282,178 +282,257 @@ var DATA = {
     ],
     "chart": [
         {
-            "r": 1,
-            "c": 0,
-            "a": "Greczula",
-            "s": "Half of Me",
-            "p": "91 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
+                "r": 1,
+                "c": 1,
+                "a": "Taylor Swift",
+                "s": "The Fate Of Ophelia",
+                "p": "99 pts",
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
         },
         {
-            "r": 2,
-            "c": 1,
-            "a": "Sissal",
-            "s": "Infinity",
-            "p": "70 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
+                "r": 2,
+                "c": -1,
+                "a": "sombr",
+                "s": "12 to 12",
+                "p": "89 pts",
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
         },
         {
-            "r": 3,
-            "c": -1,
-            "a": "HVNDS",
-            "s": "Dor",
-            "p": "70 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
+                "r": 3,
+                "c": 0,
+                "a": "RAYE",
+                "s": "WHERE IS MY HUSBAND!",
+                "p": "89 pts",
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
         },
         {
-            "r": 4,
-            "a": "Cold Snap",
-            "s": "Mucho Macho",
-            "p": "65 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7a/61/73/7a61737a-1fcc-b4ff-541e-67b0c78107be/199806885000.jpg/200x200bb.jpg"
+                "r": 4,
+                "c": 0,
+                "a": "PinkPantheress & Zara Larsson",
+                "s": "Stateside",
+                "p": "68 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 5,
-            "a": "Laud",
-            "s": "Lightkeeper",
-            "p": "61 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/4b/c1/894bc1b9-6e49-7d8f-97c5-01067b8bce4f/cover.jpg/200x200bb.jpg"
+                "r": 5,
+                "c": 0,
+                "a": "Harry Styles",
+                "s": "Aperture",
+                "p": "67 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 6,
-            "a": "Kautkaili",
-            "s": "Te un tagad",
-            "p": "55 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/da/a6/38daa69c-5171-9a91-1e0c-331d3e7fcd14/artwork.jpg/200x200bb.jpg"
+                "r": 6,
+                "c": 0,
+                "a": "Alex Warren",
+                "s": "Fever Dream",
+                "p": "53 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 7,
-            "a": "Noëp",
-            "s": "Days Like This",
-            "p": "53 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/cb/df/ffcbdffc-d19a-d91a-3aec-defb737dfc42/dj.ergwefse.jpg/600x600bb.jpg"
+                "r": 7,
+                "c": 0,
+                "a": "Danny L Harle & Dua Lipa",
+                "s": "Two Hearts",
+                "p": "47 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 8,
-            "a": "Antti Paalanen",
-            "s": "Takatukka",
-            "p": "47 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1e/4f/b31e4f7c-05c9-5b8e-003b-0145fe9892a1/199806589212.jpg/200x200bb.jpg"
+                "r": 8,
+                "c": 0,
+                "a": "Damiano David, Tyla & Nile Rodgers",
+                "s": "Talk To Me",
+                "p": "45 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 9,
-            "a": "Zejna",
-            "s": "Jugoslavija",
-            "p": "45 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/37/48/ae/3748ae86-b344-3536-8d03-e2bc74e60f58/8721465671841.png/200x200bb.jpg"
+                "r": 9,
+                "c": 1,
+                "a": "SUNMI",
+                "s": "CYNICAL",
+                "p": "43 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 10,
-            "a": "Matt Bixck",
-            "s": "The Flute",
-            "p": "40 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
+                "r": 10,
+                "c": -1,
+                "a": "Bruno Mars",
+                "s": "I Just Might",
+                "p": "41 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 11,
-            "a": "Sayf",
-            "s": "Tu mi piaci tanto",
-            "p": "39 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/af/11/71/af1171f3-123e-c2d4-985f-86822e960746/5026854668482.jpg/200x200bb.jpg"
+                "r": 11,
+                "c": -1,
+                "a": "David Guetta, Teddy Swims & Tones and I",
+                "s": "Gone Gone Gone",
+                "p": "41 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 12,
-            "a": "Alexander Rybak",
-            "s": "Rise",
-            "p": "37 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/8e/be/e48ebe99-b913-2b2e-7935-9c941bfa17fb/199806689851.jpg/200x200bb.jpg"
+                "r": 12,
+                "c": -1,
+                "a": "Juste, Jaxstyle & Jon",
+                "s": "Turn The Lights Off",
+                "p": "41 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 13,
-            "a": "Good Job Nicky",
-            "s": "Dark Side",
-            "p": "36 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/d7/fa/b8d7fa1a-9f95-a473-7f78-030b84461421/26UMGIM16764.rgb.jpg/200x200bb.jpg"
+                "r": 13,
+                "c": 0,
+                "a": "Calvin Harris & Kasabian",
+                "s": "Release The Pressure",
+                "p": "36 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 14,
-            "a": "SHWR",
-            "s": "Contact",
-            "p": "28 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/f8/ca/c6f8ca7b-8037-0dbe-e7c3-65f93445a7e2/075679821737.jpg/200x200bb.jpg"
+                "r": 14,
+                "c": 0,
+                "a": "Kygo feat. Khalid & Gryffin",
+                "s": "Save My Love",
+                "p": "29 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 15,
-            "a": "Steve Castile",
-            "s": "Sweet Tooth",
-            "p": "27 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/38/37/9b/38379bfe-e3bd-6af6-53f3-57b31af188a6/artwork.jpg/200x200bb.jpg"
+                "r": 15,
+                "c": 0,
+                "a": "Anyma & EJAE",
+                "s": "Out Of My Body",
+                "p": "25 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 16,
-            "a": "Wavvyboi",
-            "s": "Black Glitter",
-            "p": "26 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/71/fb/7d71fbc5-b366-16db-be54-c39a89c5fae9/26UMGIM02602.rgb.jpg/200x200bb.jpg"
+                "r": 16,
+                "c": 0,
+                "a": "brux XTN",
+                "s": "Paid to Exist",
+                "p": "24 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 17,
-            "a": "Lara Baltic",
-            "s": "Rythm Boy",
-            "p": "24 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/38/c4/4b38c47f-70d6-ce2e-605d-f29e4702b244/8721416894114.png/200x200bb.jpg"
+                "r": 17,
+                "c": 0,
+                "a": "Dave & Tems",
+                "s": "Raindance",
+                "p": "23 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 18,
-            "a": "Dara",
-            "s": "Curse",
-            "p": "18 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/0a/1c/250a1cda-fc0b-2aea-f44d-871511fa551e/993945.jpg/200x200bb.jpg"
+                "r": 18,
+                "c": 0,
+                "a": "Kungs feat. Theophilus London",
+                "s": "Galaxy",
+                "p": "19 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 19,
-            "a": "Lena Schaur",
-            "s": "Painted Reality",
-            "p": "16 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b1/c7/84/b1c78447-d466-64ad-f2c1-8375fcae2b9d/cover_4068992634494.jpg/200x200bb.jpg"
+                "r": 19,
+                "c": 0,
+                "a": "Ofenbach",
+                "s": "Miles Away",
+                "p": "15 pts",
+                "img": "assets/heart_white_2026.svg"
         },
         {
-            "r": 20,
-            "a": "Dinis Mota",
-            "s": "Jurei",
-            "p": "16 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 21,
-            "a": "Inis Neziri",
-            "s": "Ta kam fal",
-            "p": "13 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/d5/e0/64d5e01b-2eeb-9539-d591-4a7cbae85729/11157.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 22,
-            "a": "Ola Antoniak",
-            "s": "Don't You Try",
-            "p": "10 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/49/a5/5b49a57b-7122-b82d-5d2e-f3a45555add7/0001114845600.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 23,
-            "a": "Pavel Orlov",
-            "s": "Can't Say Goodbye",
-            "p": "10 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/c9/6e/78c96e27-a030-1552-eb17-5fc025c12ca5/artwork.jpg/200x200bb.jpg"
-        },
-        {
-            "r": 24,
-            "a": "Kelly Joyce",
-            "s": "Oh la la",
-            "p": "5 pts",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/94/62/0d9462b3-4098-c2a1-ba22-c87ff78d274e/8033549346850_cover.jpg/200x200bb.jpg"
+                "r": 20,
+                "c": 0,
+                "a": "Albert Brite",
+                "s": "Wild",
+                "p": "8 pts",
+                "img": "assets/heart_white_2026.svg"
         }
-    ],
+],
     "news": [
+        {
+            "m": "31.03 | 18:32",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5596",
+            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - ПОРТУГАЛИЯ",
+            "b": "Португалия в 2026 году представила «Bandidos do Cante» - манифест аутентичности, который не смог пробиться сквозь «финский шторм» Группы E. Аудит №9: был ли меланхоличный инди-поп прошлого года более точным выбором?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇵🇹 2026: Bandidos do Cante - «Rosa»\nТрадиционное многоголосие Алентежу в современном обрамлении. Интимный, глубокий фолк, сделавший ставку на культурный код и мужскую энергию.\n🇵🇹 2025: Napa - «Deslocado»\nАтмосферный инди-поп с мягким вокалом и кинематографичным звучанием. Год назад этот трек подкупил аудиторию своей искренностью и ощущением светлой грусти.\nВОПРОС К ЭКСПЕРТАМ\nНужна ли Португалии верность древним традициям баттла или её путь - это современный «городской» звук от Napa? Был ли выбор этого года слишком «нишевым» по сравнению с легкостью прошлого сезона?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇵🇹 YourVision: Reset",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774981947.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 18:32",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5595",
+            "t": "📊 ОПРОС: 📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774981921.0,
+            "poll": {
+                "question": "📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
+                "options": [
+                    "🇵🇹 2026: Bandidos do Cante - «Rosa»",
+                    "🇵🇹 2025: Napa - «Deslocado»"
+                ]
+            }
+        },
+        {
+            "m": "31.03 | 17:34",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5594",
+            "t": "📊 НОМИНАНТЫ: RUTOP - SIGNAL 20 (SEASON 2026)",
+            "b": "Мы представляем актуальный список самых влиятельных треков российского сегмента. В SIGNAL 20 входят только те артисты, чей «голос» одинаково мощен и в федеральном радиоэфире, и в топ-чартах крупнейших стриминг-платформ. Это квинтэссенция текущего музыкального момента.\nГолосование официально открыто! Выберите лучших из 20 номинантов:\n• HOLLYFLAME - ТОНУ\n• SQWOZ BAB - КУПЕР\n• ICEGERGERT & ZIVERT - БАНК\n• UNCLEFLEXXX - SMS\n• ВАНЯ ДМИТРИЕНКО - РТУТЬ\n• 5STA FAMILY - РАЗ, ДВА\n• MONA - ПОПРОШУ ТЕБЯ\n• ЛЮБОВЬ УСПЕНСКАЯ & JAKONE - ПЛАКАЛА НАДЕЖДА\n• FILATOV & KARAS - ВКЛЮЧИ МУЗЫКУ\n• МОТ - НАМЁК НА НАС\n• SABI & MIA BOYKA - БАЗОВЫЙ МИНИМУМ\n• GAYAZOV$ BROTHER$ - РУССКАЯ РУЛЕТКА\n• XCHO - ТЫ И Я\n• ЛЁША СВИК & NYUSHA - ПРОБУДИ\n• MACAN - ОСТАНЬСЯ ОБРАЗОМ\n• LYRIQ - КАССЕТЫ\n• JONY - ПОМНЮ\n• SERYABKINA - АСФАЛЬТ\n• ARTIK & ASTI - МОДНЫЙ ПОП\n• КЛАВА КОКА - СПЛЕТНИ. ШУМ. ЛУК.\nПЛЕЙЛИСТЫ:\n📱 Spotify\n📱 YT Music\n📱 YouTube\n🗳 Голосование: Strawpoll\n(Голосование до воскресенья, 5 апреля, 23:59 по Риге)\n📻 ПРЕМЬЕРА ИТОГОВ: Вторник, 7 апреля, с 18:00 (по Риге) на levdanskiy\n⏱️ Время чтения: 1.4 мин | 📊 YourVision: RuTop",
+            "img": "https://cdn4.telesco.pe/file/Mdq0n98yvWCWb8DNB8cfSL2xOFlCRe8TuPTahqA6pBfjWJZZ48VmhT7tS6bx1jWrRArUszXZEyafccDAmI9ogmvPzMYfpT4oBUCDhe2ZpS_LT22BZpnbzWyYDCQ8pzCR0nJnpyC8RMRSEgT71_F1pJ0E6ryhjhfdn8SxEK9CJ2j1vjXuh8p5yESquB1cJbHgBdOd0GMzCppasTND701mGMs02PLYZASst9U82ZPnr2mvx2QXNCMp_zAMdcFKgkrW7vhTkp52KiJi10rYZ_S97MGaIxvUR_2eQ9JCPwpvBESTMubl-Z_pv1kRbvIqilRkUEQlVHcKbBuc2oQpr6CQFw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774978452.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 17:04",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5593",
+            "t": "🧬 DNA: САН-МАРИНО - SENHIT",
+            "b": "Senhit Zadik Zadik - артистка, чей образ стал синонимом экстравагантности в европейском поп-пространстве. Уроженка Болоньи с эритрейскими корнями, она превратила участие в ESC для Сан-Марино в ежегодный перфоманс мирового уровня. В 2026 году она возвращается в третий раз, чтобы совершить финальный рывок к вершине.\nTHE JOURNEY (ПУТЬ)\nЕё карьера началась за пределами Италии - в мюзиклах «Fame», «The Lion King» и «Hair» в Швейцарии и Германии. Вернувшись в Италию в 2002-м, она выпустила серию успешных альбомов и стала завсегдатаем ТВ-шоу. В 2011 году Сенхит впервые представила Сан-Марино с балладой «Stand By». Но настоящий прорыв случился в 2021-м: после отмены конкурса 2020 года она привезла в Роттердам «Adrenalina» с участием Flo Rida, подарив стране второй финал в истории. 8 марта 2026 года SMRTV официально подтвердили её возвращение с песней «Superstar» в дуэте с легендой Boy George.\nSTYLE & SOUND (ДНК)\nДНК Сенхит - это «максимализм». Её стиль - это яркий поп с элементами глэма и диско. Она мастер визуальных трансформаций, что доказал её проект #FreakyTripToRotterdam. В песне «Superstar» её мощный вокал переплетается с харизматичным тембром Боя Джорджа, создавая эффектный кросс-поколенческий диалог. Визуально это всегда авангард, высокая мода и театральность, за которой стоит огромный опыт работы на сцене мюзиклов.\nVERDICT: Сан-Марино в этом году играет по-крупному. Присутствие Боя Джорджа и огромный опыт самой Сенхит делают этот проект самым обсуждаемым еще до начала репетиций. Это гарантированное место в финале и заявка на высокие баллы.\n⏱️ Время чтения: 1.5 мин | 🧬 YourVision: DNA",
+            "img": "https://cdn4.telesco.pe/file/faY5C0jW-2hTuRatM1kcSxv0JUE8MF4s2IRe9lSK6099BKFnAX3p9cPxFM90V9xUPpxH7Mbezt0wzRBoGNMP1wsqrrGkd1D_RzXIWThHboU_7NbK-lUXU6vFo50ZN6j1AyFrY45sgSijG6GqoKb_GpLMzCYU3sei6m-FMSf7Ejaal3g4Gk-ulCC7uKKV1xCaN9-ZFw5_1Zi3VZraBcowL6EvdN9b7uN_P01cORjln1Ywuo_nBmMHzKtftZA9Jyzm5IHX8-7deTROuGfRB2YayQxJu5WnMwNC6rIROWHzGR-d8v9bqT67cErAR-83xiyxR1ThPZtj5Cf7pCDC-grLkA",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774976656.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 16:05",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5592",
+            "t": "🌐 WORLDSOUND: AIRWAVE VELOCITY - ИТОГИ НЕДЕЛИ",
+            "b": "Глобальный эфир зафиксировал смену лидера. Тейлор Свифт возвращает себе корону, совершая финальный рывок и обходя «12 to 12» от sombr. Это была неделя максимально плотной борьбы в верхней части сетки, где каждый голос эксперта менял расстановку сил в Топ-3.\n🏆 ТОП-20 ИТОГОВОГО ЗАЧЕТА\n🥇 1. Taylor Swift - «The Fate Of Ophelia» (99) ↑+1\n🥈 2. sombr - «12 to 12» (89) ↓-1\n🥉 3. RAYE - «WHERE IS MY HUSBAND!» (89) ═\n4. PinkPantheress & Zara Larsson - «Stateside» (68) ═\n5. Harry Styles - «Aperture» (67) ═\n6. Alex Warren - «Fever Dream» (53) ═\n7. Danny L Harle & Dua Lipa - «Two Hearts» (47) ═\n8. Damiano David, Tyla & Nile Rodgers - «Talk To Me» (45) ═\n9. SUNMI - «CYNICAL» (43) ↑+3\n10. Bruno Mars - «I Just Might» (41) ↓-1\n11. David Guetta, Teddy Swims & Tones and I - «Gone Gone Gone» (41) ↓-1\n12. Juste, Jaxstyle & Jon - «Turn The Lights Off» (41) ↓-1\n13. Calvin Harris & Kasabian - «Release The Pressure» (36) ═\n14. Kygo feat. Khalid & Gryffin - «Save My Love» (29) ═\n15. Anyma & EJAE - «Out Of My Body» (25) ═\n16. brux XTN - «Paid to Exist» (24) ═\n17. Dave & Tems - «Raindance» (23) ═\n18. Kungs feat. Theophilus London - «Galaxy» (19) ═\n19. Ofenbach - «Miles Away» (15) ═\n20. Albert Brite - «Wild» (8) ═\n⏱️ Время чтения: 1.2 мин | 🌐 YourVision: WorldSound",
+            "img": "https://cdn4.telesco.pe/file/rKIy6xVJCnZsX1kHyOPMAeTY9iCHmn2WYspF3B-QLU6yiEogbb5U_fYhUwtoRUoQiEuWUK0qSGhxsQu0x5Jr6aiLLw6O3j8wbPjCkr4LVQLSoqMPdsPnz814-2xlQJdWu2uUiWzh1QgmPy9gfWHN8E22p69BBWEVYe26UUvyjz0o1mCKjA7d7kSCDWdZgIooW_YBQFHAx43jdsrbZfuv2kl2-6e0sEXyOpB09A5xgPsNfRfl8DjV9wGi8ihf81aGLJ-3HJRGttnFBf2RgGIpWXgIorBuXaCR83pMSwp6F5-J-AYlktQMA8vak75qd5xoxu7G8gbC9LGD1iu1eNdxXw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774973140.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 15:02",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5909",
+            "t": "🥐 #ALMANAC_FINALE: МАРТОВСКОЕ ПОСЛЕВКУСИЕ - ИТОГИ MARGINALIA",
+            "b": "В последний вечер марта город превращается в один большой черновик. Мы заканчиваем главу Marginalia - время наблюдений, тонких теней и невидимых якорей. За тридцать один день мы научились замечать красоту в трещинах на брусчатке, в аромате свежего кардамона и в том, как свет ложится на старые книги.\nМартовское послевкусие - это смесь холодной соли и первых почек. Мы оставляем за спиной зимнюю меланхолию и переходим к апрельским предчувствиям. Завтра город зазвучит иначе, краски станут смелее, а тени - мягче. Но эти заметки «на полях» останутся с нами как напоминание о том, что настоящая глубина скрыта в мелочах, которые большинство пролетает на скорости.\nСпасибо, что читали Marginalia в этом месяце. Апрель готовит новую историю. Что вы забираете с собой из этого марта?\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Marginalia",
+            "img": "https://cdn4.telesco.pe/file/OCGXA_nAHZr547D1hVvqWDDsF3DDpu4fn6tCxgpuc66HbGvD8Qb_CFzxtxt5Vz7ZNbDRAvmXTlxsWP_Ey_nBjXST0EWq-Nktkl6R-TCFgFw4_bwwTkK4AGil8KdnbLVQVm6VQ8PIwvp4yut6OQHTQNRyoGyTcoPJqb1F6-qzGHgLdkDJm4z2mYXxVOYpf1krmxOdeVqM_F8_CjbJomgyOCWf7ntZCMAvhTDnR3UX0XOPazC67Q1NhhZ0uF5xpiCQ4xSM1LjDhid6Q5hjqclBcVdpVsA8V5MgDpg7QfjKXuqVJdWabwOb9757vl8Nr5iwjh7Vpl02kNlpiJnhkof-Bw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774969329.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 14:50",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5591",
+            "t": "🌐 WORLDSOUND: AIRWAVE VELOCITY - МЫ ВОЗВРАЩАЕМСЯ",
+            "b": "После длительного перерыва глобальный музыкальный отчет WorldSound возвращается в эфир YourVision. До старта трансляции итогов недели - 10 минут.\nДвадцать самых влиятельных треков планеты в одном чарте. Узнаем лидеров прямо сейчас.\n📻 СЛУШАТЬ ЭФИР (18:00)\n💻 ИНТЕРАКТИВНЫЙ ХАБ\nВстречаемся на частоте.\n⏱️ Время чтения: 0.4 мин | 🌐 YourVision: WorldSound",
+            "img": "https://cdn4.telesco.pe/file/dFDV10mM2gOhkati46dPA8hFbaUJskUpSy4gfb1BgzM7Clm8e3VoN_Fice0OwvnC3ze1iy8dYIs2B2FYDp2x6axTB8AajA1e26YM4MlLEITFHz-Kttdbv5T1WPwVbZHyHYzx6lPf3jQhv1Vkb6SUPpITosxv_RjCcAQbaBNqGpTUYSWAuZFIHV13ED_7X8XjoJKc6XCIKATESHTEzNoxhebqMV-btgtB_eKalF4Ot2vIC1TtX3ih08GBvznFskPEoPA9pm3SkAhVHxC48WAOXkt2L0Cw2AomjJbergmupfkQgXS9MhWoEfIu4YvDk_TxH-OyTsMgBMK35RYB8msJSQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774968611.0,
+            "poll": null
+        },
         {
             "m": "31.03 | 07:32",
             "id": "70",
@@ -556,7 +635,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5584",
             "t": "🇦🇿 АЗЕРБАЙДЖАН: JIVA ВЗЛАМЫВАЕТ ЭФИР РОК-ВЕРСИЕЙ «JUST GO»",
             "b": "В рамках спецпроекта «A Little Bit More» JIVA представила радикальное переосмысление своей заявки. Оригинальный мистический саунд уступил место жестким гитарным риффам и агрессивному драйву. Это уже не просто «тихий» инди-поп, а полноценный стадионный манифест.\nDATA & CREDITS:\n• Продакшн: За новый звук отвечают Мила Майлз и Рустам Рзаев.\n• Визуал: Съемки от Sarkhan Akhundov (KhansFilm) подчеркивают смену имиджа артистки на более дерзкий и свободный.\n• Динамика: Первые 4500+ просмотров за 2 часа. Аудитория явно ждала «пробуждения» азербайджанского концепта.\nЭтот апгрейд может стать ключом к более высоким баллам от любителей альтернативного звука в Вене.\n🔗 СМОТРЕТЬ: YouTube\n⏱️ Время чтения: 0.7 мин | 🇦🇿 YourVision: ALBM",
-            "img": "https://cdn4.telesco.pe/file/hV7nzWDprsXSRE7m7J7F72pPO_DOVfubTOt4z__J1b_zuLextvYTI2SoGLERJVQ8Of1dWieDK6fjaV4UHk4Xx1VZCxlafm4tMq5zJ67LBy2hvNpfhsTvCi5JZ8NjqxadsWtY4k_jJZWGPa1yUEqHdJfFm0Mi_oFE5Or4OlDQr3IAr3dKuX3x3nfPjPrPNZAcdPCAVGcEJCPK0zb99K0i24K9vWDPuOLvuP0S1h1hTtzsApEfDC11995nHQM5N9WobVjIDiMjKmMa4c_JxvuOqfX0aoW5RBaX0VEEAXIqQW6XE2XO22mq2bzQfpQQ1d49mEedp4_wIUPZeDjrrLkUjw.jpg",
+            "img": "https://cdn4.telesco.pe/file/kW4CtnlhMioSTHGNPQlBiQ9Xec1qTYG_ESYxMchrE66vEHbEs9JqS4kfJgSLdcLaNWhbChxpUKnFrAMu-JIeRN5zFkaD68DLuJTdWHUUQZwGU1J_LK9VK1qZcOIQ6mtz6mBwBEKTaBChbW7xOeH87pgdhGZltnDHU8C2hG8TqkjSFIJZtdxZsTIYBsyPrvwu4kTAIM9dwyIEGO83N_2EOP7XFEzxtdGcpG8IutR7hLVK5oZrUefvu-3Dc_0AjDQryWT7apGnyHI7-M3lb8Tk9ybtSga1rRHbqrSemB_4ouYthaW-5B6XqLtVWuUx4CNFVMtaXWm8TYv1TDmSwOo9MA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774894651.0,
@@ -568,7 +647,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5582",
             "t": "❤️ АВСТРИЯ: СТАДТХАЛЛЕ ПЕРЕХОДИТ ПОД КОНТРОЛЬ ORF",
             "b": "В Вене официально запущен обратный отсчет «на земле». Вещатель ORF принял ключи от Wiener Stadthalle, ознаменовав начало масштабной логистической операции по превращению арены в главную сцену 70-го Евровидения.\nМАСШТАБ В ЦИФРАХ (DATA):\n• 3500 тонн оборудования будет завезено в ближайшие недели.\n• 8500 LED-прожекторов сформируют световой рисунок сцены.\n• 27 камер обеспечат трансляцию на 200 млн зрителей.\n• 35 подрядчиков работают в круглосуточном режиме.\nТАЙМЛАЙН МОНТАЖА:\nУже во второй половине апреля запланировано «Stage-Opening» - первая презентация готовой сцены и старт технических репетиций. В конце апреля арена уйдет в режим тотального локдауна: безопасность будет усилена до уровня международных аэропортов.\nВенская крепость начинает обретать форму. Готовы увидеть первые кадры каркаса сцены?\n⏱️ Время чтения: 0.8 мин | 🇦🇹 YourVision: Venue",
-            "img": "https://cdn4.telesco.pe/file/l0Lc7OokUptyQfJpCnT0LW9v10zOFlCIwt0_mKpJOFZF2beUJL5fH4u8OKUHjN15ekHkJgREM_l_pcdE-ohDRZk9-kIoPoMZOhk_opJIU5n0P4GuiLTNjXBF8iODsCJJTC1dKlnR-fULXiy5C6enSd6HbXLebrZS3VtBQ-hkUc8XvuDR0AYH4_jk0unyiNtDscEADl7RFUVhc2RevsALLraWD-OEYMTtVETXLMI70azqibT75U5XGbaPSgDl2SvrQ5t1WaXhtjRSO2iWVVCK5Ia2vTi6XgaQ2TxOTLxrEzI-63ioQ1nBoskhgZZafplcO9LyzReubDXJQrRzraTKGw.jpg",
+            "img": "https://cdn4.telesco.pe/file/KGv42qRoH6ZxB-uwCpZ5YiGtB-UOh1r7FMjv1PQaYikVtzzQXUw87HUDGsH841SMUqDhh_bXSMeKyD099nhA8a0-r8XoKMxXSm0kbTxRhgCFZqh1JmIm2SyTZ8NHgO2Gyufn9vz8NlpXw9uEFhSw2tkbfnvuqh9Bbia40ImJPm8Gzpqr3P064kv-6kLvvUOU9tcKrzqrD5LerR-Ki0FINxRaA6tgQw9_tVY7kDRqXNiHIAE2Oa54vZVS3PVKTo0mpq8leQ-SOsdC9FSpkQa5JGHDe_iivgluPr-cZTxuKFsCmE90b978FeDoZmYeOloEY8SE4gJxYVCME8nv1Z1z7g.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774894393.0,
@@ -580,8 +659,8 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5581",
             "t": "🧬 DNA: ЭСТОНИЯ - VANILLA NINJA",
             "b": "Vanilla Ninja - это феномен эстонской сцены, сумевший в начале 2000-х взломать консервативные чарты Германии, Австрии и Швейцарии. Сегодня группа (Ленна Куурмаа, Пирет Ярвис и Керли Кивилан) возвращается к истокам, чтобы доказать: качественный женский рок не имеет срока годности.\nTHE JOURNEY (ПУТЬ)\nИх путь начался в 2002-м с оглушительного успеха «Club Kung Fu», который, несмотря на поражение от жюри на Eurolaul, стал главным хитом страны. Далее последовала экспансия в Центральную Европу с альбомами «Traces of Sadness» и «Blue Tattoo». В 2005 году группа совершила невозможное, представив Швейцарию на ESC с «Cool Vibes» и заняв 8-е место. После долгого перерыва и триумфа на фестивале Viña del Mar в 2008-м, «Ниндзя» вернулись в 2020-м с альбомом «Encore». Победа на Eesti Laul 2026 с треком «Too Epic To Be True» стала логичным завершением их 20-летнего цикла ожидания.\nSTYLE & SOUND (ДНК)\nДНК Vanilla Ninja - это гремучая смесь поп-рока и хард-рока с идеальными вокальными гармониями. Их звук в 2026-м стал тяжелее и осознаннее, уходя от подросткового драйва к стадионному величию. Визуально это эстетика «high-end rock»: кожа, монохром и холодная балтийская харизма. Они больше не пытаются быть «удобными», они транслируют силу и опыт.\nVERDICT: Эстония отправляет в Вену не просто артистов, а национальный символ. Огромная фан-база по всей Европе и статус «легенд» делают их одними из самых опасных игроков полуфинала.\n⏱️ Время чтения: 1.6 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/CQXmFvmUXigYTzAiY_rsvW0s_mRNimeH55Jfl3bzcvF8ZfMkkHy-DsfRxUn9_ZZLUu3M5NEhs0kegvSbTZsScvXe3dwY3iKPU1OZNFm8u7sdPRctO3bNsE0FQVBsQXKthR1Nq9esmhi1IzWnaFJ7dDtp5TpeNL8P_sTCSa6splaAxWSJs-2VFnrz15QTc2QlPKwfTv2wrUktJxbzUW-ErR8GRoYoR3CBeTX80wap9Hnz4UzN9kEqBX8PtNz3bgIFOJmISb4wLTNHTYoKCYHIliJeje7o62JEQMOvAcD_X4snK0eFrfHRPUn_4cgi7gQxFEYRvbias2ETZ9_PMbJhbg",
-            "vid": "https://cdn4.telesco.pe/file/416e00330c.mp4?token=QPLA0pamgig_Pb_W_qf6BBrbwHWQuoWnQMA7_7S4FxdhiE0jtxG1zFMz6jBuBizQI2pJbz1BnPIsfa3iTH9atcdVAyYEJWXu4ShDgKnzySbjiNLqfiwhF4kyRTFS7PLXpdo9GYTz53VRXvuDWB8sUlHTHFEaBa4TX4TpAM64gsYM3aETIDUtw07IsXECxwROdIMegwJr1nX2bNPhGhW8SV8ZyK6VkJ8KM0mE6nQd_giP3FoHIsW-iS7KizHoIyRAIW1LcUNoYu9Af-b7HUvZFgCK2AESj4TXR26bZNDwKT-Q1wyfXmDqrVed5F9_oxYW9FlM8JifUOg3AmaXlVnZJA",
+            "img": "https://cdn4.telesco.pe/file/nhATKeuTf4f11GzVanhmyk-dX8w5YriOehSxfYjpB6TD70La7ZICIlogb-jMeHhHQbCeMf1dmNPzqURre-jBEj4StQlooFouY4q4qV32yEvCMSWc2PrbyXPn_Jc5jbIewffdDA6SCl9d3zR6XVcTintElr0QqGlL68z4THPYBRb3JNvzmMB4UC-PYKLKXvXKbRQlUng7ISOJOkWamw9vPPlYVWHuu2_GxMXm6aytHK5zpKxgKI3cp62LxHw88IoOfDhFnbPh8zZcaB31HypDG3bDgnAaeKtaBWsEhkVnEwd-BI9Eig5Z3RbtGaOq5STcnJwsBhaZUu7rpWOV3T_EGg",
+            "vid": "https://cdn4.telesco.pe/file/416e00330c.mp4?token=ng7yumZB0E0mQZzQQ4yNpFXYDJtBh2auewk50BpSfYvlqhRbTySkFPX_PTFyl9YS_9vJJqIxKTu0gbMsu08oVioh_wii5ema9S3bQtrw_zrLAO0-h4FxBm0c0fWEg3xa5mOmehUAu51sMZIwJan_cWg3BpiKbZOKnVImeM9h1ts0V-4Hce0MzVHXGQklcgNiucKID7L3qgvKhbwziCaIWyzfcLnG-UHb6uNdXVBsBtj8zZzUD0GNVlZ9K7auNJjONJ5sXVelJvJ9mqNVhgPz5u6PdtcC4CdCNPxhD3RobBpJT3yO3Bf8LXi1ksNktViML9TkKRaA-y4zsPxpJcbghg",
             "isVideo": true,
             "ts": 1774890261.0,
             "poll": null
@@ -592,7 +671,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5907",
             "t": "🏛 MARGINALIA: ФИЗИКА ВОЗВРАЩЕНИЯ - ГРАДИЕНТ ПЕРСЕФОНЫ",
             "b": "Сегодня вечером граница ощутима физически. Не в метафоре, а в костях и в почве под ногами. Сырая мартовская прохлада Риги еще держит землю, но уже не сковывает. Это не взрывное таяние, а медленное, глубокое оттаивание - изнутри наружу. Именно об этом миф.\nТЕРМОДИНАМИКА МИФА (LORE)\nМы часто говорим о возвращении Персефоны как о внезапном чуде: раз - и свет, раз - и цветы. Но ее восхождение - это физический процесс. Он измеряется скоростью химических реакций в спящих корнях и теплопроводностью мерзлого пласта. Она поднимается не по лестнице, а по градиенту температуры. От абсолютного нуля Аида к прохладному плюсу нашего мира. Ее шаги - это работа по раскристаллизации воды в порах глины.\nTHE FRAGMENT\n«Возвращение - это не событие, а фаза изменения...» - пометка на полях старого манускрипта. Конец марта - это момент, когда внутреннее тепло земли начинает побеждать внешний холод. Персефона уже прошла критическую точку. Она уже здесь, в этом сыром, едва уловимом дыхании из-под прошлогодней листвы. Это не праздник, а титанический труд по оттаиванию.\nОна уже на полпути. Мы просто называем это весной.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Source",
-            "img": "https://cdn4.telesco.pe/file/KwbJKU44eUHIehc0o17bF54GpAa_1qmlnh6vzbnE4T_zDuooGr2ZYS2uWU7KgSC4V28JgBc8LMmLx3Cuv0E2AGhwZTZcWZ_bFgkQkdeM9eszWBqTwkpLVwfDhRrSkHVQVJLg6rf7gPK8ra-nsRoWvWMtRDSEN-DAmLYfLHTPyAW6TR2pP6-5JVDNTGXUFY8I8xApdPzwjt2vXXyvW3dUvZOlpRl274ek18Oqoz7XJgnJedm7oxGSCe3kQmFcNzWz4RrjgTxq-J_-CXI88a4GNKe4-XozXqugMdo0D1d98hjMRr80-9guo11WobG0mRRyYmDYBhtX-cjPQs6sw3uz-w.jpg",
+            "img": "https://cdn4.telesco.pe/file/RFVkdWF-mRvQsaa8PEBzyqaJZt_YXd6SAHvefxefQaQvyQs7uTkAGbFXQ6r2hU7VguApiLaAL56a3WFwYnfiS2n4TO1YiesSpR5dXTz98feRYV5vY3X1GyDN6EqSPW66NT1m1dB8FuBpPpNc_9fdNEpEqhpbkyQu1wdW5hKQySBbwg57YF3GgpPKF505sZC3-EL5URxm8ZiEu-cQ4F2-Kii8kgrPSp9_DkC7cI-DXRqpGwM1c6yuMkxhKtgEvbqdF8QXIk7pzMH5jsx6McSTwSeDNz7SoXli4tXxVdR8hf0_8Tg3k1CmBcs1LFQZEGT2aXQYU9RDn07CqkK9bTW4lg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774883028.0,
@@ -604,7 +683,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5580",
             "t": "📊 #YV_CUP: ИТОГИ 1/8 ФИНАЛА - BATTLE #5",
             "b": "Пятый поединок стадии плей-офф обошелся без драматических паритетов. В столкновении северного хладнокровия и кавказского темперамента эксперты YourVision Cup сделали однозначный выбор в пользу стабильности и качества продакшна.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇸🇪 SWEDEN (Felicia): 58%\n🇦🇲 ARMENIA (Simón): 42%\nШвеция в лице Фелисии с её технологичным треком «My System» подтверждает статус одного из главных фаворитов турнира. Армения, представленная Симоном с его «Paloma rumba», сражалась достойно, но разрыв в 16% стал непреодолимым барьером.\nИТОГИ БИТВЫ:\n🥇 SWEDEN (Felicia): 58% - ПРОХОД В 1/4 ФИНАЛА 🇸🇪\n🥈 ARMENIA (Simón): 42% - ВЫЛЕТ 🇦🇲\nАрмянская кампания завершается на стадии 1/8 финала. Симон покидает турнир, оставив после себя шлейф одного из самых ярких поп-выступлений сезона, но Фелисия сегодня была просто вне конкуренции по уровню воздействия.\nВ четвертьфинале Швецию ждет победитель пары Italy vs Moldova, битва за которых начнется уже сегодня!\nКак вы считаете, справедливо ли Швеция обошла Армению по очкам? Был ли шанс у Симона при другой жеребьевке?\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/H3Dk-gEb__pIYYXJXSSzwgmFH6j12aILDhSibZcRII4_lOZByCdB-egNhniLcm9pGX-bJNFxOvlpURHfKsp8KUTS4H7_J17XimR1ZQ0JT5jBST06M063VUCTE0bgrLHvVaNkZroXnIu-MuNGUmcs7Qt32742A67mfF8wC7nZDgGxrGTOAEL7P_QOm4F0aK7VjXVO0n1IPxalZsLqe7IFNX0MHuQG-M_ualWopDCcqtx3YBBvbSW_yWNU6fWZDz3fP1M4VjHNhliGV7GKhR9L7wMUR9EOKYKuDgmkymOd83xf8TpBJ4_tRCSmp2WNR6bwVLrHotiqZRBV1Ot1PVqd0w.jpg",
+            "img": "https://cdn4.telesco.pe/file/Jc_8digSBdNHvtTj5QntRzpvTTvSO3dBhJYGhC8B2cWM1ILNULbhNh6tQDaZG06DTRLbvAHb5BzQLinKOM5CZmRvptTmaFJQ83ZF63PB5xnEQwI4Uq-h8pONFymqQ7b7Km8sLBhqBK39fcfjQPrra-w5TE8re1U-Nhdu8KUF3n0qlO5eh0FqnDW2AdbnsEVTv3YUpzC81pAy13g_CkSQD6b2IcrfshJHYRuVy7UMgAeWgBnbgupy_SKMQ5I1OsnQTrXLMAzAGZOgbKJozKk6HIEaoKZ8K2k2xMOXVifgeihE5P-nhX2fC0UW1gEBivvBVs_sLZFS8ujoVXQcLaLz7g.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774882384.0,
@@ -671,94 +750,16 @@ var DATA = {
             }
         },
         {
-            "m": "29.03 | 18:30",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5575",
-            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - ИЗРАИЛЬ",
-            "b": "Израиль в 2026 году пошел на риск, выбрав интимную меланхолию вместо проверенных поп-гимнов. Вылет в Группе F стал неожиданным финалом для стильной заявки. Аудит №7: проиграл ли камерный «Michelle» надежде «New Day Will Rise»?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇮🇱 2026: Noam Bettan - «Michelle»\nСовременный французский шансон, минималистичный продакшн и глубокая личная история. Попытка взять искренностью, которая потерялась на фоне стадионных шоу конкурентов.\n🇮🇱 2025: Yuval Raphael - «New Day Will Rise»\nСветлая баллада с этническими элементами и мощным жизнеутверждающим посылом. Год назад этот трек показал высокий результат, закрепив за Ювалем статус одного из самых эмоциональных вокалистов сезона.\nВОПРОС К ЭКСПЕРТАМ\nСтоило ли Израилю так радикально менять масштаб заявки? Был ли Ноам слишком «тихим» артистом для нашей сцены или Юваль в прошлом году нашел тот самый баланс между формой и содержанием?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇮🇱 YourVision: Reset",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774809040.0,
-            "poll": null
-        },
-        {
-            "m": "29.03 | 17:03",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5574",
-            "t": "🧬 DNA: УКРАИНА - LELĖKA",
-            "b": "Lelėka - украинско-немецкий фолк-джазовый квартет, ставший одним из самых ярких культурных мостов Европы. Основанный в 2016 году в Берлине вокалисткой Викторией Лелекой, проект превратил традиционный украинский фольклор в современный интеллектуальный продукт, востребованный на главных джазовых фестивалях мира.\nTHE JOURNEY (ПУТЬ)\nГруппа начала свой путь с победы на Creole Global Music Contest (2017) и European Young Jazz Talent Award (2018). Виктория объединила вокруг себя топовых европейских музыкантов - Томаса Колярчика, Якоба Хегнера и Повеля Видестранда. Их дискография, включая номинированный на Deutscher Jazzpreis альбом «Sonce u Serci» и свежий релиз «Kolysanky» (март 2025), демонстрирует эволюцию от классического джаза к сложному нео-фолку. Работа над саундтреком к исторической саге «І будуть люди» (2020) закрепила за ними статус мастеров атмосферного повествования.\nSTYLE & SOUND (ДНК)\nЗвучание Lelėka - это филигранный баланс между аутентичной украинской вокальной традицией и берлинской школой импровизации. Их песня «Ridnym» - это многослойная конструкция, где голос Виктории выступает как еще один инструмент. Это музыка для слушателя, который ценит нюансы и текстуры. Визуально группа транслирует эстетику интеллектуального минимализма: современный европейский стиль с точечными, глубоко символичными этническими акцентами.\nVERDICT: Украина в 2026 году делает ставку на «высокий стиль». Это риск, но в то же время мощная заявка на признание экспертного сообщества и тех, кто ищет на конкурсе глубину, а не просто шоу.\n⏱️ Время чтения: 1.4 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/CEuhb9KPj6nfc2nLhy0nf7UY5npB0fvVBToAQVHUesyYB0Pugyr7GMaJNXj4Vz0YYQu3T18qdsJPuiUtaMSK7dO63bT-OfYJ3xJg6mz_gNlO8DkFXblxbhEexd3oVoJT5mmATMq0hnEj1prvJsShzLFO-gZp16P67b1Wre8-Q8X_jzLSFYleBs-7EYTGFUnWKYdtMnrDRcpcZbzNdItd1AT_K9uEaFdgoYWKtxTwMpkT-qvFN4AM-SH857F1Dlo3jg372PTfbk6R9fd6JVaTmMPsmEkVmeOMX4Uxdab9wXeYm3ZMRRpjnFwTN8jGoGNDvUso2xlc7HG6ipIO5x87cw",
-            "vid": "https://cdn4.telesco.pe/file/b2f4b56c09.mp4?token=H-yAAplUITxqZKkXiS1s_KbceoSRoP_Cz53QeaY88u5wSqXy2tNjTQB8C_vc5gJsVAqdf9SdNLMPiQr-NT7VU89j2inHdNluarjTJGKycBGRI594gzOs2F8Y7R_9hmZFbLcXwIAH4Bq4saHuYPe3L-60qvNpdNqmDOtX2OxvdzrIFP_hyLX4-AnSxoZmccfEFZWA2rELiGrPEzDGG28cMZAwUcfsp0kqATZH7PDNpqY2cV_f-M7WFakZ6Wk6WshLDzDyLdLN6glfCD1X8RVDAX7AK42SlcXuZHQtgpchJ1P_4g1YG4WP46URxHyHHsvETSBv-yXSg8L4ojHZggbvm46uQSx-pWoZRGbhk4dHSozz1mURs7xIdGDIxSEApQGKARbgfCAM-snDsjgZij8u4tadw6L6629D0TkVu6PqvuuwNiqDFBuhQaYAyIbi_JH13fWZDxHAMJNVd4fLDVdkczWsKZmrbOkGXKFykTrQdfX6nH-80q9fl_0Nkpm_ZkLgeGf0cIcQRizohMaj-pNIP-gNBfB7D4K7q6h-0Rkvz4hf_aa67a8OhgotQw_SAJLBP9iupm0bs6LCO5EsIVa-C8-qOKUL7830AGwXmx22Awkof4THWlPr9lOeCGkHHzA6oYhIjhf96Zvvxedh76JgiTi4W-j6vIVUW0u6kV7k9oY",
-            "isVideo": true,
-            "ts": 1774803790.0,
-            "poll": null
-        },
-        {
-            "m": "29.03 | 15:50",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5573",
-            "t": "🇦🇱 АЛБАНИЯ: 10 МИНУТ ДО ОГОЛЕННОГО НЕРВА ALIS",
-            "b": "В 19:00 официальный канал Евровидения представит Nân в самом честном её прочтении. Алис, которого мы знаем как «образованного бунтаря», оставляет только фортепиано и свой голос. Это не просто акустика, это сеанс музыкального психоанализа.\nГотовы ли вы к 3 минутам абсолютной искренности?\n🔗 СМОТРЕТЬ В 19:00: YouTube\n⏱️ Время чтения: 0.9 мин | 🇦🇱 YourVision: Premiere",
-            "img": "https://cdn4.telesco.pe/file/rbeqp2jOGVY4QYMALnadshptFXLYcGCRYJdAcAcJ5aH9twiZrvTpfNr42gjdcVqeRL-yGHlgwideWpfmm0jAw15rnTNati2Qm7NMuFm0WpjP-4s2XEZx8VrnenB6fA7f9XfpZEYcARKel6L51hYFpUyd78ufof8ROu__ejBMXiILdnQmEv8gWCAvYYtTyinG71seLYnFSg8ygb9ZVAh76NpgegqDvm_3cfePunWWqSg_T1BxNyHMI-NzxjhXysBwu7SageWyAoNuk7GoTotgBTEE3VRHWh9tIoSfjxhf_-JdbL45jziUsZEg6lM4xe70KCZbpvNBH8A7y23k-T53XA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774799409.0,
-            "poll": null
-        },
-        {
             "m": "29.03 | 15:02",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5905",
             "t": "🏛 MARGINALIA: ЮГЕНДСТИЛЬ - ЗАСТЫВШИЙ МИФ В КАМНЕ",
             "b": "Вечернее солнце в Риге обладает особым свойством - оно проявляет то, что днем скрыто в тени. Сегодня я остановился перед фасадом на улице Альберта. В переплетении каменных стеблей и масок застыл миф, который мы разучились читать, но продолжаем чувствовать.\nГЕОМЕТРИЯ СМЫСЛА (LORE)\nЮгендстиль (Art Nouveau) - это попытка очеловечить камень, заставить его дышать. Каждое лицо на фасаде - это маргиналия к большой истории города. Эти существа из камня - не просто декор, это «невидимые стражи» нашего покоя. Они фиксируют свет и время, превращая архитектуру в живой архив.\nTHE FRAGMENT\n«Город - это книга, где улицы - строки, а барельефы - пометки на полях...» - мысль, возникшая в длинной тени вечернего дома. Когда мы смотрим на эти застывшие мифы, мы подключаемся к ритму, который старше любого из нас. Это и есть наш «невидимый якорь» - осознание себя частью этого каменного текста.\nПусть ваш вечер будет наполнен светом, который открывает новые смыслы.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Fragment",
-            "img": "https://cdn4.telesco.pe/file/CJWEfGU3ZnPO3fTHgYIlqBZCphIIjq1mDbaU-GkGZTtprjc91M7TO3O56-9RKXabFByQjo5WSUqWl_WmZPuywVKAbsLsIfccgGnXTRxK8BgSYpm8z3YXfgI4-jtTSgF5l411cUBnEuRX8I9pHqG4x8ljL158p7-f8k3ThrWcvtDNzPPmdu54l2EcdbbXJfGQuGnKq3UC5KufebSBGP1ZYsj7S9-hbrLBKB2MHqllwQg4UhQuxYE8_qjXVFw_de3WzwxdfoVIva-jmH2ayETi40AIGnDrMReMJa5rc8UIOhW-i8XP-gPZfQNfaazYhdqvJwoC_UVLoNDaInXMWZoVXw.jpg",
+            "img": "https://cdn4.telesco.pe/file/TNGySpkNjkLydFLaAYKNOWwvlyg5MEsEJbDJaSTHNrL_GhfA2DuxfiAl6QF0uL02kC01MkXN4ZT_-ZMhXzABDfUTec2xH4M1mo7AA2rhL0J0GdNtuNHfK2wh_MWO_62ZZVPNavUmCfLvkHzi7S3DJdngKwWKufdn5tE1LhhbSXxLdp_HIJVhGdxKcMNgRI1ANbEfzKq6peYDdOaxIhwWjh_EDhmtP3YWDWfssrtQVnNwkKOGiwK6RvrH4KD2jEp8FruxKuyjSLEKS5MHuAHsyO79zbEkx_uJogNVitcrZSBK2K_J7dIAH3DAkHPg0GV_QwR6_us0m0C8kgL8vcLGvg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774796532.0,
             "poll": null
-        },
-        {
-            "m": "29.03 | 07:53",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5572",
-            "t": "📊 #YV_CUP: ДРАМА 50/50 - ГЛОБАЛЬНЫЙ ВЕС ОПРЕДЕЛИЛ ПОБЕДИТЕЛЯ",
-            "b": "Четвертый поединок 1/8 финала стал самым непредсказуемым в истории YourVision Cup 2026. Битва титанов - Delta Goodrem (Австралия) против Bzikebi (Грузия) - завершилась абсолютным паритетом экспертных мнений.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇦🇺 AUSTRALIA (Delta Goodrem): 50%\n🇬🇪 GEORGIA (Bzikebi): 50%\nВпервые в сезоне активирован Протокол Глобального Веса. При равенстве голосов в плей-офф победитель определяется по результативности группового этапа.\nАУДИТ РЕЗУЛЬТАТИВНОСТИ:\n🥇 GEORGIA (Bzikebi): 50% в Группе A (1-е место).\n🥈 AUSTRALIA (Delta Goodrem): 46% в Группе F (2-е место).\nБлагодаря преимуществу в 4%, накопленному на старте сезона, Bzikebi проходят в 1/4 финала! 🇬🇪\nАвстралийская кампания во главе с Дельтой Гудрем завершается на стадии 1/8 финала. «Eclipse» уходит непобежденным, но уступает дорогу более стабильному концепту Грузии.\nЧто вы думаете о справедливости «Глобального Веса»?\n⏱️ Время чтения: 1.2 мин | ⚔️ YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/nbsviDOCOy_qoSuTNoJLKy_zqkoAmFQtzR6QIqfUplvofFBYQPpiI6-Cy6J8hdFFkQDOxZYME_y3EJodVv9Xf-_TEYcn0Vl53ECddn7_ty1y_JietpCQ4fOUoKVbTgMunuhR1iMqzQQsNkpu3-CodG3cDKHCtB-EdmrT6q8s1CiiUAEnPritSQfsl71UzEtpczI_McHKmlxvqABNaaD0joJp0P_31DnbBjieEyHcuGR6lW2KeeTw6efbfusci-JW4KBv3bpW4VtgWvDuMQi_2ZNJtig_6ApZl30wkxO0MEgAxZqHzy8RU7ehGM9sQdmQO1UhXvYjLr65Crr0WaECaA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774770827.0,
-            "poll": null
-        },
-        {
-            "m": "29.03 | 07:04",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5571",
-            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #5",
-            "b": "Киберпанк-холод против жаркого этно-диско. Маска, скрывающая искренность, против открытой энергии танца.\n🇸🇪 SWEDEN: Felicia - «My System»\nСимвол новой шведской поп-волны. Фелисия - это безупречный EDM-поп в обертке «Киберпанк-дивы». Её маска - это не просто имидж, а манифест защиты внутренней искренности. Швеция привезла один из самых технологичных и загадочных номеров сезона.\nvs\n🇦🇲 ARMENIA: Simón - «Paloma Rumba»\nЧистый ритм и энергия. Симон привозит в Вену «этно-диско» - взрывную смесь латинских мотивов, армянской идентичности и современного уличного авангарда. Его «Paloma Rumba» создана для того, чтобы поднять на ноги весь стадион.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.3 мин | ⚔️ YourVision: Play-Off",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774767876.0,
-            "poll": null
-        },
-        {
-            "m": "29.03 | 07:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5570",
-            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774767721.0,
-            "poll": {
-                "question": "📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
-                "options": [
-                    "🇸🇪 SWEDEN (Felicia)",
-                    "🇦🇲 ARMENIA (Simón)"
-                ]
-            }
         },
         {
             "m": "29.03 | 06:00",
@@ -770,18 +771,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1774764034.0,
-            "poll": null
-        },
-        {
-            "m": "28.03 | 16:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5903",
-            "t": "🥐 MARGINALIA: РЖАНЫЕ ЧИПСЫ - ГЕОМЕТРИЯ ХРУСТА",
-            "b": "В высокой гастрономии, как и в хорошем тексте, самое сложное - это вовремя остановиться. Мы берем тяжелую, плотную базу балтийского ржаного хлеба (Rupjmaize) и превращаем её в нечто невесомое. Это упражнение по вычитанию лишнего.\nТЕХНОЛОГИЯ (CRAFTSMANSHIP)\n• База: Вчерашний ржаной хлеб, капля оливкового масла, крупная морская соль.\n• Секрет: Тонкость среза. Хлеб должен быть предварительно подморожен, чтобы нож мог снять стружку толщиной в пергамент.\n• Метод (The Airfryer Crunch): В аэрогриле мы выставляем 150°C. Нам нужно не запекание, а стремительная дегидратация. 5-7 минут, и влага покидает поры хлеба, оставляя только чистый концентрат злакового вкуса и хруст.\nДРАМАТУРГИЯ ВКУСА\nЗавязка - землистый аромат ржи. Кульминация - вспышка морской соли на языке. Финал - легкость. Эти чипсы - идеальный пример того, как «невидимый якорь» традиций может стать фундаментом для современного минимализма. Мы убрали мякиш, убрали вес, но сохранили суть.\nПодавать как самостоятельный акцент или к легкому крему из творога. Вкус, который звучит тише, но дольше.\n⏱️ Время чтения: 1.1 мин | 🥐 Almanac: Text",
-            "img": "https://cdn4.telesco.pe/file/f4R95EW7aGYxBmhxa-JBvQ4-R76nJzf52ghIKDb8y9O2cLhGo1g602hzj0GGNznQpeattEUNY1e-5N8DcQt0sGc_yKRpCjSUtF1wTo76Hu7kaKZgvGiM7j9OH8EQ_ZYqr1fB4q88vZ7OOtYrVmBcvF3HUoS7sr6xyy8fTnFJWsfJWhRl7lnE1iwxnOeaGwywiE7bqHpsMHfxk-48TMZRhnAftC8sYQmqE9E5UVOqSD0p-i6DFO369upkumjigwqxBxZWvRMVyYLbhYI87X9pXeZa6x2UKxWuAErOKTG3rox5vwoPQ2omGj1n6deg29f54XCp_0w8LJl3A49hL9LmXQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774713864.0,
             "poll": null
         }
     ]
