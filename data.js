@@ -110,8 +110,8 @@ var DATA = {
             "n": "Match #8",
             "qf": "TO QF4",
             "t1": "mt",
-            "a1": "HVNDS",
-            "s1": "Dor",
+            "a1": "Aidan",
+            "s1": "Bella",
             "sc1": "WAIT",
             "t2": "bg",
             "a2": "Dara",
@@ -287,7 +287,7 @@ var DATA = {
                 "a": "Taylor Swift",
                 "s": "The Fate Of Ophelia",
                 "p": "99 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/46/e0/2d46e0bc-8ab9-85dd-4b56-ee6951351034/25UM1IM19577.rgb.jpg/200x200bb.jpg"
         },
         {
                 "r": 2,
@@ -295,7 +295,7 @@ var DATA = {
                 "a": "sombr",
                 "s": "12 to 12",
                 "p": "89 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/e4/44/19e44489-7f7b-3ca7-660f-98d44664bc3f/054391229144.jpg/200x200bb.jpg"
         },
         {
                 "r": 3,
@@ -303,7 +303,7 @@ var DATA = {
                 "a": "RAYE",
                 "s": "WHERE IS MY HUSBAND!",
                 "p": "89 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/10/8a/69108a18-55ec-d774-a653-90b2242733db/199538765458.jpg/200x200bb.jpg"
         },
         {
                 "r": 4,
@@ -311,7 +311,7 @@ var DATA = {
                 "a": "PinkPantheress & Zara Larsson",
                 "s": "Stateside",
                 "p": "68 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/12/db/5a/12db5a38-94c1-42bc-b36b-7204b7aa4eac/5021732768650.jpg/200x200bb.jpg"
         },
         {
                 "r": 5,
@@ -319,7 +319,7 @@ var DATA = {
                 "a": "Harry Styles",
                 "s": "Aperture",
                 "p": "67 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/41/6a/07416a78-38b9-2d47-7ce8-8a52a44c510f/196874010112.jpg/200x200bb.jpg"
         },
         {
                 "r": 6,
@@ -327,7 +327,7 @@ var DATA = {
                 "a": "Alex Warren",
                 "s": "Fever Dream",
                 "p": "53 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/be/f7/65/bef765dc-cf56-c979-976e-2e133040793f/075679588937.jpg/200x200bb.jpg"
         },
         {
                 "r": 7,
@@ -335,7 +335,7 @@ var DATA = {
                 "a": "Danny L Harle & Dua Lipa",
                 "s": "Two Hearts",
                 "p": "47 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/a6/a4/a8a6a497-12de-7f01-c3b9-9074ee2ef551/191404158579.png/200x200bb.jpg"
         },
         {
                 "r": 8,
@@ -343,7 +343,7 @@ var DATA = {
                 "a": "Damiano David, Tyla & Nile Rodgers",
                 "s": "Talk To Me",
                 "p": "45 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2f/4c/1a/2f4c1a5d-a5d3-d1be-541b-ab4ce66c3d0d/196873566634.jpg/200x200bb.jpg"
         },
         {
                 "r": 9,
@@ -351,7 +351,7 @@ var DATA = {
                 "a": "SUNMI",
                 "s": "CYNICAL",
                 "p": "43 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/32/d8/7e/32d87eac-c34c-5138-5149-20e8e8dede60/cover_KM0023635_1.jpg/200x200bb.jpg"
         },
         {
                 "r": 10,
@@ -359,7 +359,7 @@ var DATA = {
                 "a": "Bruno Mars",
                 "s": "I Just Might",
                 "p": "41 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/200x200bb.jpg"
         },
         {
                 "r": 11,
@@ -367,7 +367,7 @@ var DATA = {
                 "a": "David Guetta, Teddy Swims & Tones and I",
                 "s": "Gone Gone Gone",
                 "p": "41 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/1b/01/ac1b0190-eef2-043f-dc65-89217875dc4d/5026854057859.jpg/200x200bb.jpg"
         },
         {
                 "r": 12,
@@ -375,7 +375,7 @@ var DATA = {
                 "a": "Juste, Jaxstyle & Jon",
                 "s": "Turn The Lights Off",
                 "p": "41 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9e/d8/50/9ed85068-7181-d115-cb6b-470a6fb2abd3/5026854195841.jpg/200x200bb.jpg"
         },
         {
                 "r": 13,
@@ -383,7 +383,7 @@ var DATA = {
                 "a": "Calvin Harris & Kasabian",
                 "s": "Release The Pressure",
                 "p": "36 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/f1/4e/b8f14ed9-35eb-de4a-63db-ffb9e226406b/196874023884.jpg/200x200bb.jpg"
         },
         {
                 "r": 14,
@@ -391,7 +391,7 @@ var DATA = {
                 "a": "Kygo feat. Khalid & Gryffin",
                 "s": "Save My Love",
                 "p": "29 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0c/e8/4c/0ce84c2b-de2d-1fe9-fd5a-e545c5431283/196874106358.jpg/200x200bb.jpg"
         },
         {
                 "r": 15,
@@ -399,7 +399,7 @@ var DATA = {
                 "a": "Anyma & EJAE",
                 "s": "Out Of My Body",
                 "p": "25 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/91/32/29913257-2430-3ff8-aeeb-9a09c1a06982/25UM1IM76610.rgb.jpg/200x200bb.jpg"
         },
         {
                 "r": 16,
@@ -407,7 +407,7 @@ var DATA = {
                 "a": "brux XTN",
                 "s": "Paid to Exist",
                 "p": "24 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/4f/b3/e84fb38b-9c45-947d-1e01-f7f2a42c2c35/artwork.jpg/200x200bb.jpg"
         },
         {
                 "r": 17,
@@ -415,7 +415,7 @@ var DATA = {
                 "a": "Dave & Tems",
                 "s": "Raindance",
                 "p": "23 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/49/24/9949241c-e52c-3018-eae8-c686013a7474/25UM1IM68216.rgb.jpg/200x200bb.jpg"
         },
         {
                 "r": 18,
@@ -423,7 +423,7 @@ var DATA = {
                 "a": "Kungs feat. Theophilus London",
                 "s": "Galaxy",
                 "p": "19 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/39/f0/01/39f00184-4d44-c5bb-5eeb-41c91e7617c2/25UM1IM85528.rgb.jpg/200x200bb.jpg"
         },
         {
                 "r": 19,
@@ -431,7 +431,7 @@ var DATA = {
                 "a": "Ofenbach",
                 "s": "Miles Away",
                 "p": "15 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/a1/f9/9da1f975-8437-4de7-0f33-30e323ab5346/5026854258393.jpg/200x200bb.jpg"
         },
         {
                 "r": 20,
@@ -439,7 +439,7 @@ var DATA = {
                 "a": "Albert Brite",
                 "s": "Wild",
                 "p": "8 pts",
-                "img": "assets/heart_white_2026.svg"
+                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/bc/88/9fbc88f4-dc27-7f24-79d9-d72e746ba94c/0.jpg/200x200bb.jpg"
         }
 ],
     "news": [
