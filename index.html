@@ -613,6 +613,12 @@
                 <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> WORLDSOUND: AIRWAVE VELOCITY — 31.03.2026</div>
                 <div id="chart-list"></div>
             </div>
+            
+            <div class="card" style="margin-top:30px; border-color:var(--acid);">
+                <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;">VOTE NOW: RUTOP — SIGNAL 20</div>
+                <div id="nominee-list"></div>
+                <a href="https://strawpoll.com/mpnb105Xby5" target="_blank" class="order-btn" style="background:rgba(204,255,0,0.1); border-color:var(--acid); color:var(--acid); margin-top:25px;"><i class="fi fi-rr-checkbox"></i> OPEN STRAWPOLL VOTE</a>
+            </div>
         </aside>
     </div>
 
@@ -724,6 +730,19 @@
                     <span style="margin-left:auto; font-weight:900; color:var(--pink); font-family:'Inter Tight'; font-size:1.1rem; font-style:italic;">${i.p}</span>
                 </div>`;
             }).join("");
+
+            if (DATA.nominees) {
+                document.getElementById("nominee-list").innerHTML = DATA.nominees.map((n) => {
+                    return `<div class="bubble" style="padding: 10px 15px; margin-bottom:10px; border-radius:15px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);">
+                        <img src="${n.img}" class="chart-cover" style="width:40px !important; height:40px !important; margin:0 12px 0 0; border-radius:10px !important;">
+                        <div style="overflow:hidden; flex-grow:1;">
+                            <div class="artist-rich" style="font-size:0.85rem; color:#fff; white-space:nowrap; text-overflow:ellipsis;">${decodeS(n.a)}</div>
+                            <div class="song-rich" style="font-size:0.75rem; opacity:0.6; white-space:nowrap; text-overflow:ellipsis;">${decodeS(n.s)}</div>
+                        </div>
+                        <a href="https://youtube.com/results?search_query=${encodeURIComponent(decodeS(n.a)+' '+decodeS(n.s))}" target="_blank" style="color:var(--acid); font-size:1rem; margin-left:10px;"><i class="fi fi-rr-play-alt"></i></a>
+                    </div>`;
+                }).join("");
+            }
 
             const searchInput = document.getElementById("news-search");
             const searchVal = searchInput ? searchInput.value.toLowerCase().trim() : "";

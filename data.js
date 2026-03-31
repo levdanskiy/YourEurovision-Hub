@@ -282,166 +282,166 @@ var DATA = {
     ],
     "chart": [
         {
-                "r": 1,
-                "c": 1,
-                "a": "Taylor Swift",
-                "s": "The Fate Of Ophelia",
-                "p": "99 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/46/e0/2d46e0bc-8ab9-85dd-4b56-ee6951351034/25UM1IM19577.rgb.jpg/200x200bb.jpg"
+            "r": 1,
+            "c": 1,
+            "a": "Taylor Swift",
+            "s": "The Fate Of Ophelia",
+            "p": "99 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2d/46/e0/2d46e0bc-8ab9-85dd-4b56-ee6951351034/25UM1IM19577.rgb.jpg/200x200bb.jpg"
         },
         {
-                "r": 2,
-                "c": -1,
-                "a": "sombr",
-                "s": "12 to 12",
-                "p": "89 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/e4/44/19e44489-7f7b-3ca7-660f-98d44664bc3f/054391229144.jpg/200x200bb.jpg"
+            "r": 2,
+            "c": -1,
+            "a": "sombr",
+            "s": "12 to 12",
+            "p": "89 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/e4/44/19e44489-7f7b-3ca7-660f-98d44664bc3f/054391229144.jpg/200x200bb.jpg"
         },
         {
-                "r": 3,
-                "c": 0,
-                "a": "RAYE",
-                "s": "WHERE IS MY HUSBAND!",
-                "p": "89 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/10/8a/69108a18-55ec-d774-a653-90b2242733db/199538765458.jpg/200x200bb.jpg"
+            "r": 3,
+            "c": 0,
+            "a": "RAYE",
+            "s": "WHERE IS MY HUSBAND!",
+            "p": "89 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/10/8a/69108a18-55ec-d774-a653-90b2242733db/199538765458.jpg/200x200bb.jpg"
         },
         {
-                "r": 4,
-                "c": 0,
-                "a": "PinkPantheress & Zara Larsson",
-                "s": "Stateside",
-                "p": "68 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/12/db/5a/12db5a38-94c1-42bc-b36b-7204b7aa4eac/5021732768650.jpg/200x200bb.jpg"
+            "r": 4,
+            "c": 0,
+            "a": "PinkPantheress & Zara Larsson",
+            "s": "Stateside",
+            "p": "68 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/12/db/5a/12db5a38-94c1-42bc-b36b-7204b7aa4eac/5021732768650.jpg/200x200bb.jpg"
         },
         {
-                "r": 5,
-                "c": 0,
-                "a": "Harry Styles",
-                "s": "Aperture",
-                "p": "67 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/41/6a/07416a78-38b9-2d47-7ce8-8a52a44c510f/196874010112.jpg/200x200bb.jpg"
+            "r": 5,
+            "c": 0,
+            "a": "Harry Styles",
+            "s": "Aperture",
+            "p": "67 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/41/6a/07416a78-38b9-2d47-7ce8-8a52a44c510f/196874010112.jpg/200x200bb.jpg"
         },
         {
-                "r": 6,
-                "c": 0,
-                "a": "Alex Warren",
-                "s": "Fever Dream",
-                "p": "53 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/be/f7/65/bef765dc-cf56-c979-976e-2e133040793f/075679588937.jpg/200x200bb.jpg"
+            "r": 6,
+            "c": 0,
+            "a": "Alex Warren",
+            "s": "Fever Dream",
+            "p": "53 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/be/f7/65/bef765dc-cf56-c979-976e-2e133040793f/075679588937.jpg/200x200bb.jpg"
         },
         {
-                "r": 7,
-                "c": 0,
-                "a": "Danny L Harle & Dua Lipa",
-                "s": "Two Hearts",
-                "p": "47 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/a6/a4/a8a6a497-12de-7f01-c3b9-9074ee2ef551/191404158579.png/200x200bb.jpg"
+            "r": 7,
+            "c": 0,
+            "a": "Danny L Harle & Dua Lipa",
+            "s": "Two Hearts",
+            "p": "47 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/a6/a4/a8a6a497-12de-7f01-c3b9-9074ee2ef551/191404158579.png/200x200bb.jpg"
         },
         {
-                "r": 8,
-                "c": 0,
-                "a": "Damiano David, Tyla & Nile Rodgers",
-                "s": "Talk To Me",
-                "p": "45 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2f/4c/1a/2f4c1a5d-a5d3-d1be-541b-ab4ce66c3d0d/196873566634.jpg/200x200bb.jpg"
+            "r": 8,
+            "c": 0,
+            "a": "Damiano David, Tyla & Nile Rodgers",
+            "s": "Talk To Me",
+            "p": "45 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2f/4c/1a/2f4c1a5d-a5d3-d1be-541b-ab4ce66c3d0d/196873566634.jpg/200x200bb.jpg"
         },
         {
-                "r": 9,
-                "c": 1,
-                "a": "SUNMI",
-                "s": "CYNICAL",
-                "p": "43 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/32/d8/7e/32d87eac-c34c-5138-5149-20e8e8dede60/cover_KM0023635_1.jpg/200x200bb.jpg"
+            "r": 9,
+            "c": 1,
+            "a": "SUNMI",
+            "s": "CYNICAL",
+            "p": "43 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/32/d8/7e/32d87eac-c34c-5138-5149-20e8e8dede60/cover_KM0023635_1.jpg/200x200bb.jpg"
         },
         {
-                "r": 10,
-                "c": -1,
-                "a": "Bruno Mars",
-                "s": "I Just Might",
-                "p": "41 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/200x200bb.jpg"
+            "r": 10,
+            "c": -1,
+            "a": "Bruno Mars",
+            "s": "I Just Might",
+            "p": "41 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/200x200bb.jpg"
         },
         {
-                "r": 11,
-                "c": -1,
-                "a": "David Guetta, Teddy Swims & Tones and I",
-                "s": "Gone Gone Gone",
-                "p": "41 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/1b/01/ac1b0190-eef2-043f-dc65-89217875dc4d/5026854057859.jpg/200x200bb.jpg"
+            "r": 11,
+            "c": -1,
+            "a": "David Guetta, Teddy Swims & Tones and I",
+            "s": "Gone Gone Gone",
+            "p": "41 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/1b/01/ac1b0190-eef2-043f-dc65-89217875dc4d/5026854057859.jpg/200x200bb.jpg"
         },
         {
-                "r": 12,
-                "c": -1,
-                "a": "Juste, Jaxstyle & Jon",
-                "s": "Turn The Lights Off",
-                "p": "41 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9e/d8/50/9ed85068-7181-d115-cb6b-470a6fb2abd3/5026854195841.jpg/200x200bb.jpg"
+            "r": 12,
+            "c": -1,
+            "a": "Juste, Jaxstyle & Jon",
+            "s": "Turn The Lights Off",
+            "p": "41 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9e/d8/50/9ed85068-7181-d115-cb6b-470a6fb2abd3/5026854195841.jpg/200x200bb.jpg"
         },
         {
-                "r": 13,
-                "c": 0,
-                "a": "Calvin Harris & Kasabian",
-                "s": "Release The Pressure",
-                "p": "36 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/f1/4e/b8f14ed9-35eb-de4a-63db-ffb9e226406b/196874023884.jpg/200x200bb.jpg"
+            "r": 13,
+            "c": 0,
+            "a": "Calvin Harris & Kasabian",
+            "s": "Release The Pressure",
+            "p": "36 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/f1/4e/b8f14ed9-35eb-de4a-63db-ffb9e226406b/196874023884.jpg/200x200bb.jpg"
         },
         {
-                "r": 14,
-                "c": 0,
-                "a": "Kygo feat. Khalid & Gryffin",
-                "s": "Save My Love",
-                "p": "29 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0c/e8/4c/0ce84c2b-de2d-1fe9-fd5a-e545c5431283/196874106358.jpg/200x200bb.jpg"
+            "r": 14,
+            "c": 0,
+            "a": "Kygo feat. Khalid & Gryffin",
+            "s": "Save My Love",
+            "p": "29 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0c/e8/4c/0ce84c2b-de2d-1fe9-fd5a-e545c5431283/196874106358.jpg/200x200bb.jpg"
         },
         {
-                "r": 15,
-                "c": 0,
-                "a": "Anyma & EJAE",
-                "s": "Out Of My Body",
-                "p": "25 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/91/32/29913257-2430-3ff8-aeeb-9a09c1a06982/25UM1IM76610.rgb.jpg/200x200bb.jpg"
+            "r": 15,
+            "c": 0,
+            "a": "Anyma & EJAE",
+            "s": "Out Of My Body",
+            "p": "25 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/91/32/29913257-2430-3ff8-aeeb-9a09c1a06982/25UM1IM76610.rgb.jpg/200x200bb.jpg"
         },
         {
-                "r": 16,
-                "c": 0,
-                "a": "brux XTN",
-                "s": "Paid to Exist",
-                "p": "24 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/4f/b3/e84fb38b-9c45-947d-1e01-f7f2a42c2c35/artwork.jpg/200x200bb.jpg"
+            "r": 16,
+            "c": 0,
+            "a": "brux XTN",
+            "s": "Paid to Exist",
+            "p": "24 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/4f/b3/e84fb38b-9c45-947d-1e01-f7f2a42c2c35/artwork.jpg/200x200bb.jpg"
         },
         {
-                "r": 17,
-                "c": 0,
-                "a": "Dave & Tems",
-                "s": "Raindance",
-                "p": "23 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/49/24/9949241c-e52c-3018-eae8-c686013a7474/25UM1IM68216.rgb.jpg/200x200bb.jpg"
+            "r": 17,
+            "c": 0,
+            "a": "Dave & Tems",
+            "s": "Raindance",
+            "p": "23 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/49/24/9949241c-e52c-3018-eae8-c686013a7474/25UM1IM68216.rgb.jpg/200x200bb.jpg"
         },
         {
-                "r": 18,
-                "c": 0,
-                "a": "Kungs feat. Theophilus London",
-                "s": "Galaxy",
-                "p": "19 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/39/f0/01/39f00184-4d44-c5bb-5eeb-41c91e7617c2/25UM1IM85528.rgb.jpg/200x200bb.jpg"
+            "r": 18,
+            "c": 0,
+            "a": "Kungs feat. Theophilus London",
+            "s": "Galaxy",
+            "p": "19 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/39/f0/01/39f00184-4d44-c5bb-5eeb-41c91e7617c2/25UM1IM85528.rgb.jpg/200x200bb.jpg"
         },
         {
-                "r": 19,
-                "c": 0,
-                "a": "Ofenbach",
-                "s": "Miles Away",
-                "p": "15 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/a1/f9/9da1f975-8437-4de7-0f33-30e323ab5346/5026854258393.jpg/200x200bb.jpg"
+            "r": 19,
+            "c": 0,
+            "a": "Ofenbach",
+            "s": "Miles Away",
+            "p": "15 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/a1/f9/9da1f975-8437-4de7-0f33-30e323ab5346/5026854258393.jpg/200x200bb.jpg"
         },
         {
-                "r": 20,
-                "c": 0,
-                "a": "Albert Brite",
-                "s": "Wild",
-                "p": "8 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/bc/88/9fbc88f4-dc27-7f24-79d9-d72e746ba94c/0.jpg/200x200bb.jpg"
+            "r": 20,
+            "c": 0,
+            "a": "Albert Brite",
+            "s": "Wild",
+            "p": "8 pts",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/bc/88/9fbc88f4-dc27-7f24-79d9-d72e746ba94c/0.jpg/200x200bb.jpg"
         }
-],
+    ],
     "news": [
         {
             "m": "31.03 | 18:32",
@@ -772,6 +772,108 @@ var DATA = {
             "isVideo": false,
             "ts": 1774764034.0,
             "poll": null
+        }
+    ],
+    "nominees": [
+        {
+            "a": "HOLLYFLAME",
+            "s": "ТОНУ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/81/2e/28/812e2827-3153-778e-e04f-4811e4df6494/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "SQWOZ BAB",
+            "s": "КУПЕР",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/ff/19/e5ff194d-5f9b-f4a3-835e-6484b50579cf/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "ICEGERGERT & ZIVERT",
+            "s": "БАНК",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/2d/39/782d39a5-f7f2-4565-4b25-a1430343f8a3/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "UNCLEFLEXXX",
+            "s": "SMS",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/ff/19/e5ff194d-5f9b-f4a3-835e-6484b50579cf/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "ВАНЯ ДМИТРИЕНКО",
+            "s": "РТУТЬ",
+            "img": "https://i1.sndcdn.com/artworks-EgxKKeZ3XVE2-0-t500x500.jpg"
+        },
+        {
+            "a": "5STA FAMILY",
+            "s": "РАЗ, ДВА",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/0b/f6/8f0bf6e8-07ee-71df-0c89-9d466d778cd1/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "MONA",
+            "s": "ПОПРОШУ ТЕБЯ",
+            "img": "https://i.scdn.co/image/ab67616d0000b273263162ce269963fe01a5d2f3"
+        },
+        {
+            "a": "ЛЮБОВЬ УСПЕНСКАЯ & JAKONE",
+            "s": "ПЛАКАЛА НАДЕЖДА",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/49/8a/b7498ad5-2616-c218-6520-a1bf0fff5b5a/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "FILATOV & KARAS",
+            "s": "ВКЛЮЧИ МУЗЫКУ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "МОТ",
+            "s": "НАМЁК НА НАС",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/51/1b/6a511b4a-b11a-a854-0a5c-637f4ad768ae/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "SABI & MIA BOYKA",
+            "s": "БАЗОВЫЙ МИНИМУМ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "GAYAZOV$ BROTHER$",
+            "s": "РУССКАЯ РУЛЕТКА",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "XCHO",
+            "s": "ТЫ И Я",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "ЛЁША СВИК & NYUSHA",
+            "s": "ПРОБУДИ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "MACAN",
+            "s": "ОСТАНЬСЯ ОБРАЗОМ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "LYRIQ",
+            "s": "КАССЕТЫ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/12/8e/b7128e10-03f8-d81e-ba7f-4e5f76fb177d/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "JONY",
+            "s": "ПОМНЮ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "SERYABKINA",
+            "s": "АСФАЛЬТ",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "ARTIK & ASTI",
+            "s": "МОДНЫЙ ПОП",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/88/ed/e088ed96-51c2-d8c0-6f13-0391fe6f88dc/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "КЛАВА КОКА",
+            "s": "СПЛЕТНИ. ШУМ. ЛУК.",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/1a/7b/d11a7b87-6ed1-d8b2-cfc2-f563b55d708d/cover.jpg/400x400bb.jpg"
         }
     ]
 };
