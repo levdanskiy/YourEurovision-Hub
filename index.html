@@ -159,6 +159,11 @@
             border: 1px solid rgba(255,255,255,0.1); 
             transition: 0.3s ease;
         }
+        .bubble:hover .heart-shape { 
+            transform: scale(1.2); 
+            clip-path: url(#official-h-mask) !important;
+            -webkit-clip-path: url(#official-h-mask) !important;
+        }
         .card:hover .heart-shape { transform: scale(1.15) rotate(5deg); }
         .winner-glow { 
             border: 2px solid #ffd700 !important; 
