@@ -102,14 +102,16 @@
         @media (max-width: 1200px) {
             body { padding: 20px; }
             .layout { grid-template-columns: 1fr; }
-            .timers-hero { grid-template-columns: 1fr 1fr; }
+            .timers-hero { grid-template-columns: 1fr 1fr; gap: 15px; }
+            .timer-val { font-size: 2.2rem; }
             .column:nth-child(1) { order: 2; } /* Radio goes after news */
             .column:nth-child(2) { order: 1; } /* News first */
             .column:nth-child(3) { order: 3; } /* Standings last */
         }
 
         @media (max-width: 768px) {
-            .timers-hero { grid-template-columns: 1fr; }
+            .timers-hero { grid-template-columns: 1fr; gap: 10px; }
+            .timer-val { font-size: 2.5rem; }
             .post-h { font-size: 2.5rem; }
             .post-card { padding: 40px; border-radius: 30px; }
             .post-media { width: 100%; float: none; margin: 0 0 20px 0; }
