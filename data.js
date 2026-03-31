@@ -82,13 +82,13 @@ var DATA = {
             "t1": "it",
             "a1": "Sal Da Vinci",
             "s1": "Per sempre sì",
-            "sc1": "LIVE",
+            "sc1": "33%",
             "t2": "md",
             "a2": "Satoshi",
             "s2": "Viva, Moldova!",
-            "sc2": "",
-            "w": 0,
-            "status": "LIVE"
+            "sc2": "67% ★",
+            "w": 2,
+            "status": "FINISHED"
         },
         {
             "id": 7,
@@ -97,13 +97,13 @@ var DATA = {
             "t1": "cy",
             "a1": "Antigoni",
             "s1": "Jalla",
-            "sc1": "WAIT",
+            "sc1": "LIVE",
             "t2": "gb",
             "a2": "Look Mum No Computer",
             "s2": "Eins, Zwei, Drei",
             "sc2": "",
             "w": 0,
-            "status": "WAITING"
+            "status": "LIVE"
         },
         {
             "id": 8,
@@ -122,38 +122,16 @@ var DATA = {
         }
     ],
     "qualifiers": [
-        {
-            "id": "fi",
-            "a": "L. Lampenius & P. Parkkonen",
-            "s": "Liekinheitin"
-        },
-        {
-            "id": "dk",
-            "a": "S. Torpegaard Lund",
-            "s": "Før vi går hjem"
-        },
-        {
-            "id": "gr",
-            "a": "Akylas",
-            "s": "Ferto"
-        },
-        {
-            "id": "ge",
-            "a": "Bzikebi",
-            "s": "On Replay"
-        },
-        {
-            "id": "se",
-            "a": "Felicia",
-            "s": "My System"
-        }
+        { "id": "fi", "a": "L. Lampenius & P. Parkkonen", "s": "Liekinheitin" },
+        { "id": "dk", "a": "S. Torpegaard Lund", "s": "Før vi går hjem" },
+        { "id": "gr", "a": "Akylas", "s": "Ferto" },
+        { "id": "ge", "a": "Bzikebi", "s": "On Replay" },
+        { "id": "se", "a": "Felicia", "s": "My System" },
+        { "id": "md", "a": "Satoshi", "s": "Viva, Moldova!" }
     ],
     "eliminated": [
-        {
-            "id": "me",
-            "a": "Tamara Živković",
-            "s": "Nova zora"
-        },
+        { "id": "it", "a": "Sal Da Vinci", "s": "Per sempre sì" },
+        { "id": "me", "a": "Tamara Živković", "s": "Nova zora" },
         {
             "id": "at",
             "a": "COSMØ",
@@ -445,6 +423,30 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "31.03 | 06:00",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5908",
+            "t": "🏛 #FRAGMENT: ТЕНИ КАК НЕГАТИВ ГОРОДА - ФИЛОСОФИЯ ИСЧЕЗНОВЕНИЯ",
+            "b": "В последний день марта тени становятся честнее зданий. Если фасад - это маска, выстроенная для зрителя, то тень - это его «негатив», обнажающий истинные пропорции и изъяны. В этом северном городе, застывшем на пороге апреля, мы наблюдаем за тем, как графика солнечного света стирает материальность камня.\nТень на брусчатке не лжет. Она не пытается казаться вечной. Она исчезает вместе с поворотом планеты, вместе с уходящим мартом, не оставляя после себя ничего, кроме этого короткого упоминания в Marginalia. Сегодня мы смотрим не на архитектуру, а на ее отсутствие - на те темные провалы, которые и делают свет видимым. Это момент абсолютной честности: Март уходит, забирая с собой свои длинные, холодные тени, оставляя нас один на один с ослепительной пустотой грядущего апреля.\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Marginalia",
+            "img": "https://cdn4.telesco.pe/file/utEPkpnf-e_cuTXgZY7zyD31avP18TRrmx6ZGnEhp6dd5ANJ9CifAAhw0LIWkEc0XS-n9RhrHcZfe7FP9Z1j66WB_FXIcB6HIw3O0gfjDOccafmRsDnuSQi5YbQP52xxLWuUlLUUjGsHLusfs0Denf4DJP4Bg1QRRhXKUTJNqbjgNH7DNpl9kC2Y91sK8gbn3gUYjXB9E5lDBj_bAVfXrdRUE8wxyiqDzg_6v0_L3TEVNBeCR-nYEaisFvH2omJS3YD2D1CWSYy9y_HBBz27j_VzWR8S_XV2CBitnOBYqIcYcIQ2DHLdPhHsk3ZLQhNg-ECjwWedrMu760nD5MBt1Q.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774936838.0,
+            "poll": null
+        },
+        {
+            "m": "31.03 | 01:38",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5587",
+            "t": "❤️ GLOBAL: EUROVISION ASIA - ЭКСПАНСИЯ НАЧИНАЕТСЯ В БАНГКОКЕ",
+            "b": "Европейский вещательный союз (EBU) официально подтвердил: в 2026 году легендарный формат выходит на новый уровень. Дебютный «Eurovision Song Contest Asia» пройдет в столице Таиланда, ознаменовав собой самую масштабную главу в 70-летней истории бренда.\nDATA & LOGISTICS:\n• Хост-город: Бангкок, Таиланд 🇹🇭\n• Дата финала: Суббота, 14 ноября 2026 года.\n• Вещатель-партнер: Channel 3 (Таиланд).\n• Организаторы: EBU, Voxovation, S2O Productions.\nПЕРВЫЙ ПУЛ УЧАСТНИКОВ (10 СТРАН):\nНа текущий момент участие подтвердили: Южная Корея 🇰🇷, Таиланд 🇹🇭, Вьетнам 🇻🇳, Малайзия 🇲🇾, Филиппины 🇵🇭, Бангладеш 🇧🇩, Бутан 🇧🇹, Камбоджа 🇰🇭, Лаос 🇱🇦 и Непал 🇳🇵. Список будет расширяться в ближайшие месяцы.\n🎙 ГОЛОСА ИНДУСТРИИ\nМартин Грин (Директор ESC, EBU):\n«В год 70-летия конкурса особенно символично открыть эту главу в Азии - регионе, богатом творчеством и талантами. Мы строим проект, который отразит идентичность региона, оставаясь верным духу Евровидения».\nПитер Сеттман (CEO Voxovation):\n«Мы создаем шоу, где артисты и фанаты соединятся по-новому. Я вырос на Евровидении, и принести это невероятное событие на новый континент - нечто особенное».\nГотовы к битве азиатских тигров на сцене?\n⏱️ Время чтения: 1.5 мин | 🌏 YourVision: Global",
+            "img": "https://cdn4.telesco.pe/file/bUA90TNsEdt3Yufds9YCXokVndes7YcI09jx_Ts5xPUa739s2-j1Yan4L8UdDSBlkrY8zH2UzHQTp0MZ9rnzveL7T7wCnjvXl35fuuHWLUlBD_BHpm6I1rv8ESk7C1GpHicGhe3NlZrHQABpWZPPFOiwRJ-zYTwJey62JgoCRBDA3gTVMAG04VX4Ev8iSEm4hiSy4XvUx05rwnvYRK9iVoakHb9bgN5VkUfJo6iDGPAcHmd7udDi3cA135xnCgN8FUs72bPKwlQjmYH0nDBXG-BGI5L3YCkS8rbuWxwUmEALvyJqArFwvNwSQEwWs4_xnoGlUI4ep3J8MKEL9iHvSg.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1774921107.0,
+            "poll": null
+        },
+        {
             "m": "30.03 | 18:34",
             "id": "70",
             "u": "https://t.me/YourEurovision/5586",
@@ -570,7 +572,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5906",
             "t": "🏛 MARGINALIA: АПРЕЛЬСКИЕ ТИЗЕРЫ - ПРЕДЧУВСТВИЕ",
             "b": "Последние сорок восемь часов марта - это не время, а состояние. Воздух в Риге сегодня не просто холодный, он прозрачный. Он не обжигает легкие мартовской остротой, а лишь мягко, неумолимо напоминает: его химический состав меняется. В нем уже нет той упрямой зимней тяжести, но еще нет и апрельской влажной сладости. Он - нейтральная полоса, лиминальное пространство между двумя разными правдами.\nСМЫСЛ МОМЕНТА (LORE)\nЗа окнами Архива сумерки имеют особый оттенок - синеватый свинец, разбавленный перспективой. Фонари зажигаются не как обычно, а словно нехотя, отсрочивая момент, когда март окончательно станет прошлым. В эти часы кажется, что сам город прислушивается. Ветви деревьев в Верманском парке, тишина за закрытыми ставнями - всё настроено на одну частоту ожидания.\nTHE FRAGMENT\n«Апрель - это дата. А предчувствие апреля - это жизнь...» - пометка на полях. Предчувствие всегда масштабнее самого апреля. Его значимость - в физическом знании, что граница пройдена, хотя календарь еще этого не зафиксировал. Мы архивируем этот момент не ради итога, а ради самого движения.\nЗавтра будет первое число. Но истинное начало - сейчас. В тишине, которая уже не зимняя, но еще не весенняя.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Calendar",
-            "img": "https://cdn4.telesco.pe/file/BEcpx2pVk7-i8rcWMgLkbq5hipcLVPbC7tbOgQHF8j8VNocsOOmGGfpjlUL4HJBBLNWBc-A70P7pP9LAI0Qyz2wXx4RKBiFyxxC4YA5asiXLa8yDZ4aKSUcFoRcOX2Q-1YZugiMu6n5L3Zyn_6GgE_Nw3C62Xi_fBRJNx5QKpG6bVrMx8oP7PkOspu231DhLx1hRKchH7Do8xLyCq9cbpEKHan7ZePwFUqhszZ0EDUhrRyYw--vHJmH-c-milywuL-DSrYNerb97-QjJJhK3Cfg571glH35HSOF06MzA1jemZVsePOjDgcixhyJ-gxbDBIAPpHJByZIRPq3xFuHseQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/eqQnX7rEqoRh37HQRNRFrqRtCncIiihYQeo4z1vqEosYl4eN5-6TyRLaXd_FsOAVYd53QJgbIA_0u3hGIPIQWLkrX6cK92F6PJ0t__zT8iuuhibMI086NJOdcKZqJzF059_vomsgZd5Txkvi6-LnWpKSRCI8uF542FGhR5AX38p10U18PHimBlYAYXgs6dm4vG7673R5dRlTJVWMaGj7n3xmwGNea9kdzROZsG1TDH6xXpjXF7_xesoFOoLZd0Fy7dw6lxpN7bvDRcodHYnelO9XMU1iKFFrCA9v6-BQtgCTBNm4LlFk7Ga0354pR5SOjYRWM7CqR7hOeqzAXpSkXQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774850462.0,
@@ -690,7 +692,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5904",
             "t": "🏛 MARGINALIA: КРАЯ МАРТА - ТЕКСТУРА ПЕРЕХОДА",
             "b": "Мы подошли к той точке года, когда март начинает истончаться. Это странное, «пограничное» время, когда зима уже не властна, а весна еще не обрела уверенности. В «Альманахе» мы фиксируем этот момент как паузу между главами.\nСМЫСЛ МОМЕНТА (LORE)\nПоследние дни марта всегда пахнут сырым камнем и холодным ветром, в котором уже слышны другие ноты. Это идеальное время для ревизии своего внутреннего архива. Что из «мартовских маргиналий» мы возьмем с собой в апрель, а что оставим здесь, на полях этого месяца? Переход - это не просто смена даты, это ритуал очистки смыслов.\nTHE FRAGMENT\n«Время не течет, оно наслаивается, как годовые кольца на срезе дерева...» - пометка на обороте старого календаря. Воскресенье дает нам право не бежать. Остановитесь на краю этого месяца. Почувствуйте его вес. Это и есть наш «невидимый якорь» - умение ценить каждый слой реальности.\nПусть сегодняшний переход будет легким и осознанным.\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Calendar",
-            "img": "https://cdn4.telesco.pe/file/OSa4C_wSvukWR261pUKyCookYyc9QmpBZ7DPwv7IEdFLJ5Pkxn9rrSKGzXbwF3Hicq85Mi6uSyFffs6nvThO2YGn7-vkKSUsYvdy0pmjRds3SHqhLUPdnyjgybimpu1U2PWeLSc2xEgrs5-uzCHUEslW0FmDhjhvlbQiR1HDkYQXVe7X_f-QS_0TQR_NE_qRwz3dS0gUuRPa1WtVGPprPsfhZA0-DnIE8ZwBE_yf4UerpHo4M5oKZ_5mObrSigO8CxRzqEv4NCD5Ki6sE225JvcE7j_gFPTo69mN50xBgqZmfushklVsRMOYy4VkBS_nZn06Unvw0OhYL2Bm73a6rQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/QCetybB7jGV7PwvtV_9xHMa88tSyibeYambwQWeu_QJ2DHGjUxdEjfV_JkptCT7IYg3JjBzxryC-JybTt4zHf_IuTOtGQvD8lakBxhodjjccyLzZ_xM7xBGRpVUlSF3Ra0zXzx3Vv7UzTkBRlHES-utAmipnYX-rM0kkXGsQzcsrUQ8X8G5IquGNtTT919IYx-hMNjGSKB5Fav9BfMhOswVmhB01oAc4dH6xMjjkiClF9qWGOZVt9FdIDLaeSHpxpkxS_lOBUJMliUHTNsO5YlKoPlgwsQ9MfM1T280KIHthDSE9s6b0GgDA-TNDf4LrCIaFw6xlaiIlzsg2plxb4g.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774764034.0,
@@ -702,7 +704,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5569",
             "t": "❤️ EUROVISION ASIA: БАНГКОК 2026 - ОФИЦИАЛЬНО",
             "b": "Самый масштабный музыкальный проект планеты расширяет границы. 14 ноября 2026 года Бангкок примет первый в истории Eurovision Song Contest Asia.\nИнсайдерские детали запуска:\n• Локация: Бангкок, Таиланд.\n• Дата финала: 14 ноября 2026.\n• Слоган: «United by Music. Across Asia».\n• Участники: Камбоджа, Бангладеш, Лаос, Бутан, Вьетнам, Малайзия, Филиппины, Непал и Таиланд уже в списке.\nЭто не просто шоу - это движение. Каждая страна проведет свой национальный отбор, а официальной цифровой платформой станет Zoop. Обратный отсчет запущен: до старта новой эры осталось 229 дней.\nAsia, are you ready?\n⏱️ Время чтения: 0.6 мин | 🌏 YourVision: Asia",
-            "img": "https://cdn4.telesco.pe/file/tuZVw10JfkMlU4v5AVT4Id4T2bcY156G1qavPYd_-BX7zKoHHQiy6IF0YEtj80S-Q_z5Q_c96Rqk0wYFPxsNMhepdLKbvaBoBOHZWxhIaWWpNTFH-GxhMJuSTiccCqGlN6zT7zW-uWOdOkQbr0f5c0QLeOrLmvodudzSLwZ8xM0xke6hENVl6ivqjZnpz27P888Q_E-viPJFkSNOwFw0wmPlM7DvCQcadyvDXboaSHZHRLZngdS5eJd4fmEbBGuJ_7vrqjlsZxO_-iZwlJGVKSq-KkLfaO1y4Wlf8Lq55Vq3ASwI8VaGZh65oawZ2bUyiJIgvAu76DW0kMa2IkInkw.jpg",
+            "img": "https://cdn4.telesco.pe/file/ORLOQ4CXUFEI35ZhSo7Anll1RG3FbR7wvyeGQSV_jSUgZzcwoO1VaxeLGkg8VQPC7fwEhtX_K43dluPR71YV4U6OM2ZG3GS_zxMFC32k3TTlDcIXsYsUt8Zcrv6O3buB1vj2mnju2TdVFaCjTJdBCSBQowAIWF7HrXpo0U17x7Qezzd3PDU7K2G5lWw93trikrlCQlYrKI1PZhu5NbbKZ0etawWlDNeihvrUDEeNoRa2eVb2TYdezvpC2Cdol1aZLQdAFhke_S5AIBsS9MxR3lA7o6aJGuWvVik0AhOuNCfWVBC0FyBum73eWkQ1oB-sAyvVlq92mdRrIytIqx0hvQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774745781.0,
@@ -739,18 +741,6 @@ var DATA = {
             }
         },
         {
-            "m": "28.03 | 18:03",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5566",
-            "t": "🧬 DNA: ЧЕХИЯ - DANIEL ŽIŽKA",
-            "b": "Даниэль Жижка - это артист, который заставил чешскую делегацию замолчать в изумлении при первом же прослушивании. Выбранный среди 260 претендентов, Даниэль везет в Вену самый интимный и сложный инди-поп года.\nTHE JOURNEY (ПУТЬ)\n23-летний пражанин - профессиональный композитор и актер, выпускник консерватории Ярослава Ежека. Даниэль уже имел успешный проект на локальной сцене, но для штурма Евровидения он принял радикальное решение: отказаться от сценического псевдонима и выйти под своим настоящим именем. Его песня «Crossroads» была выбрана внутренним отбором ČT за её обезоруживающую искренность. Продюсер Вилиам Береш создал вокруг голоса Даниэля уникальную атмосферу, которую глава делегации назвал «моментом абсолютной истины». Журнал Headliner уже включил Даниэля в список главных будущих талантов чешской музыки.\nSTYLE & SOUND (ДНК)\n«Crossroads» - это кинематографичный инди-поп с глубоким влиянием эмбиента. Звук Даниэля - это пространство и воздух. Его вокал балансирует на грани шепота и мощного эмоционального взрыва. Визуально артист придерживается образа «Интеллектуального авангардиста»: строгие силуэты, приглушенные тона и глубокая концептуальность в каждой детали.\nVERDICT: Чехия в этом году - главный претендент на звание «Dark Horse». Даниэль Жижка привез музыку, которая не кричит, но заставляет прислушаться. Это потенциальный фаворит западноевропейских жюри.\nГотов ли зритель к глубокому инди-погружению на фоне громких поп-хитов?\n⏱️ Время чтения: 1.2 мин | 🇨🇿 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/sfLXmbpOYchCkbAX-G6sc94Cy7OWtLC7VGDblWip16jeOESRZAnEc-W6He0xtCXvD6J6UmwCnjC7QV6WhOmqK5smV2I1m2FFBqk7jlhy6HcMu6qnsmei1r9Uc1ElHpdjZPju1uvQ3gGDN6e8-E9ZGtvBOVzR5PBfLkyj7I8YKe7TAGQDy10S6gpldJIWh33Ltp6WRJLL5-7Pz0GWEE__VcFCwPzUC14AnoMxPaPI6ndkXQFJJK3MZyPimHyS1oNk1J36ShvpLaeycCelqezotOvHF0pyBwEOEVEj6Ry_Ji-QTaPQxbW9epu9cIc2EWMlp49us6s7Ie3GNfOM4DcNJw",
-            "vid": "https://cdn4.telesco.pe/file/dc6c871285.mp4?token=eIzkGuXtbDZx4jchM91IWf5GAyPimBTHkfgeHg6iN1AMeYRCZLTn0Yz0rWyEh-aiYFG66NEPaKX0Vf2PLx6F7uzt_08EOV-7eMOxpHxBpZ4-a46t2nNFrnIXas5WsHNxN5wxDTz-Vxahe7l4XGS6faWim37n1kzapVWXVrIdoNqkr8FXu0H6MjDEVXM_15QvGlIBplkatIa01kS9A66smypA7CRDk7hpFqXEz6M-fmO0xb2XT9RfI4oqdtKS4_0Dz_vWULU9x_6Dj3PJklaNZnnfGKTWHn8NCa6EATkCeJHBBnVLgaJJLlVCDC141QFq43wn7bCOgnphAEL_25fRVw",
-            "isVideo": true,
-            "ts": 1774721028.0,
-            "poll": null
-        },
-        {
             "m": "28.03 | 16:04",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5903",
@@ -760,18 +750,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1774713864.0,
-            "poll": null
-        },
-        {
-            "m": "28.03 | 07:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5902",
-            "t": "🏛 MARGINALIA: МИФ О НАРЦИССЕ - БЕЗДНА ОТРАЖЕНИЯ",
-            "b": "Мы привыкли считать историю Нарцисса притчей о самолюбовании. Но если взглянуть на маргиналии этого мифа, открывается иная глубина. Это история не о любви к себе, а о трагедии узнавания. О моменте, когда ты впервые видишь свое отражение в темной воде и понимаешь: этот образ тебе неподвластен.\nСМЫСЛ МОМЕНТА (LORE)\nВода в античности - это не зеркало в спальне. Это живая, холодная стихия, которая искажает и поглощает. Нарцисс застыл у ручья не от восторга, а от шока. Он увидел бездну, которая носит его лицо. Это миф о потере границ между внутренним океаном и внешней реальностью. О том, как легко утонуть в собственных черновиках, если не иметь твердой опоры под ногами.\nTHE FRAGMENT\n«Отражение - это всего лишь текст, который мы пишем на воде, надеясь, что он станет камнем...» - пометка на полях старого манускрипта. Сегодня, в субботней тишине, попробуйте заглянуть в свои «внутренние воды». Что вы там видите: застывшую картинку или живое течение, которое нельзя остановить?\nПусть ваше отражение сегодня будет ясным, но не сковывающим.\n⏱️ Время чтения: 1.0 мин | 🏛 Almanac: Source",
-            "img": "https://cdn4.telesco.pe/file/tdlZQ09uidjwyyFDaCMonDArrsD3_Y4xYGzdvQVyCj6UX4n3ppl8_heIxHQ-aW3q3tqzEE0VXrDTGvOgLagIzsPs2Io-fTved3C5z7AP_csuaIpcdLRG7lq7tqX2Or6tM39GBz1WeAz6L0Nc3s1iyCcRyonnKJtSfddzhOsVvEu8iNc_MRnCEWuFsQ1b01YAvj4U6aWpOc1wQ3vge_DKv9BZ9wEIJZI15jxaGQeYSepkL5jUPlvqMZH0gjluxOIzOJm-l0qbyJY_l5-1f3tFs2Kv49FcFJTv7yGVsqQrCGjzbg7qgAFm9BMyNrhc_g37r6ZyAa-28UncG0EBjoV0RQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774681463.0,
             "poll": null
         }
     ]
