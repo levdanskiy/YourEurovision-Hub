@@ -232,6 +232,47 @@
         }
         .elim-bubble:hover .tooltip { visibility: visible; opacity: 1; }
         
+        /* Timeline History */
+        #hist-list { 
+            position: relative; 
+            padding-left: 30px; 
+            margin-top: 20px;
+        }
+        #hist-list::before { 
+            content: ""; position: absolute; left: 10px; top: 10px; bottom: 10px; 
+            width: 2px; background: linear-gradient(to bottom, var(--pink), var(--cyan), transparent);
+            opacity: 0.3;
+        }
+        .hist-item { 
+            position: relative; margin-bottom: 25px; 
+            display: flex; align-items: flex-start; gap: 15px;
+        }
+        .hist-item::before { 
+            content: ""; position: absolute; left: -24px; top: 12px; 
+            width: 10px; height: 10px; border-radius: 50%; 
+            background: #05010d; border: 2px solid var(--cyan);
+            box-shadow: 0 0 10px var(--cyan); z-index: 2;
+        }
+        .hist-now::before { border-color: var(--pink); box-shadow: 0 0 15px var(--pink); animation: blink 1s infinite; }
+        
+        .hist-cover { width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--border); flex-shrink: 0; background-size: cover; background-position: center; }
+        .hist-content { display: flex; flex-direction: column; gap: 3px; }
+        
+        .hist-badge { 
+            display: inline-block; padding: 2px 6px; border-radius: 4px; 
+            background: var(--pink); color: #fff; font-size: 0.55rem; 
+            font-weight: 900; margin-bottom: 5px; letter-spacing: 0.1em;
+        }
+        
+        .hist-time { font-size: 0.75rem; font-weight: 900; color: var(--pink); font-family: "Inter Tight"; font-style: italic; opacity: 0.8; }
+        .hist-track { font-size: 0.9rem; font-weight: 700; color: #eee; line-height: 1.2; }
+        .hist-artist { color: var(--cyan); font-family: "Inter Tight"; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.05em; }
+        
+        .hist-discovery { display: flex; gap: 10px; margin-top: 5px; opacity: 0.3; transition: 0.3s; }
+        .hist-item:hover .hist-discovery { opacity: 1; }
+        .hist-discovery a { color: #fff; font-size: 0.7rem; text-decoration: none; }
+        .hist-discovery a:hover { color: var(--pink); }
+        
         .player-container { position: relative; z-index: 1; transition: 0.5s; }
         .ambient-glow { position: absolute; top: 0; left: 0; width: 100%; aspect-ratio: 1; border-radius: 50%; filter: blur(60px); opacity: 0.4; z-index: -1; transition: background 1s ease; }
         
@@ -523,9 +564,25 @@
                 trackStart = start.getTime() / 1000;
                 trackDur = d.next_in > 0 ? d.next_in : 180; // mock 3m if not provided
 
-                document.getElementById("hist-list").innerHTML = d.songs.slice().reverse().slice(0,10).map(h => {
+                document.getElementById("hist-list").innerHTML = d.songs.slice().reverse().slice(0,10).map((h, idx) => {
                     const pts = decodeS(h.song).split(" - ");
-                    return `<div class="bubble"><span style="color:var(--cyan); font-size:0.75rem; font-weight:900; width:55px; font-family:'Inter Tight'; font-style:italic;">${h.time.substring(0,5)}</span><img src="${h.img ? "https://myradio24.com/" + h.img : "assets/heart_white_2026.svg"}" style="width:40px; height:40px; border-radius:8px;"><div><div class="artist-rich" style="font-size:0.95rem; color:var(--pink); font-style:italic;">${pts[0]}</div><div class="song-rich" style="font-size:0.8rem;">${pts[1]||'...'}</div></div></div>`;
+                    const artist = pts[0], song = pts[1] || '...';
+                    const query = encodeURIComponent(`${artist} ${song}`);
+                    const isNow = idx === 0;
+                    const cover = h.img ? "https://myradio24.com/" + h.img : "assets/heart_white_2026.svg";
+                    
+                    return `<div class="hist-item ${isNow?'hist-now':''}">
+                        <div class="hist-cover" style="background-image:url('${cover}')"></div>
+                        <div class="hist-content">
+                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time">${h.time.substring(0,5)}</span>`}
+                            <div class="hist-artist">${artist}</div>
+                            <div class="hist-track">${song}</div>
+                            <div class="hist-discovery">
+                                <a href="https://open.spotify.com/search/${query}" target="_blank" title="Spotify"><i class="fi fi-brands-spotify"></i></a>
+                                <a href="https://music.apple.com/search?term=${query}" target="_blank" title="Apple Music"><i class="fi fi-brands-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>`;
                 }).join("");
             } catch(e) {}
         }
