@@ -67,13 +67,13 @@ var DATA = {
             "t1": "se",
             "a1": "Felicia",
             "s1": "My System",
-            "sc1": "WAIT",
+            "sc1": "58% ★",
             "t2": "am",
             "a2": "Simón",
             "s2": "Paloma rumba",
-            "sc2": "",
-            "w": 0,
-            "status": "WAITING"
+            "sc2": "42%",
+            "w": 1,
+            "status": "FINISHED"
         },
         {
             "id": 6,
