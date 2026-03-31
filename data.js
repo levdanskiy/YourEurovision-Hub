@@ -52,13 +52,13 @@ var DATA = {
             "t1": "au",
             "a1": "Delta Goodrem",
             "s1": "Eclipse",
-            "sc1": "LIVE",
+            "sc1": "50%",
             "t2": "ge",
             "a2": "Bzikebi",
             "s2": "On Replay",
-            "sc2": "",
-            "w": 0,
-            "status": "LIVE"
+            "sc2": "50% ★",
+            "w": 2,
+            "status": "FINISHED"
         },
         {
             "id": 5,
@@ -123,163 +123,163 @@ var DATA = {
     ],
     "qualifiers": [
         {
-                "id": "fi",
-                "a": "L. Lampenius & P. Parkkonen",
-                "s": "Liekinheitin"
+            "id": "fi",
+            "a": "L. Lampenius & P. Parkkonen",
+            "s": "Liekinheitin"
         },
         {
-                "id": "dk",
-                "a": "S. Torpegaard Lund",
-                "s": "Før vi går hjem"
+            "id": "dk",
+            "a": "S. Torpegaard Lund",
+            "s": "Før vi går hjem"
         },
         {
-                "id": "gr",
-                "a": "Akylas",
-                "s": "Ferto"
+            "id": "gr",
+            "a": "Akylas",
+            "s": "Ferto"
         },
         {
-                "id": "ge",
-                "a": "Bzikebi",
-                "s": "On Replay"
+            "id": "ge",
+            "a": "Bzikebi",
+            "s": "On Replay"
         },
         {
-                "id": "se",
-                "a": "Felicia",
-                "s": "My System"
+            "id": "se",
+            "a": "Felicia",
+            "s": "My System"
         },
         {
-                "id": "md",
-                "a": "Satoshi",
-                "s": "Viva, Moldova!"
+            "id": "md",
+            "a": "Satoshi",
+            "s": "Viva, Moldova!"
         }
-],
+    ],
     "eliminated": [
         {
-                "id": "it",
-                "a": "Sal Da Vinci",
-                "s": "Per sempre sì"
+            "id": "it",
+            "a": "Sal Da Vinci",
+            "s": "Per sempre sì"
         },
         {
-                "id": "me",
-                "a": "Tamara Živković",
-                "s": "Nova zora"
+            "id": "me",
+            "a": "Tamara Živković",
+            "s": "Nova zora"
         },
         {
-                "id": "at",
-                "a": "COSMØ",
-                "s": "Tanzschein"
+            "id": "at",
+            "a": "COSMØ",
+            "s": "Tanzschein"
         },
         {
-                "id": "al",
-                "a": "Alis",
-                "s": "Nën"
+            "id": "al",
+            "a": "Alis",
+            "s": "Nën"
         },
         {
-                "id": "au",
-                "a": "Delta Goodrem",
-                "s": "Eclipse"
+            "id": "au",
+            "a": "Delta Goodrem",
+            "s": "Eclipse"
         },
         {
-                "id": "am",
-                "a": "Simón",
-                "s": "Paloma rumba"
+            "id": "am",
+            "a": "Simón",
+            "s": "Paloma rumba"
         },
         {
-                "id": "lu",
-                "a": "Eva Marija",
-                "s": "Mother Nature"
+            "id": "lu",
+            "a": "Eva Marija",
+            "s": "Mother Nature"
         },
         {
-                "id": "ro",
-                "a": "A. Căpitănescu",
-                "s": "Choke Me"
+            "id": "ro",
+            "a": "A. Căpitănescu",
+            "s": "Choke Me"
         },
         {
-                "id": "lt",
-                "a": "Lion Ceccah",
-                "s": "Sólo quiero más"
+            "id": "lt",
+            "a": "Lion Ceccah",
+            "s": "Sólo quiero más"
         },
         {
-                "id": "hr",
-                "a": "Lelek",
-                "s": "Andromeda"
+            "id": "hr",
+            "a": "Lelek",
+            "s": "Andromeda"
         },
         {
-                "id": "lv",
-                "a": "Atvara",
-                "s": "Ēnā"
+            "id": "lv",
+            "a": "Atvara",
+            "s": "Ēnā"
         },
         {
-                "id": "cz",
-                "a": "Daniel Zizka",
-                "s": "Crossroads"
+            "id": "cz",
+            "a": "Daniel Zizka",
+            "s": "Crossroads"
         },
         {
-                "id": "ua",
-                "a": "Leléka",
-                "s": "Ridnym"
+            "id": "ua",
+            "a": "Leléka",
+            "s": "Ridnym"
         },
         {
-                "id": "ee",
-                "a": "Vanilla Ninja",
-                "s": "Too Epic to Be True"
+            "id": "ee",
+            "a": "Vanilla Ninja",
+            "s": "Too Epic to Be True"
         },
         {
-                "id": "pt",
-                "a": "Bandidos do Cante",
-                "s": "Rosa"
+            "id": "pt",
+            "a": "Bandidos do Cante",
+            "s": "Rosa"
         },
         {
-                "id": "az",
-                "a": "Jiva",
-                "s": "Just Go"
+            "id": "az",
+            "a": "Jiva",
+            "s": "Just Go"
         },
         {
-                "id": "il",
-                "a": "Noam Bettan",
-                "s": "Michelle"
+            "id": "il",
+            "a": "Noam Bettan",
+            "s": "Michelle"
         },
         {
-                "id": "rs",
-                "a": "Lavina",
-                "s": "Kraj mene"
+            "id": "rs",
+            "a": "Lavina",
+            "s": "Kraj mene"
         },
         {
-                "id": "fr",
-                "a": "Monroe",
-                "s": "Regarde !"
+            "id": "fr",
+            "a": "Monroe",
+            "s": "Regarde !"
         },
         {
-                "id": "pl",
-                "a": "Alicja",
-                "s": "Pray"
+            "id": "pl",
+            "a": "Alicja",
+            "s": "Pray"
         },
         {
-                "id": "no",
-                "a": "Jonas Lovv",
-                "s": "Ya Ya Ya"
+            "id": "no",
+            "a": "Jonas Lovv",
+            "s": "Ya Ya Ya"
         },
         {
-                "id": "de",
-                "a": "Sarah Engels",
-                "s": "Fire"
+            "id": "de",
+            "a": "Sarah Engels",
+            "s": "Fire"
         },
         {
-                "id": "sm",
-                "a": "Senhit",
-                "s": "Superstar"
+            "id": "sm",
+            "a": "Senhit",
+            "s": "Superstar"
         },
         {
-                "id": "ch",
-                "a": "Veronica Fusaro",
-                "s": "Alice"
+            "id": "ch",
+            "a": "Veronica Fusaro",
+            "s": "Alice"
         },
         {
-                "id": "be",
-                "a": "Essyla",
-                "s": "Dancing on the Ice"
+            "id": "be",
+            "a": "Essyla",
+            "s": "Dancing on the Ice"
         }
-],
+    ],
     "chart": [
         {
                 "r": 1,
@@ -287,7 +287,7 @@ var DATA = {
                 "a": "Taylor Swift",
                 "s": "The Fate Of Ophelia",
                 "p": "99 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/f8/83/aff883e8-d8b1-95ae-397c-516e949e3ac7/5026854503004.jpg/200x200bb.jpg"
+                "img": "assets/heart_white_2026.svg"
         },
         {
                 "r": 2,
@@ -295,7 +295,7 @@ var DATA = {
                 "a": "sombr",
                 "s": "12 to 12",
                 "p": "89 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/50/e8/ee50e862-6994-408a-6484-b230e500656f/25UM2IM09768.rgb.jpg/200x200bb.jpg"
+                "img": "assets/heart_white_2026.svg"
         },
         {
                 "r": 3,
@@ -303,7 +303,7 @@ var DATA = {
                 "a": "RAYE",
                 "s": "WHERE IS MY HUSBAND!",
                 "p": "89 pts",
-                "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/9d/0c/299d0c14-f217-cc88-7f7b-2a7cdc8c902a/cover.jpg/200x200bb.jpg"
+                "img": "assets/heart_white_2026.svg"
         },
         {
                 "r": 4,
