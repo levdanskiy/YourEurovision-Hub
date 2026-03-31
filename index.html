@@ -788,7 +788,15 @@
                     return `<div class="reaction-btn ${isReacted?'active':''}" onclick="handleReaction(${pIdx}, '${emoji}')"><span>${emoji}</span><span class="reaction-count">${count}</span></div>`;
                 }).join("")}</div>`;
 
-                return `<div class="post-card ${isFeatured?'featured':''}" id="post-${pIdx}"><span class="post-meta">${p.m} | ${isFeatured?'EDITORIAL FEATURE':'YOURVISION INSIDER'}</span>${getTag(p.t)}<div class="post-h">${replaceFlags(p.t.replace(/\*/g, ""))}</div><div style="overflow:hidden;">${p.isVideo ? `<video src="${p.vid}" autoplay loop muted playsinline controls class="post-media"></video>` : (p.img ? `<img src="${p.img}" class="post-media">` : "")}<div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div></div>${pollHtml}${reactionHtml}<div class="post-actions"><button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> Copy Link</button><a href="https://t.me/share/url?url=https://levdanskiy.github.io/YourEurovision-Hub/%23post-${pIdx}&text=${encodeURIComponent('Check this out on YourVision Hub!')}" target="_blank" class="action-btn share"><i class="fi fi-rr-paper-plane"></i> Share</a><div class="read-tag"><i class="fi fi-rr-clock"></i> 1.2 min read</div></div></div>`;
+                return `<div class="post-card ${isFeatured?'featured':''}" id="post-${pIdx}"><span class="post-meta">${p.m} | ${isFeatured?'EDITORIAL FEATURE':'YOURVISION INSIDER'}</span>${getTag(p.t)}<div class="post-h">${replaceFlags(p.t.replace(/\*/g, ""))}</div><div style="overflow:hidden;">
+    ${p.isVideo && p.vid ? `
+        <video class="post-media" autoplay loop muted playsinline controls style="background:#000;">
+            <source src="${p.vid}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    ` : (p.img ? `<img src="${p.img}" class="post-media">` : "")}
+    <div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
+</div>${pollHtml}${reactionHtml}<div class="post-actions"><button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> Copy Link</button><a href="https://t.me/share/url?url=https://levdanskiy.github.io/YourEurovision-Hub/%23post-${pIdx}&text=${encodeURIComponent('Check this out on YourVision Hub!')}" target="_blank" class="action-btn share"><i class="fi fi-rr-paper-plane"></i> Share</a><div class="read-tag"><i class="fi fi-rr-clock"></i> 1.2 min read</div></div></div>`;
             }).join("");
         }
 
