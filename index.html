@@ -11,6 +11,42 @@
             --bg: #05010d; --card: rgba(255,255,255,0.02); --border: rgba(255,255,255,0.08);
             --pink: #ff007f; --cyan: #00f5ff; --acid: #ccff00; --text: #e0e0e0;
         }
+
+        /* AURORA BACKDROP */
+        .aurora-container {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1; overflow: hidden; pointer-events: none;
+            background: var(--bg);
+        }
+        .aurora-blob {
+            position: absolute; width: 600px; height: 600px;
+            border-radius: 50%; filter: blur(120px); opacity: 0.15;
+            animation: aurora-move 20s infinite alternate ease-in-out;
+        }
+        .aurora-1 { background: var(--pink); top: -10%; left: -10%; }
+        .aurora-2 { background: var(--cyan); bottom: -10%; right: -10%; animation-delay: -5s; }
+        .aurora-3 { background: var(--acid); top: 40%; left: 30%; animation-duration: 25s; opacity: 0.08; }
+        
+        @keyframes aurora-move {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(100px, 50px) scale(1.2); }
+        }
+
+        /* FILM GRAIN TEXTURE */
+        .film-grain {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Single_Color_Noise.png');
+            opacity: 0.04; pointer-events: none; z-index: 10000;
+            animation: grain 0.8s steps(10) infinite;
+        }
+        @keyframes grain {
+            0%, 100% { transform: translate(0, 0); }
+            10% { transform: translate(-5%, -5%); }
+            30% { transform: translate(5%, -10%); }
+            50% { transform: translate(-15%, 5%); }
+            70% { transform: translate(10%, 10%); }
+            90% { transform: translate(-5%, 15%); }
+        }
         body { 
             background: var(--bg); color: var(--text); font-family: "Inter", sans-serif; margin: 0; padding: 40px; 
             background-image: radial-gradient(circle at 50% 0%, #1a052e 0%, var(--bg) 70%);
@@ -56,7 +92,12 @@
             border-radius: 10px; background: rgba(255,255,255,0.03); border: 1px solid var(--border);
         }
         .nav-link i { font-size: 0.9rem; color: var(--cyan); }
-        .nav-link:hover { color: #fff; background: rgba(255,255,255,0.08); border-color: var(--cyan); box-shadow: 0 0 15px rgba(0,245,255,0.2); }
+        .nav-link:hover { 
+            color: #fff; background: rgba(255,255,255,0.08); 
+            border-color: var(--cyan); 
+            box-shadow: 0 0 20px rgba(0,245,255,0.3), inset 0 0 10px rgba(0,245,255,0.1); 
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
         
         .timers-hero { 
             display: grid; 
@@ -124,8 +165,19 @@
             .bracket-connector { display: none; } /* Hide connectors on mobile for space */
         }
 
-        .column { display: flex; flex-direction: column; gap: 30px; }
+        .column { display: flex; flex-direction: column; gap: 30px; position: relative; }
         
+        /* Editorial Background Numbers */
+        .column::before {
+            position: absolute; top: -50px; left: -20px;
+            font-family: "Inter Tight", sans-serif; font-weight: 900; font-size: 15rem;
+            color: rgba(255,255,255,0.03); font-style: italic; z-index: -1;
+            pointer-events: none;
+        }
+        .column:nth-child(1)::before { content: "01"; }
+        .column:nth-child(2)::before { content: "02"; }
+        .column:nth-child(3)::before { content: "03"; }
+
         /* Radio Visualizer */
         .visualizer {
             display: flex;
@@ -158,6 +210,26 @@
             position: relative; 
             transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             cursor: pointer;
+            overflow: hidden;
+        }
+        .card::after {
+            content: "";
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent,
+                rgba(255, 255, 255, 0.03),
+                transparent
+            );
+            transform: rotate(45deg);
+            transition: 0.6s;
+            pointer-events: none;
+        }
+        .card:hover::after {
+            left: 100%;
+            top: 100%;
         }
         .card:hover { 
             transform: translateY(-8px) scale(1.01); 
@@ -175,10 +247,36 @@
             50% { border-color: var(--acid); box-shadow: 0 0 15px rgba(204,255,0,0.2); }
         }
         
-        .section-title-base { font-family: "Inter Tight", sans-serif; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 30px; display: block; width: 100%; }
-        .title-pink { color: var(--pink); text-shadow: 0 0 20px rgba(255,0,127,0.4); border-bottom: 2px solid var(--pink); padding-bottom: 10px; text-align: center; font-size: 1.6rem; }
-        .title-cyan { color: var(--cyan); text-shadow: 0 0 20px rgba(0,245,255,0.4); border-bottom: 2px solid var(--cyan); padding-bottom: 10px; text-align: center; font-size: 1.6rem; }
-        .title-acid { color: var(--acid); text-shadow: 0 0 20px rgba(204,255,0,0.4); border-bottom: 2px solid var(--acid); padding-bottom: 10px; text-align: center; font-size: 1.6rem; }
+        .section-title-base { 
+            font-family: "Inter Tight", sans-serif; font-weight: 900; font-style: italic; 
+            text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 35px; 
+            display: block; width: 100%; position: relative;
+        }
+        .section-title-base::after {
+            content: ""; position: absolute; bottom: -5px; left: 0; width: 40px; height: 4px;
+            background: currentColor; opacity: 0.5;
+        }
+        .title-pink { 
+            color: var(--pink); 
+            text-shadow: 0 0 15px rgba(255,0,127,0.5), 0 0 30px rgba(255,0,127,0.2); 
+            border-bottom: 2px solid var(--pink); 
+            padding-bottom: 10px; text-align: center; font-size: 1.6rem; 
+            filter: drop-shadow(0 5px 15px rgba(255,0,127,0.2));
+        }
+        .title-cyan { 
+            color: var(--cyan); 
+            text-shadow: 0 0 15px rgba(0,245,255,0.5), 0 0 30px rgba(0,245,255,0.2); 
+            border-bottom: 2px solid var(--cyan); 
+            padding-bottom: 10px; text-align: center; font-size: 1.6rem; 
+            filter: drop-shadow(0 5px 15px rgba(0,245,255,0.2));
+        }
+        .title-acid { 
+            color: var(--acid); 
+            text-shadow: 0 0 15px rgba(204,255,0,0.5), 0 0 30px rgba(204,255,0,0.2); 
+            border-bottom: 2px solid var(--acid); 
+            padding-bottom: 10px; text-align: center; font-size: 1.6rem; 
+            filter: drop-shadow(0 5px 15px rgba(204,255,0,0.2));
+        }
         
         .side-label { font-family: "Inter Tight", sans-serif; font-weight: 900; font-style: italic; font-size: 1rem; letter-spacing: 0.15em; margin-bottom: 20px; display: block; }
         .heart-shape { 
@@ -534,7 +632,13 @@
         }
     </style>
 </head>
-<body>
+<body onclick="syncRadio()">
+    <div class="aurora-container">
+        <div class="aurora-blob aurora-1"></div>
+        <div class="aurora-blob aurora-2"></div>
+        <div class="aurora-blob aurora-3"></div>
+    </div>
+    <div class="film-grain"></div>
     <div class="signal-overlay"></div>
     <div class="scanlines"></div>
     <svg width="0" height="0" style="position:absolute;"><defs><clipPath id="official-h-mask" clipPathUnits="objectBoundingBox"><path transform="scale(0.0042, 0.004)" d="M180.938 1c-25.317 0-55.258 18.698-73.381 49.771-4.89-11.222-22.313-23.451-43.024-23.451-16.689 0-63.533 20.858-63.533 88.178 0 86.88 87.901 104.725 105.671 131.729 1.221 1.857 5.154 3.26 6.655-1.177 14.179-41.845 124.125-89.125 124.125-174.279-0.001-47.756-31.197-70.771-56.513-70.771z"></path></clipPath></defs></svg>
@@ -701,7 +805,7 @@
         <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
-    <script src="data.js?v=1775070783"></script>
+    <script src="data.js?v=1775072006"></script>
     <script>
         const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
