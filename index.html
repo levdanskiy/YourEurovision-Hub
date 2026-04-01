@@ -520,6 +520,8 @@
                 <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="nav-link"><i class="fi fi-rr-trophy"></i> Cup</a>
                 <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link"><i class="fi fi-rr-document"></i> News</a>
                 <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link"><i class="fi fi-rr-stats"></i> Chart</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="nav-link" style="color:var(--cyan);"><i class="fi fi-rr-chart-line-up"></i> Odds</a>
+                <a href="javascript:void(0)" onclick="scrollToSection('vote-sect')" class="nav-link" style="color:var(--acid);"><i class="fi fi-rr-checkbox"></i> Vote</a>
             </div>
         </div>
     </div>
@@ -591,7 +593,7 @@
                 <div id="hist-list"></div>
             </div>
 
-            <div class="card" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
+            <div id="odds-sect" class="card" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
                 <div class="section-title-base title-cyan"><i class="fi fi-rr-chart-line-up"></i> BOOKMAKERS ODDS</div>
                 <div id="odds-list"></div>
                 <div style="font-size:0.6rem; color:#555; text-align:center; margin-top:15px; text-transform:uppercase; letter-spacing:0.1em;">Source: Eurovisionworld</div>
@@ -620,7 +622,7 @@
                 <div id="chart-list"></div>
             </div>
             
-            <div class="card" style="margin-top:30px; border-color:var(--acid);">
+            <div id="vote-sect" class="card" style="margin-top:30px; border-color:var(--acid);">
                 <div class="section-title-base" style="color:var(--acid); border-bottom:2px solid var(--acid); padding-bottom:10px;">VOTE NOW: RUTOP — SIGNAL 20</div>
                 <div id="nominee-list"></div>
                 
@@ -648,12 +650,12 @@
     <!-- LOAD EXTERNAL DATA.JS -->
     <div class="mobile-nav">
         <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="mobile-nav-btn"><i class="fi fi-rr-broadcast-tower"></i><span>Radio</span></a>
-        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
         <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="mobile-nav-btn"><i class="fi fi-rr-document"></i><span>News</span></a>
-        <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="mobile-nav-btn"><i class="fi fi-rr-stats"></i><span>Chart</span></a>
+        <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="mobile-nav-btn"><i class="fi fi-rr-chart-line-up"></i><span>Odds</span></a>
+        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
-    <script src="data.js?v=1775052634"></script>
+    <script src="data.js?v=1775055119"></script>
     <script>
         const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
