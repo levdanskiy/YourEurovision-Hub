@@ -653,7 +653,7 @@
         <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="mobile-nav-btn"><i class="fi fi-rr-stats"></i><span>Chart</span></a>
     </div>
 
-    <script src="data.js?v=1775052375"></script>
+    <script src="data.js?v=1775052634"></script>
     <script>
         const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
@@ -699,11 +699,14 @@
 
         function handleVote(postId, optIdx) { localStorage.setItem('yv_vote_'+postId, optIdx); render(); }
 
-        function render() {
+                function render() {
             if(!window.DATA) return;
+            
+            // 1. Qualified/Eliminated
             document.getElementById("q-list").innerHTML = DATA.qualifiers.map(c => `<div class="bubble"><img src="${getH(c.id)}" class="heart-shape" style="width:28px; height:28px;"><span class="artist-rich" style="font-size:0.85rem; color:#fff;">${decodeS(c.a)}</span></div>`).join("");
             document.getElementById("e-list").innerHTML = DATA.eliminated.map(c => `<div class="elim-bubble"><div class="tooltip">${decodeS(c.a)}</div><img src="${getH(c.id)}" class="heart-shape" style="width:24px; height:24px;"></div>`).join("");
             
+            // 2. Tournament Bracket
             let bracketHtml = "";
             const battles = DATA.battles;
             for (let i = 0; i < battles.length; i += 2) {
@@ -717,27 +720,23 @@
                     const p1 = getPct(b.sc1), p2 = getPct(b.sc2);
                     return `<div class="card ${isLive?'status-live-box':''}" style="padding:20px; background:rgba(255,255,255,0.01);">${liveHtml}<div style="font-size:0.6rem; color:#777; font-weight:900; letter-spacing:0.1em; margin-bottom:12px;">${b.n}</div><div class="battle-team ${b.w===1?'winner-glow':''}" style="display:flex; align-items:center; gap:12px;">${b.w===1?winBadge:''}<img src="${getH(b.t1)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a1)}</span><span class="song-rich">${decodeS(b.s1||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p1}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc1}</span></div><div class="battle-team ${b.w===2?'winner-glow':''}" style="display:flex; align-items:center; gap:12px; margin-top:15px;">${b.w===2?winBadge:''}<img src="${getH(b.t2)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a2)}</span><span class="song-rich">${decodeS(b.s2||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p2}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc2}</span></div></div>`;
                 };
-                
                 const connector = `<div class="bracket-connector"><div class="connector-line"></div><div class="qf-label">ROAD TO ${b1.qf}</div></div>`;
-                
                 bracketHtml += renderMatch(b1) + connector + renderMatch(b2);
             }
             document.getElementById("bracket").innerHTML = bracketHtml;
             
+            // 3. WorldSound Chart
             document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => {
                 const rank = idx + 1;
                 const podiumClass = rank <= 3 ? `chart-podium-${rank}` : "";
-                
                 const trendIcon = (c) => {
                     if (c > 0) return `<span class="trend-up"><i class="fi fi-rr-arrow-small-up"></i></span>`;
                     if (c < 0) return `<span class="trend-down"><i class="fi fi-rr-arrow-small-down"></i></span>`;
                     return `<span class="trend-steady">═</span>`;
                 };
-
                 const maxPts = parseInt(DATA.chart[0].p) || 100;
                 const curPts = parseInt(i.p) || 0;
                 const barWidth = (curPts / maxPts) * 100;
-
                 return `<div class="bubble ${podiumClass}">
                     <div class="trend-box">${trendIcon(i.c)}<span style="color:var(--pink); font-weight:900; font-family:'Inter Tight'; font-size:1.2rem; font-style:italic;">${i.r}</span></div>
                     <img src="${i.img}" class="chart-cover">
@@ -754,6 +753,7 @@
                 </div>`;
             }).join("");
 
+            // 4. RUTOP Nominees
             if (DATA.nominees) {
                 document.getElementById("nominee-list").innerHTML = DATA.nominees.map((n) => {
                     return `<div class="bubble" style="padding: 10px 15px; margin-bottom:10px; border-radius:15px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);">
@@ -767,12 +767,13 @@
                 }).join("");
             }
 
+            // 5. Bookmakers Odds
             if (DATA.odds) {
                 document.getElementById("odds-list").innerHTML = DATA.odds.map((o) => {
                     const prob = parseInt(o.p);
                     return `<div class="bubble" style="padding: 8px 12px; margin-bottom:8px; border-radius:12px; background:rgba(0,245,255,0.02);">
                         <span style="color:var(--cyan); font-weight:900; font-size:0.8rem; width:20px;">${o.r}</span>
-                        <img src="${getHeartUrl(o.id)}" class="heart-shape" style="width:25px; height:25px; margin:0 10px;">
+                        <img src="${getH(o.id)}" class="heart-shape" style="width:25px; height:25px; margin:0 10px;">
                         <div style="flex-grow:1;">
                             <div class="artist-rich" style="font-size:0.8rem; color:#fff;">${o.c}</div>
                             <div class="score-bar-bg" style="width:100%; height:2px; margin-top:5px;"><div class="score-bar-fill" style="width:${prob}%; background:var(--cyan);"></div></div>
@@ -782,9 +783,9 @@
                 }).join("");
             }
 
+            // 6. News Feed with Search
             const searchInput = document.getElementById("news-search");
             const searchVal = searchInput ? searchInput.value.toLowerCase().trim() : "";
-            
             const filteredNews = DATA.news.filter(p => {
                 const title = (p.t || "").toLowerCase();
                 const body = (p.b || "").toLowerCase();
@@ -822,19 +823,18 @@
                 const reactionHtml = `<div class="reaction-bar">${reactions.map(emoji => {
                     const rKey = `yv_react_${pIdx}_${emoji}`;
                     const isReacted = localStorage.getItem(rKey) !== null;
-                    const count = (p.t.length % 7) + (isReacted ? 1 : 0); // stable mock count
+                    const count = (p.t.length % 7) + (isReacted ? 1 : 0);
                     return `<div class="reaction-btn ${isReacted?'active':''}" onclick="handleReaction(${pIdx}, '${emoji}')"><span>${emoji}</span><span class="reaction-count">${count}</span></div>`;
                 }).join("")}</div>`;
 
                 return `<div class="post-card ${isFeatured?'featured':''}" id="post-${pIdx}"><span class="post-meta">${p.m} | ${isFeatured?'EDITORIAL FEATURE':'YOURVISION INSIDER'}</span>${getTag(p.t)}<div class="post-h">${replaceFlags(p.t.replace(/\*/g, ""))}</div><div style="overflow:hidden;">
-    ${p.isVideo && p.vid ? `
-        <video class="post-media" autoplay loop muted playsinline controls style="background:#000;">
-            <source src="${p.vid}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    ` : (p.img ? `<img src="${p.img}" class="post-media">` : "")}
-    <div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
-</div>${pollHtml}${reactionHtml}<div class="post-actions"><button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> Copy Link</button><a href="https://t.me/share/url?url=https://levdanskiy.github.io/YourEurovision-Hub/%23post-${pIdx}&text=${encodeURIComponent('Check this out on YourVision Hub!')}" target="_blank" class="action-btn share"><i class="fi fi-rr-paper-plane"></i> Share</a><div class="read-tag"><i class="fi fi-rr-clock"></i> 1.2 min read</div></div></div>`;
+                    ${p.isVideo && p.vid ? `
+                        <video class="post-media" autoplay loop muted playsinline controls style="background:#000;">
+                            <source src="${p.vid}" type="video/mp4">
+                        </video>
+                    ` : (p.img ? `<img src="${p.img}" class="post-media">` : "")}
+                    <div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
+                </div>${pollHtml}${reactionHtml}<div class="post-actions"><button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> Copy Link</button><a href="https://t.me/share/url?url=https://levdanskiy.github.io/YourEurovision-Hub/%23post-${pIdx}&text=${encodeURIComponent('Check this out on YourVision Hub!')}" target="_blank" class="action-btn share"><i class="fi fi-rr-paper-plane"></i> Share</a><div class="read-tag"><i class="fi fi-rr-clock"></i> 1.2 min read</div></div></div>`;
             }).join("");
         }
 
