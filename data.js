@@ -285,6 +285,42 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "01.04 | 17:06",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5605",
+            "t": "🏆 DEEP DIVE: МАРТИН ГРИН О ГЛОБАЛЬНОЙ ЭКСПАНСИИ, БОЙКОТАХ И «ИНТЕРВИДЕНИИ»",
+            "b": "Исполнительный директор ESC Мартин Грин в серии интервью (Der Standard, NYT) обозначил новую карту влияния конкурса. Это не просто подготовка к Вене, а пересборка бренда на десятилетия вперед. Разбираем ключевые факты, которые определяют будущее индустрии.\n🌏 BRAND POWER: АЗИЯ И ОТВЕТ РОССИИ\n• Бренд без границ: Грин подтвердил, что азиатские вещатели сами просили оставить слово «Eurovision» в названии своего конкурса. Для них это глобальный знак качества, выходящий за пределы географии.\n• Фактор «Интервидения»: Грин жестко дистанцировался от российского проекта: «Мы бы никогда не делали что-то в ответ на… что бы это ни было». Запуск ESC Asia - это стратегический план, а не реакция на конкурентов.\n⚡️ ГЕОПОЛИТИЧЕСКИЙ ФИЛЬТР: БОЙКОТЫ И ДЕМОКРАТИЯ\n• Кейс Испании: Грин уважает бойкот RTVE и еще 4 стран из-за Израиля, но подчеркивает: «Большинство проголосовало за то, чтобы все вещатели остались в шоу».\n• Инсайд: Источники сообщают, что формального отдельного голосования по участию стран на Генассамблее фактически не проводилось, что делает риторику EBU о «демократическом выборе» еще более интересной.\n• Иммунитет 70-летия: Конкурс переживал бойкоты и раньше. По мнению Грина, через 70 лет это станет лишь «частью долгой истории».\n📦 ЛОГИСТИКА И НОВЫЕ РЫНКИ\n• Латинская Америка: Права на проведение латинской версии Евровидения официально переданы испанскому вещателю RTVE. Это мощный рывок для испанского медиа-рынка.\n• Австралийский ультиматум: Если Австралия выиграет, она обязана принимать конкурс у себя. Даже если это будет ночной эфир для Европы. На подготовку - ровно 364 дня.\n• Канадский барьер: Канада не будет в игре, пока не станет полноправным членом EBU. Исключений (как для Австралии, приглашенной за 30-летнюю лояльность) пока не планируется.\n💰 ЭКОНОМИКА СЦЕНЫ\n• Прозрачные бюджеты: EBU снижает нагрузку на малых вещателей. Спецэффекты (фейерверки) теперь — это опция, которую артист/страна оплачивает отдельно. Грин напоминает: «Гигантская сцена не гарантирует победу. Все решают песня и голос».\n• Машина контента: Ежегодно конкурс стимулирует создание 900 новых песен. Это фундамент всей европейской поп-системы.\n⏱️ Время чтения: 2.3 мин | 🌍 YourVision: Deep Dive",
+            "img": "https://cdn4.telesco.pe/file/CRNCvduTwi_ab5DnUX9Ox5qo98VGIbs31bPQvTS9xwOUZwk0z98YQh40yJ86nuBzma_7rojq6eTuc-kacUGB7mgGT8b7oLyaLKrkBtEvKU1A0KDRLaSkPxebhyUgWq3wFiLf2YOKBch62l_xlGNiWAYYoKf1Ozuc8wM8CLiBKMCcudneQpuAvROPwS-P-mcn1_4Ci4YHhe38siQRFNr7YguqMFP47qkPjv1XGiGTPnB50MmCs-AS5KO5jaKx3A0wXBeex6mNzNl08O0YiEQcSuPEJhaVXPPgOgwtz7Ce6-__pXgeAf5e57iG2BwVdxyHI-pBqh6TGrXg53QT3cACeg.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775063188.0,
+            "poll": null
+        },
+        {
+            "m": "01.04 | 17:01",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5604",
+            "t": "🧬 DNA: МАЛЬТА - AIDAN",
+            "b": "Эйден Кассар - главный поп-символ Мальты последних лет. Его история в 2026 году - это классический «Hero's Journey»: от сокрушительной дисквалификации до безоговорочной победы. Обладая уникальным чутьем на хиты, он превратил своё ожидание в мощную энергию, которая теперь ведет его в Вену.\nTHE JOURNEY (ПУТЬ)\nAIDAN начал карьеру в 2015 году с JESC, но настоящая популярность пришла в 2018-м с «Dai Laga». Последовавшие за ней «Naħseb Fik» (2021) и «Ritmu» (2022) стали платиновыми хитами на Мальте и за её пределами. Однако в 2023 году путь Эйдена к ESC был прерван скандальной дисквалификацией на стадии нацотбора из-за активности в соцсетях. Несмотря на угрозы судом, артист нашел в себе силы вернуться. Весь 2024 и 2025 годы он доминировал в эфирах с треками «Hero» и «Sorry», чтобы в январе 2026-го триумфально выиграть MESC с песней «Bella».\nSTYLE & SOUND (ДНК)\nДНК Эйдена - это современный средиземноморский поп с элементами реггетона и безупречным продакшном. Он сам пишет и продюсирует свою музыку, что делает его звук максимально органичным. Его вокал - гибкий, уверенный, идеально работающий как в студии, так и вживую. Визуально AIDAN транслирует образ «Self-made star»: харизма, уверенность и лоск, который обычно присущ артистам мирового уровня. В песне «Bella» он достигает пика своей формы, объединяя национальный колорит с глобальным поп-звучанием.\nVERDICT: Мальта наконец-то отправляет артиста, который готов к большой сцене на 100%. Это не просто песня, это готовый бренд. Эйден способен не только вывести страну в финал, но и закрепиться в его верхней части.\n⏱️ Время чтения: 1.3 мин | 🧬 YourVision: DNA",
+            "img": "https://cdn4.telesco.pe/file/KH_u-wYlif-zN-D33qqTHvtKVy0_2jEgmUJzmvfhBFI9cCHFvHGIk595XsFXFQKfNOFStNcHFKGnmhmN5A0lhpMzZaDOPgAurU91lHUPb3NJdbBsEpFdOS5RGFbjWiU0__CtFuyMZFXHVEr9qG1cEcEqsaxpyj6cL1DAUPcRiJbyoP-rpwpTAF92PG5mGQLl5Z7KDgA1VjmZsr2gL_rPbQSx4b0ReKzs4t_X-3a02rFZfeEsDRxNHOsu9wlWKWrBBrO_24MYoIqMFuB26W_J05OcY0F_NhAxGWhB0raqTA0JsUuaKI6Jdb3fg_SvQzZiJX3yfi53ekpMmVtPTw-zFQ",
+            "vid": "https://cdn4.telesco.pe/file/77d850f629.mp4?token=Y14kCMr-QAGq_Im_jaivyz5WpdSd2EqkTxYjSCvm8RDKQhrY8JA8QaeAqYA8EoE2hW4LfQZZFbDhRB6JjWOqWVJJE0S07RKj_AwRtiGixzs6PpiJ7webfm-F3mx-QcEsfCQr3lKU7mdV4WaT5paHw7MacOZeGVkZNhewCzZnh5JiEfhkmG0D7S3JsWb1P-4D6XbLrpmfCCos-Ow2L0TOd7LG2_VAcLXm4J1XBzabraUx8Se6BmSfCh08oEJgX1xaYJrX6A5dprdw4ojw7aorRQy8sq8Lg_0ZktasDWXfDdibY3QnhlcVHnIrCxc9tFRHBw-WzxWtKsRqKnhZzYvo2g",
+            "isVideo": true,
+            "ts": 1775062874.0,
+            "poll": null
+        },
+        {
+            "m": "01.04 | 16:39",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5603",
+            "t": "🇷🇴 РУМЫНИЯ: ALEXANDRA CĂPITĂNESCU ЗАЖИГАЕТ «FUEGO» В РАМКАХ #ALBM",
+            "b": "Официальный YouTube-канал Eurovision представил новый эпизод серии «A Little Bit More». Сегодня в центре внимания - представительница Румынии Александра Кэпитэнеску с кавер-версией культового хита «Fuego».\nСправилась ли Александра с «пламенем» Фурейры или оригинал остался недосягаемым?\n🔗 СМОТРЕТЬ: YouTube\n⏱️ Время чтения: 1.1 мин | 🇷🇴 YourVision: Insider",
+            "img": "https://cdn4.telesco.pe/file/vXdBm03M-23KyO_CyazYYPJcs5g1dGwLv-YSv2jmp5napnXKDcwUP2c3ylnsU0RrD8D943WsmX9S3n2Vlc61R4b0a02iidc1OveeKxpQi46215K3PHdy9UlouB00lVVcj1HAV5z_m6Ckq0tMkgb2EB7DvonPRy4A_Od0elguwZZVUe44qMwo_VgWpeNdE7m_cxF0CW8E7mXogP1G5katq0o7EhbGE0ApVaFedF2rc_3Pru5L2LKTB3t3seiLXRBVvM2P04q2zMy-yBZqrSXY-Xj3UN-8x56GJalktG7LXBKKVok8rk5jiszFVhogOhomibNAuaoi_mkdQ2Uofsxn7A.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775061557.0,
+            "poll": null
+        },
+        {
             "m": "01.04 | 15:04",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5910",
@@ -410,7 +446,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5593",
             "t": "🧬 DNA: САН-МАРИНО - SENHIT",
             "b": "Senhit Zadik Zadik - артистка, чей образ стал синонимом экстравагантности в европейском поп-пространстве. Уроженка Болоньи с эритрейскими корнями, она превратила участие в ESC для Сан-Марино в ежегодный перфоманс мирового уровня. В 2026 году она возвращается в третий раз, чтобы совершить финальный рывок к вершине.\nTHE JOURNEY (ПУТЬ)\nЕё карьера началась за пределами Италии - в мюзиклах «Fame», «The Lion King» и «Hair» в Швейцарии и Германии. Вернувшись в Италию в 2002-м, она выпустила серию успешных альбомов и стала завсегдатаем ТВ-шоу. В 2011 году Сенхит впервые представила Сан-Марино с балладой «Stand By». Но настоящий прорыв случился в 2021-м: после отмены конкурса 2020 года она привезла в Роттердам «Adrenalina» с участием Flo Rida, подарив стране второй финал в истории. 8 марта 2026 года SMRTV официально подтвердили её возвращение с песней «Superstar» в дуэте с легендой Boy George.\nSTYLE & SOUND (ДНК)\nДНК Сенхит - это «максимализм». Её стиль - это яркий поп с элементами глэма и диско. Она мастер визуальных трансформаций, что доказал её проект #FreakyTripToRotterdam. В песне «Superstar» её мощный вокал переплетается с харизматичным тембром Боя Джорджа, создавая эффектный кросс-поколенческий диалог. Визуально это всегда авангард, высокая мода и театральность, за которой стоит огромный опыт работы на сцене мюзиклов.\nVERDICT: Сан-Марино в этом году играет по-крупному. Присутствие Боя Джорджа и огромный опыт самой Сенхит делают этот проект самым обсуждаемым еще до начала репетиций. Это гарантированное место в финале и заявка на высокие баллы.\n⏱️ Время чтения: 1.5 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/faY5C0jW-2hTuRatM1kcSxv0JUE8MF4s2IRe9lSK6099BKFnAX3p9cPxFM90V9xUPpxH7Mbezt0wzRBoGNMP1wsqrrGkd1D_RzXIWThHboU_7NbK-lUXU6vFo50ZN6j1AyFrY45sgSijG6GqoKb_GpLMzCYU3sei6m-FMSf7Ejaal3g4Gk-ulCC7uKKV1xCaN9-ZFw5_1Zi3VZraBcowL6EvdN9b7uN_P01cORjln1Ywuo_nBmMHzKtftZA9Jyzm5IHX8-7deTROuGfRB2YayQxJu5WnMwNC6rIROWHzGR-d8v9bqT67cErAR-83xiyxR1ThPZtj5Cf7pCDC-grLkA",
+            "img": "https://cdn4.telesco.pe/file/gvhBBPQxlqXVG1op8nSnEXMtQY7UbH8HzWrpWfaeuJ1M5lFNanyILcTybQ8KbtKqqMuMoEaQIDfYKq9JyTj98ZFDLii8d1iunzWyePr9G0vxw30XuINW_kgexUXmswbSnaUGYVS-oYD15vTkjGNwOx0ldDsmm2-h6ZvOyrd1uljHxP8I7IT-Sn6DiSMuL-o1BY7ZwwNkwbTDGmZSog3UWXMjvUhkc3uAVCaRdAhjbk7dMk4d8DWJ6kjjX3kNU29PTAR6TWYrbGxy3oXULfZya6ymHrj6DxOqY0tNsc36WuO6UCWNSuy2l5wcx8hxbyVvT6Kf6eneqJsCjawoZwsEWQ",
             "vid": "",
             "isVideo": false,
             "ts": 1774976656.0,
@@ -422,7 +458,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5592",
             "t": "🌐 WORLDSOUND: AIRWAVE VELOCITY - ИТОГИ НЕДЕЛИ",
             "b": "Глобальный эфир зафиксировал смену лидера. Тейлор Свифт возвращает себе корону, совершая финальный рывок и обходя «12 to 12» от sombr. Это была неделя максимально плотной борьбы в верхней части сетки, где каждый голос эксперта менял расстановку сил в Топ-3.\n🏆 ТОП-20 ИТОГОВОГО ЗАЧЕТА\n🥇 1. Taylor Swift - «The Fate Of Ophelia» (99) ↑+1\n🥈 2. sombr - «12 to 12» (89) ↓-1\n🥉 3. RAYE - «WHERE IS MY HUSBAND!» (89) ═\n4. PinkPantheress & Zara Larsson - «Stateside» (68) ═\n5. Harry Styles - «Aperture» (67) ═\n6. Alex Warren - «Fever Dream» (53) ═\n7. Danny L Harle & Dua Lipa - «Two Hearts» (47) ═\n8. Damiano David, Tyla & Nile Rodgers - «Talk To Me» (45) ═\n9. SUNMI - «CYNICAL» (43) ↑+3\n10. Bruno Mars - «I Just Might» (41) ↓-1\n11. David Guetta, Teddy Swims & Tones and I - «Gone Gone Gone» (41) ↓-1\n12. Juste, Jaxstyle & Jon - «Turn The Lights Off» (41) ↓-1\n13. Calvin Harris & Kasabian - «Release The Pressure» (36) ═\n14. Kygo feat. Khalid & Gryffin - «Save My Love» (29) ═\n15. Anyma & EJAE - «Out Of My Body» (25) ═\n16. brux XTN - «Paid to Exist» (24) ═\n17. Dave & Tems - «Raindance» (23) ═\n18. Kungs feat. Theophilus London - «Galaxy» (19) ═\n19. Ofenbach - «Miles Away» (15) ═\n20. Albert Brite - «Wild» (8) ═\n⏱️ Время чтения: 1.2 мин | 🌐 YourVision: WorldSound",
-            "img": "https://cdn4.telesco.pe/file/rKIy6xVJCnZsX1kHyOPMAeTY9iCHmn2WYspF3B-QLU6yiEogbb5U_fYhUwtoRUoQiEuWUK0qSGhxsQu0x5Jr6aiLLw6O3j8wbPjCkr4LVQLSoqMPdsPnz814-2xlQJdWu2uUiWzh1QgmPy9gfWHN8E22p69BBWEVYe26UUvyjz0o1mCKjA7d7kSCDWdZgIooW_YBQFHAx43jdsrbZfuv2kl2-6e0sEXyOpB09A5xgPsNfRfl8DjV9wGi8ihf81aGLJ-3HJRGttnFBf2RgGIpWXgIorBuXaCR83pMSwp6F5-J-AYlktQMA8vak75qd5xoxu7G8gbC9LGD1iu1eNdxXw.jpg",
+            "img": "https://cdn4.telesco.pe/file/HVxhCkKttsGJ11CtgjLUEjkfR1PVkJr91N4VYWA1nuOlMwfFoiIYIoN5mtFowBJefRpo0Jd1oMGBnhDGcFowrCrV7I-Q-Q3HoVyiXWVX8kPPOJfh4h_5OYMjjVO5PrzEbglW1gY00Ysi83jSYRa_xFwsrzlrVrkiwMtzQPYzGSxTJ7xBVa_Mn1EAM_JaAEvhI1dNjsmurbibjW5xe0bpAGyufNPYAW0jUA-U-nfVwFlGL_BOzqu2Rpico2YUnAs4BWTq-eXN6Vse9HX1wkSYkwvr_-9-LB70ZXSEd7z9M_8xhYI7ZH7eU0rno1TqOChy7fZnfAlsr1B_H4Xn8TNKxQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774973140.0,
@@ -549,30 +585,6 @@ var DATA = {
             }
         },
         {
-            "m": "30.03 | 18:17",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5584",
-            "t": "🇦🇿 АЗЕРБАЙДЖАН: JIVA ВЗЛАМЫВАЕТ ЭФИР РОК-ВЕРСИЕЙ «JUST GO»",
-            "b": "В рамках спецпроекта «A Little Bit More» JIVA представила радикальное переосмысление своей заявки. Оригинальный мистический саунд уступил место жестким гитарным риффам и агрессивному драйву. Это уже не просто «тихий» инди-поп, а полноценный стадионный манифест.\nDATA & CREDITS:\n• Продакшн: За новый звук отвечают Мила Майлз и Рустам Рзаев.\n• Визуал: Съемки от Sarkhan Akhundov (KhansFilm) подчеркивают смену имиджа артистки на более дерзкий и свободный.\n• Динамика: Первые 4500+ просмотров за 2 часа. Аудитория явно ждала «пробуждения» азербайджанского концепта.\nЭтот апгрейд может стать ключом к более высоким баллам от любителей альтернативного звука в Вене.\n🔗 СМОТРЕТЬ: YouTube\n⏱️ Время чтения: 0.7 мин | 🇦🇿 YourVision: ALBM",
-            "img": "https://cdn4.telesco.pe/file/kW4CtnlhMioSTHGNPQlBiQ9Xec1qTYG_ESYxMchrE66vEHbEs9JqS4kfJgSLdcLaNWhbChxpUKnFrAMu-JIeRN5zFkaD68DLuJTdWHUUQZwGU1J_LK9VK1qZcOIQ6mtz6mBwBEKTaBChbW7xOeH87pgdhGZltnDHU8C2hG8TqkjSFIJZtdxZsTIYBsyPrvwu4kTAIM9dwyIEGO83N_2EOP7XFEzxtdGcpG8IutR7hLVK5oZrUefvu-3Dc_0AjDQryWT7apGnyHI7-M3lb8Tk9ybtSga1rRHbqrSemB_4ouYthaW-5B6XqLtVWuUx4CNFVMtaXWm8TYv1TDmSwOo9MA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774894651.0,
-            "poll": null
-        },
-        {
-            "m": "30.03 | 18:13",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5582",
-            "t": "❤️ АВСТРИЯ: СТАДТХАЛЛЕ ПЕРЕХОДИТ ПОД КОНТРОЛЬ ORF",
-            "b": "В Вене официально запущен обратный отсчет «на земле». Вещатель ORF принял ключи от Wiener Stadthalle, ознаменовав начало масштабной логистической операции по превращению арены в главную сцену 70-го Евровидения.\nМАСШТАБ В ЦИФРАХ (DATA):\n• 3500 тонн оборудования будет завезено в ближайшие недели.\n• 8500 LED-прожекторов сформируют световой рисунок сцены.\n• 27 камер обеспечат трансляцию на 200 млн зрителей.\n• 35 подрядчиков работают в круглосуточном режиме.\nТАЙМЛАЙН МОНТАЖА:\nУже во второй половине апреля запланировано «Stage-Opening» - первая презентация готовой сцены и старт технических репетиций. В конце апреля арена уйдет в режим тотального локдауна: безопасность будет усилена до уровня международных аэропортов.\nВенская крепость начинает обретать форму. Готовы увидеть первые кадры каркаса сцены?\n⏱️ Время чтения: 0.8 мин | 🇦🇹 YourVision: Venue",
-            "img": "https://cdn4.telesco.pe/file/KGv42qRoH6ZxB-uwCpZ5YiGtB-UOh1r7FMjv1PQaYikVtzzQXUw87HUDGsH841SMUqDhh_bXSMeKyD099nhA8a0-r8XoKMxXSm0kbTxRhgCFZqh1JmIm2SyTZ8NHgO2Gyufn9vz8NlpXw9uEFhSw2tkbfnvuqh9Bbia40ImJPm8Gzpqr3P064kv-6kLvvUOU9tcKrzqrD5LerR-Ki0FINxRaA6tgQw9_tVY7kDRqXNiHIAE2Oa54vZVS3PVKTo0mpq8leQ-SOsdC9FSpkQa5JGHDe_iivgluPr-cZTxuKFsCmE90b978FeDoZmYeOloEY8SE4gJxYVCME8nv1Z1z7g.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774894393.0,
-            "poll": null
-        },
-        {
             "m": "30.03 | 15:03",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5907",
@@ -594,18 +606,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1774850462.0,
-            "poll": null
-        },
-        {
-            "m": "29.03 | 15:02",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5905",
-            "t": "🏛 MARGINALIA: ЮГЕНДСТИЛЬ - ЗАСТЫВШИЙ МИФ В КАМНЕ",
-            "b": "Вечернее солнце в Риге обладает особым свойством - оно проявляет то, что днем скрыто в тени. Сегодня я остановился перед фасадом на улице Альберта. В переплетении каменных стеблей и масок застыл миф, который мы разучились читать, но продолжаем чувствовать.\nГЕОМЕТРИЯ СМЫСЛА (LORE)\nЮгендстиль (Art Nouveau) - это попытка очеловечить камень, заставить его дышать. Каждое лицо на фасаде - это маргиналия к большой истории города. Эти существа из камня - не просто декор, это «невидимые стражи» нашего покоя. Они фиксируют свет и время, превращая архитектуру в живой архив.\nTHE FRAGMENT\n«Город - это книга, где улицы - строки, а барельефы - пометки на полях...» - мысль, возникшая в длинной тени вечернего дома. Когда мы смотрим на эти застывшие мифы, мы подключаемся к ритму, который старше любого из нас. Это и есть наш «невидимый якорь» - осознание себя частью этого каменного текста.\nПусть ваш вечер будет наполнен светом, который открывает новые смыслы.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Fragment",
-            "img": "https://cdn4.telesco.pe/file/FQbLf_giq0LyTDdEiguzCxzyEbMNU_sIjkFtcrKrf-3yByx3UvZppO2uwA6n103HR_XqJIkcxfo-BWonw5gyqx6APzkGmy9_0Aohx0q8PRqBh_5DywDZ_tLgBnzA848lZpPcL-vhDmN16Inr9ZC_mZR0nLcx-cyRFhb8ZjrQKl0O7zwsQ2sZvcyxA_xqU2uZqC-tE1Uot42_DEFM8s-HuLJpUhP__hv5aa0JLjphxt1vFsjtCut5YOa4yH7m-rCSBCzRaZr2yI7chuXwitisAOaIvGG4_-Oujl3dd0L8ULhErW7Lynk52puu0nssOSwKBWVvqLzhtn_-3pBkFnqSLQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774796532.0,
             "poll": null
         }
     ],
