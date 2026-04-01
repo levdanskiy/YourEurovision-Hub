@@ -112,13 +112,13 @@ var DATA = {
             "t1": "mt",
             "a1": "Aidan",
             "s1": "Bella",
-            "sc1": "WAIT",
+            "sc1": "LIVE",
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
             "sc2": "",
             "w": 0,
-            "status": "WAITING"
+            "status": "LIVE"
         }
     ],
     "qualifiers": [
