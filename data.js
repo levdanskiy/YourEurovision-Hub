@@ -454,6 +454,60 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "01.04 | 07:09",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5601",
+            "t": "🇬🇧 RESULTS: ВЕЛИКОБРИТАНИЯ ПРОХОДИТ В 1/4 ФИНАЛА - КИПР ВЫБЫВАЕТ",
+            "b": "Седьмой поединок плей-офф YourVision Cup 2026 завершился победой британского эксперимента над средиземноморским попом. Аудитория сделала выбор в пользу смелого аналогового звучания Сэма Баттла.\n📊 ИТОГИ ГОЛОСОВАНИЯ:\n• ПОБЕДИТЕЛЬ: 🇬🇧 United Kingdom (Look Mum No Computer) - 56% ★\n• Второе место: 🇨🇾 Cyprus (Antigoni) - 44%\nВеликобритания забирает предпоследнюю путевку в четвертьфинал. Для Кипра турнир завершается в 1/8 финала. «Jalla» получила мощную поддержку, но этого не хватило, чтобы остановить британский «Eins, Zwei, Drei».\n🚨 NEXT: Финальный баттл 1/8 финала - Malta vs Bulgaria - стартует уже скоро.\n🔗 ИНТЕРАКТИВНАЯ СЕТКА: Хаб YourVision\n⏱️ Время чтения: 0.9 мин | 🇬🇧 YourVision: Results",
+            "img": "https://cdn4.telesco.pe/file/l0yc2LyBRPqJfM60n8yRwUNbk-rdtcY6trMaqFiJIezwuNiDLzUYBFsjWtUrTR9YnIKbhTEMpGjxauFmuHdvuadA8gIw56O04mhSKTGaDsSHT5apWxtNYIptRcxAI40p0CD5KcTq7xnp5xgPsuLuh3_nC3e8c2VaImUayylEZdcz2XsM1-edSajPDgvzy93OCnajA7nsHJ7LEaJKdSQrRQv-qtYNyGUr79at3jbGtQwqomVC0RSdxLEMRB2LmwO0z05aTjFnYPAqYK0syYHC4lUuRW6B27ByHu6VokV_GgIyANXSGEXhO2FZFVsRruOII6FwTYUS63ER_baD1P0Avg.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775027344.0,
+            "poll": null
+        },
+        {
+            "m": "01.04 | 07:05",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5600",
+            "t": "🇸🇪 ШВЕЦИЯ: FELICIA ВЫПУСТИЛА КАВЕР-ВЕРСИЮ «FRÄMLING»",
+            "b": "Представительница Швеции на Евровидении 2026 года, Felicia, представила официальный кавер на одну из самых знаковых песен в истории шведского участия - «Främling». Оригинальная композиция в исполнении Каролы принесла стране третье место на конкурсе 1983 года в Мюнхене.\n🔗 СМОТРЕТЬ: YouTube",
+            "img": "",
+            "vid": "https://cdn4.telesco.pe/file/0db8e24302.mp4?token=tgbYjDC0rIutL86CLo26iseyLKmYHwrViaBqsv8SgU_sdaiFfUx4SdbRkflBlKoUCuQqFtQ2sH-NQgM8dwTplR_fw8ACYCrZH8W20rDXOMEInjEwaDRmCV5SgqsMSbrQIFjy2Mj2Pmanx66mK5w-tCChYVc_VymvhvDW8VnoHG4PiWn7SjLOdpNLllmN3ztzirsc1QE3xZmfiBJOtBip0Zurm2EoVwDHZjiT33xTv7cG1_v_OZiGSIgiR00LlrweQhu787g6StE7HWU4E8LAWfO_w4TcJeT5clWGsDzcbTnqH4DAj0Yt1M-xZdkVX65EkGrl_zAwgTO4OQOzZ-4jEA",
+            "isVideo": true,
+            "ts": 1775027139.0,
+            "poll": null
+        },
+        {
+            "m": "01.04 | 07:05",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5599",
+            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #8",
+            "b": "Финальный аккорд 1/8: средиземноморский лоск против кибер-балканской энергии. Битва двух безупречных поп-продуктов.\n🇲🇹 MALTA: Aidan - «Bella»\nГлавный поп-символ Мальты. Эйден прошел путь от скандальной дисквалификации до триумфального реванша. «Bella» - это современный средиземноморский поп с элементами реггетона и лоском мирового уровня. Мальта привезла на 100% готовый бренд.\nvs\n🇧🇬 BULGARIA: Dara - «Bangaranga»\nПоп-икона и «победоносный тренер». Дара - это машина по производству хитов номер 1. Её «Bangaranga» - взрывоопасная смесь R&B и синти-попа в эстетике «Cyber-Balkan». Болгария привезла один из самых профессиональных и технически сложных номеров сезона.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.3 мин | ⚔️ YourVision: Play-Off",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775027106.0,
+            "poll": null
+        },
+        {
+            "m": "01.04 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5597",
+            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775026921.0,
+            "poll": {
+                "question": "📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
+                "options": [
+                    "🇲🇹 MALTA (Aidan)",
+                    "🇧🇬 BULGARIA (Dara)"
+                ]
+            }
+        },
+        {
             "m": "31.03 | 18:32",
             "id": "70",
             "u": "https://t.me/YourEurovision/5596",
@@ -549,7 +603,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5590",
             "t": "📊 #YV_CUP: ИТОГИ 1/8 ФИНАЛА - BATTLE #6",
             "b": "Шестой поединок плей-офф завершился одной из самых громких сенсаций турнира. Итальянская классика не устояла под натиском кишиневского индастриала. Эксперты YourVision Cup сделали ставку на энергию и честность нового звука.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇲🇩 MOLDOVA (Satoshi): 67%\n🇮🇹 ITALY (Sal Da Vinci): 33%\nСатоши с его «Viva, Moldova!» забирает шестую путевку в четвертьфинал, показав колоссальный отрыв в 34%. Саль Да Винчи, несмотря на безупречный вокал, покидает турнир. YourVision Cup 2026 подтверждает: аудитория жаждет перемен и драйва.\nИТОГИ БИТВЫ:\n🥇 MOLDOVA (Satoshi): 67% - ПРОХОД В 1/4 ФИНАЛА 🇲🇩\n🥈 ITALY (Sal Da Vinci): 33% - ВЫЛЕТ 🇮🇹\nИталия завершает свою кампанию. В четвертьфинале Молдова встретится с победителем пары Sweden vs Armenia (Швеция уже ждет!).\nА прямо сейчас стартует седьмая битва: Cyprus vs United Kingdom! Голосуйте!\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/E575jKfaxE1W8D4w4kJgvgxRAEa3GPVoQM_H37GziRiZgpXxifYwjzlt0H2oklf683gLtpS0TudQ0fRI-HpX1LLqH7eqYtlu3uSvaVJRH_hVYb-J59-4ZvRdB5GqhYHPCEhpPjpQFktijbXNEsH-_gqnffSM_KWuVP5IAqCopNqq14Lg8dffGusQ2fGmGfCSklR7VP8mGgAqHczXi11S1Ty6vZ_5R1mbFWNWdk_tEaLwNmdLC716j5RUoGDn5rqbYTcbHuT4QhYQgO31wobDi49Jdvl6G4OnSwgq8RM3WrLc9USvWY9hUNntDQk-iJ_asjFMklb8AtalxYmT9vO8lw.jpg",
+            "img": "https://cdn4.telesco.pe/file/EDKGJMV3vWFh4q4u3tWxpkXxevfOVohRIEynkXduK2n51X2gw-GFjQplOCrWEvimc3SQN6DsXnKI4SrKu8OL5IMDogmDLYkq-KOf9WGq-zATCeUUUYbWmwRzMOGWnFLbapDMWzs5WRfgWE_uRoW-mAik3z4KuKKsh05XYYgwP4hCZ8sBYns5vrGs59y3JD5uYSFt7Drp1WIXn02QBVpXHrdwNES4Kz2qm1JtES8AueCLqzWpeNRMu6H77hIah5DJWNOIIPLubMDP_4OBumVecdl35Jfl87ncg_jHcm8KGlYRZUeiH_HmOL-Zxju_8Yjjmk2gHL-GCJNVtlllWojRYw.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774942358.0,
@@ -688,48 +742,6 @@ var DATA = {
             "poll": null
         },
         {
-            "m": "30.03 | 14:53",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5580",
-            "t": "📊 #YV_CUP: ИТОГИ 1/8 ФИНАЛА - BATTLE #5",
-            "b": "Пятый поединок стадии плей-офф обошелся без драматических паритетов. В столкновении северного хладнокровия и кавказского темперамента эксперты YourVision Cup сделали однозначный выбор в пользу стабильности и качества продакшна.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇸🇪 SWEDEN (Felicia): 58%\n🇦🇲 ARMENIA (Simón): 42%\nШвеция в лице Фелисии с её технологичным треком «My System» подтверждает статус одного из главных фаворитов турнира. Армения, представленная Симоном с его «Paloma rumba», сражалась достойно, но разрыв в 16% стал непреодолимым барьером.\nИТОГИ БИТВЫ:\n🥇 SWEDEN (Felicia): 58% - ПРОХОД В 1/4 ФИНАЛА 🇸🇪\n🥈 ARMENIA (Simón): 42% - ВЫЛЕТ 🇦🇲\nАрмянская кампания завершается на стадии 1/8 финала. Симон покидает турнир, оставив после себя шлейф одного из самых ярких поп-выступлений сезона, но Фелисия сегодня была просто вне конкуренции по уровню воздействия.\nВ четвертьфинале Швецию ждет победитель пары Italy vs Moldova, битва за которых начнется уже сегодня!\nКак вы считаете, справедливо ли Швеция обошла Армению по очкам? Был ли шанс у Симона при другой жеребьевке?\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/Jc_8digSBdNHvtTj5QntRzpvTTvSO3dBhJYGhC8B2cWM1ILNULbhNh6tQDaZG06DTRLbvAHb5BzQLinKOM5CZmRvptTmaFJQ83ZF63PB5xnEQwI4Uq-h8pONFymqQ7b7Km8sLBhqBK39fcfjQPrra-w5TE8re1U-Nhdu8KUF3n0qlO5eh0FqnDW2AdbnsEVTv3YUpzC81pAy13g_CkSQD6b2IcrfshJHYRuVy7UMgAeWgBnbgupy_SKMQ5I1OsnQTrXLMAzAGZOgbKJozKk6HIEaoKZ8K2k2xMOXVifgeihE5P-nhX2fC0UW1gEBivvBVs_sLZFS8ujoVXQcLaLz7g.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774882384.0,
-            "poll": null
-        },
-        {
-            "m": "30.03 | 07:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5578",
-            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774854121.0,
-            "poll": {
-                "question": "📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
-                "options": [
-                    "🇮🇹 ITALY (Sal Da Vinci)",
-                    "🇲🇩 MOLDOVA (Satoshi)"
-                ]
-            }
-        },
-        {
-            "m": "30.03 | 07:01",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5577",
-            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #6",
-            "b": "Неаполитанская классика против молдавского индастриал-рэпа. Столкновение вечных традиций и жесткой актуальности.\n🇮🇹 ITALY: Sal Da Vinci - «Per sempre sì»\nПремиальный неомелодизм в лучшем исполнении. Саль Да Винчи - легенда Сан-Ремо, воплощающий образ «Неаполитанского джентльмена». Его песня - это масштабный гимн любви, который ждал своего часа 17 лет. Италия делает ставку на опыт и эмоциональный катарсис.\nvs\n🇲🇩 MOLDOVA: Satoshi - «Viva, Moldova»\nГолос нового поколения. Влад Сабажук (Satoshi) привез в Вену жесткий, честный и технически безупречный индастриал-рэп. Молдова в 2026 году меняет вектор, отказываясь от этно-фанка в пользу актуального стадионного драйва. Это манифест новой эры.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.5 мин | ⚔️ YourVision: Play-Off",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774854063.0,
-            "poll": null
-        },
-        {
             "m": "30.03 | 06:01",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5906",
@@ -740,24 +752,6 @@ var DATA = {
             "isVideo": false,
             "ts": 1774850462.0,
             "poll": null
-        },
-        {
-            "m": "29.03 | 18:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5576",
-            "t": "📊 ОПРОС: 📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774809121.0,
-            "poll": {
-                "question": "📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
-                "options": [
-                    "🇮🇱 2026: Noam Bettan - «Michelle»",
-                    "🇮🇱 2025 Yuval Raphael - «New Day Will Rise»"
-                ]
-            }
         },
         {
             "m": "29.03 | 15:02",
