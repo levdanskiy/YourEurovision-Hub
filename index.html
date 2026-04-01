@@ -125,6 +125,30 @@
         }
 
         .column { display: flex; flex-direction: column; gap: 30px; }
+        
+        /* Radio Visualizer */
+        .visualizer {
+            display: flex;
+            align-items: flex-end;
+            gap: 2px;
+            height: 15px;
+            margin-left: 12px;
+            display: inline-flex;
+        }
+        .vis-bar {
+            width: 3px;
+            background: var(--cyan);
+            border-radius: 1px;
+            animation: vis-grow 1s ease-in-out infinite;
+        }
+        .vis-bar:nth-child(2) { animation-delay: 0.2s; }
+        .vis-bar:nth-child(3) { animation-delay: 0.4s; }
+        .vis-bar:nth-child(4) { animation-delay: 0.1s; }
+        @keyframes vis-grow {
+            0%, 100% { height: 4px; opacity: 0.5; }
+            50% { height: 15px; opacity: 1; }
+        }
+
         .card { 
             background: var(--card); 
             border: 1px solid var(--border); 
@@ -136,10 +160,19 @@
             cursor: pointer;
         }
         .card:hover { 
-            transform: translateY(-5px); 
-            border-color: rgba(255,255,255,0.2); 
-            background: rgba(255,255,255,0.04);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            transform: translateY(-8px) scale(1.01); 
+            border-color: rgba(255,255,255,0.25); 
+            background: rgba(255,255,255,0.05);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6), 0 0 20px rgba(255,255,255,0.05);
+        }
+        
+        /* Pulse for LIVE content */
+        .status-live-pulse {
+            animation: pulse-border 2s infinite ease-in-out;
+        }
+        @keyframes pulse-border {
+            0%, 100% { border-color: var(--border); }
+            50% { border-color: var(--acid); box-shadow: 0 0 15px rgba(204,255,0,0.2); }
         }
         
         .section-title-base { font-family: "Inter Tight", sans-serif; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 30px; display: block; width: 100%; }
@@ -550,7 +583,15 @@
     <div class="layout">
         <aside class="column" id="radio-sect">
             <div class="card">
-                <div class="section-title-base title-cyan"><i class="fi fi-rr-broadcast-tower"></i> ON AIR LIVE</div>
+                <div class="section-title-base title-cyan" style="display:flex; align-items:center; justify-content:center;">
+                    <i class="fi fi-rr-broadcast-tower"></i> ON AIR LIVE
+                    <div class="visualizer">
+                        <div class="vis-bar"></div>
+                        <div class="vis-bar"></div>
+                        <div class="vis-bar"></div>
+                        <div class="vis-bar"></div>
+                    </div>
+                </div>
                 <div class="player-container">
                     <div id="ambient-glow" class="ambient-glow"></div>
                     <div id="player-cover" style="width:100%; aspect-ratio:1; border-radius:20px; background-size:cover; background-position:center; margin-bottom:20px; box-shadow: 0 20px 50px rgba(0,0,0,0.7); position:relative; z-index:2;"></div>
@@ -660,7 +701,7 @@
         <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
-    <script src="data.js?v=1775059040"></script>
+    <script src="data.js?v=1775070783"></script>
     <script>
         const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
@@ -725,7 +766,7 @@
                     const winBadge = `<div class="winner-badge"><i class="fi fi-rr-star"></i></div>`;
                     const getPct = (s) => parseInt(s.replace(/[^0-9]/g, '')) || 0;
                     const p1 = getPct(b.sc1), p2 = getPct(b.sc2);
-                    return `<div class="card ${isLive?'status-live-box':''}" style="padding:20px; background:rgba(255,255,255,0.01);">${liveHtml}<div style="font-size:0.6rem; color:#777; font-weight:900; letter-spacing:0.1em; margin-bottom:12px;">${b.n}</div><div class="battle-team ${b.w===1?'winner-glow':''}" style="display:flex; align-items:center; gap:12px;">${b.w===1?winBadge:''}<img src="${getH(b.t1)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a1)}</span><span class="song-rich">${decodeS(b.s1||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p1}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc1}</span></div><div class="battle-team ${b.w===2?'winner-glow':''}" style="display:flex; align-items:center; gap:12px; margin-top:15px;">${b.w===2?winBadge:''}<img src="${getH(b.t2)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a2)}</span><span class="song-rich">${decodeS(b.s2||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p2}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc2}</span></div></div>`;
+                    return `<div class="card ${isLive?'status-live-pulse':''}" style="padding:20px; background:rgba(255,255,255,0.01);">${liveHtml}<div style="font-size:0.6rem; color:#777; font-weight:900; letter-spacing:0.1em; margin-bottom:12px;">${b.n}</div><div class="battle-team ${b.w===1?'winner-glow':''}" style="display:flex; align-items:center; gap:12px;">${b.w===1?winBadge:''}<img src="${getH(b.t1)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a1)}</span><span class="song-rich">${decodeS(b.s1||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p1}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc1}</span></div><div class="battle-team ${b.w===2?'winner-glow':''}" style="display:flex; align-items:center; gap:12px; margin-top:15px;">${b.w===2?winBadge:''}<img src="${getH(b.t2)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a2)}</span><span class="song-rich">${decodeS(b.s2||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p2}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc2}</span></div></div>`;
                 };
                 const connector = `<div class="bracket-connector"><div class="connector-line"></div><div class="qf-label">ROAD TO ${b1.qf}</div></div>`;
                 bracketHtml += renderMatch(b1) + connector + renderMatch(b2);
