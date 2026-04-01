@@ -121,175 +121,6 @@ var DATA = {
             "status": "LIVE"
         }
     ],
-    "qualifiers": [
-        {
-            "id": "fi",
-            "a": "L. Lampenius & P. Parkkonen",
-            "s": "Liekinheitin"
-        },
-        {
-            "id": "dk",
-            "a": "S. Torpegaard Lund",
-            "s": "Før vi går hjem"
-        },
-        {
-            "id": "gr",
-            "a": "Akylas",
-            "s": "Ferto"
-        },
-        {
-            "id": "ge",
-            "a": "Bzikebi",
-            "s": "On Replay"
-        },
-        {
-            "id": "se",
-            "a": "Felicia",
-            "s": "My System"
-        },
-        {
-            "id": "md",
-            "a": "Satoshi",
-            "s": "Viva, Moldova!"
-        },
-        {
-            "id": "gb",
-            "a": "Look Mum No Computer",
-            "s": "Eins, Zwei, Drei"
-        }
-    ],
-    "eliminated": [
-        {
-            "id": "it",
-            "a": "Sal Da Vinci",
-            "s": "Per sempre sì"
-        },
-        {
-            "id": "me",
-            "a": "Tamara Živković",
-            "s": "Nova zora"
-        },
-        {
-            "id": "at",
-            "a": "COSMØ",
-            "s": "Tanzschein"
-        },
-        {
-            "id": "al",
-            "a": "Alis",
-            "s": "Nën"
-        },
-        {
-            "id": "au",
-            "a": "Delta Goodrem",
-            "s": "Eclipse"
-        },
-        {
-            "id": "am",
-            "a": "Simón",
-            "s": "Paloma rumba"
-        },
-        {
-            "id": "lu",
-            "a": "Eva Marija",
-            "s": "Mother Nature"
-        },
-        {
-            "id": "ro",
-            "a": "A. Căpitănescu",
-            "s": "Choke Me"
-        },
-        {
-            "id": "lt",
-            "a": "Lion Ceccah",
-            "s": "Sólo quiero más"
-        },
-        {
-            "id": "hr",
-            "a": "Lelek",
-            "s": "Andromeda"
-        },
-        {
-            "id": "lv",
-            "a": "Atvara",
-            "s": "Ēnā"
-        },
-        {
-            "id": "cz",
-            "a": "Daniel Zizka",
-            "s": "Crossroads"
-        },
-        {
-            "id": "ua",
-            "a": "Leléka",
-            "s": "Ridnym"
-        },
-        {
-            "id": "ee",
-            "a": "Vanilla Ninja",
-            "s": "Too Epic to Be True"
-        },
-        {
-            "id": "pt",
-            "a": "Bandidos do Cante",
-            "s": "Rosa"
-        },
-        {
-            "id": "az",
-            "a": "Jiva",
-            "s": "Just Go"
-        },
-        {
-            "id": "il",
-            "a": "Noam Bettan",
-            "s": "Michelle"
-        },
-        {
-            "id": "rs",
-            "a": "Lavina",
-            "s": "Kraj mene"
-        },
-        {
-            "id": "fr",
-            "a": "Monroe",
-            "s": "Regarde !"
-        },
-        {
-            "id": "pl",
-            "a": "Alicja",
-            "s": "Pray"
-        },
-        {
-            "id": "no",
-            "a": "Jonas Lovv",
-            "s": "Ya Ya Ya"
-        },
-        {
-            "id": "de",
-            "a": "Sarah Engels",
-            "s": "Fire"
-        },
-        {
-            "id": "sm",
-            "a": "Senhit",
-            "s": "Superstar"
-        },
-        {
-            "id": "ch",
-            "a": "Veronica Fusaro",
-            "s": "Alice"
-        },
-        {
-            "id": "be",
-            "a": "Essyla",
-            "s": "Dancing on the Ice"
-        },
-        {
-            "id": "cy",
-            "a": "Antigoni",
-            "s": "Jalla"
-        }
-    ],
     "chart": [
         {
             "r": 1,
@@ -453,42 +284,6 @@ var DATA = {
         }
     ],
     "news": [
-        {
-            "m": "31.03 | 20:30",
-            "id": "70",
-            "u": "#",
-            "t": "📊 НОМИНАНТЫ: RUTOP - SIGNAL 20 (SEASON 2026)",
-            "b": "Мы представляем актуальный список самых влиятельных треков российского сегмента. В SIGNAL 20 входят только те артисты, чей «голос» одинаково мощен и в федеральном радиоэфире, и в топ-чартах крупнейших стриминг-платформ. Голосование официально открыто!",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/23/bd/ae23bd8a-ec6a-497a-8b1a-7b1a4b1a8b1a/cover.jpg/600x600bb.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774981800,
-            "poll": null
-        },
-        {
-            "m": "01.04 | 10:30",
-            "id": "70",
-            "u": "#",
-            "t": "🇸🇪 ШВЕЦИЯ: FELICIA ВЫПУСТИЛА КАВЕР-ВЕРСИЮ «FRÄMLING»",
-            "b": "Представительница Швеции на Евровидении 2026 года, Felicia, представила официальный кавер на одну из самых знаковых песен в истории шведского участия — «Främling». Оригинальная композиция в исполнении Каролы принесла стране третье место на конкурсе 1983 года в Мюнхене. Певица сохранила структуру оригинала, придав ему современное электронное звучание.",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/f9/e8/d7/f9e8d7c6-b5a4-3210-fedc-ba9876543210/source/600x600bb.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775032200,
-            "poll": null
-        },
-        {
-            "m": "01.04 | 11:00",
-            "id": "70",
-            "u": "#",
-            "t": "🇬🇧 RESULTS: ВЕЛИКОБРИТАНИЯ ПРОХОДИТ В 1/4 ФИНАЛА - КИПР ВЫБЫВАЕТ",
-            "b": "Седьмой поединок плей-офф YourVision Cup 2026 завершился победой британского эксперимента над средиземноморским попом. Аудитория сделала выбор в пользу смелого аналогового звучания Сэма Баттла.\n📊 ИТОГИ ГОЛОСОВАНИЯ:\n• ПОБЕДИТЕЛЬ: United Kingdom - 56% ★\n• Второе место: Cyprus - 44%",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/07/41/6a/07416a78-38b9-2d47-7ce8-8a52a44c510f/196874010112.jpg/600x600bb.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775034000,
-            "poll": null
-        },
         {
             "m": "01.04 | 07:09",
             "id": "70",
@@ -812,6 +607,175 @@ var DATA = {
             "isVideo": false,
             "ts": 1774764034.0,
             "poll": null
+        }
+    ],
+    "qualifiers": [
+        {
+            "id": "fi",
+            "a": "L. Lampenius & P. Parkkonen",
+            "s": "Liekinheitin"
+        },
+        {
+            "id": "dk",
+            "a": "S. Torpegaard Lund",
+            "s": "Før vi går hjem"
+        },
+        {
+            "id": "gr",
+            "a": "Akylas",
+            "s": "Ferto"
+        },
+        {
+            "id": "ge",
+            "a": "Bzikebi",
+            "s": "On Replay"
+        },
+        {
+            "id": "se",
+            "a": "Felicia",
+            "s": "My System"
+        },
+        {
+            "id": "md",
+            "a": "Satoshi",
+            "s": "Viva, Moldova!"
+        },
+        {
+            "id": "gb",
+            "a": "Look Mum No Computer",
+            "s": "Eins, Zwei, Drei"
+        }
+    ],
+    "eliminated": [
+        {
+            "id": "it",
+            "a": "Sal Da Vinci",
+            "s": "Per sempre sì"
+        },
+        {
+            "id": "me",
+            "a": "Tamara Živković",
+            "s": "Nova zora"
+        },
+        {
+            "id": "at",
+            "a": "COSMØ",
+            "s": "Tanzschein"
+        },
+        {
+            "id": "al",
+            "a": "Alis",
+            "s": "Nën"
+        },
+        {
+            "id": "au",
+            "a": "Delta Goodrem",
+            "s": "Eclipse"
+        },
+        {
+            "id": "am",
+            "a": "Simón",
+            "s": "Paloma rumba"
+        },
+        {
+            "id": "lu",
+            "a": "Eva Marija",
+            "s": "Mother Nature"
+        },
+        {
+            "id": "ro",
+            "a": "A. Căpitănescu",
+            "s": "Choke Me"
+        },
+        {
+            "id": "lt",
+            "a": "Lion Ceccah",
+            "s": "Sólo quiero más"
+        },
+        {
+            "id": "hr",
+            "a": "Lelek",
+            "s": "Andromeda"
+        },
+        {
+            "id": "lv",
+            "a": "Atvara",
+            "s": "Ēnā"
+        },
+        {
+            "id": "cz",
+            "a": "Daniel Zizka",
+            "s": "Crossroads"
+        },
+        {
+            "id": "ua",
+            "a": "Leléka",
+            "s": "Ridnym"
+        },
+        {
+            "id": "ee",
+            "a": "Vanilla Ninja",
+            "s": "Too Epic to Be True"
+        },
+        {
+            "id": "pt",
+            "a": "Bandidos do Cante",
+            "s": "Rosa"
+        },
+        {
+            "id": "az",
+            "a": "Jiva",
+            "s": "Just Go"
+        },
+        {
+            "id": "il",
+            "a": "Noam Bettan",
+            "s": "Michelle"
+        },
+        {
+            "id": "rs",
+            "a": "Lavina",
+            "s": "Kraj mene"
+        },
+        {
+            "id": "fr",
+            "a": "Monroe",
+            "s": "Regarde !"
+        },
+        {
+            "id": "pl",
+            "a": "Alicja",
+            "s": "Pray"
+        },
+        {
+            "id": "no",
+            "a": "Jonas Lovv",
+            "s": "Ya Ya Ya"
+        },
+        {
+            "id": "de",
+            "a": "Sarah Engels",
+            "s": "Fire"
+        },
+        {
+            "id": "sm",
+            "a": "Senhit",
+            "s": "Superstar"
+        },
+        {
+            "id": "ch",
+            "a": "Veronica Fusaro",
+            "s": "Alice"
+        },
+        {
+            "id": "be",
+            "a": "Essyla",
+            "s": "Dancing on the Ice"
+        },
+        {
+            "id": "cy",
+            "a": "Antigoni",
+            "s": "Jalla"
         }
     ],
     "nominees": [
