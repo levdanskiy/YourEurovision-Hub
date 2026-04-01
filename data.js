@@ -285,6 +285,30 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "01.04 | 15:04",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5910",
+            "t": "🥐 ALMANAC: #BAKERY - ТЕАТР ТРОМПЛЕЙ: ТЕХНОЛОГИЯ СЪЕДОБНОГО КАМНЯ",
+            "b": "Искусство trompe-l’oeil требует аптечной точности. Сегодня мы превращаем шоколадный мусс в кусок балтийского гранита.\nИНГРЕДИЕНТЫ (ГРАММОВКИ)\n• Мусс: 200г темного шоколада (70%), 300мл сливок (33%), 50г сахара, 2 боба тонка.\n• Глазурь: 150г какао-масла, 150г белого шоколада, 3г бамбукового угля (порошок).\n• «Земля»: 100г муки, 80г холодного сливочного масла, 50г сахара, 20г какао-порошка, щепотка соли.\nТЕХНОЛОГИЯ ПРИГОТОВЛЕНИЯ (WORKFLOW)\nШАГ 1: ПОЧВА\nСмешайте муку, сахар, какао и соль. Добавьте кубики холодного масла и быстро перетрите в неоднородную крошку. Выпекайте 15-18 минут при 170°C. Остудите и еще раз разломайте крупные куски.\nШАГ 2: СЕРДЦЕ КАМНЯ (МУСС)\nНагрейте 100мл сливок с натертыми бобами тонка до появления пара (не кипятить). Вылейте на поломанный темный шоколад, дайте постоять 2 минуты и пробейте блендером до эмульсии. Оставшиеся 200мл сливок взбейте до мягких пиков и аккуратно вмешайте в остывшую до 35°C массу. Разлейте по формам в виде камней и уберите в морозилку минимум на 6 часов (до полной «каменности»).\nШАГ 3: ОБЛИЦОВКА (ГЛАЗУРЬ)\nРастопите какао-масло с белым шоколадом на водяной бане. Добавьте уголь и пробейте блендером. Рабочая температура глазури - строго 35-38°C.\nШАГ 4: СБОРКА\nДостаньте замороженные заготовки. Наколите каждую на шпажку и окуните в серую глазурь на 2 секунды. Пока глазурь не застыла (это произойдет мгновенно на холоде), слегка припылите через сито смесью угля и сахарной пудры для эффекта матового минерала.\nПодача: выложите «камни» на подушку из шоколадной «земли», добавьте веточку микро-зелени для имитации мха.\nМАРГИНАЛИИ (MARGINALIA)\n«Самый честный десерт тот, который заставляет тебя сомневаться в собственных чувствах». Пометка на полях: иллюзия в тарелке - это не ложь, а приглашение к игре. В мире, переполненном очевидным, такая мистификация возвращает нам детскую способность удивляться.\n⏱️ Время чтения: 2.1 мин | 🥐 Almanac: Bakery",
+            "img": "https://cdn4.telesco.pe/file/WxyRuqFLuCWZNwj-e9SWxB52x_3GcTaGj4Ow8kIVXLsN6aqWu8_F_7Dzbeu_adATTFPT05BEHlsabsBUTd2c7BTYVe9hTsBy63hemzdLjtOUMFIA0nTZouaqGA4VGBJCbi6eXXkg_EaGbkoau9OEF0e4dS49X0ztjOKjY0WjppqVD4sNJXjMOHs_OubIzDeJsLWB67ArShCLXyeHa1vAWjVWgSK3d6KPSCOKCQhpWe3ruFC15EQQ_b7aQ-8KSuTf2AsQ1wV-UyC4z4_YhaUwcOOH5E_kd7QUH6nSGOYNeipm_wWYpQ5owTsgmU0QrsIUO6gy65118jsIuvA8OI9qog.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775055888.0,
+            "poll": null
+        },
+        {
+            "m": "01.04 | 14:50",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5602",
+            "t": "🇬🇷 ГРЕЦИЯ: AKYLAS ПОСЯГНУЛ НА НАСЛЕДИЕ КОНЧИТЫ ВУРСТ",
+            "b": "Греческий «Одиссей» 2026 года выбрал максимально высокую планку для проекта «A Little Bit More». 1 апреля нас ждет премьера его версии «Rise Like a Phoenix» — песни, которая изменила историю конкурса.\nЭКСПЕРТНЫЙ ВЗГЛЯД:\nДля Акиласа это не просто кавер, а политический и художественный манифест. После вирусного успеха в TikTok и мощного этно-драйва «Ferto», артист решает показать свою вокальную мощь через классическую балладу. Это прямой месседж жюри: «Я не только про перформанс, я про голос».\nСможет ли Акилас добавить новые смыслы в канонический образ Феникса, или эта высота окажется недосягаемой? Узнаем уже в среду.\n📅 ПРЕМЬЕРА: 01.04.2026 | 18:00 (Рига)\n🔗 ЖДАТЬ ТУТ: YouTube\n⏱️ Время чтения: 0.8 мин | 🇬🇷 YourVision: Preview",
+            "img": "https://cdn4.telesco.pe/file/rjpiKpZipOnVJDCkT5f_SrPmWmAfyfDO1GKj8s5tPvXA5IYt67vFBZCv7vPlqTazZAVmHQMQDIl6T9N4CiuBSHy3fEuLAak2Bl1eVtaiSSLzLDEqupL37zGjaspKE2Q0g9PPu6ers4wHjQJB7ZNGjnXXvNXpXRkUTa1uKo7W58OOgWDmMK9CbUkgv7MS8uH5mXdXYAVHgQFLjh14uWYEN7e8ijLIERmECg1TmQBR2YFoGTh0WeMI1VVY8T4QhEOIZ3Lwy8e8HoxUdX8iVVK_2ErwrARyuaxYn0ff_jZ74tHggoASf5rIbC5y3eqruXOPX_GSFNCIWmSsT-3qNSVzAA.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775055013.0,
+            "poll": null
+        },
+        {
             "m": "01.04 | 07:09",
             "id": "70",
             "u": "https://t.me/YourEurovision/5601",
@@ -410,7 +434,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5909",
             "t": "🥐 #ALMANAC_FINALE: МАРТОВСКОЕ ПОСЛЕВКУСИЕ - ИТОГИ MARGINALIA",
             "b": "В последний вечер марта город превращается в один большой черновик. Мы заканчиваем главу Marginalia - время наблюдений, тонких теней и невидимых якорей. За тридцать один день мы научились замечать красоту в трещинах на брусчатке, в аромате свежего кардамона и в том, как свет ложится на старые книги.\nМартовское послевкусие - это смесь холодной соли и первых почек. Мы оставляем за спиной зимнюю меланхолию и переходим к апрельским предчувствиям. Завтра город зазвучит иначе, краски станут смелее, а тени - мягче. Но эти заметки «на полях» останутся с нами как напоминание о том, что настоящая глубина скрыта в мелочах, которые большинство пролетает на скорости.\nСпасибо, что читали Marginalia в этом месяце. Апрель готовит новую историю. Что вы забираете с собой из этого марта?\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Marginalia",
-            "img": "https://cdn4.telesco.pe/file/OCGXA_nAHZr547D1hVvqWDDsF3DDpu4fn6tCxgpuc66HbGvD8Qb_CFzxtxt5Vz7ZNbDRAvmXTlxsWP_Ey_nBjXST0EWq-Nktkl6R-TCFgFw4_bwwTkK4AGil8KdnbLVQVm6VQ8PIwvp4yut6OQHTQNRyoGyTcoPJqb1F6-qzGHgLdkDJm4z2mYXxVOYpf1krmxOdeVqM_F8_CjbJomgyOCWf7ntZCMAvhTDnR3UX0XOPazC67Q1NhhZ0uF5xpiCQ4xSM1LjDhid6Q5hjqclBcVdpVsA8V5MgDpg7QfjKXuqVJdWabwOb9757vl8Nr5iwjh7Vpl02kNlpiJnhkof-Bw.jpg",
+            "img": "https://cdn4.telesco.pe/file/J2yTfAH-6w6ikvSUv0QqICIx7iK0sIZ4383c8-94JqxTiyPffZFJsnYSa2oCN_R8E7eBroJO8vGEw5awB5bcJAEjmeEQEQrjYW76pO5qZFaKBw8Z_Wja5dYiyuMR8rcVgffTlXaAhf25NqR-wfsaO7dXywxGIW3Nod0HMOAxt7XwxIAZQ-jitKHez6CMJspAc5dUK7CuRsUWnaHYRdt-ileJcQjUZt2VqjVrOEDsgKMcOBtANxPWxjx4YmWg7vPqBTIm3Dy3VIzkF26zTU7oS_DvohOPHeXS_bNd_y1dEEMh_MCB53oMSw8KTLcBIfgU-SobddZnZwZMioNpqTPDAA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774969329.0,
@@ -549,24 +573,12 @@ var DATA = {
             "poll": null
         },
         {
-            "m": "30.03 | 17:04",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5581",
-            "t": "🧬 DNA: ЭСТОНИЯ - VANILLA NINJA",
-            "b": "Vanilla Ninja - это феномен эстонской сцены, сумевший в начале 2000-х взломать консервативные чарты Германии, Австрии и Швейцарии. Сегодня группа (Ленна Куурмаа, Пирет Ярвис и Керли Кивилан) возвращается к истокам, чтобы доказать: качественный женский рок не имеет срока годности.\nTHE JOURNEY (ПУТЬ)\nИх путь начался в 2002-м с оглушительного успеха «Club Kung Fu», который, несмотря на поражение от жюри на Eurolaul, стал главным хитом страны. Далее последовала экспансия в Центральную Европу с альбомами «Traces of Sadness» и «Blue Tattoo». В 2005 году группа совершила невозможное, представив Швейцарию на ESC с «Cool Vibes» и заняв 8-е место. После долгого перерыва и триумфа на фестивале Viña del Mar в 2008-м, «Ниндзя» вернулись в 2020-м с альбомом «Encore». Победа на Eesti Laul 2026 с треком «Too Epic To Be True» стала логичным завершением их 20-летнего цикла ожидания.\nSTYLE & SOUND (ДНК)\nДНК Vanilla Ninja - это гремучая смесь поп-рока и хард-рока с идеальными вокальными гармониями. Их звук в 2026-м стал тяжелее и осознаннее, уходя от подросткового драйва к стадионному величию. Визуально это эстетика «high-end rock»: кожа, монохром и холодная балтийская харизма. Они больше не пытаются быть «удобными», они транслируют силу и опыт.\nVERDICT: Эстония отправляет в Вену не просто артистов, а национальный символ. Огромная фан-база по всей Европе и статус «легенд» делают их одними из самых опасных игроков полуфинала.\n⏱️ Время чтения: 1.6 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/nhATKeuTf4f11GzVanhmyk-dX8w5YriOehSxfYjpB6TD70La7ZICIlogb-jMeHhHQbCeMf1dmNPzqURre-jBEj4StQlooFouY4q4qV32yEvCMSWc2PrbyXPn_Jc5jbIewffdDA6SCl9d3zR6XVcTintElr0QqGlL68z4THPYBRb3JNvzmMB4UC-PYKLKXvXKbRQlUng7ISOJOkWamw9vPPlYVWHuu2_GxMXm6aytHK5zpKxgKI3cp62LxHw88IoOfDhFnbPh8zZcaB31HypDG3bDgnAaeKtaBWsEhkVnEwd-BI9Eig5Z3RbtGaOq5STcnJwsBhaZUu7rpWOV3T_EGg",
-            "vid": "https://cdn4.telesco.pe/file/416e00330c.mp4?token=ng7yumZB0E0mQZzQQ4yNpFXYDJtBh2auewk50BpSfYvlqhRbTySkFPX_PTFyl9YS_9vJJqIxKTu0gbMsu08oVioh_wii5ema9S3bQtrw_zrLAO0-h4FxBm0c0fWEg3xa5mOmehUAu51sMZIwJan_cWg3BpiKbZOKnVImeM9h1ts0V-4Hce0MzVHXGQklcgNiucKID7L3qgvKhbwziCaIWyzfcLnG-UHb6uNdXVBsBtj8zZzUD0GNVlZ9K7auNJjONJ5sXVelJvJ9mqNVhgPz5u6PdtcC4CdCNPxhD3RobBpJT3yO3Bf8LXi1ksNktViML9TkKRaA-y4zsPxpJcbghg",
-            "isVideo": true,
-            "ts": 1774890261.0,
-            "poll": null
-        },
-        {
             "m": "30.03 | 15:03",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5907",
             "t": "🏛 MARGINALIA: ФИЗИКА ВОЗВРАЩЕНИЯ - ГРАДИЕНТ ПЕРСЕФОНЫ",
             "b": "Сегодня вечером граница ощутима физически. Не в метафоре, а в костях и в почве под ногами. Сырая мартовская прохлада Риги еще держит землю, но уже не сковывает. Это не взрывное таяние, а медленное, глубокое оттаивание - изнутри наружу. Именно об этом миф.\nТЕРМОДИНАМИКА МИФА (LORE)\nМы часто говорим о возвращении Персефоны как о внезапном чуде: раз - и свет, раз - и цветы. Но ее восхождение - это физический процесс. Он измеряется скоростью химических реакций в спящих корнях и теплопроводностью мерзлого пласта. Она поднимается не по лестнице, а по градиенту температуры. От абсолютного нуля Аида к прохладному плюсу нашего мира. Ее шаги - это работа по раскристаллизации воды в порах глины.\nTHE FRAGMENT\n«Возвращение - это не событие, а фаза изменения...» - пометка на полях старого манускрипта. Конец марта - это момент, когда внутреннее тепло земли начинает побеждать внешний холод. Персефона уже прошла критическую точку. Она уже здесь, в этом сыром, едва уловимом дыхании из-под прошлогодней листвы. Это не праздник, а титанический труд по оттаиванию.\nОна уже на полпути. Мы просто называем это весной.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Source",
-            "img": "https://cdn4.telesco.pe/file/RFVkdWF-mRvQsaa8PEBzyqaJZt_YXd6SAHvefxefQaQvyQs7uTkAGbFXQ6r2hU7VguApiLaAL56a3WFwYnfiS2n4TO1YiesSpR5dXTz98feRYV5vY3X1GyDN6EqSPW66NT1m1dB8FuBpPpNc_9fdNEpEqhpbkyQu1wdW5hKQySBbwg57YF3GgpPKF505sZC3-EL5URxm8ZiEu-cQ4F2-Kii8kgrPSp9_DkC7cI-DXRqpGwM1c6yuMkxhKtgEvbqdF8QXIk7pzMH5jsx6McSTwSeDNz7SoXli4tXxVdR8hf0_8Tg3k1CmBcs1LFQZEGT2aXQYU9RDn07CqkK9bTW4lg.jpg",
+            "img": "https://cdn4.telesco.pe/file/v7AxT4FLrn8CNBu8vXPrNBjjWmQ9-CpI6IUMNb1VBX7BMx3dNvNk0u_cCfXGQclJE_pvCG1R9uTMdUgqIzNpC9d4yZNO5I9IFB-HFAurITsMPeSp2zCQIIDkyvMKP2xzEvdw0N_E5LRsH9f7pjFEtgEeP_IXRZLKrEY8iS3S-tNjPiQZSP_YmS9WFR0LNPahpiLENjGQ-w3cpQhXsxZBKGTr1BI24Dgn_Ewh6V0e4ehrQGRFgzGo1AsnAMXGRp6P85w7FBZUvVeqXiEBrrZadfn82jqcB1K7eBA0qPP1-NPLg8Zv0KpuW8FW-cT1QbKQ61EWYW0YNm95SAHjgNanXQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774883028.0,
@@ -594,18 +606,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1774796532.0,
-            "poll": null
-        },
-        {
-            "m": "29.03 | 06:00",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5904",
-            "t": "🏛 MARGINALIA: КРАЯ МАРТА - ТЕКСТУРА ПЕРЕХОДА",
-            "b": "Мы подошли к той точке года, когда март начинает истончаться. Это странное, «пограничное» время, когда зима уже не властна, а весна еще не обрела уверенности. В «Альманахе» мы фиксируем этот момент как паузу между главами.\nСМЫСЛ МОМЕНТА (LORE)\nПоследние дни марта всегда пахнут сырым камнем и холодным ветром, в котором уже слышны другие ноты. Это идеальное время для ревизии своего внутреннего архива. Что из «мартовских маргиналий» мы возьмем с собой в апрель, а что оставим здесь, на полях этого месяца? Переход - это не просто смена даты, это ритуал очистки смыслов.\nTHE FRAGMENT\n«Время не течет, оно наслаивается, как годовые кольца на срезе дерева...» - пометка на обороте старого календаря. Воскресенье дает нам право не бежать. Остановитесь на краю этого месяца. Почувствуйте его вес. Это и есть наш «невидимый якорь» - умение ценить каждый слой реальности.\nПусть сегодняшний переход будет легким и осознанным.\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Calendar",
-            "img": "https://cdn4.telesco.pe/file/AEKQy08z_ttt7B0HhrOJ6YacLOgwFO3yGn8xLEBsvxOHK9r4JYWBS8HQ48jQfboaa5NZPUqOb7TlmWgGv4_zyEPkJAdRdm535rQ9vu_4bylzJG8DqfKQ_ZR7E4GbfrHlM-SI46ZYfz4k6I1pMLaIBSuRtSrIpr-8Z_lR0foYEsEdWDthYrGJpmTtP1WVdlm53JfYPFCh9VlJyGfaxG2dGPdO13VoFHcOsGUH1Crff65Hll-bRsI-CxF3OAYotBMyHMBKfRNXBDwRtYYNARqBk8DMJpXJq-FoNxX5-INBXMRmBZRNc61FDGKj2GM4wVwfCJ1AnWcrAX-vVqSl7JK4Bw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774764034.0,
             "poll": null
         }
     ],
@@ -940,6 +940,38 @@ var DATA = {
             "id": "ro",
             "c": "Romania",
             "p": "2%"
+        }
+    ],
+    "roadmap": [
+        {
+            "d": "01.04",
+            "t": "1/8 FINAL #8",
+            "e": "🇲🇹 Aidan vs 🇧🇬 Dara",
+            "s": "LIVE"
+        },
+        {
+            "d": "04.04",
+            "t": "JESC POLAND",
+            "e": "The Voice Kids: Blind Auditions",
+            "s": "WAITING"
+        },
+        {
+            "d": "11.04",
+            "t": "PRE-PARTY",
+            "e": "Eurovision in Concert (Amsterdam)",
+            "s": "WAITING"
+        },
+        {
+            "d": "12.05",
+            "t": "SEMI-FINAL 1",
+            "e": "Vienna 2026: Night One",
+            "s": "MAJOR"
+        },
+        {
+            "d": "16.05",
+            "t": "GRAND FINAL",
+            "e": "Vienna 2026: The Crowning",
+            "s": "MAJOR"
         }
     ]
 };

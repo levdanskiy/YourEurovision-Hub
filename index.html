@@ -617,6 +617,11 @@
         </main>
         
         <aside class="column" id="chart-sect">
+            <div class="card" id="roadmap-sect" style="margin-bottom:30px; border-color:var(--pink); background:rgba(255,0,127,0.02);">
+                <div class="section-title-base" style="color:var(--pink); border-bottom:2px solid var(--pink); padding-bottom:10px;"><i class="fi fi-rr-calendar-lines"></i> INTERACTIVE ROADMAP</div>
+                <div id="roadmap-list" style="margin-top:20px;"></div>
+            </div>
+
             <div class="card">
                 <div class="section-title-base title-cyan"><i class="fi fi-rr-stats"></i> WORLDSOUND: AIRWAVE VELOCITY — 31.03.2026</div>
                 <div id="chart-list"></div>
@@ -655,7 +660,7 @@
         <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
-    <script src="data.js?v=1775055119"></script>
+    <script src="data.js?v=1775057474"></script>
     <script>
         const DATES = { sf1: new Date('2026-05-12T22:00:00+02:00'), sf2: new Date('2026-05-14T22:00:00+02:00'), gf: new Date('2026-05-16T22:00:00+02:00') };
         const countryMap = {"al":"Albania","am":"Armenia","au":"Australia","at":"Austria","az":"Azerbaijan","be":"Belgium","bg":"Bulgaria","hr":"Croatia","cy":"Cyprus","cz":"Czechia","dk":"Denmark","ee":"Estonia","fi":"Finland","fr":"France","ge":"Georgia","de":"Germany","gr":"Greece","il":"Israel","it":"Italy","lv":"Latvia","lt":"Lithuania","lu":"Luxembourg","mt":"Malta","md":"Moldova","me":"Montenegro","no":"Norway","pl":"Poland","pt":"Portugal","ro":"Romania","sm":"San Marino","rs":"Serbia","se":"Sweden","ch":"Switzerland","ua":"Ukraine","gb":"United Kingdom","nl":"Netherlands","kh":"Cambodia","vn":"Vietnam","th":"Thailand","my":"Malaysia","ph":"Philippines","np":"Nepal","bd":"Bangladesh","la":"Laos","bt":"Bhutan"};
@@ -701,7 +706,7 @@
 
         function handleVote(postId, optIdx) { localStorage.setItem('yv_vote_'+postId, optIdx); render(); }
 
-                function render() {
+                        function render() {
             if(!window.DATA) return;
             
             // 1. Qualified/Eliminated
@@ -755,7 +760,25 @@
                 </div>`;
             }).join("");
 
-            // 4. RUTOP Nominees
+            // 4. Roadmap Timeline
+            if (DATA.roadmap) {
+                document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map((item) => {
+                    const isMajor = item.s === 'MAJOR';
+                    const isLive = item.s === 'LIVE';
+                    return `<div class="bubble" style="padding: 12px 15px; margin-bottom:12px; border-radius:15px; background:rgba(255,255,255,0.02); border-left: 4px solid ${isLive?'var(--acid)':(isMajor?'var(--pink)':'#333')};">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span>
+                            <span style="font-size:0.6rem; font-weight:900; color:${isLive?'var(--acid)':'#555'}; text-transform:uppercase;">${item.s}</span>
+                        </div>
+                        <div style="margin-top:5px;">
+                            <div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div>
+                            <div style="font-size:0.75rem; color:#888; margin-top:2px;">${item.e}</div>
+                        </div>
+                    </div>`;
+                }).join("");
+            }
+
+            // 5. RUTOP Nominees
             if (DATA.nominees) {
                 document.getElementById("nominee-list").innerHTML = DATA.nominees.map((n) => {
                     return `<div class="bubble" style="padding: 10px 15px; margin-bottom:10px; border-radius:15px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);">
@@ -769,7 +792,7 @@
                 }).join("");
             }
 
-            // 5. Bookmakers Odds
+            // 6. Bookmakers Odds
             if (DATA.odds) {
                 document.getElementById("odds-list").innerHTML = DATA.odds.map((o) => {
                     const prob = parseInt(o.p);
@@ -785,7 +808,7 @@
                 }).join("");
             }
 
-            // 6. News Feed with Search
+            // 7. News Feed with Search
             const searchInput = document.getElementById("news-search");
             const searchVal = searchInput ? searchInput.value.toLowerCase().trim() : "";
             const filteredNews = DATA.news.filter(p => {
