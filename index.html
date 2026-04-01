@@ -960,7 +960,7 @@
         <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
-    <script src="data.js?v=1775078136"></script>
+    <script src="data.js?v=1775078490"></script>
     <script>
         const LANGS = {
             ru: {
@@ -1116,12 +1116,22 @@
         }
 
         function update() {
-            const cl = document.getElementById('clock'); if(cl) cl.innerText = new Date().toLocaleTimeString("ru-RU");
+            // Map our lang codes to real locales
+            const localeMap = { ru: 'ru-RU', en: 'en-GB', ua: 'uk-UA', lv: 'lv-LV', se: 'sv-SE' };
+            const currentLocale = localeMap[currentLang] || 'en-GB';
+
+            const cl = document.getElementById('clock'); 
+            if(cl) cl.innerText = new Date().toLocaleTimeString(currentLocale);
             
             const vcl = document.getElementById('vienna-clock');
             if(vcl) {
-                const viennaTime = new Date(new Date().getTime() - 3600000); // Riga (UTC+3) to Vienna (UTC+2)
-                vcl.innerText = viennaTime.toLocaleTimeString("ru-RU", { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+                const viennaTime = new Date().toLocaleTimeString(currentLocale, { 
+                    timeZone: "Europe/Vienna", 
+                    hour: '2-digit', 
+                    minute: '2-digit', 
+                    second: '2-digit' 
+                });
+                vcl.innerText = viennaTime;
             }
 
             const now = new Date();
