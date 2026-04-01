@@ -590,6 +590,12 @@
                 <div class="section-title-base title-acid"><i class="fi fi-rr-history"></i> RECENTLY PLAYED</div>
                 <div id="hist-list"></div>
             </div>
+
+            <div class="card" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
+                <div class="section-title-base title-cyan"><i class="fi fi-rr-chart-line-up"></i> BOOKMAKERS ODDS</div>
+                <div id="odds-list"></div>
+                <div style="font-size:0.6rem; color:#555; text-align:center; margin-top:15px; text-transform:uppercase; letter-spacing:0.1em;">Source: Eurovisionworld</div>
+            </div>
         </aside>
         
         <main class="column">
@@ -757,6 +763,21 @@
                             <div class="song-rich" style="font-size:0.75rem; opacity:0.6; white-space:nowrap; text-overflow:ellipsis;">${decodeS(n.s)}</div>
                         </div>
                         <a href="https://youtube.com/results?search_query=${encodeURIComponent(decodeS(n.a)+' '+decodeS(n.s))}" target="_blank" style="color:var(--acid); font-size:1rem; margin-left:10px;"><i class="fi fi-rr-play-alt"></i></a>
+                    </div>`;
+                }).join("");
+            }
+
+            if (DATA.odds) {
+                document.getElementById("odds-list").innerHTML = DATA.odds.map((o) => {
+                    const prob = parseInt(o.p);
+                    return `<div class="bubble" style="padding: 8px 12px; margin-bottom:8px; border-radius:12px; background:rgba(0,245,255,0.02);">
+                        <span style="color:var(--cyan); font-weight:900; font-size:0.8rem; width:20px;">${o.r}</span>
+                        <img src="${getHeartUrl(o.id)}" class="heart-shape" style="width:25px; height:25px; margin:0 10px;">
+                        <div style="flex-grow:1;">
+                            <div class="artist-rich" style="font-size:0.8rem; color:#fff;">${o.c}</div>
+                            <div class="score-bar-bg" style="width:100%; height:2px; margin-top:5px;"><div class="score-bar-fill" style="width:${prob}%; background:var(--cyan);"></div></div>
+                        </div>
+                        <span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:0.8rem;">${o.p}</span>
                     </div>`;
                 }).join("");
             }

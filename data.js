@@ -879,5 +879,67 @@ var DATA = {
             "s": "СПЛЕТНИ. ШУМ. ЛУК.",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/1a/7b/d11a7b87-6ed1-d8b2-cfc2-f563b55d708d/cover.jpg/400x400bb.jpg"
         }
+    ],
+    "odds": [
+        {
+            "r": 1,
+            "id": "fi",
+            "c": "Finland",
+            "p": "28%"
+        },
+        {
+            "r": 2,
+            "id": "fr",
+            "c": "France",
+            "p": "12%"
+        },
+        {
+            "r": 3,
+            "id": "dk",
+            "c": "Denmark",
+            "p": "10%"
+        },
+        {
+            "r": 4,
+            "id": "au",
+            "c": "Australia",
+            "p": "8%"
+        },
+        {
+            "r": 5,
+            "id": "gr",
+            "c": "Greece",
+            "p": "8%"
+        },
+        {
+            "r": 6,
+            "id": "se",
+            "c": "Sweden",
+            "p": "5%"
+        },
+        {
+            "r": 7,
+            "id": "il",
+            "c": "Israel",
+            "p": "4%"
+        },
+        {
+            "r": 8,
+            "id": "ua",
+            "c": "Ukraine",
+            "p": "3%"
+        },
+        {
+            "r": 9,
+            "id": "it",
+            "c": "Italy",
+            "p": "3%"
+        },
+        {
+            "r": 10,
+            "id": "ro",
+            "c": "Romania",
+            "p": "2%"
+        }
     ]
 };
