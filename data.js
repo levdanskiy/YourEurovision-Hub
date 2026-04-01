@@ -97,13 +97,13 @@ var DATA = {
             "t1": "cy",
             "a1": "Antigoni",
             "s1": "Jalla",
-            "sc1": "LIVE",
+            "sc1": "44%",
             "t2": "gb",
             "a2": "Look Mum No Computer",
             "s2": "Eins, Zwei, Drei",
-            "sc2": "",
-            "w": 0,
-            "status": "LIVE"
+            "sc2": "56% ★",
+            "w": 2,
+            "status": "FINISHED"
         },
         {
             "id": 8,
@@ -151,6 +151,11 @@ var DATA = {
             "id": "md",
             "a": "Satoshi",
             "s": "Viva, Moldova!"
+        },
+        {
+            "id": "gb",
+            "a": "Look Mum No Computer",
+            "s": "Eins, Zwei, Drei"
         }
     ],
     "eliminated": [
@@ -278,6 +283,11 @@ var DATA = {
             "id": "be",
             "a": "Essyla",
             "s": "Dancing on the Ice"
+        },
+        {
+            "id": "cy",
+            "a": "Antigoni",
+            "s": "Jalla"
         }
     ],
     "chart": [
@@ -581,7 +591,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5908",
             "t": "🏛 #FRAGMENT: ТЕНИ КАК НЕГАТИВ ГОРОДА - ФИЛОСОФИЯ ИСЧЕЗНОВЕНИЯ",
             "b": "В последний день марта тени становятся честнее зданий. Если фасад - это маска, выстроенная для зрителя, то тень - это его «негатив», обнажающий истинные пропорции и изъяны. В этом северном городе, застывшем на пороге апреля, мы наблюдаем за тем, как графика солнечного света стирает материальность камня.\nТень на брусчатке не лжет. Она не пытается казаться вечной. Она исчезает вместе с поворотом планеты, вместе с уходящим мартом, не оставляя после себя ничего, кроме этого короткого упоминания в Marginalia. Сегодня мы смотрим не на архитектуру, а на ее отсутствие - на те темные провалы, которые и делают свет видимым. Это момент абсолютной честности: Март уходит, забирая с собой свои длинные, холодные тени, оставляя нас один на один с ослепительной пустотой грядущего апреля.\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Marginalia",
-            "img": "https://cdn4.telesco.pe/file/utEPkpnf-e_cuTXgZY7zyD31avP18TRrmx6ZGnEhp6dd5ANJ9CifAAhw0LIWkEc0XS-n9RhrHcZfe7FP9Z1j66WB_FXIcB6HIw3O0gfjDOccafmRsDnuSQi5YbQP52xxLWuUlLUUjGsHLusfs0Denf4DJP4Bg1QRRhXKUTJNqbjgNH7DNpl9kC2Y91sK8gbn3gUYjXB9E5lDBj_bAVfXrdRUE8wxyiqDzg_6v0_L3TEVNBeCR-nYEaisFvH2omJS3YD2D1CWSYy9y_HBBz27j_VzWR8S_XV2CBitnOBYqIcYcIQ2DHLdPhHsk3ZLQhNg-ECjwWedrMu760nD5MBt1Q.jpg",
+            "img": "https://cdn4.telesco.pe/file/KFbihShFVC5EV2NnMIRwtII5KoxY0PeUOVdPTWAPHSO_NOnWPCrn5Dj9bVt4mlFEJUbUzq4NhvwBmBZ9GANLHSNWURBFz8IVAtw5aXz1hrTxZbX4TQSrMN32EN9P9fmt8ZrQAPhqg1H1F-J5LeQIWjXgwhKD49ju7Q7SebbChiB5B06_mnMmGi0GPefTkBbpz01qs8nRHmdAjkvz4ign1EtJf-NhQQRQnPEA39Fbwld2L1jxA2F8LAAHPsuziWg42tlG1oh-a_kRvlKEJfvYnxsywFlkyX69jtyFqoKS30K9mWGiFTDljTAUIKjzEt__wxLnq7icWQJUVesrS5hIxw.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774936838.0,
@@ -593,7 +603,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5587",
             "t": "❤️ GLOBAL: EUROVISION ASIA - ЭКСПАНСИЯ НАЧИНАЕТСЯ В БАНГКОКЕ",
             "b": "Европейский вещательный союз (EBU) официально подтвердил: в 2026 году легендарный формат выходит на новый уровень. Дебютный «Eurovision Song Contest Asia» пройдет в столице Таиланда, ознаменовав собой самую масштабную главу в 70-летней истории бренда.\nDATA & LOGISTICS:\n• Хост-город: Бангкок, Таиланд 🇹🇭\n• Дата финала: Суббота, 14 ноября 2026 года.\n• Вещатель-партнер: Channel 3 (Таиланд).\n• Организаторы: EBU, Voxovation, S2O Productions.\nПЕРВЫЙ ПУЛ УЧАСТНИКОВ (10 СТРАН):\nНа текущий момент участие подтвердили: Южная Корея 🇰🇷, Таиланд 🇹🇭, Вьетнам 🇻🇳, Малайзия 🇲🇾, Филиппины 🇵🇭, Бангладеш 🇧🇩, Бутан 🇧🇹, Камбоджа 🇰🇭, Лаос 🇱🇦 и Непал 🇳🇵. Список будет расширяться в ближайшие месяцы.\n🎙 ГОЛОСА ИНДУСТРИИ\nМартин Грин (Директор ESC, EBU):\n«В год 70-летия конкурса особенно символично открыть эту главу в Азии - регионе, богатом творчеством и талантами. Мы строим проект, который отразит идентичность региона, оставаясь верным духу Евровидения».\nПитер Сеттман (CEO Voxovation):\n«Мы создаем шоу, где артисты и фанаты соединятся по-новому. Я вырос на Евровидении, и принести это невероятное событие на новый континент - нечто особенное».\nГотовы к битве азиатских тигров на сцене?\n⏱️ Время чтения: 1.5 мин | 🌏 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/bUA90TNsEdt3Yufds9YCXokVndes7YcI09jx_Ts5xPUa739s2-j1Yan4L8UdDSBlkrY8zH2UzHQTp0MZ9rnzveL7T7wCnjvXl35fuuHWLUlBD_BHpm6I1rv8ESk7C1GpHicGhe3NlZrHQABpWZPPFOiwRJ-zYTwJey62JgoCRBDA3gTVMAG04VX4Ev8iSEm4hiSy4XvUx05rwnvYRK9iVoakHb9bgN5VkUfJo6iDGPAcHmd7udDi3cA135xnCgN8FUs72bPKwlQjmYH0nDBXG-BGI5L3YCkS8rbuWxwUmEALvyJqArFwvNwSQEwWs4_xnoGlUI4ep3J8MKEL9iHvSg.jpg",
+            "img": "https://cdn4.telesco.pe/file/mpO4Q82keRKrmT5tzqiKAp6gerdUK7eiGOcCyrZjDG-42rwG44MLLSlYbZz8T1WME7b1OBOHqzVJUXJ9xxnwxDQP6impslFHdlSUXFMPn8Chk0tkIx5JD4jF0y_ZwYGmLj8T-BD67t2rC5-O5D3IAQAxwCEjpV9Ky9PCvdZUalE2vxJd3L4B5H8wPFrc1aWUPpXGAc7_3oi1ZkUD7ZhiHXZy_3CFmPZ3rEVog4Qt4h9ubYU7G7ikApl5MeVhXqKV9hOZDjNqt9JqIoh5PdmB2eJbvbk6iMUjm7d8EWgK7JP4s_YTEWrswG7ZFJfU87hiX87eDfJBkE81-Sn17wQ70A.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774921107.0,
@@ -725,7 +735,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5906",
             "t": "🏛 MARGINALIA: АПРЕЛЬСКИЕ ТИЗЕРЫ - ПРЕДЧУВСТВИЕ",
             "b": "Последние сорок восемь часов марта - это не время, а состояние. Воздух в Риге сегодня не просто холодный, он прозрачный. Он не обжигает легкие мартовской остротой, а лишь мягко, неумолимо напоминает: его химический состав меняется. В нем уже нет той упрямой зимней тяжести, но еще нет и апрельской влажной сладости. Он - нейтральная полоса, лиминальное пространство между двумя разными правдами.\nСМЫСЛ МОМЕНТА (LORE)\nЗа окнами Архива сумерки имеют особый оттенок - синеватый свинец, разбавленный перспективой. Фонари зажигаются не как обычно, а словно нехотя, отсрочивая момент, когда март окончательно станет прошлым. В эти часы кажется, что сам город прислушивается. Ветви деревьев в Верманском парке, тишина за закрытыми ставнями - всё настроено на одну частоту ожидания.\nTHE FRAGMENT\n«Апрель - это дата. А предчувствие апреля - это жизнь...» - пометка на полях. Предчувствие всегда масштабнее самого апреля. Его значимость - в физическом знании, что граница пройдена, хотя календарь еще этого не зафиксировал. Мы архивируем этот момент не ради итога, а ради самого движения.\nЗавтра будет первое число. Но истинное начало - сейчас. В тишине, которая уже не зимняя, но еще не весенняя.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Calendar",
-            "img": "https://cdn4.telesco.pe/file/eqQnX7rEqoRh37HQRNRFrqRtCncIiihYQeo4z1vqEosYl4eN5-6TyRLaXd_FsOAVYd53QJgbIA_0u3hGIPIQWLkrX6cK92F6PJ0t__zT8iuuhibMI086NJOdcKZqJzF059_vomsgZd5Txkvi6-LnWpKSRCI8uF542FGhR5AX38p10U18PHimBlYAYXgs6dm4vG7673R5dRlTJVWMaGj7n3xmwGNea9kdzROZsG1TDH6xXpjXF7_xesoFOoLZd0Fy7dw6lxpN7bvDRcodHYnelO9XMU1iKFFrCA9v6-BQtgCTBNm4LlFk7Ga0354pR5SOjYRWM7CqR7hOeqzAXpSkXQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/S3exOr5XZ9vpzO2q1_esJ0c5kbn-QtHvPSFHk58_e7tFcuQ1WAgSAxvS-aRnCvBOxzSn1Db7ChqhRFQdOU9rXmuGtRoQzu_hR72_AB_uKY4HvFn9FFWDflxLVcHh8Qmc5JRpQZqh1-GrjVUXbojd5e_guJOirOJMHv5VpxfYgnuduQ8v9UWUysL3i8u707YL4TrJ2IYVCtkmB3J0F4hg9iuWrDyH_w2l07lDArH1GOelLAXssMNjFVjEygVUmNsYFiMD6hT5Lc0WX_ShBRuS0h3svis1-58x_RDMaZm7729elA-YcDedcbx8GfWbW8IWr8I3QGzMQ6NVbeBoNeRF3A.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774850462.0,
@@ -767,7 +777,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5904",
             "t": "🏛 MARGINALIA: КРАЯ МАРТА - ТЕКСТУРА ПЕРЕХОДА",
             "b": "Мы подошли к той точке года, когда март начинает истончаться. Это странное, «пограничное» время, когда зима уже не властна, а весна еще не обрела уверенности. В «Альманахе» мы фиксируем этот момент как паузу между главами.\nСМЫСЛ МОМЕНТА (LORE)\nПоследние дни марта всегда пахнут сырым камнем и холодным ветром, в котором уже слышны другие ноты. Это идеальное время для ревизии своего внутреннего архива. Что из «мартовских маргиналий» мы возьмем с собой в апрель, а что оставим здесь, на полях этого месяца? Переход - это не просто смена даты, это ритуал очистки смыслов.\nTHE FRAGMENT\n«Время не течет, оно наслаивается, как годовые кольца на срезе дерева...» - пометка на обороте старого календаря. Воскресенье дает нам право не бежать. Остановитесь на краю этого месяца. Почувствуйте его вес. Это и есть наш «невидимый якорь» - умение ценить каждый слой реальности.\nПусть сегодняшний переход будет легким и осознанным.\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Calendar",
-            "img": "https://cdn4.telesco.pe/file/QCetybB7jGV7PwvtV_9xHMa88tSyibeYambwQWeu_QJ2DHGjUxdEjfV_JkptCT7IYg3JjBzxryC-JybTt4zHf_IuTOtGQvD8lakBxhodjjccyLzZ_xM7xBGRpVUlSF3Ra0zXzx3Vv7UzTkBRlHES-utAmipnYX-rM0kkXGsQzcsrUQ8X8G5IquGNtTT919IYx-hMNjGSKB5Fav9BfMhOswVmhB01oAc4dH6xMjjkiClF9qWGOZVt9FdIDLaeSHpxpkxS_lOBUJMliUHTNsO5YlKoPlgwsQ9MfM1T280KIHthDSE9s6b0GgDA-TNDf4LrCIaFw6xlaiIlzsg2plxb4g.jpg",
+            "img": "https://cdn4.telesco.pe/file/AEKQy08z_ttt7B0HhrOJ6YacLOgwFO3yGn8xLEBsvxOHK9r4JYWBS8HQ48jQfboaa5NZPUqOb7TlmWgGv4_zyEPkJAdRdm535rQ9vu_4bylzJG8DqfKQ_ZR7E4GbfrHlM-SI46ZYfz4k6I1pMLaIBSuRtSrIpr-8Z_lR0foYEsEdWDthYrGJpmTtP1WVdlm53JfYPFCh9VlJyGfaxG2dGPdO13VoFHcOsGUH1Crff65Hll-bRsI-CxF3OAYotBMyHMBKfRNXBDwRtYYNARqBk8DMJpXJq-FoNxX5-INBXMRmBZRNc61FDGKj2GM4wVwfCJ1AnWcrAX-vVqSl7JK4Bw.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774764034.0,
