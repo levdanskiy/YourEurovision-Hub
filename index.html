@@ -960,7 +960,7 @@
         <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
-    <script src="data.js?v=1775078490"></script>
+    <script src="data.js?v=1775121414"></script>
     <script>
         const LANGS = {
             ru: {
@@ -1165,227 +1165,166 @@
             render();
         }
 
-                        function render() {
+                                                function render() {
             if(!window.DATA) return;
             const t = LANGS[currentLang];
             
-            // 0. Update Lang Buttons, Ticker and Date
+            // 0. Update Lang Buttons status
             document.querySelectorAll('[id^="lang-"]').forEach(b => b.classList.remove('active'));
-            const activeBtn = document.getElementById('lang-' + currentLang);
-            if(activeBtn) activeBtn.classList.add('active');
+            const activeBtn = document.getElementById('lang-' + currentLang); if(activeBtn) activeBtn.classList.add('active');
 
-            const now = new Date();
-            const day = String(now.getDate()).padStart(2, '0');
-            const monthName = t.months[now.getMonth()];
-            const year = now.getFullYear();
-            const fullDateEl = document.getElementById('full-date');
-            if (fullDateEl) fullDateEl.innerText = `${day} ${monthName} ${year}`;
+            try {
+                const now = new Date();
+                const day = String(now.getDate()).padStart(2, '0');
+                const mName = t.months[now.getMonth()];
+                const fDate = document.getElementById('full-date'); if(fDate) fDate.innerText = `${day} ${mName} ${now.getFullYear()}`;
+                const tContent = document.getElementById("ticker-content");
+                if(tContent) { const ti = t.ticker.map(item => `<div class="ticker-item">${item}</div>`).join(""); tContent.innerHTML = ti + ti; }
+                const navs = { 'nav-news': t.news, 'nav-cup': t.cup, 'nav-radio': t.radio, 'nav-chart': t.chart, 'nav-odds': t.odds, 'nav-vote': t.vote };
+                for(const id in navs) { const el = document.getElementById(id); if(el) el.innerHTML = `<i class="fi fi-rr-${id.split('-')[1]}"></i> ${navs[id]}`; }
+            } catch(e) {}
 
-            const tickerItems = t.ticker.map(item => `<div class="ticker-item">${item}</div>`).join("");
-            document.getElementById("ticker-content").innerHTML = tickerItems + tickerItems;
+            // 1. Qualified / Eliminated & Archive
+            try {
+                const qList = document.getElementById("q-list");
+                if(qList) {
+                    const qLab = qList.parentElement.querySelector(".side-label"); if(qLab) qLab.innerHTML = `<i class="fi fi-rr-check"></i> ${t.qualified}`;
+                    qList.innerHTML = DATA.qualifiers.map(c => `<div class="bubble"><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"><span class="artist-rich" style="font-size:0.85rem; color:#fff;">${decodeS(c.a)}</span></div>`).join("");
+                }
+                const eList = document.getElementById("e-list");
+                if(eList) {
+                    const eLab = eList.parentElement.querySelector(".side-label"); if(eLab) eLab.innerHTML = `<i class="fi fi-rr-cross"></i> ${t.eliminated}`;
+                    const eHtml = DATA.eliminated.map(c => `<div class="elim-bubble"><div class="tooltip">${decodeS(c.a)}</div><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"></div>`).join("");
+                    const hist18 = DATA.battles.filter(b => b.id <= 8);
+                    let hHtml = "";
+                    if(hist18.length > 0) {
+                        hHtml = `<div style="margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:15px;">` +
+                                `<div style="font-size:0.6rem; color:var(--pink); font-weight:900; margin-bottom:10px; letter-spacing:0.15em; text-transform:uppercase;">1/8 FINALS ARCHIVE</div>` +
+                                hist18.map(b => {
+                                    const win1 = b.w === 1, win2 = b.w === 2;
+                                    return `<div style="font-size:0.55rem; color:#666; margin-bottom:6px; line-height:1.2; background:rgba(255,255,255,0.01); padding:5px; border-radius:5px;">` +
+                                    `<div style="display:flex; justify-content:space-between; ${win1?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a1)}</span> <span>${b.sc1}</span></div>` +
+                                    `<div style="display:flex; justify-content:space-between; ${win2?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a2)}</span> <span>${b.sc2}</span></div></div>`;
+                                }).join('') + `</div>`;
+                    }
+                    eList.innerHTML = eHtml + hHtml;
+                }
+            } catch(e) {}
 
-            // 0.3 Update Header Navigation Links
-            document.getElementById('nav-news').innerHTML = `<i class="fi fi-rr-document"></i> ${t.news}`;
-            document.getElementById('nav-cup').innerHTML = `<i class="fi fi-rr-trophy"></i> ${t.cup}`;
-            document.getElementById('nav-radio').innerHTML = `<i class="fi fi-rr-broadcast-tower"></i> ${t.radio}`;
-            document.getElementById('nav-chart').innerHTML = `<i class="fi fi-rr-stats"></i> ${t.chart}`;
-            document.getElementById('nav-odds').innerHTML = `<i class="fi fi-rr-chart-line-up"></i> ${t.odds}`;
-            document.getElementById('nav-vote').innerHTML = `<i class="fi fi-rr-checkbox"></i> ${t.vote}`;
-
-            // 1. Qualified/Eliminated Labels
-            document.getElementById("q-list").previousElementSibling.innerHTML = `<i class="fi fi-rr-check"></i> ${t.qualified}`;
-            document.getElementById("e-list").previousElementSibling.innerHTML = `<i class="fi fi-rr-cross"></i> ${t.eliminated}`;
-
-            document.getElementById("q-list").innerHTML = DATA.qualifiers.map(c => `<div class="bubble"><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"><span class="artist-rich" style="font-size:0.85rem; color:#fff;">${decodeS(c.a)}</span></div>`).join("");
-            document.getElementById("e-list").innerHTML = DATA.eliminated.map(c => `<div class="elim-bubble"><div class="tooltip">${decodeS(c.a)}</div><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"></div>`).join("");
-            
-            // 2. Tournament Bracket
-            document.getElementById("cup-sect").querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-trophy"></i> ${t.standings}`;
-            let bracketHtml = "";
-            const battles = DATA.battles;
-            for (let i = 0; i < battles.length; i += 2) {
-                const b1 = battles[i], b2 = battles[i+1];
-                const renderMatch = (b) => {
-                    if (!b) return "";
-                    const isLive = b.status === 'LIVE';
-                    const liveHtml = isLive ? `<div class="live-tag"><div class="dot"></div>ON AIR</div>` : "";
-                    const winBadge = `<div class="winner-badge"><i class="fi fi-rr-star"></i></div>`;
-                    const getPct = (s) => parseInt(s.replace(/[^0-9]/g, '')) || 0;
-                    const p1 = getPct(b.sc1), p2 = getPct(b.sc2);
-                    return `<div class="card ${isLive?'status-live-pulse':''}" style="padding:20px; background:rgba(255,255,255,0.01);">${liveHtml}<div style="font-size:0.6rem; color:#777; font-weight:900; letter-spacing:0.1em; margin-bottom:12px;">${b.n}</div><div class="battle-team ${b.w===1?'winner-glow':''}" style="display:flex; align-items:center; gap:12px;">${b.w===1?winBadge:''}<img src="${getH(b.t1)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a1)}</span><span class="song-rich">${decodeS(b.s1||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p1}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc1}</span></div><div class="battle-team ${b.w===2?'winner-glow':''}" style="display:flex; align-items:center; gap:12px; margin-top:15px;">${b.w===2?winBadge:''}<img src="${getH(b.t2)}" class="heart-shape"><div><span class="artist-rich" style="font-size:1.1rem;">${decodeS(b.a2)}</span><span class="song-rich">${decodeS(b.s2||'')}</span><div class="vote-bar-bg"><div class="vote-bar-fill" style="width:${p2}%"></div></div></div><span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:1.3rem; font-style:italic;">${b.sc2}</span></div></div>`;
+            // 2. Enhanced QF Bracket
+            try {
+                const battles = DATA.battles.filter(b => b.id >= 9);
+                const qfDetails = {
+                    9: { name: "THE NORTHERN DUEL", tag1: "ELECTRO-CHAO", tag2: "NORDIC POP" },
+                    10: { name: "ETHNO COLLISION", tag1: "FOLK-CORE", tag2: "RETRO-POP" },
+                    11: { name: "MELODIC BATTLE", tag1: "SCANDI-POP", tag2: "BALKAN BEAT" },
+                    12: { name: "EXPERIMENTAL NIGHT", tag1: "HARDWARE", tag2: "POP-GLOW" }
                 };
-                const connector = `<div class="bracket-connector"><div class="connector-line"></div><div class="qf-label">ROAD TO ${b1.qf}</div></div>`;
-                bracketHtml += renderMatch(b1) + connector + renderMatch(b2);
-            }
-            document.getElementById("bracket").innerHTML = bracketHtml;
-            
-            // 3. WorldSound Chart
-            const chartTitle = document.getElementById("chart-sect").querySelector(".title-cyan");
-            if(chartTitle) chartTitle.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 31.03.2026`;
-            
-            document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => {
-                const rank = idx + 1;
-                const podiumClass = rank <= 3 ? `chart-podium-${rank}` : "";
-                const trendIcon = (c) => {
-                    if (c > 0) return `<span class="trend-up"><i class="fi fi-rr-arrow-small-up"></i></span>`;
-                    if (c < 0) return `<span class="trend-down"><i class="fi fi-rr-arrow-small-down"></i></span>`;
-                    return `<span class="trend-steady">═</span>`;
-                };
-                const maxPts = parseInt(DATA.chart[0].p) || 100;
-                const curPts = parseInt(i.p) || 0;
-                const barWidth = (curPts / maxPts) * 100;
-                return `<div class="bubble ${podiumClass}">
-                    <div class="trend-box">${trendIcon(i.c)}<span style="color:var(--pink); font-weight:900; font-family:'Inter Tight'; font-size:1.2rem; font-style:italic;">${i.r}</span></div>
-                    <img src="${i.img}" class="chart-cover">
-                    <div>
-                        <div class="artist-rich" style="font-size:0.95rem; color:var(--pink); font-style:italic;">${decodeS(i.a)}</div>
-                        <div class="song-rich" style="font-size:0.85rem;">${decodeS(i.s)}</div>
-                        <div class="score-bar-bg"><div class="score-bar-fill" style="width:${barWidth}%"></div></div>
-                    </div>
-                    <div class="chart-discovery">
-                        <a href="https://open.spotify.com/search/${encodeURIComponent(decodeS(i.a) + ' ' + decodeS(i.s))}" target="_blank" title="Spotify"><i class="fi fi-brands-spotify"></i></a>
-                        <a href="https://music.apple.com/search?term=${encodeURIComponent(decodeS(i.a) + ' ' + decodeS(i.s))}" target="_blank" title="Apple Music"><i class="fi fi-brands-apple"></i></a>
-                    </div>
-                    <span style="margin-left:auto; font-weight:900; color:var(--pink); font-family:'Inter Tight'; font-size:1.1rem; font-style:italic;">${i.p}</span>
-                </div>`;
-            }).join("");
 
-            // 4. Roadmap Timeline
-            document.getElementById("roadmap-sect").querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-calendar-lines"></i> ${t.roadmap}`;
-            if (DATA.roadmap) {
-                document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map((item) => {
-                    const isMajor = item.s === 'MAJOR';
-                    const isLive = item.s === 'LIVE';
-                    return `<div class="bubble ${isLive?'status-live-pulse':''}" style="padding: 8px 10px; margin-bottom:12px; border-radius:10px; background:rgba(255,255,255,0.02); border-left: 4px solid ${isLive?'var(--acid)':(isMajor?'var(--pink)':'#333')};">
-                        <div style="display:flex; justify-content:space-between; align-items:center;">
-                            <span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span>
-                            <span style="font-size:0.6rem; font-weight:900; color:${isLive?'var(--acid)':'#555'}; text-transform:uppercase;">${item.s}</span>
-                        </div>
-                        <div style="margin-top:5px;">
-                            <div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div>
-                            <div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div>
-                        </div>
-                    </div>`;
-                }).join("");
-            }
+                let bHtml = "";
+                battles.forEach((b, i) => {
+                    if(i % 2 === 0) {
+                        const b1 = b, b2 = battles[i+1];
+                        const rM = (m) => {
+                            if(!m) return "";
+                            const details = qfDetails[m.id] || { name: "QF MATCH", tag1: "INSIDER", tag2: "INSIDER" };
+                            const isL = m.status === 'LIVE';
+                            const p1 = parseInt(m.sc1) || 0, p2 = parseInt(m.sc2) || 0;
+                            return `<div class="card ${isL?'status-live-pulse':''}" style="padding:20px; background:rgba(255,255,255,0.02); margin-bottom:15px; border-top: 4px solid var(--cyan);">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                                    <span style="font-size:0.55rem; color:var(--cyan); font-weight:900; letter-spacing:0.2em;">${details.name}</span>
+                                    ${isL ? '<span class="live-tag" style="margin:0; padding:2px 6px; font-size:0.5rem;">LIVE</span>' : ''}
+                                </div>
+                                
+                                <div style="display:flex; align-items:center; gap:12px;">
+                                    <img src="${getH(m.t1)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
+                                    <div style="flex-grow:1;">
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a1)}</div>
+                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc1}</div>
+                                        </div>
+                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag1}</div>
+                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p1}%; background:var(--cyan);"></div></div>
+                                    </div>
+                                </div>
 
-            // 5. RUTOP Nominees
-            const voteSect = document.getElementById("vote-sect");
-            voteSect.querySelector(".section-title-base").innerText = t.vote_now;
-            voteSect.querySelector("b").innerText = t.deadline;
-            voteSect.querySelector("b:last-of-type").innerText = t.premiere;
-            voteSect.querySelector(".order-btn").innerHTML = `<i class="fi fi-rr-checkbox"></i> ${t.open_vote}`;
-            voteSect.querySelector("div[style*='font-weight:900']").innerText = t.listen;
+                                <div style="display:flex; align-items:center; gap:12px; margin-top:20px;">
+                                    <img src="${getH(m.t2)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
+                                    <div style="flex-grow:1;">
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a2)}</div>
+                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc2}</div>
+                                        </div>
+                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag2}</div>
+                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p2}%; background:var(--cyan);"></div></div>
+                                    </div>
+                                </div>
+                            </div>`;
+                        };
+                        bHtml += rM(b1) + (b2 ? `<div style="text-align:center; margin:10px 0; opacity:0.2;"><div style="height:1px; background:#fff; width:100px; margin:0 auto;"></div></div>` + rM(b2) : "");
+                    }
+                });
+                const bCont = document.getElementById("bracket"); if(bCont) bCont.innerHTML = bHtml;
+                const cSect = document.getElementById("cup-sect"); if(cSect) {
+                    const cTitle = cSect.querySelector(".section-title-base"); if(cTitle) cTitle.innerHTML = `<i class="fi fi-rr-trophy"></i> ${t.standings}`;
+                }
+            } catch(e) {}
 
-            if (DATA.nominees) {
-                document.getElementById("nominee-list").innerHTML = DATA.nominees.map((n) => {
-                    return `<div class="bubble" style="padding: 8px 10px; margin-bottom:10px; border-radius:10px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);">
-                        <img src="${n.img}" class="chart-cover" style="width:30px !important; height:30px !important; margin:0 12px 0 0; border-radius:10px !important;">
-                        <div style="overflow:hidden; flex-grow:1;">
-                            <div class="artist-rich" style="font-size:0.85rem; color:#fff; white-space:nowrap; text-overflow:ellipsis;">${decodeS(n.a)}</div>
-                            <div class="song-rich" style="font-size:0.75rem; opacity:0.6; white-space:nowrap; text-overflow:ellipsis;">${decodeS(n.s)}</div>
-                        </div>
-                        <a href="https://youtube.com/results?search_query=${encodeURIComponent(decodeS(n.a)+' '+decodeS(n.s))}" target="_blank" style="color:var(--acid); font-size:1rem; margin-left:10px;"><i class="fi fi-rr-play-alt"></i></a>
-                    </div>`;
-                }).join("");
-            }
-
-            // 6. Bookmakers Odds
-            document.getElementById("odds-sect").querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-chart-line-up"></i> ${t.bookmakers}`;
-            if (DATA.odds) {
-                document.getElementById("odds-list").innerHTML = DATA.odds.map((o) => {
-                    const prob = parseInt(o.p);
-                    return `<div class="bubble" style="padding: 8px 12px; margin-bottom:8px; border-radius:12px; background:rgba(0,245,255,0.02);">
-                        <span style="color:var(--cyan); font-weight:900; font-size:0.8rem; width:20px;">${o.r}</span>
-                        <img src="${getH(o.id)}" class="heart-shape" style="width:22px; height:22px; margin:0 10px;">
-                        <div style="flex-grow:1;">
-                            <div class="artist-rich" style="font-size:0.8rem; color:#fff;">${o.c}</div>
-                            <div class="score-bar-bg" style="width:100%; height:2px; margin-top:5px;"><div class="score-bar-fill" style="width:${prob}%; background:var(--cyan);"></div></div>
-                        </div>
-                        <span style="margin-left:auto; font-weight:900; color:var(--cyan); font-size:0.8rem;">${o.p}</span>
-                    </div>`;
-                }).join("");
-            }
-
-            // 7. News Feed with Search and Filter
-            const searchInput = document.getElementById("news-search");
-            searchInput.placeholder = t.search;
-            const searchVal = searchInput ? searchInput.value.toLowerCase().trim() : "";
-            
-            const filteredNews = DATA.news.filter(p => {
-                const title = (p.t || "").toLowerCase();
-                const body = (p.b || "").toLowerCase();
-                const matchesSearch = title.includes(searchVal) || body.includes(searchVal);
-                if (currentFilter === 'all') return matchesSearch;
-                const lowT = title.toLowerCase();
-                if (currentFilter === 'results') return matchesSearch && (lowT.includes('итоги') || lowT.includes('results'));
-                if (currentFilter === 'cup') return matchesSearch && (lowT.includes('cup') || lowT.includes('battle') || lowT.includes('финала'));
-                if (currentFilter === 'chart') return matchesSearch && (lowT.includes('chart') || lowT.includes('rutop'));
-                if (currentFilter === 'insider') return matchesSearch && (!lowT.includes('итоги') && !lowT.includes('results') && !lowT.includes('cup') && !lowT.includes('battle') && !lowT.includes('финала') && !lowT.includes('chart'));
-                return matchesSearch;
-            });
-
-            if (filteredNews.length === 0) {
-                document.getElementById("news-grid").innerHTML = `<div class="post-card" style="text-align:center; padding:100px; grid-column: 1 / -1;"><div class="post-h" style="font-size:2rem; background:var(--text); -webkit-background-clip:text;">NO MATCH FOUND</div><div class="post-b">Try searching for a different signal.</div></div>`;
-                return;
-            }
-
-            let currentPostDate = "";
-            document.getElementById("news-grid").innerHTML = filteredNews.map((p) => {
-                const pIdx = DATA.news.indexOf(p);
-                const votedIdx = localStorage.getItem('yv_vote_'+pIdx);
-                const isFeatured = pIdx === DATA.news.indexOf(DATA.news[0]) && searchVal === "" && currentFilter === 'all';
+            // 3. Roadmap & Chart & Vote & Odds
+            try {
+                const rs = document.getElementById("roadmap-sect"); if(rs) rs.querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-calendar-lines"></i> ${t.roadmap}`;
+                if(DATA.roadmap) document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map(item => `<div class="bubble ${item.s==='LIVE'?'status-live-pulse':''}" style="padding: 8px 10px; margin-bottom:12px; border-radius:10px; background:rgba(255,255,255,0.02); border-left: 4px solid ${item.s==='LIVE'?'var(--acid)':(item.s==='MAJOR'?'var(--pink)':'#333')};"><div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span><span style="font-size:0.6rem; font-weight:900; color:${item.s==='LIVE'?'var(--acid)':'#555'}; text-transform:uppercase;">${item.s}</span></div><div style="margin-top:5px;"><div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div><div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div></div></div>`).join("");
                 
-                const postDate = p.m.split(' | ')[0];
-                let dividerHtml = "";
-                if (postDate !== currentPostDate) {
-                    currentPostDate = postDate;
-                    dividerHtml = `<div class="date-divider"><span class="date-divider-val">${postDate}</span><div class="date-divider-line"></div></div>`;
+                const cs = document.getElementById("chart-sect"); if(cs) {
+                    const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 31.03.2026`;
+                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:30px; height:30px; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
                 }
 
-                const getTag = (t) => {
-                    const low = t.toLowerCase();
-                    if (low.includes('итоги') || low.includes('results')) return `<span class="post-tag tag-results"><i class="fi fi-rr-trophy"></i> Results</span>`;
-                    if (low.includes('cup') || low.includes('battle') || low.includes('финала')) return `<span class="post-tag tag-cup"><i class="fi fi-rr-sword"></i> Cup Battle</span>`;
-                    if (low.includes('chart') || low.includes('rutop')) return `<span class="post-tag tag-chart"><i class="fi fi-rr-stats"></i> Chart Update</span>`;
-                    return `<span class="post-tag tag-insider"><i class="fi fi-rr-info"></i> Insider News</span>`;
-                };
-
-                let pollHtml = "";
-                if (p.poll && p.poll.options) {
-                    pollHtml = `<div class="poll-box">${p.poll.options.map((opt, oIdx) => {
-                        const isVoted = votedIdx !== null;
-                        const isSelected = votedIdx == oIdx;
-                        const mockPct = Math.floor(100 / p.poll.options.length) + (oIdx % 3);
-                        return `<div class="poll-option ${isSelected?'voted':''} ${isVoted?'voted':''}" onclick="handleVote(${pIdx}, ${oIdx})" style="--p-width: ${isVoted ? mockPct : 0}%"><span>${replaceFlags(opt)}</span><span class="poll-percent">${mockPct}%</span></div>`;
-                    }).join("")}</div>`;
+                const os = document.getElementById("odds-sect"); if(os) {
+                    os.querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-chart-line-up"></i> ${t.bookmakers}`;
+                    document.getElementById("odds-list").innerHTML = DATA.odds.map(o => `<div class="bubble" style="padding:8px; margin-bottom:5px;"><span style="color:var(--cyan); font-weight:900; width:20px;">${o.r}</span><img src="${getH(o.id)}" class="heart-shape" style="width:20px; height:20px; margin:0 8px;"><div style="flex-grow:1; font-size:0.8rem;">${o.c}</div><span style="font-weight:900; color:var(--cyan);">${o.p}</span></div>`).join("");
                 }
-                const reactions = ['🔥', '❤️', '🏆', '😱'];
-                const reactionHtml = `<div class="reaction-bar">${reactions.map(emoji => {
-                    const rKey = `yv_react_${pIdx}_${emoji}`;
-                    const isReacted = localStorage.getItem(rKey) !== null;
-                    const count = (p.t.length % 7) + (isReacted ? 1 : 0);
-                    return `<div class="reaction-btn ${isReacted?'active':''}" onclick="handleReaction(${pIdx}, '${emoji}')"><span>${emoji}</span><span class="reaction-count">${count}</span></div>`;
-                }).join("")}</div>`;
 
-                return `${dividerHtml}<div class="post-card ${isFeatured?'featured':''}" id="post-${pIdx}"><span class="post-meta">${p.m} | ${isFeatured?'EDITORIAL FEATURE':'YOURVISION INSIDER'}</span>${getTag(p.t)}<div class="post-h">${replaceFlags(p.t.replace(/\*/g, ""))}</div><div class="post-content-wrap">
-                    ${p.isVideo && p.vid ? `
-                        <video class="post-media" autoplay loop muted playsinline controls style="background:#000;">
-                            <source src="${p.vid}" type="video/mp4">
-                        </video>
-                    ` : (p.img ? `<img src="${p.img}" class="post-media">` : "")}
-                    <div style="flex-grow:1;">
-                        <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
-                        <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
-                    </div>
-                </div>${pollHtml}${reactionHtml}<div class="post-actions">
-                    <button class="action-btn" id="trans-btn-${pIdx}" onclick="translatePost(${pIdx})"><i class="fi fi-rr-globe"></i> ${t.translate}</button>
-                    <button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> ${t.copy}</button>
-                    <a href="https://t.me/share/url?url=https://levdanskiy.github.io/YourEurovision-Hub/%23post-${pIdx}&text=${encodeURIComponent('Check this out on YourVision Hub!')}" target="_blank" class="action-btn share"><i class="fi fi-rr-paper-plane"></i> ${t.share}</a>
-                    <div class="read-tag"><i class="fi fi-rr-clock"></i> 1.2 ${t.read_min}</div>
-                </div></div>`;
-            }).join("");
+                const vs = document.getElementById("vote-sect"); if(vs) {
+                    vs.querySelector(".section-title-base").innerText = t.vote_now;
+                    const vbs = vs.querySelectorAll("b"); if(vbs.length>=2){vbs[0].innerText=t.deadline; vbs[1].innerText=t.premiere;}
+                    const vBtn = vs.querySelector(".order-btn"); if(vBtn) vBtn.innerHTML = `<i class="fi fi-rr-checkbox"></i> ${t.open_vote}`;
+                    if(DATA.nominees) document.getElementById("nominee-list").innerHTML = DATA.nominees.map(n => `<div class="bubble" style="padding: 8px 10px; margin-bottom:10px; border-radius:10px; background:rgba(204,255,0,0.03); border:1px solid rgba(204,255,0,0.1);"><img src="${n.img}" class="chart-cover" style="width:30px !important; height:30px !important; margin:0 12px 0 0; border-radius:10px !important;"><div style="overflow:hidden; flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:#fff;">${decodeS(n.a)}</div><div style="font-size:0.75rem; opacity:0.6;">${decodeS(n.s)}</div></div><a href="https://youtube.com/results?search_query=${encodeURIComponent(decodeS(n.a)+' '+decodeS(n.s))}" target="_blank" style="color:var(--acid); font-size:1rem; margin-left:10px;"><i class="fi fi-rr-play-alt"></i></a></div>`).join("");
+                }
+            } catch(e) {}
+
+            // 7. News
+            try {
+                const nSearch = document.getElementById("news-search"); if(nSearch) {
+                    nSearch.placeholder = t.search;
+                    const sVal = nSearch.value.toLowerCase().trim();
+                    const fNews = DATA.news.filter(p => (p.t+p.b).toLowerCase().includes(sVal));
+                    let curD = "";
+                    document.getElementById("news-grid").innerHTML = fNews.map(p => {
+                        const pIdx = DATA.news.indexOf(p);
+                        const isF = pIdx === 0 && sVal === "" && currentLang === 'ru';
+                        const pD = p.m.split(' | ')[0];
+                        let dH = ""; if(pD !== curD) { curD = pD; dH = `<div class="date-divider"><span class="date-divider-val">${pD}</span><div class="date-divider-line"></div></div>`; }
+                        return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
+                            <span class="post-meta">${p.m}</span>
+                            <div class="post-h">${replaceFlags(p.t)}</div>
+                            <div class="post-content-wrap">
+                                ${p.img ? `<img src="${p.img}" class="post-media">` : ""}
+                                <div style="flex-grow:1;">
+                                    <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
+                                    <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
+                                </div>
+                            </div>
+                            <div class="post-actions">
+                                <button class="action-btn" onclick="translatePost(${pIdx})" id="trans-btn-${pIdx}"><i class="fi fi-rr-globe"></i> ${t.translate}</button>
+                                <button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> ${t.copy}</button>
+                            </div>
+                        </div>`;
+                    }).join("");
+                }
+            } catch(e) {}
         }
+
 
         async function translatePost(idx) {
             const t = LANGS[currentLang];

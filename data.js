@@ -1,6 +1,66 @@
 var DATA = {
     "battles": [
         {
+            "id": 9,
+            "n": "QF #1",
+            "qf": "TO SF1",
+            "t1": "fi",
+            "a1": "Linda Lampenius and Pete Parkkonen",
+            "s1": "Liekinheitin",
+            "sc1": "0%",
+            "t2": "dk",
+            "a2": "Søren Torpegaard Lund",
+            "s2": "Før vi går hjem",
+            "sc2": "0%",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
+            "id": 10,
+            "n": "QF #2",
+            "qf": "TO SF1",
+            "t1": "gr",
+            "a1": "Akylas",
+            "s1": "Ferto",
+            "sc1": "0%",
+            "t2": "ge",
+            "a2": "Bzikebi",
+            "s2": "On Replay",
+            "sc2": "0%",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
+            "id": 11,
+            "n": "QF #3",
+            "qf": "TO SF2",
+            "t1": "se",
+            "a1": "Felicia",
+            "s1": "My System",
+            "sc1": "0%",
+            "t2": "md",
+            "a2": "Satoshi",
+            "s2": "Viva, Moldova!",
+            "sc2": "0%",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
+            "id": 12,
+            "n": "QF #4",
+            "qf": "TO SF2",
+            "t1": "gb",
+            "a1": "Look Mum No Computer",
+            "s1": "Eins, Zwei, Drei",
+            "sc1": "0%",
+            "t2": "bg",
+            "a2": "Dara",
+            "s2": "Bangaranga",
+            "sc2": "0%",
+            "w": 0,
+            "status": "WAITING"
+        },
+        {
             "id": 1,
             "n": "Match #1",
             "qf": "TO QF1",
@@ -112,13 +172,13 @@ var DATA = {
             "t1": "mt",
             "a1": "Aidan",
             "s1": "Bella",
-            "sc1": "LIVE",
+            "sc1": "43%",
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
-            "sc2": "",
-            "w": 0,
-            "status": "LIVE"
+            "sc2": "57%",
+            "w": 2,
+            "status": "FINISHED"
         }
     ],
     "chart": [
@@ -392,7 +452,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5601",
             "t": "🇬🇧 RESULTS: ВЕЛИКОБРИТАНИЯ ПРОХОДИТ В 1/4 ФИНАЛА - КИПР ВЫБЫВАЕТ",
             "b": "Седьмой поединок плей-офф YourVision Cup 2026 завершился победой британского эксперимента над средиземноморским попом. Аудитория сделала выбор в пользу смелого аналогового звучания Сэма Баттла.\n📊 ИТОГИ ГОЛОСОВАНИЯ:\n• ПОБЕДИТЕЛЬ: 🇬🇧 United Kingdom (Look Mum No Computer) - 56% ★\n• Второе место: 🇨🇾 Cyprus (Antigoni) - 44%\nВеликобритания забирает предпоследнюю путевку в четвертьфинал. Для Кипра турнир завершается в 1/8 финала. «Jalla» получила мощную поддержку, но этого не хватило, чтобы остановить британский «Eins, Zwei, Drei».\n🚨 NEXT: Финальный баттл 1/8 финала - Malta vs Bulgaria - стартует уже скоро.\n🔗 ИНТЕРАКТИВНАЯ СЕТКА: Хаб YourVision\n⏱️ Время чтения: 0.9 мин | 🇬🇧 YourVision: Results",
-            "img": "https://cdn4.telesco.pe/file/l0yc2LyBRPqJfM60n8yRwUNbk-rdtcY6trMaqFiJIezwuNiDLzUYBFsjWtUrTR9YnIKbhTEMpGjxauFmuHdvuadA8gIw56O04mhSKTGaDsSHT5apWxtNYIptRcxAI40p0CD5KcTq7xnp5xgPsuLuh3_nC3e8c2VaImUayylEZdcz2XsM1-edSajPDgvzy93OCnajA7nsHJ7LEaJKdSQrRQv-qtYNyGUr79at3jbGtQwqomVC0RSdxLEMRB2LmwO0z05aTjFnYPAqYK0syYHC4lUuRW6B27ByHu6VokV_GgIyANXSGEXhO2FZFVsRruOII6FwTYUS63ER_baD1P0Avg.jpg",
+            "img": "https://cdn4.telesco.pe/file/kTe803kHkNPI3NgP4xKLtv5R9mO0ZQPZUatHjhORc2pWknw1kcgBTvagQi0qLZvn96I0pEbSsUR1CmSQwFlb1Aum4m2a8TJa7F3-0bTF-CkZs1EU_ubzQ51uREs0akvoyABywzubVjFY0x6tiERqf0CdoMyp8GwIaOPyXqEQ2NX5iIrPCem5cKsz3CFrAB4yyWVR7SaasxWZ8TZ1Hdo8O2KMG1CKaDX0RlL5yzIMw8H_wo0cvu_TMNKGBOMNKHmmCxfUN8EKnobjOho0VIjZex82BoJf1vh40dprXmfJTzlRb8xXI5I2kvCo41baanOQczeeVSj5bc6x5Sa7kgWmqA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775027344.0,
@@ -405,7 +465,7 @@ var DATA = {
             "t": "🇸🇪 ШВЕЦИЯ: FELICIA ВЫПУСТИЛА КАВЕР-ВЕРСИЮ «FRÄMLING»",
             "b": "Представительница Швеции на Евровидении 2026 года, Felicia, представила официальный кавер на одну из самых знаковых песен в истории шведского участия - «Främling». Оригинальная композиция в исполнении Каролы принесла стране третье место на конкурсе 1983 года в Мюнхене.\n🔗 СМОТРЕТЬ: YouTube",
             "img": "",
-            "vid": "https://cdn4.telesco.pe/file/0db8e24302.mp4?token=tgbYjDC0rIutL86CLo26iseyLKmYHwrViaBqsv8SgU_sdaiFfUx4SdbRkflBlKoUCuQqFtQ2sH-NQgM8dwTplR_fw8ACYCrZH8W20rDXOMEInjEwaDRmCV5SgqsMSbrQIFjy2Mj2Pmanx66mK5w-tCChYVc_VymvhvDW8VnoHG4PiWn7SjLOdpNLllmN3ztzirsc1QE3xZmfiBJOtBip0Zurm2EoVwDHZjiT33xTv7cG1_v_OZiGSIgiR00LlrweQhu787g6StE7HWU4E8LAWfO_w4TcJeT5clWGsDzcbTnqH4DAj0Yt1M-xZdkVX65EkGrl_zAwgTO4OQOzZ-4jEA",
+            "vid": "https://cdn4.telesco.pe/file/0db8e24302.mp4?token=bbtUZNvaeIW8B5fQIjzbzNOFwZA4yN2JiW71SOc6vtbpt8mc4zkXo3dKW0P1Z2JLSeWaUQ4MUsnNDNxsqyAua7lqyla2xNpcqgUL6Ti9jeL220f4BNqeJKlsRFxIxQBh2SNVSx92z7OTROnq2Kq4P8gekCcpf5KhtAGxAYfvrzP1dWv2eOKOwNtPNsYTGamEqgt0X3ymW9H9-vbenS71k7RuWReSR0vPFLR0EQ8zUtWtTveJxywsYTFVjI_wLDaTybJf9b3lSaGmwuOchEf3se3UOSLZVqQpuNzgaQVtY_WfMcYiwrH5RAKkC1f15bleAT3H0f0ibXqLbY9pxXyMsw",
             "isVideo": true,
             "ts": 1775027139.0,
             "poll": null
@@ -536,7 +596,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5590",
             "t": "📊 #YV_CUP: ИТОГИ 1/8 ФИНАЛА - BATTLE #6",
             "b": "Шестой поединок плей-офф завершился одной из самых громких сенсаций турнира. Итальянская классика не устояла под натиском кишиневского индастриала. Эксперты YourVision Cup сделали ставку на энергию и честность нового звука.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇲🇩 MOLDOVA (Satoshi): 67%\n🇮🇹 ITALY (Sal Da Vinci): 33%\nСатоши с его «Viva, Moldova!» забирает шестую путевку в четвертьфинал, показав колоссальный отрыв в 34%. Саль Да Винчи, несмотря на безупречный вокал, покидает турнир. YourVision Cup 2026 подтверждает: аудитория жаждет перемен и драйва.\nИТОГИ БИТВЫ:\n🥇 MOLDOVA (Satoshi): 67% - ПРОХОД В 1/4 ФИНАЛА 🇲🇩\n🥈 ITALY (Sal Da Vinci): 33% - ВЫЛЕТ 🇮🇹\nИталия завершает свою кампанию. В четвертьфинале Молдова встретится с победителем пары Sweden vs Armenia (Швеция уже ждет!).\nА прямо сейчас стартует седьмая битва: Cyprus vs United Kingdom! Голосуйте!\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/EDKGJMV3vWFh4q4u3tWxpkXxevfOVohRIEynkXduK2n51X2gw-GFjQplOCrWEvimc3SQN6DsXnKI4SrKu8OL5IMDogmDLYkq-KOf9WGq-zATCeUUUYbWmwRzMOGWnFLbapDMWzs5WRfgWE_uRoW-mAik3z4KuKKsh05XYYgwP4hCZ8sBYns5vrGs59y3JD5uYSFt7Drp1WIXn02QBVpXHrdwNES4Kz2qm1JtES8AueCLqzWpeNRMu6H77hIah5DJWNOIIPLubMDP_4OBumVecdl35Jfl87ncg_jHcm8KGlYRZUeiH_HmOL-Zxju_8Yjjmk2gHL-GCJNVtlllWojRYw.jpg",
+            "img": "https://cdn4.telesco.pe/file/CKy06Dht1QBk4aBYImmgYwl50vyLn01cIySXTG21_9kYZOFYyiW--LHiXig23CwoEnYClqzjdnshtBZbJgrmxJi9mXOaJRsxkK--LY8GRdbCEGR4FXvxQWJwPHiCZsoi2VbYf7UToQqrsZLyXxbdQfaMSYChVq6mCwb8NwKC-5AuU1D-GOi3-4I2j5Z9Tvy93i64ydNW-k_dapY__H0dwEHtyB1bvd6gP5sgMQVeFJEJEtggGswyATpjAtXyJ1d8YWHNTBJnuFQuVST_hf1JnbpQmFhl_K1wej5rNWw3rhnpV6jXJHzs8TtuKZOpc5j4542bZgRy4KHuiPYrNGLjOQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774942358.0,
@@ -578,7 +638,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5908",
             "t": "🏛 #FRAGMENT: ТЕНИ КАК НЕГАТИВ ГОРОДА - ФИЛОСОФИЯ ИСЧЕЗНОВЕНИЯ",
             "b": "В последний день марта тени становятся честнее зданий. Если фасад - это маска, выстроенная для зрителя, то тень - это его «негатив», обнажающий истинные пропорции и изъяны. В этом северном городе, застывшем на пороге апреля, мы наблюдаем за тем, как графика солнечного света стирает материальность камня.\nТень на брусчатке не лжет. Она не пытается казаться вечной. Она исчезает вместе с поворотом планеты, вместе с уходящим мартом, не оставляя после себя ничего, кроме этого короткого упоминания в Marginalia. Сегодня мы смотрим не на архитектуру, а на ее отсутствие - на те темные провалы, которые и делают свет видимым. Это момент абсолютной честности: Март уходит, забирая с собой свои длинные, холодные тени, оставляя нас один на один с ослепительной пустотой грядущего апреля.\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Marginalia",
-            "img": "https://cdn4.telesco.pe/file/KFbihShFVC5EV2NnMIRwtII5KoxY0PeUOVdPTWAPHSO_NOnWPCrn5Dj9bVt4mlFEJUbUzq4NhvwBmBZ9GANLHSNWURBFz8IVAtw5aXz1hrTxZbX4TQSrMN32EN9P9fmt8ZrQAPhqg1H1F-J5LeQIWjXgwhKD49ju7Q7SebbChiB5B06_mnMmGi0GPefTkBbpz01qs8nRHmdAjkvz4ign1EtJf-NhQQRQnPEA39Fbwld2L1jxA2F8LAAHPsuziWg42tlG1oh-a_kRvlKEJfvYnxsywFlkyX69jtyFqoKS30K9mWGiFTDljTAUIKjzEt__wxLnq7icWQJUVesrS5hIxw.jpg",
+            "img": "https://cdn4.telesco.pe/file/OngEAcr7gdVtB2GHUyH82iS9aw3QGqJPwAHkAXzBhJlQo9BYrMy5gaq-iQWvNpC_B82kctwzXvmdFOISq0g8FBcw1m9G7C-MW_P-1i2eQZM8BdSNv6z7C3UhH1qKJ5d7CpmAOM6TPb4iLTMCz1K8IKpQ_sbbwHS-cNDnPnenTZkrpNEq_sc01yh_Lp9hmAeR5EI1ExndZjlXZuTV1cImxlMUoDaceb5Uk_OrooHdRVK9gENHvWprZFg8mkeZ2LttMDwWrWfNMC3pDVBWmGaZTiX8RZdJGgbPzACL1tu0cWRDpSTp5Ff-JPY3K2OnVL2tD1Q7lOYhtxWgcG0IiDRFaw.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774936838.0,
@@ -590,7 +650,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5587",
             "t": "❤️ GLOBAL: EUROVISION ASIA - ЭКСПАНСИЯ НАЧИНАЕТСЯ В БАНГКОКЕ",
             "b": "Европейский вещательный союз (EBU) официально подтвердил: в 2026 году легендарный формат выходит на новый уровень. Дебютный «Eurovision Song Contest Asia» пройдет в столице Таиланда, ознаменовав собой самую масштабную главу в 70-летней истории бренда.\nDATA & LOGISTICS:\n• Хост-город: Бангкок, Таиланд 🇹🇭\n• Дата финала: Суббота, 14 ноября 2026 года.\n• Вещатель-партнер: Channel 3 (Таиланд).\n• Организаторы: EBU, Voxovation, S2O Productions.\nПЕРВЫЙ ПУЛ УЧАСТНИКОВ (10 СТРАН):\nНа текущий момент участие подтвердили: Южная Корея 🇰🇷, Таиланд 🇹🇭, Вьетнам 🇻🇳, Малайзия 🇲🇾, Филиппины 🇵🇭, Бангладеш 🇧🇩, Бутан 🇧🇹, Камбоджа 🇰🇭, Лаос 🇱🇦 и Непал 🇳🇵. Список будет расширяться в ближайшие месяцы.\n🎙 ГОЛОСА ИНДУСТРИИ\nМартин Грин (Директор ESC, EBU):\n«В год 70-летия конкурса особенно символично открыть эту главу в Азии - регионе, богатом творчеством и талантами. Мы строим проект, который отразит идентичность региона, оставаясь верным духу Евровидения».\nПитер Сеттман (CEO Voxovation):\n«Мы создаем шоу, где артисты и фанаты соединятся по-новому. Я вырос на Евровидении, и принести это невероятное событие на новый континент - нечто особенное».\nГотовы к битве азиатских тигров на сцене?\n⏱️ Время чтения: 1.5 мин | 🌏 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/mpO4Q82keRKrmT5tzqiKAp6gerdUK7eiGOcCyrZjDG-42rwG44MLLSlYbZz8T1WME7b1OBOHqzVJUXJ9xxnwxDQP6impslFHdlSUXFMPn8Chk0tkIx5JD4jF0y_ZwYGmLj8T-BD67t2rC5-O5D3IAQAxwCEjpV9Ky9PCvdZUalE2vxJd3L4B5H8wPFrc1aWUPpXGAc7_3oi1ZkUD7ZhiHXZy_3CFmPZ3rEVog4Qt4h9ubYU7G7ikApl5MeVhXqKV9hOZDjNqt9JqIoh5PdmB2eJbvbk6iMUjm7d8EWgK7JP4s_YTEWrswG7ZFJfU87hiX87eDfJBkE81-Sn17wQ70A.jpg",
+            "img": "https://cdn4.telesco.pe/file/Ziwraa50XVzYS-zyFiHdjoHm-sWsu0MqMQ9JOSFoRG3Qy5LJMIIVS3GOsRHKHVfbD_Vo_t705ECjiFJZ1XJ2rzLMSdLeVfQZ0K2mh8bKtswS5_4VmUzHgrQtW-WHNlnAt6SgtgtTcc6PtnCy0qdDAj1sdolC8IIgQKh2AmAN5DcgzOwPm7QKNHAiRmZ_TAp7ypo1YLSKC711I08ghV-ijq_VkOfCCwGTWYcC4N6rdWFteN7yp6mhcKTcusk6mZ_7vPZwi7zKB097_M8lIH-mjcOyG9gPzy_yxyuxK9HuMnEXcDhd3v8NvPXkgC8BLxDnPX2QmYaJ-ufQD6BPS2pl1g.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1774921107.0,
@@ -612,38 +672,35 @@ var DATA = {
     "qualifiers": [
         {
             "id": "fi",
-            "a": "L. Lampenius & P. Parkkonen",
-            "s": "Liekinheitin"
+            "a": "Linda & Pete"
         },
         {
             "id": "dk",
-            "a": "S. Torpegaard Lund",
-            "s": "Før vi går hjem"
+            "a": "Søren"
         },
         {
             "id": "gr",
-            "a": "Akylas",
-            "s": "Ferto"
+            "a": "Akylas"
         },
         {
             "id": "ge",
-            "a": "Bzikebi",
-            "s": "On Replay"
+            "a": "Bzikebi"
         },
         {
             "id": "se",
-            "a": "Felicia",
-            "s": "My System"
+            "a": "Felicia"
         },
         {
             "id": "md",
-            "a": "Satoshi",
-            "s": "Viva, Moldova!"
+            "a": "Satoshi"
         },
         {
             "id": "gb",
-            "a": "Look Mum No Computer",
-            "s": "Eins, Zwei, Drei"
+            "a": "LMNC"
+        },
+        {
+            "id": "bg",
+            "a": "Dara"
         }
     ],
     "eliminated": [
@@ -944,33 +1001,21 @@ var DATA = {
     ],
     "roadmap": [
         {
-            "d": "01.04",
-            "t": "1/8 FINAL #8",
-            "e": "🇲🇹 Aidan vs 🇧🇬 Dara",
-            "s": "LIVE"
-        },
-        {
-            "d": "04.04",
-            "t": "JESC POLAND",
-            "e": "The Voice Kids: Blind Auditions",
+            "d": "02.04",
+            "t": "DAY OFF",
+            "e": "Rest & Strategy Session",
             "s": "WAITING"
         },
         {
-            "d": "11.04",
-            "t": "PRE-PARTY",
-            "e": "Eurovision in Concert (Amsterdam)",
-            "s": "WAITING"
-        },
-        {
-            "d": "12.05",
-            "t": "SEMI-FINAL 1",
-            "e": "Vienna 2026: Night One",
+            "d": "03.04",
+            "t": "1/4 FINAL #1",
+            "e": "🇫🇮 Linda & Pete vs 🇩🇰 Søren",
             "s": "MAJOR"
         },
         {
-            "d": "16.05",
-            "t": "GRAND FINAL",
-            "e": "Vienna 2026: The Crowning",
+            "d": "04.04",
+            "t": "1/4 FINAL #2",
+            "e": "🇬🇷 Akylas vs 🇬🇪 Bzikebi",
             "s": "MAJOR"
         }
     ]
