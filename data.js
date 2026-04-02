@@ -345,6 +345,18 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "02.04 | 09:23",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5608",
+            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА ЗАВЕРШЕНА - СЕТКА 1/4 ОПРЕДЕЛЕНА",
+            "b": "Последний слот в четвертьфинале забирает Dara. Болгарская поп-дива с треком «Bangaranga» набрала 57% голосов, остановив Айдена из Мальты.\n🏆 ИТОГИ BATTLE #8:\n🇧🇬 Bulgaria (Dara): 57% (Winner)\n🇲🇹 Malta (Aidan): 43%\nСегодня в кубке ВЫХОДНОЙ. Восемь сильнейших артистов сезона 2026 готовы к решающим битвам за выход в полуфинал.\nПАРЫ 1/4 ФИНАЛА (START: 03.04):\n1. QF1: THE NORTHERN DUEL\n🇫🇮 Linda & Pete vs 🇩🇰 Søren Torpegaard\nБитва Скандинавии: скрипичный драйв против датского меланхоличного попа.\n2. QF2: ETHNO COLLISION\n🇬🇷 Akylas vs 🇬🇪 Bzikebi\nСтолкновение греческого и грузинского бэнгеров.\n3. QF3: MELODIC BATTLE\n🇸🇪 Felicia vs 🇲🇩 Satoshi\nЧистый шведский продакшн против молдавской энергии.\n4. QF4: EXPERIMENTAL NIGHT\n🇬🇧 Look Mum No Computer vs 🇧🇬 Dara\nБитва за SF2: аналоговые синтезаторы против мощного поп-вокала.\nЛОГИКА: Пары сформированы согласно турнирной сетке. Нас ждут четыре дня экстремального голосования. Кто из этой восьмерки достоин короны в Вене?\n🔗 СЛЕДИТЬ ЗА СЕТКОЙ: Hub\n⏱️ Время чтения: 1.5 мин | 🏆 YourVision: Cup",
+            "img": "https://cdn4.telesco.pe/file/kSRlPD5m2kNjDJo5hrdLJvTT0nVP7AnK9IFk99YkE_zTzyCA8AIDuywA_0-xDpNvK2TLi2cNbNC_ODfMTSNsYpyZXnjYLxefLuJZtRqVQMZaVaPxVvvzrqFt8FwlqQuoDbbx-4ExGOYEQFaybTh1BtOz0EWbZwWMJYxfycLlvhOEZCmmVY_gI2O979N7gz8KO52vTeIDK99HO4OutDmB7eX7Alo19gZvt85UjrK5dJOQtkdzKwdwmsPUJ8qNg30JnKmFogEsg9G04RUg6xI5ClBn-DK19JaE3GsTRrWaNxFSlucdb7MX8OPAtJYiqK0Iq3OItBQ11dwuVwl8BqMxJw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775121789.0,
+            "poll": null
+        },
+        {
             "m": "01.04 | 18:32",
             "id": "70",
             "u": "https://t.me/YourEurovision/5607",
@@ -642,18 +654,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1774936838.0,
-            "poll": null
-        },
-        {
-            "m": "31.03 | 01:38",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5587",
-            "t": "❤️ GLOBAL: EUROVISION ASIA - ЭКСПАНСИЯ НАЧИНАЕТСЯ В БАНГКОКЕ",
-            "b": "Европейский вещательный союз (EBU) официально подтвердил: в 2026 году легендарный формат выходит на новый уровень. Дебютный «Eurovision Song Contest Asia» пройдет в столице Таиланда, ознаменовав собой самую масштабную главу в 70-летней истории бренда.\nDATA & LOGISTICS:\n• Хост-город: Бангкок, Таиланд 🇹🇭\n• Дата финала: Суббота, 14 ноября 2026 года.\n• Вещатель-партнер: Channel 3 (Таиланд).\n• Организаторы: EBU, Voxovation, S2O Productions.\nПЕРВЫЙ ПУЛ УЧАСТНИКОВ (10 СТРАН):\nНа текущий момент участие подтвердили: Южная Корея 🇰🇷, Таиланд 🇹🇭, Вьетнам 🇻🇳, Малайзия 🇲🇾, Филиппины 🇵🇭, Бангладеш 🇧🇩, Бутан 🇧🇹, Камбоджа 🇰🇭, Лаос 🇱🇦 и Непал 🇳🇵. Список будет расширяться в ближайшие месяцы.\n🎙 ГОЛОСА ИНДУСТРИИ\nМартин Грин (Директор ESC, EBU):\n«В год 70-летия конкурса особенно символично открыть эту главу в Азии - регионе, богатом творчеством и талантами. Мы строим проект, который отразит идентичность региона, оставаясь верным духу Евровидения».\nПитер Сеттман (CEO Voxovation):\n«Мы создаем шоу, где артисты и фанаты соединятся по-новому. Я вырос на Евровидении, и принести это невероятное событие на новый континент - нечто особенное».\nГотовы к битве азиатских тигров на сцене?\n⏱️ Время чтения: 1.5 мин | 🌏 YourVision: Global",
-            "img": "https://cdn4.telesco.pe/file/Ziwraa50XVzYS-zyFiHdjoHm-sWsu0MqMQ9JOSFoRG3Qy5LJMIIVS3GOsRHKHVfbD_Vo_t705ECjiFJZ1XJ2rzLMSdLeVfQZ0K2mh8bKtswS5_4VmUzHgrQtW-WHNlnAt6SgtgtTcc6PtnCy0qdDAj1sdolC8IIgQKh2AmAN5DcgzOwPm7QKNHAiRmZ_TAp7ypo1YLSKC711I08ghV-ijq_VkOfCCwGTWYcC4N6rdWFteN7yp6mhcKTcusk6mZ_7vPZwi7zKB097_M8lIH-mjcOyG9gPzy_yxyuxK9HuMnEXcDhd3v8NvPXkgC8BLxDnPX2QmYaJ-ufQD6BPS2pl1g.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774921107.0,
             "poll": null
         },
         {
