@@ -815,104 +815,89 @@ var DATA = {
     ],
     "nominees": [
         {
-            "a": "HOLLYFLAME",
-            "s": "ТОНУ",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/81/2e/28/812e2827-3153-778e-e04f-4811e4df6494/0.jpg/400x400bb.jpg"
+            "a": "Satoshi",
+            "s": "Viva, Moldova!",
+            "img": "https://cdn4.telesco.pe/file/UGQFwS3vKjK7x4qXsP0Lbu3fgs2_URUmN1nyAe7nObsT6Pg8T8ZiQ494teXJYhKQZScjHrUzUBw6QynhuQn0z3wNVQvSzyS5Fk6YPGL5rOGuhYIBnrE9I1z7en9LWdn1ymCkecUEMav2YuWcByL0SGaK3qxPMB3sPPqIWPCX16Lr3NqkSWg43eqHTcRwI1otJdo1gIc4EY9F23mlO91PLWfRgfs11CwBT8UMWYpOwq_F-0HRofzH2STcZEV55_JdZ4NwNNwREDme_FjJx0XoqdC88o9Mxt6nXNq2xstKLjjww8YLnM2UXn9r_TKC628uqLXR6IU_lfOSf58U1C1S5Q"
         },
         {
-            "a": "SQWOZ BAB",
-            "s": "КУПЕР",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/ff/19/e5ff194d-5f9b-f4a3-835e-6484b50579cf/cover.jpg/400x400bb.jpg"
+            "a": "Felicia",
+            "s": "My System",
+            "img": "https://cdn4.telesco.pe/file/lrz9FeROCD8a_R9s5SY-7Zmn353J4hMyNzKi4W1hI71_ydx74FMfjjTjFOlvF4cVEiBnGRuVfV59Gux8Y-duuAj0I8vcdh9_yoajA5827Xftpqr1b7dyfm_Zn9kUZ1DuzPtrRUBwdyfrmVCR2VcmxllA9GUQtnj8U7q6YlKQ3eSmkQuErg12i9CtrLBchU9rWFKzbc-raZgZRIGN128PyHZT1ABgXDe_0nMubsoM6Qcq0q6AvnvZIC44nRcEb9k4TVPSffufFpk4ZWL9bC5gDnLXq648z2tqqm2nctWo7SHAL7mWdU2YrRwpJRxcn32KLySU_hCG-KZzTE_BpUCn8A.jpg"
         },
         {
-            "a": "ICEGERGERT & ZIVERT",
-            "s": "БАНК",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/2d/39/782d39a5-f7f2-4565-4b25-a1430343f8a3/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "UNCLEFLEXXX",
-            "s": "SMS",
-            "img": "https://i.scdn.co/image/ab67616d0000b2735a1ab9191ed8bcdbf1bac491"
-        },
-        {
-            "a": "ВАНЯ ДМИТРИЕНКО",
-            "s": "РТУТЬ",
-            "img": "https://i1.sndcdn.com/artworks-EgxKKeZ3XVE2-0-t500x500.jpg"
-        },
-        {
-            "a": "5STA FAMILY",
-            "s": "РАЗ, ДВА",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/0b/f6/8f0bf6e8-07ee-71df-0c89-9d466d778cd1/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "MONA",
-            "s": "ПОПРОШУ ТЕБЯ",
-            "img": "https://i.scdn.co/image/ab67616d0000b273263162ce269963fe01a5d2f3"
-        },
-        {
-            "a": "ЛЮБОВЬ УСПЕНСКАЯ & JAKONE",
-            "s": "ПЛАКАЛА НАДЕЖДА",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/49/8a/b7498ad5-2616-c218-6520-a1bf0fff5b5a/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "FILATOV & KARAS",
-            "s": "ВКЛЮЧИ МУЗЫКУ",
+            "a": "Lelek",
+            "s": "Andromeda",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
         },
         {
-            "a": "МОТ",
-            "s": "НАМЁК НА НАС",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/51/1b/6a511b4a-b11a-a854-0a5c-637f4ad768ae/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "SABI & MIA BOYKA",
-            "s": "БАЗОВЫЙ МИНИМУМ",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "GAYAZOV$ BROTHER$",
-            "s": "РУССКАЯ РУЛЕТКА",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "XCHO",
-            "s": "ТЫ И Я",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "ЛЁША СВИК & NYUSHA",
-            "s": "ПРОБУДИ",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "MACAN",
-            "s": "ОСТАНЬСЯ ОБРАЗОМ",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "LYRIQ",
-            "s": "КАССЕТЫ",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/12/8e/b7128e10-03f8-d81e-ba7f-4e5f76fb177d/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "JONY",
-            "s": "ПОМНЮ",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "SERYABKINA",
-            "s": "АСФАЛЬТ",
+            "a": "Akylas",
+            "s": "Ferto",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
         },
         {
-            "a": "ARTIK & ASTI",
-            "s": "МОДНЫЙ ПОП",
+            "a": "Bandidos do Cante",
+            "s": "Rosa",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/51/1b/6a511b4a-b11a-a854-0a5c-637f4ad768ae/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Bzikebi",
+            "s": "On Replay",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Sal Da Vinci",
+            "s": "Per sempre sì",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Linda Lampenius & Pete Parkkonen",
+            "s": "Liekinheitin",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/88/ed/e088ed96-51c2-d8c0-6f13-0391fe6f88dc/0.jpg/400x400bb.jpg"
         },
         {
-            "a": "КЛАВА КОКА",
-            "s": "СПЛЕТНИ. ШУМ. ЛУК.",
+            "a": "Tamara Živković",
+            "s": "Nova zora",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Vanilla Ninja",
+            "s": "Too Epic to Be True",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/10/8a/69108a18-55ec-d774-a653-90b2242733db/199538765458.jpg/200x200bb.jpg"
+        },
+        {
+            "a": "Noam Bettan",
+            "s": "Michelle",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Sarah Engels",
+            "s": "Fire",
             "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/1a/7b/d11a7b87-6ed1-d8b2-cfc2-f563b55d708d/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Essyla",
+            "s": "Dancing on the Ice",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Lion Ceccah",
+            "s": "Solo quiero más",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Senhit",
+            "s": "Superstar",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/200x200bb.jpg"
+        },
+        {
+            "a": "Alicja",
+            "s": "Pray",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/400x400bb.jpg"
+        },
+        {
+            "a": "Lavina",
+            "s": "Kraj mene",
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
         }
     ],
     "odds": [
