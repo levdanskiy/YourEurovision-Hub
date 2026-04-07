@@ -216,7 +216,7 @@ var DATA = {
             "a": "ВАНЯ ДМИТРИЕНКО",
             "s": "РТУТЬ",
             "p": "63 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d1/1a/7b/d11a7b87-6ed1-d8b2-cfc2-f563b55d708d/cover.jpg/400x400bb.jpg"
+            "img": "https://i1.sndcdn.com/artworks-EgxKKeZ3XVE2-0-t500x500.jpg"
         },
         {
             "a": "HOLLYFLAME",
