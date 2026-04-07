@@ -222,7 +222,7 @@ var DATA = {
             "a": "HOLLYFLAME",
             "s": "ТОНУ",
             "p": "62 pts (↓-1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/0b/9a/ec0b9a94-cdba-0cf4-0fa0-006cf0cb0004/cover.jpg/400x400bb.jpg"
         },
         {
             "a": "JONY",
@@ -234,7 +234,7 @@ var DATA = {
             "a": "SQWOZ BAB",
             "s": "КУПЕР",
             "p": "51 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/12/8e/b7128e10-03f8-d81e-ba7f-4e5f76fb177d/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/81/2e/28/812e2827-3153-778e-e04f-4811e4df6494/0.jpg/400x400bb.jpg"
         },
         {
             "a": "ICEGERGERT & ZIVERT",
@@ -246,7 +246,7 @@ var DATA = {
             "a": "УСПЕНСКАЯ & JAKONE",
             "s": "ПЛАКАЛА НАДЕЖДА",
             "p": "40 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/51/1b/6a511b4a-b11a-a854-0a5c-637f4ad768ae/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/49/8a/b7498ad5-2616-c218-6520-a1bf0fff5b5a/0.jpg/400x400bb.jpg"
         },
         {
             "a": "MACAN",
@@ -282,13 +282,13 @@ var DATA = {
             "a": "5STA FAMILY",
             "s": "РАЗ, ДВА",
             "p": "33 pts (↓-4)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/0b/f6/8f0bf6e8-07ee-71df-0c89-9d466d778cd1/0.jpg/400x400bb.jpg"
         },
         {
             "a": "UNCLEFLEXXX",
             "s": "SMS",
             "p": "22 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/10/8a/69108a18-55ec-d774-a653-90b2242733db/199538765458.jpg/200x200bb.jpg"
+            "img": "https://i.scdn.co/image/ab67616d0000b2735a1ab9191ed8bcdbf1bac491"
         },
         {
             "a": "SABI & MIA BOYKA",
@@ -312,13 +312,13 @@ var DATA = {
             "a": "FILATOV & KARAS",
             "s": "ВКЛЮЧИ МУЗЫКУ",
             "p": "16 pts (↓-3)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
         },
         {
             "a": "SERYABKINA",
             "s": "АСФАЛЬТ",
             "p": "16 pts (↓-2)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/200x200bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
         },
         {
             "a": "GAYAZOV$ BROTHER$",
