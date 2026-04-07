@@ -599,6 +599,16 @@
         
         /* Trend Indicators */
         .trend-box { display: flex; flex-direction: column; align-items: center; width: 25px; font-size: 0.75rem; font-weight: 900; }
+        
+        /* Rank Glows */
+        .gold-glow { border-color: #ffd700 !important; background: rgba(255, 215, 0, 0.05) !important; box-shadow: 0 0 15px rgba(255, 215, 0, 0.2); }
+        .gold-glow .trend-box span { color: #ffd700 !important; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+        
+        .silver-glow { border-color: #c0c0c0 !important; background: rgba(192, 192, 192, 0.05) !important; box-shadow: 0 0 15px rgba(192, 192, 192, 0.2); }
+        .silver-glow .trend-box span { color: #c0c0c0 !important; text-shadow: 0 0 10px rgba(192, 192, 192, 0.5); }
+        
+        .bronze-glow { border-color: #cd7f32 !important; background: rgba(205, 127, 50, 0.05) !important; box-shadow: 0 0 15px rgba(205, 127, 50, 0.2); }
+        .bronze-glow .trend-box span { color: #cd7f32 !important; text-shadow: 0 0 10px rgba(205, 127, 50, 0.5); }
         .trend-up { color: #00ff88; text-shadow: 0 0 10px rgba(0,255,136,0.5); }
         .trend-down { color: #ff4d4d; text-shadow: 0 0 10px rgba(255,77,77,0.5); }
         .trend-steady { color: #555; }
@@ -1285,7 +1295,10 @@
                 
                 const cs = document.getElementById("chart-sect"); if(cs) {
                     const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> RU-TOP: SIGNAL 20 — 07.04.2026`;
-                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:30px; height:30px; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
+                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => {
+                        const rankClass = idx === 0 ? 'gold-glow' : (idx === 1 ? 'silver-glow' : (idx === 2 ? 'bronze-glow' : ''));
+                        return `<div class="bubble ${rankClass}"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:30px; height:30px; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`;
+                    }).join("");
                 }
 
                 const os = document.getElementById("odds-sect"); if(os) {
