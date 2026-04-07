@@ -1211,11 +1211,12 @@
                     const eLab = eList.parentElement.querySelector(".side-label"); if(eLab) eLab.innerHTML = `<i class="fi fi-rr-cross"></i> ${t.eliminated}`;
                     const eHtml = DATA.eliminated.map(c => `<div class="elim-bubble"><div class="tooltip">${decodeS(c.a)}</div><img src="${getH(c.id)}" class="heart-shape" style="width:22px; height:22px;"></div>`).join("");
                     const hist18 = DATA.battles.filter(b => b.id <= 8);
+                    const hist14 = DATA.battles.filter(b => b.id >= 9 && b.id <= 12);
                     let hHtml = "";
-                    if(hist18.length > 0) {
+                    if(hist18.length > 0 || hist14.length > 0) {
                         hHtml = `<div style="margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:15px;">` +
-                                `<div style="font-size:0.6rem; color:var(--pink); font-weight:900; margin-bottom:10px; letter-spacing:0.15em; text-transform:uppercase;">1/8 FINALS ARCHIVE</div>` +
-                                hist18.map(b => {
+                                `<div style="font-size:0.6rem; color:var(--pink); font-weight:900; margin-bottom:10px; letter-spacing:0.15em; text-transform:uppercase;">MATCHES ARCHIVE (1/8 & 1/4)</div>` +
+                                [...hist18, ...hist14].map(b => {
                                     const win1 = b.w === 1, win2 = b.w === 2;
                                     return `<div style="font-size:0.55rem; color:#666; margin-bottom:6px; line-height:1.2; background:rgba(255,255,255,0.01); padding:5px; border-radius:5px;">` +
                                     `<div style="display:flex; justify-content:space-between; ${win1?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a1)}</span> <span>${b.sc1}</span></div>` +
@@ -1226,59 +1227,61 @@
                 }
             } catch(e) {}
 
-            // 2. Enhanced QF Bracket
+            // 2. Enhanced Semi-Finals Bracket
             try {
-                const battles = DATA.battles.filter(b => b.id >= 9);
-                const qfDetails = {
-                    9: { name: "THE NORTHERN DUEL", tag1: "ELECTRO-CHAO", tag2: "NORDIC POP" },
-                    10: { name: "ETHNO COLLISION", tag1: "FOLK-CORE", tag2: "RETRO-POP" },
-                    11: { name: "MELODIC BATTLE", tag1: "SCANDI-POP", tag2: "BALKAN BEAT" },
-                    12: { name: "EXPERIMENTAL NIGHT", tag1: "HARDWARE", tag2: "POP-GLOW" }
+                const battles = DATA.battles.filter(b => b.id >= 13);
+                const sfDetails = {
+                    13: { name: "SEMI-FINAL 1 / BATTLE A", tag1: "WINNER QF1", tag2: "WINNER QF2" },
+                    14: { name: "SEMI-FINAL 2 / BATTLE B", tag1: "WINNER QF3", tag2: "WINNER QF4" }
                 };
 
                 let bHtml = "";
-                battles.forEach((b, i) => {
-                    if(i % 2 === 0) {
-                        const b1 = b, b2 = battles[i+1];
-                        const rM = (m) => {
-                            if(!m) return "";
-                            const details = qfDetails[m.id] || { name: "QF MATCH", tag1: "INSIDER", tag2: "INSIDER" };
-                            const isL = m.status === 'LIVE';
-                            const p1 = parseInt(m.sc1) || 0, p2 = parseInt(m.sc2) || 0;
-                            return `<div class="card ${isL?'status-live-pulse':''}" style="padding:20px; background:rgba(255,255,255,0.02); margin-bottom:15px; border-top: 4px solid var(--cyan);">
-                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
-                                    <span style="font-size:0.55rem; color:var(--cyan); font-weight:900; letter-spacing:0.2em;">${details.name}</span>
-                                    ${isL ? '<span class="live-tag" style="margin:0; padding:2px 6px; font-size:0.5rem;">LIVE</span>' : ''}
-                                </div>
-                                
-                                <div style="display:flex; align-items:center; gap:12px;">
-                                    <img src="${getH(m.t1)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
-                                    <div style="flex-grow:1;">
-                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
-                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a1)}</div>
-                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc1}</div>
-                                        </div>
-                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag1}</div>
-                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p1}%; background:var(--cyan);"></div></div>
+                if(battles.length === 0) {
+                    bHtml = `<div class="card" style="padding:40px; text-align:center; background:rgba(255,255,255,0.02); border:1px dashed var(--pink); grid-column: 1 / -1;">
+                        <i class="fi fi-rr-clock" style="font-size:2rem; color:var(--pink); display:block; margin-bottom:15px;"></i>
+                        <div style="font-weight:900; color:#fff; text-transform:uppercase; letter-spacing:0.1em;">SEMI-FINALS LINEUP TBA</div>
+                        <div style="font-size:0.7rem; color:#666; margin-top:5px;">Wait for Quarter-Finals completion</div>
+                    </div>`;
+                } else {
+                    battles.forEach((b, i) => {
+                        const details = sfDetails[b.id] || { name: "SEMI-FINAL", tag1: "TOP QUALIFIER", tag2: "TOP QUALIFIER" };
+                        const isL = b.status === 'LIVE';
+                        const p1 = parseInt(b.sc1) || 0, p2 = parseInt(b.sc2) || 0;
+                        bHtml += `<div class="card ${isL?'status-live-pulse':''}" style="padding:20px; background:rgba(255,255,255,0.02); border-top: 4px solid var(--pink); grid-column: span 1;">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                                <span style="font-size:0.55rem; color:var(--pink); font-weight:900; letter-spacing:0.2em;">${details.name}</span>
+                                ${isL ? '<span class="live-tag" style="margin:0; padding:2px 6px; font-size:0.5rem;">LIVE</span>' : ''}
+                            </div>
+                            
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                <img src="${getH(b.t1)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(255,0,127,0.2));">
+                                <div style="flex-grow:1;">
+                                    <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                                        <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(b.a1)}</div>
+                                        <div style="font-weight:900; color:var(--pink); font-size:1.2rem; font-style:italic;">${b.sc1}</div>
                                     </div>
+                                    <div style="font-size:0.55rem; color:var(--pink); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag1}</div>
+                                    <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p1}%; background:var(--pink);"></div></div>
                                 </div>
+                            </div>
 
-                                <div style="display:flex; align-items:center; gap:12px; margin-top:20px;">
-                                    <img src="${getH(m.t2)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(0,245,255,0.2));">
-                                    <div style="flex-grow:1;">
-                                        <div style="display:flex; justify-content:space-between; align-items:flex-end;">
-                                            <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(m.a2)}</div>
-                                            <div style="font-weight:900; color:var(--cyan); font-size:1.2rem; font-style:italic;">${m.sc2}</div>
-                                        </div>
-                                        <div style="font-size:0.55rem; color:var(--cyan); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag2}</div>
-                                        <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p2}%; background:var(--cyan);"></div></div>
+                            <div style="display:flex; align-items:center; gap:12px; margin-top:20px;">
+                                <img src="${getH(b.t2)}" class="heart-shape" style="width:32px; height:32px; filter:drop-shadow(0 0 10px rgba(255,0,127,0.2));">
+                                <div style="flex-grow:1;">
+                                    <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+                                        <div class="artist-rich" style="font-size:1.1rem; color:#fff;">${decodeS(b.a2)}</div>
+                                        <div style="font-weight:900; color:var(--pink); font-size:1.2rem; font-style:italic;">${b.sc2}</div>
                                     </div>
+                                    <div style="font-size:0.55rem; color:var(--pink); opacity:0.5; font-weight:900; margin-top:2px;">${details.tag2}</div>
+                                    <div class="vote-bar-bg" style="height:3px; margin-top:8px;"><div class="vote-bar-fill" style="width:${p2}%; background:var(--pink);"></div></div>
                                 </div>
-                            </div>`;
-                        };
-                        bHtml += rM(b1) + (b2 ? `<div style="text-align:center; margin:10px 0; opacity:0.2;"><div style="height:1px; background:#fff; width:100px; margin:0 auto;"></div></div>` + rM(b2) : "");
-                    }
-                });
+                            </div>
+                        </div>`;
+                        if(i === 0 && battles.length > 1) {
+                            bHtml += `<div style="text-align:center; opacity:0.2;" class="bracket-connector"><div style="height:100px; width:1px; background:#fff; margin:0 auto;"></div></div>`;
+                        }
+                    });
+                }
                 const bCont = document.getElementById("bracket"); if(bCont) bCont.innerHTML = bHtml;
                 const cSect = document.getElementById("cup-sect"); if(cSect) {
                     const cTitle = cSect.querySelector(".section-title-base"); if(cTitle) cTitle.innerHTML = `<i class="fi fi-rr-trophy"></i> ${t.standings}`;
@@ -1292,7 +1295,10 @@
                 
                 const cs = document.getElementById("chart-sect"); if(cs) {
                     const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 07.04.2026`;
-                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:55px !important; height:55px !important; border-radius:12px !important; margin:0 15px; object-fit:cover;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
+                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => {
+                        const rc = idx === 0 ? 'gold-glow' : (idx === 1 ? 'silver-glow' : (idx === 2 ? 'bronze-glow' : ''));
+                        return `<div class="bubble ${rc}"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:55px !important; height:55px !important; border-radius:12px !important; margin:0 15px; object-fit:cover;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`;
+                    }).join("");
                 }
 
                 const os = document.getElementById("odds-sect"); if(os) {
