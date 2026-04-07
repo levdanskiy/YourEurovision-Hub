@@ -1279,7 +1279,10 @@
                             </div>
                         </div>`;
                         if(i === 0 && battles.length > 1) {
-                            bHtml += `<div style="text-align:center; opacity:0.2;" class="bracket-connector"><div style="height:100px; width:1px; background:#fff; margin:0 auto;"></div></div>`;
+                            bHtml += `<div class="bracket-connector" style="display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; width:60px; height:100%;">
+                                <div style="width:2px; height:120px; background:linear-gradient(to bottom, transparent, var(--pink), var(--cyan), transparent); box-shadow: 0 0 15px var(--pink); opacity:0.8;"></div>
+                                <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:#000; border:2px solid var(--pink); color:var(--pink); font-size:0.6rem; font-weight:900; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; letter-spacing:0.05em; box-shadow: 0 0 20px rgba(255,0,127,0.4); z-index:2;">VS</div>
+                            </div>`;
                         }
                     });
                 }
