@@ -1467,7 +1467,7 @@
                     return `<div class="hist-item ${isNow?'hist-now':''}">
                         <div class="hist-cover" style="background-image:url('${cover}')"></div>
                         <div class="hist-content">
-                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time">${h.time.substring(0,5)}</span>`}
+                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time">${(h.time || '00:00').substring(0,5)}</span>`}
                             <div class="hist-artist">${artist}</div>
                             <div class="hist-track">${song}</div>
                             <div class="hist-discovery">
