@@ -1330,7 +1330,10 @@
                             <span class="post-meta">${p.m}</span>
                             <div class="post-h">${replaceFlags(p.t)}</div>
                             <div class="post-content-wrap">
-                                ${p.img ? `<img src="${p.img}" class="post-media">` : ""}
+                                ${p.vid ? (p.vid.includes('youtube.com') || p.vid.includes('youtu.be') ? 
+                                    `<iframe src="https://www.youtube.com/embed/${p.vid.split('v=')[1] || p.vid.split('/').pop()}" class="post-media" frameborder="0" allowfullscreen style="border-radius:15px; margin-bottom:15px; width:100%; aspect-ratio:16/9;"></iframe>` : 
+                                    `<video src="${p.vid}" class="post-media" controls poster="${p.img}" style="border-radius:15px; margin-bottom:15px; width:100%;"></video>`) : 
+                                    (p.img ? `<img src="${p.img}" class="post-media">` : "")}
                                 <div style="flex-grow:1;">
                                     <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
                                     <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
