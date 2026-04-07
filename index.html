@@ -344,6 +344,16 @@
         .score-bar-bg { width: 100px; height: 3px; background: rgba(255,255,255,0.05); border-radius: 2px; margin-top: 6px; overflow: hidden; }
         .vote-bar-fill { height: 100%; background: var(--cyan); border-radius: 2px; transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1); }
         .winner-glow .vote-bar-fill { background: #ffd700; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+
+        /* Rank Glows */
+        .gold-glow { border-color: #ffd700 !important; background: rgba(255, 215, 0, 0.05) !important; box-shadow: 0 0 15px rgba(255, 215, 0, 0.2); }
+        .gold-glow .trend-box span { color: #ffd700 !important; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+        
+        .silver-glow { border-color: #c0c0c0 !important; background: rgba(192, 192, 192, 0.05) !important; box-shadow: 0 0 15px rgba(192, 192, 192, 0.2); }
+        .silver-glow .trend-box span { color: #c0c0c0 !important; text-shadow: 0 0 10px rgba(192, 192, 192, 0.5); }
+        
+        .bronze-glow { border-color: #cd7f32 !important; background: rgba(205, 127, 50, 0.05) !important; box-shadow: 0 0 15px rgba(205, 127, 50, 0.2); }
+        .bronze-glow .trend-box span { color: #cd7f32 !important; text-shadow: 0 0 10px rgba(205, 127, 50, 0.5); }
         
         .bracket-connector { 
             display: flex; flex-direction: column; align-items: center; justify-content: center; 
@@ -1282,7 +1292,7 @@
                 
                 const cs = document.getElementById("chart-sect"); if(cs) {
                     const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 07.04.2026`;
-                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:55px !important; height:55px !important; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
+                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:55px !important; height:55px !important; border-radius:12px !important; margin:0 15px; object-fit:cover;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
                 }
 
                 const os = document.getElementById("odds-sect"); if(os) {
