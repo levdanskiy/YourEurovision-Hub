@@ -1161,12 +1161,12 @@
 
         function replaceFlags(text) {
             if (!text) return "";
-            let res = text.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:40px; height:40px; vertical-align:middle; margin-right:15px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.5));">`);
+            let res = text.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:22px; height:22px; vertical-align:middle; margin-right:8px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.3));">`);
             res = res.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
             res = res.replace(/(?<![="])\b(\d+%?)\b(?![="])/g, "<span class='num-highlight'>$1</span>");
             res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
             for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
-            for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:55px !important; height:55px !important; vertical-align:middle; margin-right:8px;">`); }
+            for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">`); }
             return res;
         }
 
