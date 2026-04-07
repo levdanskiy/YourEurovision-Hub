@@ -216,121 +216,121 @@ var DATA = {
             "a": "ВАНЯ ДМИТРИЕНКО",
             "s": "РТУТЬ",
             "p": "63 pts (↑+1)",
-            "img": "https://i1.sndcdn.com/artworks-EgxKKeZ3XVE2-0-t500x500.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3f/ca/fc/3fcafcbe-3e34-e199-8fe1-a3a138699f45/0.jpg/600x600cc.webp"
         },
         {
             "a": "HOLLYFLAME",
             "s": "ТОНУ",
             "p": "62 pts (↓-1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/0b/9a/ec0b9a94-cdba-0cf4-0fa0-006cf0cb0004/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/81/2e/28/812e2827-3153-778e-e04f-4811e4df6494/0.jpg/600x600bf-60.jpg"
         },
         {
             "a": "JONY",
             "s": "ПОМНЮ",
             "p": "53 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/600x600bf-60.jpg"
         },
         {
             "a": "SQWOZ BAB",
             "s": "КУПЕР",
             "p": "51 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/81/2e/28/812e2827-3153-778e-e04f-4811e4df6494/0.jpg/400x400bb.jpg"
+            "img": "https://i.scdn.co/image/ab67616d0000b273da67945924bd52e2294348b8"
         },
         {
             "a": "ICEGERGERT & ZIVERT",
             "s": "БАНК",
             "p": "42 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
+            "img": "https://i.scdn.co/image/ab67616d0000b2731ec4298df8c3e233ecf1c401"
         },
         {
             "a": "УСПЕНСКАЯ & JAKONE",
             "s": "ПЛАКАЛА НАДЕЖДА",
             "p": "40 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/49/8a/b7498ad5-2616-c218-6520-a1bf0fff5b5a/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b7/49/8a/b7498ad5-2616-c218-6520-a1bf0fff5b5a/0.jpg/600x600bf-60.jpg"
         },
         {
             "a": "MACAN",
             "s": "ОСТАНЬСЯ ОБРАЗОМ",
             "p": "39 pts (↑+5)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/600x600bf-60.jpg"
         },
         {
             "a": "МОТ",
             "s": "НАМЁК НА НАС",
             "p": "38 pts (↓-2)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/51/1b/6a511b4a-b11a-a854-0a5c-637f4ad768ae/cover.jpg/400x400bb.jpg"
+            "img": "https://i.scdn.co/image/ab67616d0000b27336a7644298c97ecaac71de3e"
         },
         {
             "a": "LYRIQ",
             "s": "КАССЕТЫ",
             "p": "36 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/12/8e/b7128e10-03f8-d81e-ba7f-4e5f76fb177d/cover.jpg/400x400bb.jpg"
+            "img": "https://avatars.yandex.net/get-music-content/15406468/91a00ea1.a.40767822-1/600x600"
         },
         {
             "a": "MONA",
             "s": "ПОПРОШУ ТЕБЯ",
             "p": "35 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/5b/70/505b7028-cf03-18bf-1a36-6580550ac972/cover.png/600x600bf-60.jpg"
         },
         {
             "a": "ARTIK & ASTI",
             "s": "МОДНЫЙ ПОП",
             "p": "34 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/88/ed/e088ed96-51c2-d8c0-6f13-0391fe6f88dc/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/88/ed/e088ed96-51c2-d8c0-6f13-0391fe6f88dc/0.jpg/600x600bf-60.jpg"
         },
         {
             "a": "5STA FAMILY",
             "s": "РАЗ, ДВА",
             "p": "33 pts (↓-4)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/0b/f6/8f0bf6e8-07ee-71df-0c89-9d466d778cd1/0.jpg/400x400bb.jpg"
+            "img": "https://i.scdn.co/image/ab67616d0000b273b0fec65994ed98568cbef2a7"
         },
         {
             "a": "UNCLEFLEXXX",
             "s": "SMS",
             "p": "22 pts (=)",
-            "img": "https://i.scdn.co/image/ab67616d0000b2735a1ab9191ed8bcdbf1bac491"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3b/c9/be/3bc9be74-b15a-db19-5d2d-897700a1804a/cover.png/600x600bf-60.jpg"
         },
         {
             "a": "SABI & MIA BOYKA",
             "s": "БАЗОВЫЙ МИНИМУМ",
             "p": "21 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/600x600cc.webp"
         },
         {
             "a": "КЛАВА КОКА",
             "s": "СПЛЕТНИ. ШУМ. ЛУК.",
             "p": "17 pts (↑+4)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/1a/7b/d11a7b87-6ed1-d8b2-cfc2-f563b55d708d/cover.jpg/400x400bb.jpg"
+            "img": "https://avatars.yandex.net/get-music-content/16154377/40f85b07.a.39274793-1/m1000x1000"
         },
         {
             "a": "XCHO",
             "s": "ТЫ И Я",
             "p": "17 pts (↑+1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/600x600bf-60.jpg"
         },
         {
             "a": "FILATOV & KARAS",
             "s": "ВКЛЮЧИ МУЗЫКУ",
             "p": "16 pts (↓-3)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
+            "img": "https://i.scdn.co/image/ab67616d00001e0285f51c6831bfabd6d12e31d8"
         },
         {
             "a": "SERYABKINA",
             "s": "АСФАЛЬТ",
             "p": "16 pts (↓-2)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/600x600cc.webp"
         },
         {
             "a": "GAYAZOV$ BROTHER$",
             "s": "РУССКАЯ РУЛЕТКА",
             "p": "13 pts (↓-1)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/600x600bf-60.jpg"
         },
         {
             "a": "ЛЁША СВИК & NYUSHA",
             "s": "ПРОБУДИ",
             "p": "9 pts (=)",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
+            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/600x600bf-60.jpg"
         }
     ],
     "news": [
@@ -341,8 +341,8 @@ var DATA = {
             "t": "🔥 YOUTUBE DATA: САМЫЕ ПОПУЛЯРНЫЕ ВИДЕО МАРТА 2026",
             "b": "Официальный канал Евровидения подвел итоги мартовского трафика. Пока фанаты спорят о шансах в Вене, цифры говорят сами за себя: Александр Рыбак остается недосягаемым феноменом, а Noam Bettan (Израиль) становится самым просматриваемым артистом текущего сезона.\nВ топ-20 ворвались сразу 14 новых видео, большинство из которых - официальные клипы и выступления участников 2026 года.\nТОП-20 ЕВРОВИДЕНИЯ (МАРТ 2026):\n01. ➡️ 🇳🇴 Александр Рыбак - «Fairytale» (2009)\n02. 🆕 🇮🇱 Noam Bettan - «Michelle» (2026, клип)\n03. 🆕 🇫🇮 Linda Lampenius & Pete Parkkonen - «Lieknheitin» (2026, отбор)\n04. 🆕 🇧🇬 DARA - «Bangaranga» (2026, отбор)\n05. ⬇️ 🇨🇾 Antigoni - «JALLA» (2026, клип)\n06. ⬇️ 🇪🇪 Tommy Cash - «Espresso Macchiato» (2025, финал)\n07. 🆕 🇬🇷 Akylas - «Ferto» (2026, клип)\n08. ⬇️ 🇪🇪 Tommy Cash - «Espresso Macchiato» (2025, клип)\n09. 🆕 🇫🇷 Monroe - «Regarde !» (2026, клип)\n10. 🆕 🇬🇪 Bzikebi - «On Replay» (2026, клип)\n11. ⬇️ 🇩🇰 Søren Torpegaard Lund - «Før Vi Går Hjem» (2026, отбор)\n12. 🆕 🇬🇧 Look Mum No Computer - «Eins, Zwei, Drei» (2026, клип)\n13. ⬇️ 🇬🇷 Akylas - «Ferto» (2026, отбор)\n14. 🆕 🇷🇸 Lavina - «Kraj Mene» (2026, отбор)\n15. 🆕 🇦🇺 Delta Goodrem - «Eclipse» (2026, клип)\n16. 🆕 🇸🇪 Felicia - «My System» (2026, отбор)\n17. 🆕 🇵🇱 Alicja - «Pray» (2026, отбор)\n18. 🆕 🇦🇲 Simón - «Paloma Rumba» (2026, клип)\n19. ⬇️ 🇫🇮🇭🇷 Käärijä & Baby Lasagna - «#eurodab» (2025, интервал-акт)\n20. 🆕 🇦🇱 Alis - «Nân» (2026, клип)\nАНАЛИЗ ТРЕНДОВ:\nИзраиль и Финляндия захватили внимание аудитории сразу после релизов. Примечательно присутствие Томми Кэша (Эстония 2025) - спустя год после конкурса его перформанс все еще генерирует миллионы просмотров, удерживая позиции в топ-10.\nЧей клип вы пересматривали больше всего в этом месяце?\n🔗 Смотреть\n⏱️ Время чтения: 1.5 мин | 🌐 YourVision: YouTube Data",
             "img": "https://cdn4.telesco.pe/file/Hx7O3R_nU1sz66yRRaKG4sG9x5G4GJUMO2sqFYlzyK9fVbK7mihMzBehvqw6-7XdBMCJS28ovt5wC3VVSLEhc5WylN1SEnr1GmDKBkbO6mp6lEYM4NOg6bkQ4PEezraIjl1pMz8fu8SanmNUZBRJL9Po-PshRxoqovEl0XiMzkmEAIHBIB9n5bJP7VIYr9g_0LgF7xl2uXrg4kYGnlPMq9AA_VVmEn-DHJ4l6Hiu9u1O_iWjJYk-lfshEECHihXU8aSFdqIeJBWaQGfVQszY7D2VHWc9_0UQYTVBr5y0gIsOtOD6NiFpj6H9MG6VwIRhKSINW84LV9vIy1EJgLguaQ",
-            "vid": "https://www.youtube.com/embed/icJO4eGfGqs",
-            "isVideo": true,
+            "vid": "",
+            "isVideo": false,
             "ts": 1775591399.0,
             "poll": null
         },
@@ -352,9 +352,9 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5661",
             "t": "🇭🇷 ALBM: LELEK - ХОРВАТСКИЙ ЭПОС В ХОРОВОМ ЗВУЧАНИИ",
             "b": "Сегодня серия «A Little Bit More» пополнилась монументальной работой из Хорватии. Группа LELEK представила хоровую версию своей конкурсной заявки «Andromeda», превратив футуристичный этно-поп в эпическое полотно.\nВ записи приняли участие виолончелистки Ана Гьюд и Ива Илаковац, а также мужской хор «Pučki pivači KBF». Это прочтение делает акцент на архаике и глубине балканских напевов, создавая ощущение вневременного пространства.\nДЕТАЛИ РЕЛИЗА:\n• Артист: LELEK\n• Версия: Choral Version\n• Продакшн: HRT\n🔗 СМОТРЕТЬ: YouTube\nКакая версия «Andromeda» вам ближе: драйвовый оригинал или этот глубокий хорал?\n⏱️ Время чтения: 0.6 мин | 🇭🇷 YourVision: #ALBM",
-            "img": "https://i.ytimg.com/vi/HbVNYpSsFgU/maxresdefault.jpg",
-            "vid": "https://www.youtube.com/watch?v=HbVNYpSsFgU",
-            "isVideo": true,
+            "img": "",
+            "vid": "",
+            "isVideo": false,
             "ts": 1775591129.0,
             "poll": null
         },
