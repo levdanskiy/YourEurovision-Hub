@@ -1156,7 +1156,7 @@
             res = res.replace(/(?<![="])\b(\d+%?)\b(?![="])/g, "<span class='num-highlight'>$1</span>");
             res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
             for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
-            for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:30px; height:30px; vertical-align:middle; margin-right:8px;">`); }
+            for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:55px !important; height:55px !important; vertical-align:middle; margin-right:8px;">`); }
             return res;
         }
 
@@ -1282,7 +1282,7 @@
                 
                 const cs = document.getElementById("chart-sect"); if(cs) {
                     const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 07.04.2026`;
-                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:30px; height:30px; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
+                    document.getElementById("chart-list").innerHTML = DATA.chart.map((i, idx) => `<div class="bubble"><div class="trend-box"><span style="color:var(--pink); font-weight:900; font-size:1.2rem;">${idx+1}</span></div><img src="${i.img}" class="chart-cover" style="width:55px !important; height:55px !important; border-radius:8px; margin:0 10px;"><div style="flex-grow:1;"><div class="artist-rich" style="font-size:0.85rem; color:var(--pink);">${decodeS(i.a)}</div><div style="font-size:0.7rem;">${decodeS(i.s)}</div></div><span style="font-weight:900; color:var(--pink);">${i.p}</span></div>`).join("");
                 }
 
                 const os = document.getElementById("odds-sect"); if(os) {
