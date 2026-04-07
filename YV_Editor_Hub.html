@@ -1331,7 +1331,7 @@
                             <div class="post-h">${replaceFlags(p.t)}</div>
                             <div class="post-content-wrap">
                                 ${p.vid ? (p.vid.includes('youtube.com') || p.vid.includes('youtu.be') ? 
-                                    `<iframe src="https://www.youtube.com/embed/${p.vid.split('v=')[1] || p.vid.split('/').pop()}" class="post-media" frameborder="0" allowfullscreen style="border-radius:15px; margin-bottom:15px; width:100%; aspect-ratio:16/9;"></iframe>` : 
+                                    `<iframe src="https://www.youtube.com/embed/${getYTId(p.vid)}" class="post-media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:15px; margin-bottom:15px; width:100%; aspect-ratio:16/9;"></iframe>` : 
                                     `<video src="${p.vid}" class="post-media" controls poster="${p.img}" style="border-radius:15px; margin-bottom:15px; width:100%;"></video>`) : 
                                     (p.img ? `<img src="${p.img}" class="post-media">` : "")}
                                 <div style="flex-grow:1;">
@@ -1518,6 +1518,12 @@
             } else { 
                 audio.pause(); audio.src = ""; isPlaying = false; 
                 playBtn.style.background = "white";
+                playBtn.innerHTML = '<i class="fi fi-rr-play" style="font-size:1.5rem; color:black;"></i>';
+            }
+        };
+    </script>
+</body>
+</html>tyle.background = "white";
                 playBtn.innerHTML = '<i class="fi fi-rr-play" style="font-size:1.5rem; color:black;"></i>';
             }
         };
