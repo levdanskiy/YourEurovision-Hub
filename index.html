@@ -1216,12 +1216,13 @@
                     if(hist18.length > 0 || hist14.length > 0) {
                         hHtml = `<div style="margin-top:20px; border-top:1px solid rgba(255,255,255,0.05); padding-top:15px;">` +
                                 `<div style="font-size:0.6rem; color:var(--pink); font-weight:900; margin-bottom:10px; letter-spacing:0.15em; text-transform:uppercase;">MATCHES ARCHIVE (1/8 & 1/4)</div>` +
+                                `<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">` +
                                 [...hist18, ...hist14].map(b => {
                                     const win1 = b.w === 1, win2 = b.w === 2;
-                                    return `<div style="font-size:0.55rem; color:#666; margin-bottom:6px; line-height:1.2; background:rgba(255,255,255,0.01); padding:5px; border-radius:5px;">` +
+                                    return `<div style="font-size:0.55rem; color:#666; line-height:1.2; background:rgba(255,255,255,0.01); padding:5px; border-radius:5px;">` +
                                     `<div style="display:flex; justify-content:space-between; ${win1?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a1)}</span> <span>${b.sc1}</span></div>` +
                                     `<div style="display:flex; justify-content:space-between; ${win2?'color:#fff; font-weight:700;':''}"><span>${decodeS(b.a2)}</span> <span>${b.sc2}</span></div></div>`;
-                                }).join('') + `</div>`;
+                                }).join('') + `</div></div>`;
                     }
                     eList.innerHTML = eHtml + hHtml;
                 }
