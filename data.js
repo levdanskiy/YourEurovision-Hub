@@ -7,13 +7,13 @@ var DATA = {
             "t1": "fi",
             "a1": "Linda Lampenius and Pete Parkkonen",
             "s1": "Liekinheitin",
-            "sc1": "0%",
+            "sc1": "82%",
             "t2": "dk",
             "a2": "Søren Torpegaard Lund",
             "s2": "Før vi går hjem",
-            "sc2": "0%",
-            "w": 0,
-            "status": "WAITING"
+            "sc2": "18%",
+            "w": 1,
+            "status": "DONE"
         },
         {
             "id": 10,
@@ -22,13 +22,13 @@ var DATA = {
             "t1": "gr",
             "a1": "Akylas",
             "s1": "Ferto",
-            "sc1": "0%",
+            "sc1": "64% ★",
             "t2": "ge",
             "a2": "Bzikebi",
             "s2": "On Replay",
-            "sc2": "0%",
-            "w": 0,
-            "status": "WAITING"
+            "sc2": "36%",
+            "w": 1,
+            "status": "DONE"
         },
         {
             "id": 11,
@@ -37,13 +37,13 @@ var DATA = {
             "t1": "se",
             "a1": "Felicia",
             "s1": "My System",
-            "sc1": "0%",
+            "sc1": "44%",
             "t2": "md",
             "a2": "Satoshi",
             "s2": "Viva, Moldova!",
-            "sc2": "0%",
-            "w": 0,
-            "status": "WAITING"
+            "sc2": "56% ★",
+            "w": 2,
+            "status": "DONE"
         },
         {
             "id": 12,
@@ -52,13 +52,13 @@ var DATA = {
             "t1": "gb",
             "a1": "Look Mum No Computer",
             "s1": "Eins, Zwei, Drei",
-            "sc1": "0%",
+            "sc1": "50%",
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
-            "sc2": "0%",
-            "w": 0,
-            "status": "WAITING"
+            "sc2": "50% ★",
+            "w": 2,
+            "status": "DONE"
         },
         {
             "id": 1,
@@ -179,6 +179,36 @@ var DATA = {
             "sc2": "57%",
             "w": 2,
             "status": "FINISHED"
+        },
+        {
+            "id": 13,
+            "n": "SF #1",
+            "qf": "TO FINAL",
+            "t1": "fi",
+            "a1": "Linda & Pete",
+            "s1": "Liekinheitin",
+            "sc1": "-",
+            "t2": "gr",
+            "a2": "Akylas",
+            "s2": "Ferto",
+            "sc2": "-",
+            "w": 0,
+            "status": "PENDING"
+        },
+        {
+            "id": 14,
+            "n": "SF #2",
+            "qf": "TO FINAL",
+            "t1": "md",
+            "a1": "Satoshi",
+            "s1": "Viva, Moldova!",
+            "sc1": "-",
+            "t2": "bg",
+            "a2": "Dara",
+            "s2": "Bangaranga",
+            "sc2": "-",
+            "w": 0,
+            "status": "PENDING"
         }
     ],
     "chart": [
@@ -345,327 +375,321 @@ var DATA = {
     ],
     "news": [
         {
-            "m": "02.04 | 09:23",
+            "m": "07.04 | 18:32",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5608",
-            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА ЗАВЕРШЕНА - СЕТКА 1/4 ОПРЕДЕЛЕНА",
-            "b": "Последний слот в четвертьфинале забирает Dara. Болгарская поп-дива с треком «Bangaranga» набрала 57% голосов, остановив Айдена из Мальты.\n🏆 ИТОГИ BATTLE #8:\n🇧🇬 Bulgaria (Dara): 57% (Winner)\n🇲🇹 Malta (Aidan): 43%\nСегодня в кубке ВЫХОДНОЙ. Восемь сильнейших артистов сезона 2026 готовы к решающим битвам за выход в полуфинал.\nПАРЫ 1/4 ФИНАЛА (START: 03.04):\n1. QF1: THE NORTHERN DUEL\n🇫🇮 Linda & Pete vs 🇩🇰 Søren Torpegaard\nБитва Скандинавии: скрипичный драйв против датского меланхоличного попа.\n2. QF2: ETHNO COLLISION\n🇬🇷 Akylas vs 🇬🇪 Bzikebi\nСтолкновение греческого и грузинского бэнгеров.\n3. QF3: MELODIC BATTLE\n🇸🇪 Felicia vs 🇲🇩 Satoshi\nЧистый шведский продакшн против молдавской энергии.\n4. QF4: EXPERIMENTAL NIGHT\n🇬🇧 Look Mum No Computer vs 🇧🇬 Dara\nБитва за SF2: аналоговые синтезаторы против мощного поп-вокала.\nЛОГИКА: Пары сформированы согласно турнирной сетке. Нас ждут четыре дня экстремального голосования. Кто из этой восьмерки достоин короны в Вене?\n🔗 СЛЕДИТЬ ЗА СЕТКОЙ: Hub\n⏱️ Время чтения: 1.5 мин | 🏆 YourVision: Cup",
-            "img": "https://cdn4.telesco.pe/file/kSRlPD5m2kNjDJo5hrdLJvTT0nVP7AnK9IFk99YkE_zTzyCA8AIDuywA_0-xDpNvK2TLi2cNbNC_ODfMTSNsYpyZXnjYLxefLuJZtRqVQMZaVaPxVvvzrqFt8FwlqQuoDbbx-4ExGOYEQFaybTh1BtOz0EWbZwWMJYxfycLlvhOEZCmmVY_gI2O979N7gz8KO52vTeIDK99HO4OutDmB7eX7Alo19gZvt85UjrK5dJOQtkdzKwdwmsPUJ8qNg30JnKmFogEsg9G04RUg6xI5ClBn-DK19JaE3GsTRrWaNxFSlucdb7MX8OPAtJYiqK0Iq3OItBQ11dwuVwl8BqMxJw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775121789.0,
-            "poll": null
-        },
-        {
-            "m": "01.04 | 18:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5607",
-            "t": "📊 ОПРОС: 📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
+            "u": "https://t.me/YourEurovision/5659",
+            "t": "📊 ОПРОС: 📊 HE RESET: АЗЕРБАЙДЖАНКакой путь Баку вам ближе?",
             "b": "",
             "img": "",
             "vid": "",
             "isVideo": false,
-            "ts": 1775068321.0,
+            "ts": 1775586721.0,
             "poll": {
-                "question": "📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
+                "question": "📊 HE RESET: АЗЕРБАЙДЖАНКакой путь Баку вам ближе?",
                 "options": [
-                    "🇨🇿 2026: Daniel Zizka - «Crossroads»",
-                    "🇨🇿 2025: Adonxs - «Kiss Kiss Goodbye»"
+                    "2026: Jiva («Just Go») - Качественный поп",
+                    "2025: Mamagama («Run with U») - Альтернатива"
                 ]
             }
         },
         {
-            "m": "01.04 | 18:31",
+            "m": "07.04 | 18:30",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5606",
-            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - ЧЕХИЯ",
-            "b": "Чехия на YourVision Cup 2026 оказалась на перекрестке стилей. Daniel Zizka привез качественный поп, но не смог зацепить аудиторию Группы D. Аудит №10: был ли лоск и уверенность Adonxs более выигрышным форматом?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇨🇿 2026: Daniel Zizka - «Crossroads»\nРадио-френдли инди-поп с мягким мужским вокалом. Попытка создать уютный, понятный продукт, который, однако, потерялся на фоне концептуальных конкурентов.\n🇨🇿 2025: Adonxs - «Kiss Kiss Goodbye»\nСтильный поп с мощной харизмой, уверенным вокалом и безупречным продакшном. Год назад этот трек стал одним из самых качественных мужских выступлений сезона.\nВОПРОС К ЭКСПЕРТАМ\nПотеряла ли Чехия свою искру, выбрав более спокойный звук? Был ли Даниэль слишком «стандартным» для нашего турнира или Adonxs в прошлом году установил планку, которую сложно превзойти в этом жанре?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇨🇿 YourVision: Reset",
+            "u": "https://t.me/YourEurovision/5658",
+            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - АЗЕРБАЙДЖАН",
+            "b": "Баку совершил разворот от смелых альтернативных экспериментов к более выверенному и качественному поп-звучанию. Проводим аудит: стоило ли Азербайджану возвращаться к проверенным формулам после прошлогоднего «мультяшного» драйва?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇦🇿 2026: Jiva - «Just Go»\nКачественный, современный поп с акцентом на международный рынок. Джива предлагает профессиональное звучание, которое легко вписывается в любой европейский плейлист.\n🇦🇿 2025: Mamagama - «Run with U»\nАльтернативный, дерзкий и слегка ироничный трек. Это была попытка Азербайджана зайти на территорию инди-попа с «мультяшной» эстетикой и нестандартным подходом к композиции.\nВОПРОС К ЭКСПЕРТАМ\nЧто больше подходит Азербайджану сегодня: поиск уникального и странного лица с Mamagama или возвращение к качественному поп-экспорту с Jiva? Чей «бег» был эффективнее?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇦🇿 YourVision: Reset",
             "img": "",
             "vid": "",
             "isVideo": false,
-            "ts": 1775068313.0,
+            "ts": 1775586624.0,
             "poll": null
         },
         {
-            "m": "01.04 | 18:02",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5911",
-            "t": "📑 ALMANAC: #LISTS - ПЯТЬ ГРАНЕЙ ПУСТОТЫ: ВЕЛИКИЕ МИСТИФИКАЦИИ",
-            "b": "Ложь в искусстве - это часто самая высокая форма правды. Она подсвечивает наши страхи, желания и готовность верить в невозможное.\nКРИТЕРИИ ОТБОРА (SELECTION CRITERIA)\n• Масштаб: События, вышедшие за пределы арт-среды и затронувшие общество.\n• Технология: Использование медиа-инструментов своего времени (от радио до ИИ).\n• Импакт: Долгосрочное влияние на восприятие реальности и экспертную среду.\nПОЛНЫЙ ИНДЕКС (FULL INDEX)\n1. «ВОЙНА МИРОВ» (1938): Радиоспектакль Орсона Уэллса. Первый случай в истории, когда художественный вымысел вызвал реальную национальную панику.\n2. ФАЛЬШИВЫЙ ВЕРМЕЕР (1945): Хан ван Меегерен. Создал полотна, которые десятилетиями считались оригиналами, обманув лучших экспертов мира.\n3. SELF-DESTRUCTING ART (2018): «Девочка с воздушным шаром» Бэнкси. Мистификация процесса продажи - картина уничтожила себя сразу после удара молотка.\n4. DALÍ LIVES (2019): Музей Дали в Сент-Питерсберге. Использование Deepfake-технологии для воскрешения художника. Обман как способ бессмертия.\n5. ДНЕВНИКИ ГИТЛЕРА (1983): Журнал Stern. Величайшая медиа-мистификация, доказавшая, что рынок и жажда сенсации сильнее фактчекинга.\nМАРГИНАЛИИ (MARGINALIA)\nПометка на полях: Мистификация - это инструмент исследования человеческой природы. Мой фаворит - ван Меегерен. Он заставил нацистов платить миллионы за свои фальшивки, превратив обман в акт справедливости. Верим ли мы глазам или тому, что нам обещали показать?\n⏱️ Время чтения: 1.8 мин | 🏛 Almanac: Lists",
-            "img": "https://cdn4.telesco.pe/file/oB_Az31Lc52lVUXgFQLtu2isx3gDa8g2jOMJQ86c3N6WyyHMMNt9VfKHn2C01yitTEN3xukeFvgz03VvUiV1zzGzWew2b_dz9Vj9HDThbleaT3I4zFE4OXjzqKaNyuYyVZI0SUK0h3v8i6N1taQoMHpAB0XhPbP1NkLp8EdDAJTF9cX8qnuW4Iz5giwo6aBhP_f7ZMzU78UN_yEXjQs6lJHjV8177NmQ-vJG5b1TfZ3umcLZrjtCcA9r9OaC3DACR0By0lGn8_PTqkyi5TqUqWzsub6kxT_Qcuo19pO8kQP-LMCUkZzUfR7xxH9osP1MsXZVc_-uW-e_WppgSeFAww.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775066523.0,
-            "poll": null
-        },
-        {
-            "m": "01.04 | 17:06",
+            "m": "07.04 | 17:03",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5605",
-            "t": "🏆 DEEP DIVE: МАРТИН ГРИН О ГЛОБАЛЬНОЙ ЭКСПАНСИИ, БОЙКОТАХ И «ИНТЕРВИДЕНИИ»",
-            "b": "Исполнительный директор ESC Мартин Грин в серии интервью (Der Standard, NYT) обозначил новую карту влияния конкурса. Это не просто подготовка к Вене, а пересборка бренда на десятилетия вперед. Разбираем ключевые факты, которые определяют будущее индустрии.\n🌏 BRAND POWER: АЗИЯ И ОТВЕТ РОССИИ\n• Бренд без границ: Грин подтвердил, что азиатские вещатели сами просили оставить слово «Eurovision» в названии своего конкурса. Для них это глобальный знак качества, выходящий за пределы географии.\n• Фактор «Интервидения»: Грин жестко дистанцировался от российского проекта: «Мы бы никогда не делали что-то в ответ на… что бы это ни было». Запуск ESC Asia - это стратегический план, а не реакция на конкурентов.\n⚡️ ГЕОПОЛИТИЧЕСКИЙ ФИЛЬТР: БОЙКОТЫ И ДЕМОКРАТИЯ\n• Кейс Испании: Грин уважает бойкот RTVE и еще 4 стран из-за Израиля, но подчеркивает: «Большинство проголосовало за то, чтобы все вещатели остались в шоу».\n• Инсайд: Источники сообщают, что формального отдельного голосования по участию стран на Генассамблее фактически не проводилось, что делает риторику EBU о «демократическом выборе» еще более интересной.\n• Иммунитет 70-летия: Конкурс переживал бойкоты и раньше. По мнению Грина, через 70 лет это станет лишь «частью долгой истории».\n📦 ЛОГИСТИКА И НОВЫЕ РЫНКИ\n• Латинская Америка: Права на проведение латинской версии Евровидения официально переданы испанскому вещателю RTVE. Это мощный рывок для испанского медиа-рынка.\n• Австралийский ультиматум: Если Австралия выиграет, она обязана принимать конкурс у себя. Даже если это будет ночной эфир для Европы. На подготовку - ровно 364 дня.\n• Канадский барьер: Канада не будет в игре, пока не станет полноправным членом EBU. Исключений (как для Австралии, приглашенной за 30-летнюю лояльность) пока не планируется.\n💰 ЭКОНОМИКА СЦЕНЫ\n• Прозрачные бюджеты: EBU снижает нагрузку на малых вещателей. Спецэффекты (фейерверки) теперь — это опция, которую артист/страна оплачивает отдельно. Грин напоминает: «Гигантская сцена не гарантирует победу. Все решают песня и голос».\n• Машина контента: Ежегодно конкурс стимулирует создание 900 новых песен. Это фундамент всей европейской поп-системы.\n⏱️ Время чтения: 2.3 мин | 🌍 YourVision: Deep Dive",
-            "img": "https://cdn4.telesco.pe/file/CRNCvduTwi_ab5DnUX9Ox5qo98VGIbs31bPQvTS9xwOUZwk0z98YQh40yJ86nuBzma_7rojq6eTuc-kacUGB7mgGT8b7oLyaLKrkBtEvKU1A0KDRLaSkPxebhyUgWq3wFiLf2YOKBch62l_xlGNiWAYYoKf1Ozuc8wM8CLiBKMCcudneQpuAvROPwS-P-mcn1_4Ci4YHhe38siQRFNr7YguqMFP47qkPjv1XGiGTPnB50MmCs-AS5KO5jaKx3A0wXBeex6mNzNl08O0YiEQcSuPEJhaVXPPgOgwtz7Ce6-__pXgeAf5e57iG2BwVdxyHI-pBqh6TGrXg53QT3cACeg.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775063188.0,
-            "poll": null
-        },
-        {
-            "m": "01.04 | 17:01",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5604",
-            "t": "🧬 DNA: МАЛЬТА - AIDAN",
-            "b": "Эйден Кассар - главный поп-символ Мальты последних лет. Его история в 2026 году - это классический «Hero's Journey»: от сокрушительной дисквалификации до безоговорочной победы. Обладая уникальным чутьем на хиты, он превратил своё ожидание в мощную энергию, которая теперь ведет его в Вену.\nTHE JOURNEY (ПУТЬ)\nAIDAN начал карьеру в 2015 году с JESC, но настоящая популярность пришла в 2018-м с «Dai Laga». Последовавшие за ней «Naħseb Fik» (2021) и «Ritmu» (2022) стали платиновыми хитами на Мальте и за её пределами. Однако в 2023 году путь Эйдена к ESC был прерван скандальной дисквалификацией на стадии нацотбора из-за активности в соцсетях. Несмотря на угрозы судом, артист нашел в себе силы вернуться. Весь 2024 и 2025 годы он доминировал в эфирах с треками «Hero» и «Sorry», чтобы в январе 2026-го триумфально выиграть MESC с песней «Bella».\nSTYLE & SOUND (ДНК)\nДНК Эйдена - это современный средиземноморский поп с элементами реггетона и безупречным продакшном. Он сам пишет и продюсирует свою музыку, что делает его звук максимально органичным. Его вокал - гибкий, уверенный, идеально работающий как в студии, так и вживую. Визуально AIDAN транслирует образ «Self-made star»: харизма, уверенность и лоск, который обычно присущ артистам мирового уровня. В песне «Bella» он достигает пика своей формы, объединяя национальный колорит с глобальным поп-звучанием.\nVERDICT: Мальта наконец-то отправляет артиста, который готов к большой сцене на 100%. Это не просто песня, это готовый бренд. Эйден способен не только вывести страну в финал, но и закрепиться в его верхней части.\n⏱️ Время чтения: 1.3 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/KH_u-wYlif-zN-D33qqTHvtKVy0_2jEgmUJzmvfhBFI9cCHFvHGIk595XsFXFQKfNOFStNcHFKGnmhmN5A0lhpMzZaDOPgAurU91lHUPb3NJdbBsEpFdOS5RGFbjWiU0__CtFuyMZFXHVEr9qG1cEcEqsaxpyj6cL1DAUPcRiJbyoP-rpwpTAF92PG5mGQLl5Z7KDgA1VjmZsr2gL_rPbQSx4b0ReKzs4t_X-3a02rFZfeEsDRxNHOsu9wlWKWrBBrO_24MYoIqMFuB26W_J05OcY0F_NhAxGWhB0raqTA0JsUuaKI6Jdb3fg_SvQzZiJX3yfi53ekpMmVtPTw-zFQ",
-            "vid": "https://cdn4.telesco.pe/file/77d850f629.mp4?token=Y14kCMr-QAGq_Im_jaivyz5WpdSd2EqkTxYjSCvm8RDKQhrY8JA8QaeAqYA8EoE2hW4LfQZZFbDhRB6JjWOqWVJJE0S07RKj_AwRtiGixzs6PpiJ7webfm-F3mx-QcEsfCQr3lKU7mdV4WaT5paHw7MacOZeGVkZNhewCzZnh5JiEfhkmG0D7S3JsWb1P-4D6XbLrpmfCCos-Ow2L0TOd7LG2_VAcLXm4J1XBzabraUx8Se6BmSfCh08oEJgX1xaYJrX6A5dprdw4ojw7aorRQy8sq8Lg_0ZktasDWXfDdibY3QnhlcVHnIrCxc9tFRHBw-WzxWtKsRqKnhZzYvo2g",
+            "u": "https://t.me/YourEurovision/5657",
+            "t": "🧬 DNA: АЗЕРБАЙДЖАН - JIVA",
+            "b": "Азербайджан в 2026 году берет курс на энергию и актуальный звук. Джамиля Гашимова, выступающая под сценическим именем Jiva, привозит в Вену «Just Go» - манифест свободы, в котором восточный колорит безупречно ложится на ритмы современного R&B.\nTHE JOURNEY (ПУТЬ)\nДжамиля родилась в Москве, но её музыкальная судьба неразрывно связана с Баку. В индустрии она более 20 лет, начав карьеру еще в 2003-м. Настоящий прорыв случился в 2025 году на шоу «Səs Azərbaycan» (The Voice of Azerbaijan), где она победила с результатом 42.6% голосов. В марте 2026 года ITV объявило Jiva представителем страны в Вене. Её путь - это история о том, как большой талант и многолетний опыт находят свое идеальное время для глобального выхода.\nSTYLE & SOUND (ДНК)\nЗвучание Jiva - это «high-end pop». «Just Go» выделяется своим динамичным продакшном и запоминающимся хуком. ДНК артистки - это гибкость: она одинаково органично звучит в джазе (участница Montreux Jazz Festival) и в танцевальной поп-музыке. Визуально это эстетика «Modern Baku»: яркие, авангардные образы, сочетающие восточную роскошь и западный футуризм.\nVERDICT: Азербайджан привозит один из самых «радийных» треков сезона. Jiva - это профессионализм высшей пробы, который способен зажечь арену и обеспечить стране высокий результат.\n⏱️ Время чтения: 1.2 мин | 🧬 YourEurovision: DNA",
+            "img": "https://cdn4.telesco.pe/file/UGQFwS3vKjK7x4qXsP0Lbu3fgs2_URUmN1nyAe7nObsT6Pg8T8ZiQ494teXJYhKQZScjHrUzUBw6QynhuQn0z3wNVQvSzyS5Fk6YPGL5rOGuhYIBnrE9I1z7en9LWdn1ymCkecUEMav2YuWcByL0SGaK3qxPMB3sPPqIWPCX16Lr3NqkSWg43eqHTcRwI1otJdo1gIc4EY9F23mlO91PLWfRgfs11CwBT8UMWYpOwq_F-0HRofzH2STcZEV55_JdZ4NwNNwREDme_FjJx0XoqdC88o9Mxt6nXNq2xstKLjjww8YLnM2UXn9r_TKC628uqLXR6IU_lfOSf58U1C1S5Q",
+            "vid": "https://cdn4.telesco.pe/file/b88f84c12a.mp4?token=YZUbinS9mj9Rvn7UhXdKHY4ZQxAZO0bclCHVI32j59fbVKB-njLYq_xY-CMyqlbN2OdkxP9QNCvFBpyDfKb6BISx3wgechdx6rgkYMEKqHmAcHRNclxsZjmpCUAqZBp3XMTVXscOtQEeziXzMfC_5lKD-jxqDRNieU5fvaEy5GJrIWOTk-8J0gjUboglRseA5qhl9CiAhsPCh2UsAJaVUF6rGTZC4GSiH1hd9-cN39KfbCViUAPcO1UAs1mukkHNSjFW9fnB81kg906YbrjyQjtiV1YtOGdjL0e2Ub75VDeyo7dDjLEo7TdUXmXNqd6RXAHwF1QJj3bkGdbgMRfspQ",
             "isVideo": true,
-            "ts": 1775062874.0,
+            "ts": 1775581416.0,
             "poll": null
         },
         {
-            "m": "01.04 | 16:39",
+            "m": "07.04 | 16:07",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5603",
-            "t": "🇷🇴 РУМЫНИЯ: ALEXANDRA CĂPITĂNESCU ЗАЖИГАЕТ «FUEGO» В РАМКАХ #ALBM",
-            "b": "Официальный YouTube-канал Eurovision представил новый эпизод серии «A Little Bit More». Сегодня в центре внимания - представительница Румынии Александра Кэпитэнеску с кавер-версией культового хита «Fuego».\nСправилась ли Александра с «пламенем» Фурейры или оригинал остался недосягаемым?\n🔗 СМОТРЕТЬ: YouTube\n⏱️ Время чтения: 1.1 мин | 🇷🇴 YourVision: Insider",
-            "img": "https://cdn4.telesco.pe/file/vXdBm03M-23KyO_CyazYYPJcs5g1dGwLv-YSv2jmp5napnXKDcwUP2c3ylnsU0RrD8D943WsmX9S3n2Vlc61R4b0a02iidc1OveeKxpQi46215K3PHdy9UlouB00lVVcj1HAV5z_m6Ckq0tMkgb2EB7DvonPRy4A_Od0elguwZZVUe44qMwo_VgWpeNdE7m_cxF0CW8E7mXogP1G5katq0o7EhbGE0ApVaFedF2rc_3Pru5L2LKTB3t3seiLXRBVvM2P04q2zMy-yBZqrSXY-Xj3UN-8x56GJalktG7LXBKKVok8rk5jiszFVhogOhomibNAuaoi_mkdQ2Uofsxn7A.jpg",
+            "u": "https://t.me/YourEurovision/5656",
+            "t": "❤️ EUROGROOVE: VIENNA PRELUDE - ПЕРВЫЙ ЭШЕЛОН ВЕНЫ",
+            "b": "Мы открываем голосование в специальном выпуске Eurogroove. Сегодня на кону - расстановка сил первого полуфинала и первых гостей из числа автофиналистов. 17 треков, которые уже через месяц столкнутся на арене Wiener Stadthalle.\nКто из участников первого полуфинала заберет лидерство в нашем чарте? Смогут ли специальные гости Sarah Engels или Sal Da Vinci составить конкуренцию фаворитам?\n🗳 НОМИНАНТЫ ЧАРТА:\n1. 🇲🇩 Satoshi - «Viva, Moldova!»\n2. 🇸🇪 Felicia - «My System»\n3. 🇭🇷 Lelek - «Andromeda»\n4. 🇬🇷 Akylas - «Ferto»\n5. 🇵🇹 Bandidos do Cante - «Rosa»\n6. 🇬🇪 Bzikebi - «On Replay»\n7. 🇮🇹 Sal Da Vinci - «Per sempre sì» (Guest)\n8. 🇫🇮 Linda Lampenius & Pete Parkkonen - «Liekinheitin»\n9. 🇲🇪 Tamara Živković - «Nova zora»\n10. 🇪🇪 Vanilla Ninja - «Too Epic to Be True»\n11. 🇮🇱 Noam Bettan - «Michelle»\n12. 🇩🇪 Sarah Engels - «Fire» (Guest)\n13. 🇧🇪 Essyla - «Dancing on the Ice»\n14. 🇱🇹 Lion Ceccah - «Solo quiero más»\n15. 🇸🇲 Senhit - «Superstar»\n16. 🇵🇱 Alicja - «Pray»\n17. 🇷🇸 Lavina - «Kraj mene»\nПЛЕЙЛИСТЫ:\n🎵 Spotify\n📱 YT Music\n🎥 YouTube\n🗳 ГОЛОСОВАНИЕ: Strawpoll\n(Голосование до воскресенья, 12 апреля, 23:59 по Риге)\n📻 ПРЕМЬЕРА ИТОГОВ: Вторник, 14 апреля, с 18:00 (по Риге) на levdanskiy\n⏱️ Время чтения: 0.8 мин | 🇪🇺 YourVision: Eurogroove",
+            "img": "https://cdn4.telesco.pe/file/lrz9FeROCD8a_R9s5SY-7Zmn353J4hMyNzKi4W1hI71_ydx74FMfjjTjFOlvF4cVEiBnGRuVfV59Gux8Y-duuAj0I8vcdh9_yoajA5827Xftpqr1b7dyfm_Zn9kUZ1DuzPtrRUBwdyfrmVCR2VcmxllA9GUQtnj8U7q6YlKQ3eSmkQuErg12i9CtrLBchU9rWFKzbc-raZgZRIGN128PyHZT1ABgXDe_0nMubsoM6Qcq0q6AvnvZIC44nRcEb9k4TVPSffufFpk4ZWL9bC5gDnLXq648z2tqqm2nctWo7SHAL7mWdU2YrRwpJRxcn32KLySU_hCG-KZzTE_BpUCn8A.jpg",
             "vid": "",
             "isVideo": false,
-            "ts": 1775061557.0,
+            "ts": 1775578037.0,
             "poll": null
         },
         {
-            "m": "01.04 | 15:04",
+            "m": "07.04 | 15:59",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5655",
+            "t": "🇷🇺 RU-TOP: ВАНЯ ДМИТРИЕНКО - НОВЫЙ ЛИДЕР SIGNAL 20",
+            "b": "Ваня Дмитриенко с треком «Ртуть» обходит Hollyflame, забирая золото с минимальным отрывом в 1 балл.\n🏆 ИТОГОВЫЙ ЗАЧЕТ (SIGNAL 20):\n🥇 1. Ваня Дмитриенко - «Ртуть» (63 pts) ↑+1\n🥈 2. Hollyflame - «Тону» (62 pts) ↓-1\n🥉 3. JONY - «Помню» (53 pts) ═\n4. SQWOZ BAB - «Купер» (51 pts) ═\n5. ICEGERGERT & ZIVERT - «Банк» (42 pts) ═\n6. Любовь Успенская & Jakone - «Плакала надежда» (40 pts) ↑+1\n7. MACAN - «Останься образом» (39 pts) ↑+5\n8. Мот - «Намёк на нас» (38 pts) ↓-2\n9. Lyriq - «Кассеты» (36 pts) ═\n10. MONA - «Попрошу тебя» (35 pts) ═\n11. Artik & Asti - «Модный поп» (34 pts) ═\n12. 5sta Family - «Раз, два» (33 pts) ↓-4\n13. Uncleflexxx - «SMS» (22 pts) ═\n14. Sabi & Mia Boyka - «Базовый минимум» (21 pts) ↑+1\n15. Клава Кока - «Сплетни. Шум. Лук.» (17 pts) ↑+4\n16. Xcho - «Ты и я» (17 pts) ↑+1\n17. Filatov & Karas - «Включи музыку» (16 pts) ↓-3\n18. Seryabkina - «Асфальт» (16 pts) ↓-2\n19. Gayazov$ Brother$ - «Русская рулетка» (13 pts) ↓-1\n20. Лёша Свик & Nyusha - «Пробуди» (9 pts) ═\n⏱️ Время чтения: 1.2 мин | 🇷🇺 YourVision: Chart",
+            "img": "https://cdn4.telesco.pe/file/oIF459ZkOa2CrzOzi92nmlOreAigydiXJSPZYGgdhVmMtiCqbxCykqcOYUyrI5cBqkv75Qdx8LcpMaAc6iZuT6A1yLmkF9Smym38fIKjA4pjMbEYW5cKNNg4zjhgMc6ZSHWLB5h2l9tfPsepmWyNm48XCX-fxaJ4tnzoZ907qH8ECROgorjAcHNOewU2H0w2Z41c797m_mI5OM-JcmGn40t9j8O_dYeBwb4CwD4Mc2hYpN190cSC3ZnW1cqCEyUCny_xuxl5Wl9F2DI6d5pnZE-Ib2WIfIIzI9SNB_8EKfNnAyn839hwKY_7p5mJ7leFB6a9RvHtDAfa68WZW9cW3A.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775577562.0,
+            "poll": null
+        },
+        {
+            "m": "07.04 | 15:02",
             "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5910",
-            "t": "🥐 ALMANAC: #BAKERY - ТЕАТР ТРОМПЛЕЙ: ТЕХНОЛОГИЯ СЪЕДОБНОГО КАМНЯ",
-            "b": "Искусство trompe-l’oeil требует аптечной точности. Сегодня мы превращаем шоколадный мусс в кусок балтийского гранита.\nИНГРЕДИЕНТЫ (ГРАММОВКИ)\n• Мусс: 200г темного шоколада (70%), 300мл сливок (33%), 50г сахара, 2 боба тонка.\n• Глазурь: 150г какао-масла, 150г белого шоколада, 3г бамбукового угля (порошок).\n• «Земля»: 100г муки, 80г холодного сливочного масла, 50г сахара, 20г какао-порошка, щепотка соли.\nТЕХНОЛОГИЯ ПРИГОТОВЛЕНИЯ (WORKFLOW)\nШАГ 1: ПОЧВА\nСмешайте муку, сахар, какао и соль. Добавьте кубики холодного масла и быстро перетрите в неоднородную крошку. Выпекайте 15-18 минут при 170°C. Остудите и еще раз разломайте крупные куски.\nШАГ 2: СЕРДЦЕ КАМНЯ (МУСС)\nНагрейте 100мл сливок с натертыми бобами тонка до появления пара (не кипятить). Вылейте на поломанный темный шоколад, дайте постоять 2 минуты и пробейте блендером до эмульсии. Оставшиеся 200мл сливок взбейте до мягких пиков и аккуратно вмешайте в остывшую до 35°C массу. Разлейте по формам в виде камней и уберите в морозилку минимум на 6 часов (до полной «каменности»).\nШАГ 3: ОБЛИЦОВКА (ГЛАЗУРЬ)\nРастопите какао-масло с белым шоколадом на водяной бане. Добавьте уголь и пробейте блендером. Рабочая температура глазури - строго 35-38°C.\nШАГ 4: СБОРКА\nДостаньте замороженные заготовки. Наколите каждую на шпажку и окуните в серую глазурь на 2 секунды. Пока глазурь не застыла (это произойдет мгновенно на холоде), слегка припылите через сито смесью угля и сахарной пудры для эффекта матового минерала.\nПодача: выложите «камни» на подушку из шоколадной «земли», добавьте веточку микро-зелени для имитации мха.\nМАРГИНАЛИИ (MARGINALIA)\n«Самый честный десерт тот, который заставляет тебя сомневаться в собственных чувствах». Пометка на полях: иллюзия в тарелке - это не ложь, а приглашение к игре. В мире, переполненном очевидным, такая мистификация возвращает нам детскую способность удивляться.\n⏱️ Время чтения: 2.1 мин | 🥐 Almanac: Bakery",
-            "img": "https://cdn4.telesco.pe/file/WxyRuqFLuCWZNwj-e9SWxB52x_3GcTaGj4Ow8kIVXLsN6aqWu8_F_7Dzbeu_adATTFPT05BEHlsabsBUTd2c7BTYVe9hTsBy63hemzdLjtOUMFIA0nTZouaqGA4VGBJCbi6eXXkg_EaGbkoau9OEF0e4dS49X0ztjOKjY0WjppqVD4sNJXjMOHs_OubIzDeJsLWB67ArShCLXyeHa1vAWjVWgSK3d6KPSCOKCQhpWe3ruFC15EQQ_b7aQ-8KSuTf2AsQ1wV-UyC4z4_YhaUwcOOH5E_kd7QUH6nSGOYNeipm_wWYpQ5owTsgmU0QrsIUO6gy65118jsIuvA8OI9qog.jpg",
+            "u": "https://t.me/almanac_marginalia/5923",
+            "t": "#LORE: ПАУТИНА ГОРДЫНИ",
+            "b": "История Арахны - это не просто миф о наказании за дерзость. Это первый в истории человечества манифест художника, который бросил вызов системе. Арахна была простой смертной, чьё искусство ткачества превзошло саму Афину.\nБогиня требовала поклонения, Арахна требовала признания мастерства. В их великом состязании Афина выткала олимпийское величие, а Арахна - постыдные тайны самих богов. Она показала истину там, где должна была быть слава.\nНаказание превратило её в паука, но не убило творца. Сегодня, глядя на сложную структуру паутины в заброшенных домах, я вижу не насекомое, а бесконечный код. Это напоминание: истинное мастерство нельзя уничтожить, его можно только заставить сменить форму. Сказка учит нас, что у каждой нити есть цена, а у каждого шедевра - свой риск.\n⏱️ Время чтения: 0.9 мин | 🕷 Almanac: Lore",
+            "img": "https://cdn4.telesco.pe/file/hNrG2fLHuQ5VRNITJHCG7cdgprCmpmKJfbibtbkeIyMm9iljij0pIdMxKxaBwsuwkX0ug6xRS8Pp5Xcgkgbgs6NMfoVJgGYgrZbDGRH6j0SkIx903fZUlxTrmF24XOU90chJZnQTReOVDrOLI-kHWtFauj0DkE-0LjUKcvygTlEf1yeFkzWFsE1B4dUbZKhd-t1BUVdBhieCIryiOjr1VA_Y7aJJx8GnLPuyff1eIy2EWYpZzqaHTn1xrZXDfcU90cDhoswQxATEaHtLcV5d0HxEFUNebmgwKnZP8QcORVGaZ5-YmR91Jt8fXQQ3JiWRM93-ERqJV4YIGHtvKnpi3w.jpg",
             "vid": "",
             "isVideo": false,
-            "ts": 1775055888.0,
+            "ts": 1775574121.0,
             "poll": null
         },
         {
-            "m": "01.04 | 14:50",
+            "m": "07.04 | 14:50",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5602",
-            "t": "🇬🇷 ГРЕЦИЯ: AKYLAS ПОСЯГНУЛ НА НАСЛЕДИЕ КОНЧИТЫ ВУРСТ",
-            "b": "Греческий «Одиссей» 2026 года выбрал максимально высокую планку для проекта «A Little Bit More». 1 апреля нас ждет премьера его версии «Rise Like a Phoenix» — песни, которая изменила историю конкурса.\nЭКСПЕРТНЫЙ ВЗГЛЯД:\nДля Акиласа это не просто кавер, а политический и художественный манифест. После вирусного успеха в TikTok и мощного этно-драйва «Ferto», артист решает показать свою вокальную мощь через классическую балладу. Это прямой месседж жюри: «Я не только про перформанс, я про голос».\nСможет ли Акилас добавить новые смыслы в канонический образ Феникса, или эта высота окажется недосягаемой? Узнаем уже в среду.\n📅 ПРЕМЬЕРА: 01.04.2026 | 18:00 (Рига)\n🔗 ЖДАТЬ ТУТ: YouTube\n⏱️ Время чтения: 0.8 мин | 🇬🇷 YourVision: Preview",
-            "img": "https://cdn4.telesco.pe/file/rjpiKpZipOnVJDCkT5f_SrPmWmAfyfDO1GKj8s5tPvXA5IYt67vFBZCv7vPlqTazZAVmHQMQDIl6T9N4CiuBSHy3fEuLAak2Bl1eVtaiSSLzLDEqupL37zGjaspKE2Q0g9PPu6ers4wHjQJB7ZNGjnXXvNXpXRkUTa1uKo7W58OOgWDmMK9CbUkgv7MS8uH5mXdXYAVHgQFLjh14uWYEN7e8ijLIERmECg1TmQBR2YFoGTh0WeMI1VVY8T4QhEOIZ3Lwy8e8HoxUdX8iVVK_2ErwrARyuaxYn0ff_jZ74tHggoASf5rIbC5y3eqruXOPX_GSFNCIWmSsT-3qNSVzAA.jpg",
+            "u": "https://t.me/YourEurovision/5654",
+            "t": "🇷🇺 RUTOP: SIGNAL 20 - МЫ В ЭФИРЕ",
+            "b": "Главный музыкальный отчет российского сегмента YourVision возвращается на частоту. До старта трансляции итогов недели - 10 минут.\nДвадцать самых актуальных треков Signal 20 в одном чарте. Узнаем лидера прямо сейчас.\n📻 СЛУШАТЬ ЭФИР (18:00)\n💻 ИНТЕРАКТИВНЫЙ ХАБ\nВстречаемся на частоте.\n⏱️ Время чтения: 0.4 мин | 🇷🇺 YourVision: RuTop",
+            "img": "https://cdn4.telesco.pe/file/V8gl6q9k6NyZVmeVQHnjr99fDyN0vREFPsNAPWLW0oaDaI2QKLDsoCNjHZjpceMmMOxnrhKHYrRUDtWXsW8R33bW8usl7lMCsoaWXrQfUQ0RthLF_-3rgrp6JV1D_sB1P4A6ZFazgT_DqTwGsQ_H3uD6yYc-Z7mvr2xnpqVTJyG2JhXr7wIeBAGa3RS_c-2U1w5xvkH7inF1RLU44dVDPyX2X86sb-zJAlDmep93R3TzqpNhceNkY835KLIowGX4lEOq_UG-aUtnnVce7gDhkEmKH9fuNwCH8p3__03X3jVfwf27QjshFuDoD_GW-F45CQeaJeLBdVhyVWXltU9_5w.jpg",
             "vid": "",
             "isVideo": false,
-            "ts": 1775055013.0,
+            "ts": 1775573410.0,
             "poll": null
         },
         {
-            "m": "01.04 | 07:09",
+            "m": "07.04 | 12:44",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5601",
-            "t": "🇬🇧 RESULTS: ВЕЛИКОБРИТАНИЯ ПРОХОДИТ В 1/4 ФИНАЛА - КИПР ВЫБЫВАЕТ",
-            "b": "Седьмой поединок плей-офф YourVision Cup 2026 завершился победой британского эксперимента над средиземноморским попом. Аудитория сделала выбор в пользу смелого аналогового звучания Сэма Баттла.\n📊 ИТОГИ ГОЛОСОВАНИЯ:\n• ПОБЕДИТЕЛЬ: 🇬🇧 United Kingdom (Look Mum No Computer) - 56% ★\n• Второе место: 🇨🇾 Cyprus (Antigoni) - 44%\nВеликобритания забирает предпоследнюю путевку в четвертьфинал. Для Кипра турнир завершается в 1/8 финала. «Jalla» получила мощную поддержку, но этого не хватило, чтобы остановить британский «Eins, Zwei, Drei».\n🚨 NEXT: Финальный баттл 1/8 финала - Malta vs Bulgaria - стартует уже скоро.\n🔗 ИНТЕРАКТИВНАЯ СЕТКА: Хаб YourVision\n⏱️ Время чтения: 0.9 мин | 🇬🇧 YourVision: Results",
-            "img": "https://cdn4.telesco.pe/file/kTe803kHkNPI3NgP4xKLtv5R9mO0ZQPZUatHjhORc2pWknw1kcgBTvagQi0qLZvn96I0pEbSsUR1CmSQwFlb1Aum4m2a8TJa7F3-0bTF-CkZs1EU_ubzQ51uREs0akvoyABywzubVjFY0x6tiERqf0CdoMyp8GwIaOPyXqEQ2NX5iIrPCem5cKsz3CFrAB4yyWVR7SaasxWZ8TZ1Hdo8O2KMG1CKaDX0RlL5yzIMw8H_wo0cvu_TMNKGBOMNKHmmCxfUN8EKnobjOho0VIjZex82BoJf1vh40dprXmfJTzlRb8xXI5I2kvCo41baanOQczeeVSj5bc6x5Sa7kgWmqA.jpg",
+            "u": "https://t.me/YourEurovision/5648",
+            "t": "🇦🇹 ВЕНА 2026: ИНСАЙДЕРСКИЙ ГИД ПО СТОЛИЦЕ 70-ГО ЕВРОВИДЕНИЯ",
+            "b": "Вена официально переходит в режим «Хозяина». Пока 35 делегаций пакуют чемоданы, мы подготовили для вас карту главных точек притяжения мая. Это не просто конкурс, это имперский шик, смешанный с передовым продакшном.\n📍 ГЛАВНЫЕ ЛОКАЦИИ:\n• Eurovision Village (Rathausplatz): Сердце города с 10 по 17 мая. Ратушная площадь превратится в хаб на 15 000 фанатов. 15 экранов, 14 фуд-кортов и бесконечный поток звезд на главной сцене. Вход свободный.\n• EuroClub (PraterDOME): Здесь заканчивается каждая ночь. Шесть тематических вечеринок под руководством Эрика Папилайи.\n• Turquoise Carpet (10 мая): Дефиле от Бургтеатра до Ратуши. Все 35 стран под аккомпанемент симфонического оркестра ORF.\n• Eurofan House (Wien Museum): Интеллектуальный центр. Интервью, лекции и архивные редкости.\n🚇 SONG CONTEST LINE:\nЛиния метро U2 официально становится главной артерией конкурса, напрямую связывая Village, EuroClub и арену Wiener Stadthalle. 550 трамваев с символикой конкурса уже выходят на маршруты.\nГде бы вы провели идеальный вечер в Вене: в шумном EuroClub или в уютном кафе рядом с Eurovision Village?\n⏱️ Время чтения: 1.3 мин | 🇦🇹 YourVision: Vienna 2026",
+            "img": "https://cdn4.telesco.pe/file/lYn9vvy_SneHRKQipTVI_emu64tyoGtfCHjCjkUVfBl5VdRoGrOOKy-RK1I1duVPeLYgVyTykD22N15gjRwXxnlowR78ML_-6tHeq297EazzMMhhRfPfLAAsh7_lMqcyObxdTIBUw89gB4s4fz8kWf-EEYWNtwLVuEpVGDGJyF3pllSryuQZYdAJmy1siN4VTNDsU6nFI9LYHdiSZjPp-mKrsoodZf_SErvLMqX2cyI0P8ulOh6R6GKxkHlJJPF79hNvqsRAJ5U67an_rlJSnuXwBHb9xYa5Tkipw9b-iqT-qpHxk28FhgWyEBRAUDkPsp7flhSxnlEKEycger2f1Q.jpg",
             "vid": "",
             "isVideo": false,
-            "ts": 1775027344.0,
+            "ts": 1775565849.0,
             "poll": null
         },
         {
-            "m": "01.04 | 07:05",
+            "m": "07.04 | 12:04",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5922",
+            "t": "#BAKERY: ТАРТ ТАТЕН. ГЕОМЕТРИЯ ОШИБКИ",
+            "b": "Легенда гласит, что Стефани Татен просто забыла положить тесто вниз, пытаясь спасти подгоревшие яблоки. Эта «ошибка» стала каноном французского кондитерского искусства. В этом десерте Реализм карамели встречается со Сказкой перевернутого мира.\nИНГРЕДИЕНТЫ:\n• Яблоки (сорт Голден или Гренни Смит): 6-8 шт.\n• Сливочное масло (82%): 100г\n• Сахар тростниковый: 150г\n• Тесто слоеное (бездрожжевое): 250г\n• Ваниль: 1 стручок\nWORKFLOW:\n1. КАРАМЕЛИЗАЦИЯ. В сковороде с толстым дном растопите масло с сахаром и ванилью до состояния густого янтарного сиропа.\n2. УКЛАДКА. Яблоки очистить, разрезать на четвертинки и плотно выложить в карамель «спинками» вниз. Томить на медленном огне 15 минут, пока сок не смешается с сахаром.\n3. ЗАПЕЧАЬ. Накрыть яблоки пластом теста, заправляя края внутрь. Сделать надрезы. Духовка: 190°C, 25-30 минут до золотистой корочки.\n4. КАТАРСИС. Дать постоять 5 минут и перевернуть на блюдо одним резким движением.\nКарамель должна быть темной, но не горькой. Это вкус честной победы над обстоятельствами.\n⏱️ Время чтения: 1.1 мин | 🍎 Almanac: Bakery",
+            "img": "https://cdn4.telesco.pe/file/bjxou1HwIX7k8QnuV0gy-sSXBGGhwoJMZOSZAnLZtoG82b3-jKGfBMptPk6EoNEFjDPzWSimr7Q-iPh3Bz0x6fgEAdoEUL3A6cE3CzAax_6wX3bZhOqnayl0lyzeJ25H686cf4m22iHdv872SxALB0of07IGxxFp7QeaXtNeYHzau-WzH-IppzzEnev2hqOnX9YstpJ4_CQ3miZE7KUubdJ4zxTeFRREbi-vGVZS3wTgJTAVaYArY09MPW3szvlt6MRqTaxgbyE8orGzBNbA_3Q5dJADs9NDRVRi0uupQr7Xd_edGog5LmFjHrsqWihiRzFe_NH-OAcVz8CVVIVSxg.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775563441.0,
+            "poll": null
+        },
+        {
+            "m": "07.04 | 08:01",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5600",
-            "t": "🇸🇪 ШВЕЦИЯ: FELICIA ВЫПУСТИЛА КАВЕР-ВЕРСИЮ «FRÄMLING»",
-            "b": "Представительница Швеции на Евровидении 2026 года, Felicia, представила официальный кавер на одну из самых знаковых песен в истории шведского участия - «Främling». Оригинальная композиция в исполнении Каролы принесла стране третье место на конкурсе 1983 года в Мюнхене.\n🔗 СМОТРЕТЬ: YouTube",
+            "u": "https://t.me/YourEurovision/5647",
+            "t": "🇧🇬 БОЛГАРИЯ: DARA ПРОХОДИТ В ПОЛУФИНАЛ ПОСЛЕ ИСТОРИЧЕСКОЙ НИЧЬЕЙ",
+            "b": "Финальный четвертьфинал YourVision Cup 2026 завершился беспрецедентным результатом. Великобритания и Болгария разделили голоса поровну - 50% на 50%. В этой патовой ситуации судьбу последней путевки решил «протокол доминирования».\n📊 ИТОГИ ГОЛОСОВАНИЯ (QF #4):\n• ПОБЕДИТЕЛЬ: 🇧🇬 Bulgaria (Dara) - 50.4% (Tie-break) ★\n• Второе место: 🇬🇧 United Kingdom (LMNC) - 49.6%\nБолгария с треком «Bangaranga» забирает последнюю путевку в полуфинал благодаря более высокому результату в 1/8 финала (57% против 56% у Великобритании).\n📅 ROADMAP: ВРЕМЯ ПЕРЕДЫШКИ\nСегодня, 7 апреля - ВЫХОДНОЙ. Турнирная сетка замирает для подготовки к решающим битвам. Команды финалистов отправляются на репетиции, а эксперты пересматривают коэффициенты.\nПОЛУФИНАЛЫ: КАК ЭТО БУДЕТ?\nГолосование в 1/2 финала официально стартует завтра, 8 апреля.\nПРОЦЕСС:\n1. ФОРМАТ: Два прямых столкновения. Победители проходят в Гранд-Финал, проигравшие - покидают турнир.\n2. ТАЙМИНГ: Каждое голосование длится ровно 24 часа.\n3. ПАРА 1 (Завтра): 🇫🇮 Финляндия vs 🇬🇷 Греция.\n4. ПАРА 2 (Послезавтра): 🇲🇩 Молдова vs 🇧🇬 Болгария.\nГотовьте свои голоса. Впереди - битва титанов.\n⏱️ Время чтения: 1.4 мин | 🏆 YourVision: Cup",
+            "img": "https://cdn4.telesco.pe/file/Y7j8ba1tatZQsDsG4e_TlWAbRBdbwDvhyXkOP5gTamhYaJeonAh1HJMZlc8ihjXjoCDub2W60c4RB9Or0A_jPs_WYShVJ8PQxaKShsOD6pnXjPIwnNQcFOhyrHUuyTPB6mUMJb2AS2onj5_ok-Z4p2jro7BTazC4J1ZSh70IbocqCjRwMqYBQcJhlwkWBJ2QYEI3bwhMPNXferDVzREdeSnf9cGYL4_W-DUXi5iv6XBoRQLpaobFYPIi-aaZemBJDtbQHnabgAp5TjlgZCp1i5g9UII953hRBe6QXaCAbGnOzfnNdWiI6YLa6tDAYGkWCjfgxv67E2IOZi7OJ9hYSg.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775548902.0,
+            "poll": null
+        },
+        {
+            "m": "06.04 | 18:32",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5646",
+            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - БЕЛЬГИЯ",
+            "b": "Бельгия в этом сезоне сменила курс: от яркого нео-диско и уверенного мужского вокала к меланхоличному, почти театральному арт-попу. Проводим аналитический аудит: стал ли этот разворот стратегически оправданным для Брюсселя?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇧🇪 2026: Essyla - «Dancing on the Ice»\nТонкий, атмосферный и глубокий трек. Эссила делает ставку на визуальную эстетику и «холодный» звук, который требует от зрителя концентрации и сопереживания.\n🇧🇪 2025: Red Sebastian - «Strobe Lights»\nЭнергичное, ритмичное нео-диско с мощным грувом. Ред Себастьян предлагал праздник и моментальный контакт с аудиторией. Это была ставка на драйв и танцпол.\nВОПРОС К ЭКСПЕРТАМ\nЧто кажется вам более органичным для современной Бельгии: умение создавать праздник с Red Sebastian или способность погружать в меланхолию с Essyla? Чей «свет» был ярче?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇧🇪 YourVision: Reset",
             "img": "",
-            "vid": "https://cdn4.telesco.pe/file/0db8e24302.mp4?token=bbtUZNvaeIW8B5fQIjzbzNOFwZA4yN2JiW71SOc6vtbpt8mc4zkXo3dKW0P1Z2JLSeWaUQ4MUsnNDNxsqyAua7lqyla2xNpcqgUL6Ti9jeL220f4BNqeJKlsRFxIxQBh2SNVSx92z7OTROnq2Kq4P8gekCcpf5KhtAGxAYfvrzP1dWv2eOKOwNtPNsYTGamEqgt0X3ymW9H9-vbenS71k7RuWReSR0vPFLR0EQ8zUtWtTveJxywsYTFVjI_wLDaTybJf9b3lSaGmwuOchEf3se3UOSLZVqQpuNzgaQVtY_WfMcYiwrH5RAKkC1f15bleAT3H0f0ibXqLbY9pxXyMsw",
-            "isVideo": true,
-            "ts": 1775027139.0,
-            "poll": null
-        },
-        {
-            "m": "01.04 | 07:05",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5599",
-            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #8",
-            "b": "Финальный аккорд 1/8: средиземноморский лоск против кибер-балканской энергии. Битва двух безупречных поп-продуктов.\n🇲🇹 MALTA: Aidan - «Bella»\nГлавный поп-символ Мальты. Эйден прошел путь от скандальной дисквалификации до триумфального реванша. «Bella» - это современный средиземноморский поп с элементами реггетона и лоском мирового уровня. Мальта привезла на 100% готовый бренд.\nvs\n🇧🇬 BULGARIA: Dara - «Bangaranga»\nПоп-икона и «победоносный тренер». Дара - это машина по производству хитов номер 1. Её «Bangaranga» - взрывоопасная смесь R&B и синти-попа в эстетике «Cyber-Balkan». Болгария привезла один из самых профессиональных и технически сложных номеров сезона.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.3 мин | ⚔️ YourVision: Play-Off",
-            "img": "",
             "vid": "",
             "isVideo": false,
-            "ts": 1775027106.0,
+            "ts": 1775500332.0,
             "poll": null
         },
         {
-            "m": "01.04 | 07:02",
+            "m": "06.04 | 18:32",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5597",
-            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
+            "u": "https://t.me/YourEurovision/5645",
+            "t": "📊 ОПРОС: 📊 THE RESET: БЕЛЬГИЯЧья стратегия была сильнее?",
             "b": "",
             "img": "",
             "vid": "",
             "isVideo": false,
-            "ts": 1775026921.0,
+            "ts": 1775500321.0,
             "poll": {
-                "question": "📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
+                "question": "📊 THE RESET: БЕЛЬГИЯЧья стратегия была сильнее?",
                 "options": [
-                    "🇲🇹 MALTA (Aidan)",
+                    "2026: Essyla («Dancing on the Ice»)",
+                    "2025: Red Sebastian («Strobe Lights»)"
+                ]
+            }
+        },
+        {
+            "m": "06.04 | 18:00",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5921",
+            "t": "🏛 #FRAGMENT: РИТМ БРУСЧАТКИ",
+            "b": "ESSENCE\nАкустические и визуальные характеристики мощеных улиц. Брусчатка как низкочастотный фильтр города. Основные параметры аудиальной среды:\n- Ударный шум: Ритмический звук шагов и шин, создающий «сердцебиение» исторического центра.\n- Материал: Гранит и базальт обладают высокой отражающей способностью, создавая специфическое эхо в узких переулках.\n- Геометрия укладки: Веерная или рядовая укладка меняет визуальный ритм движения пешехода.\nMARGINALIA\nЗвук шагов по брусчатке - это музыка, которую мы перестали замечать. В столице тени каждый камень помнит тысячи историй. Вечером, когда гул машин стихает, этот ритм становится доминирующим. Это звук устойчивости. Брусчатка сопротивляется скорости, заставляет замедлиться, смотреть под ноги и чувствовать фактуру мира. В этом есть глубокая честность. Город говорит с нами через вибрацию подошв, напоминая, что под слоем асфальта и бетона всё еще живет древняя, каменная основа.",
+            "img": "https://cdn4.telesco.pe/file/pCih7gm93P1oMkvVhchnxtKypePbG0YvmS0HEon5-ln5VoPT97RqHEyqf4UI0yMEvO_-EBED9WAW3QtrQHtmPMJuZKgPyLWdome4nomtSGOlVa6qGI9ypb_aLPtqoBAi4PPgugMp2GvXVtxeeNcjPVDArjnFkVM2G4HAUiqt7laVZHL_jqZuKLMsazQTKXa1lWHjC5FK1UpOSpo6pZ24gfQSxaNH0dmNylaedyQ7FYcJiOldThOHgO8vOPxkUdSW0YbndsZc-pM7RBZmUeofvNapyv9YMwA9Y0vWIYP_Qn5EPzrH_GjtUP473-RV5rVjHPp1EuxcxKpFgAK_e3vPDw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775498455.0,
+            "poll": null
+        },
+        {
+            "m": "06.04 | 17:04",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5644",
+            "t": "🧬 DNA: ПОРТУГАЛИЯ - BANDIDOS DO CANTE",
+            "b": "Португалия в 2026 году продолжает свою миссию по сохранению культурного наследия через призму современности. Группа Bandidos do Cante привозит в Вену «Rosa» - песню, в которой древняя манера пения «Cante Alentejano» встречается с актуальным поп-звучанием.\nTHE JOURNEY (ПУТЬ)\nBandidos do Cante - это квинтет из города Бежа, выросший на традициях народного многоголосия региона Алентежу. Группа заявила о себе в 2022 году, приняв участие в записи хита «Casa» группы D.A.M.A. Первый альбом «Bairro das Flores» (2026) закрепил их успех как главных новаторов жанра. В марте 2026 года они выиграли «Festival da Canção», получив максимальные 12 баллов от телезрителей. Это история о том, как друзья детства превратили локальную традицию (объект ЮНЕСКО) в стильный музыкальный бренд.\nSTYLE & SOUND (ДНК)\nДНК группы - это «симбиоз времен». «Rosa» строится на уникальном мужском многоголосии, которое накладывается на современный бит и акустическую гитару. Это мощный, заземленный и невероятно мелодичный звук. Визуально это эстетика «Neo-Ruralism»: аутентичные португальские образы в сочетании с высокой модой и современным искусством.\nVERDICT: Португалия снова отправляет на конкурс нечто непохожее ни на что другое. Bandidos do Cante - это мощный культурный стейтмент, который запомнится Европе своей подлинностью и мужской энергией.\n⏱️ Время чтения: 1.5 мин | 🧬 YourEurovision: DNA",
+            "img": "https://cdn4.telesco.pe/file/CxUpMa-5LIjN04T0ECMnIQo79SGHnByCNvNJRmHcnLyVGXi3P3wZXt93DtPbHtwquIQPeckrhN4rV3zkTNIKRJAEp6FgGI8lYj8djXH_fTdBpV4M97IF-M4mCu8CxUQELl5ju5j87B_tdckQ3WAcJ104803g6LBpwtkVwVygEQlDwQNsCutEx3081qTHHFKUokN4NhkASnetA_1nE8_PC5Q2N2aj7xR0Wd1yG_rUZhKVImIHVmNHznAVCaC4AYpHoVDZAwxohgmWRpEVuXMW6rMB3AuRVzGn2PGBa3ngdW0VL6be-qJ3ibT1Ipfyrrtsh5YzhtAhGDfGs-aMhvk2-g",
+            "vid": "https://cdn4.telesco.pe/file/f5ad4eb749.mp4?token=Fgp-u1CLRmzgb1GbnoJEiwhCTRpmt97P2OtIKc6Lyffx497S_MCZkLRoh1_91dfwP6Sbd6AX4q_Pd6D3shcYpn9sMTAH8ghiaxjJpD0CAQjI22yNOrcxzgN9TggbW8_xSlbxCha34LtJZT6zOrnRUbdM1wdzV1O2yASpVUK76SiPu4PmQrcnyOkl0ldRguB775QXRnsSBUb7G5LKEYms2nYqABxZpZV-3bhMhWwQxalTKg5AlW7hZnj-plCRHf7kWyC-ju-ERO6xE_pm0j72javqaCzGUmatqBckEneryKiF3pQU2GD4aM0FhOuVwYieOCMa4g83CBq2Nj_gpQnZow",
+            "isVideo": true,
+            "ts": 1775495079.0,
+            "poll": null
+        },
+        {
+            "m": "06.04 | 15:00",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5920",
+            "t": "🏛 #SOURCE: ВРЕМЯ ПЕСКА",
+            "b": "ESSENCE\nПесочные часы (клепсидра) как древнейший инструмент визуализации потока времени. В отличие от цифровых или стрелочных механизмов, песок демонстрирует физическую массу прошедших секунд. Ключевые философские аспекты:\n- Гравитационная неизбежность: Время как поток материи, который невозможно остановить.\n- Цикличность: Необходимость переворота часов символизирует вечное возвращение и обновление.\n- Эрозия: Песок как результат разрушения твердого (камня), напоминающий о бренности любых структур.\nMARGINALIA\nПонедельник - время перевернуть часы. Мы часто воспринимаем время как абстракцию, но песок напоминает о его тяжести. В балтийском свете, падающем на береговые дюны, эта метафора становится осязаемой. Каждый шаг по песку - это взаимодействие с архивом разрушенных гор. Время здесь не летит, оно пересыпается, шуршит и оседает. В этом шуршании больше правды, чем во всех уведомлениях смартфона. Быть на стороне песка - значит принимать перемены как естественную форму существования.",
+            "img": "https://cdn4.telesco.pe/file/LD0Fjuk5GYhD1qLa-T_LRe5qxy32T1XttybxNhGfmVOWMlZPgqyPJ1EjJtceWUMxkFEqZBxzUDW2REWcWDt8ymy9DkLsnEHWs7inCrsHmxREyFkgxwCihq71iZ0TYaqpruF46YB4ba_25YWZ9htV82ii6n7-kbGqtF2YgFspAXdHmgZ7il2DKyV8K_NibHcOi9eko1_IvnFeKLN0xJA8oCMgBvmyDbPs4vA3pqlGkajFWfJPeUnBZEa00r28VMNmRgtevCHyd2fuOf8rKjlORCiIOqN4cLIIq5zwSpv_2FTekVPUWNKa6YGGoKLEuokPLr41LzKotbGrCyzAq_d2EQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775487636.0,
+            "poll": null
+        },
+        {
+            "m": "06.04 | 07:59",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5643",
+            "t": "🇲🇩МОЛДОВА: SATOSHI СОВЕРШАЕТ ГЛАВНУЮ СЕНСАЦИЮ ЧЕТВЕРТЬФИНАЛОВ",
+            "b": "Битва «Melodic Battle» завершилась падением скандинавского фаворита. Сатоши с треком «Viva, Moldova!» выбил Швецию из турнира, доказав, что в этом сезоне энергия индастриала сильнее классического поп-звучания.\n📊 ИТОГИ ГОЛОСОВАНИЯ (QF #3):\n• ПОБЕДИТЕЛЬ: 🇲🇩 Moldova (Satoshi) - 56% ★\n• Второе место: 🇸🇪 Sweden (Felicia) - 44%\nМолдова проходит в ПОЛУФИНАЛ 2, где будет ждать победителя пары Великобритания - Болгария. Для Швеции и Фелиции путь к вершине YourVision Cup 2026 завершен.\n🚨 NEXT: Финальный четвертьфинал UK vs Bulgaria официально стартовал! Решается судьба последней путевки.\n⏱️ Время чтения: 0.8 мин | 🇲🇩 YourVision: Results",
+            "img": "https://cdn4.telesco.pe/file/NfFDTWOQe4p-tfU2E0DZnEi3b3Mat2j4Zt2ePljbuYljfqN1-ykIpyrRtetpeWpte89mf5Syi23Upp7uagX8x-jZRg_BwmYZ6gUuA7bKQ_sBylZD3PqKrSrkExooXkbreZKqjoKwaCOOSg1NW_NkHH9R3Bv-8gElTTb7PY_zmrnl6BcNXLC7AeOG7EiiEEn5JttlqnCTEV6oH6Oubr6ohIiCVagrthLYW-vVxbCQ2N142CDrS7XwRDRB2XvDOmH13fniePFpLIEXAteXWKvo7iN0xge5bJt9hiTMwgmlL5CjEj-11x9vEpjP6MMm2UkR2Bnc-HOOyaWUbGKM7leSgA.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775462343.0,
+            "poll": null
+        },
+        {
+            "m": "06.04 | 07:05",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5642",
+            "t": "⚔️ YOURVISION CUP: 1/4 ФИНАЛА - QF #4: EXPERIMENTAL NIGHT",
+            "b": "Финальный баттл четвертьфиналов. Самый непредсказуемый поединок турнира: инженерный гений против поп-машины.\n🇬🇧 UNITED KINGDOM: Look Mum No Computer - «Eins, Zwei, Drei»\nСэм - главный экспериментатор сезона. Его выступление с самодельными синтезаторами и бешеной энергией панк-рока влюбило в себя экспертов. Великобритания в этом году - это символ инноваций и отказа от клише. В 1/8 финала они доказали, что авангард может побеждать мейнстрим.\nvs\n🇧🇬 BULGARIA: Dara - «Bangaranga»\nДара - абсолютный профессионал. Её номер «Bangaranga» - это вершина современного поп-продакшна. Идеальная хореография, вокальная мощь и «Cyber-Balkan» эстетика. Болгария прошла в четвертьфинал последней, имея за спиной мощнейший импульс фан-базы (57% в 1/8).\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в ПОЛУФИНАЛ (SF2).\nПроигравший покидает турнир.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.5 мин | ⚔️ YourVision: Quarter-Final",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775459104.0,
+            "poll": null
+        },
+        {
+            "m": "06.04 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5641",
+            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В ПОЛУФИНАЛ?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775458921.0,
+            "poll": {
+                "question": "📊 КТО ПРОЙДЕТ В ПОЛУФИНАЛ?",
+                "options": [
+                    "🇬🇧 UNITED KINGDOM (Look Mum No Computer)",
                     "🇧🇬 BULGARIA (Dara)"
                 ]
             }
         },
         {
-            "m": "31.03 | 18:32",
+            "m": "05.04 | 18:35",
             "id": "70",
-            "u": "https://t.me/YourEurovision/5596",
-            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - ПОРТУГАЛИЯ",
-            "b": "Португалия в 2026 году представила «Bandidos do Cante» - манифест аутентичности, который не смог пробиться сквозь «финский шторм» Группы E. Аудит №9: был ли меланхоличный инди-поп прошлого года более точным выбором?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇵🇹 2026: Bandidos do Cante - «Rosa»\nТрадиционное многоголосие Алентежу в современном обрамлении. Интимный, глубокий фолк, сделавший ставку на культурный код и мужскую энергию.\n🇵🇹 2025: Napa - «Deslocado»\nАтмосферный инди-поп с мягким вокалом и кинематографичным звучанием. Год назад этот трек подкупил аудиторию своей искренностью и ощущением светлой грусти.\nВОПРОС К ЭКСПЕРТАМ\nНужна ли Португалии верность древним традициям баттла или её путь - это современный «городской» звук от Napa? Был ли выбор этого года слишком «нишевым» по сравнению с легкостью прошлого сезона?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇵🇹 YourVision: Reset",
+            "u": "https://t.me/YourEurovision/5640",
+            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - ШВЕЙЦАРИЯ",
+            "b": "Швейцария продолжает искать баланс между меланхоличным инди и французским шармом. В этом году ставка сделана на англоязычную «Alice» от Вероники Фузаро. Проводим аналитический аудит: насколько этот выбор сопоставим с франкоязычным «Voyage» прошлого года?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇨🇭 2026: Veronica Fusaro - «Alice»\nКачественный, атмосферный поп на английском языке. Вероника предлагает лирическую историю, которая опирается на современный радио-формат и чистоту вокала. Это выбор в пользу универсальности.\n🇨🇭 2025: Zoë Më - «Voyage»\nФранкоязычный арт-поп с глубоким национальным колоритом. Прошлый год запомнился более смелым использованием языка и сложной, многослойной аранжировкой, которая выделялась на фоне общих трендов.\nВОПРОС К ЭКСПЕРТАМ\nЧто кажется вам более выигрышным для бренда Швейцарии: переход на универсальный английский с Вероникой Фузаро или сохранение французской идентичности с Zoë Më? Какой «вояж» был более убедительным?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇨🇭 YourVision: Reset",
             "img": "",
             "vid": "",
             "isVideo": false,
-            "ts": 1774981947.0,
+            "ts": 1775414106.0,
             "poll": null
         },
         {
-            "m": "31.03 | 18:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5595",
-            "t": "📊 ОПРОС: 📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774981921.0,
-            "poll": {
-                "question": "📊 THE RESET: ЧЕЙ ВЫБОР БЫЛ БОЛЕЕ ТОЧНЫМ?",
-                "options": [
-                    "🇵🇹 2026: Bandidos do Cante - «Rosa»",
-                    "🇵🇹 2025: Napa - «Deslocado»"
-                ]
-            }
-        },
-        {
-            "m": "31.03 | 17:34",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5594",
-            "t": "📊 НОМИНАНТЫ: RUTOP - SIGNAL 20 (SEASON 2026)",
-            "b": "Мы представляем актуальный список самых влиятельных треков российского сегмента. В SIGNAL 20 входят только те артисты, чей «голос» одинаково мощен и в федеральном радиоэфире, и в топ-чартах крупнейших стриминг-платформ. Это квинтэссенция текущего музыкального момента.\nГолосование официально открыто! Выберите лучших из 20 номинантов:\n• HOLLYFLAME - ТОНУ\n• SQWOZ BAB - КУПЕР\n• ICEGERGERT & ZIVERT - БАНК\n• UNCLEFLEXXX - SMS\n• ВАНЯ ДМИТРИЕНКО - РТУТЬ\n• 5STA FAMILY - РАЗ, ДВА\n• MONA - ПОПРОШУ ТЕБЯ\n• ЛЮБОВЬ УСПЕНСКАЯ & JAKONE - ПЛАКАЛА НАДЕЖДА\n• FILATOV & KARAS - ВКЛЮЧИ МУЗЫКУ\n• МОТ - НАМЁК НА НАС\n• SABI & MIA BOYKA - БАЗОВЫЙ МИНИМУМ\n• GAYAZOV$ BROTHER$ - РУССКАЯ РУЛЕТКА\n• XCHO - ТЫ И Я\n• ЛЁША СВИК & NYUSHA - ПРОБУДИ\n• MACAN - ОСТАНЬСЯ ОБРАЗОМ\n• LYRIQ - КАССЕТЫ\n• JONY - ПОМНЮ\n• SERYABKINA - АСФАЛЬТ\n• ARTIK & ASTI - МОДНЫЙ ПОП\n• КЛАВА КОКА - СПЛЕТНИ. ШУМ. ЛУК.\nПЛЕЙЛИСТЫ:\n📱 Spotify\n📱 YT Music\n📱 YouTube\n🗳 Голосование: Strawpoll\n(Голосование до воскресенья, 5 апреля, 23:59 по Риге)\n📻 ПРЕМЬЕРА ИТОГОВ: Вторник, 7 апреля, с 18:00 (по Риге) на levdanskiy\n⏱️ Время чтения: 1.4 мин | 📊 YourVision: RuTop",
-            "img": "https://cdn4.telesco.pe/file/Nz0reoSRkLI8pMDpKn6pQKROH4OoJAMkEcVZvc3PKwKL28HSCTiEXdJza5DzLn5uQitho213x5lIdOtAf1ItglejeKUjK1PGFt_CNvbJ8OIb9wWdpC-yP-Trv6Pmh6cz2bUPl2ywJSUR7MFS7zttfOGYCiklYOJW90benjCYhIwCEAJf7ruxWiVWquK9pC0mWbwNMDJdRpgsrogmk2jtQ5kjm1tV5b_GOoBIzBv7Tc6JHNqHsMBO7Npo9DFPTDXJjYo995tw_ZVrGdCRq4KRg8ajLI3SfkbL_mFcJg8zTIKrvBgyFb8zt-DTvApUHxmfWxHKkYe9Mmji5kQ2XX6Dgw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774978452.0,
-            "poll": null
-        },
-        {
-            "m": "31.03 | 17:04",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5593",
-            "t": "🧬 DNA: САН-МАРИНО - SENHIT",
-            "b": "Senhit Zadik Zadik - артистка, чей образ стал синонимом экстравагантности в европейском поп-пространстве. Уроженка Болоньи с эритрейскими корнями, она превратила участие в ESC для Сан-Марино в ежегодный перфоманс мирового уровня. В 2026 году она возвращается в третий раз, чтобы совершить финальный рывок к вершине.\nTHE JOURNEY (ПУТЬ)\nЕё карьера началась за пределами Италии - в мюзиклах «Fame», «The Lion King» и «Hair» в Швейцарии и Германии. Вернувшись в Италию в 2002-м, она выпустила серию успешных альбомов и стала завсегдатаем ТВ-шоу. В 2011 году Сенхит впервые представила Сан-Марино с балладой «Stand By». Но настоящий прорыв случился в 2021-м: после отмены конкурса 2020 года она привезла в Роттердам «Adrenalina» с участием Flo Rida, подарив стране второй финал в истории. 8 марта 2026 года SMRTV официально подтвердили её возвращение с песней «Superstar» в дуэте с легендой Boy George.\nSTYLE & SOUND (ДНК)\nДНК Сенхит - это «максимализм». Её стиль - это яркий поп с элементами глэма и диско. Она мастер визуальных трансформаций, что доказал её проект #FreakyTripToRotterdam. В песне «Superstar» её мощный вокал переплетается с харизматичным тембром Боя Джорджа, создавая эффектный кросс-поколенческий диалог. Визуально это всегда авангард, высокая мода и театральность, за которой стоит огромный опыт работы на сцене мюзиклов.\nVERDICT: Сан-Марино в этом году играет по-крупному. Присутствие Боя Джорджа и огромный опыт самой Сенхит делают этот проект самым обсуждаемым еще до начала репетиций. Это гарантированное место в финале и заявка на высокие баллы.\n⏱️ Время чтения: 1.5 мин | 🧬 YourVision: DNA",
-            "img": "https://cdn4.telesco.pe/file/gvhBBPQxlqXVG1op8nSnEXMtQY7UbH8HzWrpWfaeuJ1M5lFNanyILcTybQ8KbtKqqMuMoEaQIDfYKq9JyTj98ZFDLii8d1iunzWyePr9G0vxw30XuINW_kgexUXmswbSnaUGYVS-oYD15vTkjGNwOx0ldDsmm2-h6ZvOyrd1uljHxP8I7IT-Sn6DiSMuL-o1BY7ZwwNkwbTDGmZSog3UWXMjvUhkc3uAVCaRdAhjbk7dMk4d8DWJ6kjjX3kNU29PTAR6TWYrbGxy3oXULfZya6ymHrj6DxOqY0tNsc36WuO6UCWNSuy2l5wcx8hxbyVvT6Kf6eneqJsCjawoZwsEWQ",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774976656.0,
-            "poll": null
-        },
-        {
-            "m": "31.03 | 16:05",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5592",
-            "t": "🌐 WORLDSOUND: AIRWAVE VELOCITY - ИТОГИ НЕДЕЛИ",
-            "b": "Глобальный эфир зафиксировал смену лидера. Тейлор Свифт возвращает себе корону, совершая финальный рывок и обходя «12 to 12» от sombr. Это была неделя максимально плотной борьбы в верхней части сетки, где каждый голос эксперта менял расстановку сил в Топ-3.\n🏆 ТОП-20 ИТОГОВОГО ЗАЧЕТА\n🥇 1. Taylor Swift - «The Fate Of Ophelia» (99) ↑+1\n🥈 2. sombr - «12 to 12» (89) ↓-1\n🥉 3. RAYE - «WHERE IS MY HUSBAND!» (89) ═\n4. PinkPantheress & Zara Larsson - «Stateside» (68) ═\n5. Harry Styles - «Aperture» (67) ═\n6. Alex Warren - «Fever Dream» (53) ═\n7. Danny L Harle & Dua Lipa - «Two Hearts» (47) ═\n8. Damiano David, Tyla & Nile Rodgers - «Talk To Me» (45) ═\n9. SUNMI - «CYNICAL» (43) ↑+3\n10. Bruno Mars - «I Just Might» (41) ↓-1\n11. David Guetta, Teddy Swims & Tones and I - «Gone Gone Gone» (41) ↓-1\n12. Juste, Jaxstyle & Jon - «Turn The Lights Off» (41) ↓-1\n13. Calvin Harris & Kasabian - «Release The Pressure» (36) ═\n14. Kygo feat. Khalid & Gryffin - «Save My Love» (29) ═\n15. Anyma & EJAE - «Out Of My Body» (25) ═\n16. brux XTN - «Paid to Exist» (24) ═\n17. Dave & Tems - «Raindance» (23) ═\n18. Kungs feat. Theophilus London - «Galaxy» (19) ═\n19. Ofenbach - «Miles Away» (15) ═\n20. Albert Brite - «Wild» (8) ═\n⏱️ Время чтения: 1.2 мин | 🌐 YourVision: WorldSound",
-            "img": "https://cdn4.telesco.pe/file/HVxhCkKttsGJ11CtgjLUEjkfR1PVkJr91N4VYWA1nuOlMwfFoiIYIoN5mtFowBJefRpo0Jd1oMGBnhDGcFowrCrV7I-Q-Q3HoVyiXWVX8kPPOJfh4h_5OYMjjVO5PrzEbglW1gY00Ysi83jSYRa_xFwsrzlrVrkiwMtzQPYzGSxTJ7xBVa_Mn1EAM_JaAEvhI1dNjsmurbibjW5xe0bpAGyufNPYAW0jUA-U-nfVwFlGL_BOzqu2Rpico2YUnAs4BWTq-eXN6Vse9HX1wkSYkwvr_-9-LB70ZXSEd7z9M_8xhYI7ZH7eU0rno1TqOChy7fZnfAlsr1B_H4Xn8TNKxQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774973140.0,
-            "poll": null
-        },
-        {
-            "m": "31.03 | 15:02",
+            "m": "05.04 | 18:01",
             "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5909",
-            "t": "🥐 #ALMANAC_FINALE: МАРТОВСКОЕ ПОСЛЕВКУСИЕ - ИТОГИ MARGINALIA",
-            "b": "В последний вечер марта город превращается в один большой черновик. Мы заканчиваем главу Marginalia - время наблюдений, тонких теней и невидимых якорей. За тридцать один день мы научились замечать красоту в трещинах на брусчатке, в аромате свежего кардамона и в том, как свет ложится на старые книги.\nМартовское послевкусие - это смесь холодной соли и первых почек. Мы оставляем за спиной зимнюю меланхолию и переходим к апрельским предчувствиям. Завтра город зазвучит иначе, краски станут смелее, а тени - мягче. Но эти заметки «на полях» останутся с нами как напоминание о том, что настоящая глубина скрыта в мелочах, которые большинство пролетает на скорости.\nСпасибо, что читали Marginalia в этом месяце. Апрель готовит новую историю. Что вы забираете с собой из этого марта?\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Marginalia",
-            "img": "https://cdn4.telesco.pe/file/J2yTfAH-6w6ikvSUv0QqICIx7iK0sIZ4383c8-94JqxTiyPffZFJsnYSa2oCN_R8E7eBroJO8vGEw5awB5bcJAEjmeEQEQrjYW76pO5qZFaKBw8Z_Wja5dYiyuMR8rcVgffTlXaAhf25NqR-wfsaO7dXywxGIW3Nod0HMOAxt7XwxIAZQ-jitKHez6CMJspAc5dUK7CuRsUWnaHYRdt-ileJcQjUZt2VqjVrOEDsgKMcOBtANxPWxjx4YmWg7vPqBTIm3Dy3VIzkF26zTU7oS_DvohOPHeXS_bNd_y1dEEMh_MCB53oMSw8KTLcBIfgU-SobddZnZwZMioNpqTPDAA.jpg",
+            "u": "https://t.me/almanac_marginalia/5919",
+            "t": "🏛 #CALENDAR: ПЕРВЫЙ РОСТОК",
+            "b": "ESSENCE\nНачало активной вегетации в северных широтах. Период, когда почва прогревается до критических +5°C, запуская биохимические процессы в корнях. Традиционные приметы апреля:\n- Пробуждение соков: Интенсивное движение влаги в деревьях.\n- Индикаторы: Появление первых подснежников и крокусов как сигнал к началу весеннего цикла очищения.\n- Световой день: Превышение 13-часового порога, что радикально меняет выработку мелатонина у жителей севера.\nMARGINALIA\nВ садах столицы тени жизнь начинается незаметно. Первый росток - это не просто растение, это побег из плена долгой зимы. В этом есть что-то алхимическое: из холодной, мокрой земли пробивается яркий зеленый сигнал. Это момент высшей надежды. Я смотрю на эти микроскопические изменения и понимаю, что природа никогда не ошибается в тайминге. Весна в нашем регионе - это не взрыв цветов, а медленное, вдумчивое проявление цвета сквозь серый туман. Синхронизация с этим ритмом дает редкое чувство устойчивости.",
+            "img": "https://cdn4.telesco.pe/file/HgwKgCKd_Jf1SJghD8dGd4ngCN_5HQLu_c8S2Y_Lx9DTzihRB_mAetcg3q2eqX6QeB-fTafVM0MpnZ3Bln28RcAx7CB0vWU7_Rj7XeOgHGID--2brgdEZ6L2qxQW8_GMqnQsJTXhy05RHZ2h-ux9Aw8fsvVqN3I3r-cZ3g-ZL_mXmqLC0sJPYT2U8CI7vESWJbqJTsFoZ5ZKGiMg0hyKVgU7_oVoquv1zH-hA6THi4O-xW5GPmUXpNqrp-m16wmSf1MQw-JZ6Ce4mjJhF52dohfN13S2yytnYdmAlZPMD9Er34PI46wQQDVg1CPOuIwECuLWoC0zcVnjzoNXCzUmJQ.jpg",
             "vid": "",
             "isVideo": false,
-            "ts": 1774969329.0,
+            "ts": 1775412107.0,
             "poll": null
         },
         {
-            "m": "31.03 | 14:50",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5591",
-            "t": "🌐 WORLDSOUND: AIRWAVE VELOCITY - МЫ ВОЗВРАЩАЕМСЯ",
-            "b": "После длительного перерыва глобальный музыкальный отчет WorldSound возвращается в эфир YourVision. До старта трансляции итогов недели - 10 минут.\nДвадцать самых влиятельных треков планеты в одном чарте. Узнаем лидеров прямо сейчас.\n📻 СЛУШАТЬ ЭФИР (18:00)\n💻 ИНТЕРАКТИВНЫЙ ХАБ\nВстречаемся на частоте.\n⏱️ Время чтения: 0.4 мин | 🌐 YourVision: WorldSound",
-            "img": "https://cdn4.telesco.pe/file/I56l3crz2LepxJDme6sv9O58T4cj2fo2bT1uMiaCsp51mEwKtCqx3hFTtN0Ef_0ImNWATGF8mcz3ppgnM8lGdL7ZQmfMQo1-OQdLngSNWTg9CCZwXV519cZpBUUKptcy4axdV3631FYNZv9_Z0Hquqly0u75l04NOkZdUvKA9dx9hpoiFpQDHvkAMoT7nEnOevYABZsMykczbMEoqGsAGX-eg8LG377ACRsA-P3s7rx-YH3uQVqEZfzJmfNJidlSUbAAHWugbVn5kRyvnwKiaOdpUfIBVH7v8lX34wF-5qufQra1MP2LiKlL8FKUgTl1BlYXhuZ9VqX5d0Y2EXsTeQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774968611.0,
-            "poll": null
-        },
-        {
-            "m": "31.03 | 07:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5590",
-            "t": "📊 #YV_CUP: ИТОГИ 1/8 ФИНАЛА - BATTLE #6",
-            "b": "Шестой поединок плей-офф завершился одной из самых громких сенсаций турнира. Итальянская классика не устояла под натиском кишиневского индастриала. Эксперты YourVision Cup сделали ставку на энергию и честность нового звука.\nРЕЗУЛЬТАТЫ ГОЛОСОВАНИЯ:\n🇲🇩 MOLDOVA (Satoshi): 67%\n🇮🇹 ITALY (Sal Da Vinci): 33%\nСатоши с его «Viva, Moldova!» забирает шестую путевку в четвертьфинал, показав колоссальный отрыв в 34%. Саль Да Винчи, несмотря на безупречный вокал, покидает турнир. YourVision Cup 2026 подтверждает: аудитория жаждет перемен и драйва.\nИТОГИ БИТВЫ:\n🥇 MOLDOVA (Satoshi): 67% - ПРОХОД В 1/4 ФИНАЛА 🇲🇩\n🥈 ITALY (Sal Da Vinci): 33% - ВЫЛЕТ 🇮🇹\nИталия завершает свою кампанию. В четвертьфинале Молдова встретится с победителем пары Sweden vs Armenia (Швеция уже ждет!).\nА прямо сейчас стартует седьмая битва: Cyprus vs United Kingdom! Голосуйте!\n⏱️ Время чтения: 1.1 мин | ⚔️ YourVision: Cup Results",
-            "img": "https://cdn4.telesco.pe/file/CKy06Dht1QBk4aBYImmgYwl50vyLn01cIySXTG21_9kYZOFYyiW--LHiXig23CwoEnYClqzjdnshtBZbJgrmxJi9mXOaJRsxkK--LY8GRdbCEGR4FXvxQWJwPHiCZsoi2VbYf7UToQqrsZLyXxbdQfaMSYChVq6mCwb8NwKC-5AuU1D-GOi3-4I2j5Z9Tvy93i64ydNW-k_dapY__H0dwEHtyB1bvd6gP5sgMQVeFJEJEtggGswyATpjAtXyJ1d8YWHNTBJnuFQuVST_hf1JnbpQmFhl_K1wej5rNWw3rhnpV6jXJHzs8TtuKZOpc5j4542bZgRy4KHuiPYrNGLjOQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774942358.0,
-            "poll": null
-        },
-        {
-            "m": "31.03 | 07:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5589",
-            "t": "⚔️ YOURVISION CUP: 1/8 ФИНАЛА - BATTLE #7",
-            "b": "Средиземноморская сирена против аналогового панка. Солнечная энергия этно-попа против безумных машин и грязного синтезаторного звука.\n🇨🇾 CYPRUS: Antigoni - «Jalla»\nЧистая энергия лета. Антигони - это «Mediterranean Siren» с уникальным хриплым тембром. Её «Jalla» объединяет греческие и арабские инструменты с мощным танцевальным битом. Кипр привез в Вену праздник, способный зажечь любую арену.\nvs\n🇬🇧 UNITED KINGDOM: Look Mum No Computer - «Eins, Zwei, Drei»\nПанк от мира электроники. Сэм Баттл - изобретатель безумных машин, который использует только физические синтезаторы. Его «Analog Punk» - это хаос, вдохновленный модой 90-х и побегом от офисной скуки. Британия в этом году пошла на самый смелый эксперимент.\n🗳 ПРАВИЛА БАТТЛА:\nПобедитель проходит в 1/4 ФИНАЛА.\nПроигравший покидает турнир навсегда.\nГолосуйте в опросе ниже! 👇\n⏱️ Время чтения: 1.2 мин | ⚔️ YourVision: Play-Off",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774940555.0,
-            "poll": null
-        },
-        {
-            "m": "31.03 | 07:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5588",
-            "t": "📊 ОПРОС: 📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1774940521.0,
-            "poll": {
-                "question": "📊 КТО ПРОЙДЕТ В 1/4 ФИНАЛА?",
-                "options": [
-                    "🇨🇾 CYPRUS (Antigoni)",
-                    "🇬🇧 UNITED KINGDOM (Look Mum No Computer)"
-                ]
-            }
-        },
-        {
-            "m": "31.03 | 06:00",
+            "m": "05.04 | 15:02",
             "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5908",
-            "t": "🏛 #FRAGMENT: ТЕНИ КАК НЕГАТИВ ГОРОДА - ФИЛОСОФИЯ ИСЧЕЗНОВЕНИЯ",
-            "b": "В последний день марта тени становятся честнее зданий. Если фасад - это маска, выстроенная для зрителя, то тень - это его «негатив», обнажающий истинные пропорции и изъяны. В этом северном городе, застывшем на пороге апреля, мы наблюдаем за тем, как графика солнечного света стирает материальность камня.\nТень на брусчатке не лжет. Она не пытается казаться вечной. Она исчезает вместе с поворотом планеты, вместе с уходящим мартом, не оставляя после себя ничего, кроме этого короткого упоминания в Marginalia. Сегодня мы смотрим не на архитектуру, а на ее отсутствие - на те темные провалы, которые и делают свет видимым. Это момент абсолютной честности: Март уходит, забирая с собой свои длинные, холодные тени, оставляя нас один на один с ослепительной пустотой грядущего апреля.\n⏱️ Время чтения: 0.9 мин | 🏛 Almanac: Marginalia",
-            "img": "https://cdn4.telesco.pe/file/OngEAcr7gdVtB2GHUyH82iS9aw3QGqJPwAHkAXzBhJlQo9BYrMy5gaq-iQWvNpC_B82kctwzXvmdFOISq0g8FBcw1m9G7C-MW_P-1i2eQZM8BdSNv6z7C3UhH1qKJ5d7CpmAOM6TPb4iLTMCz1K8IKpQ_sbbwHS-cNDnPnenTZkrpNEq_sc01yh_Lp9hmAeR5EI1ExndZjlXZuTV1cImxlMUoDaceb5Uk_OrooHdRVK9gENHvWprZFg8mkeZ2LttMDwWrWfNMC3pDVBWmGaZTiX8RZdJGgbPzACL1tu0cWRDpSTp5Ff-JPY3K2OnVL2tD1Q7lOYhtxWgcG0IiDRFaw.jpg",
+            "u": "https://t.me/almanac_marginalia/5918",
+            "t": "🏛 #HERITAGE: РИТУАЛ ОЧАГА",
+            "b": "ESSENCE\nОчаг как сакральный центр обитаемого пространства. В традиционных культурах огонь в центре дома не только выполнял утилитарные функции, но и служил «осью мира» (Axis Mundi). Ключевые аспекты ритуала:\n- Неугасимость: Традиция поддержания «живого» огня как залога благополучия рода.\n- Кормление огня: Жертвоприношение первой части пищи духам предков.\n- Круговая симметрия: Организация быта вокруг пламени, символизирующая единство сообщества.\nMARGINALIA\nВ воскресный вечер тишина дома становится особенно плотной. Очаг сегодня - это не всегда открытый огонь, иногда это просто мягкий свет лампы или тепло духовки, где доходит воскресный пирог. Но суть не изменилась. Мы по-прежнему ищем центр, вокруг которого можно собраться, чтобы почувствовать себя защищенными. Этот внутренний огонь - то, что помогает нам пережить холодный балтийский свет и долгие зимы. Очаг - это место, где история семьи встречается с вечностью стихии.",
+            "img": "https://cdn4.telesco.pe/file/BXOnKtwBIYq-Qb8l_lhx3r7IFQMIJHPa6-YKCpAXb-yK1xeMxJW--cseEKo6qrgOiaXLVYta8OvQPVPOPQkZWKFfaVQ9xVXblkPcPZGMCs9ia0ygPFbjVaKojK47Ud02kdE_96c3On1erKMN6AK3lPcIg3pWBu7msB7WEFio_pNgTAhL6A34Is-qxM8bQGhnwQZtLzOAQq7RTp12XM81H4JcxIqkvwscZ2wCCwHEK3aMbWO7QBoX3SVh07N0cW2J0Hsl5yU1sW4-Hwd81N-Yoh5Aa-ZsiYo2XBFKeFPoGGuwRO27x1xoZzZrDR8F9npKx2CSF7b8Yk6lHihVtDxD7g.jpg",
             "vid": "",
             "isVideo": false,
-            "ts": 1774936838.0,
+            "ts": 1775401376.0,
             "poll": null
         },
         {
-            "m": "30.03 | 15:03",
+            "m": "04.04 | 18:03",
             "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5907",
-            "t": "🏛 MARGINALIA: ФИЗИКА ВОЗВРАЩЕНИЯ - ГРАДИЕНТ ПЕРСЕФОНЫ",
-            "b": "Сегодня вечером граница ощутима физически. Не в метафоре, а в костях и в почве под ногами. Сырая мартовская прохлада Риги еще держит землю, но уже не сковывает. Это не взрывное таяние, а медленное, глубокое оттаивание - изнутри наружу. Именно об этом миф.\nТЕРМОДИНАМИКА МИФА (LORE)\nМы часто говорим о возвращении Персефоны как о внезапном чуде: раз - и свет, раз - и цветы. Но ее восхождение - это физический процесс. Он измеряется скоростью химических реакций в спящих корнях и теплопроводностью мерзлого пласта. Она поднимается не по лестнице, а по градиенту температуры. От абсолютного нуля Аида к прохладному плюсу нашего мира. Ее шаги - это работа по раскристаллизации воды в порах глины.\nTHE FRAGMENT\n«Возвращение - это не событие, а фаза изменения...» - пометка на полях старого манускрипта. Конец марта - это момент, когда внутреннее тепло земли начинает побеждать внешний холод. Персефона уже прошла критическую точку. Она уже здесь, в этом сыром, едва уловимом дыхании из-под прошлогодней листвы. Это не праздник, а титанический труд по оттаиванию.\nОна уже на полпути. Мы просто называем это весной.\n⏱️ Время чтения: 1.1 мин | 🏛 Almanac: Source",
-            "img": "https://cdn4.telesco.pe/file/v7AxT4FLrn8CNBu8vXPrNBjjWmQ9-CpI6IUMNb1VBX7BMx3dNvNk0u_cCfXGQclJE_pvCG1R9uTMdUgqIzNpC9d4yZNO5I9IFB-HFAurITsMPeSp2zCQIIDkyvMKP2xzEvdw0N_E5LRsH9f7pjFEtgEeP_IXRZLKrEY8iS3S-tNjPiQZSP_YmS9WFR0LNPahpiLENjGQ-w3cpQhXsxZBKGTr1BI24Dgn_Ewh6V0e4ehrQGRFgzGo1AsnAMXGRp6P85w7FBZUvVeqXiEBrrZadfn82jqcB1K7eBA0qPP1-NPLg8Zv0KpuW8FW-cT1QbKQ61EWYW0YNm95SAHjgNanXQ.jpg",
+            "u": "https://t.me/almanac_marginalia/5917",
+            "t": "🏛 #TEXTS: ПОЭТИКА ПОРОГА",
+            "b": "ESSENCE\nЛитературный анализ концепции «лиминальности» (от лат. limen - порог). В текстах это состояние перехода, где герой уже не принадлежит прошлому, но еще не вошел в будущее. Ключевые маркеры формы:\n- Замедление времени: Детализация микро-событий в моменты ожидания.\n- Пространство «между»: Вокзалы, пустые коридоры, береговые линии.\n- Отсутствие действия: Сюжет строится не на событиях, а на предчувствии их неизбежности.\nMARGINALIA\nМы слишком привыкли торопиться в «пункт назначения». Но самая честная литература - это та, что заставляет нас задержаться на пороге. Субботний вечер в столице тени - идеальная декорация для этого. Ожидание не как пауза, а как высшая точка концентрации. Когда ты стоишь у открытого окна и слышишь, как вдали затихает звук города, ты становишься чистым листом. Это состояние «между» - самое продуктивное для творчества. Здесь рождаются лучшие Маргиналии, когда слова перестают быть инструментами и становятся эхом невидимого.",
+            "img": "https://cdn4.telesco.pe/file/pTMlIBLs7Kqxv9dbVNUyMLDg8j6xO0vwofnIWhLHrG4u9hxCTJ7ssuUQ82mIiW1HZ5CQc2eTbW-9sk2l8vQ-Z7uaJdp8kYXo2AQQxb76cVCF-iHLwhprwO9zWqYvckZ1C9zD_eLScMwTfYd9nasXeSnQ6gZon_-wNKlUYvSWnarztCtqnQXWKTQqIpcRDIJWILOzKByXoLAMJ5R7rL7oNoz8rEBYO1e-8fW0rJbKL89BHjwCku7Ge0YVFjn_CFFEVRnotlb_pVmpR18EauUqitaA5pVLA-QxFTi7gQcKj6J8Un6goJWCYDZACHO4p2x-W54-1veP8tZ-IMi7BxPD5Q.jpg",
             "vid": "",
             "isVideo": false,
-            "ts": 1774883028.0,
+            "ts": 1775325832.0,
+            "poll": null
+        },
+        {
+            "m": "04.04 | 15:03",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5916",
+            "t": "🏛 #RECIPE: ОБЛАЧНЫЙ ТАРТ",
+            "b": "ESSENCE\nТехнология создания лимонного тарта с итальянской меренгой. Основной акцент - на температурную стабилизацию белка.\n- Основа: Песочное тесто (Pâte Sablée). 200г муки, 100г холодного масла, 50г сахарной пудры, 1 желток. Выпекать 15 мин при 180°C.\n- Курд: 3 лимона (сок и цедра), 150г сахара, 3 яйца, 80г сливочного масла. Томить на водяной бане до загустения.\n- Меренга: 3 белка, 180г сахара, 50мл воды. Сварить сироп до 118°C и тонкой струйкой влить во взбивающиеся белки. Взбивать до блеска и остывания.\n- Финиш: Выложить меренгу «облаками» и быстро обжечь газовой горелкой для карамелизации.\nMARGINALIA\nКондитерское искусство - это архитектура эфемерного. Облачный тарт - мой личный символ субботнего покоя. Контраст между агрессивно-кислым лимонным кремом и нежной, почти невесомой сладостью меренги напоминает мне весеннее солнце, которое уже греет, но всё еще оставляет холодные тени. Обожженные края белков пахнут жженым сахаром и детством. В этом десерте нет тяжести, только чистая структура и вкус, который исчезает слишком быстро, заставляя ценить момент здесь и сейчас.",
+            "img": "https://cdn4.telesco.pe/file/VWk4K7Y1YucxeHS5DaYAHWq_CPJRyOUAPj94MUXU3lM5_wE1wdNMYMWz20Gk3zIpE3ePKZuEEMECBZpw7m4sm7zPQ-w5nBW7Edu3X_F5QAxEmRKguWfGrUJKkfwCgMsHk_Ql8idy1qWomMuJGgAeGOWX5vXVxI1aHvIDxkvkhdSo0-ipgHAth9N6hLCIDJHBE9FTStCyU4_jP_CjvEDIjWPj1B-leBb5lQsesVgkXuRVusocMHvsB8DqFhrAeXxf_-Iw3eJ6EHFaXEkU0MPAAM9lfs8EaYk6daJHueMLiJD-oA5Hz7m7YwHZAVN1BFKQD9rfrtKLAgK0W3eb332Kyw.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775315025.0,
+            "poll": null
+        },
+        {
+            "m": "03.04 | 18:02",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5915",
+            "t": "🏛 #FRAGMENT: СТЕКЛЯННЫЙ ПРИЗРАК",
+            "b": "ESSENCE\nОптический феномен вечерних отражений в городской среде. Когда уровень освещенности внутри помещения совпадает с уровнем снаружи, стекло перестает быть преградой и становится зеркалом-призраком. Ключевые факторы визуального кода:\n- Угол падения света: 45 градусов в «синий час» создает максимальную глубину наслоений.\n- Дрожание текстур: Старое неровное стекло искажает реальность, превращая прохожих в текучие тени.\n- Цветовой контраст: Теплый свет ламп внутри и холодный индиго снаружи.\nMARGINALIA\nВ сумерках столица тени начинает двоиться. Я люблю смотреть в окна старых особняков, когда за стеклом накладываются друг на друга интерьер комнаты и проезжающий трамвай. Это момент, когда архитектура теряет свою массу. Город становится многослойным, как проявленная кинопленка. В этих отражениях я вижу не только улицы, но и время - оно течет медленнее, застревая в неровностях амальгамы. Балтийский свет умеет делать предметы прозрачными, напоминая нам, что всё, что мы считаем твердым - лишь временная игра фотонов на пыльном стекле.",
+            "img": "https://cdn4.telesco.pe/file/Fs46zQ-5fVHQja4F__73RyrskTr9ONKwnJ0h9BTrMRoIWNE3LDJaCPfIvZ1MY47mTHL2gOZwcnbKQ-c6A6_BPLiFRQ96CkxVDyp3IioIhpPVf3hjVg_82NZh-Gvd91vQF-YeGxmY67LLHZqtHJgprpnfXf3DqyCLkv3Gsk6GTxXHVOmF5E2boWZwLiJbd5WtIU7ZrMF0ywb6Tpa1sHRZdf5C6mfws-V4QHorabZoTeMnhH61X5HekgFUK3li7L2wRZoo2trq982OuweEadRM92mhjqgSLxohz_apQ8doN_CUEzhTIEdPWIm16l7CHAC5CGyeYVCHzKOrRdEpFrm4SQ.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775239360.0,
+            "poll": null
+        },
+        {
+            "m": "03.04 | 15:01",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/5914",
+            "t": "🏛 #SOURCE: ГЕОМЕТРИЯ ТИШИНЫ",
+            "b": "ESSENCE\nПифагорейская школа рассматривала музыку как прикладную математику. Ключевая концепция - «Музыка сфер» (Musica Universalis), где интервалы между планетами соответствуют музыкальным гармониям. В современном эмбиенте эти принципы проявляются через:\n🤩 Чистые интервалы: Использование идеальных математических соотношений частот (квинты, октавы) для создания чувства покоя.\n🤩 Дроны: Статичные звуковые ландшафты, имитирующие неизменное вращение небесных тел.\n🤩 Гармонический ряд: Выстраивание композиции на основе естественных обертонов, что резонирует с физикой слуха.\nMARGINALIA\nЧистый звук - это всегда про порядок. Когда я слушаю глубокий северный эмбиент, я вижу не музыку, а чертеж. Это та самая геометрия тишины, которую искали в античности. В балтийском свете, таком же холодном и математически выверенном, эти звуки обретают плотность. Музыка перестает быть развлечением и становится способом синхронизации внутреннего ритма с ритмом пульсирующей пустоты. Это не пустота отсутствия, а пустота присутствия чего-то гораздо более масштабного, чем человек.",
+            "img": "https://cdn4.telesco.pe/file/Wl-lliutUnbmQjkaPFjmRIINcfYMuc4I0WgsjNbbiKA6D9Lq4cwfisNA2xRACdoVuCEFWaAGCENud335w5SID8Be87UbuTC9x82G5CPSV0k7eURorEtAWwniLXAoAsOjCGBBnToQbWIfxg4qf77ZdabVzzPTuJDryq01yi1LxIi8J9fnGJHYt4JjxYI1aXiXODkHOfilgdaXlxFjl9Sldhkcbm8ORYVqlG_581Xgy0jhHk8_gSAmAsz27M3iDlaQGmqLLNSsVk4hIjejP3Ht7SUf6AEIsGhdtB-mdxoodgk_SqIL-nU-eqZoZdU96ZULWvvDhqPcadYGfx8a-uBJ9g.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775228514.0,
             "poll": null
         }
     ],
@@ -675,28 +699,12 @@ var DATA = {
             "a": "Linda & Pete"
         },
         {
-            "id": "dk",
-            "a": "Søren"
-        },
-        {
             "id": "gr",
             "a": "Akylas"
         },
         {
-            "id": "ge",
-            "a": "Bzikebi"
-        },
-        {
-            "id": "se",
-            "a": "Felicia"
-        },
-        {
             "id": "md",
             "a": "Satoshi"
-        },
-        {
-            "id": "gb",
-            "a": "LMNC"
         },
         {
             "id": "bg",
@@ -833,6 +841,22 @@ var DATA = {
             "id": "cy",
             "a": "Antigoni",
             "s": "Jalla"
+        },
+        {
+            "id": "dk",
+            "a": "Søren"
+        },
+        {
+            "id": "ge",
+            "a": "Bzikebi"
+        },
+        {
+            "id": "se",
+            "a": "Felicia"
+        },
+        {
+            "id": "gb",
+            "a": "LMNC"
         }
     ],
     "nominees": [
@@ -938,67 +962,67 @@ var DATA = {
         }
     ],
     "odds": [
-    {
-        "r": 1,
-        "id": "fi",
-        "c": "Finland",
-        "p": "30%"
-    },
-    {
-        "r": 2,
-        "id": "fr",
-        "c": "France",
-        "p": "11%"
-    },
-    {
-        "r": 3,
-        "id": "dk",
-        "c": "Denmark",
-        "p": "10%"
-    },
-    {
-        "r": 4,
-        "id": "au",
-        "c": "Australia",
-        "p": "8%"
-    },
-    {
-        "r": 5,
-        "id": "gr",
-        "c": "Greece",
-        "p": "8%"
-    },
-    {
-        "r": 6,
-        "id": "se",
-        "c": "Sweden",
-        "p": "4%"
-    },
-    {
-        "r": 7,
-        "id": "il",
-        "c": "Israel",
-        "p": "4%"
-    },
-    {
-        "r": 8,
-        "id": "ua",
-        "c": "Ukraine",
-        "p": "3%"
-    },
-    {
-        "r": 9,
-        "id": "it",
-        "c": "Italy",
-        "p": "3%"
-    },
-    {
-        "r": 10,
-        "id": "ro",
-        "c": "Romania",
-        "p": "3%"
-    }
-],
+        {
+            "r": 1,
+            "id": "fi",
+            "c": "Finland",
+            "p": "29%"
+        },
+        {
+            "r": 2,
+            "id": "fr",
+            "c": "France",
+            "p": "12%"
+        },
+        {
+            "r": 3,
+            "id": "dk",
+            "c": "Denmark",
+            "p": "10%"
+        },
+        {
+            "r": 4,
+            "id": "au",
+            "c": "Australia",
+            "p": "8%"
+        },
+        {
+            "r": 5,
+            "id": "gr",
+            "c": "Greece",
+            "p": "8%"
+        },
+        {
+            "r": 6,
+            "id": "se",
+            "c": "Sweden",
+            "p": "4%"
+        },
+        {
+            "r": 7,
+            "id": "il",
+            "c": "Israel",
+            "p": "4%"
+        },
+        {
+            "r": 8,
+            "id": "ua",
+            "c": "Ukraine",
+            "p": "3%"
+        },
+        {
+            "r": 9,
+            "id": "it",
+            "c": "Italy",
+            "p": "3%"
+        },
+        {
+            "r": 10,
+            "id": "ro",
+            "c": "Romania",
+            "p": "3%"
+        }
+    ],
     "roadmap": [
         {
             "d": "02.04",
@@ -1017,6 +1041,12 @@ var DATA = {
             "t": "1/4 FINAL #2",
             "e": "🇬🇷 Akylas vs 🇬🇪 Bzikebi",
             "s": "MAJOR"
+        },
+        {
+            "d": "07.04",
+            "t": "DAY OFF",
+            "e": "Rest & Prep for Semi-Finals",
+            "s": "LIVE"
         }
     ]
 };
