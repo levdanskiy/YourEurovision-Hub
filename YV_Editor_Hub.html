@@ -1463,11 +1463,12 @@
                     const query = encodeURIComponent(`${artist} ${song}`);
                     const isNow = idx === 0;
                     const cover = h.img ? "https://myradio24.com/" + h.img : "assets/heart_white_2026.svg";
+                    const playTime = h.time ? h.time.toString().substring(0,5) : "--:--";
                     
                     return `<div class="hist-item ${isNow?'hist-now':''}">
                         <div class="hist-cover" style="background-image:url('${cover}')"></div>
-                        <div class="hist-content">
-                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time">${(h.time || '00:00').substring(0,5)}</span>`}
+                        <div class="hist-content" style="padding-left: 5px;">
+                            ${isNow ? '<span class="hist-badge">ON AIR</span>' : `<span class="hist-time" style="display:block;">${playTime}</span>`}
                             <div class="hist-artist">${artist}</div>
                             <div class="hist-track">${song}</div>
                             <div class="hist-discovery">
