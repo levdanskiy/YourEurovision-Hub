@@ -814,92 +814,25 @@ var DATA = {
         }
     ],
     "nominees": [
-        {
-            "a": "Satoshi",
-            "s": "Viva, Moldova!",
-            "img": "https://cdn4.telesco.pe/file/UGQFwS3vKjK7x4qXsP0Lbu3fgs2_URUmN1nyAe7nObsT6Pg8T8ZiQ494teXJYhKQZScjHrUzUBw6QynhuQn0z3wNVQvSzyS5Fk6YPGL5rOGuhYIBnrE9I1z7en9LWdn1ymCkecUEMav2YuWcByL0SGaK3qxPMB3sPPqIWPCX16Lr3NqkSWg43eqHTcRwI1otJdo1gIc4EY9F23mlO91PLWfRgfs11CwBT8UMWYpOwq_F-0HRofzH2STcZEV55_JdZ4NwNNwREDme_FjJx0XoqdC88o9Mxt6nXNq2xstKLjjww8YLnM2UXn9r_TKC628uqLXR6IU_lfOSf58U1C1S5Q"
-        },
-        {
-            "a": "Felicia",
-            "s": "My System",
-            "img": "https://cdn4.telesco.pe/file/lrz9FeROCD8a_R9s5SY-7Zmn353J4hMyNzKi4W1hI71_ydx74FMfjjTjFOlvF4cVEiBnGRuVfV59Gux8Y-duuAj0I8vcdh9_yoajA5827Xftpqr1b7dyfm_Zn9kUZ1DuzPtrRUBwdyfrmVCR2VcmxllA9GUQtnj8U7q6YlKQ3eSmkQuErg12i9CtrLBchU9rWFKzbc-raZgZRIGN128PyHZT1ABgXDe_0nMubsoM6Qcq0q6AvnvZIC44nRcEb9k4TVPSffufFpk4ZWL9bC5gDnLXq648z2tqqm2nctWo7SHAL7mWdU2YrRwpJRxcn32KLySU_hCG-KZzTE_BpUCn8A.jpg"
-        },
-        {
-            "a": "Lelek",
-            "s": "Andromeda",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Akylas",
-            "s": "Ferto",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Bandidos do Cante",
-            "s": "Rosa",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/51/1b/6a511b4a-b11a-a854-0a5c-637f4ad768ae/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Bzikebi",
-            "s": "On Replay",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f5/fc/ba/f5fcbad0-3c98-4374-9c47-29130d2fd8c6/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Sal Da Vinci",
-            "s": "Per sempre sì",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/ff/98/d4ff985c-4783-c310-e6de-d94f4d448579/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Linda Lampenius & Pete Parkkonen",
-            "s": "Liekinheitin",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/88/ed/e088ed96-51c2-d8c0-6f13-0391fe6f88dc/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Tamara Živković",
-            "s": "Nova zora",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/eb/28/75eb2806-10f5-4c3b-7b4c-bbc0a03faed5/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Vanilla Ninja",
-            "s": "Too Epic to Be True",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/10/8a/69108a18-55ec-d774-a653-90b2242733db/199538765458.jpg/200x200bb.jpg"
-        },
-        {
-            "a": "Noam Bettan",
-            "s": "Michelle",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/3a/f8/203af802-de0c-5c70-5403-b5ca0bbff938/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Sarah Engels",
-            "s": "Fire",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/1a/7b/d11a7b87-6ed1-d8b2-cfc2-f563b55d708d/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Essyla",
-            "s": "Dancing on the Ice",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/b0/4b/c7b04b77-a2b6-f0bf-df80-8cdc08abd09d/cover.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Lion Ceccah",
-            "s": "Solo quiero más",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Senhit",
-            "s": "Superstar",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/d3/84/fad3845e-d166-7489-d078-7e95490adc31/cover.jpg/200x200bb.jpg"
-        },
-        {
-            "a": "Alicja",
-            "s": "Pray",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/f8/9b/7ff89bd5-12a6-78da-3706-a5bebf0b9463/0.jpg/400x400bb.jpg"
-        },
-        {
-            "a": "Lavina",
-            "s": "Kraj mene",
-            "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/16/af/9f/16af9f30-09f0-5c1f-123e-e0cfc644331c/0.jpg/400x400bb.jpg"
-        }
+        { "a": "Satoshi", "s": "Viva, Moldova!", "img": "https://i.scdn.co/image/ab67616d0000b273b1511ff46f75cf9d2a49425e" },
+        { "a": "Felicia", "s": "My System", "img": "https://i.scdn.co/image/ab67616d0000b2734b1a2f16f9054b4a9dd03b06" },
+        { "a": "Lelek", "s": "Andromeda", "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/e7/6f/ede76fcd-39cf-4ae1-8075-bd157490dd7d/artwork.jpg/600x600bf-60.jpg" },
+        { "a": "Akylas", "s": "Ferto", "img": "https://i.discogs.com/cTtFzCxxa7gmc7xm__bjlzOrEJAKZW86pTgVoQhQ18U/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NTE3/MjM3LTE3NzEyMTA2/NDctNTI5NC5qcGVn.jpeg" },
+        { "a": "Bandidos do Cante", "s": "Rosa", "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dd/44/c1/dd44c161-845d-cc77-7f28-8e25f9616f53/ticket.gxmaijvp.jpg/600x600bf-60.jpg" },
+        { "a": "Bzikebi", "s": "On Replay", "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9c/8b/7e/9c8b7e7c-85a0-15c4-8ca3-539fe68cea6f/859734458638_cover.jpg/600x600bf-60.jpg" },
+        { "a": "Sal Da Vinci", "s": "Per sempre sì", "img": "https://static.qobuz.com/images/covers/04/1v/lj4snzzem1v04_600.jpg" },
+        { "a": "Linda Lampenius & Pete Parkkonen", "s": "Liekinheitin", "img": "https://e.snmc.io/i/600/s/118f9c9c9a3afa30f967278d3a122b50/14350942/linda-lampenius-and-pete-parkkonen-liekinheitin-Cover-Art.jpg" },
+        { "a": "Tamara Živković", "s": "Nova zora", "img": "https://i.scdn.co/image/ab67616d0000b273b6dfa92825b8fe2397b07544" },
+        { "a": "Vanilla Ninja", "s": "Too Epic to Be True", "img": "https://i.scdn.co/image/ab67616d0000b2735958461bd571ee11e958d67b" },
+        { "a": "Noam Bettan", "s": "Michelle", "img": "https://e.snmc.io/i/600/s/9a22cce5a406ad1da79a88264296a9d3/14360155/%D7%A0%D7%95%D7%A2%D7%9D-%D7%91%D7%AA%D7%9F-noam-bettan-michelle-Cover-Art.jpg" },
+        { "a": "Sarah Engels", "s": "Fire", "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/f7/01/36f70161-1303-2ea9-4554-7ab9193264f3/26UMGIM01104.rgb.jpg/600x600bf-60.jpg" },
+        { "a": "Essyla", "s": "Dancing on the Ice", "img": "https://i.scdn.co/image/ab67616d0000b273a85775f5b880ef85898d732c" },
+        { "a": "Lion Ceccah", "s": "Solo quiero más", "img": "https://i.scdn.co/image/ab67616d0000b2738ab7ca8766746ae4bf85e317" },
+        { "a": "Senhit", "s": "Superstar", "img": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/3b/2f/e53b2f43-18cc-6f09-4037-a35ce06e38db/artwork.jpg/600x600cc.webp" },
+        { "a": "Alicja", "s": "Pray", "img": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/26/a7/48/26a74844-7596-d4ae-de53-5b829f08688c/cover.jpg/600x600bf-60.jpg" },
+        { "a": "Lavina", "s": "Kraj mene", "img": "https://i.scdn.co/image/ab67616d0000b273657efb54062e824e14a37e9a" }
     ],
+
     "odds": [
         {
             "r": 1,
