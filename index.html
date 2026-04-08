@@ -447,26 +447,28 @@
         }
         
         .post-content-wrap {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            display: block;
+            position: relative;
+            max-height: 280px;
+            overflow: hidden;
+            transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .post-content-wrap.expanded {
+            max-height: 5000px;
+        }
+        .post-content-wrap::after {
+            content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 60px;
+            background: linear-gradient(to bottom, transparent, rgba(10,10,10,0.95));
+            transition: 0.3s; pointer-events: none;
+        }
+        .post-content-wrap.expanded::after { opacity: 0; }
         
         @media (min-width: 1300px) {
-            .post-card:not(.featured):not(.is-expanded) .post-content-wrap {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-            .post-card:not(.featured):not(.is-expanded) .post-media {
-                width: 180px;
-                height: 180px;
-                flex-shrink: 0;
-                margin-bottom: 0;
-                object-fit: contain;
-                background: rgba(0,0,0,0.3);
-            }
-            .post-card:not(.featured):not(.is-expanded) .post-b {
-                max-height: 8.8rem;
+            .post-card:not(.featured) .post-media, .post-card:not(.featured) .video-container {
+                width: 45%;
+                max-width: 300px;
+                float: left;
+                margin: 0 20px 10px 0;
             }
         }
 
@@ -495,33 +497,29 @@
             letter-spacing: -0.01em;
         }
         .post-media {
-            width: 100%; border-radius: 10px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);
-            transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-            margin-bottom: 20px;
+            float: left;
+            width: 45%; max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);
+            margin: 0 20px 10px 0;
             object-fit: contain;
             background: rgba(0,0,0,0.3);
-            max-height: 400px;
+            max-height: 260px;
         }
+        .post-card.featured .post-content-wrap { max-height: 400px; }
+        .post-card.featured .post-content-wrap.expanded { max-height: 5000px; }
         .post-card.featured .post-h { font-size: 3.2rem; margin-bottom: 15px; }
-        .post-card.featured .post-media { max-height: 450px; height: auto; }        .post-card:hover .post-media { transform: scale(1.05); box-shadow: 0 50px 100px rgba(0,0,0,0.9); }
+        .post-card.featured .post-media, .post-card.featured .video-container { 
+            float: right; 
+            width: 50%; max-width: 450px; 
+            margin: 0 0 20px 25px; 
+            max-height: 380px; height: auto; 
+        }
         .post-b { 
-            font-size: 0.85rem; line-height: 1.4; color: #ccc; letter-spacing: 0.01em; 
-            max-height: 8.8rem; /* Exact 5 lines (1.1 * 1.6 * 5) */
-            overflow: hidden; position: relative;
-            transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.85rem; line-height: 1.5; color: #ccc; letter-spacing: 0.01em; 
             overflow-wrap: break-word;
             word-wrap: break-word;
         }
-        .post-b.expanded { 
-            max-height: 5000px; 
-        }
-        .post-b::after {
-            content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 50px;
-            background: linear-gradient(to bottom, transparent, rgba(10,10,10,0.95));
-            transition: 0.3s; pointer-events: none;
-        }
-        .post-b.expanded::after { opacity: 0; }
         .post-b br { content: ""; display: block; margin-bottom: 10px; }
         
         .read-more-btn {
@@ -769,11 +767,21 @@
         .post-link { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; transition: opacity 0.2s; cursor: pointer; }
         .post-link:hover { opacity: 0.7; }
         
-        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 15px; overflow: hidden; margin-bottom: 15px; flex-shrink: 0; background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .video-container { float: left; width: 45%; max-width: 300px; aspect-ratio: 16/9; position: relative; border-radius: 15px; overflow: hidden; margin: 0 20px 10px 0; background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); clear: none; }
         .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; object-fit: contain; }
         
-        .post-content-wrap.media-is-video { flex-direction: column !important; }
-        .post-content-wrap.media-is-video > .video-container { width: 100% !important; height: auto !important; margin-bottom: 15px !important; }
+        .post-content-wrap { clear: both; }
+        .read-more-btn { clear: both; margin-top: 15px; }
+        
+        @media (max-width: 768px) {
+            .post-media, .video-container, .post-card.featured .post-media, .post-card.featured .video-container {
+                float: none !important;
+                width: 100% !important;
+                max-width: none !important;
+                max-height: 300px !important;
+                margin: 0 0 15px 0 !important;
+            }
+        }
     </style>
 </head>
 <body onclick="syncRadio()">
@@ -1371,13 +1379,11 @@
                         return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
                             <span class="post-meta">${p.m}</span>
                             <div class="post-h">${replaceFlags(p.t)}</div>
-                            <div class="post-content-wrap ${videoId || isDirectVideo ? 'media-is-video' : ''}">
+                            <div class="post-content-wrap" id="post-body-${pIdx}">
                                 ${mediaHtml}
-                                <div style="flex-grow:1; min-width:0;">
-                                    <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
-                                    <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
-                                </div>
+                                <div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
                             </div>
+                            <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
                             <div class="post-actions">
                                 <button class="action-btn" onclick="translatePost(${pIdx})" id="trans-btn-${pIdx}"><i class="fi fi-rr-globe"></i> ${t.translate}</button>
                                 <button class="action-btn" onclick="copyPost(${pIdx})"><i class="fi fi-rr-link"></i> ${t.copy}</button>
