@@ -1331,11 +1331,21 @@
                         const isF = pIdx === 0 && sVal === "" && currentLang === 'ru';
                         const pD = p.m.split(' | ')[0];
                         let dH = ""; if(pD !== curD) { curD = pD; dH = `<div class="date-divider"><span class="date-divider-val">${pD}</span><div class="date-divider-line"></div></div>`; }
+                        
+                        // Video Detection Logic
+                        let videoId = p.vid ? getYTId(p.vid) : null;
+                        if(!videoId && p.b) {
+                            const ytMatch = p.b.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+                            if(ytMatch) videoId = ytMatch[1];
+                        }
+
                         return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
                             <span class="post-meta">${p.m}</span>
                             <div class="post-h">${replaceFlags(p.t)}</div>
                             <div class="post-content-wrap">
-                                ${p.img ? `<img src="${p.img}" class="post-media">` : ""}
+                                ${videoId ? 
+                                    `<iframe src="https://www.youtube.com/embed/${videoId}" class="post-media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:15px; margin-bottom:15px; width:100%; aspect-ratio:16/9;"></iframe>` : 
+                                    (p.img ? `<img src="${p.img}" class="post-media">` : "")}
                                 <div style="flex-grow:1;">
                                     <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
                                     <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
