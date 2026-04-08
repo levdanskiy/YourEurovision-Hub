@@ -764,11 +764,14 @@
             70% { transform: translate(1.5%,0.5%); }
             90% { transform: translate(-1.5%,-0.5%); }
         }
-        .post-link { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; transition: opacity 0.2s; }
+        .post-link { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; transition: opacity 0.2s; cursor: pointer; }
         .post-link:hover { opacity: 0.7; }
-        iframe.post-media, video.post-media { object-fit: contain !important; background: #000; height: auto; min-height: 200px; }
+        
+        .video-container { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 15px; overflow: hidden; margin-bottom: 15px; flex-shrink: 0; background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .video-container iframe, .video-container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; object-fit: contain; }
+        
         .post-content-wrap.media-is-video { flex-direction: column !important; }
-        .post-content-wrap.media-is-video .post-media { width: 100% !important; height: auto !important; margin-bottom: 20px !important; }
+        .post-content-wrap.media-is-video > .video-container { width: 100% !important; height: auto !important; margin-bottom: 15px !important; }
     </style>
 </head>
 <body onclick="syncRadio()">
@@ -1166,7 +1169,7 @@
 
         function replaceFlags(text) {
             if (!text) return "";
-            let res = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="post-link">$1</a>');
+            let res = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" onclick="window.open(\'$2\', \'_blank\'); return false;" class="post-link">$1</a>');
             res = res.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:22px; height:22px; vertical-align:middle; margin-right:8px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.3));">`);
             res = res.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
             res = res.replace(/(?<![="])\b(\d+%?)\b(?![=">])/g, "<span class='num-highlight'>$1</span>");
@@ -1356,9 +1359,9 @@
 
                         let mediaHtml = "";
                         if(videoId) {
-                            mediaHtml = `<iframe src="https://www.youtube.com/embed/${videoId}" class="post-media" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius:15px; margin-bottom:15px; width:100%; aspect-ratio:16/9; background:#000;"></iframe>`;
+                            mediaHtml = `<div class="video-container"><iframe src="https://www.youtube.com/embed/${videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
                         } else if(isDirectVideo) {
-                            mediaHtml = `<video src="${p.vid}" class="post-media" controls poster="${p.img}" style="border-radius:15px; margin-bottom:15px; width:100%; background:#000;"></video>`;
+                            mediaHtml = `<div class="video-container"><video src="${p.vid}" controls poster="${p.img}"></video></div>`;
                         } else if(p.img) {
                             mediaHtml = `<img src="${p.img}" class="post-media">`;
                         }
