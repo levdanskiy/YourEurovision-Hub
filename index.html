@@ -764,6 +764,8 @@
             70% { transform: translate(1.5%,0.5%); }
             90% { transform: translate(-1.5%,-0.5%); }
         }
+        .post-link { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; transition: opacity 0.2s; }
+        .post-link:hover { opacity: 0.7; }
     </style>
 </head>
 <body onclick="syncRadio()">
@@ -1166,6 +1168,7 @@
             res = res.replace(/(?<![="])\b(\d+%?)\b(?![="])/g, "<span class='num-highlight'>$1</span>");
             res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
             res = res.replace(/🇪🇺|👑/g, `<img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" style="width:22px; height:22px; vertical-align:middle; margin-right:8px;">`);
+            res = res.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="post-link">$1</a>');
             for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
             for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">`); }
             return res;
