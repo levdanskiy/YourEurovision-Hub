@@ -335,6 +335,36 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "08.04 | 07:01",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5663",
+            "t": "⚔️ YOURVISION CUP 2026: ПОЛУФИНАЛ #1 - БИТВА ТИТАНОВ",
+            "b": "Мы выходим на финишную прямую. Сегодня в первом полуфинале сталкиваются два главных фаворита, чьи победы в четвертьфиналах были безоговорочными. Скандинавский драйв против средиземноморской экспрессии.\nУЧАСТНИКИ ПОЕДИНКА:\n🇫🇮ФИНЛЯНДИЯ: Linda Lampenius & Pete Parkkonen - «Liekinheitin»\nПуть к полуфиналу: Победили Данию в QF1 с огромным преимуществом. Их скрипичное техно и мощный вокал стали визитной карточкой турнира.\n🇬🇷 ГРЕЦИЯ: Akylas - «Ferto»\nПуть к полуфиналу: Обошли Грузию в QF2. Акилас несет в себе харизму и современный звук, который покорил жюри и зрителей.\nПРАВИЛА БАТТЛА: Только один артист пройдет в Гранд-Финал. Победитель определится вашими голосами в течение следующих 24 часов.\nКто достоин сразиться за кубок в финале?\n⏱️ Время чтения: 0.8 мин | ⚔️ YourVision: Cup",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775631678.0,
+            "poll": null
+        },
+        {
+            "m": "08.04 | 07:01",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5664",
+            "t": "📊 ОПРОС: 📊 ПОЛУФИНАЛ #1: КТО ПРОЙДЕТ В ФИНАЛ?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775631678.0,
+            "poll": {
+                "question": "📊 ПОЛУФИНАЛ #1: КТО ПРОЙДЕТ В ФИНАЛ?",
+                "options": [
+                    "🇫🇮 Финляндия: Linda &amp; Pete",
+                    "🇬🇷 Греция: Akylas"
+                ]
+            }
+        },
+        {
             "m": "07.04 | 19:49",
             "id": "70",
             "u": "https://t.me/YourEurovision/5662",
@@ -490,7 +520,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5647",
             "t": "🇧🇬 БОЛГАРИЯ: DARA ПРОХОДИТ В ПОЛУФИНАЛ ПОСЛЕ ИСТОРИЧЕСКОЙ НИЧЬЕЙ",
             "b": "Финальный четвертьфинал YourVision Cup 2026 завершился беспрецедентным результатом. Великобритания и Болгария разделили голоса поровну - 50% на 50%. В этой патовой ситуации судьбу последней путевки решил «протокол доминирования».\n📊 ИТОГИ ГОЛОСОВАНИЯ (QF #4):\n• ПОБЕДИТЕЛЬ: 🇧🇬 Bulgaria (Dara) - 50.4% (Tie-break) ★\n• Второе место: 🇬🇧 United Kingdom (LMNC) - 49.6%\nБолгария с треком «Bangaranga» забирает последнюю путевку в полуфинал благодаря более высокому результату в 1/8 финала (57% против 56% у Великобритании).\n📅 ROADMAP: ВРЕМЯ ПЕРЕДЫШКИ\nСегодня, 7 апреля - ВЫХОДНОЙ. Турнирная сетка замирает для подготовки к решающим битвам. Команды финалистов отправляются на репетиции, а эксперты пересматривают коэффициенты.\nПОЛУФИНАЛЫ: КАК ЭТО БУДЕТ?\nГолосование в 1/2 финала официально стартует завтра, 8 апреля.\nПРОЦЕСС:\n1. ФОРМАТ: Два прямых столкновения. Победители проходят в Гранд-Финал, проигравшие - покидают турнир.\n2. ТАЙМИНГ: Каждое голосование длится ровно 24 часа.\n3. ПАРА 1 (Завтра): 🇫🇮 Финляндия vs 🇬🇷 Греция.\n4. ПАРА 2 (Послезавтра): 🇲🇩 Молдова vs 🇧🇬 Болгария.\nГотовьте свои голоса. Впереди - битва титанов.\n⏱️ Время чтения: 1.4 мин | 🏆 YourVision: Cup",
-            "img": "https://cdn4.telesco.pe/file/Y7j8ba1tatZQsDsG4e_TlWAbRBdbwDvhyXkOP5gTamhYaJeonAh1HJMZlc8ihjXjoCDub2W60c4RB9Or0A_jPs_WYShVJ8PQxaKShsOD6pnXjPIwnNQcFOhyrHUuyTPB6mUMJb2AS2onj5_ok-Z4p2jro7BTazC4J1ZSh70IbocqCjRwMqYBQcJhlwkWBJ2QYEI3bwhMPNXferDVzREdeSnf9cGYL4_W-DUXi5iv6XBoRQLpaobFYPIi-aaZemBJDtbQHnabgAp5TjlgZCp1i5g9UII953hRBe6QXaCAbGnOzfnNdWiI6YLa6tDAYGkWCjfgxv67E2IOZi7OJ9hYSg.jpg",
+            "img": "https://cdn4.telesco.pe/file/YjqjZiikmbB0vFtjxTUJCaKMcg2vH04Lc9LWxr53gY8hB49cFVPPL6eYNc7zItlT3Qtk7_eRrQes3Jncy59ztHjAMFzW4nioy_DvNeS1XJ-9CrWPOpQrszNHEZOzypVEUTkNjQH1roQ64PnkY4VCNSOdFHJFUnmATAaM7bu0JrvMne2ncbiiZbCGzSXx__HkPj_tb3JGWPBr-VQS6CdnLkQ2rZD2tuE6QyS40pLjNS9YKzzzhcb3A-DebNh-gQihxNG13zVrdAi7dTm180WvVAL_dLXsmSWnq7-p07745vSTmCwyuj2N5YH-Mm7hN0fFrTTfx_fO7L7MJLvr9kwwHg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775548902.0,
@@ -539,18 +569,6 @@ var DATA = {
             "poll": null
         },
         {
-            "m": "06.04 | 17:04",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5644",
-            "t": "🧬 DNA: ПОРТУГАЛИЯ - BANDIDOS DO CANTE",
-            "b": "Португалия в 2026 году продолжает свою миссию по сохранению культурного наследия через призму современности. Группа Bandidos do Cante привозит в Вену «Rosa» - песню, в которой древняя манера пения «Cante Alentejano» встречается с актуальным поп-звучанием.\nTHE JOURNEY (ПУТЬ)\nBandidos do Cante - это квинтет из города Бежа, выросший на традициях народного многоголосия региона Алентежу. Группа заявила о себе в 2022 году, приняв участие в записи хита «Casa» группы D.A.M.A. Первый альбом «Bairro das Flores» (2026) закрепил их успех как главных новаторов жанра. В марте 2026 года они выиграли «Festival da Canção», получив максимальные 12 баллов от телезрителей. Это история о том, как друзья детства превратили локальную традицию (объект ЮНЕСКО) в стильный музыкальный бренд.\nSTYLE & SOUND (ДНК)\nДНК группы - это «симбиоз времен». «Rosa» строится на уникальном мужском многоголосии, которое накладывается на современный бит и акустическую гитару. Это мощный, заземленный и невероятно мелодичный звук. Визуально это эстетика «Neo-Ruralism»: аутентичные португальские образы в сочетании с высокой модой и современным искусством.\nVERDICT: Португалия снова отправляет на конкурс нечто непохожее ни на что другое. Bandidos do Cante - это мощный культурный стейтмент, который запомнится Европе своей подлинностью и мужской энергией.\n⏱️ Время чтения: 1.5 мин | 🧬 YourEurovision: DNA",
-            "img": "https://cdn4.telesco.pe/file/CxUpMa-5LIjN04T0ECMnIQo79SGHnByCNvNJRmHcnLyVGXi3P3wZXt93DtPbHtwquIQPeckrhN4rV3zkTNIKRJAEp6FgGI8lYj8djXH_fTdBpV4M97IF-M4mCu8CxUQELl5ju5j87B_tdckQ3WAcJ104803g6LBpwtkVwVygEQlDwQNsCutEx3081qTHHFKUokN4NhkASnetA_1nE8_PC5Q2N2aj7xR0Wd1yG_rUZhKVImIHVmNHznAVCaC4AYpHoVDZAwxohgmWRpEVuXMW6rMB3AuRVzGn2PGBa3ngdW0VL6be-qJ3ibT1Ipfyrrtsh5YzhtAhGDfGs-aMhvk2-g",
-            "vid": "https://cdn4.telesco.pe/file/f5ad4eb749.mp4?token=Fgp-u1CLRmzgb1GbnoJEiwhCTRpmt97P2OtIKc6Lyffx497S_MCZkLRoh1_91dfwP6Sbd6AX4q_Pd6D3shcYpn9sMTAH8ghiaxjJpD0CAQjI22yNOrcxzgN9TggbW8_xSlbxCha34LtJZT6zOrnRUbdM1wdzV1O2yASpVUK76SiPu4PmQrcnyOkl0ldRguB775QXRnsSBUb7G5LKEYms2nYqABxZpZV-3bhMhWwQxalTKg5AlW7hZnj-plCRHf7kWyC-ju-ERO6xE_pm0j72javqaCzGUmatqBckEneryKiF3pQU2GD4aM0FhOuVwYieOCMa4g83CBq2Nj_gpQnZow",
-            "isVideo": true,
-            "ts": 1775495079.0,
-            "poll": null
-        },
-        {
             "m": "06.04 | 15:00",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5920",
@@ -560,18 +578,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1775487636.0,
-            "poll": null
-        },
-        {
-            "m": "06.04 | 07:59",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5643",
-            "t": "🇲🇩МОЛДОВА: SATOSHI СОВЕРШАЕТ ГЛАВНУЮ СЕНСАЦИЮ ЧЕТВЕРТЬФИНАЛОВ",
-            "b": "Битва «Melodic Battle» завершилась падением скандинавского фаворита. Сатоши с треком «Viva, Moldova!» выбил Швецию из турнира, доказав, что в этом сезоне энергия индастриала сильнее классического поп-звучания.\n📊 ИТОГИ ГОЛОСОВАНИЯ (QF #3):\n• ПОБЕДИТЕЛЬ: 🇲🇩 Moldova (Satoshi) - 56% ★\n• Второе место: 🇸🇪 Sweden (Felicia) - 44%\nМолдова проходит в ПОЛУФИНАЛ 2, где будет ждать победителя пары Великобритания - Болгария. Для Швеции и Фелиции путь к вершине YourVision Cup 2026 завершен.\n🚨 NEXT: Финальный четвертьфинал UK vs Bulgaria официально стартовал! Решается судьба последней путевки.\n⏱️ Время чтения: 0.8 мин | 🇲🇩 YourVision: Results",
-            "img": "https://cdn4.telesco.pe/file/NfFDTWOQe4p-tfU2E0DZnEi3b3Mat2j4Zt2ePljbuYljfqN1-ykIpyrRtetpeWpte89mf5Syi23Upp7uagX8x-jZRg_BwmYZ6gUuA7bKQ_sBylZD3PqKrSrkExooXkbreZKqjoKwaCOOSg1NW_NkHH9R3Bv-8gElTTb7PY_zmrnl6BcNXLC7AeOG7EiiEEn5JttlqnCTEV6oH6Oubr6ohIiCVagrthLYW-vVxbCQ2N142CDrS7XwRDRB2XvDOmH13fniePFpLIEXAteXWKvo7iN0xge5bJt9hiTMwgmlL5CjEj-11x9vEpjP6MMm2UkR2Bnc-HOOyaWUbGKM7leSgA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775462343.0,
             "poll": null
         },
         {
@@ -996,6 +1002,12 @@ var DATA = {
         {
             "d": "12.05",
             "t": "EUROVISION: SEMI-FINAL 1",
+            "e": "🇪🇺 Live from Wiener Stadthalle",
+            "s": "WAITING"
+        },
+        {
+            "d": "14.05",
+            "t": "EUROVISION: SEMI-FINAL 2",
             "e": "🇪🇺 Live from Wiener Stadthalle",
             "s": "WAITING"
         },
