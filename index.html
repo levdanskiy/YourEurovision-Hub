@@ -767,6 +767,8 @@
         .post-link { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; font-weight: 700; transition: opacity 0.2s; }
         .post-link:hover { opacity: 0.7; }
         iframe.post-media, video.post-media { object-fit: contain !important; background: #000; height: auto; min-height: 200px; }
+        .post-content-wrap.media-is-video { flex-direction: column !important; }
+        .post-content-wrap.media-is-video .post-media { width: 100% !important; height: auto !important; margin-bottom: 20px !important; }
     </style>
 </head>
 <body onclick="syncRadio()">
@@ -1164,12 +1166,12 @@
 
         function replaceFlags(text) {
             if (!text) return "";
-            let res = text.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:22px; height:22px; vertical-align:middle; margin-right:8px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.3));">`);
+            let res = text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="post-link">$1</a>');
+            res = res.replace(/❤️|\u2764\ufe0f|\u2764/g, `<img src="assets/heart_white_2026.svg" class="heart-icon" style="width:22px; height:22px; vertical-align:middle; margin-right:8px; filter:drop-shadow(0 0 10px rgba(255,255,255,0.3));">`);
             res = res.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-            res = res.replace(/(?<![="])\b(\d+%?)\b(?![="])/g, "<span class='num-highlight'>$1</span>");
+            res = res.replace(/(?<![="])\b(\d+%?)\b(?![=">])/g, "<span class='num-highlight'>$1</span>");
             res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
             res = res.replace(/🇪🇺|👑/g, `<img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" style="width:22px; height:22px; vertical-align:middle; margin-right:8px;">`);
-            res = res.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="post-link">$1</a>');
             for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
             for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">`); }
             return res;
@@ -1364,9 +1366,9 @@
                         return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
                             <span class="post-meta">${p.m}</span>
                             <div class="post-h">${replaceFlags(p.t)}</div>
-                            <div class="post-content-wrap">
+                            <div class="post-content-wrap ${videoId || isDirectVideo ? 'media-is-video' : ''}">
                                 ${mediaHtml}
-                                <div style="flex-grow:1;">
+                                <div style="flex-grow:1; min-width:0;">
                                     <div class="post-b" id="post-body-${pIdx}">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
                                     <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
                                 </div>
