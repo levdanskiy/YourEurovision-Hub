@@ -1388,8 +1388,7 @@
                             <div class="post-h">${replaceFlags(p.t)}</div>
                             <div class="post-content-wrap" id="post-body-${pIdx}">
                                 ${mediaHtml}
-                                <div class="post-b">${replaceFlags(p.b.replace(/
-/g, "<br>"))}</div>
+                                <div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
                             </div>
                             <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
                             <div class="post-actions">
