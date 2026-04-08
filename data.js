@@ -185,7 +185,7 @@ var DATA = {
             "n": "SF #1",
             "qf": "TO FINAL",
             "t1": "fi",
-            "a1": "Linda & Pete",
+            "a1": "Linda Lampenius & Pete Parkkonen",
             "s1": "Liekinheitin",
             "sc1": "-",
             "t2": "gr",
@@ -193,7 +193,7 @@ var DATA = {
             "s2": "Ferto",
             "sc2": "-",
             "w": 0,
-            "status": "PENDING"
+            "status": "LIVE"
         },
         {
             "id": 14,
@@ -484,7 +484,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5655",
             "t": "🇷🇺 RU-TOP: ВАНЯ ДМИТРИЕНКО - НОВЫЙ ЛИДЕР SIGNAL 20",
             "b": "Ваня Дмитриенко с треком «Ртуть» обходит Hollyflame, забирая золото с минимальным отрывом в 1 балл.\n🏆 ИТОГОВЫЙ ЗАЧЕТ (SIGNAL 20):\n🥇 1. Ваня Дмитриенко - «Ртуть» (63 pts) ↑+1\n🥈 2. Hollyflame - «Тону» (62 pts) ↓-1\n🥉 3. JONY - «Помню» (53 pts) ═\n4. SQWOZ BAB - «Купер» (51 pts) ═\n5. ICEGERGERT & ZIVERT - «Банк» (42 pts) ═\n6. Любовь Успенская & Jakone - «Плакала надежда» (40 pts) ↑+1\n7. MACAN - «Останься образом» (39 pts) ↑+5\n8. Мот - «Намёк на нас» (38 pts) ↓-2\n9. Lyriq - «Кассеты» (36 pts) ═\n10. MONA - «Попрошу тебя» (35 pts) ═\n11. Artik & Asti - «Модный поп» (34 pts) ═\n12. 5sta Family - «Раз, два» (33 pts) ↓-4\n13. Uncleflexxx - «SMS» (22 pts) ═\n14. Sabi & Mia Boyka - «Базовый минимум» (21 pts) ↑+1\n15. Клава Кока - «Сплетни. Шум. Лук.» (17 pts) ↑+4\n16. Xcho - «Ты и я» (17 pts) ↑+1\n17. Filatov & Karas - «Включи музыку» (16 pts) ↓-3\n18. Seryabkina - «Асфальт» (16 pts) ↓-2\n19. Gayazov$ Brother$ - «Русская рулетка» (13 pts) ↓-1\n20. Лёша Свик & Nyusha - «Пробуди» (9 pts) ═\n⏱️ Время чтения: 1.2 мин | 🇷🇺 YourVision: Chart",
-            "img": "https://cdn4.telesco.pe/file/oIF459ZkOa2CrzOzi92nmlOreAigydiXJSPZYGgdhVmMtiCqbxCykqcOYUyrI5cBqkv75Qdx8LcpMaAc6iZuT6A1yLmkF9Smym38fIKjA4pjMbEYW5cKNNg4zjhgMc6ZSHWLB5h2l9tfPsepmWyNm48XCX-fxaJ4tnzoZ907qH8ECROgorjAcHNOewU2H0w2Z41c797m_mI5OM-JcmGn40t9j8O_dYeBwb4CwD4Mc2hYpN190cSC3ZnW1cqCEyUCny_xuxl5Wl9F2DI6d5pnZE-Ib2WIfIIzI9SNB_8EKfNnAyn839hwKY_7p5mJ7leFB6a9RvHtDAfa68WZW9cW3A.jpg",
+            "img": "https://cdn4.telesco.pe/file/dIqBl68M6W6yfOIvWiWIL9MvwK_WbF5z-HozArFST_ZfoIqIDyvOV0uRXhZxLJ0OiLWfDEMRNrk2eOeJmh96OLMZgbeD21icS4xgB4ya-ZYL9YbjHJ3V40sVuPZ-bsTkTQyFvMlLHyxQSPlZfrMCS07An4numwS-LFMs3eAIY-KnIO29taBz0Yr5AuzG0JDnaR1F_EahGuZudZKz2SoCWoWy_fsWUmZlVS2xJwjqUkdk9-z7XfGKIORjSVvZJV1398Qu_D9ux3i53-aU0HlHUiyisTt1B7Pudw_eb38fem_RqxQV9Yye4AUkShwIXqajoDPgYR3hx8owFLrV9wyICA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775577562.0,
