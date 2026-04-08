@@ -410,7 +410,7 @@
             padding: 30px;
         }
         .post-card.featured .post-h { font-size: 4.5rem; margin-bottom: 45px; }
-        .post-card.featured .post-media { width: 100%; float: none; height: 500px; object-fit: cover; margin: 0 0 40px 0; }
+        .post-card.featured .post-media { width: 100%; float: none; max-height: 450px; height: auto; object-fit: contain; background: rgba(0,0,0,0.3); margin: 0 0 30px 0; border-radius: 15px; }
         .post-card.featured .post-b { font-size: 1.5rem; color: #fff; }
 
         .date-divider {
@@ -462,7 +462,8 @@
                 height: 180px;
                 flex-shrink: 0;
                 margin-bottom: 0;
-                object-fit: cover;
+                object-fit: contain;
+                background: rgba(0,0,0,0.3);
             }
             .post-card:not(.featured):not(.is-expanded) .post-b {
                 max-height: 8.8rem;
@@ -493,16 +494,17 @@
             font-style: italic;
             letter-spacing: -0.01em;
         }
-        .post-media { 
-            width: 100%; border-radius: 10px; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1); 
+        .post-media {
+            width: 100%; border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.1);
             transition: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
             margin-bottom: 20px;
-            object-fit: cover;
+            object-fit: contain;
+            background: rgba(0,0,0,0.3);
+            max-height: 400px;
         }
         .post-card.featured .post-h { font-size: 3.2rem; margin-bottom: 15px; }
-        .post-card.featured .post-media { height: 300px; }
-        .post-card:hover .post-media { transform: scale(1.05); box-shadow: 0 50px 100px rgba(0,0,0,0.9); }
+        .post-card.featured .post-media { max-height: 450px; height: auto; }        .post-card:hover .post-media { transform: scale(1.05); box-shadow: 0 50px 100px rgba(0,0,0,0.9); }
         .post-b { 
             font-size: 0.85rem; line-height: 1.4; color: #ccc; letter-spacing: 0.01em; 
             max-height: 8.8rem; /* Exact 5 lines (1.1 * 1.6 * 5) */
