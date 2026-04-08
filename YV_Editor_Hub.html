@@ -1165,7 +1165,7 @@
             res = res.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
             res = res.replace(/(?<![="])\b(\d+%?)\b(?![="])/g, "<span class='num-highlight'>$1</span>");
             res = res.replace(/^([A-ZА-ЯЁ\s\(\):-]{5,}:?)$/gm, "<span class='post-sub-h'>$1</span>");
-            res = res.replace(/🇪🇺/g, `<img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" style="width:22px; height:22px; vertical-align:middle; margin-right:8px;">`);
+            res = res.replace(/🇪🇺|👑/g, `<img src="https://www.eurovision.com/static/images/70-heart-sm.ff9bba532601.webp" style="width:22px; height:22px; vertical-align:middle; margin-right:8px;">`);
             for (const e in emojiMap) { res = res.split(e).join(emojiMap[e]); }
             for (const f in flagMap) { if (res.includes(f)) res = res.split(f).join(`<img src="${getH(flagMap[f])}" class="heart-shape" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">`); }
             return res;
