@@ -188,10 +188,12 @@ var DATA = {
             "a1": "Linda Lampenius & Pete Parkkonen",
             "s1": "Liekinheitin",
             "sc1": "-",
+            "img1": "assets/sf_finland.png",
             "t2": "gr",
             "a2": "Akylas",
             "s2": "Ferto",
             "sc2": "-",
+            "img2": "assets/sf_greece.png",
             "w": 0,
             "status": "LIVE"
         },
@@ -203,10 +205,12 @@ var DATA = {
             "a1": "Satoshi",
             "s1": "Viva, Moldova!",
             "sc1": "-",
+            "img1": "assets/sf_moldova.png",
             "t2": "bg",
             "a2": "Dara",
             "s2": "Bangaranga",
             "sc2": "-",
+            "img2": "assets/sf_bulgaria.png",
             "w": 0,
             "status": "PENDING"
         }
@@ -335,6 +339,54 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "08.04 | 17:00",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5667",
+            "t": "🧬 DNA: ИЗРАИЛЬ - NOAM BETTAN",
+            "b": "Израиль в 2026 году делает ставку на мужской вокал и европейскую эстетику. Ноам Беттан, триумфатор 12-го сезона «Rising Star», привозит в Вену «Michelle» - трек, в котором нежность французского шансона встречается с мощью современного поп-звучания.\nTHE JOURNEY (ПУТЬ)\nНоам родился в Раанане в семье французских евреев. Его путь начался после службы в армии: в 2018 году он занял третье место в шоу «Aviv or Eyal». Настоящий прорыв случился в 2023-м с альбомом «Me'al HaMayim», синглы из которого штурмовали чарты радиостанции Galgalatz. Победа на «HaKokhav HaBa» в январе 2026-го стала логичным итогом многолетней работы. Ноам - артист, который умеет проживать каждую ноту, превращая личную историю в универсальный гимн.\nSTYLE & SOUND (ДНК)\nДНК Ноама - это «интернациональный соул». В «Michelle» он мастерски переплетает иврит, английский и французский языки. Звучание строится на теплых клавишных партиях и глубоком баритоне Ноама, который к финалу раскрывается в полный голос. Это песня о поиске близости и тепла в хаотичном мире. Визуально это эстетика «Modern Classic»: безупречные костюмы, приглушенный свет и акцент на мимике и жестах артиста.\nVERDICT: Израиль отправляет сильного вокалиста с очень «умным» и форматным материалом. Ноам Беттан - это заявка на высокие баллы как от зрителей, так и от жюри, особенно учитывая его франкофонный бэкграунд.\n⏱️ Время чтения: 1.3 мин | 🧬 YourVision: DNA",
+            "img": "https://cdn4.telesco.pe/file/Z5ziMKGjdcpAxrmoh7hRL2M_wYrr6SyFQGP9_-zXoKRWpdMCrrvQq9bdOhjop3GuoQkxCDQFjAS4RRAgPe2EoLRuBRjWIGSOVpLAVqv0MUdcs7157wiA9s6XVALcAySgXuaJn560RpgM7BTz-NFsvbkPGVqy-Ssmo15FOvhIrv7dnFEpsM2K02ghugdyRdjL9YZew_7WCE8tRjxIIkuaQ2Dpj2ft6a27VJ9x69qvRLKdtF79tvwtoVHG3aokhD37xVmTp2YRaC34L4z0Vq1qjUrW5iCtdSlCtz9wLPcdRC7L5ilEUHuvQouAZrH8eDTEa0aSM807VN5UaZTyKXaUCg",
+            "vid": "https://cdn4.telesco.pe/file/d16a364c1f.mp4?token=TxWcz7pFmGVLR4PPORvazgXQHTvu0UOSKOEcZ-0XY4I5dyIiI61Sdhf05PNTao_dF9r2EjMQgUjgoXdC4aUOu1QJeMnaOF3rCObfs4qTjQsXpjW-H8rcMH8iTcyKv5hStM0PN7BhS2pmdCGzR1WmNJsDyExrZ_9gT9yx0JE0iZNIYdPpmLKEmo9p2_vVi273AxI0JK8BTXAIdjv3_ESXV_pK8qw5kn3A6UOMEfz87ScsHcs8mzlNX0S1diu_xE-qAZnCRl-GVdmFvWj-1CV6CTNjGeKlRaQ1p0FM0zqbRUG5J7-PONbUjd_bmqDAjVX4xMDEKhzMh6pvmuc8y6IDYw",
+            "isVideo": true,
+            "ts": 1775667626.0,
+            "poll": null
+        },
+        {
+            "m": "08.04 | 17:00",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5668",
+            "t": "🇺🇦 ALBM: LELĖKA - АУТЕНТИЧНОЕ СИЯНИЕ УКРАИНЫ",
+            "b": "Завтра в рамках серии «A Little Bit More» Украина представит одну из самых атмосферных работ сезона. Группа LELĖKA исполнит полуакустическую версию композиции «Ridnym», записанную вживую на Muzvar Music Awards.\nОсобенность этого перформанса - уникальное сочетание классического струнного квинтета «GRAFF» и магического звучания бандуры в руках Ярослава Джуся. Это глубокое погружение в современный украинский фолк, где традиции встречаются с неоклассикой.\nДЕТАЛИ ПЕРФОРМАНСА:\n• Артист: LELĖKA\n• Инструменты: Струнный квинтет и бандура\n• Локация: Muzvar Music Awards\n🔗 СМОТРЕТЬ ПРЕМЬЕРУ: YouTube\nГотовы ли вы к самому эмоциональному моменту недели в #ALBM?\n⏱️ Время чтения: 0.7 мин | 🇺🇦 YourVision: #ALBM",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775667626.0,
+            "poll": null
+        },
+        {
+            "m": "08.04 | 16:33",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5666",
+            "t": "🇨🇾 АЛЬТЕРНАТИВА: ANTIGONI И VHS-АРХИВЫ 2005 ГОДА",
+            "b": "Специальная серия «A Little Bit More» превращается в машину времени. Представительница Кипра Antigoni представила, пожалуй, самое личное видео этого сезона - кавер на победный гимн Елены Папаризу «My Number One».\nЭто не просто студийная запись. В основу клипа легли подлинные VHS-архивы из 2005 года, снятые в саду её бабушки на Кипре, где маленькая Antigoni пытается повторить легендарную хореографию. Сегодня, 21 год спустя, история делает полный оборот (full-circle moment) - девочка с кассетной пленки сама едет на Евровидение.\nМузыкальная адаптация тоже заслуживает внимания: продакшн от Connor Mullally и живая партия бузуки от Мариоса Константину делают звучание более плотным и аутентичным, сохраняя уважение к оригиналу.\nДЕТАЛИ РЕЛИЗА:\n• Артист: Antigoni\n• Оригинал: Helena Paparizou (Греция, 2005)\n• Продакшн: Connor Mullally (Music & Edit)\n• Бузуки: Mario Constantinou\n🔗 СМОТРЕТЬ: YouTube\nКак работает ностальгия: такие личные архивы добавляют баллов артисту или это просто милый бонус для хардкорных фанатов?\n⏱️ Время чтения: 1.0 мин | 🇨🇾 YourVision: #ALBM",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775666011.0,
+            "poll": null
+        },
+        {
+            "m": "08.04 | 16:30",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5665",
+            "t": "🇱🇺 АЛЬТЕРНАТИВА: EVA MARIJA - МАГИЯ ПРИРОДЫ В ФОЛК-ЗВУЧАНИИ",
+            "b": "Люксембург продолжает раскрывать потенциал своей заявки на Вену 2026. В рамках специальной серии «A Little Bit More» Eva Marija представила эксклюзивную фолк-версию трека «Mother Nature».\nЭта версия радикально отличается от оригинала: она сбрасывает с себя поп-аранжировку и обращается к акустическим корням. Живые струнные, перкуссия и кристально чистый вокал Евы превращают трек из современного хита в глубокую, атмосферную балладу о связи с землей.\nДЕТАЛИ РЕЛИЗА:\n• Артист: Eva Marija\n• Формат: Folk Version\n• Продакшн: RTL\n🔗 СМОТРЕТЬ: YouTube\nКакая версия «Mother Nature» звучит для вас выигрышнее: конкурсный поп-гимн или эта фолк-интерпретация?\n⏱️ Время чтения: 0.6 мин | 🇱🇺 YourVision: #ALBM",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775665843.0,
+            "poll": null
+        },
+        {
             "m": "08.04 | 15:02",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5925",
@@ -460,8 +512,8 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5657",
             "t": "🧬 DNA: АЗЕРБАЙДЖАН - JIVA",
             "b": "Азербайджан в 2026 году берет курс на энергию и актуальный звук. Джамиля Гашимова, выступающая под сценическим именем Jiva, привозит в Вену «Just Go» - манифест свободы, в котором восточный колорит безупречно ложится на ритмы современного R&B.\nTHE JOURNEY (ПУТЬ)\nДжамиля родилась в Москве, но её музыкальная судьба неразрывно связана с Баку. В индустрии она более 20 лет, начав карьеру еще в 2003-м. Настоящий прорыв случился в 2025 году на шоу «Səs Azərbaycan» (The Voice of Azerbaijan), где она победила с результатом 42.6% голосов. В марте 2026 года ITV объявило Jiva представителем страны в Вене. Её путь - это история о том, как большой талант и многолетний опыт находят свое идеальное время для глобального выхода.\nSTYLE & SOUND (ДНК)\nЗвучание Jiva - это «high-end pop». «Just Go» выделяется своим динамичным продакшном и запоминающимся хуком. ДНК артистки - это гибкость: она одинаково органично звучит в джазе (участница Montreux Jazz Festival) и в танцевальной поп-музыке. Визуально это эстетика «Modern Baku»: яркие, авангардные образы, сочетающие восточную роскошь и западный футуризм.\nVERDICT: Азербайджан привозит один из самых «радийных» треков сезона. Jiva - это профессионализм высшей пробы, который способен зажечь арену и обеспечить стране высокий результат.\n⏱️ Время чтения: 1.2 мин | 🧬 YourEurovision: DNA",
-            "img": "https://cdn4.telesco.pe/file/UGQFwS3vKjK7x4qXsP0Lbu3fgs2_URUmN1nyAe7nObsT6Pg8T8ZiQ494teXJYhKQZScjHrUzUBw6QynhuQn0z3wNVQvSzyS5Fk6YPGL5rOGuhYIBnrE9I1z7en9LWdn1ymCkecUEMav2YuWcByL0SGaK3qxPMB3sPPqIWPCX16Lr3NqkSWg43eqHTcRwI1otJdo1gIc4EY9F23mlO91PLWfRgfs11CwBT8UMWYpOwq_F-0HRofzH2STcZEV55_JdZ4NwNNwREDme_FjJx0XoqdC88o9Mxt6nXNq2xstKLjjww8YLnM2UXn9r_TKC628uqLXR6IU_lfOSf58U1C1S5Q",
-            "vid": "https://cdn4.telesco.pe/file/b88f84c12a.mp4?token=YZUbinS9mj9Rvn7UhXdKHY4ZQxAZO0bclCHVI32j59fbVKB-njLYq_xY-CMyqlbN2OdkxP9QNCvFBpyDfKb6BISx3wgechdx6rgkYMEKqHmAcHRNclxsZjmpCUAqZBp3XMTVXscOtQEeziXzMfC_5lKD-jxqDRNieU5fvaEy5GJrIWOTk-8J0gjUboglRseA5qhl9CiAhsPCh2UsAJaVUF6rGTZC4GSiH1hd9-cN39KfbCViUAPcO1UAs1mukkHNSjFW9fnB81kg906YbrjyQjtiV1YtOGdjL0e2Ub75VDeyo7dDjLEo7TdUXmXNqd6RXAHwF1QJj3bkGdbgMRfspQ",
+            "img": "https://cdn4.telesco.pe/file/QMtu8CvkBX2jtAOtL2HlgbAD35vytyIusJXO3nR1LbF5JB6Q2iuNZMz4tCkUVKrCXX8OeLXnF0aK-mPIx_LhqmF98uCMwvB-saZaKlrjE_wu8Kx3WhatuFAlVMMdpN24Ovkq7o_Po1FpbB4UxaDRzDewhyqw_fctDXx2b9mDhevtrkX0a34h0oNy1xllvHXUFQlY7-zxgeHSuRKYW2lW-ETSMJvhxmRGV23TPLV66k9q-j7CJZ7XyapSUNVLREHX6yENL8deGbkx2zlj5Yk7EweGhhb3hMW913QbMXbCFO4TLMspad2WjEWE0ieAkN4lSK-bNb2waQBaOjsm0CeO4g",
+            "vid": "https://cdn4.telesco.pe/file/b88f84c12a.mp4?token=PIg3ae32_dvr28fwQYdP62lkj04Gg6b_Xw4PQcOsOVTsqCVn_d-VNN7ghTAft67AmgoUmFGW9FhhGNvE4d_GnsD5EpSKVBaOcJvPA2OJH4b599T_bultbKhM1J1Uubnkh04Z8NG0a0P562U72mhwBTuPVjP84o2X0WV0Exs98963hiu7iu5L6VzfG9ArWSn5NYF99Hnr_5NHlVlZ9T7tYOf0LMDs9Fir-9DjrpuzZwcw24HE5nl4zMyTtnpCCIIGDjm1yAsky9hGQDUM_TCMWeMYJCqm-kotuDi7cNk0CgRZx-yaFZSgBO0AHLVOogGrRFfKwUsyw69n0VMvpRhiAw",
             "isVideo": true,
             "ts": 1775581416.0,
             "poll": null
@@ -539,48 +591,6 @@ var DATA = {
             "poll": null
         },
         {
-            "m": "07.04 | 08:01",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5647",
-            "t": "🇧🇬 БОЛГАРИЯ: DARA ПРОХОДИТ В ПОЛУФИНАЛ ПОСЛЕ ИСТОРИЧЕСКОЙ НИЧЬЕЙ",
-            "b": "Финальный четвертьфинал YourVision Cup 2026 завершился беспрецедентным результатом. Великобритания и Болгария разделили голоса поровну - 50% на 50%. В этой патовой ситуации судьбу последней путевки решил «протокол доминирования».\n📊 ИТОГИ ГОЛОСОВАНИЯ (QF #4):\n• ПОБЕДИТЕЛЬ: 🇧🇬 Bulgaria (Dara) - 50.4% (Tie-break) ★\n• Второе место: 🇬🇧 United Kingdom (LMNC) - 49.6%\nБолгария с треком «Bangaranga» забирает последнюю путевку в полуфинал благодаря более высокому результату в 1/8 финала (57% против 56% у Великобритании).\n📅 ROADMAP: ВРЕМЯ ПЕРЕДЫШКИ\nСегодня, 7 апреля - ВЫХОДНОЙ. Турнирная сетка замирает для подготовки к решающим битвам. Команды финалистов отправляются на репетиции, а эксперты пересматривают коэффициенты.\nПОЛУФИНАЛЫ: КАК ЭТО БУДЕТ?\nГолосование в 1/2 финала официально стартует завтра, 8 апреля.\nПРОЦЕСС:\n1. ФОРМАТ: Два прямых столкновения. Победители проходят в Гранд-Финал, проигравшие - покидают турнир.\n2. ТАЙМИНГ: Каждое голосование длится ровно 24 часа.\n3. ПАРА 1 (Завтра): 🇫🇮 Финляндия vs 🇬🇷 Греция.\n4. ПАРА 2 (Послезавтра): 🇲🇩 Молдова vs 🇧🇬 Болгария.\nГотовьте свои голоса. Впереди - битва титанов.\n⏱️ Время чтения: 1.4 мин | 🏆 YourVision: Cup",
-            "img": "https://cdn4.telesco.pe/file/YjqjZiikmbB0vFtjxTUJCaKMcg2vH04Lc9LWxr53gY8hB49cFVPPL6eYNc7zItlT3Qtk7_eRrQes3Jncy59ztHjAMFzW4nioy_DvNeS1XJ-9CrWPOpQrszNHEZOzypVEUTkNjQH1roQ64PnkY4VCNSOdFHJFUnmATAaM7bu0JrvMne2ncbiiZbCGzSXx__HkPj_tb3JGWPBr-VQS6CdnLkQ2rZD2tuE6QyS40pLjNS9YKzzzhcb3A-DebNh-gQihxNG13zVrdAi7dTm180WvVAL_dLXsmSWnq7-p07745vSTmCwyuj2N5YH-Mm7hN0fFrTTfx_fO7L7MJLvr9kwwHg.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775548902.0,
-            "poll": null
-        },
-        {
-            "m": "06.04 | 18:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5646",
-            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - БЕЛЬГИЯ",
-            "b": "Бельгия в этом сезоне сменила курс: от яркого нео-диско и уверенного мужского вокала к меланхоличному, почти театральному арт-попу. Проводим аналитический аудит: стал ли этот разворот стратегически оправданным для Брюсселя?\nДУЭЛЬ ПОКОЛЕНИЙ\n🇧🇪 2026: Essyla - «Dancing on the Ice»\nТонкий, атмосферный и глубокий трек. Эссила делает ставку на визуальную эстетику и «холодный» звук, который требует от зрителя концентрации и сопереживания.\n🇧🇪 2025: Red Sebastian - «Strobe Lights»\nЭнергичное, ритмичное нео-диско с мощным грувом. Ред Себастьян предлагал праздник и моментальный контакт с аудиторией. Это была ставка на драйв и танцпол.\nВОПРОС К ЭКСПЕРТАМ\nЧто кажется вам более органичным для современной Бельгии: умение создавать праздник с Red Sebastian или способность погружать в меланхолию с Essyla? Чей «свет» был ярче?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇧🇪 YourVision: Reset",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775500332.0,
-            "poll": null
-        },
-        {
-            "m": "06.04 | 18:32",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5645",
-            "t": "📊 ОПРОС: 📊 THE RESET: БЕЛЬГИЯЧья стратегия была сильнее?",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775500321.0,
-            "poll": {
-                "question": "📊 THE RESET: БЕЛЬГИЯЧья стратегия была сильнее?",
-                "options": [
-                    "2026: Essyla («Dancing on the Ice»)",
-                    "2025: Red Sebastian («Strobe Lights»)"
-                ]
-            }
-        },
-        {
             "m": "06.04 | 18:00",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/5921",
@@ -638,18 +648,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1775325832.0,
-            "poll": null
-        },
-        {
-            "m": "04.04 | 15:03",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5916",
-            "t": "🏛 #RECIPE: ОБЛАЧНЫЙ ТАРТ",
-            "b": "ESSENCE\nТехнология создания лимонного тарта с итальянской меренгой. Основной акцент - на температурную стабилизацию белка.\n- Основа: Песочное тесто (Pâte Sablée). 200г муки, 100г холодного масла, 50г сахарной пудры, 1 желток. Выпекать 15 мин при 180°C.\n- Курд: 3 лимона (сок и цедра), 150г сахара, 3 яйца, 80г сливочного масла. Томить на водяной бане до загустения.\n- Меренга: 3 белка, 180г сахара, 50мл воды. Сварить сироп до 118°C и тонкой струйкой влить во взбивающиеся белки. Взбивать до блеска и остывания.\n- Финиш: Выложить меренгу «облаками» и быстро обжечь газовой горелкой для карамелизации.\nMARGINALIA\nКондитерское искусство - это архитектура эфемерного. Облачный тарт - мой личный символ субботнего покоя. Контраст между агрессивно-кислым лимонным кремом и нежной, почти невесомой сладостью меренги напоминает мне весеннее солнце, которое уже греет, но всё еще оставляет холодные тени. Обожженные края белков пахнут жженым сахаром и детством. В этом десерте нет тяжести, только чистая структура и вкус, который исчезает слишком быстро, заставляя ценить момент здесь и сейчас.",
-            "img": "https://cdn4.telesco.pe/file/lTvE-4_QVuhL5A9326KFyliuIscjNRUbc32Hg4291drw46loqfXNg1YHLCYVZIr9DsZlZXUP0shtSnU4FnWzb_2AngnUda1P2pzzgwyJdIbU6m4EFgcTedUza9sbUZALpqHcy5uaQA1fFZsyipv5JYwQhSmgSQEzw6gZ9v3VdjHqjmp3VxMmJE_4KIFzCrrS7NAHtbWGWpjsE_m6vyO26AcySfwP4F_rKEOqQD9WPvO2AoB5LBAHd3gQL6I6aEyVYb-kb23JX6hMGQWx9-PStVIiu75o_lyuDxothx4VA8sTOsAw-enibmFoz0xMPeJiPgau3Eg3bcPw3K80AQPDyg.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775315025.0,
             "poll": null
         }
     ],
