@@ -907,74 +907,68 @@ var DATA = {
         }
     ],
     "odds": [
-    {
-        "r": 1,
-        "id": "fi",
-        "c": "Finland",
-        "p": "30%"
-    },
-    {
-        "r": 2,
-        "id": "fr",
-        "c": "France",
-        "p": "11%"
-    },
-    {
-        "r": 3,
-        "id": "dk",
-        "c": "Denmark",
-        "p": "10%"
-    },
-    {
-        "r": 4,
-        "id": "au",
-        "c": "Australia",
-        "p": "8%"
-    },
-    {
-        "r": 5,
-        "id": "gr",
-        "c": "Greece",
-        "p": "8%"
-    },
-    {
-        "r": 6,
-        "id": "se",
-        "c": "Sweden",
-        "p": "4%"
-    },
-    {
-        "r": 7,
-        "id": "il",
-        "c": "Israel",
-        "p": "4%"
-    },
-    {
-        "r": 8,
-        "id": "ua",
-        "c": "Ukraine",
-        "p": "3%"
-    },
-    {
-        "r": 9,
-        "id": "it",
-        "c": "Italy",
-        "p": "3%"
-    },
-    {
-        "r": 10,
-        "id": "ro",
-        "c": "Romania",
-        "p": "3%"
-    }
-],
-    "roadmap": [
         {
-            "d": "07.04",
-            "t": "EUROGROOVE: VIENNA PRELUDE",
-            "e": "🇪🇺 Start of Voting (20:30)",
-            "s": "DONE"
+            "r": 1,
+            "id": "fi",
+            "c": "Finland",
+            "p": "30%"
         },
+        {
+            "r": 2,
+            "id": "fr",
+            "c": "France",
+            "p": "11%"
+        },
+        {
+            "r": 3,
+            "id": "dk",
+            "c": "Denmark",
+            "p": "10%"
+        },
+        {
+            "r": 4,
+            "id": "au",
+            "c": "Australia",
+            "p": "8%"
+        },
+        {
+            "r": 5,
+            "id": "gr",
+            "c": "Greece",
+            "p": "8%"
+        },
+        {
+            "r": 6,
+            "id": "se",
+            "c": "Sweden",
+            "p": "4%"
+        },
+        {
+            "r": 7,
+            "id": "il",
+            "c": "Israel",
+            "p": "4%"
+        },
+        {
+            "r": 8,
+            "id": "ua",
+            "c": "Ukraine",
+            "p": "3%"
+        },
+        {
+            "r": 9,
+            "id": "it",
+            "c": "Italy",
+            "p": "3%"
+        },
+        {
+            "r": 10,
+            "id": "ro",
+            "c": "Romania",
+            "p": "3%"
+        }
+    ],
+    "roadmap": [
         {
             "d": "08.04",
             "t": "CUP: SEMI-FINAL 1",
