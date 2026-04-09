@@ -187,15 +187,15 @@ var DATA = {
             "t1": "fi",
             "a1": "Linda Lampenius & Pete Parkkonen",
             "s1": "Liekinheitin",
-            "sc1": "-",
+            "sc1": "87% ★",
             "img1": "assets/sf_finland.png",
             "t2": "gr",
             "a2": "Akylas",
             "s2": "Ferto",
-            "sc2": "-",
+            "sc2": "13%",
             "img2": "assets/sf_greece.png",
-            "w": 0,
-            "status": "LIVE"
+            "w": 1,
+            "status": "DONE"
         },
         {
             "id": 14,
@@ -211,6 +211,23 @@ var DATA = {
             "s2": "Bangaranga",
             "sc2": "-",
             "img2": "assets/sf_bulgaria.png",
+            "w": 0,
+            "status": "LIVE"
+        },
+        {
+            "id": 15,
+            "n": "GRAND FINAL",
+            "qf": "THE CHAMPION",
+            "t1": "fi",
+            "a1": "Linda Lampenius & Pete Parkkonen",
+            "s1": "Liekinheitin",
+            "sc1": "-",
+            "img1": "assets/sf_finland.png",
+            "t2": "?",
+            "a2": "TBA",
+            "s2": "Winner SF #2",
+            "sc2": "-",
+            "img2": "assets/sf_placeholder.png",
             "w": 0,
             "status": "PENDING"
         }
@@ -339,6 +356,66 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "09.04 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5672",
+            "t": "⚔️ YOURVISION CUP 2026: ПОЛУФИНАЛ #2 - ФОЛК-РОК ПРОТИВ ПОП-ДИВЫ",
+            "b": "Вторая путевка в финал разыгрывается между двумя самыми самобытными участниками восточноевропейского блока. Энергия стадионов против безупречного продакшна.\nУЧАСТНИКИ ПОЕДИНКА:\n🇲🇩 МОЛДОВА: Satoshi - «Viva, Moldova!»\nПуть к полуфиналу: Вырвал победу у Швеции в QF3. Его рок-манифест объединил фанатов своей искренностью и мощью.\n🇧🇬 БОЛГАРИЯ: DARA - «Bangaranga»\nПуть к полуфиналу: Победила Великобританию в QF4. Дара - это эталон современной поп-музыки с этническими вкраплениями, которые делают ее номер незабываемым.\nПРАВИЛА БАТТЛА: Победитель этого поединка встретится с триумфатором первого полуфинала в битве за золото.\nНа чьей стороне ваши симпатии сегодня?\n⏱️ Время чтения: 0.8 мин | ⚔️ YourVision: Cup",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775718173.0,
+            "poll": null
+        },
+        {
+            "m": "09.04 | 07:02",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5671",
+            "t": "📊 ОПРОС: 📊 ПОЛУФИНАЛ #2: КТО ПРОЙДЕТ В ФИНАЛ?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775718121.0,
+            "poll": {
+                "question": "📊 ПОЛУФИНАЛ #2: КТО ПРОЙДЕТ В ФИНАЛ?",
+                "options": [
+                    "🇲🇩 Молдова: Satoshi",
+                    "🇧🇬 Болгария: DARA"
+                ]
+            }
+        },
+        {
+            "m": "08.04 | 18:32",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5670",
+            "t": "📊 ОПРОС: 📊 THE RESET: АЛБАНИЯЧей подход к корням правильнее?",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775673121.0,
+            "poll": {
+                "question": "📊 THE RESET: АЛБАНИЯЧей подход к корням правильнее?",
+                "options": [
+                    "2026: Alis («Nân») - Классическая драма",
+                    "2025: Shkodra Elektronike («Zjerm») - Этно-электроника"
+                ]
+            }
+        },
+        {
+            "m": "08.04 | 18:31",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5669",
+            "t": "🧪 YOURVISION: ПРОТОКОЛ «THE RESET» - АЛБАНИЯ",
+            "b": "Албания вернулась к тому, что умеет лучше всего - к мощной, эмоциональной балладе на родном языке. Но был ли отказ от инновационного электронного фолка прошлого года шагом вперед? Проводим аудит албанской аутентичности.\nДУЭЛЬ ПОКОЛЕНИЙ\n🇦🇱 2026: Alis - «Nân»\nКлассическая албанская драма. Мощный вокал, этнические мотивы и ставка на эмоциональный накал. Элис возвращает нас в эпоху «больших голосов» Тираны.\n🇦🇱 2025: Shkodra Elektronike - «Zjerm»\nИнновационный проект на стыке электроники и традиционного фольклора. Это была попытка Албании зазвучать по-европейски актуально, не теряя своих корней, но через призму синтезаторов.\nВОПРОС К ЭКСПЕРТАМ\nСтоило ли Албании возвращаться к классическому формату баллады или будущее за такими экспериментами, как Shkodra Elektronike? Чей «огонь» согревает сильнее?\nВаш голос - это индикатор точности курса.\n⏱️ Время чтения: 1.1 мин | 🇦🇱 YourVision: Reset",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775673064.0,
+            "poll": null
+        },
+        {
             "m": "08.04 | 17:00",
             "id": "70",
             "u": "https://t.me/YourEurovision/5667",
@@ -446,7 +523,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/5662",
             "t": "🔥 YOUTUBE DATA: САМЫЕ ПОПУЛЯРНЫЕ ВИДЕО МАРТА 2026",
             "b": "Официальный канал Евровидения подвел итоги мартовского трафика. Пока фанаты спорят о шансах в Вене, цифры говорят сами за себя: Александр Рыбак остается недосягаемым феноменом, а Noam Bettan (Израиль) становится самым просматриваемым артистом текущего сезона.\nВ топ-20 ворвались сразу 14 новых видео, большинство из которых - официальные клипы и выступления участников 2026 года.\nТОП-20 ЕВРОВИДЕНИЯ (МАРТ 2026):\n01. ➡️ 🇳🇴 Александр Рыбак - «Fairytale» (2009)\n02. 🆕 🇮🇱 Noam Bettan - «Michelle» (2026, клип)\n03. 🆕 🇫🇮 Linda Lampenius & Pete Parkkonen - «Lieknheitin» (2026, отбор)\n04. 🆕 🇧🇬 DARA - «Bangaranga» (2026, отбор)\n05. ⬇️ 🇨🇾 Antigoni - «JALLA» (2026, клип)\n06. ⬇️ 🇪🇪 Tommy Cash - «Espresso Macchiato» (2025, финал)\n07. 🆕 🇬🇷 Akylas - «Ferto» (2026, клип)\n08. ⬇️ 🇪🇪 Tommy Cash - «Espresso Macchiato» (2025, клип)\n09. 🆕 🇫🇷 Monroe - «Regarde !» (2026, клип)\n10. 🆕 🇬🇪 Bzikebi - «On Replay» (2026, клип)\n11. ⬇️ 🇩🇰 Søren Torpegaard Lund - «Før Vi Går Hjem» (2026, отбор)\n12. 🆕 🇬🇧 Look Mum No Computer - «Eins, Zwei, Drei» (2026, клип)\n13. ⬇️ 🇬🇷 Akylas - «Ferto» (2026, отбор)\n14. 🆕 🇷🇸 Lavina - «Kraj Mene» (2026, отбор)\n15. 🆕 🇦🇺 Delta Goodrem - «Eclipse» (2026, клип)\n16. 🆕 🇸🇪 Felicia - «My System» (2026, отбор)\n17. 🆕 🇵🇱 Alicja - «Pray» (2026, отбор)\n18. 🆕 🇦🇲 Simón - «Paloma Rumba» (2026, клип)\n19. ⬇️ 🇫🇮🇭🇷 Käärijä & Baby Lasagna - «#eurodab» (2025, интервал-акт)\n20. 🆕 🇦🇱 Alis - «Nân» (2026, клип)\nАНАЛИЗ ТРЕНДОВ:\nИзраиль и Финляндия захватили внимание аудитории сразу после релизов. Примечательно присутствие Томми Кэша (Эстония 2025) - спустя год после конкурса его перформанс все еще генерирует миллионы просмотров, удерживая позиции в топ-10.\nЧей клип вы пересматривали больше всего в этом месяце?\n🔗 Смотреть\n⏱️ Время чтения: 1.5 мин | 🌐 YourVision: YouTube Data",
-            "img": "https://cdn4.telesco.pe/file/Hx7O3R_nU1sz66yRRaKG4sG9x5G4GJUMO2sqFYlzyK9fVbK7mihMzBehvqw6-7XdBMCJS28ovt5wC3VVSLEhc5WylN1SEnr1GmDKBkbO6mp6lEYM4NOg6bkQ4PEezraIjl1pMz8fu8SanmNUZBRJL9Po-PshRxoqovEl0XiMzkmEAIHBIB9n5bJP7VIYr9g_0LgF7xl2uXrg4kYGnlPMq9AA_VVmEn-DHJ4l6Hiu9u1O_iWjJYk-lfshEECHihXU8aSFdqIeJBWaQGfVQszY7D2VHWc9_0UQYTVBr5y0gIsOtOD6NiFpj6H9MG6VwIRhKSINW84LV9vIy1EJgLguaQ",
+            "img": "https://cdn4.telesco.pe/file/HdWNLO0Or7YdCl-g8Oy931jFHv3kcqPYDlxQzYuzrY6_M2SNbTl6JzJ4p6SG85GQwSVlDlZP1nedyaa6a2LxfA1P9WWA32VcqVHNmb2-qA5ofZ5hSqRzT5R2qB9zE53JcRgksUJ2T-3rdjqte60rJPKQ-7zV0uRYZqYEUxnrjNZWBx2QtHdV2I9NY8nyWBG6Z-0u99FTEHT6ynRLMXAKzkaY9O8nToAIHtRyecV5IokM05IF9_tbUwAfK-UX3faT_2ewudkaVBsBSO-dGKdaQW5jVf3vXhKCs7mtdexgRmIMbh6c7nIHjzUJggXEpCisfeW8rbFUhxNe4FPTMKsOPQ",
             "vid": "",
             "isVideo": false,
             "ts": 1775591399.0,
@@ -596,58 +673,10 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/5921",
             "t": "🏛 #FRAGMENT: РИТМ БРУСЧАТКИ",
             "b": "ESSENCE\nАкустические и визуальные характеристики мощеных улиц. Брусчатка как низкочастотный фильтр города. Основные параметры аудиальной среды:\n- Ударный шум: Ритмический звук шагов и шин, создающий «сердцебиение» исторического центра.\n- Материал: Гранит и базальт обладают высокой отражающей способностью, создавая специфическое эхо в узких переулках.\n- Геометрия укладки: Веерная или рядовая укладка меняет визуальный ритм движения пешехода.\nMARGINALIA\nЗвук шагов по брусчатке - это музыка, которую мы перестали замечать. В столице тени каждый камень помнит тысячи историй. Вечером, когда гул машин стихает, этот ритм становится доминирующим. Это звук устойчивости. Брусчатка сопротивляется скорости, заставляет замедлиться, смотреть под ноги и чувствовать фактуру мира. В этом есть глубокая честность. Город говорит с нами через вибрацию подошв, напоминая, что под слоем асфальта и бетона всё еще живет древняя, каменная основа.",
-            "img": "https://cdn4.telesco.pe/file/pCih7gm93P1oMkvVhchnxtKypePbG0YvmS0HEon5-ln5VoPT97RqHEyqf4UI0yMEvO_-EBED9WAW3QtrQHtmPMJuZKgPyLWdome4nomtSGOlVa6qGI9ypb_aLPtqoBAi4PPgugMp2GvXVtxeeNcjPVDArjnFkVM2G4HAUiqt7laVZHL_jqZuKLMsazQTKXa1lWHjC5FK1UpOSpo6pZ24gfQSxaNH0dmNylaedyQ7FYcJiOldThOHgO8vOPxkUdSW0YbndsZc-pM7RBZmUeofvNapyv9YMwA9Y0vWIYP_Qn5EPzrH_GjtUP473-RV5rVjHPp1EuxcxKpFgAK_e3vPDw.jpg",
+            "img": "https://cdn4.telesco.pe/file/UPHfvAjc3DrRD8WRlHOG4OmKNrWWeNxTPu5kiZJ2MjpDrwdlNMWrVVr1Fl0jk6Duv7huQ5jNGmoyKwRKxSI01jn8rBnwUJGdrXvFiTM0tO9I8J4P-XUriVo2k8cPsgocZ0YY4GOQq5SUZSpEbsH0Z5FxHsNlz1NQzBYr6PveVXuy1DtfcPfzcmnjH3CC_4lRsi0ApfelQk511gC1K40IjPZfIS50G9bpg0aczRFpF_3XO0EA_A7fznzUQ-etLL0vk6vdrvBxGwwQpIZl3gthT2hLEgJUS1Rg6-s_CzC6xvC7MN79UrXl80elzoSbfOfLExfoSYP2biGmUkHY6hl1sA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1775498455.0,
-            "poll": null
-        },
-        {
-            "m": "06.04 | 15:00",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5920",
-            "t": "🏛 #SOURCE: ВРЕМЯ ПЕСКА",
-            "b": "ESSENCE\nПесочные часы (клепсидра) как древнейший инструмент визуализации потока времени. В отличие от цифровых или стрелочных механизмов, песок демонстрирует физическую массу прошедших секунд. Ключевые философские аспекты:\n- Гравитационная неизбежность: Время как поток материи, который невозможно остановить.\n- Цикличность: Необходимость переворота часов символизирует вечное возвращение и обновление.\n- Эрозия: Песок как результат разрушения твердого (камня), напоминающий о бренности любых структур.\nMARGINALIA\nПонедельник - время перевернуть часы. Мы часто воспринимаем время как абстракцию, но песок напоминает о его тяжести. В балтийском свете, падающем на береговые дюны, эта метафора становится осязаемой. Каждый шаг по песку - это взаимодействие с архивом разрушенных гор. Время здесь не летит, оно пересыпается, шуршит и оседает. В этом шуршании больше правды, чем во всех уведомлениях смартфона. Быть на стороне песка - значит принимать перемены как естественную форму существования.",
-            "img": "https://cdn4.telesco.pe/file/Bul7CbJKyqWDbhV-G-j7kC1uGbbCmDoQS9oLhfcxjjBn4VQ-jKtA7_vM0WT6zIEpXUkSvL4zcs-_Os81DEjknC0dT-VFIKM9of-274tjdarAOp3OcV7saKsT46C3R3syrJrdt_gUKQbExhkk9JqT0by0wpGBeK77T5PKhMt8Cjt6ibmOLiB734dLJT9Y5vNdJHPkxdQErLonoiqYLZZZolDvkaDU91UYjJB7N8fZxCz94RbxQQ1Yxc0U2G6HxdLW3fxgAxnnZTBdzUtMc7r9naj_5EOoShkukH1uTCr6_mLG0wj13ICIDnSPSHR32z5qrzIZl269qn3a3vNvqy8PbQ.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775487636.0,
-            "poll": null
-        },
-        {
-            "m": "05.04 | 18:01",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5919",
-            "t": "🏛 #CALENDAR: ПЕРВЫЙ РОСТОК",
-            "b": "ESSENCE\nНачало активной вегетации в северных широтах. Период, когда почва прогревается до критических +5°C, запуская биохимические процессы в корнях. Традиционные приметы апреля:\n- Пробуждение соков: Интенсивное движение влаги в деревьях.\n- Индикаторы: Появление первых подснежников и крокусов как сигнал к началу весеннего цикла очищения.\n- Световой день: Превышение 13-часового порога, что радикально меняет выработку мелатонина у жителей севера.\nMARGINALIA\nВ садах столицы тени жизнь начинается незаметно. Первый росток - это не просто растение, это побег из плена долгой зимы. В этом есть что-то алхимическое: из холодной, мокрой земли пробивается яркий зеленый сигнал. Это момент высшей надежды. Я смотрю на эти микроскопические изменения и понимаю, что природа никогда не ошибается в тайминге. Весна в нашем регионе - это не взрыв цветов, а медленное, вдумчивое проявление цвета сквозь серый туман. Синхронизация с этим ритмом дает редкое чувство устойчивости.",
-            "img": "https://cdn4.telesco.pe/file/EChwBP3_Na_fz4fLcq-o_LLNNWAbKr6aFVWBooYMRzwr_5pyE_f8SambabWrzrmwVkqg5olcUkDfD3Wkp2Ul4FuOsUk6KD05P06LerrleBOYy7ZBfDM7TETCiRfekH-kmOsd8PrnaUjPKeGezp8FfCNcpVSi8ElArAKGKCDw4jB4sdopk7mN-7Jv4aKUSTerDPFuWEk8DaMSCYVYRFeDzOkpkaOedufoWFklvTZaK51aBrzhnklW-V-bUH2qzSxfNOGMD5NoOdqwS-aQ4ehJol248xLheAeGe7dQZpDhxF-mQuulaf0IwbZkHCCMOwFn6pTm4mUaj4-iuoAeS_3egw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775412107.0,
-            "poll": null
-        },
-        {
-            "m": "05.04 | 15:02",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5918",
-            "t": "🏛 #HERITAGE: РИТУАЛ ОЧАГА",
-            "b": "ESSENCE\nОчаг как сакральный центр обитаемого пространства. В традиционных культурах огонь в центре дома не только выполнял утилитарные функции, но и служил «осью мира» (Axis Mundi). Ключевые аспекты ритуала:\n- Неугасимость: Традиция поддержания «живого» огня как залога благополучия рода.\n- Кормление огня: Жертвоприношение первой части пищи духам предков.\n- Круговая симметрия: Организация быта вокруг пламени, символизирующая единство сообщества.\nMARGINALIA\nВ воскресный вечер тишина дома становится особенно плотной. Очаг сегодня - это не всегда открытый огонь, иногда это просто мягкий свет лампы или тепло духовки, где доходит воскресный пирог. Но суть не изменилась. Мы по-прежнему ищем центр, вокруг которого можно собраться, чтобы почувствовать себя защищенными. Этот внутренний огонь - то, что помогает нам пережить холодный балтийский свет и долгие зимы. Очаг - это место, где история семьи встречается с вечностью стихии.",
-            "img": "https://cdn4.telesco.pe/file/gKZN6fQHpq1FSQDXg2o8lxazzeMHBOseiBKfUMRSJTl7Gt_J2lrztXiIcZ_hcWMNU2xez1KLLoWza4vqJsslB81wpTeSR7G02itTPq8jAVpLtpKP45x2dFmxEPA1-bCLtdTKuzET3lGpPZM29zlEACybSmvYGoHe33li1WLwgOdhZD-_4SMw6c_Sm4YigrWK9FeZ6M3XldJw3RMmb2SJxWXive5ALVRpmcIPQhnmM1hIzc0QRIdbaI9PeaJvOPHGttOg4JmskOh7m4t64P0if-kWmd9rsu6YtbzGepVmNkUgtbd-NUj1TyqIo2V7BIICPfYkoXZjNlHTWXJhIeam0Q.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775401376.0,
-            "poll": null
-        },
-        {
-            "m": "04.04 | 18:03",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/5917",
-            "t": "🏛 #TEXTS: ПОЭТИКА ПОРОГА",
-            "b": "ESSENCE\nЛитературный анализ концепции «лиминальности» (от лат. limen - порог). В текстах это состояние перехода, где герой уже не принадлежит прошлому, но еще не вошел в будущее. Ключевые маркеры формы:\n- Замедление времени: Детализация микро-событий в моменты ожидания.\n- Пространство «между»: Вокзалы, пустые коридоры, береговые линии.\n- Отсутствие действия: Сюжет строится не на событиях, а на предчувствии их неизбежности.\nMARGINALIA\nМы слишком привыкли торопиться в «пункт назначения». Но самая честная литература - это та, что заставляет нас задержаться на пороге. Субботний вечер в столице тени - идеальная декорация для этого. Ожидание не как пауза, а как высшая точка концентрации. Когда ты стоишь у открытого окна и слышишь, как вдали затихает звук города, ты становишься чистым листом. Это состояние «между» - самое продуктивное для творчества. Здесь рождаются лучшие Маргиналии, когда слова перестают быть инструментами и становятся эхом невидимого.",
-            "img": "https://cdn4.telesco.pe/file/HsqXGgtI-2BHBIugPbKhis8KEkZv5VsJbFx-AcF7emUu_0Mk6Yi9piv13TSs8H_6XSuvLO290bW4Ri0fq2xlDf8cI26tjVMrg-tcgFxcCrruktriQzkmcUKZZQ4xCawoPDkZkpQV4YYz6USyx3uHmptVhABCM16szQ2geE833fdLpOyATjaD73vrIhVLNs7e7Y1C_PYlBm31cpJJXD5khSAYyOKneVyYp2m0hJrmVU4LbD2pyiAB_gqrEzMH3uCZvA_8iHSYz5qAdtqsK4r6IwKCyhgRzVggXNYmq9-Iqzu8Lsg8SCS_rnzPFlkBt70TXy_Dap0-4hcyg1jTIO8f0Q.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775325832.0,
             "poll": null
         }
     ],
@@ -655,10 +684,6 @@ var DATA = {
         {
             "id": "fi",
             "a": "Linda & Pete"
-        },
-        {
-            "id": "gr",
-            "a": "Akylas"
         },
         {
             "id": "md",
@@ -670,6 +695,11 @@ var DATA = {
         }
     ],
     "eliminated": [
+        {
+            "id": "gr",
+            "a": "Akylas",
+            "s": "Ferto"
+        },
         {
             "id": "it",
             "a": "Sal Da Vinci",
@@ -968,16 +998,10 @@ var DATA = {
 ],
     "roadmap": [
         {
-            "d": "08.04",
-            "t": "CUP: SEMI-FINAL 1",
-            "e": "🇫🇮 Linda & Pete vs 🇬🇷 Akylas",
-            "s": "LIVE"
-        },
-        {
             "d": "09.04",
             "t": "CUP: SEMI-FINAL 2",
             "e": "🇲🇩 Satoshi vs 🇧🇬 DARA",
-            "s": "MAJOR"
+            "s": "LIVE"
         },
         {
             "d": "14.04",
