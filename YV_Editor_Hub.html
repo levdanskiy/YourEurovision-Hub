@@ -1255,24 +1255,23 @@
                 }
             } catch(e) {}
 
-            // 2. Enhanced Semi-Finals Bracket
+            // 2. Grand Final Bracket
             try {
-                const battles = DATA.battles.filter(b => b.id >= 13);
-                const sfDetails = {
-                    13: { name: "SEMI-FINAL 1 / BATTLE A", tag1: "WINNER QF1", tag2: "WINNER QF2" },
-                    14: { name: "SEMI-FINAL 2 / BATTLE B", tag1: "WINNER QF3", tag2: "WINNER QF4" }
+                const battles = DATA.battles.filter(b => b.id === 15);
+                const gfDetails = {
+                    15: { name: "GRAND FINAL: THE DECISIVE BATTLE", tag1: "WINNER SF1", tag2: "WINNER SF2" }
                 };
 
                 let bHtml = "";
                 if(battles.length === 0) {
                     bHtml = `<div class="card" style="padding:40px; text-align:center; background:rgba(255,255,255,0.02); border:1px dashed var(--pink); grid-column: 1 / -1;">
                         <i class="fi fi-rr-clock" style="font-size:2rem; color:var(--pink); display:block; margin-bottom:15px;"></i>
-                        <div style="font-weight:900; color:#fff; text-transform:uppercase; letter-spacing:0.1em;">SEMI-FINALS LINEUP TBA</div>
-                        <div style="font-size:0.7rem; color:#666; margin-top:5px;">Wait for Quarter-Finals completion</div>
+                        <div style="font-weight:900; color:#fff; text-transform:uppercase; letter-spacing:0.1em;">GRAND FINAL LINEUP TBA</div>
+                        <div style="font-size:0.7rem; color:#666; margin-top:5px;">Wait for Semi-Finals completion</div>
                     </div>`;
                 } else {
                     battles.forEach((b, i) => {
-                        const details = sfDetails[b.id] || { name: "SEMI-FINAL", tag1: "TOP QUALIFIER", tag2: "TOP QUALIFIER" };
+                        const details = gfDetails[b.id] || { name: "GRAND FINAL", tag1: "FINALIST", tag2: "FINALIST" };
                         const isL = b.status === 'LIVE';
                         const p1 = parseInt(b.sc1) || 0, p2 = parseInt(b.sc2) || 0;
                         bHtml += `<div class="card ${isL?'status-live-pulse':''}" style="padding:0; overflow:hidden; background:#05010d; border-top: 4px solid var(--pink); grid-column: span 1; display: flex; flex-direction: column; position: relative;">
