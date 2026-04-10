@@ -356,6 +356,18 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "10.04 | 07:58",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/5680",
+            "t": ".🏆 RESULTS: ПОЛУФИНАЛ #2 - ПОП-ФУТУРИЗМ ЗАХВАТЫВАЕТ СЦЕНУ",
+            "b": "Второй полуфинальный поединок YourVision Cup 2026 завершен. Сенсации не случилось: фаворит европейских чартов Dara (Болгария) уверенно забирает последнюю путевку в решающую битву сезона.\nИТОГИ ГОЛОСОВАНИЯ (SF #2):\n🇧🇬 Болгария (Dara) - 64% ★ (Проход в Гранд-Финал)\n🇲🇩 Молдова (Satoshi) - 36%\nГРАНД-ФИНАЛ СФОРМИРОВАН:\n🇫🇮 Финляндия (Linda & Pete) vs 🇧🇬 Болгария (Dara).\nЭто битва, где лёд техно-скрипки танцует с пламенем балканского драйва. Нас ждет лобовое столкновение двух абсолютно разных, но одинаково мощных музыкальных кодов.\nРАСПИСАНИЕ:\nСегодня (10.04) в чемпионате объявлен выходной. Гранд-Финал YourVision Cup 2026 состоится завтра, в субботу, 11 апреля.\nСможет ли Болгария навязать свою игру фаворитам из Хельсинки или финский каток «Liekinheitin» уже не остановить?\n⏱️ Время чтения: 0.9 мин | 🏆 YourVision: Cup Results",
+            "img": "https://cdn4.telesco.pe/file/lt6I55_ZuwplVAnzd3dFH0zcoGwrs16yyfWLlmhL5PSn6AQCQd4BzSQ-Fwk2Ec3WdS0zl4K_tuvlm7VELfxe5FRul_JFeip5yuD-pEjwe8DKZoAPK_xEcYf4GRYntn_-BMz6Cbtw5moYgf17ta22McwUkPRdeXtqSaG0fQaP-Oiw8wRDyCWV_D7RuHedCArvi2vBPot0zcgUWN0ZROfMhNhRGWXqLTmlRNpS-B5TKIcBH1l31hvFYQuEJMJNI0he0nygGoZ1Np1_8WTn1qjqBl4zaH1nOjW-ibwJ7qg0qnV6uhhPiQOYE_hf_k9LXgU32e0y6Q_D1WCPWbAqZ1X6tA.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1775807931.0,
+            "poll": null
+        },
+        {
             "m": "09.04 | 18:32",
             "id": "70",
             "u": "https://t.me/YourEurovision/5679",
@@ -641,18 +653,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1775591129.0,
-            "poll": null
-        },
-        {
-            "m": "07.04 | 19:36",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/5660",
-            "t": "🇦🇿 ALBM: JIVA - ТРИБЬЮТ ЛЕГЕНДАРНЫМ MANGA",
-            "b": "Азербайджанская звезда JIVA в рамках серии «A Little Bit More» представила акустический кавер на один из самых знаковых треков в истории конкурса - «We Could Be The Same» группы maNga.\nЭто не просто перепевка, а глубокое переосмысление турецкого рок-гимна 2010 года. Минималистичный аккомпанемент гитары Хафиза Бахиша и кристально чистый вокал JIVA превращают драйвовый оригинал в интимную балладу.\nДЕТАЛИ РЕЛИЗА:\n• Артист: JIVA\n• Оригинал: maNga (Турция, 2010)\n• Продакшн: Рустам Рзаев\n🔗 СМОТРЕТЬ: [YouTube](https://www.youtube.com/watch?v=asPLyajr7HU)\nКак вам такое прочтение классики? Лучше оригинала или maNga вне конкуренции?\n⏱️ Время чтения: 0.6 мин | 🇦🇿 YourVision: #ALBM",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1775590605.0,
             "poll": null
         },
         {
@@ -999,10 +999,22 @@ var DATA = {
     ],
     "roadmap": [
         {
+            "d": "10.04",
+            "t": "CUP: DAY OFF",
+            "e": "🧘 Rest & Silence before the Final",
+            "s": "LIVE"
+        },
+        {
+            "d": "11.04",
+            "t": "YOURVISION CUP: GRAND FINAL",
+            "e": "🏆 Finland vs Bulgaria",
+            "s": "WAITING"
+        },
+        {
             "d": "09.04",
             "t": "CUP: SEMI-FINAL 2",
             "e": "🇲🇩 Satoshi vs 🇧🇬 DARA",
-            "s": "LIVE"
+            "s": "DONE"
         },
         {
             "d": "14.04",
