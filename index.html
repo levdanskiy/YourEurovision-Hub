@@ -804,7 +804,6 @@
                 <div class="nav-menu" style="margin-top:10px;">
                     <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
                         <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="nav-link" id="nav-news"><i class="fi fi-rr-document"></i> News</a>
-                        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="nav-link" id="nav-cup"><i class="fi fi-rr-trophy"></i> Cup</a>
                         <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="nav-link" id="nav-radio"><i class="fi fi-rr-broadcast-tower"></i> Radio</a>
                         <a href="javascript:void(0)" onclick="scrollToSection('chart-sect')" class="nav-link" id="nav-chart"><i class="fi fi-rr-stats"></i> Chart</a>
                         <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="nav-link" id="nav-odds" style="color:var(--cyan);"><i class="fi fi-rr-chart-line-up"></i> Odds</a>
@@ -921,19 +920,8 @@
         </aside>
         
         <main class="column">
-            <div class="card" id="cup-sect">
-                <div class="section-title-base title-pink" style="font-size:2rem;"><i class="fi fi-rr-trophy"></i> YOURVISION CUP / 2026 STANDINGS</div>
-                <div id="bracket" style="display:grid; grid-template-columns:1fr 60px 1fr; gap:20px; align-items:center; margin-bottom:40px;"></div>
-                <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px;">
-                    <div><span class="side-label" style="color:var(--acid);"><i class="fi fi-rr-check"></i> QUALIFIED [QF]</span><div id="q-list"></div></div>
-                    <div><span class="side-label" style="color:var(--pink);"><i class="fi fi-rr-cross"></i> ELIMINATED</span><div id="e-list"></div></div>
-                </div>
-            </div>
-            <div class="card" id="encyclo-sect" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
-                <div class="section-title-base title-cyan"><i class="fi fi-rr-book-alt"></i> ENCYCLOPEDIA 2026 / PARTICIPANTS</div>
-                <div id="encyclo-grid" style="display:grid; grid-template-columns:repeat(auto-fill, minmax(140px,1fr)); gap:15px; margin-top:20px;"></div>
-                <div id="ency-anchor"></div>
-            </div>
+            <div id="champion-side-widget"></div>
+            
             <div class="search-container" id="news-sect">
                 <i class="fi fi-rr-search search-icon"></i>
                 <input type="text" id="news-search" class="search-input" placeholder="SEARCH FOR SIGNALS, COUNTRIES OR RESULTS..." oninput="render()">
@@ -947,7 +935,8 @@
                 </div>
             </div>
             <div id="news-grid"></div>
-        </main>
+
+            <div class="card" id="encyclo-sect" style="margin-top:20px; border-color:var(--cyan); background:rgba(0,245,255,0.02);">
         
         <aside class="column" id="chart-sect">
             <div class="card" id="roadmap-sect" style="margin-bottom:30px; border-color:var(--pink); background:rgba(255,0,127,0.02);">
@@ -990,7 +979,6 @@
         <a href="javascript:void(0)" onclick="scrollToSection('radio-sect')" class="mobile-nav-btn"><i class="fi fi-rr-broadcast-tower"></i><span>Radio</span></a>
         <a href="javascript:void(0)" onclick="scrollToSection('news-sect')" class="mobile-nav-btn"><i class="fi fi-rr-document"></i><span>News</span></a>
         <a href="javascript:void(0)" onclick="scrollToSection('odds-sect')" class="mobile-nav-btn"><i class="fi fi-rr-chart-line-up"></i><span>Odds</span></a>
-        <a href="javascript:void(0)" onclick="scrollToSection('cup-sect')" class="mobile-nav-btn"><i class="fi fi-rr-trophy"></i><span>Cup</span></a>
     </div>
 
     <script src="data.js?v=1775125563"></script>
@@ -1222,7 +1210,6 @@
                 const fDate = document.getElementById('full-date'); if(fDate) fDate.innerText = `${day} ${mName} ${now.getFullYear()}`;
                 const tContent = document.getElementById("ticker-content");
                 if(tContent) { const ti = t.ticker.map(item => `<div class="ticker-item">${item}</div>`).join(""); tContent.innerHTML = ti + ti; }
-                const navs = { 'nav-news': t.news, 'nav-cup': t.cup, 'nav-radio': t.radio, 'nav-chart': t.chart, 'nav-odds': t.odds, 'nav-vote': t.vote };
                 for(const id in navs) { const el = document.getElementById(id); if(el) el.innerHTML = `<i class="fi fi-rr-${id.split('-')[1]}"></i> ${navs[id]}`; }
             } catch(e) {}
 
@@ -1255,80 +1242,67 @@
                 }
             } catch(e) {}
 
-            // 2. Grand Final Bracket
+            // 2. Champion Widget
             try {
-                const battles = DATA.battles.filter(b => b.id === 15);
-                const gfDetails = {
-                    15: { name: "GRAND FINAL: THE DECISIVE BATTLE", tag1: "WINNER SF1", tag2: "WINNER SF2" }
-                };
+                const finalBattle = DATA.battles.find(b => b.id === 15 && b.status === 'DONE');
+                const champEl = document.getElementById("champion-side-widget");
+                if(finalBattle && champEl) {
+                    const win1 = finalBattle.w === 1;
+                    const wA = win1 ? finalBattle.a1 : finalBattle.a2;
+                    const wI = win1 ? finalBattle.img1 : finalBattle.img2;
+                    const wT = win1 ? finalBattle.t1 : finalBattle.t2;
 
-                let bHtml = "";
-                if(battles.length === 0) {
-                    bHtml = `<div class="card" style="padding:40px; text-align:center; background:rgba(255,255,255,0.02); border:1px dashed var(--pink); grid-column: 1 / -1;">
-                        <i class="fi fi-rr-clock" style="font-size:2rem; color:var(--pink); display:block; margin-bottom:15px;"></i>
-                        <div style="font-weight:900; color:#fff; text-transform:uppercase; letter-spacing:0.1em;">GRAND FINAL LINEUP TBA</div>
-                        <div style="font-size:0.7rem; color:#666; margin-top:5px;">Wait for Semi-Finals completion</div>
-                    </div>`;
-                } else {
-                    battles.forEach((b, i) => {
-                        const details = gfDetails[b.id] || { name: "GRAND FINAL", tag1: "FINALIST", tag2: "FINALIST" };
-                        const isL = b.status === 'LIVE';
-                        const p1 = parseInt(b.sc1) || 0, p2 = parseInt(b.sc2) || 0;
-                        bHtml += `<div class="card ${isL?'status-live-pulse':''}" style="padding:0; overflow:hidden; background:#05010d; border-top: 4px solid var(--pink); width: 100%; max-width: 800px; display: flex; flex-direction: column; position: relative;">
-                            <div style="padding:15px 20px; display:flex; justify-content:space-between; align-items:center; background:rgba(255,0,127,0.1); border-bottom:1px solid rgba(255,0,127,0.2); position:relative; z-index:10;">
-                                <span style="font-size:0.6rem; color:var(--pink); font-weight:900; letter-spacing:0.2em;">${details.name}</span>
-                                ${isL ? '<span class="live-tag" style="margin:0; padding:2px 6px; font-size:0.5rem;">LIVE</span>' : ''}
+                    champEl.innerHTML = `<div class="card" style="margin-bottom:20px; border-color:var(--pink); background:rgba(255,0,127,0.05); padding:12px; display:flex; align-items:center; gap:15px; border-radius:15px; border-left: 4px solid var(--pink);">
+                            <img src="${wI}" style="width:50px; height:50px; border-radius:10px; object-fit:cover; border:1px solid var(--pink);">
+                            <div style="flex-grow:1;">
+                                <div style="font-size:0.5rem; color:var(--pink); font-weight:900; letter-spacing:0.2em;">CUP CHAMPION</div>
+                                <div class="artist-rich" style="font-size:1rem; color:#fff;">${decodeS(wA)}</div>
                             </div>
-                            
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; height: 350px; position:relative;">
-                                
-                                <div style="position:relative; background:url('${b.img1}') center top/cover; border-right: 2px solid rgba(0,245,255,0.3);">
-                                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 50%);"></div>
-                                    <div style="position:absolute; bottom:0; left:0; right:0; padding:20px 15px; display:flex; flex-direction:column; justify-content:flex-end; z-index:2;">
-                                        <div class="artist-rich" style="font-size:1.1rem; color:#fff; text-shadow:0 2px 10px #000; line-height: 1.1;">${decodeS(b.a1)}</div>
-                                        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:8px;">
-                                            <div style="font-size:0.55rem; color:var(--pink); font-weight:900; letter-spacing:0.1em; text-transform:uppercase;">${details.tag1}</div>
-                                            <div style="font-weight:900; color:var(--pink); font-size:1.5rem; font-style:italic; text-shadow:0 2px 15px #000; line-height:1;">${b.sc1}</div>
-                                        </div>
-                                        <div class="vote-bar-bg" style="height:4px; margin-top:10px; background:rgba(0,0,0,0.6);"><div class="vote-bar-fill" style="width:${p1}%; background:var(--pink);"></div></div>
-                                    </div>
-                                    <img src="${getH(b.t1)}" class="heart-shape" style="position:absolute; top:15px; left:15px; width:30px; height:30px; filter:drop-shadow(0 0 10px rgba(0,0,0,0.8));">
-                                </div>
-
-                                <div style="position:relative; background:url('${b.img2}') center top/cover;">
-                                    <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 50%);"></div>
-                                    <div style="position:absolute; bottom:0; left:0; right:0; padding:20px 15px; display:flex; flex-direction:column; justify-content:flex-end; z-index:2;">
-                                        <div class="artist-rich" style="font-size:1.1rem; color:#fff; text-shadow:0 2px 10px #000; text-align:right; line-height: 1.1;">${decodeS(b.a2)}</div>
-                                        <div style="display:flex; justify-content:space-between; align-items:baseline; margin-top:8px;">
-                                            <div style="font-weight:900; color:var(--cyan); font-size:1.5rem; font-style:italic; text-shadow:0 2px 15px #000; line-height:1;">${b.sc2}</div>
-                                            <div style="font-size:0.55rem; color:var(--cyan); font-weight:900; letter-spacing:0.1em; text-transform:uppercase; text-align:right;">${details.tag2}</div>
-                                        </div>
-                                        <div class="vote-bar-bg" style="height:4px; margin-top:10px; background:rgba(0,0,0,0.6);"><div class="vote-bar-fill" style="width:${p2}%; background:var(--cyan); float:right;"></div></div>
-                                    </div>
-                                    <img src="${getH(b.t2)}" class="heart-shape" style="position:absolute; top:15px; right:15px; width:30px; height:30px; filter:drop-shadow(0 0 10px rgba(0,0,0,0.8));">
-                                </div>
-
-                                <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:#000; border:2px solid rgba(0,245,255,0.8); color:var(--cyan); font-size:0.7rem; font-weight:900; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; letter-spacing:0.05em; box-shadow: 0 0 20px rgba(0,245,255,0.8); z-index:5;">VS</div>
-                            </div>
+                            <img src="${getH(wT)}" class="heart-shape" style="width:30px; height:30px;">
                         </div>`;
-                        if(i === 0 && battles.length > 1) {
-                            bHtml += `<div class="bracket-connector" style="display:flex; flex-direction:column; align-items:center; justify-content:center; position:relative; width:60px; height:100%;">
-                                <div style="width:2px; height:120px; background:linear-gradient(to bottom, transparent, var(--pink), var(--cyan), transparent); box-shadow: 0 0 15px var(--pink); opacity:0.8;"></div>
-                                <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:#000; border:2px solid var(--pink); color:var(--pink); font-size:0.6rem; font-weight:900; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; letter-spacing:0.05em; box-shadow: 0 0 20px rgba(255,0,127,0.4); z-index:2;">VS</div>
-                            </div>`;
-                        }
-                    });
-                }
-                const bCont = document.getElementById("bracket"); if(bCont) { bCont.innerHTML = bHtml; bCont.style.display = "flex"; bCont.style.justifyContent = "center"; }
-                const cSect = document.getElementById("cup-sect"); if(cSect) {
-                    const cTitle = cSect.querySelector(".section-title-base"); if(cTitle) cTitle.innerHTML = `<i class="fi fi-rr-trophy"></i> ${t.standings}`;
+                } else if (champEl) {
+                    champEl.innerHTML = "";
                 }
             } catch(e) {}
 
             // 3. Roadmap & Chart & Vote & Odds
             try {
                 const rs = document.getElementById("roadmap-sect"); if(rs) rs.querySelector(".section-title-base").innerHTML = `<i class="fi fi-rr-calendar-lines"></i> ${t.roadmap}`;
-                if(DATA.roadmap) document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map(item => `<div class="bubble ${item.s==='LIVE'?'status-live-pulse':''}" style="padding: 8px 10px; margin-bottom:12px; border-radius:10px; background:rgba(255,255,255,0.02); border-left: 4px solid ${item.s==='LIVE'?'var(--acid)':(item.s==='MAJOR'?'var(--pink)':'#333')};"><div style="display:flex; justify-content:space-between; align-items:center;"><span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span><span style="font-size:0.6rem; font-weight:900; color:${item.s==='LIVE'?'var(--acid)':'#555'}; text-transform:uppercase;">${item.s}</span></div><div style="margin-top:5px;"><div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div><div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div></div></div>`).join("");
+                if(DATA.roadmap) {
+                    const now = new Date();
+                    const currentDay = now.getDate();
+                    const currentMonth = now.getMonth() + 1;
+
+                    document.getElementById("roadmap-list").innerHTML = DATA.roadmap.map(item => {
+                        const [d, m] = item.d.split('.').map(Number);
+                        let autoStatus = item.s;
+                        let statusClass = "";
+                        let statusColor = "#333";
+
+                        if (m < currentMonth || (m === currentMonth && d < currentDay)) {
+                            autoStatus = "DONE";
+                            statusColor = "#555";
+                        } else if (d === currentDay && m === currentMonth) {
+                            autoStatus = "LIVE";
+                            statusClass = "status-live-pulse";
+                            statusColor = "var(--acid)";
+                        } else {
+                            autoStatus = item.s === 'MAJOR' ? 'MAJOR' : 'WAITING';
+                            statusColor = item.s === 'MAJOR' ? 'var(--pink)' : '#555';
+                        }
+
+                        return `<div class="bubble ${statusClass}" style="padding: 8px 10px; margin-bottom:12px; border-radius:10px; background:rgba(255,255,255,0.02); border-left: 4px solid ${statusColor};">
+                            <div style="display:flex; justify-content:space-between; align-items:center;">
+                                <span style="font-weight:900; color:var(--pink); font-size:0.75rem;">${item.d}</span>
+                                <span style="font-size:0.6rem; font-weight:900; color:${statusColor}; text-transform:uppercase;">${autoStatus}</span>
+                            </div>
+                            <div style="margin-top:5px;">
+                                <div style="font-weight:900; font-size:0.85rem; color:#fff; text-transform:uppercase; letter-spacing:0.05em;">${item.t}</div>
+                                <div style="font-size:0.75rem; color:#888; margin-top:2px;">${replaceFlags(item.e)}</div>
+                            </div>
+                        </div>`;
+                    }).join("");
+                }
                 
                 const cs = document.getElementById("chart-sect"); if(cs) {
                     const ct = cs.querySelector(".title-cyan"); if(ct) ct.innerHTML = `<i class="fi fi-rr-stats"></i> ${t.ws_chart} — 07.04.2026`;
@@ -1382,12 +1356,17 @@
                             mediaHtml = `<img src="${p.img}" class="post-media">`;
                         }
 
+                        function linkify(text) {
+                            const urlRegex = /(https?:\/\/[^\s<]+)/g;
+                            return text.replace(urlRegex, url => `<a href="${url}" target="_blank" style="color:var(--cyan); text-decoration:underline;">${url}</a>`);
+                        }
+
                         return `${dH}<div class="post-card ${isF?'featured':''}" id="post-${pIdx}">
                             <span class="post-meta">${p.m}</span>
                             <div class="post-h">${replaceFlags(p.t)}</div>
                             <div class="post-content-wrap" id="post-body-${pIdx}">
                                 ${mediaHtml}
-                                <div class="post-b">${replaceFlags(p.b.replace(/\n/g, "<br>"))}</div>
+                                <div class="post-b">${linkify(replaceFlags(p.b.replace(/\n/g, "<br>")))}</div>
                             </div>
                             <button class="read-more-btn" onclick="togglePost(${pIdx})" id="post-btn-${pIdx}"><i class="fi fi-rr-angle-small-down"></i> ${t.read_more}</button>
                             <div class="post-actions">
