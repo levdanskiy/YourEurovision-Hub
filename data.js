@@ -934,7 +934,7 @@ var DATA = {
         "r": 1,
         "id": "fi",
         "c": "Finland",
-        "p": "30%"
+        "p": "31%"
     },
     {
         "r": 2,
@@ -988,7 +988,7 @@ var DATA = {
         "r": 10,
         "id": "ro",
         "c": "Romania",
-        "p": "3%"
+        "p": "2%"
     }
 ],
     "roadmap": [
