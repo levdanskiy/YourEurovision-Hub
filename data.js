@@ -123,19 +123,67 @@ var DATA = {
         }
     ],
     "roadmap": [
-        {
-            "d": "14.05",
-            "t": "EUROVISION: SF2",
-            "e": "🇪🇺 Live from Wiener Stadthalle",
-            "s": "DONE"
-        },
-        {
-            "d": "16.05",
-            "t": "GRAND FINAL",
-            "e": "👑 70th Eurovision Song Contest",
-            "s": "LIVE"
-        }
-    ],
+    {
+        "d": "30.05",
+        "s": "MAJOR",
+        "t": "JESC АЛБАНИЯ - НОЧЬ 1",
+        "e": "🇦🇱 Festivali i Këngës për Fëmijë"
+    },
+    {
+        "d": "31.05",
+        "s": "WAITING",
+        "t": "JESC АЛБАНИЯ - НОЧЬ 2",
+        "e": "🇦🇱 Второй этап отбора"
+    },
+    {
+        "d": "01.06",
+        "s": "MAJOR",
+        "t": "JESC АЛБАНИЯ - ФИНАЛ",
+        "e": "🇦🇱 Выбор представителя"
+    },
+    {
+        "d": "06.06",
+        "s": "WAITING",
+        "t": "YOUNG MUSICIANS - ЕРЕВАН",
+        "e": "🇦🇲 Eurovision Young Musicians 2026"
+    },
+    {
+        "d": "01.08",
+        "s": "MAJOR",
+        "t": "ESC ASIA: БУТАН СТАРТ",
+        "e": "🇧🇹 Первый нацотбор азиатской версии"
+    },
+    {
+        "d": "17.08",
+        "s": "MAJOR",
+        "t": "UMK 2027 ЗАЯВКИ ОТКРЫТЫ",
+        "e": "🇫🇮 yle.fi/umk - окно до 23.08"
+    },
+    {
+        "d": "23.08",
+        "s": "WAITING",
+        "t": "UMK 2027 ЗАЯВКИ ЗАКРЫТЫ",
+        "e": "🇫🇮 Дедлайн подачи"
+    },
+    {
+        "d": "19.09",
+        "s": "WAITING",
+        "t": "ESC ASIA: НЕПАЛ",
+        "e": "🇳🇵 Himalaya TV - National Final"
+    },
+    {
+        "d": "24.10",
+        "s": "MAJOR",
+        "t": "JUNIOR EUROVISION - МАЛЬТА",
+        "e": "🇲🇹 23-й детский конкурс"
+    },
+    {
+        "d": "14.11",
+        "s": "MAJOR",
+        "t": "ESC ASIA - БАНГКОК",
+        "e": "🌏 Grand Final, прямой эфир"
+    }
+],
     "chart": [
         {
             "a": "ВАНЯ ДМИТРИЕНКО",
@@ -260,6 +308,18 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "18.05 | 12:04",
+            "id": "lv",
+            "u": "https://t.me/almanac_marginalia/6014",
+            "t": "⚙️ #WORKFLOW: ПРОТОКОЛ ХОЛОДНОГО МАСЛА",
+            "b": "Условие активации: руки начали оставлять блестящие следы на тесте. Это значит, масло перешло границу 18°C - точку, после которой оно не складывается слоями, а размазывается. Дальше без протокола - круассан превратится в булочку.\n1. Остановиться немедленно. Не «дораскатать ещё раз» - перестать прикасаться к тесту прямо сейчас.\n2. Завернуть тесто в плёнку, положить на металлический поднос (не пластиковый - металл отдаёт холод быстрее), убрать в морозильную камеру на 8-10 минут. Не больше: иначе масло замёрзнет в стекло и тоже не будет складываться.\n3. Руки помыть холодной водой не менее 30 секунд. Вытереть насухо. Если кухня тёплая - на минуту прижать запястья к холодному крану. Кровь в запястьях охлаждается быстро, и руки идут вторыми.\n4. Достать тесто. Проверить пальцем угол: если поверхность матовая и упругая - продолжать. Если ещё блестит - вернуть в холод на 3 минуты.\nЕсли сделано правильно: разрез готового изделия покажет различимые слои, которые отделяются листами при разламывании. Это не торжество, это просто видимый результат того, что температура была удержана.\n⏱️ 1.4 мин | ⚙️ Almanac: Workflow",
+            "img": "https://cdn4.telesco.pe/file/ci-2j0AdmMCTpAPxyxdW68pp6e7ecIrmZBADyEtGoywoknhTVNZK-RYZ2bCLZN0W1Piaq2ozXV42h7zXKnmIqRYmpkpWY7sJo7WZ8wFRY-At16O-EzJC36rMJioQj5KaFEayUrQ4DaY81DcHC2F4piJrW8hdFwubG3sKvWov-bxD2nMjwwdBVd3keYZLBhB5OSarZWvQBmy4U1brlGk9kDdPebo_aiKhENo7CnqovWXs5LbQis0sPtp1XqzOqNmlY8MkQ7FCukRl_qMudlHk_ig9NSbx0n3wuhTq_b96DOlvIyzuZesIEh_LUVnVBgpdcSElxmSBZqbTvH4SjgooBA.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1779105841.0,
+            "poll": null
+        },
+        {
             "m": "18.05 | 07:04",
             "id": "lv",
             "u": "https://t.me/almanac_marginalia/6013",
@@ -289,7 +349,7 @@ var DATA = {
             "u": "https://t.me/almanac_marginalia/6011",
             "t": "🥐 #CAKES: ОПЕРА - СЕМЬ СЛОЁВ МОЛЧАНИЯ",
             "b": "ЛЕГЕНДА:\nОпера - торт, который режут вертикально, чтобы было видно семь слоёв. Это не торт повседневности. Слой высотой в три миллиметра. Нужно успеть распробовать миндаль до того как его покроет кофе, а кофе - до того как накроет ганаш. Два сантиметра общей высоты, семь слоёв, каждый ровно своей толщины: бисквит тоньше, крем плотнее, ганаш холоднее. Это торт о том, что точность - форма уважения. К ингредиенту, ко времени работы, к тому, кто будет резать.\nАРХИТЕКТУРА И МАТЕРИАЛЫ:\n- Бисквит Джоконда (3 пласта): миндальная мука 125 г, сахарная пудра 125 г, яйца 4 шт., белки 4 шт., сахар 30 г, мука 30 г, масло сливочное растопленное 25 г\n- Кофейный сироп: вода 100 мл, сахар 60 г, эспрессо двойной 50 мл\n- Кофейный крем (2 слоя): масло сливочное 200 г, сахарная пудра 100 г, желток 1 шт., эспрессо концентрированный 30 мл\n- Шоколадный ганаш (2 слоя): тёмный шоколад 70% - 200 г, сливки 33% - 200 мл\n- Глазурь: тёмный шоколад 100 г, масло сливочное 20 г\n- Посуда: прямоугольная рама 30×20 см без дна, на пергаменте - ровные края при разборке. Линейка не метафора, инструмент.\nМЕХАНИКА ПРОЦЕССА:\n1. БИСКВИТ ДЖОКОНДА. Взбить целые яйца с миндальной мукой и пудрой 8 минут до густой ленты. Отдельно взбить белки с сахаром в плотную пену. Соединить складкой, ввести просеянную муку и масло. Тонким слоем 4 мм на пергамент, 200°C 6-7 минут. Готовый бисквит светло-золотой, эластичный - не сухой. Если ломается при сворачивании - перепекли.\n2. СБОРКА СЛОЁВ. Первый бисквит пропитать сиропом - кисточкой, не ложкой. Влаги ровно столько, чтобы поверхность блестела, но не текла. Слой кофейного крема палеткой, ровно 4 мм. Сверху второй бисквит. Пропитать. Ганаш 4 мм. Третий бисквит. Пропитать. Кофейный крем 4 мм. Холод между слоями обязателен - 15 минут морозильной камеры между каждым.\n3. ГЛАЗУРЬ. Шоколад с маслом растопить до 32°C. Залить тонким слоем поверх верхнего ганаша, разровнять одним движением палетки. Холод 1 час.\n4. ГОТОВНОСТЬ. Резать горячим ножом - погружать в кипяток, протирать насухо, резать одним движением вниз. Срез показывает семь слоёв одинаковой толщины как страницы книги. Если слой шире остальных - отрезать кусок и не подавать. Опера не прощает.\n⏱️ 2.4 мин | 🥐 Almanac: Cakes",
-            "img": "https://cdn4.telesco.pe/file/TMo-dF5q7UGxW7Zn6s3do48eJRTMkgtPqJrGo-6T-UwkrvWndHNIhG7drNyJ11ujH8rULmpApQodkUax0RucFNIBJ61aTZQRaEA8frYvHlZn6hGlFWyWCLMSK35Qpgn9y11W9ycf6r2e0oCkEi3rnUxCFJGDOypZeL4v7Rq-0bMYUlAOiEjvoWIkyGGAHosVEq0aE3lNa69XNTdO4dQhRIaotMGH6Wo2J5tJP6RGRznvYwfcV2ZI4rXyMK04KrkYfV1gvVLaWP-fPGFF8RPUn_lhKkzo5sCwlFfR7iMiNtYFgdXLupiWwnNDW6yIWiHptoNlJte3tO38LuvVGOiB9g.jpg",
+            "img": "https://cdn4.telesco.pe/file/Hcoo7wc3Rf4nGt19tTps0rpz7X-m38FMRHCrAVq15bxY5wXWN7rE0giPy3PeOWpru-4T0YRW93ui0YeZaC5cDjpxyUfWB-Xhdl_PTRX57S_Cm2IuzZQQjZ_jkIOY1J9XnbqecY4GrTiVP-xwd3mumBbuv0ozEEhCW5lKgM6WxN2W1JCegg0IOQPN22LX0Df7iaVIdhhECu0DE6J9NNWYffGZS5JAqFaLNVD_OxFhQD_ai_chr-XuWCBty6UsykGq1yUITFlp5zZZA63X0yuR76azw1YGt_aUb-Nl-NNhe6fx68vEiPstWEOBmem7ybv3LeVTPtywnDsA_R20mvvFTg.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1779019441.0,
@@ -385,7 +445,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6124",
             "t": "😘 ЕВРОВИДЕНИЕ-2026: КТО ОБЪЯВИТ БАЛЛЫ? ПОЛНЫЙ СПИСОК ГЛАШАТАЕВ",
             "b": "EBU обнародовал официальный порядок, в котором 35 стран-участниц выйдут на прямую связь с Веной для оглашения вердиктов национальных жюри. В этом году пул глашатаев собрал беспрецедентное количество легенд и триумфаторов прошлых лет.\nГлавные имена вечера:\n• Sandra Kim (Бельгия) - единственная победительница в истории страны (1986).\n• Elisabeth Andreassen (Норвегия) - легендарная половина дуэта Bobbysocks (победа 1985).\n• Dami Im (Австралия) - вице-чемпионка 2016 года.\n• Legacy 2025: Сразу 9 участников прошлого года вернутся на экраны в новой роли (от Украины до Литвы).\nПОРЯДОК ОГЛАШЕНИЯ БАЛЛОВ:\n1. 🇨🇭 Швейцария: Livio Chistell\n2. 🇲🇹 Мальта: Maia\n3. 🇺🇦 Украина: Daniil Leshchynskyi (ESC 2025)\n4. 🇱🇺 Люксембург: Hana Sofia Lopes\n5. 🇧🇬 Болгария: Vladimira Ilieva\n6. 🇦🇿 Азербайджан: Sabina Babayeva (ESC 2012)\n7. 🇸🇲 Сан-Марино: Kelly Joyce\n8. 🇪🇪 Эстония: Getter Jaani (ESC 2011)\n9. 🇮🇱 Израиль: Lior Suchard\n10. 🇦🇺 Австралия: Dami Im (ESC 2016)\n11. 🇩🇪 Германия: Wavvyboi\n12. 🇧🇪 Бельгия: Sandra Kim (Winner 1986)\n13. 🇵🇹 Португалия: Victoria Nicole (JESC 2024)\n14. 🇸🇪 Швеция: Jakob Norrgård (ESC 2025)\n15. 🇦🇱 Албания: Andri Xhahu\n16. 🇨🇾 Кипр: Loukas Hamatsos\n17. 🇬🇪 Грузия: Mariam Shengelia (ESC 2025)\n18. 🇲🇪 Черногория: Nina Žižić (ESC 2013, 2025)\n19. 🇦🇲 Армения: Parg (ESC 2025)\n20. 🇵🇱 Польша: Aleksandra Budka\n21. 🇬🇷 Греция: Klavdia (ESC 2025)\n22. 🇨🇿 Чехия: Dominika Hašková (ESC 2022)\n23. 🇩🇰 Дания: Sissal (ESC 2025)\n24. 🇫🇷 Франция: Magali Ripoll\n25. 🇳🇴 Норвегия: Elisabeth Andreassen (Winner 1985)\n26. 🇮🇹 Италия: Mariasole Pollio\n27. 🇫🇮 Финляндия: Jaana Pelkonen\n28. 🇬🇧 Великобритания: La Voix\n29. 🇱🇻 Латвия: Aurélija Rancäne (ESC 2025)\n30. 🇷🇸 Сербия: Kristina\n31. 🇲🇩 Молдова: Rita\n32. 🇭🇷 Хорватия: Doris Pinčić Guberović\n33. 🇱🇹 Литва: Lukas Radzevičius (ESC 2025)\n34. 🇷🇴 Румыния: Eda Marcus\n35. 🇦🇹 Австрия: Philipp Hansa\nТрадиционно, последним свои 12 баллов объявит вещатель страны-хозяйки.\nЧью «двенадцатку» вы ждете больше всего? 💬\n⏱️ Время чтения: 1.4 мин | 🇪🇺 YourVision: DATA",
-            "img": "https://cdn4.telesco.pe/file/VJVwMH3qsKnl3620upK3D_iPBfGzbma1JdqQP2sqfl9ZW0MHlqCpGsIc_5RcU58O8CMm8Zzh-NSfZZr0JC9frtbbNdMHe63NkfAKd7myMUvG2yKEX3ZFebzX6OQAM5OIta8HHAkeuGpQ4HcSnLE2jpq9jcdHeLT8qdmZQAEZz6pAISKDIxpPEY4xVFbjf9cJz2hGA9AIYmPkNtCmTidOqPrRzTB8E6l8tI2ccBFQEbRhYnQwx_t-7xEZ_KF_RGkx2UwLdyJjUF9vOQPFifmOcbzARBBennHTAQ_O8NpKayMYmQdZ8ZzLrsESy9oO6ePNRkaJu0y80yX52L7dt8w1-A.jpg",
+            "img": "https://cdn4.telesco.pe/file/LeHyv2IDp2wdqmXFc6cUYTdqbVjv7uZ7RlG2wpY36JytDTyL_bCI6F0iCtGi-fyHB_ZTd2MgWfbEVWiD7B-J4dkErRcUdayKLQM4Ep8fDRkJ3u1j7YHJct6MtF-h6FsibmLp0E0aHoKSlyDgTqjdtT9DWELF6bpL6ja9nSPfXg_rdXx2OeZdi1tZrTqdQuaQFwtDWsgHGoAljfNA_OzdqscRTdo-c8fgZ_gIFIhuMtnEiZoU76YsourHLdKslzzA7vGEImZFSwTl1rpa52HVUXK5vUYweeJoKn4-0lYtM_0GH3KdVvTNXU9rDnAgXxLnsqk2En5SHxZSQlUHGzrLtA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1778929042.0,
@@ -433,7 +493,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6123",
             "t": "🇲🇹 ДЕТСКОЕ ЕВРОВИДЕНИЕ-2026: МАЛЬТА ОБЪЯВИЛА ДАТУ И ГОРОД ПРОВЕДЕНИЯ",
             "b": "⚡️ BREAKING: Европейский вещательный союз подтвердил финальные детали осеннего сезона. Детское Евровидение 2026 пройдет 24 октября в городе Та-Кали (Ta'Qali) на Мальте.\nКонкурс возвращается на остров после успешных проведений прошлых лет. Выбор площадки в Та-Кали обещает современный масштаб и уникальную атмосферу средиземноморского праздника музыки.\nЖдем возвращения островной магии в JESC. 💬\n⏱️ Время чтения: 0.5 мин | 🇲🇹 YourVision: JESC",
-            "img": "https://cdn4.telesco.pe/file/TEn5s4yGHYfsDMA8MA7ML9bTUot-cNYx2OqTGnf830mGZK13-LeDlGfwO-w8HK7qGj_by0rp8uN8Ss1t0pVTs-z56qgqxbRwhas0onoKDmfA-IW07Lp432oQNEuBdVK413nrU16RTnVzyc2jPtQYVvlwJ9Q1NHGhvrgVTcDmmLA2PxAhbBKSw2GSNyOzu7s2iiFoF13SWJg9vlFvq0k-NWkz6zlCbXx5F2wImyaZRXSWDEei0wUP1Yfbnt69tnEMCAOeeS5BN2O6mi_aJ4mjruW5f_298FieVbWFYYW5R1WDcOWBBqGIsn0HCpr5A7tc7uzaeqtXVESwhjnAZt1sUg.jpg",
+            "img": "https://cdn4.telesco.pe/file/Khz-5UP1GMH2huPneUlM6fH_PORkgGg-0RV68zjR7_mIAZLEJewD5vzMYaSl5ErZYbUzScsgaVN_oP1hI0Isy560Y9GMLvDgoG_YYjDczDlnc8G-V9GOF3D0-UwlhtZwcSo3N58zQrfShjNILikkMGXV2Ih71Mn3z0DQ98rVp4GWeeTLKOL0DmoGaN0Ku2qbXr1XuNtDKKpDuxvScqX3mNZDAEV_AJXflx36obGzdvqn5qBLnPk4EK2hC9jv5W4aiPCpcwvVLaIRsbhMuH8sRHUJmVTA_Mmk8KhatVzx34jxxGwaCpEfbalgIUI8_Q3Rf5JO9u0suxDEeeqbGIXN0A.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1778845232.0,
@@ -541,22 +601,10 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6114",
             "t": "🤍 EUROVISION 2026: EUROFAN VOICE - ТВОЙ ГОЛОС В ФОРМИРОВАНИИ БУДУЩЕГО",
             "b": "EBU инициировал масштабное исследование под названием «Eurofan Voice», направленное на глубокий аудит отношений между организаторами и аудиторией. Это ваш шанс напрямую повлиять на стратегию развития конкурса в эпоху больших перемен.\nОсновные блоки исследования:\n• Прозрачность: Насколько открытым должен быть Европейский Вещательный Союз в принятии решений?\n• Доверие: Справедлива ли текущая система голосования и как её улучшить?\n• Вектор развития: Какие аспекты шоу вызывают наибольшую обеспокоенность у фанатского сообщества?\nОрганизаторы призывают не просто ставить оценки, а описывать свое видение конкурса будущего. Это редкая возможность выйти за рамки комментариев в соцсетях и быть услышанными на уровне топ-менеджмента.\n🔗 Пройти опрос Eurofan Voice\nКаким вы видите Евровидение через 5 лет? 💬\n⏱️ Время чтения: 0.9 мин | 🇪🇺 YourVision: COMMUNITY",
-            "img": "https://cdn4.telesco.pe/file/Fc_f-JsCqO_WqqTxSkoa27pqdPb6ljx7U5pSmlzHD7Fr8i2Ojrea2Y7YoW26jjbTw2fQPnaC19BfvWcSO7i_J69rA9cYnugIWJNpN2b2oxJmema5tn822awp0ZcbLXR4Xq5_fHnA_XrdIwsMQWaxJj7KheK_l1tqWk-KPOT4-LHG9Z7_fOetXUERzjkxJC3tGApd-uu0gQ9LW0DjsKuxOu_NAKPPZ5z9_B9AF_ZnoNpZKmhqWBjpMCVyxXQE_6f3t56-jjeYDe5Bn1r8slvxNxDXQH6Y3PtDIxCKdPAH3NmkA2eK0xu44tUuibJQ6NkaRPF4cLLnAmawuHULNirRdQ.jpg",
+            "img": "https://cdn4.telesco.pe/file/dc3QaJ1RvgFJ1d7kaZFwXGAnGdjGlKyrAlTm45XFZZA_Jj7kwKQZhdGtI5aC37KdA2bh5VrJRnpB-7J4ADceXFbclZfOPl78BY8wbttnW1nyK5JZZZ2gM4qrbT24UD-ZGuYJwo3JkChsmeruovjR8bKipSt1Evdlt60z7tgFgt7GLYohjpCSuQlzE09FmV24UJa7piKoJrskfmariIQUq_QPrDq0PANBCZsx-qQQTQm3oLVM4_tA-DEt023nc3hjmhVuy3J6S0W8YqRwsZQwK_ylNHkajTJehFdit0HeKnTTEJcpxIe8dTvimTuFvZzDP5ts_5Ze70Aw8gQkitQjaQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1778760835.0,
-            "poll": null
-        },
-        {
-            "m": "14.05 | 12:04",
-            "id": "lv",
-            "u": "https://t.me/almanac_marginalia/6002",
-            "t": "🧁 #PATISSERIE: ТАРТ ТАТЕН - ГЕОМЕТРИЯ ПЕРЕВЕРТЫША",
-            "b": "Тарт Татен рожден из ошибки и стал символом изменения точки зрения. В середине мая, когда правила сцены переписываются результатами полуфиналов, мы выбираем кулинарную метафору переворота. Груша в карамели с розмарином - это янтарь с хвойным голосом.\nИНГРЕДИЕНТЫ (МАТЕРИЯ):\n• Груши (твердые, сорт «Конференс» или «Бёрре») - 4 шт. (ок. 700 г)\n• Сахар (для карамели) - 150 г\n• Сливочное масло - 60 г\n• Розмарин (свежий) - 2 ветки\n• Слоеное тесто (готовое) - 230 г\n• Морская соль (флёр де сель) - щепотка\nТЕХНОЛОГИЧЕСКИЙ ПРОТОКОЛ (WORKFLOW):\n1. КАРАМЕЛЬ БЕЗ СТРАХА: В чугунной сковороде растопить сахар насухую на среднем огне, не мешая - только покачивая сковороду. При янтарном цвете добавить масло и соль. Масса зашипит - это нормально. Снять с огня.\n2. УКЛАДКА ГРУШ: Очистить груши, разрезать пополам, удалить сердцевину. Уложить в горячую карамель разрезом вниз, плотно. Вложить ветки розмарина между грушами.\n3. ФИНАЛЬНЫЙ ПЕРЕВОРОТ: Накрыть груши кругом слоеного теста, аккуратно заправив края внутрь. Выпекать при 200°C 25-30 минут. Перевернуть на тарелку немедленно - пока карамель горячая и текучая.\nСЕКРЕТ ПЕРЕВОРОТА:\nДержите тарелку плотно прижатой к сковороде и переворачивайте одним уверенным движением. Нерешительность - единственное, что может испортить этот десерт.\n⏱️ 1.9 мин | 🧁 Matter Layer | May 14",
-            "img": "https://cdn4.telesco.pe/file/XCqen4tOkK5I17KQj__eBHs8yPBcQP5TXfOS6nBegkaDn2sEFKvRDovMrzwZL9cb696piCD8uBMYEA2QnuBfGzCAqlpCTph1fouvEkYNzZ2hj8ZIIQhtFC_CJGhx24XePTYz0CvQ0b9K87rbL22FwAtcgA6wqYcdBjVGCBxCu2uhoHt_oedx1H8RjphvkD4RcDpG0-cH8dc9NlmHFmbuItAYZWgJZT4_-tRDRKtg8JiL3dRehcSGylr432ntowqcND-0d3YCIPEBP7wDHxu65SRtsnowFaDmmRbs8QycfhEErJqpEwtRaL4MlA0U_liTy9jxLgTYEhKQKMI56NuAmw.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1778760241.0,
             "poll": null
         }
     ],
