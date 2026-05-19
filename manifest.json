@@ -3,8 +3,8 @@
   "short_name": "YourVision",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#0a0a0a",
+  "background_color": "#0B1020",
+  "theme_color": "#0B1020",
   "description": "YourVision ESC Insider Hub - Vienna 2026 closed, road to Sofia 2027. News, radio, odds, industry memo.",
   "icons": [
     {
