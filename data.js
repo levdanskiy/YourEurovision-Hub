@@ -328,6 +328,42 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "20.07 | 10:00",
+            "id": "local",
+            "u": "",
+            "t": "🇪🇺 ДАЙДЖЕСТ: ГОЛОВНІ НОВИНИ МУЗИЧНИХ МОВНИКІВ ТА ПІДСУМКИ ТИЖНЯ",
+            "b": "Короткий розбір ключових анонсів та рішень від національних мовників за минулі вихідні:\n\n🇨🇦 **Канада - Деталі відбору восени 2026:**\nМовник CBC/Radio-Canada оголосив, що розкриє формат відбору на дебютне Євробачення 2027 цієї осені. Прем'єр-міністр Марк Карні раніше підтвердив, що глядачі отримають право голосу, натякаючи на проведення телешоу.\n\n🇮🇹 **Італія - Дати Сан-Ремо 2027 та спецвечір:**\nФестиваль Сан-Ремо 2027 пройде з 16 по 20 лютого. Представника на Євробачення 2027 оберуть 19 лютого в межах четвертого вечора. Переможець Sanremo Giovani увійде напряму до категорії Big.\n\n🇨🇾 **Кіпр - Зобов'язання щодо трьох конкурсів EBU:**\nМовник CyBC зафіксував політику участі в усіх трьох музичних проєктах EBU: Євробачення (ESC), Дитяче Євробачення (JESC) та Євробачення молодих музикантів (EYM). Кіпр став лише четвертою країною з таким статусом поряд із Вірменією, Польщею та Португалією.\n\n🇦🇲 **Вірменія - Другий етап відбору на JESC 2026:**\n40 виконавців виступили у другому турі прослуховувань на Дитяче Євробачення 2026 у Єревані. До складу журі увійшла співачка Rosa Linn (представниця Вірменії на Євробаченні 2022).",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784530800.0,
+            "poll": null
+        },
+        {
+            "m": "20.07 | 10:00",
+            "id": "local",
+            "u": "",
+            "t": "🇪🇺 ДАЙДЖЕСТ: ГЛАВНЫЕ НОВОСТИ МУЗЫКАЛЬНЫХ ВЕЩАТЕЛЕЙ И ИТОГИ НЕДЕЛИ",
+            "b": "Краткий разбор ключевых анонсов и решений от национальных вещателей за прошедшие выходные:\n\n🇨🇦 **Канада - Детали отбора осенью 2026:**\nВещатель CBC/Radio-Canada объявил, что раскроет формат отбора на дебютное Евровидение 2027 этой осенью. Премьер-министр Марк Карни ранее подтвердил, что зрители получат право голоса, намекая на проведение телешоу.\n\n🇮🇹 **Италия - Даты Сан-Ремо 2027 и спецвечер:**\nФестиваль Сан-Ремо 2027 пройдет с 16 по 20 февраля. Представителя на Евровидение 2027 выберут 19 февраля в рамках четвертого вечера. Победитель Sanremo Giovani войдёт напрямую в категорию Big.\n\n🇨🇾 **Кипр - Обязательство по трем конкурсам EBU:**\nВещатель CyBC зафиксировал политику участия во всех трех музыкальных проектах EBU: Евровидение (ESC), Детское Евровидение (JESC) и Евровидение молодых музыкантов (EYM). Кипр стал лишь четвёртой страной с таким статусом наряду с Арменией, Польшей и Португалией.\n\n🇦🇲 **Армения - Второй этап отбора на JESC 2026:**\n40 исполнителей выступили во втором туре прослушиваний на Детское Евровидение 2026 в Ереване. В состав жюри вошла певица Rosa Linn (представительница Армении на Евровидении 2022).",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784530800.0,
+            "poll": null
+        },
+        {
+            "m": "19.07 | 18:24",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6283",
+            "t": "Update",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784485458.0,
+            "poll": null
+        },
+        {
             "m": "19.07 | 17:10",
             "id": "local",
             "u": "",
@@ -561,8 +597,8 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6268",
             "t": "🇳🇱 НИДЕРЛАНДЫ: ПРЕДСТАВЛЕНЫ СНИППЕТЫ ПЕСЕН JUNIOR SONGFESTIVAL 2026",
             "b": "Вещатель AVROTROS опубликовал короткие фрагменты четырех композиций, которые сразятся в национальном отборе на Детское Евровидение 2026 на Мальте. Полноформатные треки будут представлены на этой неделе со вторника по пятницу.\nУчастники и их конкурсные песни:\n• Nolan (12 лет) - «Crush»\n• Maria (9 лет) - «Stronger Together»\n• Vajèn (13 лет) - «Here I Am»\n• The Crossovers - «Crossover»\nФинал Junior Songfestival 2026 пройдет 19 сентября на сцене RTM Stage в Роттердаме. Победителя традиционно определят зрители, взрослое профессиональное жюри и детское жюри.\n⏱️ Время чтения: 0.6 мин | 🇳🇱 YourVision: Детское Евровидение",
-            "img": "https://cdn4.telesco.pe/file/GrVeWfPfWa0m6nF1MD7NrXIdHC-BivhyzGk_I6TzwkuYohwCAaMVXZWGtVxWyhLr3LYJepC2LT1561oQ63elop05ySc5jTlxW3xRa-77_H4gdELtUvv-1M-7gkBNSNNfrr8cIvJ69odjOuruqqVIhs6iJtfqh8f9IOM9UUvIjHsFfyFwyWJO-OTH-dd8SME7QZe3hz64Ds6RV0OY7oB1q-KvtR2XfAttSNM1hiu6W_epuhMNd_GSJj-3SPRVTRBjLrU5NSJw1cCot45AJ8l_rtUC1OaXpW_j-gYE9_L1PhrffdYQZ4h2PgYgSCcL5wHbmg05GJBD2jdWpFDCDiO-Eg",
-            "vid": "https://cdn4.telesco.pe/file/263a257e45.mp4?token=AMQOTj7XkWUTCddCKq6hqGS4XQdsqw8gg2a4ljKrdA-Tk6tl7JZUmkaW-OckU1otwEkR-MgUKPj0ei3TrwNndSiIY7iwZCCQTWrpkjZ0YpCOuMIAtlMQsCfA7MYRHcA-f0yPr153aGZMhu9xEv85Lw_uVLF_w1ALbB-lAzs8nYh_NyxlHoydug25U28PT0b4cbkTmgjRKWZthLizPPVR_jfe3tv57ONIxlyUO6WN3zdWo0sg3Fd1dzcv5JvMW7c51xZzun0a-f7RFewNqKD6B8-F3mt66bonpZ21SC24xCA_6aO9PSiylnhk1Ymv9tO7nfgkLPgARJaxEMadg8BWtw",
+            "img": "https://cdn4.telesco.pe/file/kzAyKi7nEd9ShPKK23ph8Hk3RIGSQCFmBpWD-R4lusUPu3qZle3U55NF4frGrxqMOLFchYD0gc740Re0mjLOsni3AVKn8AeWEGWuTX89aFasJoQgZlObQzqhbpWOuplbncGGl78g4T5LcL1x70uOrYsFk3-ulAeBb2POhy63qBfD_62hHK-L40BqdrooHjPIOBjZD_gKFL5iBl6MEPxp2p2YdULdah0347MbT7kDgxRepdKhK6tLQYFFjdmFAUHi3YiO7qZ0_z9YpgLURyrY59T2F9xKavJd5eOSjvqWo8xQkHLpIXT5_nrMviNH0MUwOq3kiHk2A_fiIcdP6S0f8w",
+            "vid": "https://cdn4.telesco.pe/file/263a257e45.mp4?token=uNhGQF-xNsoN49M7OQZ_lDxhi5VvgiPgZxyC-SHX1YFn-2b_607cYPu0iRB5ZW4XJaLZ48IB5Vj-cz9i76h6g6uRUIaTZzuakb8AcJqk0Qz_ZKXdBb4VuVLNL7ZNBrRm6WVIl7eAZlg_OYW4KvuXq6yWXBGNENJeQzBnNwj6iFqtShfSFV5FpiJv0v3vrhrtFDjHRKaGNun9Wx9rF5MENlB8Hj3j4kZt5p7aEnM6fDwdArQAqZHAx0OBf9kLlYIqUU3QNx2F9NBYON-leUkqtvQjoJuJTLzd6hRH9tFlzmjKhuCjjxR6QprqOYqaudRw8GhHwH5YnwwmQZsTGozLxA",
             "isVideo": true,
             "ts": 1783318195.0,
             "poll": null
@@ -589,42 +625,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1783317600.0,
-            "poll": null
-        },
-        {
-            "m": "05.07 | 09:57",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6267",
-            "t": "🇧🇦 БОСНИЯ И ГЕРЦЕГОВИНА: ВЕЩАТЕЛЬ BHRT ПРОПУСТИТ ЕВРОВИДЕНИЕ 2027",
-            "b": "Национальный вещатель Боснии и Герцеговины BHRT официально подтвердил, что не примет участия в Евровидении 2027 в Болгарии из-за тяжелейшего финансового кризиса. Решение остаётся в силе, несмотря на то, что правительство страны экстренно выделило вещателю 3 миллиона евро государственной поддержки.\nМасштаб долговой ямы:\nВыделенная правительством сумма является лишь каплей в море: общий долг вещателя составляет около 50 миллионов евро (включая 34 миллиона по налогам и более 11 миллионов перед EBU). Напомним, что BHRT находится под санкциями EBU с декабря 2016 года из-за неуплаты долгов, что блокирует возвращение страны на конкурс.\nГлавная причина кризиса - действия вещателя Республики Сербской (RTRS), который в течение десяти лет не перечислял BHRT его долю от собранного налога на телевещание, накопив долг более 53 миллионов евро. Последний раз Босния и Герцеговина выступала на Евровидении в 2016 году с песней «Ljubav je».\n⏱️ Время чтения: 1.1 мин | 🇧🇦 YourVision: Отказ",
-            "img": "https://cdn4.telesco.pe/file/s2CXw9yb1lVaKELnGhKNWwi_cUM0PCloCRJ7UtOq37ZJYfeCVpYQBVSWmf3ga1ncIGrxCvZKdJcw8DcHHwSUiOrJKWGZpC6ARp1c1Xckr1DIQ3nEjT8xJSN-VhOq6cRGAGPbP521S9Weu9tCrPXWlXQ4hAhP5dUTqpd_GB5mCff9XOqAHiHjIMflk0Tb98kdw_LmCMa6l2M18K0mRh3-X3zO14m5ZUZochMr02dTl0PgFKiu_YjEyVLsU0NmmkmkpS-ChGzFqCiN8s2E7Zlf7DiuTTlrS9M9Y45Zd6zLz0aDCpR8eDYTcDv1_kTiDTYKP7UlAkiJ41XBzjZEg9jppA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1783245454.0,
-            "poll": null
-        },
-        {
-            "m": "05.07 | 12:45",
-            "id": "local",
-            "u": "",
-            "t": "🇧🇦 БОСНІЯ І ГЕРЦЕГОВИНА: МОВНИК BHRT ПРОПУСТИТЬ ЄВРОБАЧЕННЯ 2027",
-            "b": "Національний мовник Боснії і Герцеговини BHRT офіційно підтвердив, що не братиме участі в Євробаченні 2027 у Болгарії через глибоку фінансову кризу. Рішення залишається в силі, попри те, що уряд країни екстрено виділив мовнику 3 мільйони євро державної підтримки.\n\n💵 **Масштаб боргової ями:**\nВиділена урядом сума є лише краплею в морі: загальний борг мовника становить близько 50 мільйонів євро (зокрема 34 мільйони з податків та понад 11 мільйонів перед EBU). Нагадаємо, що BHRT перебуває під санкціями EBU з грудня 2016 року через несплату боргів, що блокує повернення країни на конкурс.\n\nГоловна причина кризи - дії мовника Республіки Сербської (RTRS), який протягом десяти років не перераховував BHRT його частку від зібраного податку на телемовлення, накопичивши борг понад 53 мільйони євро. Востаннє Боснія і Герцеговина виступала на Євробаченні у 2016 році з піснею «Ljubav je».",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1783244700.0,
-            "poll": null
-        },
-        {
-            "m": "03.07 | 20:34",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6266",
-            "t": "🇪🇺 ЕВРОВИДЕНИЕ: ТОП-20 САМЫХ ПОПУЛЯРНЫХ ВИДЕО ИЮНЯ НА YOUTUBE",
-            "b": "Официальный YouTube-канал Евровидения подвёл итоги июня 2026 года, опубликовав рейтинг двадцати самых просматриваемых видео. Лидерство удерживает триумфатор прошедшего конкурса DARA с победным выступлением на «Bangaranga».\n📊 Рейтинг просмотров за июнь 2026 года:\n1. ➡️ 🇧🇬 DARA - «Bangaranga» (финал 2026)\n2. ⬆️ 🇳🇴 Александр Рыбак - «Fairytale» (финал 2009)\n3. ⬇️ 🇬🇷 Akylas - «Ferto» (финал 2026)\n4. ⬇️ 🇮🇱 Noam Bettan - «Michelle» (финал 2026)\n5. ⬆️ 🇨🇾 Antigoni - «Jalla» (финал 2026)\n6. ⬇️ 🇷🇴 Alexandra Căpitănescu - «Choke Me» (финал 2026)\n7. ⬆️ 🇪🇪 Tommy Cash - «Espresso Macchiato» (клип 2025)\n8. ⬆️ 🇪🇪 Tommy Cash - «Espresso Macchiato» (финал 2025)\n9. ➡️ 🇲🇩 Satoshi - «Viva, Moldova!» (финал 2026)\n10. ⬇️ 🇧🇬 DARA - «Bangaranga» (клип 2026)\n11. ⬇️ 🇮🇹 Sal da Vinci - «Per sempre sì» (финал 2026)\n12. ⬆️ 🇭🇷 Lelek - «Andromeda» (финал 2026)\n13. ⬆️ 🇨🇾 Antigoni - «Jalla» (клип 2026)\n14. ⬇️ 🇫🇮 Linda Lampenius x Pete Parkkonen - «Liekinheitin» (финал 2026)\n15. ⬆️ 🇩🇰 Søren Torpegaard Lund - «Før vi går hjem» (финал 2026)\n16. ⬇️ 🇧🇬 DARA - «Bangaranga» (национальный отбор)\n17. ⬆️ 🇳🇱 Joost Klein - «Europapa» (полуфинал 2024)\n18. ⬇️ 🇦🇺 Delta Goodrem - «Eclipse» (финал 2026)\n19. ⬇️ 🇸🇪 Felicia - «My System» (финал 2026)\n20. ⬆️ 🇭🇷 Baby Lasagna - «Rim Tim Tagi Dim» (финал 2024)\n*Для видео 2026 года просмотры суммируются со всех этапов шоу.\n🔗 СМОТРЕТЬ ТОП: YouTube\n⏱️ Время чтения: 1.5 мин | 🇪🇺 YourVision: Чарты",
-            "img": "https://cdn4.telesco.pe/file/OXUy75ZtXZdPeQUq5n2GF8wlRhas76S3NwBLESSRfDoNKAdZnwr-uLXaCSwvOnKvJclLxJkK6hUT9kV3jH75ubTZYrg9zO8krZYXfcYSQwY0QMp7VmGB5lCN9I7MWp4C3J8qOPqJwOf2s3QXxz2yXnKKakl5hccQ5yb63Uz2Tc02acgbzIXx6D3mhBu7YAGa5vc0aBucpmmkEkMRvCBCBGO77bum5SCEHVRge9KDWzVlkW5V1yUnWVnBOkJXWJavblfv99Mh4IRr1w1GWM2F1bXSkx07dlPgVOPZ9UVp_rQB5732vjuFAswuZ3dRJZquT3hUPIb4car6sVg9d1kVLA.jpg",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1783110856.0,
             "poll": null
         }
     ],
