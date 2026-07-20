@@ -328,15 +328,39 @@ var DATA = {
     ],
     "news": [
         {
-            "m": "20.07 | 13:45",
+            "m": "20.07 | 16:35",
             "id": "local",
             "u": "",
-            "t": "🌏 ЕВРОВИДЕНИЕ АЗИЯ: КРЕАТИВНЫЙ ДИРЕКТОР ZOOP НАМЕКАЕТ НА 14 СТРАН",
-            "b": "Креативный директор платформы ZOOP (социального партнёра конкурса) сообщил в Instagram, что в ближайшие три месяца посетит 14 стран региона. Инсайдеры рассматривают это как прямой намёк на расширение состава участников **Евровидения Азия 2026** в Бангкоке.\n\nНа данный момент EBU и компания Voxovation официально подтвердили участие 10 стран, а недавний промо-ролик камбоджийского TV5 демонстрировал флаги Китая и Монголии (12 стран). Поездка руководства ZOOP в 14 государств указывает на финализацию переговоров ещё с двумя вещателями перед шоу 14 ноября.",
+            "t": "🇰🇭 КАМБОДЖА: МОВНИК ВІДРЕДАГУВАВ ПРОМО ТА ВИЛУЧИВ ПРАПОРИ УЧАСНИКІВ",
+            "b": "Камбоджійський мовник TV5 Cambodia оновив офіційне промо-відео «Cambodia's Finest Voice» до Євробачення Азія 2026. З нової версії повністю вирізано нарізку з прапорами країн-учасниць, де раніше фігурували прапори Китаю та Монголії.\n\nБільшість кадрів у відредагованому ролику замінено на фрагменти виступів учасників минулого Євробачення 2026 у Відні. Вилучення графіки з прапорами пов'язують із вимогою EBU не розкривати повний список країн до офіційного анонсу оргкомітету.",
             "img": "",
             "vid": "",
             "isVideo": false,
-            "ts": 1784544300.0,
+            "ts": 1784554500.0,
+            "poll": null
+        },
+        {
+            "m": "20.07 | 16:35",
+            "id": "local",
+            "u": "",
+            "t": "🇰🇭 КАМБОДЖА: ВЕЩАТЕЛЬ ОТРЕДАКТИРОВАЛ ПРОМО И УДАЛИЛ ФЛАГИ УЧАСТНИКОВ",
+            "b": "Камбоджийский вещатель TV5 Cambodia обновил официальное промо-видео «Cambodia's Finest Voice» к Евровидению Азия 2026. Из новой версии полностью вырезана нарезка с флагами стран-участниц, где ранее фигурировали флаги Китая и Монголии.\n\nБольшинство кадров в отредактированном ролике заменено на фрагменты выступлений участников прошедшего Евровидения 2026 в Вене. Удаление графики с флагами связывают с требованием EBU не раскрывать полный список стран до официального анонса оргкомитета.",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784554500.0,
+            "poll": null
+        },
+        {
+            "m": "20.07 | 10:49",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6285",
+            "t": "🇪🇺 ЕВРОВИДЕНИЕ АЗИЯ: КРЕАТИВНЫЙ ДИРЕКТОР ZOOP НАМЕКАЕТ НА 14 СТРАН",
+            "b": "Креативный директор платформы ZOOP (социального партнёра конкурса) сообщил в Instagram, что в ближайшие три месяца посетит 14 стран региона. Инсайдеры рассматривают это как прямой намёк на расширение состава участников Евровидения Азия 2026 в Бангкоке.\nНа данный момент EBU и компания Voxovation официально подтвердили участие 10 стран, а недавний промо-ролик камбоджийского TV5 демонстрировал флаги Китая и Монголии (12 стран). Поездка руководства ZOOP в 14 государств указывает на финализацию переговоров ещё с двумя вещателями перед шоу 14 ноября.\n⏱️ Время чтения: 0.6 мин | 🌏 YourVision: Евровидение Азия",
+            "img": "https://cdn4.telesco.pe/file/JyfboYhWFyCEg3FuGqjLG91ikN10F3mraAMK1MXUrecZHzYPV_MAusY2w_OXJilq9N8-aKorMzyzROsXFo94Ae-dukqkL4sMpn_2-WuU2eWgSSpCVyul0EIt_lblmQvzhAarqrBeBFu4Nx_5riKrK937n8UJfD-5gxGnrBYdIRptgS4Cdas_WEOJJTtWGCtY3cPvnOGbErpBQhyVGn4SFRg7l3MjbNWwIxE0aSWpU1o9chIvHrYRG6lcyD_PCBoIdEQQH6bL59HDDD8fksWMpSTdPIJ7ZNIAIp80o6NW1Zlqs-fcCW3lLBYN-lOrGUSnAjzRUc85X8OF3MjsVMQO4w.jpg",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784544596.0,
             "poll": null
         },
         {
@@ -441,7 +465,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6280",
             "t": "🇩🇪 ГЕРМАНИЯ: СТАРТ ОТБОРА НА ЕВРОВИДЕНИЕ 2027 И НОВАЯ МУЗЫКАЛЬНАЯ КОМАНДА",
             "b": "Вещатель SWR официально запустил приём заявок на национальный финал «Das Deutsche Finale 2027». Руководитель немецкой делегации Tina Sikorski представила обновлённую музыкальную команду экспертов, которая займётся поиском артистов и песен.\n🎹 Состав новой музыкальной команды SWR:\n• Pele Loriano: Известный продюсер и музыкальный директор швейцарских заявок, приведший страну к победам на Евровидении в 2024 и 2025 годах.\n• Jules (Julius Kalmbacher): Топовый немецкий продюсер, работавший с Helene Fischer, Mark Forster и Sarah Connor.\n• Florian Müller: Бывший международный A&R-менеджер Budde Music с глобальной сетью авторов.\n• Celina Spanier и Lilly Beling: Специалисты по поиску инди-талантов и менеджменту. Lilly Beling также работает с победителем Евровидения JJ.\nОрганизаторы делают упор на привлечение профессиональных авторов песен и опытных исполнителей с сильным вокалом. Подать заявку можно на официальной платформе SWR.\n⏱️ Время чтения: 1.1 мин | 🇩🇪 YourVision: Нацотборы",
-            "img": "https://cdn4.telesco.pe/file/dDggjTr0OUcHN66ZjK8WJcA0U6peXDRsIeZuPRLxRFDVoEOio6dvDyK8UjnT7DQ-Eh7CZcuuaKYG7mgCxnDupgxLoTiYUUTgPkPRahaqnDm0KbZm04GddU6AOTimPgBzCpT3yl7RItW7UcdgXKtCMovzc4IK8f8QZyQee_Yw9-YRcbOoP-W42bxbXCLhywo3Q78TowcBquZJn-t9WTAWlukkpBrpjUSh0Xzxq1y41okU-tOtS4qpeGvqf5TnlwgKmPihpCZMVzbGNcw4l69IhPFKz02UYu4AuZ6GF2ByMrP6DeFB8kb6kRfZTj4mjhCQvr_XW_8rvnbOBaz8kY2eYA.jpg",
+            "img": "https://cdn4.telesco.pe/file/vFdp1MAg-gRaCOKQVi-3t2S_S-f3I16I9DHbNqajvGzZu9Lb2s7NSCy-BBGpy8BMGT0IeOhcA_55IrRVN_KnWyHAN2-yZt9J6YsK6Vyrq6ihV9bnwIR3r5oJ4CfKRtLMPEZZiqHG_OzAT_h8oqvYUpNb7g3TV8S3gv0NbwSnzZ-kKgQi3NkGVgZK4Poj-jY898olnje0L95KCd7sO5QwGzTDLOBYvZJ3swpYayZ1a8JB-o3WtQzoXRcB5aaqW5hJhiA8i7q_-_1ME4DN8Z_6fbMkWivP8tWOQZUDOrGR0yImIv1H94wuK14uaCpw6B1n8PUOv5RpESZaXz7SH_4b7Q.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1784122468.0,
@@ -601,30 +625,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1783318200.0,
-            "poll": null
-        },
-        {
-            "m": "06.07 | 09:10",
-            "id": "local",
-            "u": "",
-            "t": "🇧🇬 БОЛГАРИЯ: СОФИЯ РАСКРЫЛА ДЕТАЛИ ЗАЯВКИ НА ЕВРОВИДЕНИЕ 2027",
-            "b": "Заместитель мэра Софии по вопросам культуры и туризма Ирина Дакова заявила, что столица обладает всей необходимой инфраструктурой и является «естественным выбором» для проведения конкурса. В рамках официальной заявки городские власти представили детальную концепцию расположения ключевых локаций Евровидения 2027.\n\n🏛 **Ключевые локации в концепции Софии:**\n• **Главная арена:** Многофункциональный комплекс **«Арена Армеец»** (Arena Armeec).\n• **Евродеревня (Eurovision Village):** Пространство вокруг Национального дворца культуры (НДК). Зона будет полностью огорожена, а безопасность обеспечат сканеры аэропортового типа.\n• **Бирюзовая дорожка (Turquoise Carpet):** Площадь перед НДК.\n• **Евроклуб (EuroClub) и ночная жизнь:** Арт-центр **«Теплоцентраль»** (Toplocentrala) в Южном парке, который станет центром вечерних развлекательных программ.\n• **Дополнительная инфраструктура:** Софийский технопарк (Sofia Tech Park).\n\nСреди преимуществ столицы Дакова выделила экологическую политику, развитую сеть метро и опыт проведения Детского Евровидения 2015. Решение о выборе города оргкомитет BNT вынесет до конца июля.",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1783318200.0,
-            "poll": null
-        },
-        {
-            "m": "06.07 | 06:09",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6268",
-            "t": "🇳🇱 НИДЕРЛАНДЫ: ПРЕДСТАВЛЕНЫ СНИППЕТЫ ПЕСЕН JUNIOR SONGFESTIVAL 2026",
-            "b": "Вещатель AVROTROS опубликовал короткие фрагменты четырех композиций, которые сразятся в национальном отборе на Детское Евровидение 2026 на Мальте. Полноформатные треки будут представлены на этой неделе со вторника по пятницу.\nУчастники и их конкурсные песни:\n• Nolan (12 лет) - «Crush»\n• Maria (9 лет) - «Stronger Together»\n• Vajèn (13 лет) - «Here I Am»\n• The Crossovers - «Crossover»\nФинал Junior Songfestival 2026 пройдет 19 сентября на сцене RTM Stage в Роттердаме. Победителя традиционно определят зрители, взрослое профессиональное жюри и детское жюри.\n⏱️ Время чтения: 0.6 мин | 🇳🇱 YourVision: Детское Евровидение",
-            "img": "https://cdn4.telesco.pe/file/kzAyKi7nEd9ShPKK23ph8Hk3RIGSQCFmBpWD-R4lusUPu3qZle3U55NF4frGrxqMOLFchYD0gc740Re0mjLOsni3AVKn8AeWEGWuTX89aFasJoQgZlObQzqhbpWOuplbncGGl78g4T5LcL1x70uOrYsFk3-ulAeBb2POhy63qBfD_62hHK-L40BqdrooHjPIOBjZD_gKFL5iBl6MEPxp2p2YdULdah0347MbT7kDgxRepdKhK6tLQYFFjdmFAUHi3YiO7qZ0_z9YpgLURyrY59T2F9xKavJd5eOSjvqWo8xQkHLpIXT5_nrMviNH0MUwOq3kiHk2A_fiIcdP6S0f8w",
-            "vid": "https://cdn4.telesco.pe/file/263a257e45.mp4?token=uNhGQF-xNsoN49M7OQZ_lDxhi5VvgiPgZxyC-SHX1YFn-2b_607cYPu0iRB5ZW4XJaLZ48IB5Vj-cz9i76h6g6uRUIaTZzuakb8AcJqk0Qz_ZKXdBb4VuVLNL7ZNBrRm6WVIl7eAZlg_OYW4KvuXq6yWXBGNENJeQzBnNwj6iFqtShfSFV5FpiJv0v3vrhrtFDjHRKaGNun9Wx9rF5MENlB8Hj3j4kZt5p7aEnM6fDwdArQAqZHAx0OBf9kLlYIqUU3QNx2F9NBYON-leUkqtvQjoJuJTLzd6hRH9tFlzmjKhuCjjxR6QprqOYqaudRw8GhHwH5YnwwmQZsTGozLxA",
-            "isVideo": true,
-            "ts": 1783318195.0,
             "poll": null
         }
     ],
