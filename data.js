@@ -328,6 +328,42 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "23.07 | 21:05",
+            "id": "local",
+            "u": "",
+            "t": "🇮🇹 ИТАЛИЯ: ВЕЩАТЕЛЬ RAI И ПРАВИТЕЛЬСТВО ЗАПУСКАЮТ ЕВРОТУР «ITALIA 2027»",
+            "b": "Министерство туризма Италии совместно с вещателем RAI, МИД, Минкультом и ключевыми музыкальными ассоциациями (FIMI, SIAE, AssoConcerti) официально представили проект «Italia 2027». Это масштабный гастрольный тур по крупнейшим аренам Европы, который начнётся сразу после финала фестиваля Сан-Ремо 2027.\n\n🏛 **Детали европейского турне:**\n• **Участники:** В тур приглашены победитель Сан-Ремо 2027 (определится 20 февраля), триумфатор спецвечера выбора представителя на Евровидение (19 февраля), а также победитель секции Sanremo Giovani. К ним присоединятся звёзды прошлых лет.\n• **Старт:** Вылет артистов из Милана запланирован на 22 февраля.\n\n📅 **Расписание концертов:**\n• **23 февраля:** Париж (Accor Arena)\n• **26 февраля:** Мадрид (Movistar Arena)\n• **1 марта:** Мюнхен (OlympiaHalle)\n• **3 марта:** Лондон (OVO Wembley Arena)\n\nИнициатива направлена на продвижение итальянской музыки за рубежом и привлечение европейских туристов.",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784829900.0,
+            "poll": null
+        },
+        {
+            "m": "23.07 | 21:05",
+            "id": "local",
+            "u": "",
+            "t": "🇮🇹 ІТАЛІЯ: МОВНИК RAI ТА УРЯД ЗАПУСКАЮТЬ ЄВРОТУР «ITALIA 2027»",
+            "b": "Міністерство туризму Італії спільно з мовником RAI, МЗС, Мінкультом та ключовими музичними асоціаціями (FIMI, SIAE, AssoConcerti) офіційно представили проєкт «Italia 2027». Це масштабний гастрольний тур найбільшими аренами Європи, який розпочнеться одразу після фіналу фестивалю Сан-Ремо 2027.\n\n🏛 **Деталі європейського турне:**\n• **Учасники:** До туру запрошені переможець Сан-Ремо 2027 (визначиться 20 лютого), тріумфатор спецвечора вибору представника на Євробачення (19 лютого), а також переможець секції Sanremo Giovani. До них приєднаються зірки минулих років.\n• **Старт:** Виліт артистів з Мілана запланований на 22 лютого.\n\n📅 **Розклад концертів:**\n• **23 лютого:** Париж (Accor Arena)\n• **26 лютого:** Мадрид (Movistar Arena)\n• **1 березня:** Мюнхен (OlympiaHalle)\n• **3 березня:** Лондон (OVO Wembley Arena)\n\nІніціатива спрямована на просування італійської музики за кордоном та залучення європейських туристів. Спільний проєкт міністерств та індустрії покликаний стати наймасштабнішим інструментом культурної дипломатії Італії у 2027 році.",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784829900.0,
+            "poll": null
+        },
+        {
+            "m": "23.07 | 11:42",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6289",
+            "t": "Update",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1784806929.0,
+            "poll": null
+        },
+        {
             "m": "23.07 | 14:35",
             "id": "local",
             "u": "",
@@ -429,8 +465,8 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6282",
             "t": "🇪🇺 КАМБОДЖА: НОВОЕ ПРОМО ЕВРОВИДЕНИЯ АЗИЯ РАСКРЫЛО УЧАСТНИКОВ  Камбоджийский вещатель TV5 Cambodia выпустил промо-видео «Cambodia's Finest Voice», посвященное подготовке к конкурсу Евровидение Азия 2026. В ролике раскрыты важные подробности предстоящего шоу…",
             "b": "",
-            "img": "https://cdn4.telesco.pe/file/lPKAI-bKGz4XWmIMU2QF1iaO8t6N6C3hXRas8-2tdFvkUKx3SBs0oDjkox_Cv0bQJIbNB5lysKKlom0E2t_tIjtRjsD6_Ftd2zIBJa6iEwc3EcDJLiHfAyviGwot8KbRDQTwL2-ajdpc_871HDSHgrA8bwu9CxI9OiNhUI84Gz15sibASao1ZgXBvLk-EgGxfv1do1FRCFFHLOEpWJAKj2BhB0a9NIeHZlE2K3i2v67UJ646sqQot29XZcqZJVI3uADgleI_dOwr8MBWNrzYgdn-hjwZj9f9k_inbpP2npLDiX6uQ56TuPNSiKo3XU0eN12yszDM86e02ih0bN9N0g",
-            "vid": "https://cdn4.telesco.pe/file/c5fd843046.mp4?token=IFw2f84sHaI9BBuho_RqsI8Ll6JEPJvrjfc7ZJ7fVHT-s8TDHmZH6t9i2Yi9AdvVgVpLUKXq0JteiOcOfh2xhrtqhmPWGq9iIFd-HmQbbLypTdiS0peaKKVGzonqGBnZwvPxpX2tNpiFGSsFOYWuazqJXgdL-RHJoas2AMWwzcZc8vEqzhhsT7AZ6MJZKV0i59tAXJhz4YoTyf6HIiV0M7LhsnVH0nr-6wCd1Q5de6gKxdNBEAML4lYWyEOAobJaPTolieASdakPigaCawwgQYLs8AYongf-ug0jGTXLhi1MTCFvrWcBlRsXw6gV-EWTAMFGP5bpksCpMTKcFu1dKXIiZ5UQpO2aiyQxETK16ZrIIe_Izxg6eMjr6cAZF3WIr9OEGlIEky4W3L63xKGhAe-ZChvG9j_r5L3sxxb3n12wFUg5AGrtnd-owy88Z5MIlFFh4SAB7xaxEBTLw2dk_0-TxCSTLFWO7PqxnMztKjLdWD1Gvkvj1hx9dQxuQ8O-F7PaAuKiIiEC8kezlgaiN1t4RyercOC6YkZl8mvjdE9PKopiL2p9tPSn1I0zfLZMuSrnOJY0ZN5lxHEvyBtR4wDjMMBkEJnOZEbd4iT6f76StPwbgbmL27Jof94QbzUEKuPSLF5xmoCN76pL634IdvH1io5vKBapxBDDRLAXL2I",
+            "img": "https://cdn4.telesco.pe/file/BVjFlkgRvUdVCZgro3IZfW4NFOBcv9FJWTlI0jHNX8k9ZIK0m4lCS5aqGFiw6UUZ1GgEQTw24E8pVoduWAOxq_tW60_42-lC_VbVfNRB2MhY7yXquCFPYljCfN4vDmCHiOmEiJvaYRqX7QJQggeDVxoA0WZj7T4P2j_hS-MnTf6PydIE2mwLh_meaXi135Cadk03cWhrOshx_mbTk-I_7kKvSvEHeaYS6_xn_r5e7ErfTOTZmbcHZhs_09d0XROSCV-yQKqgxzXqXXYm-Sw8qwCK03NsjojkhuHqVRlb6TLKHDRqo8xyEvYbDdR2pjOKYet83QqlqTs6Rr0BmAfyCg",
+            "vid": "https://cdn4.telesco.pe/file/c5fd843046.mp4?token=IFw2f84sHaI9BBuho_RqsI8Ll6JEPJvrjfc7ZJ7fVHT-s8TDHmZH6t9i2Yi9AdvVgVpLUKXq0JteiOcOfh2xhrtqhmPWGq9iIFd-HmQbbLypTdiS0peaKKVGzonqGBnZwvPxpX2tNpiFGSsFOYWuazqJXgdL-RHJoas2AMWwzcZc8vEqzhhsT7AZ6MJZKV0i59tAXJhz4YoTyf6HIiV0M7LhsnVH0nr-6wCd1Q5de6gKxdNBEAML4lYWyEOAobJaPTolieASdakPigaCawwgQYLs8AYongf-ug0jGTXLhi1MTCFvrWcBlRsXw6gV-EWTAMFGP5bpksCpMTKcFu1dKT2ExjZEVuxjcd0QfhYXD9XwZI1yK3lGuAXbjIqgmbQztoizM552v3B67LRdySfdhxPwqAHFn1xzT9dUtRctNojq0XL1QEn8a4p8ejR2pSHC3jQdXw6z0kihPofZXibZyPJnd2osY7xQEeMN6zOw0kfcNIdxnj9kaZ4BJTJFA6NO5wSYRpfyp2cC_dnmJMbQ33YLPlRjiIPXUR3wtBsjkezb446QM6q-fDqCDsOybouhhpr9gKg1FnP9ymt0uBJjpq2YAb3v6rBACcYOntMrWm43iRJN7DqkVUc2mfWSW1CwOyWRDYw8TobLmkaEJ_jNp4abHlpL58JXsqF3qvGy-9U",
             "isVideo": true,
             "ts": 1784554936.0,
             "poll": null
@@ -573,7 +609,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6280",
             "t": "🇩🇪 ГЕРМАНИЯ: СТАРТ ОТБОРА НА ЕВРОВИДЕНИЕ 2027 И НОВАЯ МУЗЫКАЛЬНАЯ КОМАНДА",
             "b": "Вещатель SWR официально запустил приём заявок на национальный финал «Das Deutsche Finale 2027». Руководитель немецкой делегации Tina Sikorski представила обновлённую музыкальную команду экспертов, которая займётся поиском артистов и песен.\n🎹 Состав новой музыкальной команды SWR:\n• Pele Loriano: Известный продюсер и музыкальный директор швейцарских заявок, приведший страну к победам на Евровидении в 2024 и 2025 годах.\n• Jules (Julius Kalmbacher): Топовый немецкий продюсер, работавший с Helene Fischer, Mark Forster и Sarah Connor.\n• Florian Müller: Бывший международный A&R-менеджер Budde Music с глобальной сетью авторов.\n• Celina Spanier и Lilly Beling: Специалисты по поиску инди-талантов и менеджменту. Lilly Beling также работает с победителем Евровидения JJ.\nОрганизаторы делают упор на привлечение профессиональных авторов песен и опытных исполнителей с сильным вокалом. Подать заявку можно на официальной платформе SWR.\n⏱️ Время чтения: 1.1 мин | 🇩🇪 YourVision: Нацотборы",
-            "img": "https://cdn4.telesco.pe/file/puB-GYqktIZzVKnznTaMa66RCtlREtvcHLY9uyhVrUDGYoBllRjMxIc8K76besH7fCtk6AkvDpavvRrhdtJ4QgTg-PSZdrH-a-W_HBkf1NgqNoeFno8FFSnbWnb9wGSVhgsL68rQzIHo2hiDSZV4by0DrrLe3bWLH9Xhw5viF5fJU27xVylw-11bkcqMUUnTdMPR7YbEW2gPldndcQ_efIQIo_oIwcxP7qfTB5ud4DtAzR7acCwcku66BLKBNZr3acaWQ_fi6Ujd_PkeIVTpn7rKgp3adsZjs0NU9U7erhKa8kNMFU4jXvCDBNu7f9EdnQNEdPCH5T9D2E-7Cv6M8Q.jpg",
+            "img": "https://cdn4.telesco.pe/file/ZtVsYLwcmHO_d5VPIWXSF9NpOG5N9SxEu3Na1XTT2R7zbGGDMoaHQgTnlRQ5JbJoeFw9EpKmGzt15tDUlPt7_3GKOV4LXkrio8UOL77l4GGGYQncq2-YXFBO__noU1nXOFRZC704UlH46NPO00ZR9Ddgbfyiy6FZpD9OH9qcJAZV9N9iOhuCeQcI1NGx3qXYItwHgurdr3Uz8LZGOYjGFFthfYwPlCRf4URFlgWeFxnvZjnGcCt75wqtkyTJHpBbOSQOdWlrZ2mloN-HdeLmKFWSnUK_9KHak9op6_wgyQ7nkNzHb9HyibvsHnIxgRitj9jUTOrLpQHcZaWY6q2jqQ.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1784122468.0,
@@ -589,42 +625,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1784121900.0,
-            "poll": null
-        },
-        {
-            "m": "15.07 | 09:10",
-            "id": "local",
-            "u": "",
-            "t": "🇦🇱 АЛБАНИЯ: ЭСЛИН КУРТИ ЗАПИСЫВАЕТ РЕВАМП В ШВЕЦИИ ДЛЯ ДЕТСКОГО ЕВРОВИДЕНИЯ 2026",
-            "b": "Представительница Албании на Детском Евровидении 2026 **Eslin Kurti** отправилась в Гётеборг (Швеция) для записи обновленной версии конкурсной песни «Kërce me mua». Запись проходит на студии Svenska Grammofon Studion.\n\nВ работе над ревампом юную исполнительницу поддерживают автор песни Эрион Рушити (Erion Rushiti) и её педагог по вокалу Ольта Юба (Olta Juba). Эслин Курти получила право представить страну на конкурсе на Мальте после победы на фестивале Festivali Mbarëkombëtar i këngës për fëmijë 64.",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1784095800.0,
-            "poll": null
-        },
-        {
-            "m": "15.07 | 09:10",
-            "id": "local",
-            "u": "",
-            "t": "🇦🇱 АЛБАНІЯ: ЕСЛІН КУРТІ ЗАПИСУЄ РЕВАМП У ШВЕЦІЇ ДЛЯ ДИТЯЧОГО ЄВРОБАЧЕННЯ 2026",
-            "b": "Представниця Албанії на Дитячому Євробаченні 2026 **Eslin Kurti** вирушила до Гетеборга (Швеція) для запису оновленої версії конкурсної пісні «Kërce me mua». Запис проходить на студії Svenska Grammofon Studion.\n\nУ роботі над ревампом юну виконавицю підтримують автор пісні Еріон Рушиті (Erion Rushiti) та її педагог з вокалу Ольта Юба (Olta Juba). Еслін Курті отримала право представити країну на конкурсі на Мальті після перемоги на фестивалі Festivali Mbarëkombëtar i këngës për fëmijë 64.",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1784095800.0,
-            "poll": null
-        },
-        {
-            "m": "13.07 | 18:18",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6279",
-            "t": "🇨🇾 КИПР: ГАРРИ ГЕОРГИУ ПРЕДСТАВИТ СТРАНУ НА ДЕТСКОМ ЕВРОВИДЕНИИ 2026",
-            "b": "Вещатель CyBC официально объявил, что юный исполнитель Harry Georgiou представит Кипр на Детском Евровидении 2026 на Мальте. Исполнитель был выбран в рамках закрытых живых прослушиваний.\nДетали отбора и регламент:\n• Ход прослушивания: В отборе приняли участие 45 молодых вокалистов. Выступления оценивало профессиональное жюри из пяти человек по классической евровизийной шкале (12, 10, 8-1). В состав жюри вошли Рафаэлла Пантели и Христос Георгиу, которые представляли Кипр на Детском Евровидении 2025 года. Harry Georgiou набрал наибольшее количество баллов.\n• Требования к песне: Конкурсная композиция должна длиться от 2.5 до 3 минут и содержать не менее 60% текста на греческом языке (допускается кипрский диалект). Вещатель установил жесткий запрет на использование технологий искусственного интеллекта (AI) при создании песни. Конкурсный трек будет представлен позже.\n⏱️ Время чтения: 1.1 мин | 🇨🇾 YourVision: Детское Евровидение",
-            "img": "https://cdn4.telesco.pe/file/icwIR96R0UbhHC1SwdXeRcPAyo4WEKM9TBaOXi7yjA0fahzkq5uAr0S545AVlrOBneEfTwC5J9spXrGuPfJBW_MXwWFUp2gvzdEYy_jIKb1IHYqQnwKzm49pRii0hIrg4G1PtyuOZ6Pu8K2H4BeXRKT6XZz66MOT3tSfbf7VnU7vlAJzS1fK3GMevqI2NrQ0q580pM11S0-2pehNTP16L9oINyZKYmI2JZQOtZ4fPpmB8Zsf2AMaWiMcq4sMz7TE_9aJJ7q6f_c8thl6PsbFHGcIZLQSmAneCCVug1IlneflgrId3QLnaWp503TbLRT12lKCP1fBR72lWvjja1ql_w",
-            "vid": "https://cdn4.telesco.pe/file/824eede202.mp4?token=Fj-UEwOfNiJL1_lhE_4Eg4CZ7AUpQwois5QkBeNOxYkdsuZjA55Hf1YkESagU7UoKlHqKSR6pSG6EBrjo_cj4zZfQuhezkhqOH5av4CrHI_Utt2UtLQzLcZoSNnli050gPDl_qaQ2XZ277gZFX2ypP2wdutj4WzahgrewtfBiFXTeHMSq9pRSvqaS8AXS_5EzdZ_Z1j7-FENQBIgmNXjUHd9MuDSOswwcRFqczIAifzoiiWKgKYahc281YCWzk2ZDSkrPfgk5rfsjX0HKPCuCexrGLWqGVtWU15HfczFU-HrDahhKFTpOeLdE2LHOasSYl9M6_SRj4WA0FBVccVz9w",
-            "isVideo": true,
-            "ts": 1783966684.0,
             "poll": null
         }
     ],
