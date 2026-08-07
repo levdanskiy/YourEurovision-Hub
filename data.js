@@ -328,6 +328,42 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "06.08 | 18:35",
+            "id": "70",
+            "u": "https://t.me/YourEurovision/6315",
+            "t": "Update",
+            "b": "",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1786041327.0,
+            "poll": null
+        },
+        {
+            "m": "06.08 | 21:35",
+            "id": "local",
+            "u": "",
+            "t": "🇧🇹 БУТАН: СОСТОЯЛАСЬ ПРЕМЬЕРА КОНКУРСНЫХ ПЕСЕН RHYTHM OF BHUTAN",
+            "b": "Состоялся официальный релиз конкурсных треков первого в истории национального отбора Бутана на Евровидение: Азия. Все пять песен финалистов шоу Rhythm of Bhutan уже доступны для прослушивания.\n\n[🎧 ПЛЕЙЛИСТ: Обложка официального плейлиста отбора]\n\nПобедитель представит Бутан на финале Евровидения: Азия в Бангкоке. Прямой эфир отборочного шоу состоится 11 августа в 16:00 по Риге.\n\n🎧 **СЛУШАТЬ В SPOTIFY:** [Официальный плейлист](https://open.spotify.com/playlist/5QESJKA2Oz9OUNVqqp0ixX)",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1786041300.0,
+            "poll": null
+        },
+        {
+            "m": "06.08 | 21:35",
+            "id": "local",
+            "u": "",
+            "t": "🇧🇹 БУТАН: ВІДБУЛАСЯ ПРЕМ'ЄРА КОНКУРСНИХ ПІСЕНЬ RHYTHM OF BHUTAN",
+            "b": "Відбувся офіційний реліз конкурсних треків першого в історії національного відбору Бутану на Євробачення: Азія. Усі п'ять пісень фіналістів шоу Rhythm of Bhutan вже доступні для прослуховування.\n\n[🎧 ПЛЕЙЛИСТ: Обкладинка офіційного плейлиста відбору]\n\nПереможець представить Бутан на фіналі Євробачення: Азія у Бангкоку. Прямий ефір відбіркового шоу відбудеться 11 серпня о 16:00 за київським часом.\n\n🎧 **СЛУХАТИ У SPOTIFY:** [Офіційний плейлист](https://open.spotify.com/playlist/5QESJKA2Oz9OUNVqqp0ixX)",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1786041300.0,
+            "poll": null
+        },
+        {
             "m": "06.08 | 15:15",
             "id": "70",
             "u": "https://t.me/YourEurovision/6314",
@@ -436,7 +472,7 @@ var DATA = {
             "u": "https://t.me/YourEurovision/6311",
             "t": "📊 ЧАРТЫ: ИТОГИ ИЮЛЯ В EUROVISION TOP 20 MOST WATCHED",
             "b": "Сегодня, 6 августа, в 21:00 по Риге на официальном YouTube-канале Евровидения состоится премьера видеоверсии ежемесячного чарта Eurovision Top 20: Most Watched за июль 2026 года.\nРейтинг формируется на основе суммарных просмотров за прошлый месяц. В подсчёт входят официальные музыкальные видео, выступления с национальных отборов, превью-клипы и все форматы перформансов с самого конкурса. Статистика ведётся по единой методике EBU с января 2020 года.\n🔗 СМОТРЕТЬ ПРЕМЬЕРУ: YouTube\n⏱️ Время чтения: 0.8 мин | 📊 YourVision: Чарты",
-            "img": "https://cdn4.telesco.pe/file/Yso9qLKs1smiO9FCgYiGMBSQbKNSBH5v5zI5Eu1iuMthNH0k8qSbmm-b13E1lrzCUqW2CZJjQw1p8W9aB9XBVYYTsI1cfdyVT5BA_ozIo2JEuzGeYB6j0pF48NC8_6CEAOuKVgAIwZZL-6egEuaZFQb-qB_ZlyDn1QeSHRt14OPu5zp7Jesei-rRXHyTJ2DrTYowOgarjSemXeq4_wtlOfuq2sbx7Ivp12YZ2bL2i1oL4ZNO2V6xSHjc3ijU0pyANojC5o0BeOFsxEUDzgk70QvBJhNJ-_2SlLcQjZWeJn3wPQmsqnlG0gVocYsE78UF65MxRBw5H8TUj_3NWTJc9Q.jpg",
+            "img": "https://cdn4.telesco.pe/file/vNXs6fH67HNTwwq_ASK-D8XmR9TqqH0LXCS4Kn0_EoOzsTC3IcEQlnXcQgkhK-ehe4NymzudGfGuupVngVSapIrMw2QOfMvt8jhOESzPH_FH3NWrsPAgsA3mKxRgACODCLH70wIlgB9295x0dqWWZcByScGNfkleMlSfGb_WAjLPUCcO1SFrY23XwYK8eyxCRk4WIKh-0ZU6jVl4S2ABiExnY_SFyJNx1PUZsBIq7IoLz5_6Vr2U6YRwaRbYh09QzMIHA2L_RrzZz6ztwFxKKiaV4c9nL_FIdQh3cMvm_TWDQb3nv3aT_LaDGIjxUr8aBEXoyt8nZ529EPuU7geGSA.jpg",
             "vid": "",
             "isVideo": false,
             "ts": 1786015005.0,
@@ -603,42 +639,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1785937800.0,
-            "poll": null
-        },
-        {
-            "m": "04.08 | 09:02",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6306",
-            "t": "Update",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1785834152.0,
-            "poll": null
-        },
-        {
-            "m": "04.08 | 06:09",
-            "id": "70",
-            "u": "https://t.me/YourEurovision/6304",
-            "t": "Update",
-            "b": "",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1785823745.0,
-            "poll": null
-        },
-        {
-            "m": "04.08 | 09:00",
-            "id": "local",
-            "u": "",
-            "t": "🌏 ЄВРОБАЧЕННЯ: АЗІЯ 2026 - ПОВНИЙ КАЛЕНДАР НАЦІОНАЛЬНИХ ВІДБОРІВ",
-            "b": "Фінал - **14 листопада 2026 року, Бангкок**. Нижче - повний розклад відбіркових шоу з часом за Ригою. Усі трансляції на YouTube-каналі Євробачення. У кожен відбір вбудовано міжнародне голосування «Весь інший світ».\n\n---\n\n## 📅 РОЗКЛАД ВІДБОРІВ\n\n• 🇧🇹 **11 серпня, вт - 16:00 (Рига)**\nRhythm of Bhutan - Бутан обирає свого першого учасника.\n\n• 🇲🇾 **15 серпня, сб** - Малайзія анонсує артиста (внутрішній вибір).\n\n• 🇵🇭 **30 серпня, нд - 16:45 (Рига)**\nPhilippine Selection Night - Філіппіни обирають представника у прямому ефірі.\n\n• 🇰🇷 **4 вересня, пт - 17:00 (Рига)**\nKorea's Next Wave - Республіка Корея визначає свого учасника.\n\n• 🇳🇵 **19 вересня, сб - 16:15 (Рига)**\nNepal Decides - Непал вперше виходить на світову сцену.\n\n• 🇱🇦 **23 і 24 вересня, ср-чт - 16:30 (Рига)**\nSieng Lao: The One - Лаос проводить дводенний відбір.\n\n• 🇹🇭 **27 вересня, нд - 14:00 (Рига)**\nThailand's Chosen One - країна-господарка обирає свого представника.\n\n• 🇧🇩 **30 вересня, ср - 18:00 (Рига)**\nVoice of Bangladesh - фінальний оголошений відбір сезону.\n\n---\n\nДати додаткових відборів та повний список країн-учасниць буде оголошено пізніше.\n\n🔗 **ДИВИТИСЯ:** [YouTube Євробачення](https://www.youtube.com/@Eurovision)",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1785823200.0,
             "poll": null
         }
     ],
