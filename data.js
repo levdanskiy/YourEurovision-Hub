@@ -328,6 +328,30 @@ var DATA = {
     ],
     "news": [
         {
+            "m": "13.08 | 14:10",
+            "id": "local",
+            "u": "",
+            "t": "🇳🇱 НІДЕРЛАНДИ: ПРЕМ'ЄРА КЛІПУ МАРІЇ «STRONGER TOGETHER» ДЛЯ JUNIOR SONGFESTIVAL 2026",
+            "b": "Нідерландський мовник AVROTROS презентував офіційний відеокліп 9-річної співачки Марії (Maria) на конкурсну пісню «Stronger Together» для відбору Junior Songfestival 2026.\n\n[🎥 ВИДЕО: Офіційний кліп Maria - «Stronger Together»]\n\nАвторами композиції виступили Мелл Йонк та Тон Дейкман. Марія побореться за право представити Нідерланди на Дитячому Євробаченні 2026 на Мальті проти Vajèn, Nolan та The Crossovers. Фінальне шоу на арені RTM Stage Ahoy у Роттердамі відбудеться 19 вересня о 20:00 за київським часом.\n\n🔗 **ДИВИТИСЯ КЛІП:** [YouTube](https://youtu.be/ohylLfGg7Vk)",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1786619400.0,
+            "poll": null
+        },
+        {
+            "m": "13.08 | 14:10",
+            "id": "local",
+            "u": "",
+            "t": "🇳🇱 НИДЕРЛАНДЫ: ПРЕМЬЕРА КЛИПА МАРИИ «STRONGER TOGETHER» ДЛЯ JUNIOR SONGFESTIVAL 2026",
+            "b": "Нидерландский вещатель AVROTROS презентовал официальный видеоклип 9-летней певицы Марии (Maria) на конкурсную песню «Stronger Together» для отбора Junior Songfestival 2026.\n\n[🎥 ВИДЕО: Официальный клип Maria - «Stronger Together»]\n\nАвторами композиции выступили Мелл Йонк и Тон Дейкман. Мария поборется за право представить Нидерланды на Детском Евровидении 2026 в Мальте против Vajèn, Nolan и The Crossovers. Финальное шоу на арене RTM Stage Ahoy в Роттердаме состоится 19 сентября в 20:00 по Риге.\n\n🔗 **СМОТРЕТЬ КЛИП:** [YouTube](https://youtu.be/ohylLfGg7Vk)",
+            "img": "",
+            "vid": "",
+            "isVideo": false,
+            "ts": 1786619400.0,
+            "poll": null
+        },
+        {
             "m": "13.08 | 14:00",
             "id": "local",
             "u": "",
@@ -601,30 +625,6 @@ var DATA = {
             "vid": "",
             "isVideo": false,
             "ts": 1786517400.0,
-            "poll": null
-        },
-        {
-            "m": "12.08 | 09:50",
-            "id": "local",
-            "u": "",
-            "t": "🇵🇭 ФИЛИППИНЫ: СЭМПЛЫ 10 ТРЕКОВ И ИСПОЛНИТЕЛИ PHILIPPINE SELECTION NIGHT",
-            "b": "Филиппинский вещатель ABS-CBN опубликовал 15-секундные тизер-видео всех 10 конкурсных композиций и впервые раскрыл имена исполнителей отбора на Евровидение Азия 2026.\n\n[🎥 ВИДЕО: Видеосэмплы (15-секундные отрывки) всех 10 конкурсных треков]\n\n---\n\n### 🎼 СПИСОК УЧАСТНИКОВ И КОНКУРСНЫХ ТРЕКОВ\n\n1. **AJAA** - «Make It Exist»\n2. **CARMELLE** - «Sobra Sobra (Too Much)»\n3. **DNA** - «Between Bituin»\n4. **Elha, Esang, Lance Reblando, Nar Cabico** - «Cheri(e)»\n5. **Jason Dy, Sassa** - «Di Yan (Red Flag)»\n6. **JM Dela Cerna, Marielle Montellano** - «Mapadama»\n7. **KHIMO** - «Reason to Live»\n8. **Ryssi Avila** - «Good For You»\n9. **SAGA** - «Broken Beyond Repair»\n10. **VVINK, Wrive Russu** - «Round and Round»\n\n---\n\nПремьера полных версий песен состоится в понедельник, 17 августа, в 13:00 по Риге, а финальное шоу пройдёт 30 августа.",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1786517400.0,
-            "poll": null
-        },
-        {
-            "m": "11.08 | 23:00",
-            "id": "local",
-            "u": "",
-            "t": "🇳🇱 НІДЕРЛАНДИ: ПРЕМ'ЄРА КЛІПУ НОЛАНА «CRUSH» ДЛЯ JUNIOR SONGFESTIVAL 2026",
-            "b": "Нідерландський мовник AVROTROS презентував офіційний відеокліп Нолана (Nolan) на конкурсну пісню «Crush» у межах відбору Junior Songfestival 2026.\n\n[🎥 ВИДЕО: Офіційний кліп Nolan - «Crush»]\n\nЦе другий опублікований кліп з-поміж чотирьох фіналістів шоу. Нагадаємо, переможець відбору представить Нідерланди на Дитячому Євробаченні 2026 на Мальті. Фінальний ефір на арені RTM Stage Ahoy у Роттердамі відбудеться 19 вересня о 20:00 за київським часом.\n\n🔗 **ДИВИТИСЯ КЛІП:** [YouTube](https://youtu.be/wCJovu9YsxQ)",
-            "img": "",
-            "vid": "",
-            "isVideo": false,
-            "ts": 1786478400.0,
             "poll": null
         }
     ],
